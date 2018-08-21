@@ -7,6 +7,12 @@ categories: 随记
 
 
 
+![葡萄](https://upload-images.jianshu.io/upload_images/3478485-e6a857885484a2b7.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+<!--less-->
+
+
+
 > **那天遇见，就是缘分；擦肩而过，依旧遗憾。**
 
 
