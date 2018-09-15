@@ -23,6 +23,8 @@ categories: LaTeX入门
 > `\bibliographystyle{plainnat}`这个命令是用来定义文献的格式。
 > `\bibliography{art}`这个命令是选择你文献的所在的文件，bib后缀，但是你可以不写后缀，会自动搜索。
 > `\cite{}是引用的命令，可以在文中你想引用的地方出现`
+
+
 ```
 \documentclass{report}
 \usepackage[round]{natbib}
