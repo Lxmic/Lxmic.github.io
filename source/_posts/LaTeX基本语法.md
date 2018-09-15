@@ -1,5 +1,5 @@
 ---
-title: LaTeX第一篇博客
+title: LaTeX基本语法
 date: 2018-09-14 14:37:53
 tags: 
 - LaTeX
