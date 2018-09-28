@@ -4,7 +4,7 @@ date: 2018-08-19 10:24:46
 type: "about"
 comments: "false"
 ---
-# Address
+# $\textcolor{Green}{Address}$
 
 Room 333, State Key Laboratory of Plant Physiology and Biochemistry, College of Life Sciences, Zhejiang University, 866 Yuhangtang Road, Hangzhou, China
 
@@ -14,7 +14,7 @@ E-mail: jin19920326@gmail.com
 ***
 
 
-# Education
+# $\textcolor{Green}{Education}$
 
 2015-2018	**PhD-ing;** Zhejiang University; *Cadmium and Aluminum Tolerance Study  of Tomato and Arabidopsis*  
 
@@ -22,7 +22,7 @@ E-mail: jin19920326@gmail.com
 ***
 
 
-# Certificate
+# $\textcolor{Green}{Certificate}$
 
 2015	*Teacher Qualification Certificate of High School Biology*; Taizhou Jiaojiang Education bureau
 
@@ -30,7 +30,7 @@ E-mail: jin19920326@gmail.com
 ***
 
 
-# Publications
+# $\textcolor{Green}{Publications}$
 
 1. Fan W, Xu JM, Wu P, Yang ZX, Lou HQ, Chen WW, **Jin JF**, Zheng SJ, Yang JL. Alleviation by abscisic acid of Al toxicity in rice bean is not associated with citrate efflux but depends on *ABI5*‐mediated signal transduction pathways. ***Journal of Integrative Plant Biology***. 2018. doi: 10.1111/jipb.12695.
 
