@@ -5,38 +5,32 @@ type: "about"
 comments: "false"
 ---
 # Address
-***
+
 Room 333, State Key Laboratory of Plant Physiology and Biochemistry, College of Life Sciences, Zhejiang University, 866 Yuhangtang Road, Hangzhou, China
 
 Blog: https://othlis.com
 
 E-mail: jin19920326@gmail.com
-
+***
 
 
 # Education
 
-***
-
 2015-2018	**PhD-ing;** Zhejiang University; *Cadmium and Aluminum Tolerance Study  of Tomato and Arabidopsis*  
 
 2011-2015	**Bsc;** Taizhou University; *Biological Education*
-
+***
 
 
 # Certificate
 
-***
-
 2015	*Teacher Qualification Certificate of High School Biology*; Taizhou Jiaojiang Education bureau
 
 2013	*Qualification Certificate of Psychological Consultant , Third Level*; The Ministry of Human Resources and Social Security of the People's Republic of China
-
+***
 
 
 # Publications
-
-***
 
 1. Fan W, Xu JM, Wu P, Yang ZX, Lou HQ, Chen WW, **Jin JF**, Zheng SJ, Yang JL. Alleviation by abscisic acid of Al toxicity in rice bean is not associated with citrate efflux but depends on *ABI5*‐mediated signal transduction pathways. ***Journal of Integrative Plant Biology***. 2018. doi: 10.1111/jipb.12695.
 
@@ -49,3 +43,5 @@ E-mail: jin19920326@gmail.com
 5. Chen WW, Xu JM, **Jin JF**, Lou HQ, Fan W, Yang JL. Genome-Wide Transcriptome Analysis Reveals Conserved and Distinct Molecular Mechanisms of Al Resistance in Buckwheat (*Fagopyrum esculentum* Moench) Leaves. ***International Journal of Molecular Sciences***. 2017, 18(9):1859. doi: 10.3390/ijms18091859.
 
 6. Lou HQ, Fan W, Xu JM, Gong YL, **Jin JF**, Chen WW, Liu LY, Hai MR, Yang JL, Zheng SJ. An Oxalyl-CoA Synthetase Is Involved in Oxalate Degradation and Aluminum Tolerance. ***Plant Physiology***. 2016, 172(3):1679-1690. doi: 10.1104/pp.16.01106.
+***
+
