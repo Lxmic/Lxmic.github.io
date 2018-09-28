@@ -19,6 +19,7 @@ E-mail: jin19920326@gmail.com
 2015-2018	**PhD-ing;** Zhejiang University; *Cadmium and Aluminum Tolerance Study  of Tomato and Arabidopsis*  
 
 2011-2015	**Bsc;** Taizhou University; *Biological Education*
+
 ***
 
 
