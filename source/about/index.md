@@ -12,19 +12,15 @@ blog: https://othlis.com
 
 E-mail: jin19920326@gmail.com
 
-***
-
 
 
 # Education
 
 ***
 
-2015-	**PhD;** Zhejiang University; *Cadmium and Aluminum Tolerance Study  of Tomato and Arabidopsis*  
+2015-2018	**PhD-ing;** Zhejiang University; *Cadmium and Aluminum Tolerance Study  of Tomato and Arabidopsis*  
 
 2011-2015	**Bsc;** Taizhou University; *Biological Education*
-
-***
 
 
 
@@ -35,8 +31,6 @@ E-mail: jin19920326@gmail.com
 2015	*Teacher Qualification Certificate of High School Biology*; Taizhou Jiaojiang Education bureau
 
 2013	*Qualification Certificate of Psychological Consultant , Third Level*; The Ministry of Human Resources and Social Security of the People's Republic of China
-
-***
 
 
 
