@@ -91,3 +91,8 @@ deploy:
 
 disqus_shortname: lxmicblog
 
+# add post views
+#leancloud_visitors:
+ # enable: true
+  #app_id: feTdKe0W2UzE9MtarIhP8Xcq-gzGzoHsz
+  #app_key: yiI0LGVlxVrG7WHaQp1xFFXw
