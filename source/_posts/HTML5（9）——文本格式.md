@@ -3,7 +3,7 @@ title: HTML5（9）——文本格式
 date: 2018-10-08 11:23:14
 tags:
 - HTML5
-categories: HTML5
+categories: HTML5入门
 ---
 
 ![每天欣赏图片](https://upload-images.jianshu.io/upload_images/3478485-b2224ad5ba559108.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
