@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=6.6.0" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.6.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.6.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.6.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.6.0" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '6.6.0',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="周末了，下个礼拜终于要开学了，好像又要开始摆出努力的样子。一切都是在循环往复，还是希望进步，能够学习一些从没有接触过的实物和技术。  LaTeX是极其专业的排版软件，我也想试试，我就来用它排版我的论文，这样走一遍之后，我想应该基本入门了。在插入表格的时候，遇到了一些问题，特异记录下来。">
+<meta name="keywords" content="LaTeX,表格">
+<meta property="og:type" content="article">
+<meta property="og:title" content="LaTeX插入表格">
+<meta property="og:url" content="http://yoursite.com/2018/09/15/LaTeX插入表格/index.html">
+<meta property="og:site_name" content="Lxmic Blog">
+<meta property="og:description" content="周末了，下个礼拜终于要开学了，好像又要开始摆出努力的样子。一切都是在循环往复，还是希望进步，能够学习一些从没有接触过的实物和技术。  LaTeX是极其专业的排版软件，我也想试试，我就来用它排版我的论文，这样走一遍之后，我想应该基本入门了。在插入表格的时候，遇到了一些问题，特异记录下来。">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-b7d8758edc879c5b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-eb16ad35b99dd364.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-552021decf1e4701.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-e3adcd1c31950f73.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-087fc0b5b2bb79c4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-dd6fe8edb6086b60.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:updated_time" content="2018-12-08T06:06:53.866Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="LaTeX插入表格">
+<meta name="twitter:description" content="周末了，下个礼拜终于要开学了，好像又要开始摆出努力的样子。一切都是在循环往复，还是希望进步，能够学习一些从没有接触过的实物和技术。  LaTeX是极其专业的排版软件，我也想试试，我就来用它排版我的论文，这样走一遍之后，我想应该基本入门了。在插入表格的时候，遇到了一些问题，特异记录下来。">
+<meta name="twitter:image" content="https://upload-images.jianshu.io/upload_images/3478485-b7d8758edc879c5b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+
+
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2018/09/15/LaTeX插入表格/">
+
+
+
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>LaTeX插入表格 | Lxmic Blog</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Lxmic Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <p class="site-subtitle">Everything from life</p>
+      
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="Toggle navigation bar">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>Home</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives</a>
+
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+    
+
+  
+
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/15/LaTeX插入表格/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Jin JF">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Lxmic Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">LaTeX插入表格
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2018-09-15 13:44:09" itemprop="dateCreated datePublished" datetime="2018-09-15T13:44:09+08:00">2018-09-15</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2018-12-08 14:06:53" itemprop="dateModified" datetime="2018-12-08T14:06:53+08:00">2018-12-08</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/LaTeX入门/" itemprop="url" rel="index"><span itemprop="name">LaTeX入门</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h3 id="1-如何插入庞大的表格"><a href="#1-如何插入庞大的表格" class="headerlink" title="1. 如何插入庞大的表格"></a>1. 如何插入庞大的表格</h3><p>我们都知道，LaTeX可以一行一行的插入表格，但是在我们遇到比较庞大的表格时，我们该怎么办，有一个办法就是利用<a href="http://www.tablesgenerator.com/latex_tables" target="_blank" rel="noopener">在线工具</a>进行转换成LaTeX格式的表格，而不需要花大量的时间一行一行输入。<br>只要你输入你的表格，然后点generate，生成相应的表格，让后你只需要输入到你的编辑器中，进行编译就可以。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-b7d8758edc879c5b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="复制表格"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-eb16ad35b99dd364.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="表格复制"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-552021decf1e4701.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="复制表格的内容到编译文本"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-e3adcd1c31950f73.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="可以看到编译后会有一定的溢出"></p>
+<h3 id="2-解决表格溢出的问题"><a href="#2-解决表格溢出的问题" class="headerlink" title="2. 解决表格溢出的问题"></a>2. 解决表格溢出的问题</h3><p>可以缩小字体，也可以修改行之间的距离，也可以缩小整个表格。可以看到，原因在于表头的字体太长了，因此需要使其分行显示，这样一来就可以了。分行你可以定义表格的宽度，使其自动分行或者也可以使用<code>makecell</code>包来进行强制分行。</p>
+<h5 id="2-1-首先我们看看定义表格单列宽度："><a href="#2-1-首先我们看看定义表格单列宽度：" class="headerlink" title="2.1 首先我们看看定义表格单列宽度："></a>2.1 首先我们看看定义表格单列宽度：</h5><p>在下面的代码中，<br><code>\begin{tabular}{p{2cm}p{3cm}p{2.5cm}p{2.5cm}p{2.5cm}p{2.5cm}}</code>，这句是真正起到调节作用的。<code>p{2cm}</code>就是代表第一列的宽度，后面依次是后面的宽度，然后会自动进行换行显示。但是有一个问题就是，发现自动换行以后，字母之间的距离变得很大，不像是只有一个空格的样子。<br><figure class="highlight lsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">\begin&#123;table&#125;[]</span><br><span class="line">	\caption&#123;basic structure&#125;</span><br><span class="line">	\vspace&#123;<span class="number">20</span>pt&#125;</span><br><span class="line">	\centering</span><br><span class="line">	\begin&#123;tabular&#125;&#123;p&#123;<span class="number">2</span>cm&#125;p&#123;<span class="number">3</span>cm&#125;p&#123;<span class="number">2.5</span>cm&#125;p&#123;<span class="number">2.5</span>cm&#125;p&#123;<span class="number">2.5</span>cm&#125;p&#123;<span class="number">2.5</span>cm&#125;&#125;</span><br><span class="line">		\hline</span><br><span class="line">		Gene name &amp; Gene accession No. &amp; CDS length (bp) &amp; Protein size (aa) &amp; Protein MW (kDa) \\</span><br><span class="line">		\hline</span><br><span class="line">		<span class="number">001</span>  &amp; <span class="number">01</span>g009860<span class="number">.2</span>   &amp; <span class="number">819</span>             &amp; <span class="number">272</span>               &amp; <span class="number">31.34</span>            \\</span><br><span class="line">		<span class="number">002</span>  &amp; <span class="number">01</span>g021730<span class="number">.2</span>   &amp; <span class="number">798</span>             &amp; <span class="number">265</span>               &amp; <span class="number">30.37</span>            \\</span><br><span class="line">		<span class="number">003</span>  &amp; <span class="number">01</span>g094490<span class="number">.2</span>   &amp; <span class="number">630</span>             &amp; <span class="number">209</span>               &amp; <span class="number">24.58</span>            \\</span><br><span class="line">		<span class="number">004</span>  &amp; <span class="number">01</span>g102740<span class="number">.2</span>   &amp; <span class="number">1242</span>            &amp; <span class="number">413</span>               &amp; <span class="number">46.94</span>            \\</span><br><span class="line">		<span class="number">005</span>  &amp; <span class="number">01</span>g104900<span class="number">.2</span>   &amp; <span class="number">597</span>             &amp; <span class="number">198</span>               &amp; <span class="number">22.85</span>            \\</span><br><span class="line">		<span class="number">006</span>  &amp; <span class="number">02</span>g036430<span class="number">.1</span>   &amp; <span class="number">1698</span>            &amp; <span class="number">565</span>               &amp; <span class="number">64.88</span>            \\</span><br><span class="line">		<span class="number">007</span>  &amp; <span class="number">02</span>g061780<span class="number">.2</span>   &amp; <span class="number">735</span>             &amp; <span class="number">244</span>               &amp; <span class="number">28.23</span>            \\</span><br><span class="line">		<span class="number">008</span>  &amp; <span class="number">02</span>g061870<span class="number">.1</span>   &amp; <span class="number">660</span>             &amp; <span class="number">219</span>               &amp; <span class="number">25.21</span>            \\</span><br><span class="line">		<span class="number">009</span>  &amp; <span class="number">02</span>g061900<span class="number">.1</span>   &amp; <span class="number">915</span>             &amp; <span class="number">304</span>               &amp; <span class="number">34.61</span>            \\</span><br><span class="line">		<span class="number">010</span>  &amp; <span class="number">02</span>g061910<span class="number">.1</span>   &amp; <span class="number">795</span>             &amp; <span class="number">264</span>               &amp; <span class="number">29.92</span> \\    </span><br><span class="line">		\hline       </span><br><span class="line">	\end&#123;tabular&#125;</span><br><span class="line">	\label&#123;bs2&#125;</span><br><span class="line">\end&#123;table&#125;</span><br></pre></td></tr></table></figure></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-087fc0b5b2bb79c4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="没有溢出"></p>
+<h5 id="2-2-通过makecell宏包来实现换行"><a href="#2-2-通过makecell宏包来实现换行" class="headerlink" title="2.2 通过makecell宏包来实现换行"></a>2.2 通过<code>makecell</code>宏包来实现换行</h5><p><code>makecell</code>中有一个专门的用来处理表头的命令<code>thead[可以选对齐方式]{列名称}</code>。比如文中所示，<code>thead[l]{Gene\\name}</code>就是将gene和name换行显示，l表示左对齐。可以发现，这种方法没有出现字间距变大的情况，比第一种要好。</p>
+<figure class="highlight lsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">\begin&#123;table&#125;[]</span><br><span class="line">    \caption&#123;basic structure&#125;</span><br><span class="line">    \vspace&#123;<span class="number">20</span>pt&#125;</span><br><span class="line">	\centering</span><br><span class="line">	\begin&#123;tabular&#125;&#123;lllll&#125;</span><br><span class="line">		\hline</span><br><span class="line">		\thead[l]&#123;Gene\\name&#125; &amp; \thead[l]&#123;Gene accession\\No. &#125;&amp; \thead[l]&#123;CDS length\\(bp)&#125; &amp; \thead[l]&#123;Protein size\\(aa)&#125; &amp; \thead[l]&#123;Protein MW\\(kDa)&#125; \\</span><br><span class="line">		\hline</span><br><span class="line">		<span class="number">001</span>  &amp; <span class="number">01</span>g009860<span class="number">.2</span>   &amp; <span class="number">819</span>             &amp; <span class="number">272</span>               &amp; <span class="number">31.34</span>            \\</span><br><span class="line">		<span class="number">002</span>  &amp; <span class="number">01</span>g021730<span class="number">.2</span>   &amp; <span class="number">798</span>             &amp; <span class="number">265</span>               &amp; <span class="number">30.37</span>            \\</span><br><span class="line">		<span class="number">003</span>  &amp; <span class="number">01</span>g094490<span class="number">.2</span>   &amp; <span class="number">630</span>             &amp; <span class="number">209</span>               &amp; <span class="number">24.58</span>            \\</span><br><span class="line">		<span class="number">004</span>  &amp; <span class="number">01</span>g102740<span class="number">.2</span>   &amp; <span class="number">1242</span>            &amp; <span class="number">413</span>               &amp; <span class="number">46.94</span>            \\</span><br><span class="line">		<span class="number">005</span>  &amp; <span class="number">01</span>g104900<span class="number">.2</span>   &amp; <span class="number">597</span>             &amp; <span class="number">198</span>               &amp; <span class="number">22.85</span>            \\</span><br><span class="line">		<span class="number">006</span>  &amp; <span class="number">02</span>g036430<span class="number">.1</span>   &amp; <span class="number">1698</span>            &amp; <span class="number">565</span>               &amp; <span class="number">64.88</span>            \\</span><br><span class="line">		<span class="number">007</span>  &amp; <span class="number">02</span>g061780<span class="number">.2</span>   &amp; <span class="number">735</span>             &amp; <span class="number">244</span>               &amp; <span class="number">28.23</span>            \\</span><br><span class="line">		<span class="number">008</span>  &amp; <span class="number">02</span>g061870<span class="number">.1</span>   &amp; <span class="number">660</span>             &amp; <span class="number">219</span>               &amp; <span class="number">25.21</span>            \\</span><br><span class="line">		<span class="number">009</span>  &amp; <span class="number">02</span>g061900<span class="number">.1</span>   &amp; <span class="number">915</span>             &amp; <span class="number">304</span>               &amp; <span class="number">34.61</span>            \\</span><br><span class="line">		<span class="number">010</span>  &amp; <span class="number">02</span>g061910<span class="number">.1</span>   &amp; <span class="number">795</span>             &amp; <span class="number">264</span>               &amp; <span class="number">29.92</span> \\    </span><br><span class="line">		\hline       </span><br><span class="line">	\end&#123;tabular&#125;</span><br><span class="line">	\label&#123;bs&#125;</span><br><span class="line">\end&#123;table&#125;</span><br></pre></td></tr></table></figure>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-dd6fe8edb6086b60.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="编译后的效果"></p>
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+       
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/LaTeX/" rel="tag"># LaTeX</a>
+          
+            <a href="/tags/表格/" rel="tag"># 表格</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/09/14/LaTeX基本语法/" rel="next" title="LaTeX基本语法">
+                <i class="fa fa-chevron-left"></i> LaTeX基本语法
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/09/15/LaTeX参考文献/" rel="prev" title="LaTeX参考文献">
+                LaTeX参考文献 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Jin JF</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">47</span>
+                    <span class="site-state-item-name">posts</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">10</span>
+                    <span class="site-state-item-name">categories</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">46</span>
+                    <span class="site-state-item-name">tags</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+
+          
+
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-如何插入庞大的表格"><span class="nav-number">1.</span> <span class="nav-text">1. 如何插入庞大的表格</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-解决表格溢出的问题"><span class="nav-number">2.</span> <span class="nav-text">2. 解决表格溢出的问题</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#2-1-首先我们看看定义表格单列宽度："><span class="nav-number">2.0.1.</span> <span class="nav-text">2.1 首先我们看看定义表格单列宽度：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-2-通过makecell宏包来实现换行"><span class="nav-number">2.0.2.</span> <span class="nav-text">2.2 通过makecell宏包来实现换行</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Jin JF</span>
+
+  
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v3.8.0</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v6.6.0</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+	
+    
+
+    
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.6.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.6.0"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.6.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.6.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.6.0"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

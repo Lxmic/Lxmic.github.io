@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=6.6.0" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.6.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.6.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.6.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.6.0" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '6.6.0',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="世间存在着太多的契机，你能否抓住是真的关键所在。这次阴差阳错，开始较为认真的入门学习，之前的两篇博文其实都是没有真正地开始学习，只是告诉别人你要开始去学习了。雷声大，雨点小，总是很多人的通病，我也有这样的坏毛病。">
+<meta name="keywords" content="LaTeX,编码语法">
+<meta property="og:type" content="article">
+<meta property="og:title" content="LaTeX基本语法">
+<meta property="og:url" content="http://yoursite.com/2018/09/14/LaTeX基本语法/index.html">
+<meta property="og:site_name" content="Lxmic Blog">
+<meta property="og:description" content="世间存在着太多的契机，你能否抓住是真的关键所在。这次阴差阳错，开始较为认真的入门学习，之前的两篇博文其实都是没有真正地开始学习，只是告诉别人你要开始去学习了。雷声大，雨点小，总是很多人的通病，我也有这样的坏毛病。">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-64aa8d1452483bca.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-ffc751b9e7f0a664.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-6839a37e479fbc69.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:updated_time" content="2018-12-08T06:06:53.866Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="LaTeX基本语法">
+<meta name="twitter:description" content="世间存在着太多的契机，你能否抓住是真的关键所在。这次阴差阳错，开始较为认真的入门学习，之前的两篇博文其实都是没有真正地开始学习，只是告诉别人你要开始去学习了。雷声大，雨点小，总是很多人的通病，我也有这样的坏毛病。">
+<meta name="twitter:image" content="https://upload-images.jianshu.io/upload_images/3478485-64aa8d1452483bca.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+
+
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2018/09/14/LaTeX基本语法/">
+
+
+
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>LaTeX基本语法 | Lxmic Blog</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Lxmic Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <p class="site-subtitle">Everything from life</p>
+      
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="Toggle navigation bar">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>Home</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives</a>
+
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+    
+
+  
+
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/14/LaTeX基本语法/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Jin JF">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Lxmic Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">LaTeX基本语法
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2018-09-14 14:37:53" itemprop="dateCreated datePublished" datetime="2018-09-14T14:37:53+08:00">2018-09-14</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2018-12-08 14:06:53" itemprop="dateModified" datetime="2018-12-08T14:06:53+08:00">2018-12-08</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/LaTeX入门/" itemprop="url" rel="index"><span itemprop="name">LaTeX入门</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>开始进入今天的主题，通过一篇博文来学习一些LaTeX的语法，这才是实践，能够很好的加深自己的记忆。</p>
+<h1 id="1-文档源代码"><a href="#1-文档源代码" class="headerlink" title="1. 文档源代码"></a>1. 文档源代码</h1><p>下面是我编写的文档源代码：<br><figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">\<span class="name">documentclass</span><span class="string">&#123;article&#125;</span></span> </span><br><span class="line"><span class="tag">\<span class="name">usepackage</span><span class="string">&#123;ctex&#125;</span></span></span><br><span class="line"><span class="tag">\<span class="name">usepackage</span><span class="string">&#123;graphicx&#125;</span></span></span><br><span class="line"><span class="tag">\<span class="name">usepackage</span><span class="string">&#123;caption2&#125;</span></span></span><br><span class="line"><span class="tag">\<span class="name">usepackage</span><span class="string">&#123;subfigure&#125;</span></span></span><br><span class="line"><span class="tag">\<span class="name">usepackage</span><span class="string">&#123;float&#125;</span></span></span><br><span class="line"></span><br><span class="line"><span class="tag">\<span class="name">title</span><span class="string">&#123;狼伴归途&#125;</span></span></span><br><span class="line"><span class="tag">\<span class="name">author</span><span class="string">&#123;Lxmic&#125;</span></span></span><br><span class="line"><span class="tag">\<span class="name">date</span><span class="string">&#123;Sep 8th, 2018&#125;</span></span></span><br><span class="line"></span><br><span class="line"><span class="tag">\<span class="name">begin</span><span class="string">&#123;document&#125;</span></span></span><br><span class="line">	<span class="tag">\<span class="name">maketitle</span></span></span><br><span class="line">	狼伴归途，最精彩的就是宏大的史前场景再现，让人看了非常的享受，被其所征服。故事的情节还是比较的简单，年轻的孩子在失去父母呵护之后，通过自己的和狼的努力，经历千辛万苦最后回到了父母的怀抱(图 <span class="tag">\<span class="name">ref</span><span class="string">&#123;wolf&#125;</span></span> 所示)。狼和孩子一起，最终平安到家，并为部落带来了狼这种动物，我想之后就是被驯化成狗。<span class="tag">\<span class="name">\</span></span></span><br><span class="line">	</span><br><span class="line">	<span class="tag">\<span class="name">renewcommand</span><span class="string">&#123;\figurename&#125;</span><span class="string">&#123;图&#125;</span></span></span><br><span class="line">	<span class="tag">\<span class="name">renewcommand</span><span class="string">&#123;\captionlabeldelim&#125;</span><span class="string">&#123;.&#125;</span></span></span><br><span class="line">	</span><br><span class="line">	<span class="tag">\<span class="name">begin</span><span class="string">&#123;figure&#125;</span><span class="string">[h]</span></span></span><br><span class="line">	<span class="tag">\<span class="name">centering</span></span></span><br><span class="line">	<span class="tag">\<span class="name">includegraphics</span><span class="string">[width=1\textwidth]</span><span class="string">&#123;wolf&#125;</span></span></span><br><span class="line">	<span class="tag">\<span class="name">caption</span><span class="string">&#123;狼伴归途&#125;</span></span></span><br><span class="line">	<span class="tag">\<span class="name">label</span><span class="string">&#123;wolf&#125;</span></span></span><br><span class="line">	<span class="tag">\<span class="name">end</span><span class="string">&#123;figure&#125;</span></span></span><br><span class="line"></span><br><span class="line">	<span class="tag">\<span class="name">begin</span><span class="string">&#123;figure&#125;</span><span class="string">[H]</span></span></span><br><span class="line">	<span class="tag">\<span class="name">centering</span></span></span><br><span class="line">	<span class="tag">\<span class="name">subfigure</span><span class="string">[场景1]</span><span class="string">&#123;</span></span></span><br><span class="line"><span class="tag"><span class="string">	\begin&#123;minipage&#125;</span><span class="string">[b]</span><span class="string">&#123;0.45\textwidth&#125;</span></span></span><br><span class="line">	<span class="tag">\<span class="name">centering</span></span></span><br><span class="line">	<span class="tag">\<span class="name">includegraphics</span><span class="string">[width=0.8\textwidth]</span><span class="string">&#123;wolf2&#125;</span></span> <span class="tag">\<span class="name">\</span></span></span><br><span class="line">	<span class="tag">\<span class="name">includegraphics</span><span class="string">[width=0.8\textwidth]</span><span class="string">&#123;wolf3&#125;</span></span></span><br><span class="line"><span class="tag">\<span class="name">end</span><span class="string">&#123;minipage&#125;</span></span></span><br><span class="line">&#125;</span><br><span class="line">	<span class="tag">\<span class="name">subfigure</span><span class="string">[场景2]</span><span class="string">&#123;</span></span></span><br><span class="line"><span class="tag"><span class="string">	\begin&#123;minipage&#125;</span><span class="string">[b]</span><span class="string">&#123;0.45\textwidth&#125;</span></span></span><br><span class="line">	<span class="tag">\<span class="name">centering</span></span></span><br><span class="line">	<span class="tag">\<span class="name">includegraphics</span><span class="string">[width=0.8\textwidth]</span><span class="string">&#123;wolf4&#125;</span></span><span class="tag">\<span class="name">\</span></span></span><br><span class="line">	<span class="tag">\<span class="name">includegraphics</span><span class="string">[width=0.8\textwidth]</span><span class="string">&#123;wolf5&#125;</span></span></span><br><span class="line">	<span class="tag">\<span class="name">end</span><span class="string">&#123;minipage&#125;</span></span></span><br><span class="line">&#125;</span><br><span class="line">	<span class="tag">\<span class="name">caption</span><span class="string">&#123;狼伴归途场景&#125;</span></span></span><br><span class="line">	<span class="tag">\<span class="name">label</span><span class="string">&#123;wolf2&#125;</span></span></span><br><span class="line">	<span class="tag">\<span class="name">end</span><span class="string">&#123;figure&#125;</span></span></span><br><span class="line"></span><br><span class="line">	</span><br><span class="line"><span class="tag">\<span class="name">end</span><span class="string">&#123;document&#125;</span></span></span><br></pre></td></tr></table></figure></p>
+<h1 id="2-编译后的结果"><a href="#2-编译后的结果" class="headerlink" title="2. 编译后的结果"></a>2. 编译后的结果</h1><p><img src="https://upload-images.jianshu.io/upload_images/3478485-64aa8d1452483bca.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="狼伴归途"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-ffc751b9e7f0a664.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<h1 id="3-代码解释"><a href="#3-代码解释" class="headerlink" title="3. 代码解释"></a>3. 代码解释</h1><p>第一部分是文档的导言部分，文档的全局设置及版面相关的内容都在这里进行设置。和其他编程语言有注释一样，LaTeX也可以在代码中写入注释信息，但是区别在于LaTeX的注释符号是<code>%</code>，其后面的内容在编译的时候被自动忽略。</p>
+<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">\<span class="name">documentclass</span><span class="string">&#123;article&#125;</span></span> </span><br><span class="line"><span class="tag">\<span class="name">usepackage</span><span class="string">&#123;ctex&#125;</span></span></span><br><span class="line"><span class="tag">\<span class="name">usepackage</span><span class="string">&#123;graphicx&#125;</span></span></span><br><span class="line"><span class="tag">\<span class="name">usepackage</span><span class="string">&#123;caption2&#125;</span></span></span><br><span class="line"><span class="tag">\<span class="name">usepackage</span><span class="string">&#123;subfigure&#125;</span></span></span><br><span class="line"><span class="tag">\<span class="name">usepackage</span><span class="string">&#123;float&#125;</span></span></span><br></pre></td></tr></table></figure>
+<h3 id="3-1-确定基础文档类型及宏包"><a href="#3-1-确定基础文档类型及宏包" class="headerlink" title="3.1 确定基础文档类型及宏包"></a>3.1 确定基础文档类型及宏包</h3><p><code>\documentclass{article}</code>是确定了文档类型为article，一般LaTeX提供三种基本文档，此外两种是report和book。三者分别用来写小篇幅的文章、中篇幅的报告和长篇幅的书籍。</p>
+<p>此外使用<code>\usepackage{}</code>语法来使用相应的宏包，本文使用的宏包：</p>
+<blockquote>
+<p>ctex——用来编译中文字体，并且配合Texstudio 中XeLaTeX编译器选择，就可以编译这样的中文文档。<br>graphicx——用来在文档中插入图片<br>caption2——修改图注相关<br>subfigure——用来插入插入并列分布的图片<br>float——确定图片是否为浮动，而不是在一个固定的地方。</p>
+</blockquote>
+<h3 id="3-2-声明文章的标题、作者和日期"><a href="#3-2-声明文章的标题、作者和日期" class="headerlink" title="3.2 声明文章的标题、作者和日期"></a>3.2 声明文章的标题、作者和日期</h3><p><code>\title{}</code>是用来写文档的题目，<code>\author{是用来指明作者}</code>，<code>\date是确定写作日期</code></p>
+<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">\<span class="name">title</span><span class="string">&#123;狼伴归途&#125;</span></span></span><br><span class="line"><span class="tag">\<span class="name">author</span><span class="string">&#123;Lxmic&#125;</span></span></span><br><span class="line"><span class="tag">\<span class="name">date</span><span class="string">&#123;Sep 8th, 2018&#125;</span></span></span><br></pre></td></tr></table></figure>
+<h3 id="3-3-正文内容"><a href="#3-3-正文内容" class="headerlink" title="3.3 正文内容"></a>3.3 正文内容</h3><p>一般需要使用<code>\begin{document}和\end {document}</code>来声明document环境，之间的内容是文章的正文部分，也是直接输出的部分。</p>
+<blockquote>
+<p>这里要说明一下环境和命令的定义：在LaTeX中，命令就是\command这样的形式，可以带参数，也可以不带。这里的<code>title{}</code>就是命令，是单个形式存在。而环境，则是成对出现的，能够定义一个分组（group），这里的<code>\begin{document}和\end {document}</code>就是document环境，成对出现。</p>
+</blockquote>
+<h3 id="3-4-图片插入"><a href="#3-4-图片插入" class="headerlink" title="3.4 图片插入"></a>3.4 图片插入</h3><h4 id="3-4-1-单一图片"><a href="#3-4-1-单一图片" class="headerlink" title="3.4.1 单一图片"></a>3.4.1 单一图片</h4><p>在导言部分，我们已经使用<code>graphicx</code>宏包来插入需要的图片。<br>一般在正文中，插入一张图片的最简单的语法：<code>\includegraphics{wolf}</code>，wolf是图片名称，你最好将你的图片和tex文档放在同一个目录下面，这样就可以像我这样直接插入图片。<br>当然，除此之外，你也可以使用figure环境，来插入图片，并且设置一些图片相关参数。</p>
+<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">\<span class="name">begin</span><span class="string">&#123;figure&#125;</span><span class="string">[h]</span></span> <span class="comment">%figure环境，h默认参数是可以浮动，不是固定在当前位置。如果要不浮动，你就可以使用大写float宏包的H参数，固定图片在当前位置，禁止浮动。</span></span><br><span class="line">	<span class="tag">\<span class="name">centering</span></span> <span class="comment">%使图片居中显示</span></span><br><span class="line">	<span class="tag">\<span class="name">includegraphics</span><span class="string">[width=1\textwidth]</span><span class="string">&#123;wolf&#125;</span></span> <span class="comment">%中括号中的参数是设置图片充满文档的大小，你也可以使用小数来缩小图片的尺寸。</span></span><br><span class="line">	<span class="tag">\<span class="name">caption</span><span class="string">&#123;狼伴归途&#125;</span></span> <span class="comment">%caption是用来给图片加上图题的</span></span><br><span class="line">	<span class="tag">\<span class="name">label</span><span class="string">&#123;wolf&#125;</span></span> <span class="comment">%这是添加标签，方便在文章中引用图片。</span></span><br><span class="line"><span class="tag">\<span class="name">end</span><span class="string">&#123;figure&#125;</span></span><span class="comment">%figure环境</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>一般情况下，图题的格式是<code>Figure 1：this is love，中文的是图 1：狼伴归途</code>。如果要想论文中的格式<code>Fig. 1</code>或者<code>图 1</code>这样的形式，那么我们需要重新定义图注相关的命令，来实现。<code>\renewcommand</code>用来改变已有命令的定义，后面直接跟命令和相关内容。<br><code>\renewcommand{\figurename}{图/Fig.}</code>——把图名字改成图，但是中文编译可能不需要修改，英文修改成Fig.<br><code>\renewcommand{\captionlabeldelim}{ }</code>——这是修改分割符，我们改成空格。文中我使用了“·”来作为分割符。<br>关于图片的引用问题，<code>\ref{图片label}</code>命令是用来引用图片，只是一个序号，你可以添加相应的文字描述，如文中所示。</p>
+</blockquote>
+<h4 id="3-4-2-多图片插入"><a href="#3-4-2-多图片插入" class="headerlink" title="3.4.2 多图片插入"></a>3.4.2 多图片插入</h4><p>很多时候，我们写相关文章，需要的往往插入很多图片，包括两张图片的比较，就需要横向排列。这时候我们就需要用到<code>\subfigure[单个图片的名称]{\includegraphics[图片参数]{你文件夹中图片名称}}</code>来插入多张图片。当然，在图片大小超过文档宽度的时候，图片会自动在另一行中显示，成为上下的格式，但这不是真正的分行显示。<br><figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">	<span class="tag">\<span class="name">begin</span><span class="string">&#123;figure&#125;</span><span class="string">[H]</span></span></span><br><span class="line">	<span class="tag">\<span class="name">centering</span></span></span><br><span class="line">	<span class="tag">\<span class="name">subfigure</span><span class="string">[场景1]</span><span class="string">&#123;</span></span></span><br><span class="line"><span class="tag"><span class="string">	\includegraphics[width=0.45\textwidth]&#123;wolf2&#125;</span></span> </span><br><span class="line">&#125;</span><br><span class="line">	<span class="tag">\<span class="name">subfigure</span><span class="string">[场景2]</span><span class="string">&#123;</span></span></span><br><span class="line"><span class="tag"><span class="string">    \includegraphics[width=0.45\textwidth]&#123;wolf4&#125;</span></span></span><br><span class="line">&#125;</span><br><span class="line">	<span class="tag">\<span class="name">caption</span><span class="string">&#123;狼伴归途场景&#125;</span></span></span><br><span class="line">	<span class="tag">\<span class="name">label</span><span class="string">&#123;wolf2&#125;</span></span></span><br><span class="line">	<span class="tag">\<span class="name">end</span><span class="string">&#123;figure&#125;</span></span></span><br></pre></td></tr></table></figure></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-6839a37e479fbc69.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="两图片横向排列"></p>
+<p>如果你想分行显示，那么我们就需要使用<code>minipage环境：\begin{miniage}和\end{minipage}</code>来进行排版设计。在整个subfigure下，我使用minipage环境来进行添加竖排图片。<code>b选项用于带有图片的小叶，\vspace则用来改变上下图片之见的距离，里面的值正数是增加距离，负数则是减少距离。</code>。而且，你还需要在第一幅图片之后添加\来表示换行，这样<code>\vspace</code>才可能进行能起到效果。</p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">	\begin&#123;figure&#125;[H]</span><br><span class="line">	\centering</span><br><span class="line">	\subfigure[场景<span class="number">1</span>]&#123;</span><br><span class="line"> \begin&#123;minipage&#125;[b]&#123;<span class="number">0.45</span>\textwidth&#125;</span><br><span class="line">	\centering</span><br><span class="line">	\includegraphics[width=<span class="number">0.8</span>\textwidth]&#123;wolf2&#125; \\</span><br><span class="line">	\vspace&#123;10pt&#125;</span><br><span class="line">	\includegraphics[width=<span class="number">0.8</span>\textwidth]&#123;wolf3&#125;</span><br><span class="line">\end&#123;minipage&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1 id="4-参考资料："><a href="#4-参考资料：" class="headerlink" title="4. 参考资料："></a>4. 参考资料：</h1><blockquote>
+<p>1.刘海洋老师的LaTeX入门及<br>2.博客：<a href="https://blog.csdn.net/a6822342/article/details/80533135" target="_blank" rel="noopener">https://blog.csdn.net/a6822342/article/details/80533135</a><br>3.还有youtube的LaTeX基础视频：<br><a href="https://www.youtube.com/watch?v=Qg2WtaSy-zQ&amp;list=PLCRFsOKSM7ePUBOfh3O-K5XZldM5uCPwk" target="_blank" rel="noopener">https://www.youtube.com/watch?v=Qg2WtaSy-zQ&amp;list=PLCRFsOKSM7ePUBOfh3O-K5XZldM5uCPwk</a><br>可能有些人没法看这里的视频，我将其上传到百度网盘：<br>链接:<a href="https://pan.baidu.com/s/19ssorJAODdv4by366qI0Ww" target="_blank" rel="noopener">https://pan.baidu.com/s/19ssorJAODdv4by366qI0Ww</a>  密码:x6em</p>
+</blockquote>
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+       
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/LaTeX/" rel="tag"># LaTeX</a>
+          
+            <a href="/tags/编码语法/" rel="tag"># 编码语法</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/09/13/狼伴归途/" rel="next" title="狼伴归途">
+                <i class="fa fa-chevron-left"></i> 狼伴归途
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/09/15/LaTeX插入表格/" rel="prev" title="LaTeX插入表格">
+                LaTeX插入表格 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Jin JF</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">47</span>
+                    <span class="site-state-item-name">posts</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">10</span>
+                    <span class="site-state-item-name">categories</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">46</span>
+                    <span class="site-state-item-name">tags</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+
+          
+
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1-文档源代码"><span class="nav-number">1.</span> <span class="nav-text">1. 文档源代码</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-编译后的结果"><span class="nav-number">2.</span> <span class="nav-text">2. 编译后的结果</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-代码解释"><span class="nav-number">3.</span> <span class="nav-text">3. 代码解释</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-1-确定基础文档类型及宏包"><span class="nav-number">3.0.1.</span> <span class="nav-text">3.1 确定基础文档类型及宏包</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-2-声明文章的标题、作者和日期"><span class="nav-number">3.0.2.</span> <span class="nav-text">3.2 声明文章的标题、作者和日期</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-3-正文内容"><span class="nav-number">3.0.3.</span> <span class="nav-text">3.3 正文内容</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-4-图片插入"><span class="nav-number">3.0.4.</span> <span class="nav-text">3.4 图片插入</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#3-4-1-单一图片"><span class="nav-number">3.0.4.1.</span> <span class="nav-text">3.4.1 单一图片</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-4-2-多图片插入"><span class="nav-number">3.0.4.2.</span> <span class="nav-text">3.4.2 多图片插入</span></a></li></ol></li></ol></li></ol><li class="nav-item nav-level-1"><a class="nav-link" href="#4-参考资料："><span class="nav-number">4.</span> <span class="nav-text">4. 参考资料：</span></a></li></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Jin JF</span>
+
+  
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v3.8.0</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v6.6.0</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+	
+    
+
+    
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.6.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.6.0"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.6.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.6.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.6.0"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

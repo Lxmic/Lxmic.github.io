@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=6.6.0" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.6.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.6.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.6.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.6.0" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '6.6.0',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="参考文献可以说是写论文时候最头疼的事情，如果你手动一条一条去输入的话，也是可以的，但是毕竟还是累的，效率也不怎么样。当然你也可以用经典的Endnote软件来管理你的文献，自动插入文献，当然也很好了，可是据说在你调整文章顺序时候会变得麻烦。好像natbib还是不错的，可能比较容易修改。">
+<meta name="keywords" content="LaTeX,参考文献">
+<meta property="og:type" content="article">
+<meta property="og:title" content="LaTeX参考文献">
+<meta property="og:url" content="http://yoursite.com/2018/09/15/LaTeX参考文献/index.html">
+<meta property="og:site_name" content="Lxmic Blog">
+<meta property="og:description" content="参考文献可以说是写论文时候最头疼的事情，如果你手动一条一条去输入的话，也是可以的，但是毕竟还是累的，效率也不怎么样。当然你也可以用经典的Endnote软件来管理你的文献，自动插入文献，当然也很好了，可是据说在你调整文章顺序时候会变得麻烦。好像natbib还是不错的，可能比较容易修改。">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-ac1103f387453aa9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-2e8df5846da5448d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-7c26f7d1dde47e66.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-2068d6207c5af1c7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-78681015ee68764b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:updated_time" content="2018-12-08T06:06:53.865Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="LaTeX参考文献">
+<meta name="twitter:description" content="参考文献可以说是写论文时候最头疼的事情，如果你手动一条一条去输入的话，也是可以的，但是毕竟还是累的，效率也不怎么样。当然你也可以用经典的Endnote软件来管理你的文献，自动插入文献，当然也很好了，可是据说在你调整文章顺序时候会变得麻烦。好像natbib还是不错的，可能比较容易修改。">
+<meta name="twitter:image" content="https://upload-images.jianshu.io/upload_images/3478485-ac1103f387453aa9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+
+
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2018/09/15/LaTeX参考文献/">
+
+
+
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>LaTeX参考文献 | Lxmic Blog</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Lxmic Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <p class="site-subtitle">Everything from life</p>
+      
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="Toggle navigation bar">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>Home</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives</a>
+
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+    
+
+  
+
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/15/LaTeX参考文献/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Jin JF">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Lxmic Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">LaTeX参考文献
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2018-09-15 17:22:11" itemprop="dateCreated datePublished" datetime="2018-09-15T17:22:11+08:00">2018-09-15</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2018-12-08 14:06:53" itemprop="dateModified" datetime="2018-12-08T14:06:53+08:00">2018-12-08</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/LaTeX入门/" itemprop="url" rel="index"><span itemprop="name">LaTeX入门</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="1-引用方式"><a href="#1-引用方式" class="headerlink" title="1. 引用方式"></a>1. 引用方式</h1><p>这是我自己随便写的一个例子，用来说明一些问题。<br><code>\usepackage[round]{natbib}</code>是要使用的宏包。</p>
+<blockquote>
+<p>round是代表圆括号，还有很多其他的参数，可以去搜索。<br>natbib就是管理文献的包。<br><code>\bibliographystyle{plainnat}</code>这个命令是用来定义文献的格式。<br><code>\bibliography{art}</code>这个命令是选择你文献的所在的文件，bib后缀，但是你可以不写后缀，会自动搜索。<br><code>\cite{}是引用的命令，可以在文中你想引用的地方出现</code></p>
+</blockquote>
+<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">\<span class="name">documentclass</span><span class="string">&#123;report&#125;</span></span></span><br><span class="line"><span class="tag">\<span class="name">usepackage</span><span class="string">[round]</span><span class="string">&#123;natbib&#125;</span></span></span><br><span class="line"><span class="tag">\<span class="name">renewcommand</span><span class="string">&#123;\bibname&#125;</span><span class="string">&#123;reference&#125;</span></span></span><br><span class="line"></span><br><span class="line"><span class="tag">\<span class="name">begin</span><span class="string">&#123;document&#125;</span></span></span><br><span class="line">		The results of structural analyses of NAC domains will</span><br><span class="line">	be helpful in further functional analysis of the NAC family.</span><br><span class="line">	Many groups and subgroups consist of NAC domains</span><br><span class="line">	from both O. sativa and A. thaliana <span class="tag">\<span class="name">cite</span><span class="string">&#123;2001&#125;</span></span></span><br><span class="line">	<span class="tag">\<span class="name">bibliographystyle</span><span class="string">&#123;plainnat&#125;</span></span></span><br><span class="line">	<span class="tag">\<span class="name">bibliography</span><span class="string">&#123;art&#125;</span></span></span><br><span class="line"><span class="tag">\<span class="name">end</span><span class="string">&#123;document&#125;</span></span></span><br></pre></td></tr></table></figure>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-ac1103f387453aa9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="可以看到引用"></p>
+<ul>
+<li>你可以看到，这个例子我使用文档类型是report，本应该是bibliography（系统默认的），但是因为导言区<code>\renewcommand{\bibname}{reference}</code>这条命令，改变了这个标题。</li>
+</ul>
+<blockquote>
+<p>这里存在一个问题，我是没有解决掉。如果我用biblatex宏包来进行文献的引用，那么当我的文档是report的时候，出现的bibliography我是没有办法使用<code>\bibname</code>命令来修改的，当时就有点崩溃，后来就改了natbib这个来进行。<br>此外，如果你选natbib，那么要在texlive中将bib的编译工具选择为<code>bibtex</code>，而不是其他，否则还是会有问题的。</p>
+</blockquote>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-2e8df5846da5448d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="这里出现的是reference而不是bibliography"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-7c26f7d1dde47e66.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<h1 id="2-如何找到bib文献格式？"><a href="#2-如何找到bib文献格式？" class="headerlink" title="2. 如何找到bib文献格式？"></a>2. 如何找到bib文献格式？</h1><p>那么bib文献的格式到底是怎么样的呢？又怎么得到这些格式呢？<br>格式如下：我们在引用的时候主要是在<code>\cite{}</code>中填写2001这个关键词，这个关键词你可以随便修改，没有问题。</p>
+<figure class="highlight perl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">@article&#123;<span class="number">2001</span>,</span><br><span class="line">  title=&#123;Mutations in a member of the ADAMTS gene family cause thrombotic thrombocytopenic purpura&#125;,</span><br><span class="line">  author=&#123;Levy, Gallia G <span class="keyword">and</span> Nichols, William C <span class="keyword">and</span> Lian, Eric C <span class="keyword">and</span> Foroud, Tatiana <span class="keyword">and</span> McClintick, Jeanette N <span class="keyword">and</span> McGee, Beth M <span class="keyword">and</span> Yang, Angela Y <span class="keyword">and</span> Siemieniak, David R <span class="keyword">and</span> Stark, Kenneth R <span class="keyword">and</span> Gruppo, Ralph <span class="keyword">and</span> others&#125;,</span><br><span class="line">  journal=<span class="string">&#123;Nature&#125;</span>,</span><br><span class="line">  volume=<span class="string">&#123;413&#125;</span>,</span><br><span class="line">  number=<span class="string">&#123;6855&#125;</span>,</span><br><span class="line">  pages=<span class="string">&#123;488&#125;</span>,</span><br><span class="line">  year=<span class="string">&#123;2001&#125;</span>,</span><br><span class="line">  publisher=&#123;Nature Publishing Group&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>一般使用google学术就可以下载到bib文献格式。如果你没有这个按钮，那么可以在settings中找到。如果不能用Google的同学，那可以找找其他的方法。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-2068d6207c5af1c7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-78681015ee68764b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="选择bibtex就可以，保存，就会出现"></p>
+<h1 id="3-如何将参考文献插入目录"><a href="#3-如何将参考文献插入目录" class="headerlink" title="3. 如何将参考文献插入目录"></a>3. 如何将参考文献插入目录</h1><p>在LaTeX默认环境下，参考文献是不会被<code>\tableofcontents</code>编译到目录中，因此我们还需要添加其他的命令来将参考文献成为独立的一章内容，从而被添加到目录。主要就是添加<code>\clearpage</code>和<code>\addcontentsline{toc}{chapter}{reference}</code></p>
+<blockquote>
+<p>参考：<a href="http://www.voidcn.com/article/p-uqvbmfdg-bok.html" target="_blank" rel="noopener">http://www.voidcn.com/article/p-uqvbmfdg-bok.html</a><br><figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">\<span class="name">bibliographystyle</span><span class="string">&#123;plainnat&#125;</span></span></span><br><span class="line"><span class="tag">\<span class="name">clearpage</span></span></span><br><span class="line"><span class="tag">\<span class="name">addcontentsline</span><span class="string">&#123;toc&#125;</span><span class="string">&#123;chapter&#125;</span><span class="string">&#123;reference&#125;</span></span> </span><br><span class="line"><span class="tag">\<span class="name">bibliography</span><span class="string">&#123;ref.bib&#125;</span></span></span><br></pre></td></tr></table></figure></p>
+</blockquote>
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+       
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/LaTeX/" rel="tag"># LaTeX</a>
+          
+            <a href="/tags/参考文献/" rel="tag"># 参考文献</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/09/15/LaTeX插入表格/" rel="next" title="LaTeX插入表格">
+                <i class="fa fa-chevron-left"></i> LaTeX插入表格
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/09/20/TBtools中关于染色体定位的问题/" rel="prev" title="TBtools中关于染色体定位的问题">
+                TBtools中关于染色体定位的问题 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Jin JF</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">47</span>
+                    <span class="site-state-item-name">posts</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">10</span>
+                    <span class="site-state-item-name">categories</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">46</span>
+                    <span class="site-state-item-name">tags</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+
+          
+
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1-引用方式"><span class="nav-number">1.</span> <span class="nav-text">1. 引用方式</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-如何找到bib文献格式？"><span class="nav-number">2.</span> <span class="nav-text">2. 如何找到bib文献格式？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-如何将参考文献插入目录"><span class="nav-number">3.</span> <span class="nav-text">3. 如何将参考文献插入目录</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Jin JF</span>
+
+  
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v3.8.0</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v6.6.0</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+	
+    
+
+    
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.6.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.6.0"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.6.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.6.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.6.0"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

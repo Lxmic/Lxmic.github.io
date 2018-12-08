@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=6.6.0" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.6.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.6.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.6.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.6.0" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '6.6.0',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="出尔反尔，冲动的时候总是觉得自己能够成功，结果也是意料之中。如同word中的文字格式，在HTML中，也有相应的格式元素来实现文本格式改变，下面一起来看看。">
+<meta name="keywords" content="HTML5">
+<meta property="og:type" content="article">
+<meta property="og:title" content="HTML5（9）——文本格式">
+<meta property="og:url" content="http://yoursite.com/2018/10/08/HTML5（9）——文本格式/index.html">
+<meta property="og:site_name" content="Lxmic Blog">
+<meta property="og:description" content="出尔反尔，冲动的时候总是觉得自己能够成功，结果也是意料之中。如同word中的文字格式，在HTML中，也有相应的格式元素来实现文本格式改变，下面一起来看看。">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-be89d5c34d56ae51.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-b467e4ba6dbd1ca2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-4c086dfd934a10d3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-75868852fdbca9cb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-b1fc8ed5f64cc674.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-ae02800722131a6d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:updated_time" content="2018-12-08T06:06:53.865Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="HTML5（9）——文本格式">
+<meta name="twitter:description" content="出尔反尔，冲动的时候总是觉得自己能够成功，结果也是意料之中。如同word中的文字格式，在HTML中，也有相应的格式元素来实现文本格式改变，下面一起来看看。">
+<meta name="twitter:image" content="https://upload-images.jianshu.io/upload_images/3478485-be89d5c34d56ae51.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+
+
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2018/10/08/HTML5（9）——文本格式/">
+
+
+
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>HTML5（9）——文本格式 | Lxmic Blog</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Lxmic Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <p class="site-subtitle">Everything from life</p>
+      
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="Toggle navigation bar">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>Home</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives</a>
+
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+    
+
+  
+
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/08/HTML5（9）——文本格式/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Jin JF">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Lxmic Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">HTML5（9）——文本格式
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2018-10-08 11:23:14" itemprop="dateCreated datePublished" datetime="2018-10-08T11:23:14+08:00">2018-10-08</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2018-12-08 14:06:53" itemprop="dateModified" datetime="2018-12-08T14:06:53+08:00">2018-12-08</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/HTML5入门/" itemprop="url" rel="index"><span itemprop="name">HTML5入门</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="HTML格式元素"><a href="#HTML格式元素" class="headerlink" title="HTML格式元素"></a><font color="green">HTML格式元素</font></h2><p>与之前学习的<code>style</code>属性其实有相同的功能，而HTML自己也有特殊的文本格式特定的元素。下面是HTML中格式元素：</p>
+<ul>
+<li><code>&lt;b&gt;</code> - Bold text</li>
+<li><code>&lt;strong&gt;</code> - Important text</li>
+<li><code>&lt;i&gt;</code> - Italic text</li>
+<li><code>&lt;em&gt;</code> - Emphasized text</li>
+<li><code>&lt;mark&gt;</code> - Marked text</li>
+<li><code>&lt;small&gt;</code> - Small text</li>
+<li><code>&lt;del&gt;</code> - Deleted text</li>
+<li><code>&lt;ins&gt;</code> - Inserted text</li>
+<li><code>&lt;sub&gt;</code> - Subscript text</li>
+<li><code>&lt;sup&gt;</code> - Superscript text</li>
+</ul>
+<h2 id="b和strong元素"><a href="#b和strong元素" class="headerlink" title="b和strong元素"></a><font color="green">b和strong元素</font></h2><p>两者在网页中均显示为粗体，但是两者的区别在于前者只是样式的改变，而后者是具有语义上的强调。</p>
+<h2 id="斜体元素"><a href="#斜体元素" class="headerlink" title="斜体元素"></a><font color="green">斜体元素</font></h2><p><code>&lt;i&gt;</code> 和<code>&lt;em&gt;</code>在HTML中都是斜体，但是后者同样是由语义 上的强调</p>
+<h2 id="small元素"><a href="#small元素" class="headerlink" title="small元素"></a><font color="green">small元素</font></h2><p><code>&lt;small&gt;</code>是用来定义更小的文本。<code>&lt;h2&gt;HTML &lt;small&gt;Small&lt;/small&gt; Formatting&lt;/h2&gt;</code><br><img src="https://upload-images.jianshu.io/upload_images/3478485-be89d5c34d56ae51.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="更小的字体"></p>
+<h2 id="mark元素"><a href="#mark元素" class="headerlink" title="mark元素"></a><font color="green">mark元素</font></h2><p>它是用来标记文本的，例如：<br><code>&lt;h2&gt;HTML &lt;mark&gt;Marked&lt;/mark&gt; Formatting&lt;/h2&gt;</code><br><img src="https://upload-images.jianshu.io/upload_images/3478485-b467e4ba6dbd1ca2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="黄色显示标记"></p>
+<h2 id="del元素"><a href="#del元素" class="headerlink" title="del元素"></a><font color="green">del元素</font></h2><p>del是用来画横线删除文字，但文字已然存在，也算是一种修改方式。<code>&lt;p&gt;My favorite color is &lt;del&gt;blue&lt;/del&gt; red.&lt;/p&gt;</code><br><img src="https://upload-images.jianshu.io/upload_images/3478485-4c086dfd934a10d3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="blue被删除"></p>
+<h2 id="ins元素"><a href="#ins元素" class="headerlink" title="ins元素"></a><font color="green">ins元素</font></h2><p>用下划线来表示文本的插入。<br><code>&lt;p&gt;My favorite &lt;ins&gt;color&lt;/ins&gt; is red.&lt;/p&gt;</code><br><img src="https://upload-images.jianshu.io/upload_images/3478485-75868852fdbca9cb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="下划线的color"></p>
+<h2 id="sub元素"><a href="#sub元素" class="headerlink" title="sub元素"></a><font color="green">sub元素</font></h2><p>它是将文字显示成靠下的形式，我们所说的下标可以用<code>&lt;sub来实现&gt;</code>。<br><code>&lt;p&gt;This is X&lt;sub&gt;2&lt;/sub&gt; text.&lt;/p&gt;</code><br><img src="https://upload-images.jianshu.io/upload_images/3478485-b1fc8ed5f64cc674.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="下标的2"></p>
+<h2 id="sup元素"><a href="#sup元素" class="headerlink" title="sup元素"></a><font color="green">sup元素</font></h2><p>相对地，<code>&lt;sup&gt;</code>元素则是用来表示上标。<br><code>&lt;p&gt;This is X&lt;sup&gt;2&lt;/sup&gt; text.&lt;/p&gt;</code><br><img src="https://upload-images.jianshu.io/upload_images/3478485-ae02800722131a6d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="上标"></p>
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+       
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/HTML5/" rel="tag"># HTML5</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/10/07/HTML5（8）——样式/" rel="next" title="HTML5（8）——样式">
+                <i class="fa fa-chevron-left"></i> HTML5（8）——样式
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/10/09/HTML5（10）——引用/" rel="prev" title="HTML5（10）——引用">
+                HTML5（10）——引用 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Jin JF</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">47</span>
+                    <span class="site-state-item-name">posts</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">10</span>
+                    <span class="site-state-item-name">categories</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">46</span>
+                    <span class="site-state-item-name">tags</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+
+          
+
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#HTML格式元素"><span class="nav-number">1.</span> <span class="nav-text">HTML格式元素</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#b和strong元素"><span class="nav-number">2.</span> <span class="nav-text">b和strong元素</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#斜体元素"><span class="nav-number">3.</span> <span class="nav-text">斜体元素</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#small元素"><span class="nav-number">4.</span> <span class="nav-text">small元素</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#mark元素"><span class="nav-number">5.</span> <span class="nav-text">mark元素</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#del元素"><span class="nav-number">6.</span> <span class="nav-text">del元素</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ins元素"><span class="nav-number">7.</span> <span class="nav-text">ins元素</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#sub元素"><span class="nav-number">8.</span> <span class="nav-text">sub元素</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#sup元素"><span class="nav-number">9.</span> <span class="nav-text">sup元素</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Jin JF</span>
+
+  
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v3.8.0</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v6.6.0</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+	
+    
+
+    
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.6.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.6.0"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.6.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.6.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.6.0"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

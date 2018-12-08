@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=6.6.0" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.6.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.6.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.6.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.6.0" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '6.6.0',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="今天突然特别期待明天早上，莫名觉得早上5点特别的美好，起床泡一杯咖啡，写写东西，看看窗外天空一片漆黑，心突然特别得静。上一节学习了HTML的文本格式，今天学习HTML中的引用。">
+<meta name="keywords" content="引用,HTML5">
+<meta property="og:type" content="article">
+<meta property="og:title" content="HTML5（10）——引用">
+<meta property="og:url" content="http://yoursite.com/2018/10/09/HTML5（10）——引用/index.html">
+<meta property="og:site_name" content="Lxmic Blog">
+<meta property="og:description" content="今天突然特别期待明天早上，莫名觉得早上5点特别的美好，起床泡一杯咖啡，写写东西，看看窗外天空一片漆黑，心突然特别得静。上一节学习了HTML的文本格式，今天学习HTML中的引用。">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-b592fbec7d72642a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-7c429ee1741ae084.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-36a0846e5d3a86fc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-10e3c875a56be233.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-023a2548348b11fc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-65946c58656a9485.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:updated_time" content="2018-12-08T06:06:53.863Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="HTML5（10）——引用">
+<meta name="twitter:description" content="今天突然特别期待明天早上，莫名觉得早上5点特别的美好，起床泡一杯咖啡，写写东西，看看窗外天空一片漆黑，心突然特别得静。上一节学习了HTML的文本格式，今天学习HTML中的引用。">
+<meta name="twitter:image" content="https://upload-images.jianshu.io/upload_images/3478485-b592fbec7d72642a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+
+
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2018/10/09/HTML5（10）——引用/">
+
+
+
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>HTML5（10）——引用 | Lxmic Blog</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Lxmic Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <p class="site-subtitle">Everything from life</p>
+      
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="Toggle navigation bar">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>Home</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives</a>
+
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+    
+
+  
+
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/09/HTML5（10）——引用/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Jin JF">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Lxmic Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">HTML5（10）——引用
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2018-10-09 23:57:37" itemprop="dateCreated datePublished" datetime="2018-10-09T23:57:37+08:00">2018-10-09</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2018-12-08 14:06:53" itemprop="dateModified" datetime="2018-12-08T14:06:53+08:00">2018-12-08</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/HTML5入门/" itemprop="url" rel="index"><span itemprop="name">HTML5入门</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="q元素是用于较短的文本引用"><a href="#q元素是用于较短的文本引用" class="headerlink" title="q元素是用于较短的文本引用"></a><font color="green">q元素是用于较短的文本引用</font></h2><p>一般在HTML中，就使用<code>&lt;q&gt;</code>来进行短引文，它一般是行内引用，浏览器会解析为双引号。<br><figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;p&gt;WWF's goal <span class="keyword">is</span> <span class="keyword">to</span>: &lt;q&gt;Build a future <span class="keyword">where</span> people live <span class="keyword">in</span></span><br><span class="line"> harmony <span class="keyword">with</span> nature.&lt;/q&gt;&lt;/p&gt;</span><br></pre></td></tr></table></figure></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-b592fbec7d72642a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="双引号引用起来"></p>
+<h2 id="blockquote元素是用来引用长文本"><a href="#blockquote元素是用来引用长文本" class="headerlink" title="blockquote元素是用来引用长文本"></a><font color="green">blockquote元素是用来引用长文本</font></h2><p>HTML中，长文本的引用使用<code>&lt;blockquote&gt;</code>元素来进行引用，是块引用，浏览器会解析为缩进。<br><figure class="highlight vbnet"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;p&gt;Browsers usually indent blockquote elements.&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;blockquote cite=<span class="string">"http://www.worldwildlife.org/who/index.html"</span>&gt;</span><br><span class="line"><span class="keyword">For</span> <span class="number">50</span> years, WWF has been protecting the future <span class="keyword">of</span> nature.</span><br><span class="line">The world<span class="comment">'s leading conservation organization,</span></span><br><span class="line">WWF works <span class="keyword">in</span> <span class="number">100</span> countries <span class="keyword">and</span> <span class="keyword">is</span> supported <span class="keyword">by</span></span><br><span class="line"><span class="number">1.2</span> million members <span class="keyword">in</span> the United States <span class="keyword">and</span></span><br><span class="line">close <span class="keyword">to</span> <span class="number">5</span> million globally.</span><br><span class="line">&lt;/blockquote&gt;</span><br></pre></td></tr></table></figure></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-7c429ee1741ae084.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="缩进引用"></p>
+<h2 id="HTML缩写"><a href="#HTML缩写" class="headerlink" title="HTML缩写"></a><font color="green">HTML缩写</font></h2><p>在网页中，很多时候我们都需要用到缩写，将一长串的词缩写成大写字母。’<abbr>‘元素就是用来干这样的事情的，将鼠标放在缩写词上，会悬浮出现完整的词。其中<code>title</code>属性是用来放完整的词。<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>The <span class="tag">&lt;<span class="name">abbr</span> <span class="attr">title</span>=<span class="string">"World Health Organization"</span>&gt;</span>WHO<span class="tag">&lt;/<span class="name">abbr</span>&gt;</span> was founded in 1948.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure></abbr></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-36a0846e5d3a86fc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<h2 id="联系信息元素引用"><a href="#联系信息元素引用" class="headerlink" title="联系信息元素引用"></a><font color="green">联系信息元素引用</font></h2><p><code>&lt;address&gt;</code>元素是用来引用个人联系方式，地址等联系信息。浏览器解析为斜体。<br><figure class="highlight armasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="keyword">address&gt;</span></span><br><span class="line"><span class="keyword">Written </span><span class="keyword">by </span>John Doe.&lt;<span class="keyword">br&gt; </span></span><br><span class="line"><span class="symbol">Visit</span> us at:&lt;<span class="keyword">br&gt;</span></span><br><span class="line"><span class="keyword">Example.com&lt;br&gt;</span></span><br><span class="line"><span class="keyword">Box </span><span class="number">564</span>, Disneyland&lt;<span class="keyword">br&gt;</span></span><br><span class="line"><span class="keyword">USA</span></span><br><span class="line"><span class="keyword">&lt;/address&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-10e3c875a56be233.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="联系信息"></p>
+<h2 id="作品名字引用"><a href="#作品名字引用" class="headerlink" title="作品名字引用"></a><font color="green">作品名字引用</font></h2><p>HTML中，<code>&lt;cite&gt;</code>元素就是专门用来引用作品名字，也是解析为斜体。<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="tag">&lt;<span class="name">cite</span>&gt;</span>The Scream<span class="tag">&lt;/<span class="name">cite</span>&gt;</span> by Edvard Munch. Painted in 1893.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-023a2548348b11fc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="斜体"></p>
+<h2 id="bdo元素用来双向覆盖"><a href="#bdo元素用来双向覆盖" class="headerlink" title="bdo元素用来双向覆盖"></a><font color="green">bdo元素用来双向覆盖</font></h2><p>一般<code>&lt;bdo&gt;</code>元素就是用来覆盖当前文本的方向。<code>dir</code>元素是用来指定书写方向的。<br><figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">&lt;p&gt;</span>If your browser supports bi-directional override (bdo), the <span class="keyword">next</span> <span class="built_in">line</span> will <span class="keyword">be</span> written from <span class="keyword">right</span> <span class="keyword">to</span> <span class="keyword">left</span> (rtl):&lt;/<span class="keyword">p</span>&gt;</span><br><span class="line"></span><br><span class="line">&lt;bdo dir=<span class="string">"rtl"</span>&gt;This <span class="built_in">line</span> will <span class="keyword">be</span> written from <span class="keyword">right</span> <span class="keyword">to</span> <span class="keyword">left</span>&lt;/bdo&gt;</span><br></pre></td></tr></table></figure></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-65946c58656a9485.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="完全就是从右到左"></p>
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+       
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/引用/" rel="tag"># 引用</a>
+          
+            <a href="/tags/HTML5/" rel="tag"># HTML5</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/10/08/HTML5（9）——文本格式/" rel="next" title="HTML5（9）——文本格式">
+                <i class="fa fa-chevron-left"></i> HTML5（9）——文本格式
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/10/10/HTML5（11）——注释/" rel="prev" title="HTML5（11）——注释">
+                HTML5（11）——注释 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Jin JF</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">47</span>
+                    <span class="site-state-item-name">posts</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">10</span>
+                    <span class="site-state-item-name">categories</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">46</span>
+                    <span class="site-state-item-name">tags</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+
+          
+
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#q元素是用于较短的文本引用"><span class="nav-number">1.</span> <span class="nav-text">q元素是用于较短的文本引用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#blockquote元素是用来引用长文本"><span class="nav-number">2.</span> <span class="nav-text">blockquote元素是用来引用长文本</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#HTML缩写"><span class="nav-number">3.</span> <span class="nav-text">HTML缩写</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#联系信息元素引用"><span class="nav-number">4.</span> <span class="nav-text">联系信息元素引用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#作品名字引用"><span class="nav-number">5.</span> <span class="nav-text">作品名字引用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#bdo元素用来双向覆盖"><span class="nav-number">6.</span> <span class="nav-text">bdo元素用来双向覆盖</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Jin JF</span>
+
+  
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v3.8.0</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v6.6.0</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+	
+    
+
+    
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.6.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.6.0"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.6.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.6.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.6.0"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

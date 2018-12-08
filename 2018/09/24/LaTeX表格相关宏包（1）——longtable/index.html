@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=6.6.0" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.6.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.6.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.6.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.6.0" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '6.6.0',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="本篇讲得就是关于longtable宏包的使用细节。祝大家中秋节快乐。">
+<meta name="keywords" content="LaTeX,longtable">
+<meta property="og:type" content="article">
+<meta property="og:title" content="LaTeX表格相关宏包（1）——longtable">
+<meta property="og:url" content="http://yoursite.com/2018/09/24/LaTeX表格相关宏包（1）——longtable/index.html">
+<meta property="og:site_name" content="Lxmic Blog">
+<meta property="og:description" content="本篇讲得就是关于longtable宏包的使用细节。祝大家中秋节快乐。">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-12-08T06:06:53.867Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="LaTeX表格相关宏包（1）——longtable">
+<meta name="twitter:description" content="本篇讲得就是关于longtable宏包的使用细节。祝大家中秋节快乐。">
+
+
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2018/09/24/LaTeX表格相关宏包（1）——longtable/">
+
+
+
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>LaTeX表格相关宏包（1）——longtable | Lxmic Blog</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Lxmic Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <p class="site-subtitle">Everything from life</p>
+      
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="Toggle navigation bar">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>Home</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives</a>
+
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+    
+
+  
+
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/24/LaTeX表格相关宏包（1）——longtable/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Jin JF">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Lxmic Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">LaTeX表格相关宏包（1）——longtable
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2018-09-24 22:16:19" itemprop="dateCreated datePublished" datetime="2018-09-24T22:16:19+08:00">2018-09-24</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2018-12-08 14:06:53" itemprop="dateModified" datetime="2018-12-08T14:06:53+08:00">2018-12-08</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/LaTeX入门/" itemprop="url" rel="index"><span itemprop="name">LaTeX入门</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h1><p>我通过一个example来进行说明，这样才具有实验意义一些：<br><figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">\<span class="name">usepackage</span><span class="string">&#123;longtable&#125;</span></span></span><br><span class="line"></span><br><span class="line"><span class="tag">\<span class="name">begin</span><span class="string">&#123;longtable&#125;</span><span class="string">&#123;p&#123;2cm&#125;</span></span>p&#123;3.2cm&#125;p&#123;1.1cm&#125;p&#123;1.3cm&#125;p&#123;1cm&#125;p&#123;1.2cm&#125;p&#123;1.5cm&#125;p&#123;2cm&#125;&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="tag">\<span class="name">caption</span><span class="string">&#123;\textbf&#123;NAC gene family identified in tomato.&#125;</span></span>&#125;</span><br><span class="line">	<span class="tag">\<span class="name">label</span><span class="string">&#123;table:nac&#125;</span></span><span class="tag">\<span class="name">\</span></span></span><br><span class="line">	<span class="tag">\<span class="name">hline</span></span></span><br><span class="line">	<span class="tag">\<span class="name">thead</span><span class="string">[l]</span><span class="string">&#123;\textbf&#123;Gene&#125;</span></span><span class="tag">\<span class="name">\</span></span><span class="tag">\<span class="name">textbf</span><span class="string">&#123;name&#125;</span></span>&#125; &amp; <span class="tag">\<span class="name">thead</span><span class="string">[l]</span><span class="string">&#123;\textbf&#123;Gene&#125;</span></span> <span class="tag">\<span class="name">\</span></span><span class="tag">\<span class="name">textbf</span><span class="string">&#123;accession No.&#125;</span></span>&#125; &amp; <span class="tag">\<span class="name">thead</span><span class="string">[l]</span><span class="string">&#123;\textbf&#123;length&#125;</span></span><span class="tag">\<span class="name">\</span></span><span class="tag">\<span class="name">textbf</span><span class="string">&#123;(bp)&#125;</span></span>&#125; &amp; <span class="tag">\<span class="name">thead</span><span class="string">[l]</span><span class="string">&#123;\textbf&#123;\# of&#125;</span></span><span class="tag">\<span class="name">\</span></span><span class="tag">\<span class="name">textbf</span><span class="string">&#123;Introns&#125;</span></span>&#125; &amp;  <span class="tag">\<span class="name">thead</span><span class="string">[l]</span><span class="string">&#123;\textbf&#123;size&#125;</span></span><span class="tag">\<span class="name">\</span></span><span class="tag">\<span class="name">textbf</span><span class="string">&#123;(aa)&#125;</span></span>&#125; &amp; <span class="tag">\<span class="name">thead</span><span class="string">[l]</span><span class="string">&#123;\textbf&#123;MW&#125;</span></span><span class="tag">\<span class="name">\</span></span><span class="tag">\<span class="name">textbf</span><span class="string">&#123;(kDa)&#125;</span></span>&#125; &amp; <span class="tag">\<span class="name">thead</span><span class="string">[l]</span><span class="string">&#123;\textbf&#123;\# of TM&#125;</span></span><span class="tag">\<span class="name">\</span></span><span class="tag">\<span class="name">textbf</span><span class="string">&#123;domains&#125;</span></span>&#125; &amp; <span class="tag">\<span class="name">thead</span><span class="string">[l]</span><span class="string">&#123;\textbf&#123;Subcellular&#125;</span></span><span class="tag">\<span class="name">\</span></span><span class="tag">\<span class="name">textbf</span><span class="string">&#123;localization&#125;</span></span>&#125;<span class="tag">\<span class="name">\</span></span></span><br><span class="line">	<span class="tag">\<span class="name">hline</span></span></span><br><span class="line">	<span class="tag">\<span class="name">endfirsthead</span></span></span><br><span class="line">	</span><br><span class="line">	<span class="tag">\<span class="name">multicolumn</span><span class="string">&#123;3&#125;</span><span class="string">&#123;l&#125;</span><span class="string">&#123;\textbf&#123;\tablename \ \thetable&#123;&#125;</span></span>&#125;.  <span class="tag">\<span class="name">textsl</span><span class="string">&#123;(Continued)&#125;</span></span>&#125; <span class="tag">\<span class="name">\</span></span></span><br><span class="line">	<span class="tag">\<span class="name">hline</span></span></span><br><span class="line">   <span class="tag">\<span class="name">thead</span><span class="string">[l]</span><span class="string">&#123;\textbf&#123;Gene&#125;</span></span><span class="tag">\<span class="name">\</span></span><span class="tag">\<span class="name">textbf</span><span class="string">&#123;name&#125;</span></span>&#125; &amp; <span class="tag">\<span class="name">thead</span><span class="string">[l]</span><span class="string">&#123;\textbf&#123;Gene&#125;</span></span> <span class="tag">\<span class="name">\</span></span><span class="tag">\<span class="name">textbf</span><span class="string">&#123;accession No.&#125;</span></span>&#125; &amp; <span class="tag">\<span class="name">thead</span><span class="string">[l]</span><span class="string">&#123;\textbf&#123;CDS&#125;</span></span><span class="tag">\<span class="name">\</span></span><span class="tag">\<span class="name">textbf</span><span class="string">&#123;length&#125;</span></span><span class="tag">\<span class="name">\</span></span><span class="tag">\<span class="name">textbf</span><span class="string">&#123;(bp)&#125;</span></span>&#125; &amp; <span class="tag">\<span class="name">thead</span><span class="string">[l]</span><span class="string">&#123;\textbf&#123;\# of&#125;</span></span><span class="tag">\<span class="name">\</span></span><span class="tag">\<span class="name">textbf</span><span class="string">&#123;Introns&#125;</span></span>&#125; &amp;  <span class="tag">\<span class="name">thead</span><span class="string">[l]</span><span class="string">&#123;\textbf&#123;Protein&#125;</span></span><span class="tag">\<span class="name">\</span></span><span class="tag">\<span class="name">textbf</span><span class="string">&#123;size&#125;</span></span><span class="tag">\<span class="name">\</span></span><span class="tag">\<span class="name">textbf</span><span class="string">&#123;(aa)&#125;</span></span>&#125; &amp; <span class="tag">\<span class="name">thead</span><span class="string">[l]</span><span class="string">&#123;\textbf&#123;Protein&#125;</span></span><span class="tag">\<span class="name">\</span></span><span class="tag">\<span class="name">textbf</span><span class="string">&#123;MW&#125;</span></span><span class="tag">\<span class="name">\</span></span><span class="tag">\<span class="name">textbf</span><span class="string">&#123;(kDa)&#125;</span></span>&#125; &amp; <span class="tag">\<span class="name">thead</span><span class="string">[l]</span><span class="string">&#123;\textbf&#123;TM&#125;</span></span><span class="tag">\<span class="name">\</span></span><span class="tag">\<span class="name">textbf</span><span class="string">&#123;domains&#125;</span></span><span class="tag">\<span class="name">\</span></span><span class="tag">\<span class="name">textbf</span><span class="string">&#123;prediction&#125;</span></span>&#125; &amp; <span class="tag">\<span class="name">thead</span><span class="string">[l]</span><span class="string">&#123;\textbf&#123;Subcellular&#125;</span></span><span class="tag">\<span class="name">\</span></span><span class="tag">\<span class="name">textbf</span><span class="string">&#123;localization&#125;</span></span><span class="tag">\<span class="name">\</span></span><span class="tag">\<span class="name">textbf</span><span class="string">&#123;prediction&#125;</span></span>&#125;<span class="tag">\<span class="name">\</span></span></span><br><span class="line">	<span class="tag">\<span class="name">hline</span></span></span><br><span class="line">	<span class="tag">\<span class="name">endhead</span></span></span><br><span class="line">	</span><br><span class="line">	<span class="tag">\<span class="name">hline</span></span></span><br><span class="line">	<span class="tag">\<span class="name">multicolumn</span><span class="string">&#123;8&#125;</span><span class="string">&#123;r&#125;</span><span class="string">&#123;\textsl&#123;(Continued)&#125;</span></span>&#125;<span class="tag">\<span class="name">\</span></span></span><br><span class="line">	<span class="tag">\<span class="name">endfoot</span></span></span><br><span class="line">	</span><br><span class="line">	<span class="tag">\<span class="name">hline</span></span></span><br><span class="line">	<span class="tag">\<span class="name">endlastfoot</span></span></span><br><span class="line">表格的内容</span><br><span class="line"><span class="tag">\<span class="name">end</span><span class="string">&#123;longtable&#125;</span></span></span><br></pre></td></tr></table></figure></p>
+<h1 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h1><p>第一行就是导言区需要使用的包，你需要写上代码。<br>下面的内容就是被<code>longtable</code>长表格环境所包括在内的环境。里面就是关于表格的内容。<br><code>\caption</code>和<code>\label</code>已经很常见了，就是来写表格的标题和用来引用表格时的标签。<br><code>\hline</code>就是加一条横线，也就是表格的最上面的一条线。两条很闲之见的就是表头的内容了，是用<code>&amp;</code>来分隔的，跟一般的表格都是一样的形式。在这里，我还使用<code>makecell</code>宏包来进行强制随意的断行。这里的表头就是第一页表格中的，后面的表头虽然也是一样的，但是可能需要添加一些其他的细节。<br><code>\endfirsthead</code>是所有长表格中所需要用到的一个命令，与之匹配的还有其他3个，这个之前的是第一页表格的表头和表格标题的内容。<br><code>\multicolumn</code>是用来合并列的命令，里面就可以写后面表格的开头的标题，很多时候就是写个“continued”。<br>然后又是加横线，来填写一模一样的表头。<br><code>\endhead</code>来结束之后每一页表格表头的内容<br>加横线，填写第一页表格的表尾，也用的<code>multicolumn</code>这个命令是表格具体控制的命令，这里不做细讲。将表尾写在最右下角，一般也是写个continued，然后以<code>\endfoot</code>结尾。<br>最后是横线加<code>\endlastfoot</code>，这里一般就是空的内容，不做添加。<br>这个之后，就是表格真正的内容了，会自动分页了。</p>
+<blockquote>
+<p>关于表格插入相关的基础语法，可以看我之前的文章<a href="https://www.jianshu.com/writer#/notebooks/23465256/notes/33812322" target="_blank" rel="noopener">LaTeX表格插入</a>。也可以看我个人博客：<a href="http://othlis.com" target="_blank" rel="noopener">http://othlis.com</a> 。</p>
+</blockquote>
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+       
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/LaTeX/" rel="tag"># LaTeX</a>
+          
+            <a href="/tags/longtable/" rel="tag"># longtable</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/09/24/如何使用Excel查找重复项/" rel="next" title="如何使用Excel查找重复项">
+                <i class="fa fa-chevron-left"></i> 如何使用Excel查找重复项
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/09/24/HTML5（1）——介绍/" rel="prev" title="HTML5（1）——介绍">
+                HTML5（1）——介绍 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Jin JF</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">47</span>
+                    <span class="site-state-item-name">posts</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">10</span>
+                    <span class="site-state-item-name">categories</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">46</span>
+                    <span class="site-state-item-name">tags</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+
+          
+
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#例子"><span class="nav-number">1.</span> <span class="nav-text">例子</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#说明"><span class="nav-number">2.</span> <span class="nav-text">说明</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Jin JF</span>
+
+  
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v3.8.0</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v6.6.0</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+	
+    
+
+    
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.6.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.6.0"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.6.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.6.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.6.0"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
