@@ -14,6 +14,8 @@ categories: 科研之路
 
 > 以上内容出自网页内容：[http://www.real-times.com.cn/Technology/GUS.htm](http://www.real-times.com.cn/Technology/GUS.htm)
 
+<!--less-->
+
 
 
 ### <font color="green">GUS染液配制</font>
