@@ -66,7 +66,7 @@
 
 
 
-  <meta name="keywords" content="Bioinformatics, 生物，语言，读书">
+  <meta name="keywords" content="gene,">
 
 
 
@@ -77,12 +77,13 @@
 
 
 
-<meta name="description" content="基于全基因组的基因家族分析（4）：SlNRAMP家族基因进化树构建  继续之前还没有完成的内容。因为最近在学习Y叔的R包–ggtree，所以就顺便拿这个内容来进行展示，作为一个例子来记录。nwk树文件和R代码文件我已经放在github：https://github.com/Lxmic/ggtree_note  1. ggtree安装关于这个包，y叔已经写了相当详细的说明，有一个完整的电子书《Dat">
+<meta name="description" content="继续之前还没有完成的内容。因为最近在学习Y叔的R包–ggtree，所以就顺便拿这个内容来进行展示，作为一个例子来记录。nwk树文件和R代码文件我已经放在github：https://github.com/Lxmic/ggtree_note  1. ggtree安装关于这个包，y叔已经写了相当详细的说明，有一个完整的电子书《Data Integration, Manipulation and V">
+<meta name="keywords" content="gene">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Lxmic Blog">
+<meta property="og:title" content="基于全基因组的基因家族分析（4）：SlNRAMP家族基因进化树构建">
 <meta property="og:url" content="http://yoursite.com/2019/07/29/基于全基因组的基因家族分析（4）：SlNRAMP家族基因进化树构建/index.html">
 <meta property="og:site_name" content="Lxmic Blog">
-<meta property="og:description" content="基于全基因组的基因家族分析（4）：SlNRAMP家族基因进化树构建  继续之前还没有完成的内容。因为最近在学习Y叔的R包–ggtree，所以就顺便拿这个内容来进行展示，作为一个例子来记录。nwk树文件和R代码文件我已经放在github：https://github.com/Lxmic/ggtree_note  1. ggtree安装关于这个包，y叔已经写了相当详细的说明，有一个完整的电子书《Dat">
+<meta property="og:description" content="继续之前还没有完成的内容。因为最近在学习Y叔的R包–ggtree，所以就顺便拿这个内容来进行展示，作为一个例子来记录。nwk树文件和R代码文件我已经放在github：https://github.com/Lxmic/ggtree_note  1. ggtree安装关于这个包，y叔已经写了相当详细的说明，有一个完整的电子书《Data Integration, Manipulation and V">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-49635e61c7543d10.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-ff1cf964e96d4376.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
@@ -92,10 +93,10 @@
 <meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-9726eff29f00de4b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-a0e6ef3780614a54.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-305e609a0fb72bf3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:updated_time" content="2019-07-29T12:36:29.562Z">
+<meta property="og:updated_time" content="2019-07-29T12:56:32.422Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Lxmic Blog">
-<meta name="twitter:description" content="基于全基因组的基因家族分析（4）：SlNRAMP家族基因进化树构建  继续之前还没有完成的内容。因为最近在学习Y叔的R包–ggtree，所以就顺便拿这个内容来进行展示，作为一个例子来记录。nwk树文件和R代码文件我已经放在github：https://github.com/Lxmic/ggtree_note  1. ggtree安装关于这个包，y叔已经写了相当详细的说明，有一个完整的电子书《Dat">
+<meta name="twitter:title" content="基于全基因组的基因家族分析（4）：SlNRAMP家族基因进化树构建">
+<meta name="twitter:description" content="继续之前还没有完成的内容。因为最近在学习Y叔的R包–ggtree，所以就顺便拿这个内容来进行展示，作为一个例子来记录。nwk树文件和R代码文件我已经放在github：https://github.com/Lxmic/ggtree_note  1. ggtree安装关于这个包，y叔已经写了相当详细的说明，有一个完整的电子书《Data Integration, Manipulation and V">
 <meta name="twitter:image" content="https://upload-images.jianshu.io/upload_images/3478485-49635e61c7543d10.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 
 
@@ -132,7 +133,7 @@
 
 
 
-  <title> | Lxmic Blog</title>
+  <title>基于全基因组的基因家族分析（4）：SlNRAMP家族基因进化树构建 | Lxmic Blog</title>
   
 
 
@@ -318,7 +319,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline"></h1>
+          <h1 class="post-title" itemprop="name headline">基于全基因组的基因家族分析（4）：SlNRAMP家族基因进化树构建</h1>
         
 
         <div class="post-meta">
@@ -340,6 +341,28 @@
             
           </span>
 
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/科研之路/" itemprop="url" rel="index">
+                    <span itemprop="name">科研之路</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -378,7 +401,7 @@
       
 
       
-        <h1 id="基于全基因组的基因家族分析（4）：SlNRAMP家族基因进化树构建"><a href="#基于全基因组的基因家族分析（4）：SlNRAMP家族基因进化树构建" class="headerlink" title="基于全基因组的基因家族分析（4）：SlNRAMP家族基因进化树构建"></a>基于全基因组的基因家族分析（4）：SlNRAMP家族基因进化树构建</h1><p><img src="https://upload-images.jianshu.io/upload_images/3478485-49635e61c7543d10.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="cherry tomato.jpg"></p>
+        <p><img src="https://upload-images.jianshu.io/upload_images/3478485-49635e61c7543d10.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="cherry tomato.jpg"></p>
 <blockquote>
 <p>继续之前还没有完成的内容。因为最近在学习Y叔的R包–ggtree，所以就顺便拿这个内容来进行展示，作为一个例子来记录。nwk树文件和R代码文件我已经放在github：<a href="https://github.com/Lxmic/ggtree_note" target="_blank" rel="noopener">https://github.com/Lxmic/ggtree_note</a></p>
 </blockquote>
@@ -466,6 +489,12 @@ characterization of aluminum resistance in Populus"><br>这里我先用比较麻
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/gene/" rel="tag"><i class="fa fa-tag"></i> gene</a>
+          
+       </div>
+      
 
 <div>    
  
@@ -476,7 +505,7 @@ characterization of aluminum resistance in Populus"><br>这里我先用比较麻
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="/2019/07/29/基于全基因组的基因家族分析（4）：SlNRAMP家族基因进化树构建/" title="">/2019/07/29/基于全基因组的基因家族分析（4）：SlNRAMP家族基因进化树构建/</a>
+    <a href="/2019/07/29/基于全基因组的基因家族分析（4）：SlNRAMP家族基因进化树构建/" title="基于全基因组的基因家族分析（4）：SlNRAMP家族基因进化树构建">/2019/07/29/基于全基因组的基因家族分析（4）：SlNRAMP家族基因进化树构建/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权： </strong>
@@ -613,7 +642,7 @@ characterization of aluminum resistance in Populus"><br>这里我先用比较麻
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">49</span>
+                  <span class="site-state-item-count">50</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -674,7 +703,7 @@ characterization of aluminum resistance in Populus"><br>这里我先用比较麻
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#基于全基因组的基因家族分析（4）：SlNRAMP家族基因进化树构建"><span class="nav-number">1.</span> <span class="nav-text">基于全基因组的基因家族分析（4）：SlNRAMP家族基因进化树构建</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-ggtree安装"><span class="nav-number">1.1.</span> <span class="nav-text">1. ggtree安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-读取及可视化树结构"><span class="nav-number">1.2.</span> <span class="nav-text">2. 读取及可视化树结构</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-进化树修饰"><span class="nav-number">1.3.</span> <span class="nav-text">3. 进化树修饰</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-分组给分支上色"><span class="nav-number">1.4.</span> <span class="nav-text">4. 分组给分支上色</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-总结"><span class="nav-number">1.5.</span> <span class="nav-text">5. 总结</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-ggtree安装"><span class="nav-number">1.</span> <span class="nav-text">1. ggtree安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-读取及可视化树结构"><span class="nav-number">2.</span> <span class="nav-text">2. 读取及可视化树结构</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-进化树修饰"><span class="nav-number">3.</span> <span class="nav-text">3. 进化树修饰</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-分组给分支上色"><span class="nav-number">4.</span> <span class="nav-text">4. 分组给分支上色</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-总结"><span class="nav-number">5.</span> <span class="nav-text">5. 总结</span></a></li></ol></div>
             
 
           </div>
@@ -851,7 +880,7 @@ characterization of aluminum resistance in Populus"><br>这里我先用比较麻
         var disqus_config = function () {
           this.page.url = 'http://yoursite.com/2019/07/29/基于全基因组的基因家族分析（4）：SlNRAMP家族基因进化树构建/';
           this.page.identifier = '/2019/07/29/基于全基因组的基因家族分析（4）：SlNRAMP家族基因进化树构建/';
-          this.page.title = '';
+          this.page.title = '基于全基因组的基因家族分析（4）：SlNRAMP家族基因进化树构建';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://lxmicblog.disqus.com/embed.js';
