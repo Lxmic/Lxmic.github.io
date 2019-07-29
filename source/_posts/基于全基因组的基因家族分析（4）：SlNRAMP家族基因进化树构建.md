@@ -1,4 +1,9 @@
-# 基于全基因组的基因家族分析（4）：SlNRAMP家族基因进化树构建
+---
+title: 基于全基因组的基因家族分析（4）：SlNRAMP家族基因进化树构建
+tags: 
+- gene
+categories: 科研之路
+---
 
 ![cherry tomato.jpg](https://upload-images.jianshu.io/upload_images/3478485-49635e61c7543d10.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
