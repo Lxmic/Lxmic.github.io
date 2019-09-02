@@ -5,6 +5,8 @@ tags: LaTeX
 categories: LaTeX入门
 ---
 
+<meta name="referrer" content="no-referrer" />
+
 ![LaTeX](https://upload-images.jianshu.io/upload_images/3478485-618ca0df7bcf11e6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 8月29日，星期三，公元2018年。

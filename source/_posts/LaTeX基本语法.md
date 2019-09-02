@@ -7,6 +7,8 @@ tags:
 categories: LaTeX入门
 ---
 
+<meta name="referrer" content="no-referrer" />
+
 ![加州高速公路](https://upload-images.jianshu.io/upload_images/3478485-250147f3923abaa2.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 > 世间存在着太多的契机，你能否抓住是真的关键所在。这次阴差阳错，开始较为认真的入门学习，之前的两篇博文其实都是没有真正地开始学习，只是告诉别人你要开始去学习了。雷声大，雨点小，总是很多人的通病，我也有这样的坏毛病。

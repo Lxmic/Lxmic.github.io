@@ -7,6 +7,8 @@ tags:
 categories: HTML5入门
 ---
 
+<meta name="referrer" content="no-referrer" />
+
 ![巨石阵，有朝一日能够去世界各地游玩](https://upload-images.jianshu.io/upload_images/3478485-d53a5e7f7a0f8675.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 > 国庆第二天，毕业师姐过来那毕业证书，需要聚一波。今天继续学习HTML相关知识。上次学了最基本的知识，关于一些常见的HTML标签。今天是要讲HTML元素，标签包含的内容。

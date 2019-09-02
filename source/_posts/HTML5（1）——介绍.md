@@ -6,6 +6,8 @@ tags:
 categories: HTML5入门
 ---
 
+<meta name="referrer" content="no-referrer" />
+
 ![中秋节就是面对电脑](https://upload-images.jianshu.io/upload_images/3478485-befca9c4894b99eb.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 > 我就是用来玩一下，说好得，只是玩一下。

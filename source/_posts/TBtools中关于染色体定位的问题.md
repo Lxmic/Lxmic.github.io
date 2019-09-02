@@ -7,7 +7,7 @@ tags:
 categories: TBtools使用
 ---
 
-
+<meta name="referrer" content="no-referrer" />
 
 ![coffee-hand](https://upload-images.jianshu.io/upload_images/3478485-7bf2e57593f9e24b.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 > 我说明一下，很多时候我只是喜欢放图，不一定和内容有关联，只是喜欢。

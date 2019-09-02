@@ -6,6 +6,8 @@ tags:
 categories: HTML5入门
 ---
 
+<meta name="referrer" content="no-referrer" />
+
 ![每天欣赏图片](https://upload-images.jianshu.io/upload_images/3478485-b2224ad5ba559108.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 >出尔反尔，冲动的时候总是觉得自己能够成功，结果也是意料之中。如同word中的文字格式，在HTML中，也有相应的格式元素来实现文本格式改变，下面一起来看看。
 
@@ -59,3 +61,4 @@ del是用来画横线删除文字，但文字已然存在，也算是一种修�
 相对地，`<sup>`元素则是用来表示上标。
 `<p>This is X<sup>2</sup> text.</p>`
 ![上标](https://upload-images.jianshu.io/upload_images/3478485-ae02800722131a6d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+

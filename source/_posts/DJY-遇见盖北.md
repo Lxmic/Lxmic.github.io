@@ -6,6 +6,7 @@ categories: 随记
 ---
 
 
+<meta name="referrer" content="no-referrer" />
 
 ![葡萄](https://upload-images.jianshu.io/upload_images/3478485-e6a857885484a2b7.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 

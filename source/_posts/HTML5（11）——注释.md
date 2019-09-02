@@ -7,6 +7,8 @@ tags:
 categories: HTML5入门
 ---
 
+<meta name="referrer" content="no-referrer" />
+
 ![早上好，各位](https://upload-images.jianshu.io/upload_images/3478485-7b72bb3628e0f32c.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 > 早上起来已经快6点，我是被蚊子叮醒的，实在是没法睡觉了。果然昨天幻想的咖啡没有实现。
 > 昨天晚上我们学习了HTML的引用，今天学习注释。

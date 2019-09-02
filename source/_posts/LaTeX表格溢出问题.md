@@ -7,6 +7,9 @@ tags:
 categories: LaTeX入门
 ---
 
+<meta name="referrer" content="no-referrer" />
+
+
 ![海，使人放下自己的身段](https://upload-images.jianshu.io/upload_images/3478485-a4ba2098aa1800cb.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 前面的[LaTeX插入表格](https://www.jianshu.com/writer#/notebooks/23465256/notes/33812322)一文主要是来说明怎么插入表格，如果没有看过可以跳到前面去看。今天我们来说一下关于表格的一些细节处理问题。

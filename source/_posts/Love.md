@@ -5,6 +5,8 @@ tags: 爱
 categories: 随记
 ---
 
+<meta name="referrer" content="no-referrer" />
+
 ![love.jpeg](https://upload-images.jianshu.io/upload_images/3478485-7d3fb1e8df7d27b8.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 那是发生在寒假某一天，突然想你。

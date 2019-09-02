@@ -7,6 +7,8 @@ tags:
 categories: HTML5入门
 ---
 
+<meta name="referrer" content="no-referrer" />
+
 ![coffee](https://upload-images.jianshu.io/upload_images/3478485-fb61d3d831bf7dd0.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 > 今天突然特别期待明天早上，莫名觉得早上5点特别的美好，起床泡一杯咖啡，写写东西，看看窗外天空一片漆黑，心突然特别得静。

@@ -7,6 +7,8 @@ tags:
 categories: LaTeX入门
 ---
 
+<meta name="referrer" content="no-referrer" />
+
 ![惬意的周末，我也想拥有](https://upload-images.jianshu.io/upload_images/3478485-300eb5efdef1a5fe.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 > 周末了，下个礼拜终于要开学了，好像又要开始摆出努力的样子。一切都是在循环往复，还是希望进步，能够学习一些从没有接触过的实物和技术。

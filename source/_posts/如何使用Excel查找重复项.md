@@ -7,6 +7,8 @@ tags:
 categories: 学习记录
 ---
 
+<meta name="referrer" content="no-referrer" />
+
 ![flying](https://upload-images.jianshu.io/upload_images/3478485-3028f91254eb81be.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 > 折腾过后，剩下的只有笔记。我们需要找到相同的东西，来获得共性，才能得以下一步的发展。

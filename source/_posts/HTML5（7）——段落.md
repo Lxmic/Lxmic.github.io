@@ -7,6 +7,8 @@ tags:
 categories: HTML5入门
 ---
 
+<meta name="referrer" content="no-referrer" />
+
 ![想法很多，已没有经历实现](https://upload-images.jianshu.io/upload_images/3478485-f715b416af9c6294.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 > 现在不得不感叹，很多事情有想法，却找不到人一起去实现。继续学习HTML5，来讲一讲段落。
 

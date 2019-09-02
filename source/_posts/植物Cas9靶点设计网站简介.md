@@ -5,6 +5,8 @@ tags: Cas9
 categories: 学习记录
 ---
 
+<meta name="referrer" content="no-referrer" />
+
 ![cas9模型](https://upload-images.jianshu.io/upload_images/3478485-e845fed2bd99b07b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 <!--less-->
 

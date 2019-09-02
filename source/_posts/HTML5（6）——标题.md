@@ -7,6 +7,8 @@ tags:
 categories: HTML5入门
 ---
 
+<meta name="referrer" content="no-referrer" />
+
 ![场景似曾相识](https://upload-images.jianshu.io/upload_images/3478485-81d5de5d560b5248.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 > 还有几个小时就要离开家了，每次都在离开的时候，才会变得清醒一些。上次一节是讲属性，今天我们来学习标题相关的内容。
 

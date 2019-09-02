@@ -7,6 +7,8 @@ tags:
 categories: HTML5入门
 ---
 
+<meta name="referrer" content="no-referrer" />
+
 ![整洁的桌面](https://upload-images.jianshu.io/upload_images/3478485-a135213ca8dbdc9a.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 > 前两天算是有一些事情要处理，没有来得及更新学习。今天我们来讲一下HTML中颜色的控制。
 
