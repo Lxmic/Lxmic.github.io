@@ -5,7 +5,11 @@ tags:
 categories: 科研之路
 ---
 
+<meta name="referrer" content="no-referrer" />
+
 ![cherry tomato.jpg](https://upload-images.jianshu.io/upload_images/3478485-49635e61c7543d10.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+<!--more-->
 
 >继续之前还没有完成的内容。因为最近在学习Y叔的R包--ggtree，所以就顺便拿这个内容来进行展示，作为一个例子来记录。nwk树文件和R代码文件我已经放在github：[https://github.com/Lxmic/ggtree_note](https://github.com/Lxmic/ggtree_note)
 
