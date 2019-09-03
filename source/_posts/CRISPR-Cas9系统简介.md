@@ -9,14 +9,13 @@ categories: 学习记录
 <meta name="referrer" content="no-referrer" />
 
 
-
 ![图片来源：https://www.mygenefood.com/crispr-cas9-introduction-genome-editing/](https://upload-images.jianshu.io/upload_images/3478485-0bf1101b1c467285.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
 
 Clustered regularly interspaced short palindromic repeats（CRISPR）——规律成簇的间隔短回文重复和CRISPR-associated protein 9（Cas9），共同组成了一套系统，是细菌用来防御噬菌体DNA注入和质粒转移的天然防御系统。但现在被人类所重新利用，构建了很强的RNA引导的DNA靶向平台——主要用来基因组编辑、转录扰乱、表观遗传调控等。
 
-<!--less-->
+<!--more-->
 
 
 
