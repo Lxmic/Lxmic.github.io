@@ -9,7 +9,6 @@ categories: 科研之路
 
 <meta name="referrer" content="no-referrer" />
 
-
 ![blur.jpg](https://upload-images.jianshu.io/upload_images/3478485-53ed8602f38c0fd3.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 ### <font color="green">GUS应用及原理</font>
 
@@ -17,7 +16,7 @@ categories: 科研之路
 
 > 以上内容出自网页内容：[http://www.real-times.com.cn/Technology/GUS.htm](http://www.real-times.com.cn/Technology/GUS.htm)
 
-<!--less-->
+<!--more-->
 
 
 
