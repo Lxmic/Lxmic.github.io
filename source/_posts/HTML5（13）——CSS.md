@@ -8,14 +8,13 @@ categories: HTML5入门
 ---
 
 <meta name="referrer" content="no-referrer" />
-
 ![好抽象的画](https://upload-images.jianshu.io/upload_images/3478485-2af449ca59d92b9c.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 > 有些意识到了团队合作的重要性，但是又怎么去实践呢？是需要我们自己呢？还是由导师来安排呢？
 > 今天我们来学习HTML中很重要的CSS，用来控制整个网页的样式。
 
 
 
-<!--less-->
+<!--more-->
 
 ## <font color="green">用CSS来修饰HTML</font>
 CSS称为层叠样式表，它能够控制网页在屏幕上的展示方式。它能够很快的改变几个web的排版。

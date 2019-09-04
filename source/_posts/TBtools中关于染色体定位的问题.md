@@ -8,13 +8,10 @@ categories: TBtools使用
 ---
 
 <meta name="referrer" content="no-referrer" />
-
 ![coffee-hand](https://upload-images.jianshu.io/upload_images/3478485-7bf2e57593f9e24b.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 > 我说明一下，很多时候我只是喜欢放图，不一定和内容有关联，只是喜欢。
 
-
-
-<!--less-->
+<!--more-->
 
 我们在进行染色体绘制的时候，会出现问题，比如没法出图。今天我就遇到了这样一个问题，最后我检查了一下，发现就是我自己在重新命名这个文件中，没有按照规定的格式来进行，导致没有办法出现图。我现在用的是下图中蓝色第一个框：gene location from gff/gtf，因为圈图现在版本的TBtools还没有办法基因坐标重叠的问题。
 

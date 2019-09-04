@@ -8,13 +8,12 @@ categories: HTML5入门
 ---
 
 <meta name="referrer" content="no-referrer" />
-
 ![](https://upload-images.jianshu.io/upload_images/3478485-00b11fdad0f37597.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 > 假期最后一天，我继续学习我的HTML5内容。上次我们提到了段落，今天要学习样式（styles）。
 
 
 
-<!--less-->
+<!--more-->
 
 ## <font color="green">HTML样式</font>
 像图中的红色字体，蓝色字体和字体大小变化，这些都是可以通过样式属性来控制的。

@@ -6,12 +6,11 @@ categories: 随记
 ---
 
 <meta name="referrer" content="no-referrer" />
-
 ![love.jpeg](https://upload-images.jianshu.io/upload_images/3478485-7d3fb1e8df7d27b8.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 那是发生在寒假某一天，突然想你。
 
-<!--less-->
+<!--more-->
 
 2017年，已经完完整整的成为过去。有些东西永远留在心中，有些东西被遗忘，有些东西已经失去，有些人也离开。发生过的所有事，大概一定会留下痕迹吧。已经开启2018年的笔记本，所有已经发生过的痕迹，已经被记录在人生笔记本上的某一页，有些痕迹不及时查看，很快就会被翻页过去，永远地被遗忘。
 

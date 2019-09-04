@@ -7,14 +7,13 @@ categories: HTML5入门
 ---
 
 <meta name="referrer" content="no-referrer" />
-
 ![中秋节就是面对电脑](https://upload-images.jianshu.io/upload_images/3478485-befca9c4894b99eb.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 > 我就是用来玩一下，说好得，只是玩一下。
 
 
 
-<!--less-->
+<!--more-->
 
 总是想干点事情，不想这么地浪费时间，学习一下html5语法，还是挺好的。我记得以前别人过节的时候，就会发一个网页过来，你打开就是节日祝福，还有音乐和动画，然后就觉得学计算机的人特别牛逼，现在看来，真得没有那么难，稍微学习一下，你就可以实现这样的效果，并没有想象中那么难。当然如果要深入下去，作为你吃饭的技能，那就不是一个层次，我就用来玩一下，增添一些生活的乐趣。
 

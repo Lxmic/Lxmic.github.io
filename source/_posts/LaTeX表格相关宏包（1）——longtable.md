@@ -8,14 +8,13 @@ categories: LaTeX入门
 ---
 
 <meta name="referrer" content="no-referrer" />
-
 ![云似乎在飘动](https://upload-images.jianshu.io/upload_images/3478485-8c52bda2a095736a.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 > 本篇讲得就是关于longtable宏包的使用细节。祝大家中秋节快乐。
 
 
 
-<!--less-->
+<!--more-->
 
 # 例子
 

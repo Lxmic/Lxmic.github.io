@@ -9,12 +9,11 @@ categories: LaTeX入门
 
 <meta name="referrer" content="no-referrer" />
 
-
 ![海，使人放下自己的身段](https://upload-images.jianshu.io/upload_images/3478485-a4ba2098aa1800cb.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 前面的[LaTeX插入表格](https://www.jianshu.com/writer#/notebooks/23465256/notes/33812322)一文主要是来说明怎么插入表格，如果没有看过可以跳到前面去看。今天我们来说一下关于表格的一些细节处理问题。
 
-<!--less-->
+<!--more-->
 
 # 1 表格过长的问题
 有时候我们的表格往往会超过一页的长度，这个时候依旧使用`\begin{tabular}...\end{tabular}`环境的话，那么肯定会导致表格的溢出，完全看不到表格超出的部分。这个时候我们就需要选择其他的宏包，来进行表格环境的设置。一般来说，我们有几种选择，但是共同的一点是，**必须处理在第二页及后面几页的表头和表尾。**`\endfirsthead、\endhead、\endfoot和\endlastfoot`，这些参数分别用来设置第一页表头，后面每一页表头，后面每一页表尾和最后一页表尾。

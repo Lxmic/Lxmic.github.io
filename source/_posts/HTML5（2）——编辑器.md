@@ -6,12 +6,11 @@ categories: HTML5入门
 ---
 
 <meta name="referrer" content="no-referrer" />
-
 ![国庆前夕](https://upload-images.jianshu.io/upload_images/3478485-d9dfcf26595c1c1e.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 > 今天已经是9月最后一天，还有一件事情需要去做，之后就可以回家待两天。上次写了第一篇HTML基本语法介绍，今天来看一下你可以用哪些编辑器来编写你的web。
 
-<!--less-->
+<!--more-->
 
 ### <font color="green">Windows Notepad</font>
 这个大家应该都非常熟悉的，虽然平常用的很少，一直有些嫌弃，但是也还可以。从开始菜单——程序——附件——Notepad或者直接右键——新建文本文档就可以开始写代码。写完之后，你需要保存成html或htm后缀的文件，这样直接可以使用你的浏览器打开，来看编译后的结果。

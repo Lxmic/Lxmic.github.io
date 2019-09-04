@@ -8,14 +8,13 @@ categories: HTML5入门
 ---
 
 <meta name="referrer" content="no-referrer" />
-
 ![给人的感觉就是舒服，静谧](https://upload-images.jianshu.io/upload_images/3478485-86aab1b0aa76b491.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 > 上一小节，我们讲解了HTML5的编辑器，那么接下来我们讲HTML的一些基本知识，可能和最开始的介绍内容有部分重复，又有部分补充。
 
 
 
-<!--less-->
+<!--more-->
 
 ## <font color="green">HTML 文档</font>
 基本上文档就包括了3部分内容，大致就是：

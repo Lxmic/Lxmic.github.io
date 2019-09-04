@@ -8,13 +8,12 @@ categories: HTML5入门
 ---
 
 <meta name="referrer" content="no-referrer" />
-
 ![咖啡豆](https://upload-images.jianshu.io/upload_images/3478485-9d881188bebeb5b7.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 > 其实，我一直有个愿望，我想每天早晨起来，喝着咖啡，写点东西。不过，到现在都还没有实现，我想我得先做到早起吧。上次，我们讲了是HTML5的元素，今天就讲元素属性。
 
 
 
-<!--less-->
+<!--more-->
 
 ## <font color="green">HTML属性</font>
 

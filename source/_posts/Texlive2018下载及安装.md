@@ -8,12 +8,11 @@ categories: LaTeX入门
 ---
 
 <meta name="referrer" content="no-referrer" />
-
 ![writing.jpg](https://upload-images.jianshu.io/upload_images/3478485-ab97152f66f7fb0d.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 > 说起来也是奇怪，人真的是太健忘了， 重装电脑系统之后，我忘记了怎么装texlive，所以再次安装的时候又花了不少时间，这次一定要把过程记录下来。
 
-<!--less-->
+<!--more-->
 
 # 1. 下载及安装texlive2018
 网站：[https://www.tug.org/texlive/](https://www.tug.org/texlive/)。过程如下，全部图片及图注：

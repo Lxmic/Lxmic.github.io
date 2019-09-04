@@ -8,14 +8,13 @@ categories: LaTeX入门
 ---
 
 <meta name="referrer" content="no-referrer" />
-
 ![咖啡和书，绝妙的组合](https://upload-images.jianshu.io/upload_images/3478485-e5f3023dabe65d98.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 > 参考文献可以说是写论文时候最头疼的事情，如果你手动一条一条去输入的话，也是可以的，但是毕竟还是累的，效率也不怎么样。当然你也可以用经典的Endnote软件来管理你的文献，自动插入文献，当然也很好了，可是据说在你调整文章顺序时候会变得麻烦。好像natbib还是不错的，可能比较容易修改。
 
 
 
-<!--less-->
+<!--more-->
 
 # 1. 引用方式
 这是我自己随便写的一个例子，用来说明一些问题。

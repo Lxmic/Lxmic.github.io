@@ -8,14 +8,13 @@ categories: LaTeX入门
 ---
 
 <meta name="referrer" content="no-referrer" />
-
 ![惬意的周末，我也想拥有](https://upload-images.jianshu.io/upload_images/3478485-300eb5efdef1a5fe.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 > 周末了，下个礼拜终于要开学了，好像又要开始摆出努力的样子。一切都是在循环往复，还是希望进步，能够学习一些从没有接触过的实物和技术。
 
 LaTeX是极其专业的排版软件，我也想试试，我就来用它排版我的论文，这样走一遍之后，我想应该基本入门了。在插入表格的时候，遇到了一些问题，特异记录下来。
 
-<!--less-->
+<!--more-->
 
 ### 1. 如何插入庞大的表格
 我们都知道，LaTeX可以一行一行的插入表格，但是在我们遇到比较庞大的表格时，我们该怎么办，有一个办法就是利用[在线工具](http://www.tablesgenerator.com/latex_tables)进行转换成LaTeX格式的表格，而不需要花大量的时间一行一行输入。
