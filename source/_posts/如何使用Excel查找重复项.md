@@ -8,14 +8,13 @@ categories: 学习记录
 ---
 
 <meta name="referrer" content="no-referrer" />
-
 ![flying](https://upload-images.jianshu.io/upload_images/3478485-3028f91254eb81be.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 > 折腾过后，剩下的只有笔记。我们需要找到相同的东西，来获得共性，才能得以下一步的发展。
 
 
 
-<!--less-->
+<!--more-->
 
 在处理转录组数据的时候，对于生信的小白，也不经常敲代码，很多时候还是利用一些比较熟悉的工具省事。当然，我的内心是无比希望能够使用编程来解决这些问题，可是很无奈。
 今天，我在处理转录组数据，我希望从好几万个基因中找到我感兴趣的那些基因，我想搜索一下转录组中的数据并拿到他。
