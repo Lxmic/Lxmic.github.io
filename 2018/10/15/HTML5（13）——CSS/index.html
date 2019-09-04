@@ -85,13 +85,14 @@
 <meta property="og:site_name" content="Lxmic Blog">
 <meta property="og:description" content="有些意识到了团队合作的重要性，但是又怎么去实践呢？是需要我们自己呢？还是由导师来安排呢？今天我们来学习HTML中很重要的CSS，用来控制整个网页的样式。">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-2af449ca59d92b9c.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-4c2bf1f0528a37ec.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-f9ad18924c90c302.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:updated_time" content="2019-09-02T17:00:59.986Z">
+<meta property="og:updated_time" content="2019-09-04T15:03:39.389Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="HTML5（13）——CSS">
 <meta name="twitter:description" content="有些意识到了团队合作的重要性，但是又怎么去实践呢？是需要我们自己呢？还是由导师来安排呢？今天我们来学习HTML中很重要的CSS，用来控制整个网页的样式。">
-<meta name="twitter:image" content="https://upload-images.jianshu.io/upload_images/3478485-4c2bf1f0528a37ec.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta name="twitter:image" content="https://upload-images.jianshu.io/upload_images/3478485-2af449ca59d92b9c.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 
 
 
@@ -395,7 +396,12 @@
       
 
       
-        <h2 id="用CSS来修饰HTML"><a href="#用CSS来修饰HTML" class="headerlink" title="用CSS来修饰HTML"></a><font color="green">用CSS来修饰HTML</font></h2><p>CSS称为层叠样式表，它能够控制网页在屏幕上的展示方式。它能够很快的改变几个web的排版。<br>CSS添加到HTML的方式有三种：</p>
+        <p><meta name="referrer" content="no-referrer"><br><img src="https://upload-images.jianshu.io/upload_images/3478485-2af449ca59d92b9c.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="好抽象的画"></p>
+<blockquote>
+<p>有些意识到了团队合作的重要性，但是又怎么去实践呢？是需要我们自己呢？还是由导师来安排呢？<br>今天我们来学习HTML中很重要的CSS，用来控制整个网页的样式。</p>
+</blockquote>
+<a id="more"></a>
+<h2 id="用CSS来修饰HTML"><a href="#用CSS来修饰HTML" class="headerlink" title="用CSS来修饰HTML"></a><font color="green">用CSS来修饰HTML</font></h2><p>CSS称为层叠样式表，它能够控制网页在屏幕上的展示方式。它能够很快的改变几个web的排版。<br>CSS添加到HTML的方式有三种：</p>
 <ul>
 <li>Inline  行内的添加，利用style属性。</li>
 <li>Internal 从文档本身添加，利用<code>&lt;style&gt;</code>和<code>&lt;head&gt;</code></li>
@@ -419,6 +425,7 @@
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="css"><span class="selector-tag">p</span><span class="selector-class">.error</span> &#123;</span></span><br><span class="line"><span class="undefined">    color: red;</span></span><br><span class="line"><span class="undefined">&#125;</span></span><br><span class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>This is a paragraph.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>This is a paragraph.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">"error"</span>&gt;</span>I am different.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>This is a paragraph.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">"error"</span>&gt;</span>I am different too.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <h2 id="通过外部链接添加CSS"><a href="#通过外部链接添加CSS" class="headerlink" title="通过外部链接添加CSS"></a><font color="green">通过外部链接添加CSS</font></h2><p>同样可以在HTML的<code>&lt;head&gt;</code>中，添加CSS链接，从而来调用CSS文件。而使用外部文件，则不需要使用<code>style</code>元素。</p>
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">href</span>=<span class="string">"https://www.w3schools.com/html/styles.css"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>This is a heading<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>This is a paragraph.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
       
     </div>
     
