@@ -8,8 +8,6 @@ categories: LaTeX入门
 
 <meta name="referrer" content="no-referrer" />
 
-#LaTeX中文章节自定义
-
 ![](https://raw.githubusercontent.com/Lxmic/Picture-bed/master/Image/maksym-ivashchenko-JxKIQBt26qg-unsplash.jpg)
 
 > Latex 这个专题以及好久没有更新了，最近实在是在家里呆得够了。今天重新开启一下这个专题，我发现我突然不会用了，每次过太久不用软件，总是会遗忘。下午就基本耗在这里了，才解决了那么一小个问题。
