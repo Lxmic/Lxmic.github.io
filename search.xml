@@ -1,59 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>2018年8月-小结</title>
-    <url>//2018/09/02/2018%E5%B9%B48%E6%9C%88-%E5%B0%8F%E7%BB%93/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![无尽之路](https://upload-images.jianshu.io/upload_images/3478485-6dc9021e15783f70.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-9月2日，星期日，公元2018年。
-
-
-
-<span id="more"></span>
-
-<p>9月开始崭露头角，8月已然逝去。秋天，似乎已经离我们越来越近，春困秋乏的状态又要来临。总结8月，展望9月，似乎迫不及待。</p>
-<p>8月，似乎是一个没有任何进展的月份。采葡萄，回家休息，然后就是游泳和看书。没有再多的事情，帮师姐搬了一下行李，仅此而已的8月。始终无法凝聚自己的精神专注力，聚焦在实验这一点上，整个8月确实是变得非常的散。</p>
-<p>我是否是太过于放松了，还是太过于自信，亦或是恐惧，更或是太多理想。很多很多事情似乎要做，不希望生活只有实验，希望有自己支配的时间，似乎实验只是占据了我一半左右的时间，我想对于真正地科研人员来说，这是少之又少的吧。我想游泳健身，我想博览群书（我感兴趣的），我想学习编程，我想看电影，我想去旅行，我还想学习摄影……想做的太多，精力太过分散，始终做不好任何一件事儿。</p>
-<p>我也清楚，问题关键抓不住重点，没有计划，亦或是没有目标。可是，我就认为生活也该有生活的样子，被一件事占据所有时间，也是一种悲哀。我的矛盾始终存在，那么解决矛盾的关键在于什么？我想，可能是提高时间利用率。你说不想花过多时间在实验上，那么你必须提高实验效率，要保证极高的实验成功率，在做一件事的时候，必须要专注于此，且不可散。</p>
-<p>整个大时间轴，你可以细分成你想要的份数，但是有一点你必须铭记，每一份都要讲所有的精神力注入其中，那是不可以分散的。9月，希望能够尝试这种方式，能够仅仅活在此时此刻，也是一种幸福。过多的展望，恰恰会迷失人的心智，摧毁人的意志力，因此，对于9月，我不想太多，做该做的事。</p>
-]]></content>
-      <categories>
-        <category>人生小结</category>
-      </categories>
-      <tags>
-        <tag>小结</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>CRISPR-Cas9系统简介</title>
-    <url>//2018/12/30/CRISPR-Cas9%E7%B3%BB%E7%BB%9F%E7%AE%80%E4%BB%8B/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-
-
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-0bf1101b1c467285.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="图片来源：https://www.mygenefood.com/crispr-cas9-introduction-genome-editing/"></p>
-<p>Clustered regularly interspaced short palindromic repeats（CRISPR）——规律成簇的间隔短回文重复和CRISPR-associated protein 9（Cas9），共同组成了一套系统，是细菌用来防御噬菌体DNA注入和质粒转移的天然防御系统。但现在被人类所重新利用，构建了很强的RNA引导的DNA靶向平台——主要用来基因组编辑、转录扰乱、表观遗传调控等。</p>
-<span id="more"></span>
-
-
-
-<h3 id="细菌抵抗噬菌体入侵"><a href="#细菌抵抗噬菌体入侵" class="headerlink" title="细菌抵抗噬菌体入侵"></a><font color="green">细菌抵抗噬菌体入侵</font></h3><p>图中是细菌天然免疫系统。我们可以看到，CRISPR locus是由几个原件构成。一开始是个反向转录的RNA，是特异的非编码RNA，可以和重复序列部分互补（trancrRNA，橙色矩形），后面是各种cas基因（箭头表示），接着是CRISPR排列（棕色的菱形是重复序列，彩色的是间隔）。而这些间隔序列是细菌从噬菌体DNA中获得的遗传原件：当噬菌体感染细菌，细菌激活相关的cas基因——Cas1，Cas2,和Csn2，将其中新的间隔序列整合到自身的CRISPR arry中。一旦获得以后，新的spacer就会出现在pre-crRNA中，此时tracrRNA与不同的SPACER互补，在RNaseIII的作用下，产生crRNA，进一步在其他未知的核酸酶的作用，剪切crRNA的5’端，使得引导序列长为20nt。如果噬菌体注入DNA，那么这个免疫系统将被激活，来干扰噬菌体DNA。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-4c5c2be28472800d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="防御过程"></p>
-<h3 id="剪切与修复"><a href="#剪切与修复" class="headerlink" title="剪切与修复"></a><font color="green">剪切与修复</font></h3><p>我们目前主要使用II型CRISPR系统，它和他的区别在于，只是需要一个DNA内切酶Cas9来对与sgRNA20个互补碱基的带有PAM结构的DNA进行剪切。剪切后是DNA产生平末端的DSB（双链断裂），然后在进行非同源的末端连接过程中，容易随机插入或者删除或者替换。或者进行高保真的同源定向修复，修复DNA。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-be11ad0e6a3c0c5e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Type II Cas9"><br><img src="https://upload-images.jianshu.io/upload_images/3478485-827d8dc582062b62.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Cas9剪切及突变产生"></p>
-<h3 id="Cas9蛋白构象重组"><a href="#Cas9蛋白构象重组" class="headerlink" title="Cas9蛋白构象重组"></a><font color="green">Cas9蛋白构象重组</font></h3><p>这里的例子是化脓链球菌的SpyCas9，是一个含有1368个氨基酸的多结构和多功能的DNA核酸内切酶。它的切割位点在PAM上游的第三个碱基，通过HNH（sgRAN互补的目标序列）和RuvC核酸酶结构域（非目标序列）。要识别特定序列并进行剪切，sgRNA与Cas9组合成一个复合体，其中sgRNAy与Cas9结合起着关键的作用，能够使得Cas9构象重构，变得具有活性。crRNA前20碱基使得Cas9具有靶序列特异性，tracrRNA来招募Cas9蛋白。在这个系统中，有一个所谓的种子序列，20碱基spacer的3’端10-12个核苷酸。<strong>在种子序列的错配以及本身同源性都会严重影响系统特异性和脱靶效率。</strong>*<br><img src="https://upload-images.jianshu.io/upload_images/3478485-082186ee503a2b4a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="sgNRA"></p>
-<h3 id="目标DNA搜索与识别"><a href="#目标DNA搜索与识别" class="headerlink" title="目标DNA搜索与识别"></a><font color="green">目标DNA搜索与识别</font></h3><p><strong>PAM序列非常的关键</strong>，能够起到识别自身和外来的序列。有实验表明，如果PAM进行但突变，那么就能够让噬菌体入侵宿主。在sgRNA互补之前，首先是寻找PAM序列，如果没有合适的PAM，那么通过蛋白三维结构的坍塌，会离开DNA，直到找到合适的PAM。一旦找到PAM，Cas9就使DNA局部解链，RNA进入，与DNA互补，形成RNA-DNA结构。<strong>sg种子区域序列与靶DNA的完美互补是很重要的。</strong></p>
-<h3 id="CRISPR–Cas9介导的DNA靶定于剪切模型"><a href="#CRISPR–Cas9介导的DNA靶定于剪切模型" class="headerlink" title="CRISPR–Cas9介导的DNA靶定于剪切模型"></a><font color="green">CRISPR–Cas9介导的DNA靶定于剪切模型</font></h3><p>首先，guide RNA的结合，使得Cas9从一个未激活的构象变成具有DNA识别能力的构象。RNA种子序列先形成A型构象，为了目标结合和链入侵，PAM识别位点预先形成用来PAM识别。然后，Cas9结合到PAM序列，使得酶能够去识别附近的潜在的DNA靶序列。一旦Cas9在PAM附近找到了潜在的靶序列，会开始解双螺旋并继续检查剩余的靶序列。磷酸锁环稳定解旋的目标DNA，且第一个碱基开始翻转向上，与guide RNA碱基配对。而Cas9继续与非靶链上的翻转碱基作用，促进双螺旋解开。接着，碱基配对伴随着Cas9构象改变，促进种子序列前面的guide RNA从限制中释放出来，也形成配对，这个过程促使Cas9构象持续变化，直到到达有活性的状态。最终，guide RNA与目标DNA完全互补使得HNH具有稳定的，具有活性的构象，来剪切目标链DNA。与此同时，引起更大的构象变化，使得非目标链DNA进入RuvC催化中心被剪切，这种转态下，Cas9中牢牢结合在靶点序列上，直到其他的细胞因子过来替代它。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-4db71b549d557ab4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="剪切示意图"></p>
-<p>读了这篇review，进行一定程度的总结，有些地方还是有些不太清楚。</p>
-<blockquote>
-<p>Fuguo Jiang and Jennifer A. Doudna, CRISPR–Cas9 Structures and Mechanisms, Annual Review of Biophysics 2017 46:1, 505-529 </p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>学习记录</category>
-      </categories>
-      <tags>
-        <tag>Cas9</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>DJY-遇见盖北</title>
     <url>//2018/08/18/DJY-%E9%81%87%E8%A7%81%E7%9B%96%E5%8C%97/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -105,6 +52,59 @@
       </categories>
       <tags>
         <tag>Dropbox</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>CRISPR-Cas9系统简介</title>
+    <url>//2018/12/30/CRISPR-Cas9%E7%B3%BB%E7%BB%9F%E7%AE%80%E4%BB%8B/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+
+
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-0bf1101b1c467285.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="图片来源：https://www.mygenefood.com/crispr-cas9-introduction-genome-editing/"></p>
+<p>Clustered regularly interspaced short palindromic repeats（CRISPR）——规律成簇的间隔短回文重复和CRISPR-associated protein 9（Cas9），共同组成了一套系统，是细菌用来防御噬菌体DNA注入和质粒转移的天然防御系统。但现在被人类所重新利用，构建了很强的RNA引导的DNA靶向平台——主要用来基因组编辑、转录扰乱、表观遗传调控等。</p>
+<span id="more"></span>
+
+
+
+<h3 id="细菌抵抗噬菌体入侵"><a href="#细菌抵抗噬菌体入侵" class="headerlink" title="细菌抵抗噬菌体入侵"></a><font color="green">细菌抵抗噬菌体入侵</font></h3><p>图中是细菌天然免疫系统。我们可以看到，CRISPR locus是由几个原件构成。一开始是个反向转录的RNA，是特异的非编码RNA，可以和重复序列部分互补（trancrRNA，橙色矩形），后面是各种cas基因（箭头表示），接着是CRISPR排列（棕色的菱形是重复序列，彩色的是间隔）。而这些间隔序列是细菌从噬菌体DNA中获得的遗传原件：当噬菌体感染细菌，细菌激活相关的cas基因——Cas1，Cas2,和Csn2，将其中新的间隔序列整合到自身的CRISPR arry中。一旦获得以后，新的spacer就会出现在pre-crRNA中，此时tracrRNA与不同的SPACER互补，在RNaseIII的作用下，产生crRNA，进一步在其他未知的核酸酶的作用，剪切crRNA的5’端，使得引导序列长为20nt。如果噬菌体注入DNA，那么这个免疫系统将被激活，来干扰噬菌体DNA。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-4c5c2be28472800d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="防御过程"></p>
+<h3 id="剪切与修复"><a href="#剪切与修复" class="headerlink" title="剪切与修复"></a><font color="green">剪切与修复</font></h3><p>我们目前主要使用II型CRISPR系统，它和他的区别在于，只是需要一个DNA内切酶Cas9来对与sgRNA20个互补碱基的带有PAM结构的DNA进行剪切。剪切后是DNA产生平末端的DSB（双链断裂），然后在进行非同源的末端连接过程中，容易随机插入或者删除或者替换。或者进行高保真的同源定向修复，修复DNA。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-be11ad0e6a3c0c5e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Type II Cas9"><br><img src="https://upload-images.jianshu.io/upload_images/3478485-827d8dc582062b62.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Cas9剪切及突变产生"></p>
+<h3 id="Cas9蛋白构象重组"><a href="#Cas9蛋白构象重组" class="headerlink" title="Cas9蛋白构象重组"></a><font color="green">Cas9蛋白构象重组</font></h3><p>这里的例子是化脓链球菌的SpyCas9，是一个含有1368个氨基酸的多结构和多功能的DNA核酸内切酶。它的切割位点在PAM上游的第三个碱基，通过HNH（sgRAN互补的目标序列）和RuvC核酸酶结构域（非目标序列）。要识别特定序列并进行剪切，sgRNA与Cas9组合成一个复合体，其中sgRNAy与Cas9结合起着关键的作用，能够使得Cas9构象重构，变得具有活性。crRNA前20碱基使得Cas9具有靶序列特异性，tracrRNA来招募Cas9蛋白。在这个系统中，有一个所谓的种子序列，20碱基spacer的3’端10-12个核苷酸。<strong>在种子序列的错配以及本身同源性都会严重影响系统特异性和脱靶效率。</strong>*<br><img src="https://upload-images.jianshu.io/upload_images/3478485-082186ee503a2b4a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="sgNRA"></p>
+<h3 id="目标DNA搜索与识别"><a href="#目标DNA搜索与识别" class="headerlink" title="目标DNA搜索与识别"></a><font color="green">目标DNA搜索与识别</font></h3><p><strong>PAM序列非常的关键</strong>，能够起到识别自身和外来的序列。有实验表明，如果PAM进行但突变，那么就能够让噬菌体入侵宿主。在sgRNA互补之前，首先是寻找PAM序列，如果没有合适的PAM，那么通过蛋白三维结构的坍塌，会离开DNA，直到找到合适的PAM。一旦找到PAM，Cas9就使DNA局部解链，RNA进入，与DNA互补，形成RNA-DNA结构。<strong>sg种子区域序列与靶DNA的完美互补是很重要的。</strong></p>
+<h3 id="CRISPR–Cas9介导的DNA靶定于剪切模型"><a href="#CRISPR–Cas9介导的DNA靶定于剪切模型" class="headerlink" title="CRISPR–Cas9介导的DNA靶定于剪切模型"></a><font color="green">CRISPR–Cas9介导的DNA靶定于剪切模型</font></h3><p>首先，guide RNA的结合，使得Cas9从一个未激活的构象变成具有DNA识别能力的构象。RNA种子序列先形成A型构象，为了目标结合和链入侵，PAM识别位点预先形成用来PAM识别。然后，Cas9结合到PAM序列，使得酶能够去识别附近的潜在的DNA靶序列。一旦Cas9在PAM附近找到了潜在的靶序列，会开始解双螺旋并继续检查剩余的靶序列。磷酸锁环稳定解旋的目标DNA，且第一个碱基开始翻转向上，与guide RNA碱基配对。而Cas9继续与非靶链上的翻转碱基作用，促进双螺旋解开。接着，碱基配对伴随着Cas9构象改变，促进种子序列前面的guide RNA从限制中释放出来，也形成配对，这个过程促使Cas9构象持续变化，直到到达有活性的状态。最终，guide RNA与目标DNA完全互补使得HNH具有稳定的，具有活性的构象，来剪切目标链DNA。与此同时，引起更大的构象变化，使得非目标链DNA进入RuvC催化中心被剪切，这种转态下，Cas9中牢牢结合在靶点序列上，直到其他的细胞因子过来替代它。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-4db71b549d557ab4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="剪切示意图"></p>
+<p>读了这篇review，进行一定程度的总结，有些地方还是有些不太清楚。</p>
+<blockquote>
+<p>Fuguo Jiang and Jennifer A. Doudna, CRISPR–Cas9 Structures and Mechanisms, Annual Review of Biophysics 2017 46:1, 505-529 </p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>学习记录</category>
+      </categories>
+      <tags>
+        <tag>Cas9</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>2018年8月-小结</title>
+    <url>//2018/09/02/2018%E5%B9%B48%E6%9C%88-%E5%B0%8F%E7%BB%93/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![无尽之路](https://upload-images.jianshu.io/upload_images/3478485-6dc9021e15783f70.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+9月2日，星期日，公元2018年。
+
+
+
+<span id="more"></span>
+
+<p>9月开始崭露头角，8月已然逝去。秋天，似乎已经离我们越来越近，春困秋乏的状态又要来临。总结8月，展望9月，似乎迫不及待。</p>
+<p>8月，似乎是一个没有任何进展的月份。采葡萄，回家休息，然后就是游泳和看书。没有再多的事情，帮师姐搬了一下行李，仅此而已的8月。始终无法凝聚自己的精神专注力，聚焦在实验这一点上，整个8月确实是变得非常的散。</p>
+<p>我是否是太过于放松了，还是太过于自信，亦或是恐惧，更或是太多理想。很多很多事情似乎要做，不希望生活只有实验，希望有自己支配的时间，似乎实验只是占据了我一半左右的时间，我想对于真正地科研人员来说，这是少之又少的吧。我想游泳健身，我想博览群书（我感兴趣的），我想学习编程，我想看电影，我想去旅行，我还想学习摄影……想做的太多，精力太过分散，始终做不好任何一件事儿。</p>
+<p>我也清楚，问题关键抓不住重点，没有计划，亦或是没有目标。可是，我就认为生活也该有生活的样子，被一件事占据所有时间，也是一种悲哀。我的矛盾始终存在，那么解决矛盾的关键在于什么？我想，可能是提高时间利用率。你说不想花过多时间在实验上，那么你必须提高实验效率，要保证极高的实验成功率，在做一件事的时候，必须要专注于此，且不可散。</p>
+<p>整个大时间轴，你可以细分成你想要的份数，但是有一点你必须铭记，每一份都要讲所有的精神力注入其中，那是不可以分散的。9月，希望能够尝试这种方式，能够仅仅活在此时此刻，也是一种幸福。过多的展望，恰恰会迷失人的心智，摧毁人的意志力，因此，对于9月，我不想太多，做该做的事。</p>
+]]></content>
+      <categories>
+        <category>人生小结</category>
+      </categories>
+      <tags>
+        <tag>小结</tag>
       </tags>
   </entry>
   <entry>
@@ -582,6 +582,45 @@
       </tags>
   </entry>
   <entry>
+    <title>HTML5（8）——样式</title>
+    <url>//2018/10/07/HTML5%EF%BC%888%EF%BC%89%E2%80%94%E2%80%94%E6%A0%B7%E5%BC%8F/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![](https://upload-images.jianshu.io/upload_images/3478485-00b11fdad0f37597.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+> 假期最后一天，我继续学习我的HTML5内容。上次我们提到了段落，今天要学习样式（styles）。
+
+
+
+<span id="more"></span>
+
+<h2 id="HTML样式"><a href="#HTML样式" class="headerlink" title="HTML样式"></a><font color="green">HTML样式</font></h2><p>像图中的红色字体，蓝色字体和字体大小变化，这些都是可以通过样式属性来控制的。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-98b1c83a61eee9b0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="样式调整字体"></p>
+<h2 id="样式属性"><a href="#样式属性" class="headerlink" title="样式属性"></a><font color="green">样式属性</font></h2><p>HTML元素的样式设置，可以通过<code>style</code>属性来控制。<code>style</code>属性语法如下：</p>
+<figure class="highlight routeros"><table><tr><td class="code"><pre><span class="line">&lt;tagname <span class="attribute">style</span>=<span class="string">&quot;property:value;&quot;</span>&gt;</span><br></pre></td></tr></table></figure>
+<p>其中，property 和value都是属于CSS范畴，这个我们在以后的章节中会学习，这里先不做解释。</p>
+<h2 id="HTML背景颜色"><a href="#HTML背景颜色" class="headerlink" title="HTML背景颜色"></a><font color="green">HTML背景颜色</font></h2><p><code>background-color</code>属性（property）定义了网页元素的背景颜色。</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span> <span class="attr">style</span>=<span class="string">&quot;background-color:powderblue;&quot;</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>This is a heading<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>This is a paragraph.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-dc290afb99dbd433.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="定义整个页面的背景颜色"></p>
+<h2 id="HTML字体颜色"><a href="#HTML字体颜色" class="headerlink" title="HTML字体颜色"></a><font color="green">HTML字体颜色</font></h2><p>需要使用<code>color</code>property来定义文本的颜色。下面是将标题设置为蓝色，段落字体为红色。</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">style</span>=<span class="string">&quot;color:blue;&quot;</span>&gt;</span>This is a heading<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">style</span>=<span class="string">&quot;color:red;&quot;</span>&gt;</span>This is a paragraph.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-adb41aa7310916f1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="文本颜色改变"></p>
+<h2 id="字体选择"><a href="#字体选择" class="headerlink" title="字体选择"></a><font color="green">字体选择</font></h2><p>HTML通过<code>font-family</code>属性来选择字体种类。</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">style</span>=<span class="string">&quot;font-family:verdana;&quot;</span>&gt;</span>This is a heading<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">style</span>=<span class="string">&quot;font-family:courier;&quot;</span>&gt;</span>This is a paragraph.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>改变了字体类型。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-111733be61886475.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="不同的字体"></p>
+<h2 id="HTML文本大小"><a href="#HTML文本大小" class="headerlink" title="HTML文本大小"></a><font color="green">HTML文本大小</font></h2><p><code>font-size</code>属性是用来定义网页元素文本的大小。语法如下：</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">style</span>=<span class="string">&quot;font-size:300%;&quot;</span>&gt;</span>This is a heading<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">style</span>=<span class="string">&quot;font-size:160%;&quot;</span>&gt;</span>This is a paragraph.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>是用百分数来表示，就是原来大小的几倍。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-957ebcbe484e4557.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="不同大小文本"></p>
+<h2 id="HTML文本的对齐方式"><a href="#HTML文本的对齐方式" class="headerlink" title="HTML文本的对齐方式"></a><font color="green">HTML文本的对齐方式</font></h2><p>在HTML中，我们需要属性<code>font-align</code>来定义水平文本的对齐方式。下面是全部居中的代码：</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">style</span>=<span class="string">&quot;text-align:center;&quot;</span>&gt;</span>Centered Heading<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">style</span>=<span class="string">&quot;text-align:center;&quot;</span>&gt;</span>Centered paragraph.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>标题和段落都居中显示。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-06df6e05d44066bd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="居中显示"></p>
+]]></content>
+      <categories>
+        <category>HTML5入门</category>
+      </categories>
+      <tags>
+        <tag>HTML5</tag>
+        <tag>样式</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>HTML5（9）——文本格式</title>
     <url>//2018/10/08/HTML5%EF%BC%889%EF%BC%89%E2%80%94%E2%80%94%E6%96%87%E6%9C%AC%E6%A0%BC%E5%BC%8F/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -622,42 +661,23 @@
       </tags>
   </entry>
   <entry>
-    <title>HTML5（8）——样式</title>
-    <url>//2018/10/07/HTML5%EF%BC%888%EF%BC%89%E2%80%94%E2%80%94%E6%A0%B7%E5%BC%8F/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![](https://upload-images.jianshu.io/upload_images/3478485-00b11fdad0f37597.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-> 假期最后一天，我继续学习我的HTML5内容。上次我们提到了段落，今天要学习样式（styles）。
+    <title>LaTeX中文章节定义</title>
+    <url>//2020/03/10/LaTeX%E4%B8%AD%E6%96%87%E7%AB%A0%E8%8A%82%E5%AE%9A%E4%B9%89/</url>
+    <content><![CDATA[<h3 id="1-需要使用的宏包——ctex"><a href="#1-需要使用的宏包——ctex" class="headerlink" title="1. 需要使用的宏包——ctex"></a>1. 需要使用的宏包——ctex</h3><p>官方网址：<a href="http://www.ctex.org/PackageCTeX">CTEX:PackageCTEX</a>，目前这个宏包已经转移到<a href="https://github.com/CTeX-org/ctex-kit">GitHub</a>，仍旧在继续开发增加新功能。具体详细的可以下载pdf文档。</p>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/Image/20200310163651.png"></p>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/Image/20200310163739.png"></p>
+<h3 id="2-自定义设置中文文档的章节"><a href="#2-自定义设置中文文档的章节" class="headerlink" title="2. 自定义设置中文文档的章节"></a>2. 自定义设置中文文档的章节</h3><h4 id="2-1-代码如下："><a href="#2-1-代码如下：" class="headerlink" title="2.1 代码如下："></a>2.1 代码如下：</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">%格式设置</span><br><span class="line">\documentclass[a4paper, 12pt]&#123;book&#125; %文档类型，我们选择book</span><br><span class="line">\usepackage[heading=true]&#123;ctex&#125; %载入ctex宏包</span><br><span class="line">%具体章节格式定义，这是关键的设置</span><br><span class="line">\ctexset&#123;chapter=&#123;name=&#123;第,章&#125;&#125;,section=&#123;name=&#123;第,节&#125;,format=&#123;\raggedright\Large&#125;&#125;&#125;</span><br><span class="line">%正文中格式</span><br><span class="line">\begin&#123;document&#125;</span><br><span class="line">\chapter&#123;菌株系统&#125;</span><br><span class="line">\input&#123;chapter_1/mircobes&#125;	</span><br><span class="line">	\section&#123;大肠杆菌&#125;</span><br><span class="line">\end&#123;document&#125;</span><br></pre></td></tr></table></figure>
 
-
-
-<span id="more"></span>
-
-<h2 id="HTML样式"><a href="#HTML样式" class="headerlink" title="HTML样式"></a><font color="green">HTML样式</font></h2><p>像图中的红色字体，蓝色字体和字体大小变化，这些都是可以通过样式属性来控制的。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-98b1c83a61eee9b0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="样式调整字体"></p>
-<h2 id="样式属性"><a href="#样式属性" class="headerlink" title="样式属性"></a><font color="green">样式属性</font></h2><p>HTML元素的样式设置，可以通过<code>style</code>属性来控制。<code>style</code>属性语法如下：</p>
-<figure class="highlight routeros"><table><tr><td class="code"><pre><span class="line">&lt;tagname <span class="attribute">style</span>=<span class="string">&quot;property:value;&quot;</span>&gt;</span><br></pre></td></tr></table></figure>
-<p>其中，property 和value都是属于CSS范畴，这个我们在以后的章节中会学习，这里先不做解释。</p>
-<h2 id="HTML背景颜色"><a href="#HTML背景颜色" class="headerlink" title="HTML背景颜色"></a><font color="green">HTML背景颜色</font></h2><p><code>background-color</code>属性（property）定义了网页元素的背景颜色。</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span> <span class="attr">style</span>=<span class="string">&quot;background-color:powderblue;&quot;</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>This is a heading<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>This is a paragraph.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-dc290afb99dbd433.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="定义整个页面的背景颜色"></p>
-<h2 id="HTML字体颜色"><a href="#HTML字体颜色" class="headerlink" title="HTML字体颜色"></a><font color="green">HTML字体颜色</font></h2><p>需要使用<code>color</code>property来定义文本的颜色。下面是将标题设置为蓝色，段落字体为红色。</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">style</span>=<span class="string">&quot;color:blue;&quot;</span>&gt;</span>This is a heading<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">style</span>=<span class="string">&quot;color:red;&quot;</span>&gt;</span>This is a paragraph.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-adb41aa7310916f1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="文本颜色改变"></p>
-<h2 id="字体选择"><a href="#字体选择" class="headerlink" title="字体选择"></a><font color="green">字体选择</font></h2><p>HTML通过<code>font-family</code>属性来选择字体种类。</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">style</span>=<span class="string">&quot;font-family:verdana;&quot;</span>&gt;</span>This is a heading<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">style</span>=<span class="string">&quot;font-family:courier;&quot;</span>&gt;</span>This is a paragraph.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>改变了字体类型。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-111733be61886475.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="不同的字体"></p>
-<h2 id="HTML文本大小"><a href="#HTML文本大小" class="headerlink" title="HTML文本大小"></a><font color="green">HTML文本大小</font></h2><p><code>font-size</code>属性是用来定义网页元素文本的大小。语法如下：</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">style</span>=<span class="string">&quot;font-size:300%;&quot;</span>&gt;</span>This is a heading<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">style</span>=<span class="string">&quot;font-size:160%;&quot;</span>&gt;</span>This is a paragraph.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>是用百分数来表示，就是原来大小的几倍。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-957ebcbe484e4557.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="不同大小文本"></p>
-<h2 id="HTML文本的对齐方式"><a href="#HTML文本的对齐方式" class="headerlink" title="HTML文本的对齐方式"></a><font color="green">HTML文本的对齐方式</font></h2><p>在HTML中，我们需要属性<code>font-align</code>来定义水平文本的对齐方式。下面是全部居中的代码：</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">style</span>=<span class="string">&quot;text-align:center;&quot;</span>&gt;</span>Centered Heading<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">style</span>=<span class="string">&quot;text-align:center;&quot;</span>&gt;</span>Centered paragraph.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>标题和段落都居中显示。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-06df6e05d44066bd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="居中显示"></p>
-]]></content>
+<h4 id="2-2-内容说明"><a href="#2-2-内容说明" class="headerlink" title="2.2 内容说明"></a>2.2 内容说明</h4><p>我们在载入<code>ctex</code>包，里面有一个<code>heading=true</code>参数，这个是必须要有的，否则格式依旧是不对，是默认的样式。</p>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/Image/20200310173247.png" alt="这是缺少heading的呈现结果"></p>
+<p>此外，最关键的章节定义就是通过<code>\ctexset</code>来进行设置，我这里是最简单的设置，具体更细节的设置我没有进一步去尝试。下面是根据我的代码呈现的结果：</p>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/Image/20200310174223.png"></p>
+<p>这样的结果，就比较符合我的期望需求，基本设置成功。</p>]]></content>
       <categories>
-        <category>HTML5入门</category>
+        <category>LaTeX入门</category>
       </categories>
       <tags>
-        <tag>HTML5</tag>
-        <tag>样式</tag>
+        <tag>LaTeX</tag>
       </tags>
   </entry>
   <entry>
@@ -701,52 +721,6 @@
       <tags>
         <tag>LaTeX</tag>
         <tag>参考文献</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>LaTeX中文章节定义</title>
-    <url>//2020/03/10/LaTeX%E4%B8%AD%E6%96%87%E7%AB%A0%E8%8A%82%E5%AE%9A%E4%B9%89/</url>
-    <content><![CDATA[<h3 id="1-需要使用的宏包——ctex"><a href="#1-需要使用的宏包——ctex" class="headerlink" title="1. 需要使用的宏包——ctex"></a>1. 需要使用的宏包——ctex</h3><p>官方网址：<a href="http://www.ctex.org/PackageCTeX">CTEX:PackageCTEX</a>，目前这个宏包已经转移到<a href="https://github.com/CTeX-org/ctex-kit">GitHub</a>，仍旧在继续开发增加新功能。具体详细的可以下载pdf文档。</p>
-<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/Image/20200310163651.png"></p>
-<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/Image/20200310163739.png"></p>
-<h3 id="2-自定义设置中文文档的章节"><a href="#2-自定义设置中文文档的章节" class="headerlink" title="2. 自定义设置中文文档的章节"></a>2. 自定义设置中文文档的章节</h3><h4 id="2-1-代码如下："><a href="#2-1-代码如下：" class="headerlink" title="2.1 代码如下："></a>2.1 代码如下：</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">%格式设置</span><br><span class="line">\documentclass[a4paper, 12pt]&#123;book&#125; %文档类型，我们选择book</span><br><span class="line">\usepackage[heading=true]&#123;ctex&#125; %载入ctex宏包</span><br><span class="line">%具体章节格式定义，这是关键的设置</span><br><span class="line">\ctexset&#123;chapter=&#123;name=&#123;第,章&#125;&#125;,section=&#123;name=&#123;第,节&#125;,format=&#123;\raggedright\Large&#125;&#125;&#125;</span><br><span class="line">%正文中格式</span><br><span class="line">\begin&#123;document&#125;</span><br><span class="line">\chapter&#123;菌株系统&#125;</span><br><span class="line">\input&#123;chapter_1/mircobes&#125;	</span><br><span class="line">	\section&#123;大肠杆菌&#125;</span><br><span class="line">\end&#123;document&#125;</span><br></pre></td></tr></table></figure>
-
-<h4 id="2-2-内容说明"><a href="#2-2-内容说明" class="headerlink" title="2.2 内容说明"></a>2.2 内容说明</h4><p>我们在载入<code>ctex</code>包，里面有一个<code>heading=true</code>参数，这个是必须要有的，否则格式依旧是不对，是默认的样式。</p>
-<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/Image/20200310173247.png" alt="这是缺少heading的呈现结果"></p>
-<p>此外，最关键的章节定义就是通过<code>\ctexset</code>来进行设置，我这里是最简单的设置，具体更细节的设置我没有进一步去尝试。下面是根据我的代码呈现的结果：</p>
-<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/Image/20200310174223.png"></p>
-<p>这样的结果，就比较符合我的期望需求，基本设置成功。</p>]]></content>
-      <categories>
-        <category>LaTeX入门</category>
-      </categories>
-      <tags>
-        <tag>LaTeX</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>LaTeX表格溢出问题</title>
-    <url>//2018/09/20/LaTeX%E8%A1%A8%E6%A0%BC%E6%BA%A2%E5%87%BA%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-a4ba2098aa1800cb.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="海，使人放下自己的身段"></p>
-<p>前面的<a href="https://www.jianshu.com/writer#/notebooks/23465256/notes/33812322">LaTeX插入表格</a>一文主要是来说明怎么插入表格，如果没有看过可以跳到前面去看。今天我们来说一下关于表格的一些细节处理问题。</p>
-<span id="more"></span>
-
-<h1 id="1-表格过长的问题"><a href="#1-表格过长的问题" class="headerlink" title="1 表格过长的问题"></a>1 表格过长的问题</h1><p>有时候我们的表格往往会超过一页的长度，这个时候依旧使用<code>\begin&#123;tabular&#125;...\end&#123;tabular&#125;</code>环境的话，那么肯定会导致表格的溢出，完全看不到表格超出的部分。这个时候我们就需要选择其他的宏包，来进行表格环境的设置。一般来说，我们有几种选择，但是共同的一点是，<strong>必须处理在第二页及后面几页的表头和表尾。</strong><code>\endfirsthead、\endhead、\endfoot和\endlastfoot</code>，这些参数分别用来设置第一页表头，后面每一页表头，后面每一页表尾和最后一页表尾。</p>
-<h3 id="1-1-longtable宏包"><a href="#1-1-longtable宏包" class="headerlink" title="1.1 longtable宏包"></a>1.1 longtable宏包</h3><p>在导言区你需要加载宏包<code>\usepackage&#123;longtable&#125;</code>，它的环境和tabular类似，这里不细讲。</p>
-<figure class="highlight livescript"><table><tr><td class="code"><pre><span class="line"><span class="string">\usepackage&#123;longtable&#125;</span></span><br><span class="line"><span class="string">\begin&#123;longtable&#125;&#123;表格格式&#125;</span></span><br><span class="line"><span class="string">\endhead</span></span><br><span class="line"><span class="string">\endfirsthead</span></span><br><span class="line"><span class="string">\endfoot</span></span><br><span class="line"><span class="string">\endlastfoot</span></span><br><span class="line"><span class="string">\end&#123;longtable&#125;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h3 id="1-2-tabu宏包"><a href="#1-2-tabu宏包" class="headerlink" title="1.2 tabu宏包"></a>1.2 tabu宏包</h3><p>首先也是要在导言区导入tabu和longtable宏包，然后使用的环境是，基本上没有什么区别，只是不同宏包的使用。此外还有一个包也可以使用，就是<code>ltxtable</code>宏包，它的特点是将表格独立为一个tex文件，然后要使用的时候就去引用它。</p>
-<figure class="highlight livescript"><table><tr><td class="code"><pre><span class="line"><span class="string">\usepackage&#123;tabu&#125;</span></span><br><span class="line"><span class="string">\usepackage&#123;longtable&#125;</span></span><br><span class="line"><span class="string">\begin&#123;longtabu&#125;&#123;格式&#125;</span></span><br><span class="line"><span class="string">\endhead</span></span><br><span class="line"><span class="string">\endfirsthead</span></span><br><span class="line"><span class="string">\endfoot</span></span><br><span class="line"><span class="string">\endlastfoot</span></span><br><span class="line"><span class="string">\end&#123;longtabu&#125;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h1 id="2-表格过宽的问题"><a href="#2-表格过宽的问题" class="headerlink" title="2 表格过宽的问题"></a>2 表格过宽的问题</h1><p>这个问题就比表格过长棘手一点，你没有现成的宏包可以使用，只能通过一些间接的方式将表格变窄，包括表格字体缩小，表格横放，表格列间距缩小，表格每一列的宽度减少，修改表头的行数，也可以让表格自动换行，来处理一些溢出的情况。貌似到目前为止还没有很好的宏包来解决。<br>我一般使用的是将每一列的宽度减少，进行适合的调整，到达最好的效果，其中可以使用一个强制换行的宏包来处理表头<code>makecell</code>。没一列宽度的调整就是在上面的环境后面的格式中调整，具体也不做展开，之后再写一篇细节问题来说明。</p>
-]]></content>
-      <categories>
-        <category>LaTeX入门</category>
-      </categories>
-      <tags>
-        <tag>LaTeX</tag>
-        <tag>表格</tag>
       </tags>
   </entry>
   <entry>
@@ -798,32 +772,6 @@
       </tags>
   </entry>
   <entry>
-    <title>LaTeX表格相关宏包（1）——longtable</title>
-    <url>//2018/09/24/LaTeX%E8%A1%A8%E6%A0%BC%E7%9B%B8%E5%85%B3%E5%AE%8F%E5%8C%85%EF%BC%881%EF%BC%89%E2%80%94%E2%80%94longtable/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![云似乎在飘动](https://upload-images.jianshu.io/upload_images/3478485-8c52bda2a095736a.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-<blockquote>
-<p>本篇讲得就是关于longtable宏包的使用细节。祝大家中秋节快乐。</p>
-</blockquote>
-<span id="more"></span>
-
-<h1 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h1><p>我通过一个example来进行说明，这样才具有实验意义一些：</p>
-<figure class="highlight taggerscript"><table><tr><td class="code"><pre><span class="line"><span class="symbol">\u</span>sepackage&#123;longtable&#125;</span><br><span class="line"></span><br><span class="line"><span class="symbol">\b</span>egin&#123;longtable&#125;&#123;p&#123;2cm&#125;p&#123;3.2cm&#125;p&#123;1.1cm&#125;p&#123;1.3cm&#125;p&#123;1cm&#125;p&#123;1.2cm&#125;p&#123;1.5cm&#125;p&#123;2cm&#125;&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="symbol">\c</span>aption&#123;<span class="symbol">\t</span>extbf&#123;NAC gene family identified in tomato.&#125;&#125;</span><br><span class="line">	<span class="symbol">\l</span>abel&#123;table:nac&#125;<span class="symbol">\\</span></span><br><span class="line">	<span class="symbol">\h</span>line</span><br><span class="line">	<span class="symbol">\t</span>head[l]&#123;<span class="symbol">\t</span>extbf&#123;Gene&#125;<span class="symbol">\\</span><span class="symbol">\t</span>extbf&#123;name&#125;&#125; &amp; <span class="symbol">\t</span>head[l]&#123;<span class="symbol">\t</span>extbf&#123;Gene&#125; <span class="symbol">\\</span><span class="symbol">\t</span>extbf&#123;accession No.&#125;&#125; &amp; <span class="symbol">\t</span>head[l]&#123;<span class="symbol">\t</span>extbf&#123;length&#125;<span class="symbol">\\</span><span class="symbol">\t</span>extbf&#123;(bp)&#125;&#125; &amp; <span class="symbol">\t</span>head[l]&#123;<span class="symbol">\t</span>extbf&#123;<span class="symbol">\#</span> of&#125;<span class="symbol">\\</span><span class="symbol">\t</span>extbf&#123;Introns&#125;&#125; &amp;  <span class="symbol">\t</span>head[l]&#123;<span class="symbol">\t</span>extbf&#123;size&#125;<span class="symbol">\\</span><span class="symbol">\t</span>extbf&#123;(aa)&#125;&#125; &amp; <span class="symbol">\t</span>head[l]&#123;<span class="symbol">\t</span>extbf&#123;MW&#125;<span class="symbol">\\</span><span class="symbol">\t</span>extbf&#123;(kDa)&#125;&#125; &amp; <span class="symbol">\t</span>head[l]&#123;<span class="symbol">\t</span>extbf&#123;<span class="symbol">\#</span> of TM&#125;<span class="symbol">\\</span><span class="symbol">\t</span>extbf&#123;domains&#125;&#125; &amp; <span class="symbol">\t</span>head[l]&#123;<span class="symbol">\t</span>extbf&#123;Subcellular&#125;<span class="symbol">\\</span><span class="symbol">\t</span>extbf&#123;localization&#125;&#125;<span class="symbol">\\</span></span><br><span class="line">	<span class="symbol">\h</span>line</span><br><span class="line">	<span class="symbol">\e</span>ndfirsthead</span><br><span class="line">	</span><br><span class="line">	<span class="symbol">\m</span>ulticolumn&#123;3&#125;&#123;l&#125;&#123;<span class="symbol">\t</span>extbf&#123;<span class="symbol">\t</span>ablename <span class="symbol">\ </span><span class="symbol">\t</span>hetable&#123;&#125;&#125;.  <span class="symbol">\t</span>extsl&#123;(Continued)&#125;&#125; <span class="symbol">\\</span></span><br><span class="line">	<span class="symbol">\h</span>line</span><br><span class="line">   <span class="symbol">\t</span>head[l]&#123;<span class="symbol">\t</span>extbf&#123;Gene&#125;<span class="symbol">\\</span><span class="symbol">\t</span>extbf&#123;name&#125;&#125; &amp; <span class="symbol">\t</span>head[l]&#123;<span class="symbol">\t</span>extbf&#123;Gene&#125; <span class="symbol">\\</span><span class="symbol">\t</span>extbf&#123;accession No.&#125;&#125; &amp; <span class="symbol">\t</span>head[l]&#123;<span class="symbol">\t</span>extbf&#123;CDS&#125;<span class="symbol">\\</span><span class="symbol">\t</span>extbf&#123;length&#125;<span class="symbol">\\</span><span class="symbol">\t</span>extbf&#123;(bp)&#125;&#125; &amp; <span class="symbol">\t</span>head[l]&#123;<span class="symbol">\t</span>extbf&#123;<span class="symbol">\#</span> of&#125;<span class="symbol">\\</span><span class="symbol">\t</span>extbf&#123;Introns&#125;&#125; &amp;  <span class="symbol">\t</span>head[l]&#123;<span class="symbol">\t</span>extbf&#123;Protein&#125;<span class="symbol">\\</span><span class="symbol">\t</span>extbf&#123;size&#125;<span class="symbol">\\</span><span class="symbol">\t</span>extbf&#123;(aa)&#125;&#125; &amp; <span class="symbol">\t</span>head[l]&#123;<span class="symbol">\t</span>extbf&#123;Protein&#125;<span class="symbol">\\</span><span class="symbol">\t</span>extbf&#123;MW&#125;<span class="symbol">\\</span><span class="symbol">\t</span>extbf&#123;(kDa)&#125;&#125; &amp; <span class="symbol">\t</span>head[l]&#123;<span class="symbol">\t</span>extbf&#123;TM&#125;<span class="symbol">\\</span><span class="symbol">\t</span>extbf&#123;domains&#125;<span class="symbol">\\</span><span class="symbol">\t</span>extbf&#123;prediction&#125;&#125; &amp; <span class="symbol">\t</span>head[l]&#123;<span class="symbol">\t</span>extbf&#123;Subcellular&#125;<span class="symbol">\\</span><span class="symbol">\t</span>extbf&#123;localization&#125;<span class="symbol">\\</span><span class="symbol">\t</span>extbf&#123;prediction&#125;&#125;<span class="symbol">\\</span></span><br><span class="line">	<span class="symbol">\h</span>line</span><br><span class="line">	<span class="symbol">\e</span>ndhead</span><br><span class="line">	</span><br><span class="line">	<span class="symbol">\h</span>line</span><br><span class="line">	<span class="symbol">\m</span>ulticolumn&#123;8&#125;&#123;r&#125;&#123;<span class="symbol">\t</span>extsl&#123;(Continued)&#125;&#125;<span class="symbol">\\</span></span><br><span class="line">	<span class="symbol">\e</span>ndfoot</span><br><span class="line">	</span><br><span class="line">	<span class="symbol">\h</span>line</span><br><span class="line">	<span class="symbol">\e</span>ndlastfoot</span><br><span class="line">表格的内容</span><br><span class="line"><span class="symbol">\e</span>nd&#123;longtable&#125;</span><br></pre></td></tr></table></figure>
-<h1 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h1><p>第一行就是导言区需要使用的包，你需要写上代码。<br>下面的内容就是被<code>longtable</code>长表格环境所包括在内的环境。里面就是关于表格的内容。<br><code>\caption</code>和<code>\label</code>已经很常见了，就是来写表格的标题和用来引用表格时的标签。<br><code>\hline</code>就是加一条横线，也就是表格的最上面的一条线。两条很闲之见的就是表头的内容了，是用<code>&amp;</code>来分隔的，跟一般的表格都是一样的形式。在这里，我还使用<code>makecell</code>宏包来进行强制随意的断行。这里的表头就是第一页表格中的，后面的表头虽然也是一样的，但是可能需要添加一些其他的细节。<br><code>\endfirsthead</code>是所有长表格中所需要用到的一个命令，与之匹配的还有其他3个，这个之前的是第一页表格的表头和表格标题的内容。<br><code>\multicolumn</code>是用来合并列的命令，里面就可以写后面表格的开头的标题，很多时候就是写个“continued”。<br>然后又是加横线，来填写一模一样的表头。<br><code>\endhead</code>来结束之后每一页表格表头的内容<br>加横线，填写第一页表格的表尾，也用的<code>multicolumn</code>这个命令是表格具体控制的命令，这里不做细讲。将表尾写在最右下角，一般也是写个continued，然后以<code>\endfoot</code>结尾。<br>最后是横线加<code>\endlastfoot</code>，这里一般就是空的内容，不做添加。<br>这个之后，就是表格真正的内容了，会自动分页了。</p>
-<blockquote>
-<p>关于表格插入相关的基础语法，可以看我之前的文章<a href="https://www.jianshu.com/writer#/notebooks/23465256/notes/33812322">LaTeX表格插入</a>。也可以看我个人博客：<a href="http://othlis.com/">http://othlis.com</a> 。</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>LaTeX入门</category>
-      </categories>
-      <tags>
-        <tag>LaTeX</tag>
-        <tag>longtable</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>LaTeX插入表格</title>
     <url>//2018/09/15/LaTeX%E6%8F%92%E5%85%A5%E8%A1%A8%E6%A0%BC/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -857,6 +805,80 @@
       </tags>
   </entry>
   <entry>
+    <title>LaTeX表格相关宏包（1）——longtable</title>
+    <url>//2018/09/24/LaTeX%E8%A1%A8%E6%A0%BC%E7%9B%B8%E5%85%B3%E5%AE%8F%E5%8C%85%EF%BC%881%EF%BC%89%E2%80%94%E2%80%94longtable/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![云似乎在飘动](https://upload-images.jianshu.io/upload_images/3478485-8c52bda2a095736a.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+<blockquote>
+<p>本篇讲得就是关于longtable宏包的使用细节。祝大家中秋节快乐。</p>
+</blockquote>
+<span id="more"></span>
+
+<h1 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h1><p>我通过一个example来进行说明，这样才具有实验意义一些：</p>
+<figure class="highlight taggerscript"><table><tr><td class="code"><pre><span class="line"><span class="symbol">\u</span>sepackage&#123;longtable&#125;</span><br><span class="line"></span><br><span class="line"><span class="symbol">\b</span>egin&#123;longtable&#125;&#123;p&#123;2cm&#125;p&#123;3.2cm&#125;p&#123;1.1cm&#125;p&#123;1.3cm&#125;p&#123;1cm&#125;p&#123;1.2cm&#125;p&#123;1.5cm&#125;p&#123;2cm&#125;&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="symbol">\c</span>aption&#123;<span class="symbol">\t</span>extbf&#123;NAC gene family identified in tomato.&#125;&#125;</span><br><span class="line">	<span class="symbol">\l</span>abel&#123;table:nac&#125;<span class="symbol">\\</span></span><br><span class="line">	<span class="symbol">\h</span>line</span><br><span class="line">	<span class="symbol">\t</span>head[l]&#123;<span class="symbol">\t</span>extbf&#123;Gene&#125;<span class="symbol">\\</span><span class="symbol">\t</span>extbf&#123;name&#125;&#125; &amp; <span class="symbol">\t</span>head[l]&#123;<span class="symbol">\t</span>extbf&#123;Gene&#125; <span class="symbol">\\</span><span class="symbol">\t</span>extbf&#123;accession No.&#125;&#125; &amp; <span class="symbol">\t</span>head[l]&#123;<span class="symbol">\t</span>extbf&#123;length&#125;<span class="symbol">\\</span><span class="symbol">\t</span>extbf&#123;(bp)&#125;&#125; &amp; <span class="symbol">\t</span>head[l]&#123;<span class="symbol">\t</span>extbf&#123;<span class="symbol">\#</span> of&#125;<span class="symbol">\\</span><span class="symbol">\t</span>extbf&#123;Introns&#125;&#125; &amp;  <span class="symbol">\t</span>head[l]&#123;<span class="symbol">\t</span>extbf&#123;size&#125;<span class="symbol">\\</span><span class="symbol">\t</span>extbf&#123;(aa)&#125;&#125; &amp; <span class="symbol">\t</span>head[l]&#123;<span class="symbol">\t</span>extbf&#123;MW&#125;<span class="symbol">\\</span><span class="symbol">\t</span>extbf&#123;(kDa)&#125;&#125; &amp; <span class="symbol">\t</span>head[l]&#123;<span class="symbol">\t</span>extbf&#123;<span class="symbol">\#</span> of TM&#125;<span class="symbol">\\</span><span class="symbol">\t</span>extbf&#123;domains&#125;&#125; &amp; <span class="symbol">\t</span>head[l]&#123;<span class="symbol">\t</span>extbf&#123;Subcellular&#125;<span class="symbol">\\</span><span class="symbol">\t</span>extbf&#123;localization&#125;&#125;<span class="symbol">\\</span></span><br><span class="line">	<span class="symbol">\h</span>line</span><br><span class="line">	<span class="symbol">\e</span>ndfirsthead</span><br><span class="line">	</span><br><span class="line">	<span class="symbol">\m</span>ulticolumn&#123;3&#125;&#123;l&#125;&#123;<span class="symbol">\t</span>extbf&#123;<span class="symbol">\t</span>ablename <span class="symbol">\ </span><span class="symbol">\t</span>hetable&#123;&#125;&#125;.  <span class="symbol">\t</span>extsl&#123;(Continued)&#125;&#125; <span class="symbol">\\</span></span><br><span class="line">	<span class="symbol">\h</span>line</span><br><span class="line">   <span class="symbol">\t</span>head[l]&#123;<span class="symbol">\t</span>extbf&#123;Gene&#125;<span class="symbol">\\</span><span class="symbol">\t</span>extbf&#123;name&#125;&#125; &amp; <span class="symbol">\t</span>head[l]&#123;<span class="symbol">\t</span>extbf&#123;Gene&#125; <span class="symbol">\\</span><span class="symbol">\t</span>extbf&#123;accession No.&#125;&#125; &amp; <span class="symbol">\t</span>head[l]&#123;<span class="symbol">\t</span>extbf&#123;CDS&#125;<span class="symbol">\\</span><span class="symbol">\t</span>extbf&#123;length&#125;<span class="symbol">\\</span><span class="symbol">\t</span>extbf&#123;(bp)&#125;&#125; &amp; <span class="symbol">\t</span>head[l]&#123;<span class="symbol">\t</span>extbf&#123;<span class="symbol">\#</span> of&#125;<span class="symbol">\\</span><span class="symbol">\t</span>extbf&#123;Introns&#125;&#125; &amp;  <span class="symbol">\t</span>head[l]&#123;<span class="symbol">\t</span>extbf&#123;Protein&#125;<span class="symbol">\\</span><span class="symbol">\t</span>extbf&#123;size&#125;<span class="symbol">\\</span><span class="symbol">\t</span>extbf&#123;(aa)&#125;&#125; &amp; <span class="symbol">\t</span>head[l]&#123;<span class="symbol">\t</span>extbf&#123;Protein&#125;<span class="symbol">\\</span><span class="symbol">\t</span>extbf&#123;MW&#125;<span class="symbol">\\</span><span class="symbol">\t</span>extbf&#123;(kDa)&#125;&#125; &amp; <span class="symbol">\t</span>head[l]&#123;<span class="symbol">\t</span>extbf&#123;TM&#125;<span class="symbol">\\</span><span class="symbol">\t</span>extbf&#123;domains&#125;<span class="symbol">\\</span><span class="symbol">\t</span>extbf&#123;prediction&#125;&#125; &amp; <span class="symbol">\t</span>head[l]&#123;<span class="symbol">\t</span>extbf&#123;Subcellular&#125;<span class="symbol">\\</span><span class="symbol">\t</span>extbf&#123;localization&#125;<span class="symbol">\\</span><span class="symbol">\t</span>extbf&#123;prediction&#125;&#125;<span class="symbol">\\</span></span><br><span class="line">	<span class="symbol">\h</span>line</span><br><span class="line">	<span class="symbol">\e</span>ndhead</span><br><span class="line">	</span><br><span class="line">	<span class="symbol">\h</span>line</span><br><span class="line">	<span class="symbol">\m</span>ulticolumn&#123;8&#125;&#123;r&#125;&#123;<span class="symbol">\t</span>extsl&#123;(Continued)&#125;&#125;<span class="symbol">\\</span></span><br><span class="line">	<span class="symbol">\e</span>ndfoot</span><br><span class="line">	</span><br><span class="line">	<span class="symbol">\h</span>line</span><br><span class="line">	<span class="symbol">\e</span>ndlastfoot</span><br><span class="line">表格的内容</span><br><span class="line"><span class="symbol">\e</span>nd&#123;longtable&#125;</span><br></pre></td></tr></table></figure>
+<h1 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h1><p>第一行就是导言区需要使用的包，你需要写上代码。<br>下面的内容就是被<code>longtable</code>长表格环境所包括在内的环境。里面就是关于表格的内容。<br><code>\caption</code>和<code>\label</code>已经很常见了，就是来写表格的标题和用来引用表格时的标签。<br><code>\hline</code>就是加一条横线，也就是表格的最上面的一条线。两条很闲之见的就是表头的内容了，是用<code>&amp;</code>来分隔的，跟一般的表格都是一样的形式。在这里，我还使用<code>makecell</code>宏包来进行强制随意的断行。这里的表头就是第一页表格中的，后面的表头虽然也是一样的，但是可能需要添加一些其他的细节。<br><code>\endfirsthead</code>是所有长表格中所需要用到的一个命令，与之匹配的还有其他3个，这个之前的是第一页表格的表头和表格标题的内容。<br><code>\multicolumn</code>是用来合并列的命令，里面就可以写后面表格的开头的标题，很多时候就是写个“continued”。<br>然后又是加横线，来填写一模一样的表头。<br><code>\endhead</code>来结束之后每一页表格表头的内容<br>加横线，填写第一页表格的表尾，也用的<code>multicolumn</code>这个命令是表格具体控制的命令，这里不做细讲。将表尾写在最右下角，一般也是写个continued，然后以<code>\endfoot</code>结尾。<br>最后是横线加<code>\endlastfoot</code>，这里一般就是空的内容，不做添加。<br>这个之后，就是表格真正的内容了，会自动分页了。</p>
+<blockquote>
+<p>关于表格插入相关的基础语法，可以看我之前的文章<a href="https://www.jianshu.com/writer#/notebooks/23465256/notes/33812322">LaTeX表格插入</a>。也可以看我个人博客：<a href="http://othlis.com/">http://othlis.com</a> 。</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>LaTeX入门</category>
+      </categories>
+      <tags>
+        <tag>LaTeX</tag>
+        <tag>longtable</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>LaTeX表格溢出问题</title>
+    <url>//2018/09/20/LaTeX%E8%A1%A8%E6%A0%BC%E6%BA%A2%E5%87%BA%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-a4ba2098aa1800cb.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="海，使人放下自己的身段"></p>
+<p>前面的<a href="https://www.jianshu.com/writer#/notebooks/23465256/notes/33812322">LaTeX插入表格</a>一文主要是来说明怎么插入表格，如果没有看过可以跳到前面去看。今天我们来说一下关于表格的一些细节处理问题。</p>
+<span id="more"></span>
+
+<h1 id="1-表格过长的问题"><a href="#1-表格过长的问题" class="headerlink" title="1 表格过长的问题"></a>1 表格过长的问题</h1><p>有时候我们的表格往往会超过一页的长度，这个时候依旧使用<code>\begin&#123;tabular&#125;...\end&#123;tabular&#125;</code>环境的话，那么肯定会导致表格的溢出，完全看不到表格超出的部分。这个时候我们就需要选择其他的宏包，来进行表格环境的设置。一般来说，我们有几种选择，但是共同的一点是，<strong>必须处理在第二页及后面几页的表头和表尾。</strong><code>\endfirsthead、\endhead、\endfoot和\endlastfoot</code>，这些参数分别用来设置第一页表头，后面每一页表头，后面每一页表尾和最后一页表尾。</p>
+<h3 id="1-1-longtable宏包"><a href="#1-1-longtable宏包" class="headerlink" title="1.1 longtable宏包"></a>1.1 longtable宏包</h3><p>在导言区你需要加载宏包<code>\usepackage&#123;longtable&#125;</code>，它的环境和tabular类似，这里不细讲。</p>
+<figure class="highlight livescript"><table><tr><td class="code"><pre><span class="line"><span class="string">\usepackage&#123;longtable&#125;</span></span><br><span class="line"><span class="string">\begin&#123;longtable&#125;&#123;表格格式&#125;</span></span><br><span class="line"><span class="string">\endhead</span></span><br><span class="line"><span class="string">\endfirsthead</span></span><br><span class="line"><span class="string">\endfoot</span></span><br><span class="line"><span class="string">\endlastfoot</span></span><br><span class="line"><span class="string">\end&#123;longtable&#125;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="1-2-tabu宏包"><a href="#1-2-tabu宏包" class="headerlink" title="1.2 tabu宏包"></a>1.2 tabu宏包</h3><p>首先也是要在导言区导入tabu和longtable宏包，然后使用的环境是，基本上没有什么区别，只是不同宏包的使用。此外还有一个包也可以使用，就是<code>ltxtable</code>宏包，它的特点是将表格独立为一个tex文件，然后要使用的时候就去引用它。</p>
+<figure class="highlight livescript"><table><tr><td class="code"><pre><span class="line"><span class="string">\usepackage&#123;tabu&#125;</span></span><br><span class="line"><span class="string">\usepackage&#123;longtable&#125;</span></span><br><span class="line"><span class="string">\begin&#123;longtabu&#125;&#123;格式&#125;</span></span><br><span class="line"><span class="string">\endhead</span></span><br><span class="line"><span class="string">\endfirsthead</span></span><br><span class="line"><span class="string">\endfoot</span></span><br><span class="line"><span class="string">\endlastfoot</span></span><br><span class="line"><span class="string">\end&#123;longtabu&#125;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h1 id="2-表格过宽的问题"><a href="#2-表格过宽的问题" class="headerlink" title="2 表格过宽的问题"></a>2 表格过宽的问题</h1><p>这个问题就比表格过长棘手一点，你没有现成的宏包可以使用，只能通过一些间接的方式将表格变窄，包括表格字体缩小，表格横放，表格列间距缩小，表格每一列的宽度减少，修改表头的行数，也可以让表格自动换行，来处理一些溢出的情况。貌似到目前为止还没有很好的宏包来解决。<br>我一般使用的是将每一列的宽度减少，进行适合的调整，到达最好的效果，其中可以使用一个强制换行的宏包来处理表头<code>makecell</code>。没一列宽度的调整就是在上面的环境后面的格式中调整，具体也不做展开，之后再写一篇细节问题来说明。</p>
+]]></content>
+      <categories>
+        <category>LaTeX入门</category>
+      </categories>
+      <tags>
+        <tag>LaTeX</tag>
+        <tag>表格</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Love</title>
+    <url>//2018/08/29/Love/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![love.jpeg](https://upload-images.jianshu.io/upload_images/3478485-7d3fb1e8df7d27b8.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+<p>那是发生在寒假某一天，突然想你。</p>
+<span id="more"></span>
+
+<p>2017年，已经完完整整的成为过去。有些东西永远留在心中，有些东西被遗忘，有些东西已经失去，有些人也离开。发生过的所有事，大概一定会留下痕迹吧。已经开启2018年的笔记本，所有已经发生过的痕迹，已经被记录在人生笔记本上的某一页，有些痕迹不及时查看，很快就会被翻页过去，永远地被遗忘。</p>
+<p>前两天，刚回家不久，开始组织高中同学会，发现没有什么人可以相聚，结果只有两个人有空，有时间能够相聚。聊着聊着总是会扯到找对象这件事，像我们这个年级的人，也差不多进入房子、车子和妹子的氛围中，无法逃脱。即使不想那么累，也不得不那么累。找对象，是经常被谈起的话题。每个人都有自己对爱情的独到见解。土豪同志说自己应该工作地点问题，和谈了3年左右的大学学妹分手了，现实很残酷，工作不在同一个地方，最后的结局基本就是分开。现在已经不想在校园里那样纯粹地去谈一场恋爱，首先考虑地往往就是工作地点，以及物质基础，周围越来越多的案例发生，历历在目。自己也变得越来越现实，爱情离我们越来越遥远，我真地没法理解。即使特别想要一份纯粹一些的爱情，但是仔细想想也是，你凭什么让一个人和你在一起吃苦，人生本来就短暂，不能好好地享受生活，还要跟着你吃苦，真得太艰难了。我永远处于这种矛盾之中，好像这个问题永远无解，没有办法找到最优的解，我已经苦苦寻求好久好久，依旧在黑暗中摸索。</p>
+<p>现在处于漂浮不定的状态，就是一种没法给人<strong>安全感</strong>的状态。没有办法去给别人任何关于未来的承诺，承担不了的责任，不要去硬抗，会累垮。我妈好像也不怎么着急，我也没有那么心急，有些东西该来的时候肯定还是会来的。<strong>遇见的时间不对，只能继续前行，希望在对的时空遇到对的人</strong>。注定一辈子活在不确定性当中，我貌似已经失去了对我自己生命的把控，决定权已经被剥夺。</p>
+<p>现在，我只选择好好地爱我的父母，考虑父母今后的日子。时间越来越少，现在的自己也有一点点的小小的能力让他们过得稍微好一点。对于父母，我好像不用在意承诺，父母是最伟大的存在，不用给出什么承诺，我也不怕，就想着尽早地尽孝，好好孝顺他们。越早越好，能孝顺多少是多少，不用考虑太多。现在看来，自己真的还有好多人情，好多爱需要反馈。长这么大，接受了多少人的爱，才有了今天的我，亲戚的爱，周围邻居的爱，同学的爱，老师的爱以及父母的爱。自己现在还没有什么能力去反馈给他们，让他们知道他们的付出我都是记在心里的，在我的<strong>生命笔记本</strong>中都好好地记录着，谁对我好我都清楚。现在或多或少，都该开始反馈了，或者通俗的报答感恩。</p>
+<p>2018年，开始回看<strong>生命笔记本</strong>，找出那些爱的痕迹，尽可能多地想到这些人，要放在心上。要重新对生活充满激情，热爱生活，才能更好地执行这件事。希望我能更久地陪在你们身边，让我有机会更对地给予你们<strong>爱的反馈。</strong></p>
+]]></content>
+      <categories>
+        <category>随记</category>
+      </categories>
+      <tags>
+        <tag>爱</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>TBtools中关于染色体定位的问题</title>
     <url>//2018/09/20/TBtools%E4%B8%AD%E5%85%B3%E4%BA%8E%E6%9F%93%E8%89%B2%E4%BD%93%E5%AE%9A%E4%BD%8D%E7%9A%84%E9%97%AE%E9%A2%98/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -880,25 +902,19 @@
       </tags>
   </entry>
   <entry>
-    <title>Love</title>
-    <url>//2018/08/29/Love/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![love.jpeg](https://upload-images.jianshu.io/upload_images/3478485-7d3fb1e8df7d27b8.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-<p>那是发生在寒假某一天，突然想你。</p>
-<span id="more"></span>
-
-<p>2017年，已经完完整整的成为过去。有些东西永远留在心中，有些东西被遗忘，有些东西已经失去，有些人也离开。发生过的所有事，大概一定会留下痕迹吧。已经开启2018年的笔记本，所有已经发生过的痕迹，已经被记录在人生笔记本上的某一页，有些痕迹不及时查看，很快就会被翻页过去，永远地被遗忘。</p>
-<p>前两天，刚回家不久，开始组织高中同学会，发现没有什么人可以相聚，结果只有两个人有空，有时间能够相聚。聊着聊着总是会扯到找对象这件事，像我们这个年级的人，也差不多进入房子、车子和妹子的氛围中，无法逃脱。即使不想那么累，也不得不那么累。找对象，是经常被谈起的话题。每个人都有自己对爱情的独到见解。土豪同志说自己应该工作地点问题，和谈了3年左右的大学学妹分手了，现实很残酷，工作不在同一个地方，最后的结局基本就是分开。现在已经不想在校园里那样纯粹地去谈一场恋爱，首先考虑地往往就是工作地点，以及物质基础，周围越来越多的案例发生，历历在目。自己也变得越来越现实，爱情离我们越来越遥远，我真地没法理解。即使特别想要一份纯粹一些的爱情，但是仔细想想也是，你凭什么让一个人和你在一起吃苦，人生本来就短暂，不能好好地享受生活，还要跟着你吃苦，真得太艰难了。我永远处于这种矛盾之中，好像这个问题永远无解，没有办法找到最优的解，我已经苦苦寻求好久好久，依旧在黑暗中摸索。</p>
-<p>现在处于漂浮不定的状态，就是一种没法给人<strong>安全感</strong>的状态。没有办法去给别人任何关于未来的承诺，承担不了的责任，不要去硬抗，会累垮。我妈好像也不怎么着急，我也没有那么心急，有些东西该来的时候肯定还是会来的。<strong>遇见的时间不对，只能继续前行，希望在对的时空遇到对的人</strong>。注定一辈子活在不确定性当中，我貌似已经失去了对我自己生命的把控，决定权已经被剥夺。</p>
-<p>现在，我只选择好好地爱我的父母，考虑父母今后的日子。时间越来越少，现在的自己也有一点点的小小的能力让他们过得稍微好一点。对于父母，我好像不用在意承诺，父母是最伟大的存在，不用给出什么承诺，我也不怕，就想着尽早地尽孝，好好孝顺他们。越早越好，能孝顺多少是多少，不用考虑太多。现在看来，自己真的还有好多人情，好多爱需要反馈。长这么大，接受了多少人的爱，才有了今天的我，亲戚的爱，周围邻居的爱，同学的爱，老师的爱以及父母的爱。自己现在还没有什么能力去反馈给他们，让他们知道他们的付出我都是记在心里的，在我的<strong>生命笔记本</strong>中都好好地记录着，谁对我好我都清楚。现在或多或少，都该开始反馈了，或者通俗的报答感恩。</p>
-<p>2018年，开始回看<strong>生命笔记本</strong>，找出那些爱的痕迹，尽可能多地想到这些人，要放在心上。要重新对生活充满激情，热爱生活，才能更好地执行这件事。希望我能更久地陪在你们身边，让我有机会更对地给予你们<strong>爱的反馈。</strong></p>
-]]></content>
+    <title>传奇的诞生</title>
+    <url>//2018/09/11/%E4%BC%A0%E5%A5%87%E7%9A%84%E8%AF%9E%E7%94%9F/</url>
+    <content><![CDATA[<p>在看这部电影之前，我一直都不知道还有这样一个传奇的存在，对于足球，我个人没有特别大的兴趣爱好，因此我都不太了解足球这方面的巨星和故事。但是，看着题目，你能够想象到这可能是一个激励的故事，又是一碗鸡汤，我决定去喝了它。</p>
+<p>故事开始，一群孩子在小巷子里玩着自己做的足球，规则是不让足球落地，通过大家的配合。主人公迪科，踢得非常的好，很明显你可以看出来，这也铺垫了后面的比赛。跟其他的故事一样，一开始总是被父母认为没有出息的东西，结果往往是因为这个，而有了巨大的成就。贝利的母亲极力的反对，而他父亲确实很支持。而在这背后，往往有着一段不一样的经历，才能够导致现在这样的局面。母亲和父亲就是因为足球而结缘，同样也是因为足球而失去了太多，最终对其充满失望。</p>
+<p>那时候，巴西因为1950年和1954年的世界杯惨败，而一直 没有走出来。因为世界杯的失败，人们将责任推到没有规则和野蛮的踢球方式，最终一直被厌恶。但是贝利已经将这种提法融入血液之中，无法改变。就是因为贝利的坚持，带动了整个巴西国家队，在1958年世界杯上，打败瑞典队，一雪前耻，巴西人再一次因为足球而世界闻名，而这历史性的时刻，也是标志了贝利时代的来临。</p>
+<p>一个人具有这样的影响力，能够担负起相当大的重担，能够让国家在世界面前站立起来，真得难以置信。贝利被授予“巴西国宝”的称号，还保持着多项足球方面的记录，至今无人能打破，被国际奥委会认为是20世纪最具有影响力的运动员。</p>
+<p>电影就是讲贝利的一生，就是传奇的一生。被人嘲讽，受尽屈辱，最后通过自己的努力，母亲父亲的鼓励和支持，最后成为影响力极大的人物。真的是传奇，只受过正规的足球训练18个月，就帮助巴西国家队拿到了世界杯冠军，除了贝利，还有谁能完成吗？在之后的两届世界杯，贝利带领巴西队两次夺冠，成为目前为止唯一一个获得三次世界杯冠军的球员。</p>
+<p>一切，就是因为传奇的诞生。</p>]]></content>
       <categories>
-        <category>随记</category>
+        <category>影评领域</category>
       </categories>
       <tags>
-        <tag>爱</tag>
+        <tag>电影</tag>
       </tags>
   </entry>
   <entry>
@@ -983,22 +999,6 @@
       </tags>
   </entry>
   <entry>
-    <title>传奇的诞生</title>
-    <url>//2018/09/11/%E4%BC%A0%E5%A5%87%E7%9A%84%E8%AF%9E%E7%94%9F/</url>
-    <content><![CDATA[<p>在看这部电影之前，我一直都不知道还有这样一个传奇的存在，对于足球，我个人没有特别大的兴趣爱好，因此我都不太了解足球这方面的巨星和故事。但是，看着题目，你能够想象到这可能是一个激励的故事，又是一碗鸡汤，我决定去喝了它。</p>
-<p>故事开始，一群孩子在小巷子里玩着自己做的足球，规则是不让足球落地，通过大家的配合。主人公迪科，踢得非常的好，很明显你可以看出来，这也铺垫了后面的比赛。跟其他的故事一样，一开始总是被父母认为没有出息的东西，结果往往是因为这个，而有了巨大的成就。贝利的母亲极力的反对，而他父亲确实很支持。而在这背后，往往有着一段不一样的经历，才能够导致现在这样的局面。母亲和父亲就是因为足球而结缘，同样也是因为足球而失去了太多，最终对其充满失望。</p>
-<p>那时候，巴西因为1950年和1954年的世界杯惨败，而一直 没有走出来。因为世界杯的失败，人们将责任推到没有规则和野蛮的踢球方式，最终一直被厌恶。但是贝利已经将这种提法融入血液之中，无法改变。就是因为贝利的坚持，带动了整个巴西国家队，在1958年世界杯上，打败瑞典队，一雪前耻，巴西人再一次因为足球而世界闻名，而这历史性的时刻，也是标志了贝利时代的来临。</p>
-<p>一个人具有这样的影响力，能够担负起相当大的重担，能够让国家在世界面前站立起来，真得难以置信。贝利被授予“巴西国宝”的称号，还保持着多项足球方面的记录，至今无人能打破，被国际奥委会认为是20世纪最具有影响力的运动员。</p>
-<p>电影就是讲贝利的一生，就是传奇的一生。被人嘲讽，受尽屈辱，最后通过自己的努力，母亲父亲的鼓励和支持，最后成为影响力极大的人物。真的是传奇，只受过正规的足球训练18个月，就帮助巴西国家队拿到了世界杯冠军，除了贝利，还有谁能完成吗？在之后的两届世界杯，贝利带领巴西队两次夺冠，成为目前为止唯一一个获得三次世界杯冠军的球员。</p>
-<p>一切，就是因为传奇的诞生。</p>]]></content>
-      <categories>
-        <category>影评领域</category>
-      </categories>
-      <tags>
-        <tag>电影</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>印度，漂浮的次大陆</title>
     <url>//2018/09/06/%E5%8D%B0%E5%BA%A6%EF%BC%8C%E6%BC%82%E6%B5%AE%E7%9A%84%E6%AC%A1%E5%A4%A7%E9%99%86/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -1044,57 +1044,6 @@
       <tags>
         <tag>印度</tag>
         <tag>郭建龙</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>大悦城小聚</title>
-    <url>//2018/09/29/%E5%A4%A7%E6%82%A6%E5%9F%8E%E5%B0%8F%E8%81%9A/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![虽然没有我们的照片，但是有这个意思](https://upload-images.jianshu.io/upload_images/3478485-ccf80350d2a43ed6.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-<blockquote>
-<p>星期一就接到了大学室友“大叔”的诚挚邀请，请我吃饭。好不犹豫的答应之后，一直等待着。</p>
-</blockquote>
-<span id="more"></span>
-
-<p>礼拜三，本来已经提前说了，最后有点情况，还是没有去。然后就是礼拜五，晚上六点在新开的大悦城吃饭，天泰泰国菜，貌似是一家网红店，味道确实很不错，尤其是咖喱牛肉，辣辣的感觉出现在入口一段时间之后，很是享受。此外，还有泰式奶茶，味道特别浓厚且独特，很是喜欢。这家店确实可以，比我想象中精致一些，人均价位100多，偶尔享受一下这样的食物，心情都会变好很多。</p>
-<ul>
-<li>土豆咖喱炖牛肉</li>
-</ul>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-464c0f630b16116c.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="土豆咖喱炖牛肉"></p>
-<ul>
-<li>泰式传统虾饼，真是满满的都是虾肉，特别鲜</li>
-</ul>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-75a90853bc691151.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="泰式传统虾饼，真是满满的都是虾肉，特别鲜"></p>
-<ul>
-<li>菠萝炒饭，一般是必点的泰国菜</li>
-</ul>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-a08a47b3e9d958d2.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="菠萝炒饭，一般是必点的泰国菜"></p>
-<ul>
-<li>炒粉，很劲道，味道很棒，配着旁边的酱料</li>
-</ul>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-b8314beafe3e997f.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="炒粉，很劲道，味道很棒，配着旁边的酱料"></p>
-<ul>
-<li>椰蓉布丁，口感非常好，椰香特别浓厚，下面是一层晶莹透明的西米</li>
-</ul>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-8d9391ea6f0ef287.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="椰蓉布丁，口感非常好，椰香特别浓厚，下面是一层晶莹透明的西米"></p>
-<ul>
-<li>这就是我喝的奶茶了，看起来就非常的高端大气，确实味道也特别的棒</li>
-</ul>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-d6b3972175e63e1d.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="这就是我喝的奶茶了，看起来就非常的高端大气，确实味道也特别的棒"></p>
-<p>吃完这些菜，并没有很好的满足我们的欲望，果断又去吃了一家烤鱼，叫江边城外。不过说真的，还是有点饱了，不过有特别想尝试，结果味道很是不错，而且还是两种口味，一半一半，双拼烤鱼。</p>
-<ul>
-<li>烤鱼，一半酱香一半蒜香</li>
-</ul>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-990751167b0d3e42.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="烤鱼，一半酱香一半蒜香"></p>
-<p>吃完，也就结束了。喜欢这样的感觉，偶尔有空且机会正好，一定要想到好友，一起吃个饭，闲聊几句，很是舒心，没有太过多余的想法，放下很多事情。骑自行车回去学校，没有再逛，下次再约。</p>
-]]></content>
-      <categories>
-        <category>随记</category>
-      </categories>
-      <tags>
-        <tag>泰国菜</tag>
-        <tag>大学</tag>
       </tags>
   </entry>
   <entry>
@@ -1178,6 +1127,57 @@ characterization of aluminum resistance in Populus"><br>这里我先用比较麻
       </tags>
   </entry>
   <entry>
+    <title>大悦城小聚</title>
+    <url>//2018/09/29/%E5%A4%A7%E6%82%A6%E5%9F%8E%E5%B0%8F%E8%81%9A/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![虽然没有我们的照片，但是有这个意思](https://upload-images.jianshu.io/upload_images/3478485-ccf80350d2a43ed6.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+<blockquote>
+<p>星期一就接到了大学室友“大叔”的诚挚邀请，请我吃饭。好不犹豫的答应之后，一直等待着。</p>
+</blockquote>
+<span id="more"></span>
+
+<p>礼拜三，本来已经提前说了，最后有点情况，还是没有去。然后就是礼拜五，晚上六点在新开的大悦城吃饭，天泰泰国菜，貌似是一家网红店，味道确实很不错，尤其是咖喱牛肉，辣辣的感觉出现在入口一段时间之后，很是享受。此外，还有泰式奶茶，味道特别浓厚且独特，很是喜欢。这家店确实可以，比我想象中精致一些，人均价位100多，偶尔享受一下这样的食物，心情都会变好很多。</p>
+<ul>
+<li>土豆咖喱炖牛肉</li>
+</ul>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-464c0f630b16116c.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="土豆咖喱炖牛肉"></p>
+<ul>
+<li>泰式传统虾饼，真是满满的都是虾肉，特别鲜</li>
+</ul>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-75a90853bc691151.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="泰式传统虾饼，真是满满的都是虾肉，特别鲜"></p>
+<ul>
+<li>菠萝炒饭，一般是必点的泰国菜</li>
+</ul>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-a08a47b3e9d958d2.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="菠萝炒饭，一般是必点的泰国菜"></p>
+<ul>
+<li>炒粉，很劲道，味道很棒，配着旁边的酱料</li>
+</ul>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-b8314beafe3e997f.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="炒粉，很劲道，味道很棒，配着旁边的酱料"></p>
+<ul>
+<li>椰蓉布丁，口感非常好，椰香特别浓厚，下面是一层晶莹透明的西米</li>
+</ul>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-8d9391ea6f0ef287.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="椰蓉布丁，口感非常好，椰香特别浓厚，下面是一层晶莹透明的西米"></p>
+<ul>
+<li>这就是我喝的奶茶了，看起来就非常的高端大气，确实味道也特别的棒</li>
+</ul>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-d6b3972175e63e1d.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="这就是我喝的奶茶了，看起来就非常的高端大气，确实味道也特别的棒"></p>
+<p>吃完这些菜，并没有很好的满足我们的欲望，果断又去吃了一家烤鱼，叫江边城外。不过说真的，还是有点饱了，不过有特别想尝试，结果味道很是不错，而且还是两种口味，一半一半，双拼烤鱼。</p>
+<ul>
+<li>烤鱼，一半酱香一半蒜香</li>
+</ul>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-990751167b0d3e42.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="烤鱼，一半酱香一半蒜香"></p>
+<p>吃完，也就结束了。喜欢这样的感觉，偶尔有空且机会正好，一定要想到好友，一起吃个饭，闲聊几句，很是舒心，没有太过多余的想法，放下很多事情。骑自行车回去学校，没有再逛，下次再约。</p>
+]]></content>
+      <categories>
+        <category>随记</category>
+      </categories>
+      <tags>
+        <tag>泰国菜</tag>
+        <tag>大学</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>如何使用Excel查找重复项</title>
     <url>//2018/09/24/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8Excel%E6%9F%A5%E6%89%BE%E9%87%8D%E5%A4%8D%E9%A1%B9/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -1200,31 +1200,6 @@ characterization of aluminum resistance in Populus"><br>这里我先用比较麻
       <tags>
         <tag>Excel</tag>
         <tag>重复项</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>徒手攀岩</title>
-    <url>//2019/09/06/%E5%BE%92%E6%89%8B%E6%94%80%E5%B2%A9/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-07b4b1add5c215b1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
-<blockquote>
-<p>真的让人窒息，巨兽裂缝，始终受到局部挤压，痛苦。</p>
-</blockquote>
-<span id="more"></span>
-
-<p>今天我其实一直在犹豫要去看哪一部电影——《徒手攀岩》和《宝莱坞机器人2.0》，原因是我之前已经在网上看过一点徒手攀岩，对于纪录片我基本没有太大的热情去看，好像也没有什么耐心看。宝莱坞机器人看了预告，就觉得有点没啥意思，就是有点无脑砸特效的电影，有点打破了我对印度电影的印象。最终，还是选择了前者，而且为了视觉效果，还选择了IMAX。</p>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-27cf0e28cb3668ec.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
-<p>总的感觉就是刺激，从准备到练习，接着尝试，失败后再次尝试，最终成功无保护徒手攀岩成功。最后在自由的无人为干扰的条件下，完成了8年来Alex一直想要征服的Yosemite酋长岩。有好几个绝险的地方，根本没有办法看，连摄影师都没有办法注视着镜头，屏幕面前的我也是，几乎就不敢看屏幕了。还好我提醒自己，这是纪录片，基本是成功了，才敢勉强的注视着镜头。但是我的身体依旧没有控制住，我双手紧握拳头，手心冒着汗，应该是吓得出了汗，整个手都是湿的。这种情况下，你的身体是没有办法欺骗的，作出了遇见危险时该做出的反应。真的太刺激了，完全不输给那些科幻大片，难怪会获得奥斯卡最佳纪录片。</p>
-<p>对于像Alex这样的极度冒险者，真的无比敬佩。永远不会满足，一个一个的征服。即使看到很多圈子里优秀徒手攀岩者的跌落身亡，自己依然能够克服恐惧，敢于面对死亡。绝对不能出错，必须做到极致完美，才能够活着见到家人朋友。突然想想，这个世界真的太奇妙了，太多奇特的人和奇特的事。</p>
-<p>能够深度专注自己喜欢做的事，而这件事也能够养活自己，这对于每个人来说，都是非常渴望的事情。只有及其少数的人才能够找到这样的事情吧，或许是因为我们不够优秀，做得不够突出，做得不够极致，做得不够专注，因而我们才没有办法找到这样一件事。很多时候，我们只能取其一而不能两者兼得，这是大多数人的常态。我也没有能够找到这么一件事，至少现在没有，但我依旧希望能够在不久的未来找到这么一件值得我一辈子去付出，而且还感到开心的事。</p>
-<p>希望吧，总是不想那么普通。</p>
-]]></content>
-      <categories>
-        <category>影评领域</category>
-      </categories>
-      <tags>
-        <tag>电影</tag>
       </tags>
   </entry>
   <entry>
@@ -1265,6 +1240,54 @@ characterization of aluminum resistance in Populus"><br>这里我先用比较麻
       </categories>
       <tags>
         <tag>技能</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>徒手攀岩</title>
+    <url>//2019/09/06/%E5%BE%92%E6%89%8B%E6%94%80%E5%B2%A9/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-07b4b1add5c215b1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<blockquote>
+<p>真的让人窒息，巨兽裂缝，始终受到局部挤压，痛苦。</p>
+</blockquote>
+<span id="more"></span>
+
+<p>今天我其实一直在犹豫要去看哪一部电影——《徒手攀岩》和《宝莱坞机器人2.0》，原因是我之前已经在网上看过一点徒手攀岩，对于纪录片我基本没有太大的热情去看，好像也没有什么耐心看。宝莱坞机器人看了预告，就觉得有点没啥意思，就是有点无脑砸特效的电影，有点打破了我对印度电影的印象。最终，还是选择了前者，而且为了视觉效果，还选择了IMAX。</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-27cf0e28cb3668ec.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<p>总的感觉就是刺激，从准备到练习，接着尝试，失败后再次尝试，最终成功无保护徒手攀岩成功。最后在自由的无人为干扰的条件下，完成了8年来Alex一直想要征服的Yosemite酋长岩。有好几个绝险的地方，根本没有办法看，连摄影师都没有办法注视着镜头，屏幕面前的我也是，几乎就不敢看屏幕了。还好我提醒自己，这是纪录片，基本是成功了，才敢勉强的注视着镜头。但是我的身体依旧没有控制住，我双手紧握拳头，手心冒着汗，应该是吓得出了汗，整个手都是湿的。这种情况下，你的身体是没有办法欺骗的，作出了遇见危险时该做出的反应。真的太刺激了，完全不输给那些科幻大片，难怪会获得奥斯卡最佳纪录片。</p>
+<p>对于像Alex这样的极度冒险者，真的无比敬佩。永远不会满足，一个一个的征服。即使看到很多圈子里优秀徒手攀岩者的跌落身亡，自己依然能够克服恐惧，敢于面对死亡。绝对不能出错，必须做到极致完美，才能够活着见到家人朋友。突然想想，这个世界真的太奇妙了，太多奇特的人和奇特的事。</p>
+<p>能够深度专注自己喜欢做的事，而这件事也能够养活自己，这对于每个人来说，都是非常渴望的事情。只有及其少数的人才能够找到这样的事情吧，或许是因为我们不够优秀，做得不够突出，做得不够极致，做得不够专注，因而我们才没有办法找到这样一件事。很多时候，我们只能取其一而不能两者兼得，这是大多数人的常态。我也没有能够找到这么一件事，至少现在没有，但我依旧希望能够在不久的未来找到这么一件值得我一辈子去付出，而且还感到开心的事。</p>
+<p>希望吧，总是不想那么普通。</p>
+]]></content>
+      <categories>
+        <category>影评领域</category>
+      </categories>
+      <tags>
+        <tag>电影</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>杂乱无章</title>
+    <url>//2018/08/28/%E6%9D%82%E4%B9%B1%E6%97%A0%E7%AB%A0/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![拿着相机，一个人旅行](https://upload-images.jianshu.io/upload_images/3478485-14565c6637c4fa19.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+<p>8月27日，星期一，公元2018年。</p>
+<span id="more"></span>
+
+<p>8月27日，星期一，公元2018年。</p>
+<p>干了一天，几乎没有坐下的时候。骑车离开生科院的时候，突然觉得自己就想是一个工人，白天工作，晚上运动健身和自学，想来也是非常的满足。然而，事情永远没有这么简单，真正工作以后，恐怕没有那么悠闲。</p>
+<p>最近已经能够比较好的控制一下自己，不再如此的散漫。在过去的6月份，真是觉得自个儿已经抛弃一部分超我，使得自我更多的释放。满满的都是娱乐活动，吃饭，看电影和旅游，比暑假更加潇洒。我知道，我一直以来就是这么一个人，对于别人，我总想让他们有一些仪式感，自己变得比别人更操心自己，但是前提是我想关心的人。这个是有点还是缺点，我并不能很好的定义对错，只是不该太过火。师姐的毕业典礼，我去拍照；校园风景，我去拍照；小伙伴的毕业旅行，我也一同参加。干了无数能够留下深刻印象的事。</p>
+<p>有目标，才有动力；有计划，才能有满足感；完成计划，才能有幸福感。大部分时候的状态，就是无目标和无计划，生活处在焦虑之中，特别地不安。这种状态的打破，就需要你自身的行动，想到的东西，要出尽快实行；要去解决你害怕去解决的问题；搞定心中的恐惧放空自己的内心，才能最终踏实满足。</p>
+<p>今年也算是旅行过了，南京之行，也非常的开心。但是，你要知道，很多时候内心就会有一种冲动，就想去看看更外面的世界。前两天看到了一条骑行路线，真的太诱人了，完全没法形容我内心的激动，即使不能够前去体验。看看，回想回想之前的经历，也能够让我开心一会儿，那也就够了。岁月慢慢流逝，一天天在变老，尽管思想还没有服气，但是身体很明显的不如从前了。</p>
+<p>我们没法改变，只能磨炼遇事不惊的心态。</p>
+]]></content>
+      <categories>
+        <category>随记</category>
+      </categories>
+      <tags>
+        <tag>旅行</tag>
       </tags>
   </entry>
   <entry>
@@ -1497,26 +1520,24 @@ characterization of aluminum resistance in Populus"><br>这里我先用比较麻
       </tags>
   </entry>
   <entry>
-    <title>杂乱无章</title>
-    <url>//2018/08/28/%E6%9D%82%E4%B9%B1%E6%97%A0%E7%AB%A0/</url>
+    <title>狼伴归途</title>
+    <url>//2018/09/13/%E7%8B%BC%E4%BC%B4%E5%BD%92%E9%80%94/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![拿着相机，一个人旅行](https://upload-images.jianshu.io/upload_images/3478485-14565c6637c4fa19.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![狼伴归途](https://upload-images.jianshu.io/upload_images/3478485-71c67307e95546df.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+9月9日，星期六，公元2018年
 
-<p>8月27日，星期一，公元2018年。</p>
 <span id="more"></span>
 
-<p>8月27日，星期一，公元2018年。</p>
-<p>干了一天，几乎没有坐下的时候。骑车离开生科院的时候，突然觉得自己就想是一个工人，白天工作，晚上运动健身和自学，想来也是非常的满足。然而，事情永远没有这么简单，真正工作以后，恐怕没有那么悠闲。</p>
-<p>最近已经能够比较好的控制一下自己，不再如此的散漫。在过去的6月份，真是觉得自个儿已经抛弃一部分超我，使得自我更多的释放。满满的都是娱乐活动，吃饭，看电影和旅游，比暑假更加潇洒。我知道，我一直以来就是这么一个人，对于别人，我总想让他们有一些仪式感，自己变得比别人更操心自己，但是前提是我想关心的人。这个是有点还是缺点，我并不能很好的定义对错，只是不该太过火。师姐的毕业典礼，我去拍照；校园风景，我去拍照；小伙伴的毕业旅行，我也一同参加。干了无数能够留下深刻印象的事。</p>
-<p>有目标，才有动力；有计划，才能有满足感；完成计划，才能有幸福感。大部分时候的状态，就是无目标和无计划，生活处在焦虑之中，特别地不安。这种状态的打破，就需要你自身的行动，想到的东西，要出尽快实行；要去解决你害怕去解决的问题；搞定心中的恐惧放空自己的内心，才能最终踏实满足。</p>
-<p>今年也算是旅行过了，南京之行，也非常的开心。但是，你要知道，很多时候内心就会有一种冲动，就想去看看更外面的世界。前两天看到了一条骑行路线，真的太诱人了，完全没法形容我内心的激动，即使不能够前去体验。看看，回想回想之前的经历，也能够让我开心一会儿，那也就够了。岁月慢慢流逝，一天天在变老，尽管思想还没有服气，但是身体很明显的不如从前了。</p>
-<p>我们没法改变，只能磨炼遇事不惊的心态。</p>
+<p>狼伴归途，最精彩的就是宏大的史前场景再现，让人看了非常的享受，被其所征服。故事的情节还是比较的简单，年轻的孩子在失去父母呵护之后，通过自己的和狼的努力，经历千辛万苦最后回到了父母的怀抱。狼和孩子一起，最终平安到家，并为部落带来了狼这种动物，我想之后就是被驯化成狗。<br>觉得还是可以去看一下，电影场景很唯美。</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-1847b7b43f7ef666.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="wolf2.jpg"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-7acc324003fe7eeb.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="wolf3.jpg"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-05dda12e9ab338f8.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="wolf4.jpg"></p>
 ]]></content>
       <categories>
-        <category>随记</category>
+        <category>影评领域</category>
       </categories>
       <tags>
-        <tag>旅行</tag>
+        <tag>电影</tag>
       </tags>
   </entry>
   <entry>
@@ -1718,27 +1739,6 @@ characterization of aluminum resistance in Populus"><br>这里我先用比较麻
       </tags>
   </entry>
   <entry>
-    <title>狼伴归途</title>
-    <url>//2018/09/13/%E7%8B%BC%E4%BC%B4%E5%BD%92%E9%80%94/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![狼伴归途](https://upload-images.jianshu.io/upload_images/3478485-71c67307e95546df.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-9月9日，星期六，公元2018年
-
-<span id="more"></span>
-
-<p>狼伴归途，最精彩的就是宏大的史前场景再现，让人看了非常的享受，被其所征服。故事的情节还是比较的简单，年轻的孩子在失去父母呵护之后，通过自己的和狼的努力，经历千辛万苦最后回到了父母的怀抱。狼和孩子一起，最终平安到家，并为部落带来了狼这种动物，我想之后就是被驯化成狗。<br>觉得还是可以去看一下，电影场景很唯美。</p>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-1847b7b43f7ef666.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="wolf2.jpg"></p>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-7acc324003fe7eeb.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="wolf3.jpg"></p>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-05dda12e9ab338f8.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="wolf4.jpg"></p>
-]]></content>
-      <categories>
-        <category>影评领域</category>
-      </categories>
-      <tags>
-        <tag>电影</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>碟中谍6: 全面瓦解</title>
     <url>//2018/09/01/%E7%A2%9F%E4%B8%AD%E8%B0%8D6-%E5%85%A8%E9%9D%A2%E7%93%A6%E8%A7%A3/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -1783,6 +1783,32 @@ characterization of aluminum resistance in Populus"><br>这里我先用比较麻
       </categories>
       <tags>
         <tag>家</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>科研诚信</title>
+    <url>//2018/08/30/%E7%A7%91%E7%A0%94%E8%AF%9A%E4%BF%A1/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![发现的乐趣](https://upload-images.jianshu.io/upload_images/3478485-580c16a9b28a9f34.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+<p>8月30日，星期四，公元2018年。</p>
+<p>近期在读费曼先生的演讲和访谈集，想来还是很有意思。这个伟大的物理学家，太有意思，充满着小孩子气，一点没有摆架子的做作。</p>
+<span id="more"></span>
+
+<p>我最影响深刻的是，他讲的科研诚信那一篇。至今，对处于科研岗位的工作者，任然具有重要的参考意义。在科研的过程中，我们必须记录成功和失败两面，而不是只记录能够解释你猜测的结果。不只是正确的结果能够帮助他人得出结论，错误的结果同样可以实现。此外，我们也必须将实验的过程仔细记录，在发表科研成果的同时，需要将一切公开，这对别人判断你的科研成果是否有价值非常关键。科研诚信，就要求我们要完整的呈现你实验的所有相关信息，失败的，成功的都需要。费曼先生就举例来说明：</p>
+<blockquote>
+<p>某一个食用油广告，说这种食用油不会深入到食物中去。这是真的，不能说欺骗消费者。科研诚信问题，就是应该给这个事实加上一句描述：在某一温度下，任何一种油都不会渗入食物，但是在另一个温度下，所有的油都会渗入食物，这种油也一样。所以你看，这个广告只把部分事实告诉消费者，而不是全部事实。而这两者的区别我们需要澄清。</p>
+</blockquote>
+<p>可以看到，费曼先生用多么形象的例子来说明科研诚信要求我们要将所有信息公布，而不是一部分。</p>
+<p>此外，费曼先生还讲了一条极其重要的原则——<strong>你绝对不能够欺骗自己。自己是最容易欺骗自己的，只有做到不欺骗自己，才能相对容易地不去欺骗其他人。</strong>当看到这句话的时候，产生了共鸣。很多时候你做科研，做某个实验，你很容易欺骗自己，比如：有时候，你会发现因之前处理或者其他可能会导致实验结果不准确，可是就算如此，你可能还会固执地去进行，得出一个连你自己都不相信的结果。面对这样的情况，就该直接放弃，重新来过。</p>
+<p>面对伟大的科学家，我们要学习地太多太多。</p>
+]]></content>
+      <categories>
+        <category>读书笔记</category>
+      </categories>
+      <tags>
+        <tag>费曼</tag>
+        <tag>诚信</tag>
       </tags>
   </entry>
   <entry>
@@ -1831,32 +1857,6 @@ characterization of aluminum resistance in Populus"><br>这里我先用比较麻
       </categories>
       <tags>
         <tag>科普</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>科研诚信</title>
-    <url>//2018/08/30/%E7%A7%91%E7%A0%94%E8%AF%9A%E4%BF%A1/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![发现的乐趣](https://upload-images.jianshu.io/upload_images/3478485-580c16a9b28a9f34.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-<p>8月30日，星期四，公元2018年。</p>
-<p>近期在读费曼先生的演讲和访谈集，想来还是很有意思。这个伟大的物理学家，太有意思，充满着小孩子气，一点没有摆架子的做作。</p>
-<span id="more"></span>
-
-<p>我最影响深刻的是，他讲的科研诚信那一篇。至今，对处于科研岗位的工作者，任然具有重要的参考意义。在科研的过程中，我们必须记录成功和失败两面，而不是只记录能够解释你猜测的结果。不只是正确的结果能够帮助他人得出结论，错误的结果同样可以实现。此外，我们也必须将实验的过程仔细记录，在发表科研成果的同时，需要将一切公开，这对别人判断你的科研成果是否有价值非常关键。科研诚信，就要求我们要完整的呈现你实验的所有相关信息，失败的，成功的都需要。费曼先生就举例来说明：</p>
-<blockquote>
-<p>某一个食用油广告，说这种食用油不会深入到食物中去。这是真的，不能说欺骗消费者。科研诚信问题，就是应该给这个事实加上一句描述：在某一温度下，任何一种油都不会渗入食物，但是在另一个温度下，所有的油都会渗入食物，这种油也一样。所以你看，这个广告只把部分事实告诉消费者，而不是全部事实。而这两者的区别我们需要澄清。</p>
-</blockquote>
-<p>可以看到，费曼先生用多么形象的例子来说明科研诚信要求我们要将所有信息公布，而不是一部分。</p>
-<p>此外，费曼先生还讲了一条极其重要的原则——<strong>你绝对不能够欺骗自己。自己是最容易欺骗自己的，只有做到不欺骗自己，才能相对容易地不去欺骗其他人。</strong>当看到这句话的时候，产生了共鸣。很多时候你做科研，做某个实验，你很容易欺骗自己，比如：有时候，你会发现因之前处理或者其他可能会导致实验结果不准确，可是就算如此，你可能还会固执地去进行，得出一个连你自己都不相信的结果。面对这样的情况，就该直接放弃，重新来过。</p>
-<p>面对伟大的科学家，我们要学习地太多太多。</p>
-]]></content>
-      <categories>
-        <category>读书笔记</category>
-      </categories>
-      <tags>
-        <tag>费曼</tag>
-        <tag>诚信</tag>
       </tags>
   </entry>
   <entry>
@@ -1949,6 +1949,40 @@ characterization of aluminum resistance in Populus"><br>这里我先用比较麻
       </tags>
   </entry>
   <entry>
+    <title>美洲小宇宙</title>
+    <url>//2018/09/06/%E7%BE%8E%E6%B4%B2%E5%B0%8F%E5%AE%87%E5%AE%99/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![美洲小宇宙](http://upload-images.jianshu.io/upload_images/3478485-21cddf3db814e6d1.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+> **读游记的方法**：一般需要有一张世界地图在旁边，或者有电脑也可以（最好使用Google地图）（游记不可避免的会出现地名，于是总会和地理扯上关系），一遍阅读，一遍看地图，找到所在地，能够很好的在脑海中形成画面，读起来不会那么累。
+
+<span id="more"></span>
+
+
+
+<p>其实最需要地图的是<strong>读史书</strong>：这时你肯定会遇到超级多从未有地理概念的国家或者地名，除了要有现代的地图，另外还需要历史地理地图。历史往往是将过去和现在作比较，从而来吸取经验。地图历史总是在不断变迁，从古代到现代，各个国家的发展及地理行政边界都是在发生不断变化，所以也要明白过去的情况。像人类的起源这方面的，必然会牵扯到人类在世界各地的迁移，人类文明的出现摇篮，总是出现大量的地理名词。因此，你需要读懂地图，了解地势，这对于喜欢历史的人非常关键，人类历史上，很多关键性的时刻，总是和地理位置息息相关，<strong>一个民族的历史走向也离不开自然地理的催化。</strong></p>
+<p>总之，读游记和读历史文化相关的书记，最好要做到心中有地图或者手中有地图的状态，否则读起来会困难不少呢！</p>
+<h1 id="序"><a href="#序" class="headerlink" title="序"></a>序</h1><p>此次美洲之行主要去了墨西哥，哥斯达黎加，巴拿马，古巴和厄瓜多尔，去的国家不是特别多，故事还是很丰富，作者大概是跟着旅行团去的，遇到的都是特别正常的事情，描述的都是美好的事物，而遭遇到一些负面的事物。傅真在她的《最好金龟换酒》中提到，自己和他的老公是自由行，在墨西哥遇到了比较可怕的事情，还体会了极其贫困地区人们的生活状况，感觉更完整一些。但是，要论深度，确实傅真要差挺多，毕老师还是深厚的历史文化底蕴，涉及到的面比较广泛。反正都有可看之处。</p>
+<p>南美洲，受西班牙殖民，很多国家都将西班牙语作为官网语言，因此要是自己会西班牙语或者有个会西班牙语的朋友一起去美洲旅行，那么肯定会有趣不少。或许下次在打算自己去南美洲旅行的时候，可以提前3个月左右恶补一下西班牙语，少一些语言障碍的自由行会非常的有意思。<br>说起语言，我又忍不住想多说几句。我对语言的起源，很是有兴趣，然而并没有时间去深究。词源对于语言的学习有莫大的帮助，我深信这一点，我其实也特别想多学习几门语言，然而最终还是放弃，到现在为止，连英语都没有学好，真是惭愧。<strong>西班牙语</strong>，属于印欧语系罗曼语族西罗曼语支，约有4亿人将其作为母语，为世界第二大语言，仅次于汉语。</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/3478485-eb8022421e4f3e33.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="中南美洲"></p>
+<h1 id="哥斯达黎加"><a href="#哥斯达黎加" class="headerlink" title="哥斯达黎加"></a>哥斯达黎加</h1><p>世界上第一个不设军队的国家，是永久的中立国，是一个将火山印在国旗上的国家，三座活火山成为很重要的景点。拥有世界上很少数的<strong>热带雾林</strong>。和热带雨林不一样，形成的条件苛刻：首先，必须出于热带；第二，有1300米以上的海拔高度，保持物种多样性；最后一点，距离海洋比较近，有强大的水汽供应，形成雾。</p>
+<h1 id="两个及其伟大的革命家"><a href="#两个及其伟大的革命家" class="headerlink" title="两个及其伟大的革命家"></a>两个及其伟大的革命家</h1><ol>
+<li>托洛茨基：具体介绍就不讲了（<a href="https://en.wikipedia.org/wiki/Leon_Trotsky">详细介绍</a>），最后的命运流亡海外，被暗杀。</li>
+<li>切格瓦拉：古巴革命的核心人物之一，任古巴国家银行行长。<a href="https://en.wikipedia.org/wiki/Che_Guevara">维基介绍</a>，看完毕老师对其一生的介绍，肃然起敬，伟大的人物就是有那样的魅力和人格。</li>
+</ol>
+<p><img src="http://upload-images.jianshu.io/upload_images/3478485-1e86acc106bb344b.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="切格瓦拉.jpg"></p>
+<h1 id="玛雅文明"><a href="#玛雅文明" class="headerlink" title="玛雅文明"></a>玛雅文明</h1><p>没有人不知道玛雅文明吧，2012年12月24日，就是因为玛雅人的世界末日预言而弄得人心惶惶，真的以为世界都要结束了，开启新的纪元。然而，现在已经到了2017年了，我此时此刻还在安静地看书打字。</p>
+<p><a href="https://en.wikipedia.org/wiki/Maya_civilization">玛雅文明</a>，是中美洲玛雅人创造的中美洲文明。曾经的辉煌，早已湮灭在热带雨林之中，金字塔毅然屹立在中美洲的大地之上，貌似在向世人们述说曾经的辉煌。</p>
+<p>墨西哥<strong>奇琴伊察</strong>玛雅城邦遗址，位于墨西哥东南部尤卡坦半岛，是玛雅文明最杰出的代表作，是玛雅古国最大、最繁华的城邦，始建于公元514年。主要的遗迹库库尔坎金字塔就位于此，库库尔坎金字塔由塔身和神庙两部分组成，塔高30米，塔底面为正方形，四方对称，底大上小，四边棱角分明。台基每边长55.5米，共9层，向上逐渐缩小至梯形平台，上有高6米的方形神庙。塔的四面各有91级台阶，四面共有364级，加上最上层的平台，正好是一年的天数。</p>
+]]></content>
+      <categories>
+        <category>读书笔记</category>
+      </categories>
+      <tags>
+        <tag>中南美洲</tag>
+        <tag>毕淑敏</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>算法与数据结构（3）：算法复杂度说明（上）</title>
     <url>//2018/10/10/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%EF%BC%883%EF%BC%89%EF%BC%9A%E7%AE%97%E6%B3%95%E5%A4%8D%E6%9D%82%E5%BA%A6%E8%AF%B4%E6%98%8E%EF%BC%88%E4%B8%8A%EF%BC%89/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -1985,37 +2019,25 @@ characterization of aluminum resistance in Populus"><br>这里我先用比较麻
       </tags>
   </entry>
   <entry>
-    <title>美洲小宇宙</title>
-    <url>//2018/09/06/%E7%BE%8E%E6%B4%B2%E5%B0%8F%E5%AE%87%E5%AE%99/</url>
+    <title>苏丹</title>
+    <url>//2018/09/04/%E8%8B%8F%E4%B8%B9/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![美洲小宇宙](http://upload-images.jianshu.io/upload_images/3478485-21cddf3db814e6d1.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-> **读游记的方法**：一般需要有一张世界地图在旁边，或者有电脑也可以（最好使用Google地图）（游记不可避免的会出现地名，于是总会和地理扯上关系），一遍阅读，一遍看地图，找到所在地，能够很好的在脑海中形成画面，读起来不会那么累。
+![苏丹海报](https://upload-images.jianshu.io/upload_images/3478485-f6e5a66f7c60693c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
+<p>9月3日，星期二，公元2018年。</p>
 <span id="more"></span>
 
-
-
-<p>其实最需要地图的是<strong>读史书</strong>：这时你肯定会遇到超级多从未有地理概念的国家或者地名，除了要有现代的地图，另外还需要历史地理地图。历史往往是将过去和现在作比较，从而来吸取经验。地图历史总是在不断变迁，从古代到现代，各个国家的发展及地理行政边界都是在发生不断变化，所以也要明白过去的情况。像人类的起源这方面的，必然会牵扯到人类在世界各地的迁移，人类文明的出现摇篮，总是出现大量的地理名词。因此，你需要读懂地图，了解地势，这对于喜欢历史的人非常关键，人类历史上，很多关键性的时刻，总是和地理位置息息相关，<strong>一个民族的历史走向也离不开自然地理的催化。</strong></p>
-<p>总之，读游记和读历史文化相关的书记，最好要做到心中有地图或者手中有地图的状态，否则读起来会困难不少呢！</p>
-<h1 id="序"><a href="#序" class="headerlink" title="序"></a>序</h1><p>此次美洲之行主要去了墨西哥，哥斯达黎加，巴拿马，古巴和厄瓜多尔，去的国家不是特别多，故事还是很丰富，作者大概是跟着旅行团去的，遇到的都是特别正常的事情，描述的都是美好的事物，而遭遇到一些负面的事物。傅真在她的《最好金龟换酒》中提到，自己和他的老公是自由行，在墨西哥遇到了比较可怕的事情，还体会了极其贫困地区人们的生活状况，感觉更完整一些。但是，要论深度，确实傅真要差挺多，毕老师还是深厚的历史文化底蕴，涉及到的面比较广泛。反正都有可看之处。</p>
-<p>南美洲，受西班牙殖民，很多国家都将西班牙语作为官网语言，因此要是自己会西班牙语或者有个会西班牙语的朋友一起去美洲旅行，那么肯定会有趣不少。或许下次在打算自己去南美洲旅行的时候，可以提前3个月左右恶补一下西班牙语，少一些语言障碍的自由行会非常的有意思。<br>说起语言，我又忍不住想多说几句。我对语言的起源，很是有兴趣，然而并没有时间去深究。词源对于语言的学习有莫大的帮助，我深信这一点，我其实也特别想多学习几门语言，然而最终还是放弃，到现在为止，连英语都没有学好，真是惭愧。<strong>西班牙语</strong>，属于印欧语系罗曼语族西罗曼语支，约有4亿人将其作为母语，为世界第二大语言，仅次于汉语。</p>
-<p><img src="http://upload-images.jianshu.io/upload_images/3478485-eb8022421e4f3e33.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="中南美洲"></p>
-<h1 id="哥斯达黎加"><a href="#哥斯达黎加" class="headerlink" title="哥斯达黎加"></a>哥斯达黎加</h1><p>世界上第一个不设军队的国家，是永久的中立国，是一个将火山印在国旗上的国家，三座活火山成为很重要的景点。拥有世界上很少数的<strong>热带雾林</strong>。和热带雨林不一样，形成的条件苛刻：首先，必须出于热带；第二，有1300米以上的海拔高度，保持物种多样性；最后一点，距离海洋比较近，有强大的水汽供应，形成雾。</p>
-<h1 id="两个及其伟大的革命家"><a href="#两个及其伟大的革命家" class="headerlink" title="两个及其伟大的革命家"></a>两个及其伟大的革命家</h1><ol>
-<li>托洛茨基：具体介绍就不讲了（<a href="https://en.wikipedia.org/wiki/Leon_Trotsky">详细介绍</a>），最后的命运流亡海外，被暗杀。</li>
-<li>切格瓦拉：古巴革命的核心人物之一，任古巴国家银行行长。<a href="https://en.wikipedia.org/wiki/Che_Guevara">维基介绍</a>，看完毕老师对其一生的介绍，肃然起敬，伟大的人物就是有那样的魅力和人格。</li>
-</ol>
-<p><img src="http://upload-images.jianshu.io/upload_images/3478485-1e86acc106bb344b.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="切格瓦拉.jpg"></p>
-<h1 id="玛雅文明"><a href="#玛雅文明" class="headerlink" title="玛雅文明"></a>玛雅文明</h1><p>没有人不知道玛雅文明吧，2012年12月24日，就是因为玛雅人的世界末日预言而弄得人心惶惶，真的以为世界都要结束了，开启新的纪元。然而，现在已经到了2017年了，我此时此刻还在安静地看书打字。</p>
-<p><a href="https://en.wikipedia.org/wiki/Maya_civilization">玛雅文明</a>，是中美洲玛雅人创造的中美洲文明。曾经的辉煌，早已湮灭在热带雨林之中，金字塔毅然屹立在中美洲的大地之上，貌似在向世人们述说曾经的辉煌。</p>
-<p>墨西哥<strong>奇琴伊察</strong>玛雅城邦遗址，位于墨西哥东南部尤卡坦半岛，是玛雅文明最杰出的代表作，是玛雅古国最大、最繁华的城邦，始建于公元514年。主要的遗迹库库尔坎金字塔就位于此，库库尔坎金字塔由塔身和神庙两部分组成，塔高30米，塔底面为正方形，四方对称，底大上小，四边棱角分明。台基每边长55.5米，共9层，向上逐渐缩小至梯形平台，上有高6米的方形神庙。塔的四面各有91级台阶，四面共有364级，加上最上层的平台，正好是一年的天数。</p>
+<p>虽然是进入9月，好像仍然没有开学的迹象。星期天上映的电影，一直没有办法去看。今日工作日，就偷偷抽出2个小时的时间，去看印度电影——苏丹。</p>
+<p>故事就是为爱而战，为生活而战，为自己而战。自己成为摔跤手，完全就是因为自己喜欢一个摔跤手的女孩，而且这个姑娘狠狠地侮辱了苏丹。之后一路毫无障碍，赢得所有比赛的冠军，包括亚运会，奥运会和世锦赛。然而，因在比赛，不再刚出生孩子身边，在需要输O型血的时候，找不到人，孩子的死亡，另夫妻之间产生隔阂，自己也难以原谅自己，从此退出摔跤场。这一段故事就是以朋友的视角，进行的回忆，说明个中缘由。</p>
+<p>综合格斗职业赛，商人连续亏本，在其父亲的引导下，邀请苏丹，最后苏丹为了建立血库，而再次走上不一样的平台，格斗场。多年的颓废生活，身体几乎完全不行，为重新找回以前的身体，努力拼命，丝毫不畏惧。最终，依旧战胜自己，赢得格斗赛的冠军。</p>
+<p>整部电影非常燃，非常的激励，全程都好看，没有走神过。我喜欢苏丹这种不服输，找回自己的尊严，努力战胜自己。电影其实也就是讲的爱情故事，但是却非常励志，为爱可以努力到什么程度，难以想象。</p>
+<p>很喜欢印度电影，歌舞永远在电影中出现，会让人非常的放松喜悦，已经慢慢地从刚开始的不适应到现在的喜欢过度了。有时候就是想去体验这种愉悦轻松放松的感受，而去看印度电影。</p>
 ]]></content>
       <categories>
-        <category>读书笔记</category>
+        <category>影评领域</category>
       </categories>
       <tags>
-        <tag>中南美洲</tag>
-        <tag>毕淑敏</tag>
+        <tag>电影</tag>
       </tags>
   </entry>
   <entry>
@@ -2052,28 +2074,6 @@ characterization of aluminum resistance in Populus"><br>这里我先用比较麻
       </categories>
       <tags>
         <tag>美食</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>苏丹</title>
-    <url>//2018/09/04/%E8%8B%8F%E4%B8%B9/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![苏丹海报](https://upload-images.jianshu.io/upload_images/3478485-f6e5a66f7c60693c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-<p>9月3日，星期二，公元2018年。</p>
-<span id="more"></span>
-
-<p>虽然是进入9月，好像仍然没有开学的迹象。星期天上映的电影，一直没有办法去看。今日工作日，就偷偷抽出2个小时的时间，去看印度电影——苏丹。</p>
-<p>故事就是为爱而战，为生活而战，为自己而战。自己成为摔跤手，完全就是因为自己喜欢一个摔跤手的女孩，而且这个姑娘狠狠地侮辱了苏丹。之后一路毫无障碍，赢得所有比赛的冠军，包括亚运会，奥运会和世锦赛。然而，因在比赛，不再刚出生孩子身边，在需要输O型血的时候，找不到人，孩子的死亡，另夫妻之间产生隔阂，自己也难以原谅自己，从此退出摔跤场。这一段故事就是以朋友的视角，进行的回忆，说明个中缘由。</p>
-<p>综合格斗职业赛，商人连续亏本，在其父亲的引导下，邀请苏丹，最后苏丹为了建立血库，而再次走上不一样的平台，格斗场。多年的颓废生活，身体几乎完全不行，为重新找回以前的身体，努力拼命，丝毫不畏惧。最终，依旧战胜自己，赢得格斗赛的冠军。</p>
-<p>整部电影非常燃，非常的激励，全程都好看，没有走神过。我喜欢苏丹这种不服输，找回自己的尊严，努力战胜自己。电影其实也就是讲的爱情故事，但是却非常励志，为爱可以努力到什么程度，难以想象。</p>
-<p>很喜欢印度电影，歌舞永远在电影中出现，会让人非常的放松喜悦，已经慢慢地从刚开始的不适应到现在的喜欢过度了。有时候就是想去体验这种愉悦轻松放松的感受，而去看印度电影。</p>
-]]></content>
-      <categories>
-        <category>影评领域</category>
-      </categories>
-      <tags>
-        <tag>电影</tag>
       </tags>
   </entry>
   <entry>
