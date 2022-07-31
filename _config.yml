@@ -86,7 +86,7 @@ search:
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/Lxmic/Lxmic.github.io.git
+  repo: git@github.com:Lxmic/Lxmic.github.io.git
   branch: master
 
 disqus_shortname: lxmicblog
