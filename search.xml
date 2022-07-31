@@ -1,6 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>2018年8月-小结</title>
+    <url>//2018/09/02/2018%E5%B9%B48%E6%9C%88-%E5%B0%8F%E7%BB%93/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![无尽之路](https://upload-images.jianshu.io/upload_images/3478485-6dc9021e15783f70.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+9月2日，星期日，公元2018年。
+
+
+
+<span id="more"></span>
+
+<p>9月开始崭露头角，8月已然逝去。秋天，似乎已经离我们越来越近，春困秋乏的状态又要来临。总结8月，展望9月，似乎迫不及待。</p>
+<p>8月，似乎是一个没有任何进展的月份。采葡萄，回家休息，然后就是游泳和看书。没有再多的事情，帮师姐搬了一下行李，仅此而已的8月。始终无法凝聚自己的精神专注力，聚焦在实验这一点上，整个8月确实是变得非常的散。</p>
+<p>我是否是太过于放松了，还是太过于自信，亦或是恐惧，更或是太多理想。很多很多事情似乎要做，不希望生活只有实验，希望有自己支配的时间，似乎实验只是占据了我一半左右的时间，我想对于真正地科研人员来说，这是少之又少的吧。我想游泳健身，我想博览群书（我感兴趣的），我想学习编程，我想看电影，我想去旅行，我还想学习摄影……想做的太多，精力太过分散，始终做不好任何一件事儿。</p>
+<p>我也清楚，问题关键抓不住重点，没有计划，亦或是没有目标。可是，我就认为生活也该有生活的样子，被一件事占据所有时间，也是一种悲哀。我的矛盾始终存在，那么解决矛盾的关键在于什么？我想，可能是提高时间利用率。你说不想花过多时间在实验上，那么你必须提高实验效率，要保证极高的实验成功率，在做一件事的时候，必须要专注于此，且不可散。</p>
+<p>整个大时间轴，你可以细分成你想要的份数，但是有一点你必须铭记，每一份都要讲所有的精神力注入其中，那是不可以分散的。9月，希望能够尝试这种方式，能够仅仅活在此时此刻，也是一种幸福。过多的展望，恰恰会迷失人的心智，摧毁人的意志力，因此，对于9月，我不想太多，做该做的事。</p>
+]]></content>
+      <categories>
+        <category>人生小结</category>
+      </categories>
+      <tags>
+        <tag>小结</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>CRISPR-Cas9系统简介</title>
+    <url>//2018/12/30/CRISPR-Cas9%E7%B3%BB%E7%BB%9F%E7%AE%80%E4%BB%8B/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+
+
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-0bf1101b1c467285.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="图片来源：https://www.mygenefood.com/crispr-cas9-introduction-genome-editing/"></p>
+<p>Clustered regularly interspaced short palindromic repeats（CRISPR）——规律成簇的间隔短回文重复和CRISPR-associated protein 9（Cas9），共同组成了一套系统，是细菌用来防御噬菌体DNA注入和质粒转移的天然防御系统。但现在被人类所重新利用，构建了很强的RNA引导的DNA靶向平台——主要用来基因组编辑、转录扰乱、表观遗传调控等。</p>
+<span id="more"></span>
+
+
+
+<h3 id="细菌抵抗噬菌体入侵"><a href="#细菌抵抗噬菌体入侵" class="headerlink" title="细菌抵抗噬菌体入侵"></a><font color="green">细菌抵抗噬菌体入侵</font></h3><p>图中是细菌天然免疫系统。我们可以看到，CRISPR locus是由几个原件构成。一开始是个反向转录的RNA，是特异的非编码RNA，可以和重复序列部分互补（trancrRNA，橙色矩形），后面是各种cas基因（箭头表示），接着是CRISPR排列（棕色的菱形是重复序列，彩色的是间隔）。而这些间隔序列是细菌从噬菌体DNA中获得的遗传原件：当噬菌体感染细菌，细菌激活相关的cas基因——Cas1，Cas2,和Csn2，将其中新的间隔序列整合到自身的CRISPR arry中。一旦获得以后，新的spacer就会出现在pre-crRNA中，此时tracrRNA与不同的SPACER互补，在RNaseIII的作用下，产生crRNA，进一步在其他未知的核酸酶的作用，剪切crRNA的5’端，使得引导序列长为20nt。如果噬菌体注入DNA，那么这个免疫系统将被激活，来干扰噬菌体DNA。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-4c5c2be28472800d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="防御过程"></p>
+<h3 id="剪切与修复"><a href="#剪切与修复" class="headerlink" title="剪切与修复"></a><font color="green">剪切与修复</font></h3><p>我们目前主要使用II型CRISPR系统，它和他的区别在于，只是需要一个DNA内切酶Cas9来对与sgRNA20个互补碱基的带有PAM结构的DNA进行剪切。剪切后是DNA产生平末端的DSB（双链断裂），然后在进行非同源的末端连接过程中，容易随机插入或者删除或者替换。或者进行高保真的同源定向修复，修复DNA。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-be11ad0e6a3c0c5e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Type II Cas9"><br><img src="https://upload-images.jianshu.io/upload_images/3478485-827d8dc582062b62.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Cas9剪切及突变产生"></p>
+<h3 id="Cas9蛋白构象重组"><a href="#Cas9蛋白构象重组" class="headerlink" title="Cas9蛋白构象重组"></a><font color="green">Cas9蛋白构象重组</font></h3><p>这里的例子是化脓链球菌的SpyCas9，是一个含有1368个氨基酸的多结构和多功能的DNA核酸内切酶。它的切割位点在PAM上游的第三个碱基，通过HNH（sgRAN互补的目标序列）和RuvC核酸酶结构域（非目标序列）。要识别特定序列并进行剪切，sgRNA与Cas9组合成一个复合体，其中sgRNAy与Cas9结合起着关键的作用，能够使得Cas9构象重构，变得具有活性。crRNA前20碱基使得Cas9具有靶序列特异性，tracrRNA来招募Cas9蛋白。在这个系统中，有一个所谓的种子序列，20碱基spacer的3’端10-12个核苷酸。<strong>在种子序列的错配以及本身同源性都会严重影响系统特异性和脱靶效率。</strong>*<br><img src="https://upload-images.jianshu.io/upload_images/3478485-082186ee503a2b4a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="sgNRA"></p>
+<h3 id="目标DNA搜索与识别"><a href="#目标DNA搜索与识别" class="headerlink" title="目标DNA搜索与识别"></a><font color="green">目标DNA搜索与识别</font></h3><p><strong>PAM序列非常的关键</strong>，能够起到识别自身和外来的序列。有实验表明，如果PAM进行但突变，那么就能够让噬菌体入侵宿主。在sgRNA互补之前，首先是寻找PAM序列，如果没有合适的PAM，那么通过蛋白三维结构的坍塌，会离开DNA，直到找到合适的PAM。一旦找到PAM，Cas9就使DNA局部解链，RNA进入，与DNA互补，形成RNA-DNA结构。<strong>sg种子区域序列与靶DNA的完美互补是很重要的。</strong></p>
+<h3 id="CRISPR–Cas9介导的DNA靶定于剪切模型"><a href="#CRISPR–Cas9介导的DNA靶定于剪切模型" class="headerlink" title="CRISPR–Cas9介导的DNA靶定于剪切模型"></a><font color="green">CRISPR–Cas9介导的DNA靶定于剪切模型</font></h3><p>首先，guide RNA的结合，使得Cas9从一个未激活的构象变成具有DNA识别能力的构象。RNA种子序列先形成A型构象，为了目标结合和链入侵，PAM识别位点预先形成用来PAM识别。然后，Cas9结合到PAM序列，使得酶能够去识别附近的潜在的DNA靶序列。一旦Cas9在PAM附近找到了潜在的靶序列，会开始解双螺旋并继续检查剩余的靶序列。磷酸锁环稳定解旋的目标DNA，且第一个碱基开始翻转向上，与guide RNA碱基配对。而Cas9继续与非靶链上的翻转碱基作用，促进双螺旋解开。接着，碱基配对伴随着Cas9构象改变，促进种子序列前面的guide RNA从限制中释放出来，也形成配对，这个过程促使Cas9构象持续变化，直到到达有活性的状态。最终，guide RNA与目标DNA完全互补使得HNH具有稳定的，具有活性的构象，来剪切目标链DNA。与此同时，引起更大的构象变化，使得非目标链DNA进入RuvC催化中心被剪切，这种转态下，Cas9中牢牢结合在靶点序列上，直到其他的细胞因子过来替代它。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-4db71b549d557ab4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="剪切示意图"></p>
+<p>读了这篇review，进行一定程度的总结，有些地方还是有些不太清楚。</p>
+<blockquote>
+<p>Fuguo Jiang and Jennifer A. Doudna, CRISPR–Cas9 Structures and Mechanisms, Annual Review of Biophysics 2017 46:1, 505-529 </p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>学习记录</category>
+      </categories>
+      <tags>
+        <tag>Cas9</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>DJY-遇见盖北</title>
     <url>//2018/08/18/DJY-%E9%81%87%E8%A7%81%E7%9B%96%E5%8C%97/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -52,59 +105,6 @@
       </categories>
       <tags>
         <tag>Dropbox</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>CRISPR-Cas9系统简介</title>
-    <url>//2018/12/30/CRISPR-Cas9%E7%B3%BB%E7%BB%9F%E7%AE%80%E4%BB%8B/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-
-
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-0bf1101b1c467285.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="图片来源：https://www.mygenefood.com/crispr-cas9-introduction-genome-editing/"></p>
-<p>Clustered regularly interspaced short palindromic repeats（CRISPR）——规律成簇的间隔短回文重复和CRISPR-associated protein 9（Cas9），共同组成了一套系统，是细菌用来防御噬菌体DNA注入和质粒转移的天然防御系统。但现在被人类所重新利用，构建了很强的RNA引导的DNA靶向平台——主要用来基因组编辑、转录扰乱、表观遗传调控等。</p>
-<span id="more"></span>
-
-
-
-<h3 id="细菌抵抗噬菌体入侵"><a href="#细菌抵抗噬菌体入侵" class="headerlink" title="细菌抵抗噬菌体入侵"></a><font color="green">细菌抵抗噬菌体入侵</font></h3><p>图中是细菌天然免疫系统。我们可以看到，CRISPR locus是由几个原件构成。一开始是个反向转录的RNA，是特异的非编码RNA，可以和重复序列部分互补（trancrRNA，橙色矩形），后面是各种cas基因（箭头表示），接着是CRISPR排列（棕色的菱形是重复序列，彩色的是间隔）。而这些间隔序列是细菌从噬菌体DNA中获得的遗传原件：当噬菌体感染细菌，细菌激活相关的cas基因——Cas1，Cas2,和Csn2，将其中新的间隔序列整合到自身的CRISPR arry中。一旦获得以后，新的spacer就会出现在pre-crRNA中，此时tracrRNA与不同的SPACER互补，在RNaseIII的作用下，产生crRNA，进一步在其他未知的核酸酶的作用，剪切crRNA的5’端，使得引导序列长为20nt。如果噬菌体注入DNA，那么这个免疫系统将被激活，来干扰噬菌体DNA。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-4c5c2be28472800d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="防御过程"></p>
-<h3 id="剪切与修复"><a href="#剪切与修复" class="headerlink" title="剪切与修复"></a><font color="green">剪切与修复</font></h3><p>我们目前主要使用II型CRISPR系统，它和他的区别在于，只是需要一个DNA内切酶Cas9来对与sgRNA20个互补碱基的带有PAM结构的DNA进行剪切。剪切后是DNA产生平末端的DSB（双链断裂），然后在进行非同源的末端连接过程中，容易随机插入或者删除或者替换。或者进行高保真的同源定向修复，修复DNA。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-be11ad0e6a3c0c5e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Type II Cas9"><br><img src="https://upload-images.jianshu.io/upload_images/3478485-827d8dc582062b62.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Cas9剪切及突变产生"></p>
-<h3 id="Cas9蛋白构象重组"><a href="#Cas9蛋白构象重组" class="headerlink" title="Cas9蛋白构象重组"></a><font color="green">Cas9蛋白构象重组</font></h3><p>这里的例子是化脓链球菌的SpyCas9，是一个含有1368个氨基酸的多结构和多功能的DNA核酸内切酶。它的切割位点在PAM上游的第三个碱基，通过HNH（sgRAN互补的目标序列）和RuvC核酸酶结构域（非目标序列）。要识别特定序列并进行剪切，sgRNA与Cas9组合成一个复合体，其中sgRNAy与Cas9结合起着关键的作用，能够使得Cas9构象重构，变得具有活性。crRNA前20碱基使得Cas9具有靶序列特异性，tracrRNA来招募Cas9蛋白。在这个系统中，有一个所谓的种子序列，20碱基spacer的3’端10-12个核苷酸。<strong>在种子序列的错配以及本身同源性都会严重影响系统特异性和脱靶效率。</strong>*<br><img src="https://upload-images.jianshu.io/upload_images/3478485-082186ee503a2b4a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="sgNRA"></p>
-<h3 id="目标DNA搜索与识别"><a href="#目标DNA搜索与识别" class="headerlink" title="目标DNA搜索与识别"></a><font color="green">目标DNA搜索与识别</font></h3><p><strong>PAM序列非常的关键</strong>，能够起到识别自身和外来的序列。有实验表明，如果PAM进行但突变，那么就能够让噬菌体入侵宿主。在sgRNA互补之前，首先是寻找PAM序列，如果没有合适的PAM，那么通过蛋白三维结构的坍塌，会离开DNA，直到找到合适的PAM。一旦找到PAM，Cas9就使DNA局部解链，RNA进入，与DNA互补，形成RNA-DNA结构。<strong>sg种子区域序列与靶DNA的完美互补是很重要的。</strong></p>
-<h3 id="CRISPR–Cas9介导的DNA靶定于剪切模型"><a href="#CRISPR–Cas9介导的DNA靶定于剪切模型" class="headerlink" title="CRISPR–Cas9介导的DNA靶定于剪切模型"></a><font color="green">CRISPR–Cas9介导的DNA靶定于剪切模型</font></h3><p>首先，guide RNA的结合，使得Cas9从一个未激活的构象变成具有DNA识别能力的构象。RNA种子序列先形成A型构象，为了目标结合和链入侵，PAM识别位点预先形成用来PAM识别。然后，Cas9结合到PAM序列，使得酶能够去识别附近的潜在的DNA靶序列。一旦Cas9在PAM附近找到了潜在的靶序列，会开始解双螺旋并继续检查剩余的靶序列。磷酸锁环稳定解旋的目标DNA，且第一个碱基开始翻转向上，与guide RNA碱基配对。而Cas9继续与非靶链上的翻转碱基作用，促进双螺旋解开。接着，碱基配对伴随着Cas9构象改变，促进种子序列前面的guide RNA从限制中释放出来，也形成配对，这个过程促使Cas9构象持续变化，直到到达有活性的状态。最终，guide RNA与目标DNA完全互补使得HNH具有稳定的，具有活性的构象，来剪切目标链DNA。与此同时，引起更大的构象变化，使得非目标链DNA进入RuvC催化中心被剪切，这种转态下，Cas9中牢牢结合在靶点序列上，直到其他的细胞因子过来替代它。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-4db71b549d557ab4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="剪切示意图"></p>
-<p>读了这篇review，进行一定程度的总结，有些地方还是有些不太清楚。</p>
-<blockquote>
-<p>Fuguo Jiang and Jennifer A. Doudna, CRISPR–Cas9 Structures and Mechanisms, Annual Review of Biophysics 2017 46:1, 505-529 </p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>学习记录</category>
-      </categories>
-      <tags>
-        <tag>Cas9</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>2018年8月-小结</title>
-    <url>//2018/09/02/2018%E5%B9%B48%E6%9C%88-%E5%B0%8F%E7%BB%93/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![无尽之路](https://upload-images.jianshu.io/upload_images/3478485-6dc9021e15783f70.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-9月2日，星期日，公元2018年。
-
-
-
-<span id="more"></span>
-
-<p>9月开始崭露头角，8月已然逝去。秋天，似乎已经离我们越来越近，春困秋乏的状态又要来临。总结8月，展望9月，似乎迫不及待。</p>
-<p>8月，似乎是一个没有任何进展的月份。采葡萄，回家休息，然后就是游泳和看书。没有再多的事情，帮师姐搬了一下行李，仅此而已的8月。始终无法凝聚自己的精神专注力，聚焦在实验这一点上，整个8月确实是变得非常的散。</p>
-<p>我是否是太过于放松了，还是太过于自信，亦或是恐惧，更或是太多理想。很多很多事情似乎要做，不希望生活只有实验，希望有自己支配的时间，似乎实验只是占据了我一半左右的时间，我想对于真正地科研人员来说，这是少之又少的吧。我想游泳健身，我想博览群书（我感兴趣的），我想学习编程，我想看电影，我想去旅行，我还想学习摄影……想做的太多，精力太过分散，始终做不好任何一件事儿。</p>
-<p>我也清楚，问题关键抓不住重点，没有计划，亦或是没有目标。可是，我就认为生活也该有生活的样子，被一件事占据所有时间，也是一种悲哀。我的矛盾始终存在，那么解决矛盾的关键在于什么？我想，可能是提高时间利用率。你说不想花过多时间在实验上，那么你必须提高实验效率，要保证极高的实验成功率，在做一件事的时候，必须要专注于此，且不可散。</p>
-<p>整个大时间轴，你可以细分成你想要的份数，但是有一点你必须铭记，每一份都要讲所有的精神力注入其中，那是不可以分散的。9月，希望能够尝试这种方式，能够仅仅活在此时此刻，也是一种幸福。过多的展望，恰恰会迷失人的心智，摧毁人的意志力，因此，对于9月，我不想太多，做该做的事。</p>
-]]></content>
-      <categories>
-        <category>人生小结</category>
-      </categories>
-      <tags>
-        <tag>小结</tag>
       </tags>
   </entry>
   <entry>
@@ -661,26 +661,6 @@
       </tags>
   </entry>
   <entry>
-    <title>LaTeX中文章节定义</title>
-    <url>//2020/03/10/LaTeX%E4%B8%AD%E6%96%87%E7%AB%A0%E8%8A%82%E5%AE%9A%E4%B9%89/</url>
-    <content><![CDATA[<h3 id="1-需要使用的宏包——ctex"><a href="#1-需要使用的宏包——ctex" class="headerlink" title="1. 需要使用的宏包——ctex"></a>1. 需要使用的宏包——ctex</h3><p>官方网址：<a href="http://www.ctex.org/PackageCTeX">CTEX:PackageCTEX</a>，目前这个宏包已经转移到<a href="https://github.com/CTeX-org/ctex-kit">GitHub</a>，仍旧在继续开发增加新功能。具体详细的可以下载pdf文档。</p>
-<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/Image/20200310163651.png"></p>
-<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/Image/20200310163739.png"></p>
-<h3 id="2-自定义设置中文文档的章节"><a href="#2-自定义设置中文文档的章节" class="headerlink" title="2. 自定义设置中文文档的章节"></a>2. 自定义设置中文文档的章节</h3><h4 id="2-1-代码如下："><a href="#2-1-代码如下：" class="headerlink" title="2.1 代码如下："></a>2.1 代码如下：</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">%格式设置</span><br><span class="line">\documentclass[a4paper, 12pt]&#123;book&#125; %文档类型，我们选择book</span><br><span class="line">\usepackage[heading=true]&#123;ctex&#125; %载入ctex宏包</span><br><span class="line">%具体章节格式定义，这是关键的设置</span><br><span class="line">\ctexset&#123;chapter=&#123;name=&#123;第,章&#125;&#125;,section=&#123;name=&#123;第,节&#125;,format=&#123;\raggedright\Large&#125;&#125;&#125;</span><br><span class="line">%正文中格式</span><br><span class="line">\begin&#123;document&#125;</span><br><span class="line">\chapter&#123;菌株系统&#125;</span><br><span class="line">\input&#123;chapter_1/mircobes&#125;	</span><br><span class="line">	\section&#123;大肠杆菌&#125;</span><br><span class="line">\end&#123;document&#125;</span><br></pre></td></tr></table></figure>
-
-<h4 id="2-2-内容说明"><a href="#2-2-内容说明" class="headerlink" title="2.2 内容说明"></a>2.2 内容说明</h4><p>我们在载入<code>ctex</code>包，里面有一个<code>heading=true</code>参数，这个是必须要有的，否则格式依旧是不对，是默认的样式。</p>
-<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/Image/20200310173247.png" alt="这是缺少heading的呈现结果"></p>
-<p>此外，最关键的章节定义就是通过<code>\ctexset</code>来进行设置，我这里是最简单的设置，具体更细节的设置我没有进一步去尝试。下面是根据我的代码呈现的结果：</p>
-<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/Image/20200310174223.png"></p>
-<p>这样的结果，就比较符合我的期望需求，基本设置成功。</p>]]></content>
-      <categories>
-        <category>LaTeX入门</category>
-      </categories>
-      <tags>
-        <tag>LaTeX</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>LaTeX参考文献</title>
     <url>//2018/09/15/LaTeX%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -721,6 +701,111 @@
       <tags>
         <tag>LaTeX</tag>
         <tag>参考文献</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>LaTeX中文章节定义</title>
+    <url>//2020/03/10/LaTeX%E4%B8%AD%E6%96%87%E7%AB%A0%E8%8A%82%E5%AE%9A%E4%B9%89/</url>
+    <content><![CDATA[<h3 id="1-需要使用的宏包——ctex"><a href="#1-需要使用的宏包——ctex" class="headerlink" title="1. 需要使用的宏包——ctex"></a>1. 需要使用的宏包——ctex</h3><p>官方网址：<a href="http://www.ctex.org/PackageCTeX">CTEX:PackageCTEX</a>，目前这个宏包已经转移到<a href="https://github.com/CTeX-org/ctex-kit">GitHub</a>，仍旧在继续开发增加新功能。具体详细的可以下载pdf文档。</p>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/Image/20200310163651.png"></p>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/Image/20200310163739.png"></p>
+<h3 id="2-自定义设置中文文档的章节"><a href="#2-自定义设置中文文档的章节" class="headerlink" title="2. 自定义设置中文文档的章节"></a>2. 自定义设置中文文档的章节</h3><h4 id="2-1-代码如下："><a href="#2-1-代码如下：" class="headerlink" title="2.1 代码如下："></a>2.1 代码如下：</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">%格式设置</span><br><span class="line">\documentclass[a4paper, 12pt]&#123;book&#125; %文档类型，我们选择book</span><br><span class="line">\usepackage[heading=true]&#123;ctex&#125; %载入ctex宏包</span><br><span class="line">%具体章节格式定义，这是关键的设置</span><br><span class="line">\ctexset&#123;chapter=&#123;name=&#123;第,章&#125;&#125;,section=&#123;name=&#123;第,节&#125;,format=&#123;\raggedright\Large&#125;&#125;&#125;</span><br><span class="line">%正文中格式</span><br><span class="line">\begin&#123;document&#125;</span><br><span class="line">\chapter&#123;菌株系统&#125;</span><br><span class="line">\input&#123;chapter_1/mircobes&#125;	</span><br><span class="line">	\section&#123;大肠杆菌&#125;</span><br><span class="line">\end&#123;document&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="2-2-内容说明"><a href="#2-2-内容说明" class="headerlink" title="2.2 内容说明"></a>2.2 内容说明</h4><p>我们在载入<code>ctex</code>包，里面有一个<code>heading=true</code>参数，这个是必须要有的，否则格式依旧是不对，是默认的样式。</p>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/Image/20200310173247.png" alt="这是缺少heading的呈现结果"></p>
+<p>此外，最关键的章节定义就是通过<code>\ctexset</code>来进行设置，我这里是最简单的设置，具体更细节的设置我没有进一步去尝试。下面是根据我的代码呈现的结果：</p>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/Image/20200310174223.png"></p>
+<p>这样的结果，就比较符合我的期望需求，基本设置成功。</p>]]></content>
+      <categories>
+        <category>LaTeX入门</category>
+      </categories>
+      <tags>
+        <tag>LaTeX</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>LaTeX插入表格</title>
+    <url>//2018/09/15/LaTeX%E6%8F%92%E5%85%A5%E8%A1%A8%E6%A0%BC/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![惬意的周末，我也想拥有](https://upload-images.jianshu.io/upload_images/3478485-300eb5efdef1a5fe.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+<blockquote>
+<p>周末了，下个礼拜终于要开学了，好像又要开始摆出努力的样子。一切都是在循环往复，还是希望进步，能够学习一些从没有接触过的实物和技术。</p>
+</blockquote>
+<p>LaTeX是极其专业的排版软件，我也想试试，我就来用它排版我的论文，这样走一遍之后，我想应该基本入门了。在插入表格的时候，遇到了一些问题，特异记录下来。</p>
+<span id="more"></span>
+
+<h3 id="1-如何插入庞大的表格"><a href="#1-如何插入庞大的表格" class="headerlink" title="1. 如何插入庞大的表格"></a>1. 如何插入庞大的表格</h3><p>我们都知道，LaTeX可以一行一行的插入表格，但是在我们遇到比较庞大的表格时，我们该怎么办，有一个办法就是利用<a href="http://www.tablesgenerator.com/latex_tables">在线工具</a>进行转换成LaTeX格式的表格，而不需要花大量的时间一行一行输入。<br>只要你输入你的表格，然后点generate，生成相应的表格，让后你只需要输入到你的编辑器中，进行编译就可以。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-b7d8758edc879c5b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="复制表格"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-eb16ad35b99dd364.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="表格复制"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-552021decf1e4701.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="复制表格的内容到编译文本"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-e3adcd1c31950f73.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="可以看到编译后会有一定的溢出"></p>
+<h3 id="2-解决表格溢出的问题"><a href="#2-解决表格溢出的问题" class="headerlink" title="2. 解决表格溢出的问题"></a>2. 解决表格溢出的问题</h3><p>可以缩小字体，也可以修改行之间的距离，也可以缩小整个表格。可以看到，原因在于表头的字体太长了，因此需要使其分行显示，这样一来就可以了。分行你可以定义表格的宽度，使其自动分行或者也可以使用<code>makecell</code>包来进行强制分行。</p>
+<h5 id="2-1-首先我们看看定义表格单列宽度："><a href="#2-1-首先我们看看定义表格单列宽度：" class="headerlink" title="2.1 首先我们看看定义表格单列宽度："></a>2.1 首先我们看看定义表格单列宽度：</h5><p>在下面的代码中，<br><code>\begin&#123;tabular&#125;&#123;p&#123;2cm&#125;p&#123;3cm&#125;p&#123;2.5cm&#125;p&#123;2.5cm&#125;p&#123;2.5cm&#125;p&#123;2.5cm&#125;&#125;</code>，这句是真正起到调节作用的。<code>p&#123;2cm&#125;</code>就是代表第一列的宽度，后面依次是后面的宽度，然后会自动进行换行显示。但是有一个问题就是，发现自动换行以后，字母之间的距离变得很大，不像是只有一个空格的样子。</p>
+<figure class="highlight livescript"><table><tr><td class="code"><pre><span class="line"><span class="string">\begin&#123;table&#125;[]</span></span><br><span class="line">	<span class="string">\caption&#123;basic</span> structure&#125;</span><br><span class="line">	<span class="string">\vspace&#123;20pt&#125;</span></span><br><span class="line">	<span class="string">\centering</span></span><br><span class="line">	<span class="string">\begin&#123;tabular&#125;&#123;p&#123;2cm&#125;p&#123;3cm&#125;p&#123;2.5cm&#125;p&#123;2.5cm&#125;p&#123;2.5cm&#125;p&#123;2.5cm&#125;&#125;</span></span><br><span class="line">		<span class="string">\hline</span></span><br><span class="line">		Gene name &amp; Gene accession No. &amp; CDS length (bp) &amp; Protein size (aa) &amp; Protein MW (kDa) <span class="string">\\</span></span><br><span class="line">		<span class="string">\hline</span></span><br><span class="line">		<span class="number">001</span>  &amp; <span class="number">01g</span>009860.<span class="number">2</span>   &amp; <span class="number">819</span>             &amp; <span class="number">272</span>               &amp; <span class="number">31.34</span>            <span class="string">\\</span></span><br><span class="line">		<span class="number">002</span>  &amp; <span class="number">01g</span>021730.<span class="number">2</span>   &amp; <span class="number">798</span>             &amp; <span class="number">265</span>               &amp; <span class="number">30.37</span>            <span class="string">\\</span></span><br><span class="line">		<span class="number">003</span>  &amp; <span class="number">01g</span>094490.<span class="number">2</span>   &amp; <span class="number">630</span>             &amp; <span class="number">209</span>               &amp; <span class="number">24.58</span>            <span class="string">\\</span></span><br><span class="line">		<span class="number">004</span>  &amp; <span class="number">01g</span>102740.<span class="number">2</span>   &amp; <span class="number">1242</span>            &amp; <span class="number">413</span>               &amp; <span class="number">46.94</span>            <span class="string">\\</span></span><br><span class="line">		<span class="number">005</span>  &amp; <span class="number">01g</span>104900.<span class="number">2</span>   &amp; <span class="number">597</span>             &amp; <span class="number">198</span>               &amp; <span class="number">22.85</span>            <span class="string">\\</span></span><br><span class="line">		<span class="number">006</span>  &amp; <span class="number">02g</span>036430.<span class="number">1</span>   &amp; <span class="number">1698</span>            &amp; <span class="number">565</span>               &amp; <span class="number">64.88</span>            <span class="string">\\</span></span><br><span class="line">		<span class="number">007</span>  &amp; <span class="number">02g</span>061780.<span class="number">2</span>   &amp; <span class="number">735</span>             &amp; <span class="number">244</span>               &amp; <span class="number">28.23</span>            <span class="string">\\</span></span><br><span class="line">		<span class="number">008</span>  &amp; <span class="number">02g</span>061870.<span class="number">1</span>   &amp; <span class="number">660</span>             &amp; <span class="number">219</span>               &amp; <span class="number">25.21</span>            <span class="string">\\</span></span><br><span class="line">		<span class="number">009</span>  &amp; <span class="number">02g</span>061900.<span class="number">1</span>   &amp; <span class="number">915</span>             &amp; <span class="number">304</span>               &amp; <span class="number">34.61</span>            <span class="string">\\</span></span><br><span class="line">		<span class="number">010</span>  &amp; <span class="number">02g</span>061910.<span class="number">1</span>   &amp; <span class="number">795</span>             &amp; <span class="number">264</span>               &amp; <span class="number">29.92</span> <span class="string">\\</span>    </span><br><span class="line">		<span class="string">\hline</span>       </span><br><span class="line">	<span class="string">\end&#123;tabular&#125;</span></span><br><span class="line">	<span class="string">\label&#123;bs2&#125;</span></span><br><span class="line"><span class="string">\end&#123;table&#125;</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-087fc0b5b2bb79c4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="没有溢出"></p>
+<h5 id="2-2-通过makecell宏包来实现换行"><a href="#2-2-通过makecell宏包来实现换行" class="headerlink" title="2.2 通过makecell宏包来实现换行"></a>2.2 通过<code>makecell</code>宏包来实现换行</h5><p><code>makecell</code>中有一个专门的用来处理表头的命令<code>thead[可以选对齐方式]&#123;列名称&#125;</code>。比如文中所示，<code>thead[l]&#123;Gene\\name&#125;</code>就是将gene和name换行显示，l表示左对齐。可以发现，这种方法没有出现字间距变大的情况，比第一种要好。</p>
+<figure class="highlight taggerscript"><table><tr><td class="code"><pre><span class="line"><span class="symbol">\b</span>egin&#123;table&#125;[]</span><br><span class="line">    <span class="symbol">\c</span>aption&#123;basic structure&#125;</span><br><span class="line">    <span class="symbol">\v</span>space&#123;20pt&#125;</span><br><span class="line">	<span class="symbol">\c</span>entering</span><br><span class="line">	<span class="symbol">\b</span>egin&#123;tabular&#125;&#123;lllll&#125;</span><br><span class="line">		<span class="symbol">\h</span>line</span><br><span class="line">		<span class="symbol">\t</span>head[l]&#123;Gene<span class="symbol">\\</span>name&#125; &amp; <span class="symbol">\t</span>head[l]&#123;Gene accession<span class="symbol">\\</span>No. &#125;&amp; <span class="symbol">\t</span>head[l]&#123;CDS length<span class="symbol">\\</span>(bp)&#125; &amp; <span class="symbol">\t</span>head[l]&#123;Protein size<span class="symbol">\\</span>(aa)&#125; &amp; <span class="symbol">\t</span>head[l]&#123;Protein MW<span class="symbol">\\</span>(kDa)&#125; <span class="symbol">\\</span></span><br><span class="line">		<span class="symbol">\h</span>line</span><br><span class="line">		001  &amp; 01g009860.2   &amp; 819             &amp; 272               &amp; 31.34            <span class="symbol">\\</span></span><br><span class="line">		002  &amp; 01g021730.2   &amp; 798             &amp; 265               &amp; 30.37            <span class="symbol">\\</span></span><br><span class="line">		003  &amp; 01g094490.2   &amp; 630             &amp; 209               &amp; 24.58            <span class="symbol">\\</span></span><br><span class="line">		004  &amp; 01g102740.2   &amp; 1242            &amp; 413               &amp; 46.94            <span class="symbol">\\</span></span><br><span class="line">		005  &amp; 01g104900.2   &amp; 597             &amp; 198               &amp; 22.85            <span class="symbol">\\</span></span><br><span class="line">		006  &amp; 02g036430.1   &amp; 1698            &amp; 565               &amp; 64.88            <span class="symbol">\\</span></span><br><span class="line">		007  &amp; 02g061780.2   &amp; 735             &amp; 244               &amp; 28.23            <span class="symbol">\\</span></span><br><span class="line">		008  &amp; 02g061870.1   &amp; 660             &amp; 219               &amp; 25.21            <span class="symbol">\\</span></span><br><span class="line">		009  &amp; 02g061900.1   &amp; 915             &amp; 304               &amp; 34.61            <span class="symbol">\\</span></span><br><span class="line">		010  &amp; 02g061910.1   &amp; 795             &amp; 264               &amp; 29.92 <span class="symbol">\\</span>    </span><br><span class="line">		<span class="symbol">\h</span>line       </span><br><span class="line">	<span class="symbol">\e</span>nd&#123;tabular&#125;</span><br><span class="line">	<span class="symbol">\l</span>abel&#123;bs&#125;</span><br><span class="line"><span class="symbol">\e</span>nd&#123;table&#125;</span><br></pre></td></tr></table></figure>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-dd6fe8edb6086b60.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="编译后的效果"></p>
+]]></content>
+      <categories>
+        <category>LaTeX入门</category>
+      </categories>
+      <tags>
+        <tag>LaTeX</tag>
+        <tag>表格</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>LaTeX表格溢出问题</title>
+    <url>//2018/09/20/LaTeX%E8%A1%A8%E6%A0%BC%E6%BA%A2%E5%87%BA%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-a4ba2098aa1800cb.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="海，使人放下自己的身段"></p>
+<p>前面的<a href="https://www.jianshu.com/writer#/notebooks/23465256/notes/33812322">LaTeX插入表格</a>一文主要是来说明怎么插入表格，如果没有看过可以跳到前面去看。今天我们来说一下关于表格的一些细节处理问题。</p>
+<span id="more"></span>
+
+<h1 id="1-表格过长的问题"><a href="#1-表格过长的问题" class="headerlink" title="1 表格过长的问题"></a>1 表格过长的问题</h1><p>有时候我们的表格往往会超过一页的长度，这个时候依旧使用<code>\begin&#123;tabular&#125;...\end&#123;tabular&#125;</code>环境的话，那么肯定会导致表格的溢出，完全看不到表格超出的部分。这个时候我们就需要选择其他的宏包，来进行表格环境的设置。一般来说，我们有几种选择，但是共同的一点是，<strong>必须处理在第二页及后面几页的表头和表尾。</strong><code>\endfirsthead、\endhead、\endfoot和\endlastfoot</code>，这些参数分别用来设置第一页表头，后面每一页表头，后面每一页表尾和最后一页表尾。</p>
+<h3 id="1-1-longtable宏包"><a href="#1-1-longtable宏包" class="headerlink" title="1.1 longtable宏包"></a>1.1 longtable宏包</h3><p>在导言区你需要加载宏包<code>\usepackage&#123;longtable&#125;</code>，它的环境和tabular类似，这里不细讲。</p>
+<figure class="highlight livescript"><table><tr><td class="code"><pre><span class="line"><span class="string">\usepackage&#123;longtable&#125;</span></span><br><span class="line"><span class="string">\begin&#123;longtable&#125;&#123;表格格式&#125;</span></span><br><span class="line"><span class="string">\endhead</span></span><br><span class="line"><span class="string">\endfirsthead</span></span><br><span class="line"><span class="string">\endfoot</span></span><br><span class="line"><span class="string">\endlastfoot</span></span><br><span class="line"><span class="string">\end&#123;longtable&#125;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="1-2-tabu宏包"><a href="#1-2-tabu宏包" class="headerlink" title="1.2 tabu宏包"></a>1.2 tabu宏包</h3><p>首先也是要在导言区导入tabu和longtable宏包，然后使用的环境是，基本上没有什么区别，只是不同宏包的使用。此外还有一个包也可以使用，就是<code>ltxtable</code>宏包，它的特点是将表格独立为一个tex文件，然后要使用的时候就去引用它。</p>
+<figure class="highlight livescript"><table><tr><td class="code"><pre><span class="line"><span class="string">\usepackage&#123;tabu&#125;</span></span><br><span class="line"><span class="string">\usepackage&#123;longtable&#125;</span></span><br><span class="line"><span class="string">\begin&#123;longtabu&#125;&#123;格式&#125;</span></span><br><span class="line"><span class="string">\endhead</span></span><br><span class="line"><span class="string">\endfirsthead</span></span><br><span class="line"><span class="string">\endfoot</span></span><br><span class="line"><span class="string">\endlastfoot</span></span><br><span class="line"><span class="string">\end&#123;longtabu&#125;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h1 id="2-表格过宽的问题"><a href="#2-表格过宽的问题" class="headerlink" title="2 表格过宽的问题"></a>2 表格过宽的问题</h1><p>这个问题就比表格过长棘手一点，你没有现成的宏包可以使用，只能通过一些间接的方式将表格变窄，包括表格字体缩小，表格横放，表格列间距缩小，表格每一列的宽度减少，修改表头的行数，也可以让表格自动换行，来处理一些溢出的情况。貌似到目前为止还没有很好的宏包来解决。<br>我一般使用的是将每一列的宽度减少，进行适合的调整，到达最好的效果，其中可以使用一个强制换行的宏包来处理表头<code>makecell</code>。没一列宽度的调整就是在上面的环境后面的格式中调整，具体也不做展开，之后再写一篇细节问题来说明。</p>
+]]></content>
+      <categories>
+        <category>LaTeX入门</category>
+      </categories>
+      <tags>
+        <tag>LaTeX</tag>
+        <tag>表格</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>LaTeX表格相关宏包（1）——longtable</title>
+    <url>//2018/09/24/LaTeX%E8%A1%A8%E6%A0%BC%E7%9B%B8%E5%85%B3%E5%AE%8F%E5%8C%85%EF%BC%881%EF%BC%89%E2%80%94%E2%80%94longtable/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![云似乎在飘动](https://upload-images.jianshu.io/upload_images/3478485-8c52bda2a095736a.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+<blockquote>
+<p>本篇讲得就是关于longtable宏包的使用细节。祝大家中秋节快乐。</p>
+</blockquote>
+<span id="more"></span>
+
+<h1 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h1><p>我通过一个example来进行说明，这样才具有实验意义一些：</p>
+<figure class="highlight taggerscript"><table><tr><td class="code"><pre><span class="line"><span class="symbol">\u</span>sepackage&#123;longtable&#125;</span><br><span class="line"></span><br><span class="line"><span class="symbol">\b</span>egin&#123;longtable&#125;&#123;p&#123;2cm&#125;p&#123;3.2cm&#125;p&#123;1.1cm&#125;p&#123;1.3cm&#125;p&#123;1cm&#125;p&#123;1.2cm&#125;p&#123;1.5cm&#125;p&#123;2cm&#125;&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="symbol">\c</span>aption&#123;<span class="symbol">\t</span>extbf&#123;NAC gene family identified in tomato.&#125;&#125;</span><br><span class="line">	<span class="symbol">\l</span>abel&#123;table:nac&#125;<span class="symbol">\\</span></span><br><span class="line">	<span class="symbol">\h</span>line</span><br><span class="line">	<span class="symbol">\t</span>head[l]&#123;<span class="symbol">\t</span>extbf&#123;Gene&#125;<span class="symbol">\\</span><span class="symbol">\t</span>extbf&#123;name&#125;&#125; &amp; <span class="symbol">\t</span>head[l]&#123;<span class="symbol">\t</span>extbf&#123;Gene&#125; <span class="symbol">\\</span><span class="symbol">\t</span>extbf&#123;accession No.&#125;&#125; &amp; <span class="symbol">\t</span>head[l]&#123;<span class="symbol">\t</span>extbf&#123;length&#125;<span class="symbol">\\</span><span class="symbol">\t</span>extbf&#123;(bp)&#125;&#125; &amp; <span class="symbol">\t</span>head[l]&#123;<span class="symbol">\t</span>extbf&#123;<span class="symbol">\#</span> of&#125;<span class="symbol">\\</span><span class="symbol">\t</span>extbf&#123;Introns&#125;&#125; &amp;  <span class="symbol">\t</span>head[l]&#123;<span class="symbol">\t</span>extbf&#123;size&#125;<span class="symbol">\\</span><span class="symbol">\t</span>extbf&#123;(aa)&#125;&#125; &amp; <span class="symbol">\t</span>head[l]&#123;<span class="symbol">\t</span>extbf&#123;MW&#125;<span class="symbol">\\</span><span class="symbol">\t</span>extbf&#123;(kDa)&#125;&#125; &amp; <span class="symbol">\t</span>head[l]&#123;<span class="symbol">\t</span>extbf&#123;<span class="symbol">\#</span> of TM&#125;<span class="symbol">\\</span><span class="symbol">\t</span>extbf&#123;domains&#125;&#125; &amp; <span class="symbol">\t</span>head[l]&#123;<span class="symbol">\t</span>extbf&#123;Subcellular&#125;<span class="symbol">\\</span><span class="symbol">\t</span>extbf&#123;localization&#125;&#125;<span class="symbol">\\</span></span><br><span class="line">	<span class="symbol">\h</span>line</span><br><span class="line">	<span class="symbol">\e</span>ndfirsthead</span><br><span class="line">	</span><br><span class="line">	<span class="symbol">\m</span>ulticolumn&#123;3&#125;&#123;l&#125;&#123;<span class="symbol">\t</span>extbf&#123;<span class="symbol">\t</span>ablename <span class="symbol">\ </span><span class="symbol">\t</span>hetable&#123;&#125;&#125;.  <span class="symbol">\t</span>extsl&#123;(Continued)&#125;&#125; <span class="symbol">\\</span></span><br><span class="line">	<span class="symbol">\h</span>line</span><br><span class="line">   <span class="symbol">\t</span>head[l]&#123;<span class="symbol">\t</span>extbf&#123;Gene&#125;<span class="symbol">\\</span><span class="symbol">\t</span>extbf&#123;name&#125;&#125; &amp; <span class="symbol">\t</span>head[l]&#123;<span class="symbol">\t</span>extbf&#123;Gene&#125; <span class="symbol">\\</span><span class="symbol">\t</span>extbf&#123;accession No.&#125;&#125; &amp; <span class="symbol">\t</span>head[l]&#123;<span class="symbol">\t</span>extbf&#123;CDS&#125;<span class="symbol">\\</span><span class="symbol">\t</span>extbf&#123;length&#125;<span class="symbol">\\</span><span class="symbol">\t</span>extbf&#123;(bp)&#125;&#125; &amp; <span class="symbol">\t</span>head[l]&#123;<span class="symbol">\t</span>extbf&#123;<span class="symbol">\#</span> of&#125;<span class="symbol">\\</span><span class="symbol">\t</span>extbf&#123;Introns&#125;&#125; &amp;  <span class="symbol">\t</span>head[l]&#123;<span class="symbol">\t</span>extbf&#123;Protein&#125;<span class="symbol">\\</span><span class="symbol">\t</span>extbf&#123;size&#125;<span class="symbol">\\</span><span class="symbol">\t</span>extbf&#123;(aa)&#125;&#125; &amp; <span class="symbol">\t</span>head[l]&#123;<span class="symbol">\t</span>extbf&#123;Protein&#125;<span class="symbol">\\</span><span class="symbol">\t</span>extbf&#123;MW&#125;<span class="symbol">\\</span><span class="symbol">\t</span>extbf&#123;(kDa)&#125;&#125; &amp; <span class="symbol">\t</span>head[l]&#123;<span class="symbol">\t</span>extbf&#123;TM&#125;<span class="symbol">\\</span><span class="symbol">\t</span>extbf&#123;domains&#125;<span class="symbol">\\</span><span class="symbol">\t</span>extbf&#123;prediction&#125;&#125; &amp; <span class="symbol">\t</span>head[l]&#123;<span class="symbol">\t</span>extbf&#123;Subcellular&#125;<span class="symbol">\\</span><span class="symbol">\t</span>extbf&#123;localization&#125;<span class="symbol">\\</span><span class="symbol">\t</span>extbf&#123;prediction&#125;&#125;<span class="symbol">\\</span></span><br><span class="line">	<span class="symbol">\h</span>line</span><br><span class="line">	<span class="symbol">\e</span>ndhead</span><br><span class="line">	</span><br><span class="line">	<span class="symbol">\h</span>line</span><br><span class="line">	<span class="symbol">\m</span>ulticolumn&#123;8&#125;&#123;r&#125;&#123;<span class="symbol">\t</span>extsl&#123;(Continued)&#125;&#125;<span class="symbol">\\</span></span><br><span class="line">	<span class="symbol">\e</span>ndfoot</span><br><span class="line">	</span><br><span class="line">	<span class="symbol">\h</span>line</span><br><span class="line">	<span class="symbol">\e</span>ndlastfoot</span><br><span class="line">表格的内容</span><br><span class="line"><span class="symbol">\e</span>nd&#123;longtable&#125;</span><br></pre></td></tr></table></figure>
+<h1 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h1><p>第一行就是导言区需要使用的包，你需要写上代码。<br>下面的内容就是被<code>longtable</code>长表格环境所包括在内的环境。里面就是关于表格的内容。<br><code>\caption</code>和<code>\label</code>已经很常见了，就是来写表格的标题和用来引用表格时的标签。<br><code>\hline</code>就是加一条横线，也就是表格的最上面的一条线。两条很闲之见的就是表头的内容了，是用<code>&amp;</code>来分隔的，跟一般的表格都是一样的形式。在这里，我还使用<code>makecell</code>宏包来进行强制随意的断行。这里的表头就是第一页表格中的，后面的表头虽然也是一样的，但是可能需要添加一些其他的细节。<br><code>\endfirsthead</code>是所有长表格中所需要用到的一个命令，与之匹配的还有其他3个，这个之前的是第一页表格的表头和表格标题的内容。<br><code>\multicolumn</code>是用来合并列的命令，里面就可以写后面表格的开头的标题，很多时候就是写个“continued”。<br>然后又是加横线，来填写一模一样的表头。<br><code>\endhead</code>来结束之后每一页表格表头的内容<br>加横线，填写第一页表格的表尾，也用的<code>multicolumn</code>这个命令是表格具体控制的命令，这里不做细讲。将表尾写在最右下角，一般也是写个continued，然后以<code>\endfoot</code>结尾。<br>最后是横线加<code>\endlastfoot</code>，这里一般就是空的内容，不做添加。<br>这个之后，就是表格真正的内容了，会自动分页了。</p>
+<blockquote>
+<p>关于表格插入相关的基础语法，可以看我之前的文章<a href="https://www.jianshu.com/writer#/notebooks/23465256/notes/33812322">LaTeX表格插入</a>。也可以看我个人博客：<a href="http://othlis.com/">http://othlis.com</a> 。</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>LaTeX入门</category>
+      </categories>
+      <tags>
+        <tag>LaTeX</tag>
+        <tag>longtable</tag>
       </tags>
   </entry>
   <entry>
@@ -772,91 +857,6 @@
       </tags>
   </entry>
   <entry>
-    <title>LaTeX插入表格</title>
-    <url>//2018/09/15/LaTeX%E6%8F%92%E5%85%A5%E8%A1%A8%E6%A0%BC/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![惬意的周末，我也想拥有](https://upload-images.jianshu.io/upload_images/3478485-300eb5efdef1a5fe.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-<blockquote>
-<p>周末了，下个礼拜终于要开学了，好像又要开始摆出努力的样子。一切都是在循环往复，还是希望进步，能够学习一些从没有接触过的实物和技术。</p>
-</blockquote>
-<p>LaTeX是极其专业的排版软件，我也想试试，我就来用它排版我的论文，这样走一遍之后，我想应该基本入门了。在插入表格的时候，遇到了一些问题，特异记录下来。</p>
-<span id="more"></span>
-
-<h3 id="1-如何插入庞大的表格"><a href="#1-如何插入庞大的表格" class="headerlink" title="1. 如何插入庞大的表格"></a>1. 如何插入庞大的表格</h3><p>我们都知道，LaTeX可以一行一行的插入表格，但是在我们遇到比较庞大的表格时，我们该怎么办，有一个办法就是利用<a href="http://www.tablesgenerator.com/latex_tables">在线工具</a>进行转换成LaTeX格式的表格，而不需要花大量的时间一行一行输入。<br>只要你输入你的表格，然后点generate，生成相应的表格，让后你只需要输入到你的编辑器中，进行编译就可以。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-b7d8758edc879c5b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="复制表格"></p>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-eb16ad35b99dd364.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="表格复制"></p>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-552021decf1e4701.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="复制表格的内容到编译文本"></p>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-e3adcd1c31950f73.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="可以看到编译后会有一定的溢出"></p>
-<h3 id="2-解决表格溢出的问题"><a href="#2-解决表格溢出的问题" class="headerlink" title="2. 解决表格溢出的问题"></a>2. 解决表格溢出的问题</h3><p>可以缩小字体，也可以修改行之间的距离，也可以缩小整个表格。可以看到，原因在于表头的字体太长了，因此需要使其分行显示，这样一来就可以了。分行你可以定义表格的宽度，使其自动分行或者也可以使用<code>makecell</code>包来进行强制分行。</p>
-<h5 id="2-1-首先我们看看定义表格单列宽度："><a href="#2-1-首先我们看看定义表格单列宽度：" class="headerlink" title="2.1 首先我们看看定义表格单列宽度："></a>2.1 首先我们看看定义表格单列宽度：</h5><p>在下面的代码中，<br><code>\begin&#123;tabular&#125;&#123;p&#123;2cm&#125;p&#123;3cm&#125;p&#123;2.5cm&#125;p&#123;2.5cm&#125;p&#123;2.5cm&#125;p&#123;2.5cm&#125;&#125;</code>，这句是真正起到调节作用的。<code>p&#123;2cm&#125;</code>就是代表第一列的宽度，后面依次是后面的宽度，然后会自动进行换行显示。但是有一个问题就是，发现自动换行以后，字母之间的距离变得很大，不像是只有一个空格的样子。</p>
-<figure class="highlight livescript"><table><tr><td class="code"><pre><span class="line"><span class="string">\begin&#123;table&#125;[]</span></span><br><span class="line">	<span class="string">\caption&#123;basic</span> structure&#125;</span><br><span class="line">	<span class="string">\vspace&#123;20pt&#125;</span></span><br><span class="line">	<span class="string">\centering</span></span><br><span class="line">	<span class="string">\begin&#123;tabular&#125;&#123;p&#123;2cm&#125;p&#123;3cm&#125;p&#123;2.5cm&#125;p&#123;2.5cm&#125;p&#123;2.5cm&#125;p&#123;2.5cm&#125;&#125;</span></span><br><span class="line">		<span class="string">\hline</span></span><br><span class="line">		Gene name &amp; Gene accession No. &amp; CDS length (bp) &amp; Protein size (aa) &amp; Protein MW (kDa) <span class="string">\\</span></span><br><span class="line">		<span class="string">\hline</span></span><br><span class="line">		<span class="number">001</span>  &amp; <span class="number">01g</span>009860.<span class="number">2</span>   &amp; <span class="number">819</span>             &amp; <span class="number">272</span>               &amp; <span class="number">31.34</span>            <span class="string">\\</span></span><br><span class="line">		<span class="number">002</span>  &amp; <span class="number">01g</span>021730.<span class="number">2</span>   &amp; <span class="number">798</span>             &amp; <span class="number">265</span>               &amp; <span class="number">30.37</span>            <span class="string">\\</span></span><br><span class="line">		<span class="number">003</span>  &amp; <span class="number">01g</span>094490.<span class="number">2</span>   &amp; <span class="number">630</span>             &amp; <span class="number">209</span>               &amp; <span class="number">24.58</span>            <span class="string">\\</span></span><br><span class="line">		<span class="number">004</span>  &amp; <span class="number">01g</span>102740.<span class="number">2</span>   &amp; <span class="number">1242</span>            &amp; <span class="number">413</span>               &amp; <span class="number">46.94</span>            <span class="string">\\</span></span><br><span class="line">		<span class="number">005</span>  &amp; <span class="number">01g</span>104900.<span class="number">2</span>   &amp; <span class="number">597</span>             &amp; <span class="number">198</span>               &amp; <span class="number">22.85</span>            <span class="string">\\</span></span><br><span class="line">		<span class="number">006</span>  &amp; <span class="number">02g</span>036430.<span class="number">1</span>   &amp; <span class="number">1698</span>            &amp; <span class="number">565</span>               &amp; <span class="number">64.88</span>            <span class="string">\\</span></span><br><span class="line">		<span class="number">007</span>  &amp; <span class="number">02g</span>061780.<span class="number">2</span>   &amp; <span class="number">735</span>             &amp; <span class="number">244</span>               &amp; <span class="number">28.23</span>            <span class="string">\\</span></span><br><span class="line">		<span class="number">008</span>  &amp; <span class="number">02g</span>061870.<span class="number">1</span>   &amp; <span class="number">660</span>             &amp; <span class="number">219</span>               &amp; <span class="number">25.21</span>            <span class="string">\\</span></span><br><span class="line">		<span class="number">009</span>  &amp; <span class="number">02g</span>061900.<span class="number">1</span>   &amp; <span class="number">915</span>             &amp; <span class="number">304</span>               &amp; <span class="number">34.61</span>            <span class="string">\\</span></span><br><span class="line">		<span class="number">010</span>  &amp; <span class="number">02g</span>061910.<span class="number">1</span>   &amp; <span class="number">795</span>             &amp; <span class="number">264</span>               &amp; <span class="number">29.92</span> <span class="string">\\</span>    </span><br><span class="line">		<span class="string">\hline</span>       </span><br><span class="line">	<span class="string">\end&#123;tabular&#125;</span></span><br><span class="line">	<span class="string">\label&#123;bs2&#125;</span></span><br><span class="line"><span class="string">\end&#123;table&#125;</span></span><br></pre></td></tr></table></figure>
-
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-087fc0b5b2bb79c4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="没有溢出"></p>
-<h5 id="2-2-通过makecell宏包来实现换行"><a href="#2-2-通过makecell宏包来实现换行" class="headerlink" title="2.2 通过makecell宏包来实现换行"></a>2.2 通过<code>makecell</code>宏包来实现换行</h5><p><code>makecell</code>中有一个专门的用来处理表头的命令<code>thead[可以选对齐方式]&#123;列名称&#125;</code>。比如文中所示，<code>thead[l]&#123;Gene\\name&#125;</code>就是将gene和name换行显示，l表示左对齐。可以发现，这种方法没有出现字间距变大的情况，比第一种要好。</p>
-<figure class="highlight taggerscript"><table><tr><td class="code"><pre><span class="line"><span class="symbol">\b</span>egin&#123;table&#125;[]</span><br><span class="line">    <span class="symbol">\c</span>aption&#123;basic structure&#125;</span><br><span class="line">    <span class="symbol">\v</span>space&#123;20pt&#125;</span><br><span class="line">	<span class="symbol">\c</span>entering</span><br><span class="line">	<span class="symbol">\b</span>egin&#123;tabular&#125;&#123;lllll&#125;</span><br><span class="line">		<span class="symbol">\h</span>line</span><br><span class="line">		<span class="symbol">\t</span>head[l]&#123;Gene<span class="symbol">\\</span>name&#125; &amp; <span class="symbol">\t</span>head[l]&#123;Gene accession<span class="symbol">\\</span>No. &#125;&amp; <span class="symbol">\t</span>head[l]&#123;CDS length<span class="symbol">\\</span>(bp)&#125; &amp; <span class="symbol">\t</span>head[l]&#123;Protein size<span class="symbol">\\</span>(aa)&#125; &amp; <span class="symbol">\t</span>head[l]&#123;Protein MW<span class="symbol">\\</span>(kDa)&#125; <span class="symbol">\\</span></span><br><span class="line">		<span class="symbol">\h</span>line</span><br><span class="line">		001  &amp; 01g009860.2   &amp; 819             &amp; 272               &amp; 31.34            <span class="symbol">\\</span></span><br><span class="line">		002  &amp; 01g021730.2   &amp; 798             &amp; 265               &amp; 30.37            <span class="symbol">\\</span></span><br><span class="line">		003  &amp; 01g094490.2   &amp; 630             &amp; 209               &amp; 24.58            <span class="symbol">\\</span></span><br><span class="line">		004  &amp; 01g102740.2   &amp; 1242            &amp; 413               &amp; 46.94            <span class="symbol">\\</span></span><br><span class="line">		005  &amp; 01g104900.2   &amp; 597             &amp; 198               &amp; 22.85            <span class="symbol">\\</span></span><br><span class="line">		006  &amp; 02g036430.1   &amp; 1698            &amp; 565               &amp; 64.88            <span class="symbol">\\</span></span><br><span class="line">		007  &amp; 02g061780.2   &amp; 735             &amp; 244               &amp; 28.23            <span class="symbol">\\</span></span><br><span class="line">		008  &amp; 02g061870.1   &amp; 660             &amp; 219               &amp; 25.21            <span class="symbol">\\</span></span><br><span class="line">		009  &amp; 02g061900.1   &amp; 915             &amp; 304               &amp; 34.61            <span class="symbol">\\</span></span><br><span class="line">		010  &amp; 02g061910.1   &amp; 795             &amp; 264               &amp; 29.92 <span class="symbol">\\</span>    </span><br><span class="line">		<span class="symbol">\h</span>line       </span><br><span class="line">	<span class="symbol">\e</span>nd&#123;tabular&#125;</span><br><span class="line">	<span class="symbol">\l</span>abel&#123;bs&#125;</span><br><span class="line"><span class="symbol">\e</span>nd&#123;table&#125;</span><br></pre></td></tr></table></figure>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-dd6fe8edb6086b60.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="编译后的效果"></p>
-]]></content>
-      <categories>
-        <category>LaTeX入门</category>
-      </categories>
-      <tags>
-        <tag>LaTeX</tag>
-        <tag>表格</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>LaTeX表格相关宏包（1）——longtable</title>
-    <url>//2018/09/24/LaTeX%E8%A1%A8%E6%A0%BC%E7%9B%B8%E5%85%B3%E5%AE%8F%E5%8C%85%EF%BC%881%EF%BC%89%E2%80%94%E2%80%94longtable/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![云似乎在飘动](https://upload-images.jianshu.io/upload_images/3478485-8c52bda2a095736a.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-<blockquote>
-<p>本篇讲得就是关于longtable宏包的使用细节。祝大家中秋节快乐。</p>
-</blockquote>
-<span id="more"></span>
-
-<h1 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h1><p>我通过一个example来进行说明，这样才具有实验意义一些：</p>
-<figure class="highlight taggerscript"><table><tr><td class="code"><pre><span class="line"><span class="symbol">\u</span>sepackage&#123;longtable&#125;</span><br><span class="line"></span><br><span class="line"><span class="symbol">\b</span>egin&#123;longtable&#125;&#123;p&#123;2cm&#125;p&#123;3.2cm&#125;p&#123;1.1cm&#125;p&#123;1.3cm&#125;p&#123;1cm&#125;p&#123;1.2cm&#125;p&#123;1.5cm&#125;p&#123;2cm&#125;&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="symbol">\c</span>aption&#123;<span class="symbol">\t</span>extbf&#123;NAC gene family identified in tomato.&#125;&#125;</span><br><span class="line">	<span class="symbol">\l</span>abel&#123;table:nac&#125;<span class="symbol">\\</span></span><br><span class="line">	<span class="symbol">\h</span>line</span><br><span class="line">	<span class="symbol">\t</span>head[l]&#123;<span class="symbol">\t</span>extbf&#123;Gene&#125;<span class="symbol">\\</span><span class="symbol">\t</span>extbf&#123;name&#125;&#125; &amp; <span class="symbol">\t</span>head[l]&#123;<span class="symbol">\t</span>extbf&#123;Gene&#125; <span class="symbol">\\</span><span class="symbol">\t</span>extbf&#123;accession No.&#125;&#125; &amp; <span class="symbol">\t</span>head[l]&#123;<span class="symbol">\t</span>extbf&#123;length&#125;<span class="symbol">\\</span><span class="symbol">\t</span>extbf&#123;(bp)&#125;&#125; &amp; <span class="symbol">\t</span>head[l]&#123;<span class="symbol">\t</span>extbf&#123;<span class="symbol">\#</span> of&#125;<span class="symbol">\\</span><span class="symbol">\t</span>extbf&#123;Introns&#125;&#125; &amp;  <span class="symbol">\t</span>head[l]&#123;<span class="symbol">\t</span>extbf&#123;size&#125;<span class="symbol">\\</span><span class="symbol">\t</span>extbf&#123;(aa)&#125;&#125; &amp; <span class="symbol">\t</span>head[l]&#123;<span class="symbol">\t</span>extbf&#123;MW&#125;<span class="symbol">\\</span><span class="symbol">\t</span>extbf&#123;(kDa)&#125;&#125; &amp; <span class="symbol">\t</span>head[l]&#123;<span class="symbol">\t</span>extbf&#123;<span class="symbol">\#</span> of TM&#125;<span class="symbol">\\</span><span class="symbol">\t</span>extbf&#123;domains&#125;&#125; &amp; <span class="symbol">\t</span>head[l]&#123;<span class="symbol">\t</span>extbf&#123;Subcellular&#125;<span class="symbol">\\</span><span class="symbol">\t</span>extbf&#123;localization&#125;&#125;<span class="symbol">\\</span></span><br><span class="line">	<span class="symbol">\h</span>line</span><br><span class="line">	<span class="symbol">\e</span>ndfirsthead</span><br><span class="line">	</span><br><span class="line">	<span class="symbol">\m</span>ulticolumn&#123;3&#125;&#123;l&#125;&#123;<span class="symbol">\t</span>extbf&#123;<span class="symbol">\t</span>ablename <span class="symbol">\ </span><span class="symbol">\t</span>hetable&#123;&#125;&#125;.  <span class="symbol">\t</span>extsl&#123;(Continued)&#125;&#125; <span class="symbol">\\</span></span><br><span class="line">	<span class="symbol">\h</span>line</span><br><span class="line">   <span class="symbol">\t</span>head[l]&#123;<span class="symbol">\t</span>extbf&#123;Gene&#125;<span class="symbol">\\</span><span class="symbol">\t</span>extbf&#123;name&#125;&#125; &amp; <span class="symbol">\t</span>head[l]&#123;<span class="symbol">\t</span>extbf&#123;Gene&#125; <span class="symbol">\\</span><span class="symbol">\t</span>extbf&#123;accession No.&#125;&#125; &amp; <span class="symbol">\t</span>head[l]&#123;<span class="symbol">\t</span>extbf&#123;CDS&#125;<span class="symbol">\\</span><span class="symbol">\t</span>extbf&#123;length&#125;<span class="symbol">\\</span><span class="symbol">\t</span>extbf&#123;(bp)&#125;&#125; &amp; <span class="symbol">\t</span>head[l]&#123;<span class="symbol">\t</span>extbf&#123;<span class="symbol">\#</span> of&#125;<span class="symbol">\\</span><span class="symbol">\t</span>extbf&#123;Introns&#125;&#125; &amp;  <span class="symbol">\t</span>head[l]&#123;<span class="symbol">\t</span>extbf&#123;Protein&#125;<span class="symbol">\\</span><span class="symbol">\t</span>extbf&#123;size&#125;<span class="symbol">\\</span><span class="symbol">\t</span>extbf&#123;(aa)&#125;&#125; &amp; <span class="symbol">\t</span>head[l]&#123;<span class="symbol">\t</span>extbf&#123;Protein&#125;<span class="symbol">\\</span><span class="symbol">\t</span>extbf&#123;MW&#125;<span class="symbol">\\</span><span class="symbol">\t</span>extbf&#123;(kDa)&#125;&#125; &amp; <span class="symbol">\t</span>head[l]&#123;<span class="symbol">\t</span>extbf&#123;TM&#125;<span class="symbol">\\</span><span class="symbol">\t</span>extbf&#123;domains&#125;<span class="symbol">\\</span><span class="symbol">\t</span>extbf&#123;prediction&#125;&#125; &amp; <span class="symbol">\t</span>head[l]&#123;<span class="symbol">\t</span>extbf&#123;Subcellular&#125;<span class="symbol">\\</span><span class="symbol">\t</span>extbf&#123;localization&#125;<span class="symbol">\\</span><span class="symbol">\t</span>extbf&#123;prediction&#125;&#125;<span class="symbol">\\</span></span><br><span class="line">	<span class="symbol">\h</span>line</span><br><span class="line">	<span class="symbol">\e</span>ndhead</span><br><span class="line">	</span><br><span class="line">	<span class="symbol">\h</span>line</span><br><span class="line">	<span class="symbol">\m</span>ulticolumn&#123;8&#125;&#123;r&#125;&#123;<span class="symbol">\t</span>extsl&#123;(Continued)&#125;&#125;<span class="symbol">\\</span></span><br><span class="line">	<span class="symbol">\e</span>ndfoot</span><br><span class="line">	</span><br><span class="line">	<span class="symbol">\h</span>line</span><br><span class="line">	<span class="symbol">\e</span>ndlastfoot</span><br><span class="line">表格的内容</span><br><span class="line"><span class="symbol">\e</span>nd&#123;longtable&#125;</span><br></pre></td></tr></table></figure>
-<h1 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h1><p>第一行就是导言区需要使用的包，你需要写上代码。<br>下面的内容就是被<code>longtable</code>长表格环境所包括在内的环境。里面就是关于表格的内容。<br><code>\caption</code>和<code>\label</code>已经很常见了，就是来写表格的标题和用来引用表格时的标签。<br><code>\hline</code>就是加一条横线，也就是表格的最上面的一条线。两条很闲之见的就是表头的内容了，是用<code>&amp;</code>来分隔的，跟一般的表格都是一样的形式。在这里，我还使用<code>makecell</code>宏包来进行强制随意的断行。这里的表头就是第一页表格中的，后面的表头虽然也是一样的，但是可能需要添加一些其他的细节。<br><code>\endfirsthead</code>是所有长表格中所需要用到的一个命令，与之匹配的还有其他3个，这个之前的是第一页表格的表头和表格标题的内容。<br><code>\multicolumn</code>是用来合并列的命令，里面就可以写后面表格的开头的标题，很多时候就是写个“continued”。<br>然后又是加横线，来填写一模一样的表头。<br><code>\endhead</code>来结束之后每一页表格表头的内容<br>加横线，填写第一页表格的表尾，也用的<code>multicolumn</code>这个命令是表格具体控制的命令，这里不做细讲。将表尾写在最右下角，一般也是写个continued，然后以<code>\endfoot</code>结尾。<br>最后是横线加<code>\endlastfoot</code>，这里一般就是空的内容，不做添加。<br>这个之后，就是表格真正的内容了，会自动分页了。</p>
-<blockquote>
-<p>关于表格插入相关的基础语法，可以看我之前的文章<a href="https://www.jianshu.com/writer#/notebooks/23465256/notes/33812322">LaTeX表格插入</a>。也可以看我个人博客：<a href="http://othlis.com/">http://othlis.com</a> 。</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>LaTeX入门</category>
-      </categories>
-      <tags>
-        <tag>LaTeX</tag>
-        <tag>longtable</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>LaTeX表格溢出问题</title>
-    <url>//2018/09/20/LaTeX%E8%A1%A8%E6%A0%BC%E6%BA%A2%E5%87%BA%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-a4ba2098aa1800cb.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="海，使人放下自己的身段"></p>
-<p>前面的<a href="https://www.jianshu.com/writer#/notebooks/23465256/notes/33812322">LaTeX插入表格</a>一文主要是来说明怎么插入表格，如果没有看过可以跳到前面去看。今天我们来说一下关于表格的一些细节处理问题。</p>
-<span id="more"></span>
-
-<h1 id="1-表格过长的问题"><a href="#1-表格过长的问题" class="headerlink" title="1 表格过长的问题"></a>1 表格过长的问题</h1><p>有时候我们的表格往往会超过一页的长度，这个时候依旧使用<code>\begin&#123;tabular&#125;...\end&#123;tabular&#125;</code>环境的话，那么肯定会导致表格的溢出，完全看不到表格超出的部分。这个时候我们就需要选择其他的宏包，来进行表格环境的设置。一般来说，我们有几种选择，但是共同的一点是，<strong>必须处理在第二页及后面几页的表头和表尾。</strong><code>\endfirsthead、\endhead、\endfoot和\endlastfoot</code>，这些参数分别用来设置第一页表头，后面每一页表头，后面每一页表尾和最后一页表尾。</p>
-<h3 id="1-1-longtable宏包"><a href="#1-1-longtable宏包" class="headerlink" title="1.1 longtable宏包"></a>1.1 longtable宏包</h3><p>在导言区你需要加载宏包<code>\usepackage&#123;longtable&#125;</code>，它的环境和tabular类似，这里不细讲。</p>
-<figure class="highlight livescript"><table><tr><td class="code"><pre><span class="line"><span class="string">\usepackage&#123;longtable&#125;</span></span><br><span class="line"><span class="string">\begin&#123;longtable&#125;&#123;表格格式&#125;</span></span><br><span class="line"><span class="string">\endhead</span></span><br><span class="line"><span class="string">\endfirsthead</span></span><br><span class="line"><span class="string">\endfoot</span></span><br><span class="line"><span class="string">\endlastfoot</span></span><br><span class="line"><span class="string">\end&#123;longtable&#125;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h3 id="1-2-tabu宏包"><a href="#1-2-tabu宏包" class="headerlink" title="1.2 tabu宏包"></a>1.2 tabu宏包</h3><p>首先也是要在导言区导入tabu和longtable宏包，然后使用的环境是，基本上没有什么区别，只是不同宏包的使用。此外还有一个包也可以使用，就是<code>ltxtable</code>宏包，它的特点是将表格独立为一个tex文件，然后要使用的时候就去引用它。</p>
-<figure class="highlight livescript"><table><tr><td class="code"><pre><span class="line"><span class="string">\usepackage&#123;tabu&#125;</span></span><br><span class="line"><span class="string">\usepackage&#123;longtable&#125;</span></span><br><span class="line"><span class="string">\begin&#123;longtabu&#125;&#123;格式&#125;</span></span><br><span class="line"><span class="string">\endhead</span></span><br><span class="line"><span class="string">\endfirsthead</span></span><br><span class="line"><span class="string">\endfoot</span></span><br><span class="line"><span class="string">\endlastfoot</span></span><br><span class="line"><span class="string">\end&#123;longtabu&#125;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h1 id="2-表格过宽的问题"><a href="#2-表格过宽的问题" class="headerlink" title="2 表格过宽的问题"></a>2 表格过宽的问题</h1><p>这个问题就比表格过长棘手一点，你没有现成的宏包可以使用，只能通过一些间接的方式将表格变窄，包括表格字体缩小，表格横放，表格列间距缩小，表格每一列的宽度减少，修改表头的行数，也可以让表格自动换行，来处理一些溢出的情况。貌似到目前为止还没有很好的宏包来解决。<br>我一般使用的是将每一列的宽度减少，进行适合的调整，到达最好的效果，其中可以使用一个强制换行的宏包来处理表头<code>makecell</code>。没一列宽度的调整就是在上面的环境后面的格式中调整，具体也不做展开，之后再写一篇细节问题来说明。</p>
-]]></content>
-      <categories>
-        <category>LaTeX入门</category>
-      </categories>
-      <tags>
-        <tag>LaTeX</tag>
-        <tag>表格</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Love</title>
     <url>//2018/08/29/Love/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -902,22 +902,6 @@
       </tags>
   </entry>
   <entry>
-    <title>传奇的诞生</title>
-    <url>//2018/09/11/%E4%BC%A0%E5%A5%87%E7%9A%84%E8%AF%9E%E7%94%9F/</url>
-    <content><![CDATA[<p>在看这部电影之前，我一直都不知道还有这样一个传奇的存在，对于足球，我个人没有特别大的兴趣爱好，因此我都不太了解足球这方面的巨星和故事。但是，看着题目，你能够想象到这可能是一个激励的故事，又是一碗鸡汤，我决定去喝了它。</p>
-<p>故事开始，一群孩子在小巷子里玩着自己做的足球，规则是不让足球落地，通过大家的配合。主人公迪科，踢得非常的好，很明显你可以看出来，这也铺垫了后面的比赛。跟其他的故事一样，一开始总是被父母认为没有出息的东西，结果往往是因为这个，而有了巨大的成就。贝利的母亲极力的反对，而他父亲确实很支持。而在这背后，往往有着一段不一样的经历，才能够导致现在这样的局面。母亲和父亲就是因为足球而结缘，同样也是因为足球而失去了太多，最终对其充满失望。</p>
-<p>那时候，巴西因为1950年和1954年的世界杯惨败，而一直 没有走出来。因为世界杯的失败，人们将责任推到没有规则和野蛮的踢球方式，最终一直被厌恶。但是贝利已经将这种提法融入血液之中，无法改变。就是因为贝利的坚持，带动了整个巴西国家队，在1958年世界杯上，打败瑞典队，一雪前耻，巴西人再一次因为足球而世界闻名，而这历史性的时刻，也是标志了贝利时代的来临。</p>
-<p>一个人具有这样的影响力，能够担负起相当大的重担，能够让国家在世界面前站立起来，真得难以置信。贝利被授予“巴西国宝”的称号，还保持着多项足球方面的记录，至今无人能打破，被国际奥委会认为是20世纪最具有影响力的运动员。</p>
-<p>电影就是讲贝利的一生，就是传奇的一生。被人嘲讽，受尽屈辱，最后通过自己的努力，母亲父亲的鼓励和支持，最后成为影响力极大的人物。真的是传奇，只受过正规的足球训练18个月，就帮助巴西国家队拿到了世界杯冠军，除了贝利，还有谁能完成吗？在之后的两届世界杯，贝利带领巴西队两次夺冠，成为目前为止唯一一个获得三次世界杯冠军的球员。</p>
-<p>一切，就是因为传奇的诞生。</p>]]></content>
-      <categories>
-        <category>影评领域</category>
-      </categories>
-      <tags>
-        <tag>电影</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Texlive2018下载及安装</title>
     <url>//2018/08/29/Texlive2018%E4%B8%8B%E8%BD%BD%E5%8F%8A%E5%AE%89%E8%A3%85/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -959,6 +943,22 @@
       <tags>
         <tag>LaTeX</tag>
         <tag>排版</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>传奇的诞生</title>
+    <url>//2018/09/11/%E4%BC%A0%E5%A5%87%E7%9A%84%E8%AF%9E%E7%94%9F/</url>
+    <content><![CDATA[<p>在看这部电影之前，我一直都不知道还有这样一个传奇的存在，对于足球，我个人没有特别大的兴趣爱好，因此我都不太了解足球这方面的巨星和故事。但是，看着题目，你能够想象到这可能是一个激励的故事，又是一碗鸡汤，我决定去喝了它。</p>
+<p>故事开始，一群孩子在小巷子里玩着自己做的足球，规则是不让足球落地，通过大家的配合。主人公迪科，踢得非常的好，很明显你可以看出来，这也铺垫了后面的比赛。跟其他的故事一样，一开始总是被父母认为没有出息的东西，结果往往是因为这个，而有了巨大的成就。贝利的母亲极力的反对，而他父亲确实很支持。而在这背后，往往有着一段不一样的经历，才能够导致现在这样的局面。母亲和父亲就是因为足球而结缘，同样也是因为足球而失去了太多，最终对其充满失望。</p>
+<p>那时候，巴西因为1950年和1954年的世界杯惨败，而一直 没有走出来。因为世界杯的失败，人们将责任推到没有规则和野蛮的踢球方式，最终一直被厌恶。但是贝利已经将这种提法融入血液之中，无法改变。就是因为贝利的坚持，带动了整个巴西国家队，在1958年世界杯上，打败瑞典队，一雪前耻，巴西人再一次因为足球而世界闻名，而这历史性的时刻，也是标志了贝利时代的来临。</p>
+<p>一个人具有这样的影响力，能够担负起相当大的重担，能够让国家在世界面前站立起来，真得难以置信。贝利被授予“巴西国宝”的称号，还保持着多项足球方面的记录，至今无人能打破，被国际奥委会认为是20世纪最具有影响力的运动员。</p>
+<p>电影就是讲贝利的一生，就是传奇的一生。被人嘲讽，受尽屈辱，最后通过自己的努力，母亲父亲的鼓励和支持，最后成为影响力极大的人物。真的是传奇，只受过正规的足球训练18个月，就帮助巴西国家队拿到了世界杯冠军，除了贝利，还有谁能完成吗？在之后的两届世界杯，贝利带领巴西队两次夺冠，成为目前为止唯一一个获得三次世界杯冠军的球员。</p>
+<p>一切，就是因为传奇的诞生。</p>]]></content>
+      <categories>
+        <category>影评领域</category>
+      </categories>
+      <tags>
+        <tag>电影</tag>
       </tags>
   </entry>
   <entry>
@@ -1044,86 +1044,6 @@
       <tags>
         <tag>印度</tag>
         <tag>郭建龙</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>基于全基因组的基因家族分析（4）：SlNRAMP家族基因进化树构建</title>
-    <url>//2022/07/31/%E5%9F%BA%E4%BA%8E%E5%85%A8%E5%9F%BA%E5%9B%A0%E7%BB%84%E7%9A%84%E5%9F%BA%E5%9B%A0%E5%AE%B6%E6%97%8F%E5%88%86%E6%9E%90%EF%BC%884%EF%BC%89%EF%BC%9ASlNRAMP%E5%AE%B6%E6%97%8F%E5%9F%BA%E5%9B%A0%E8%BF%9B%E5%8C%96%E6%A0%91%E6%9E%84%E5%BB%BA/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-49635e61c7543d10.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="cherry tomato.jpg"></p>
-<span id="more"></span>
-
-<blockquote>
-<p>继续之前还没有完成的内容。因为最近在学习Y叔的R包–ggtree，所以就顺便拿这个内容来进行展示，作为一个例子来记录。nwk树文件和R代码文件我已经放在github：<a href="https://github.com/Lxmic/ggtree_note">https://github.com/Lxmic/ggtree_note</a></p>
-</blockquote>
-<h2 id="1-ggtree安装"><a href="#1-ggtree安装" class="headerlink" title="1. ggtree安装"></a>1. ggtree安装</h2><p>关于这个包，y叔已经写了相当详细的说明，有一个完整的电子书《<a href="https://yulab-smu.github.io/treedata-book/chapter5.html#visualizing-and-annotating-tree-using-grammar-of-graphics">Data Integration, Manipulation and Visualization of Phylogenetic Trees</a>》。这个包是在<a href="http://bioconductor.org/packages/release/bioc/html/ggtree.html">Bioconductor</a>上面，有非常详细的介绍，可以去查找相关的内容。</p>
-<figure class="highlight cmake"><table><tr><td class="code"><pre><span class="line"><span class="comment">#安装相关的包，包括ggtree以及ggplot2</span></span><br><span class="line"><span class="comment">#对于R版本在3.6及以上的，需要使用BiocManager包来安装bioconductor上的包</span></span><br><span class="line"><span class="keyword">if</span> (!requireNamespace(<span class="string">&quot;BiocManager&quot;</span>, quietly = <span class="keyword">TRUE</span>))</span><br><span class="line">    <span class="keyword">install</span>.packages(<span class="string">&quot;BiocManager&quot;</span>)</span><br><span class="line"></span><br><span class="line">BiocManager::<span class="keyword">install</span>(<span class="string">&quot;ggtree&quot;</span>)</span><br><span class="line"><span class="comment">#ggplot2安装</span></span><br><span class="line"><span class="keyword">install</span>.packages(<span class="string">&quot;ggplot2&quot;</span>)</span><br><span class="line"><span class="comment">#载入两个包</span></span><br><span class="line">library(ggplot2)</span><br><span class="line">library(ggtree)</span><br></pre></td></tr></table></figure>
-<h2 id="2-读取及可视化树结构"><a href="#2-读取及可视化树结构" class="headerlink" title="2. 读取及可视化树结构"></a>2. 读取及可视化树结构</h2><p>关于用什么算法以及什么软件来构建你自己需要的树，完全看个人的需要，y叔在电子文档《<a href="https://yulab-smu.github.io/treedata-book/chapter5.html#visualizing-and-annotating-tree-using-grammar-of-graphics">Data Integration, Manipulation and Visualization of Phylogenetic Trees</a>》中有很详细的介绍各种树以及各种算法，有兴趣了解一下（反正我是看不太懂）。我就用最简单，最常用的方法来获得进化树——MEGA软件，可以输出newick格式的树，非常常用的进化树文件（我们需要保存其bootstrap值以及branch.length值）。</p>
-<figure class="highlight apache"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 读取newick树，在当前工作目录中的nramp.nwk文件，并赋值给tree</span></span><br><span class="line"><span class="attribute">tree</span> &lt;- read.newick(<span class="string">&quot;nramp.nwk&quot;</span>)</span><br><span class="line"><span class="comment"># 可视化树结构，这里用环形树来展示</span></span><br><span class="line"><span class="attribute">p1</span> &lt;- ggtree(tree, layout = <span class="string">&quot;circular&quot;</span>, branch.length = <span class="string">&quot;none&quot;</span>)</span><br><span class="line"><span class="comment"># 将进化树打印出来显示</span></span><br><span class="line"><span class="attribute">print</span>(p<span class="number">1</span>)</span><br><span class="line"><span class="comment"># 如果要将branch.length展示，那么只需要删除branch.length = &quot;none&quot;</span></span><br><span class="line"><span class="attribute">p2</span> &lt;- ggtree(tree, layout=<span class="string">&quot;circular&quot;</span>)</span><br><span class="line"><span class="comment"># 可以看到，目前的进化树还没有tiplab，因此我们需要添加lab，跟ggplot2一样，再添加一个图层，就可以实现。</span></span><br><span class="line"><span class="attribute">p3</span> &lt;- p<span class="number">1</span> + geom_tiplab<span class="number">2</span>(color=<span class="string">&quot;seagreen&quot;</span>, size = <span class="number">3</span>, hjust = -.<span class="number">2</span>)+xlim(NA, <span class="number">22</span>)</span><br><span class="line"><span class="attribute">print</span>(p<span class="number">3</span>)</span><br><span class="line"><span class="comment"># 此外，我们通常需要给树的某个node来添加背景色高亮显示，也只需要通过一个函数添加图层。一般首先我们要了解节点ID，要知道你需要高亮显示的节点。</span></span><br><span class="line"><span class="comment">#显示进化树的节点ID</span></span><br><span class="line"><span class="attribute">p4</span> &lt;- p<span class="number">3</span> + geom_text<span class="number">2</span>(aes(label=node))</span><br><span class="line"><span class="attribute">print</span>(p<span class="number">4</span>)</span><br><span class="line"><span class="comment">#为一部分树添加背景颜色，着重显示</span></span><br><span class="line"><span class="attribute">p5</span> &lt;- p<span class="number">3</span> + geom_hilight(node = <span class="number">33</span>, fill = <span class="string">&quot;red&quot;</span>, alpha = <span class="number">0</span>.<span class="number">6</span>)</span><br><span class="line"><span class="attribute">print</span>(p<span class="number">5</span>)</span><br><span class="line"><span class="comment">#打印所有图片，这里还需要安装一个cowplot包，用来排版的</span></span><br><span class="line"><span class="attribute">install</span>.packages(<span class="string">&quot;cowplot&quot;</span>)</span><br><span class="line"><span class="attribute">plot_grid</span>(p<span class="number">1</span>, p<span class="number">2</span>, p<span class="number">3</span>, p<span class="number">4</span> ,p<span class="number">5</span>, ncol=<span class="number">3</span>, labels=c(<span class="string">&quot;A&quot;</span>,<span class="string">&quot;B&quot;</span>, <span class="string">&quot;C&quot;</span>, <span class="string">&quot;D&quot;</span>, <span class="string">&quot;E&quot;</span>))</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-ff1cf964e96d4376.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="p1,p2,p3,p4 and p5"></p>
-<h2 id="3-进化树修饰"><a href="#3-进化树修饰" class="headerlink" title="3. 进化树修饰"></a>3. 进化树修饰</h2><p>对于iTOLs这个进化树修饰软件，虽然功能也强大，但是我本身用起来还是觉得很费事，而且各种配置文件很多，感觉有点头大，真是伤不起，重复性不高。由于这个原因，我还是决定学习R包-ggtree，今天就进一步来修饰一下进化树，使其变得更加美观一些。用代码来修饰进化树，重复性可想而知，非常节省时间。</p>
-<p>-对一些参数进行说明<br>函数<code>geom_tiplab2()</code>是用来添加taxa的label的，也就是你的基因名。还有一个基本相同的用来给矩形树添加label的<code>geom_tiplab()</code>。这两个函数区别在前者可以根据树来自动调整角度，来达到比较好的可读性。我这里画的圈图，就适合用前者。</p>
-<figure class="highlight nix"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 这个p6跟上面的图C是一样的，就是我改变来它的xlim的范围，为了后面添加strip，需要控制xlim。</span></span><br><span class="line"><span class="comment"># size是字体大小，color是字体颜色，hjust是距离节点的距离。</span></span><br><span class="line">p6 &lt;- ggtree(tree, <span class="attr">layout</span> = <span class="string">&quot;circular&quot;</span>, branch.<span class="attr">length</span> = <span class="string">&quot;none&quot;</span>)</span><br><span class="line">+geom_tiplab2(<span class="attr">color</span> = <span class="string">&quot;seagreen&quot;</span>,  <span class="attr">size=3,</span> <span class="attr">hjust=-.05)</span></span><br><span class="line">+ xlim(NA, <span class="number">20</span>)</span><br><span class="line">print(p6)</span><br><span class="line">p61 &lt;- ggtree(tree, <span class="attr">layout</span> = <span class="string">&quot;circular&quot;</span>, branch.<span class="attr">length</span> = <span class="string">&quot;none&quot;</span>, )+geom_tiplab2(<span class="attr">color</span> = <span class="string">&quot;red&quot;</span>,  <span class="attr">size=2,</span> <span class="attr">hjust=-.1)+</span> xlim(NA, <span class="number">20</span>)</span><br><span class="line">print(p61)</span><br><span class="line">plot_grid(p6, p61, <span class="attr">ncol</span> = <span class="number">2</span>, <span class="attr">labels</span> = c(<span class="string">&quot;F&quot;</span>,<span class="string">&quot;G&quot;</span>))</span><br></pre></td></tr></table></figure>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-ba53538a78b96a2f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="改变颜色和字体大小"></p>
-<ul>
-<li>进化树基本都会聚类成几个分支，对于基因家族，就可以相应的进行亚家族分类，下面就用文献中常见的strip来将进化树进一步分类。在<code>ggtree</code>中对应的函数是<code>geom_strip()</code>，下面我们来看具体的代码以及参数。</li>
-<li><code>geom_strip()</code>函数可以在进化树的外围来添加具有色彩的条带。根据图d中的节点，我们来进行相应的添加。其中的前两个数字就是对应的节点(<code>taxa1</code>和<code>taxa2</code>)，从起始到结束。<code>barsize</code>就是色块的宽度， 以及<code>color</code>就是色块颜色。</li>
-<li><code>offset</code>就是距离节点的位置，这个参数就需要和之前的<code>xlim</code>进行配合，才能够将色块放到合适的位置，不会和  <code>tiplab</code>互相覆盖。这里的<code>label</code>就是色块想块的名字，也就分类名例如Clade I这种。</li>
-<li><code>offset.text</code>这个参数是来调整label的位置的，它的起始位置就是strip开始的，而不是taxa开始的。<code>extend</code>是用来调整色块之间的间隔大小，默认是0；如果是0.5的话，那么正好可以将色块拼接成一个完整的圈。</li>
-<li><code>angle</code>是用来调整<code>label</code>的角度, 默认是0，顺时针就是正的数值。<code>align</code>在这里似乎没有什么作用。</li>
-<li><code>hjust= &quot;center&quot;</code>的作用就是将label放置在strip的中间位置。这么以来，基本所有的问题就解决来，可以直接出比较好看的圈图。<figure class="highlight reasonml"><table><tr><td class="code"><pre><span class="line">p7 &lt;- p6 </span><br><span class="line">+ geom<span class="constructor">_strip(14, 17, <span class="params">barsize</span> = 3, <span class="params">color</span> = <span class="string">&quot;steelblue&quot;</span>, <span class="params">offset</span> = 7, <span class="params">label</span> = <span class="string">&quot;Clade I&quot;</span>, <span class="params">offset</span>.<span class="params">text</span> = 1, <span class="params">angle</span> = 60, <span class="params">fontsize</span> = 4, <span class="params">hjust</span> = <span class="string">&quot;center&quot;</span>, <span class="params">extend</span> = 0.3)</span> </span><br><span class="line">+ geom<span class="constructor">_strip(11, 13, <span class="params">color</span> = <span class="string">&quot;red&quot;</span>, <span class="params">barsize</span> = 3, <span class="params">offset</span> = 7, <span class="params">label</span> = <span class="string">&quot;Clade II&quot;</span>, <span class="params">offset</span>.<span class="params">text</span> = 1, <span class="params">angle</span> = -15, <span class="params">fontsize</span> = 4, <span class="params">hjust</span> = <span class="string">&quot;center&quot;</span>, <span class="params">extend</span> = 0.3)</span> </span><br><span class="line">+ geom<span class="constructor">_strip(6, 9, <span class="params">color</span> = <span class="string">&quot;orange&quot;</span>, <span class="params">barsize</span> = 3, <span class="params">offset</span> = 7, <span class="params">label</span> = <span class="string">&quot;Clade III&quot;</span>, <span class="params">offset</span>.<span class="params">text</span> = 1, <span class="params">angle</span> = 10, <span class="params">fontsize</span> = 4, <span class="params">hjust</span> = <span class="string">&quot;center&quot;</span>, <span class="params">extend</span> = 0.3)</span></span><br><span class="line">print(p7)</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>这里我有一个问题，就是说我还不知道对于里面只有一个基因的node，我该怎么给它添加strip，因为<code>geom_strip()</code>这个函数是需要两个taxa来添加的，只有一个的条件下，我没有办法。而且我尝试过将<code>taxa1 = taxa2</code>，还是没有起作用。我已经在ggtree group中提出来问题，希望能得到解答</p>
-</blockquote>
-</li>
-</ul>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-4cad4bff4349c657.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="圈图最终的结果"></p>
-<h2 id="4-分组给分支上色"><a href="#4-分组给分支上色" class="headerlink" title="4. 分组给分支上色"></a>4. 分组给分支上色</h2><p>在别人的文章中，也经常会看到将tiplabel分为不同的颜色来进行上色，以更好的区分不容的clade。例如这篇jxb关于杨树mate家族基因分析的文章(doi:10.1093/jxb/erx370)，进化树的展示:<br><img src="https://upload-images.jianshu.io/upload_images/3478485-779429a1b1463077.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Genome-wide analysis of MATE transporters and molecular
-characterization of aluminum resistance in Populus"><br>这里我先用比较麻烦的办法来实现它。我们只需要自己构建一个颜色文件，然后强行插入到树文件中并进行可视化就可以完成。</p>
-<ul>
-<li><p>构建一个颜色文件， 只要包含两个参数就行——node和color，和之前的进化树的node 号一一对应起来。这样的格式就可以了。</p>
-<table>
-<thead>
-<tr>
-<th>node</th>
-<th>color</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>1</td>
-<td>orange</td>
-</tr>
-<tr>
-<td>2</td>
-<td>orange</td>
-</tr>
-<tr>
-<td>3</td>
-<td>orange</td>
-</tr>
-</tbody></table>
-</li>
-<li><p>读取这个颜色文件，我习惯用<code>read.csv()</code>来载入外部数据。</p>
-<figure class="highlight haskell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#让进化树着色，变成自己需要的颜色。先根据节点，构建自己的颜色数据框</span></span><br><span class="line"><span class="title">d</span> &lt;- read.csv(<span class="string">&quot;nramp_color.csv&quot;</span>, header = <span class="type">TRUE</span>)</span><br><span class="line"><span class="title">d</span> &lt;- <span class="class"><span class="keyword">data</span>.frame(<span class="title">d</span>)</span></span><br><span class="line"><span class="meta">#使用`%&lt;+%`符号强插入颜色数据到树文件中</span></span><br><span class="line"><span class="title">p8</span> &lt;- p7%&lt;+%d + aes(color = <span class="type">I</span>(color))</span><br></pre></td></tr></table></figure>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-9726eff29f00de4b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="ok, 大功告成"></p>
-</li>
-<li><p>如果tiplab字体颜色要改变成各种分支的颜色，那么在之前的p6代码中，去掉color就可以了或者全部改成黑色。</p>
-<figure class="highlight nix"><table><tr><td class="code"><pre><span class="line"><span class="comment">#变成黑色字体</span></span><br><span class="line">p6 &lt;- ggtree(tree, <span class="attr">layout</span> = <span class="string">&quot;circular&quot;</span>, branch.<span class="attr">length</span> = <span class="string">&quot;none&quot;</span>)+geom_tiplab2(<span class="attr">color</span> = <span class="string">&quot;black&quot;</span>,  <span class="attr">size=3,</span> <span class="attr">hjust=-.05)+</span> xlim(NA, <span class="number">20</span>)</span><br><span class="line"><span class="comment">#变成相应的彩色</span></span><br><span class="line">p6 &lt;- ggtree(tree, <span class="attr">layout</span> = <span class="string">&quot;circular&quot;</span>, branch.<span class="attr">length</span> = <span class="string">&quot;none&quot;</span>)+geom_tiplab2(<span class="attr">size=3,</span> <span class="attr">hjust=-.05)+</span> xlim(NA, <span class="number">20</span>)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-a0e6ef3780614a54.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="黑色字体"></p>
-</li>
-</ul>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-305e609a0fb72bf3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="彩色字体"></p>
-<h2 id="5-总结"><a href="#5-总结" class="headerlink" title="5. 总结"></a>5. 总结</h2><p>虽然Y叔确实写了非常详细的说明书，但是对于新手来说，还是会有一定的入门难度。尤其是有些参数并没有仔细说明用途，点到为止。所以我自己也摸索了好久，还不断在ggtree group这个Y叔创建的问题论坛问问题，来一步步解决。Y叔还是解答的很及时的，经常会马上回答你。希望能够帮助需要的人，同时我也能够不断地继续摸索前行，永无止境。</p>
-<blockquote>
-<p>参考资料：<br>(1) <a href="https://yulab-smu.github.io/treedata-book/chapter4.html#introduction-1">https://yulab-smu.github.io/treedata-book/chapter4.html#introduction-1</a><br>(2) <a href="https://bioconductor.org/packages/release/bioc/manuals/ggtree/man/ggtree.pdf">https://bioconductor.org/packages/release/bioc/manuals/ggtree/man/ggtree.pdf</a><br>(3) <a href="https://github.com/GuangchuangYu/ggtree/issues/52">https://github.com/GuangchuangYu/ggtree/issues/52</a></p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>科研之路</category>
-      </categories>
-      <tags>
-        <tag>gene</tag>
       </tags>
   </entry>
   <entry>
@@ -1268,6 +1188,86 @@ characterization of aluminum resistance in Populus"><br>这里我先用比较麻
       </tags>
   </entry>
   <entry>
+    <title>基于全基因组的基因家族分析（4）：SlNRAMP家族基因进化树构建</title>
+    <url>//2022/07/31/%E5%9F%BA%E4%BA%8E%E5%85%A8%E5%9F%BA%E5%9B%A0%E7%BB%84%E7%9A%84%E5%9F%BA%E5%9B%A0%E5%AE%B6%E6%97%8F%E5%88%86%E6%9E%90%EF%BC%884%EF%BC%89%EF%BC%9ASlNRAMP%E5%AE%B6%E6%97%8F%E5%9F%BA%E5%9B%A0%E8%BF%9B%E5%8C%96%E6%A0%91%E6%9E%84%E5%BB%BA/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-49635e61c7543d10.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="cherry tomato.jpg"></p>
+<span id="more"></span>
+
+<blockquote>
+<p>继续之前还没有完成的内容。因为最近在学习Y叔的R包–ggtree，所以就顺便拿这个内容来进行展示，作为一个例子来记录。nwk树文件和R代码文件我已经放在github：<a href="https://github.com/Lxmic/ggtree_note">https://github.com/Lxmic/ggtree_note</a></p>
+</blockquote>
+<h2 id="1-ggtree安装"><a href="#1-ggtree安装" class="headerlink" title="1. ggtree安装"></a>1. ggtree安装</h2><p>关于这个包，y叔已经写了相当详细的说明，有一个完整的电子书《<a href="https://yulab-smu.github.io/treedata-book/chapter5.html#visualizing-and-annotating-tree-using-grammar-of-graphics">Data Integration, Manipulation and Visualization of Phylogenetic Trees</a>》。这个包是在<a href="http://bioconductor.org/packages/release/bioc/html/ggtree.html">Bioconductor</a>上面，有非常详细的介绍，可以去查找相关的内容。</p>
+<figure class="highlight cmake"><table><tr><td class="code"><pre><span class="line"><span class="comment">#安装相关的包，包括ggtree以及ggplot2</span></span><br><span class="line"><span class="comment">#对于R版本在3.6及以上的，需要使用BiocManager包来安装bioconductor上的包</span></span><br><span class="line"><span class="keyword">if</span> (!requireNamespace(<span class="string">&quot;BiocManager&quot;</span>, quietly = <span class="keyword">TRUE</span>))</span><br><span class="line">    <span class="keyword">install</span>.packages(<span class="string">&quot;BiocManager&quot;</span>)</span><br><span class="line"></span><br><span class="line">BiocManager::<span class="keyword">install</span>(<span class="string">&quot;ggtree&quot;</span>)</span><br><span class="line"><span class="comment">#ggplot2安装</span></span><br><span class="line"><span class="keyword">install</span>.packages(<span class="string">&quot;ggplot2&quot;</span>)</span><br><span class="line"><span class="comment">#载入两个包</span></span><br><span class="line">library(ggplot2)</span><br><span class="line">library(ggtree)</span><br></pre></td></tr></table></figure>
+<h2 id="2-读取及可视化树结构"><a href="#2-读取及可视化树结构" class="headerlink" title="2. 读取及可视化树结构"></a>2. 读取及可视化树结构</h2><p>关于用什么算法以及什么软件来构建你自己需要的树，完全看个人的需要，y叔在电子文档《<a href="https://yulab-smu.github.io/treedata-book/chapter5.html#visualizing-and-annotating-tree-using-grammar-of-graphics">Data Integration, Manipulation and Visualization of Phylogenetic Trees</a>》中有很详细的介绍各种树以及各种算法，有兴趣了解一下（反正我是看不太懂）。我就用最简单，最常用的方法来获得进化树——MEGA软件，可以输出newick格式的树，非常常用的进化树文件（我们需要保存其bootstrap值以及branch.length值）。</p>
+<figure class="highlight apache"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 读取newick树，在当前工作目录中的nramp.nwk文件，并赋值给tree</span></span><br><span class="line"><span class="attribute">tree</span> &lt;- read.newick(<span class="string">&quot;nramp.nwk&quot;</span>)</span><br><span class="line"><span class="comment"># 可视化树结构，这里用环形树来展示</span></span><br><span class="line"><span class="attribute">p1</span> &lt;- ggtree(tree, layout = <span class="string">&quot;circular&quot;</span>, branch.length = <span class="string">&quot;none&quot;</span>)</span><br><span class="line"><span class="comment"># 将进化树打印出来显示</span></span><br><span class="line"><span class="attribute">print</span>(p<span class="number">1</span>)</span><br><span class="line"><span class="comment"># 如果要将branch.length展示，那么只需要删除branch.length = &quot;none&quot;</span></span><br><span class="line"><span class="attribute">p2</span> &lt;- ggtree(tree, layout=<span class="string">&quot;circular&quot;</span>)</span><br><span class="line"><span class="comment"># 可以看到，目前的进化树还没有tiplab，因此我们需要添加lab，跟ggplot2一样，再添加一个图层，就可以实现。</span></span><br><span class="line"><span class="attribute">p3</span> &lt;- p<span class="number">1</span> + geom_tiplab<span class="number">2</span>(color=<span class="string">&quot;seagreen&quot;</span>, size = <span class="number">3</span>, hjust = -.<span class="number">2</span>)+xlim(NA, <span class="number">22</span>)</span><br><span class="line"><span class="attribute">print</span>(p<span class="number">3</span>)</span><br><span class="line"><span class="comment"># 此外，我们通常需要给树的某个node来添加背景色高亮显示，也只需要通过一个函数添加图层。一般首先我们要了解节点ID，要知道你需要高亮显示的节点。</span></span><br><span class="line"><span class="comment">#显示进化树的节点ID</span></span><br><span class="line"><span class="attribute">p4</span> &lt;- p<span class="number">3</span> + geom_text<span class="number">2</span>(aes(label=node))</span><br><span class="line"><span class="attribute">print</span>(p<span class="number">4</span>)</span><br><span class="line"><span class="comment">#为一部分树添加背景颜色，着重显示</span></span><br><span class="line"><span class="attribute">p5</span> &lt;- p<span class="number">3</span> + geom_hilight(node = <span class="number">33</span>, fill = <span class="string">&quot;red&quot;</span>, alpha = <span class="number">0</span>.<span class="number">6</span>)</span><br><span class="line"><span class="attribute">print</span>(p<span class="number">5</span>)</span><br><span class="line"><span class="comment">#打印所有图片，这里还需要安装一个cowplot包，用来排版的</span></span><br><span class="line"><span class="attribute">install</span>.packages(<span class="string">&quot;cowplot&quot;</span>)</span><br><span class="line"><span class="attribute">plot_grid</span>(p<span class="number">1</span>, p<span class="number">2</span>, p<span class="number">3</span>, p<span class="number">4</span> ,p<span class="number">5</span>, ncol=<span class="number">3</span>, labels=c(<span class="string">&quot;A&quot;</span>,<span class="string">&quot;B&quot;</span>, <span class="string">&quot;C&quot;</span>, <span class="string">&quot;D&quot;</span>, <span class="string">&quot;E&quot;</span>))</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-ff1cf964e96d4376.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="p1,p2,p3,p4 and p5"></p>
+<h2 id="3-进化树修饰"><a href="#3-进化树修饰" class="headerlink" title="3. 进化树修饰"></a>3. 进化树修饰</h2><p>对于iTOLs这个进化树修饰软件，虽然功能也强大，但是我本身用起来还是觉得很费事，而且各种配置文件很多，感觉有点头大，真是伤不起，重复性不高。由于这个原因，我还是决定学习R包-ggtree，今天就进一步来修饰一下进化树，使其变得更加美观一些。用代码来修饰进化树，重复性可想而知，非常节省时间。</p>
+<p>-对一些参数进行说明<br>函数<code>geom_tiplab2()</code>是用来添加taxa的label的，也就是你的基因名。还有一个基本相同的用来给矩形树添加label的<code>geom_tiplab()</code>。这两个函数区别在前者可以根据树来自动调整角度，来达到比较好的可读性。我这里画的圈图，就适合用前者。</p>
+<figure class="highlight nix"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 这个p6跟上面的图C是一样的，就是我改变来它的xlim的范围，为了后面添加strip，需要控制xlim。</span></span><br><span class="line"><span class="comment"># size是字体大小，color是字体颜色，hjust是距离节点的距离。</span></span><br><span class="line">p6 &lt;- ggtree(tree, <span class="attr">layout</span> = <span class="string">&quot;circular&quot;</span>, branch.<span class="attr">length</span> = <span class="string">&quot;none&quot;</span>)</span><br><span class="line">+geom_tiplab2(<span class="attr">color</span> = <span class="string">&quot;seagreen&quot;</span>,  <span class="attr">size=3,</span> <span class="attr">hjust=-.05)</span></span><br><span class="line">+ xlim(NA, <span class="number">20</span>)</span><br><span class="line">print(p6)</span><br><span class="line">p61 &lt;- ggtree(tree, <span class="attr">layout</span> = <span class="string">&quot;circular&quot;</span>, branch.<span class="attr">length</span> = <span class="string">&quot;none&quot;</span>, )+geom_tiplab2(<span class="attr">color</span> = <span class="string">&quot;red&quot;</span>,  <span class="attr">size=2,</span> <span class="attr">hjust=-.1)+</span> xlim(NA, <span class="number">20</span>)</span><br><span class="line">print(p61)</span><br><span class="line">plot_grid(p6, p61, <span class="attr">ncol</span> = <span class="number">2</span>, <span class="attr">labels</span> = c(<span class="string">&quot;F&quot;</span>,<span class="string">&quot;G&quot;</span>))</span><br></pre></td></tr></table></figure>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-ba53538a78b96a2f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="改变颜色和字体大小"></p>
+<ul>
+<li>进化树基本都会聚类成几个分支，对于基因家族，就可以相应的进行亚家族分类，下面就用文献中常见的strip来将进化树进一步分类。在<code>ggtree</code>中对应的函数是<code>geom_strip()</code>，下面我们来看具体的代码以及参数。</li>
+<li><code>geom_strip()</code>函数可以在进化树的外围来添加具有色彩的条带。根据图d中的节点，我们来进行相应的添加。其中的前两个数字就是对应的节点(<code>taxa1</code>和<code>taxa2</code>)，从起始到结束。<code>barsize</code>就是色块的宽度， 以及<code>color</code>就是色块颜色。</li>
+<li><code>offset</code>就是距离节点的位置，这个参数就需要和之前的<code>xlim</code>进行配合，才能够将色块放到合适的位置，不会和  <code>tiplab</code>互相覆盖。这里的<code>label</code>就是色块想块的名字，也就分类名例如Clade I这种。</li>
+<li><code>offset.text</code>这个参数是来调整label的位置的，它的起始位置就是strip开始的，而不是taxa开始的。<code>extend</code>是用来调整色块之间的间隔大小，默认是0；如果是0.5的话，那么正好可以将色块拼接成一个完整的圈。</li>
+<li><code>angle</code>是用来调整<code>label</code>的角度, 默认是0，顺时针就是正的数值。<code>align</code>在这里似乎没有什么作用。</li>
+<li><code>hjust= &quot;center&quot;</code>的作用就是将label放置在strip的中间位置。这么以来，基本所有的问题就解决来，可以直接出比较好看的圈图。<figure class="highlight reasonml"><table><tr><td class="code"><pre><span class="line">p7 &lt;- p6 </span><br><span class="line">+ geom<span class="constructor">_strip(14, 17, <span class="params">barsize</span> = 3, <span class="params">color</span> = <span class="string">&quot;steelblue&quot;</span>, <span class="params">offset</span> = 7, <span class="params">label</span> = <span class="string">&quot;Clade I&quot;</span>, <span class="params">offset</span>.<span class="params">text</span> = 1, <span class="params">angle</span> = 60, <span class="params">fontsize</span> = 4, <span class="params">hjust</span> = <span class="string">&quot;center&quot;</span>, <span class="params">extend</span> = 0.3)</span> </span><br><span class="line">+ geom<span class="constructor">_strip(11, 13, <span class="params">color</span> = <span class="string">&quot;red&quot;</span>, <span class="params">barsize</span> = 3, <span class="params">offset</span> = 7, <span class="params">label</span> = <span class="string">&quot;Clade II&quot;</span>, <span class="params">offset</span>.<span class="params">text</span> = 1, <span class="params">angle</span> = -15, <span class="params">fontsize</span> = 4, <span class="params">hjust</span> = <span class="string">&quot;center&quot;</span>, <span class="params">extend</span> = 0.3)</span> </span><br><span class="line">+ geom<span class="constructor">_strip(6, 9, <span class="params">color</span> = <span class="string">&quot;orange&quot;</span>, <span class="params">barsize</span> = 3, <span class="params">offset</span> = 7, <span class="params">label</span> = <span class="string">&quot;Clade III&quot;</span>, <span class="params">offset</span>.<span class="params">text</span> = 1, <span class="params">angle</span> = 10, <span class="params">fontsize</span> = 4, <span class="params">hjust</span> = <span class="string">&quot;center&quot;</span>, <span class="params">extend</span> = 0.3)</span></span><br><span class="line">print(p7)</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>这里我有一个问题，就是说我还不知道对于里面只有一个基因的node，我该怎么给它添加strip，因为<code>geom_strip()</code>这个函数是需要两个taxa来添加的，只有一个的条件下，我没有办法。而且我尝试过将<code>taxa1 = taxa2</code>，还是没有起作用。我已经在ggtree group中提出来问题，希望能得到解答</p>
+</blockquote>
+</li>
+</ul>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-4cad4bff4349c657.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="圈图最终的结果"></p>
+<h2 id="4-分组给分支上色"><a href="#4-分组给分支上色" class="headerlink" title="4. 分组给分支上色"></a>4. 分组给分支上色</h2><p>在别人的文章中，也经常会看到将tiplabel分为不同的颜色来进行上色，以更好的区分不容的clade。例如这篇jxb关于杨树mate家族基因分析的文章(doi:10.1093/jxb/erx370)，进化树的展示:<br><img src="https://upload-images.jianshu.io/upload_images/3478485-779429a1b1463077.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Genome-wide analysis of MATE transporters and molecular
+characterization of aluminum resistance in Populus"><br>这里我先用比较麻烦的办法来实现它。我们只需要自己构建一个颜色文件，然后强行插入到树文件中并进行可视化就可以完成。</p>
+<ul>
+<li><p>构建一个颜色文件， 只要包含两个参数就行——node和color，和之前的进化树的node 号一一对应起来。这样的格式就可以了。</p>
+<table>
+<thead>
+<tr>
+<th>node</th>
+<th>color</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>orange</td>
+</tr>
+<tr>
+<td>2</td>
+<td>orange</td>
+</tr>
+<tr>
+<td>3</td>
+<td>orange</td>
+</tr>
+</tbody></table>
+</li>
+<li><p>读取这个颜色文件，我习惯用<code>read.csv()</code>来载入外部数据。</p>
+<figure class="highlight haskell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#让进化树着色，变成自己需要的颜色。先根据节点，构建自己的颜色数据框</span></span><br><span class="line"><span class="title">d</span> &lt;- read.csv(<span class="string">&quot;nramp_color.csv&quot;</span>, header = <span class="type">TRUE</span>)</span><br><span class="line"><span class="title">d</span> &lt;- <span class="class"><span class="keyword">data</span>.frame(<span class="title">d</span>)</span></span><br><span class="line"><span class="meta">#使用`%&lt;+%`符号强插入颜色数据到树文件中</span></span><br><span class="line"><span class="title">p8</span> &lt;- p7%&lt;+%d + aes(color = <span class="type">I</span>(color))</span><br></pre></td></tr></table></figure>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-9726eff29f00de4b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="ok, 大功告成"></p>
+</li>
+<li><p>如果tiplab字体颜色要改变成各种分支的颜色，那么在之前的p6代码中，去掉color就可以了或者全部改成黑色。</p>
+<figure class="highlight nix"><table><tr><td class="code"><pre><span class="line"><span class="comment">#变成黑色字体</span></span><br><span class="line">p6 &lt;- ggtree(tree, <span class="attr">layout</span> = <span class="string">&quot;circular&quot;</span>, branch.<span class="attr">length</span> = <span class="string">&quot;none&quot;</span>)+geom_tiplab2(<span class="attr">color</span> = <span class="string">&quot;black&quot;</span>,  <span class="attr">size=3,</span> <span class="attr">hjust=-.05)+</span> xlim(NA, <span class="number">20</span>)</span><br><span class="line"><span class="comment">#变成相应的彩色</span></span><br><span class="line">p6 &lt;- ggtree(tree, <span class="attr">layout</span> = <span class="string">&quot;circular&quot;</span>, branch.<span class="attr">length</span> = <span class="string">&quot;none&quot;</span>)+geom_tiplab2(<span class="attr">size=3,</span> <span class="attr">hjust=-.05)+</span> xlim(NA, <span class="number">20</span>)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-a0e6ef3780614a54.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="黑色字体"></p>
+</li>
+</ul>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-305e609a0fb72bf3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="彩色字体"></p>
+<h2 id="5-总结"><a href="#5-总结" class="headerlink" title="5. 总结"></a>5. 总结</h2><p>虽然Y叔确实写了非常详细的说明书，但是对于新手来说，还是会有一定的入门难度。尤其是有些参数并没有仔细说明用途，点到为止。所以我自己也摸索了好久，还不断在ggtree group这个Y叔创建的问题论坛问问题，来一步步解决。Y叔还是解答的很及时的，经常会马上回答你。希望能够帮助需要的人，同时我也能够不断地继续摸索前行，永无止境。</p>
+<blockquote>
+<p>参考资料：<br>(1) <a href="https://yulab-smu.github.io/treedata-book/chapter4.html#introduction-1">https://yulab-smu.github.io/treedata-book/chapter4.html#introduction-1</a><br>(2) <a href="https://bioconductor.org/packages/release/bioc/manuals/ggtree/man/ggtree.pdf">https://bioconductor.org/packages/release/bioc/manuals/ggtree/man/ggtree.pdf</a><br>(3) <a href="https://github.com/GuangchuangYu/ggtree/issues/52">https://github.com/GuangchuangYu/ggtree/issues/52</a></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>科研之路</category>
+      </categories>
+      <tags>
+        <tag>gene</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>杂乱无章</title>
     <url>//2018/08/28/%E6%9D%82%E4%B9%B1%E6%97%A0%E7%AB%A0/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -1288,6 +1288,365 @@ characterization of aluminum resistance in Populus"><br>这里我先用比较麻
       </categories>
       <tags>
         <tag>旅行</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>植物Cas9靶点设计网站简介</title>
+    <url>//2019/02/05/%E6%A4%8D%E7%89%A9Cas9%E9%9D%B6%E7%82%B9%E8%AE%BE%E8%AE%A1%E7%BD%91%E7%AB%99%E7%AE%80%E4%BB%8B/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![cas9模型](https://upload-images.jianshu.io/upload_images/3478485-e845fed2bd99b07b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+<span id="more"></span>
+
+<p>我在前面的简文中已经基本阐述了Cas9的作用机制，详细内容可以看<a href="https://www.jianshu.com/p/1e7bff7d5830">CRISPR-Cas9系统简介</a>一文。今天，就来讲一讲怎么实际使用这个系统来帮助我们进行功能基因的研究。这个技术一问世，很多大牛就开始使用，植物学领域的应用，使得我们能够更方便的有目的的去编辑我们想要编辑的植物基因组。今天就推荐几个网站，寻找靶点序列的网站。前面我们也提到过，好的靶点的选择，可以减小脱靶率，大大提高我们编辑的效率。能够极大提高我们的实验效率，不然像我们植物学领域的苦逼博士，不得疯掉，一直一直脱靶的话，那么就真的非常的酸爽。</p>
+<h3 id="CRISPR-PLANT"><a href="#CRISPR-PLANT" class="headerlink" title="CRISPR-PLANT"></a><font color = "green">CRISPR-PLANT</font></h3><p>具体网址：<a href="https://www.genome.arizona.edu/crispr/index.html">https://www.genome.arizona.edu/crispr/index.html</a>。 看这个网址，应该是Arizona大学出品的。这是一个专门针对植物CRISPR靶点设计网站，比较专业，较为好用的网站。首页有一张模式图，而且还有对CRISPR-Cas9系统的基本介绍，大概可以了解。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-f2f550500f26be7a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="网站首页"><br>导航栏中有几个标签链接，如果你不知道怎么使用，那么你就可以点击instruction来学习，里面有比较详细的介绍。如果要开始找靶点，那就点击search。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-6181cec9ae7ec031.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="导航栏"><br>进入search主页，就可以看到查找的方式。这里它也建议你先看知道手册，然后在进行设计。查找的输入信息有两种，a.染色体位置信息；b.基因locus，通常情况下我们在查找的时候感觉locus用的比较多，一般你肯定是知道基因的信息去进行search。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-2e0980dc0152cf1e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="search主页"><br>这个网站可以找的物种包括拟南芥、二穗短柄草、大豆、蒺藜苜蓿、水稻、高粱、番茄和玉米；还是挺多的，一般都能符合需求。当然，如果你的物种实在是太过于小众，那么可惜，没法用这个网站进行。那么，下面这个网站就可以一定程度满足你。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-0b1d6da7b6ab97bd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="这里给的物种基因组"></p>
+<h3 id="CRISPRSCAN"><a href="#CRISPRSCAN" class="headerlink" title="CRISPRSCAN"></a><font color="green">CRISPRSCAN</font></h3><p>具体网址：<a href="http://www.crisprscan.org/?page=sequence">http://www.crisprscan.org/?page=sequence</a>。这个网站是都是动物的，没有植物物种的，但是为什么要推荐这个网站呢？因为我们最开始就是使用这个网站进行靶点筛选的，之后在拟南芥和番茄中进行了尝试敲除，结果都能够得到敲除的株系，也是能够使用这个来进行引物的设计。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-ef69894d221d6ddc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="网站首页"><br>这个网站里，有很多动物，果蝇、人类、小鼠和鸡等物种，没有植物的，但是你可以选择No search这个选项，然后将你的序列黏贴进去，之后会出来靶点，但是它的评估只有一个score，没有其他的了。这个网站，现在对我们植物的来说，还是基本不用了，有其他专门的植物的网站。下面这个网站就更好了，非常全面的植物的网站。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-a8e5bf4933bff970.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="这个网站有的一些物种"></p>
+<h3 id="CRISPR-P-2-0"><a href="#CRISPR-P-2-0" class="headerlink" title="CRISPR-P 2.0"></a><font color = "green">CRISPR-P 2.0</font></h3><p>具体网址：<a href="http://crispr.hzau.edu.cn/CRISPR2/">http://crispr.hzau.edu.cn/CRISPR2/</a>。这个网站是华中农业大学大学设计的，做的还是很不错的。用了之后，感觉比前面两个的内容更丰富，而且评估的更全面。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-43966e8205ae6ee8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="网站首页，也很漂亮"><br>点击网站右上角的start design，你就可以开始设计相应的引物。里面的信息更加细化。有pam类型选择，启动子选择，引导序列的长度，物种基因组选择，可以通过locus以及位置信息和序列进行靶基因的选定。它这个网站的物种数据是整合了NCBI数据库，所以基本包括了已经测序完全的植物基因组，解决了物种限制这个问题，普遍性强了。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-6b15fc0bac0d5e23.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="设计页面"><br>我用网站中的例子，来展示一下靶点搜索结果。它可以根据开始的碱基A/G来筛选靶点，也可以通过score、gc含量和位置信息来进行靶点筛选。此外，当你将鼠标移到靶点上，会出现具体信息：显示了位置，打分，序列，切割位点（红色箭头），启动子，以及脱靶位点数量和错位碱基数等，可以说相当丰富。而且，如果某些靶点存在酶切位点，也会同时显示出来。如果不理解这些参数，网站首页的<strong>help</strong>会有详细的解释，包括怎么选择靶点。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-3ce8f6271f54d084.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="靶点"><br><img src="https://upload-images.jianshu.io/upload_images/3478485-c617285e77a1dab2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="靶点信息"><br>这几个CRISPR相关的网站介绍就到这里结束了，具体应用还是需要有实际例子去使用，尝试。<br>今天是大年初一，给大家拜个年，新春快乐，实验顺利，早发paper。</p>
+]]></content>
+      <categories>
+        <category>学习记录</category>
+      </categories>
+      <tags>
+        <tag>Cas9</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>海南环岛游记</title>
+    <url>//2018/08/31/%E6%B5%B7%E5%8D%97%E7%8E%AF%E5%B2%9B%E6%B8%B8%E8%AE%B0/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![travel world.jpeg](https://upload-images.jianshu.io/upload_images/3478485-f3fc300e6094dcfd.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+<blockquote>
+<p>想了很久需要做的事情，就是想把自己在路上的一切记录下来，写成游记的类型。这一篇，就是开始，一切在路上的开始。时隔一年半了，手机里的照片一直还在，没有删除，每一次的浏览，都会激起那时的回忆，想想就觉得很美好。总有一天，希望走遍这个世界。</p>
+</blockquote>
+<span id="more"></span>
+
+<h1 id="缘由"><a href="#缘由" class="headerlink" title="缘由"></a>缘由</h1><p>想去外面独自走走，这个想法，来自我的初中同学<strong>老牛</strong>。比我多读了一年的书，我在大三的时候，她大二，开始了她的计划。不知道哪里来的勇气，开始一个人的穷游之旅。或许因为是音乐学院的学生，可能比我们一般人更为理想一些。钱，始终是限制条件，没有经济收入的学生，只能通过兼职这个行为来获得微小的收入，又一个优势显现出来，音乐生兼职收入比较高。这些条件，可能推动了之后的行为。<br>我，作为初中的前后桌，不错的关系，她想到了邀请我参加，一起旅行，而我最大的限制或许是钱，但是更大的限制或许是自己对前途的担忧，她屡次邀请而我屡次拒绝，我没法放弃手头的工作。就这样，我就错过了，错过了提早去外面看看的可能。但是，我始终没有放弃过这个想法，每当朋友圈看到她的沿途纪事所经历的一切，我就无比的羡慕。除了我之外，我经常跟同学将老牛的经历，搞得好几个同学都想一起去，那时候的我始终没有计划，没有勇气走出那一步。250算是其中一个，特别想去外面玩，最后在大学期间，始终没有一起出去玩一趟自由行，也算是一种遗憾。<br>2015年的寒假，我已经完成了那时候的任务，或者是人生的一个小目标，考上了理想中的研究生。而老牛走遍了祖国的各个地方之后，最终一个愿望还没有实现，就是想去海南骑行，因为以前走过的路上，很多骑行的人，产生的一种强烈的欲望，希望能够体验一下。而我，在这一年的寒假，也有时间了，放弃了在家过春节，而是选择了远方。再次的邀请，我也终于答应，于是购买一张机票，开始了我的首次遥远的旅途……</p>
+<h2 id="第一天——在路上"><a href="#第一天——在路上" class="headerlink" title="第一天——在路上"></a>第一天——在路上</h2><p>这一天是2016年2月4号，从余姚北站到温州南站，从温州南站到龙湾飞机场，第一次坐飞机，心情还是有些激动。当天晚上7点多，我们来到广州白云机场，走出机场，我们坐上大巴车，来到汽车站，买了当天晚上10点多去湛江的长途汽车。一路上特别的累，压根儿就没有睡好，终于天亮了，我们到达湛江，最后来到了海安新港，海南是一个岛屿，必须要轮渡，才能够到达海口。长途汽车都是通过轮船过渡到海口。<br><img src="//upload-images.jianshu.io/upload_images/3478485-933c2cab5ec194c4.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-f4b5f22806972fa7.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-aa6fafd428986372.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-3065a4024303b00c.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-0b0bb162366082c9.jpg"><br><img src="//upload-images.jianshu.io/upload_images/3478485-14d63a7417486b3e.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-22dbb99e4294374c.jpg"></p>
+<h1 id="第二天——一半在路上一半在吃"><a href="#第二天——一半在路上一半在吃" class="headerlink" title="第二天——一半在路上一半在吃"></a>第二天——一半在路上一半在吃</h1><p>我们坐了通宵的长途汽车，为了赶路，我们必须要牺牲一些东西，睡眠没有了很好的保障，但是终归是到了渡口，马上就要进入海南海口。又激动了一段时间，轮渡的时间大概是一个半小时。到了海口，我们还得做公交，到达最终的目的地，517驿站。晚上四五点，我们终于是到达了，没有什么特殊的情况出现，房间是提前订好的，也不贵，大概50块钱一个晚上，能够接受。<br>收拾好行李，安顿好一切，我们决定去海口骑楼小吃街逛一逛，吃点东西，休息一下，感受一下。吃完决定也就一般，我们就在外面走了走，看了看海口的夜晚景色。<br><img src="//upload-images.jianshu.io/upload_images/3478485-2ceff751da47f0b9.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-f456b4e0d13985b1.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-4a8b0458c4585f21.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-0e5661224ba4a00a.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-718b7a2e2b439ba1.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-fbf791081651dd5a.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-2bfca9fb7bf304a5.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-ccd92a5660f86324.jpg"><br><img src="//upload-images.jianshu.io/upload_images/3478485-aae2f13afdbebd1f.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-1d8f161551485d7e.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-f5eb088d5e8b99cc.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-e368bc288e81fe48.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-471c10b8030c1116.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-3027a42cc61d29fc.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-fa64a5e71e9c9254.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-8836901ec20c9048.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-3394cdedac800643.jpg"><br><img src="//upload-images.jianshu.io/upload_images/3478485-68c2158fec900dca.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-f583064a51b03e16.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-6e7b4a58dd456ea0.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-39b66b03ad3fc360.jpg"></p>
+<h1 id="第三天——海口一日游"><a href="#第三天——海口一日游" class="headerlink" title="第三天——海口一日游"></a>第三天——海口一日游</h1><p>今天是2月6号大年28，我们决定不在海口过年了，打算今天玩一天，明天开始正式骑行，开始我们的环岛之旅。这一天，或许是我们这几天最轻松自在，最无忧无虑的一天。正好老牛的朋友正好是海口人，于是，我们就在这位老司机的带领下，玩边了海口，吃了很多好吃的，享受了从未享受到的海口风光。<br>这一次的遗憾，就是没有了解一些海口及海南的历史，缺少了重要的一块内容，没有很好的领略这一座城市。<br>吃玩海口一天，准备明天的出发，我们也计划了一下我们的骑行计划。<br><img src="//upload-images.jianshu.io/upload_images/3478485-e113ecd98d184831.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-f137df22d9bfc06c.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-a03110c7c6c31044.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-fdc2ecf964458ee5.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-b40fb40307bea61e.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-22e7ea491c5b13c9.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-25169b31ae53bf74.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-b8e88f2f87805c15.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-e6995c71ddd8ab45.jpg"><br><img src="//upload-images.jianshu.io/upload_images/3478485-8240317f8797c9e1.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-deace0eceba740c8.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-fef76741ee41323d.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-19e2b5aff5a0be15.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-0cb45b2ac11476b2.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-b21ed4d7efa4920e.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-bade99c3fd51e08f.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-4d01361af2ff5646.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-0a203c1f64dea459.jpg"><br><img src="//upload-images.jianshu.io/upload_images/3478485-10fb4d55d0c38e23.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-9d1af7c41eb9267d.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-b81bc345e25911b2.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-1f7b72cb456fea18.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-8921d1a97293de54.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-6abdc547c1026738.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-9fae154c549e16af.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-c6d09e5e4501c39a.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-22d1d765c28d1e33.jpg"><br><img src="//upload-images.jianshu.io/upload_images/3478485-f4dea965ffc09528.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-db271afb3e61bd6c.jpg"><br><img src="//upload-images.jianshu.io/upload_images/3478485-9b447b7bf1777bee.jpg"></p>
+<h1 id="第四天——骑行第一站，文昌"><a href="#第四天——骑行第一站，文昌" class="headerlink" title="第四天——骑行第一站，文昌"></a>第四天——骑行第一站，文昌</h1><p>今天已经是大年30了，我们决定启程，开始我们的旅途，在517，我们结伴了两个小伙伴，两个人都是已经工作了的，有一个已经骑行了好多地方，全国好多个地方都去了，那时候真的是非常的佩服，非常的向往那一种自在的旅行。在路上，我们又遇到了一群退休的大爷大妈，结果居然神奇的一起结伴而行，人多有人多的好处，人少有人少的好处，我们一路上都遇到了。由于是第一天，我们都没有提前预定好文昌的517房子，搞得最后天黑了都没有找到住所，幸好后来联系到了，主在航天旅馆商务宾馆。因为今天是除夕，我们本来打算在517做饭，吃个年夜饭，在来的路上，已经买好了好多食材，其实也很惨，因为除夕，菜市场都没有什么卖家了，只剩了一个卖蔬菜的大妈，我们于是就买了番茄，白菜，土豆等等。还好最后航天商务宾馆的老板也比较体贴，给我们提供了一个厨房，及其简易的厨具，于是，我们就自己动手，准备做一顿大餐，确实也是不错，吃的很饱，而且连第二天的早饭也一起弄好了。这个除夕是一辈子都忘不了的除夕，一辈子也仅此一次，很珍贵。<br><img src="//upload-images.jianshu.io/upload_images/3478485-b447f0f32f949683.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-3eeebb35eac1b18a.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-f921ff58ce8e592a.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-00e2f9a3dc256252.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-ce8e2965ef4ce6b0.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-d68ca0d3fb24876b.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-6bcd3d8796d39db9.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-6ef154927011b53b.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-faff18049a3f0cee.jpg"></p>
+<h1 id="第五天——骑行第二站，博鳌"><a href="#第五天——骑行第二站，博鳌" class="headerlink" title="第五天——骑行第二站，博鳌"></a>第五天——骑行第二站，博鳌</h1><p>今天大年初一，我们出发到往第二站，博鳌。就是开博鳌亚洲论坛的那个地方，会址也在那个地方，可以去看一眼，最后因为需要门票，我们就放弃了。早上起来，收拾完成，准备出发。屁股真的是痛的不行，昨天第一天，完全没有适应，真的超级酸，不过骑着骑着，也还好，大家都坚持下来了。这一次，我们聪明了，我们是提前预定好了博鳌517的房间，能够有房子住，这是最重要的，傍晚，我们准时到达了博鳌。途中，我们好像特意弥补了昨天的不足，去了东郊椰林，因为路线的缘故，我们去这里后，必须选择轮渡，才能够节省时间，准时到达博鳌。载着自行车，我们也坐了一会儿船，感觉很棒。东郊椰林不好找，我们问了好多当地人，最后好不容易找到，集体拍了照片，能够看到比较开阔的海。之后，海出了一点意外，我们的一个小伙伴摔了一跤，手破了，脚也磨破了皮，但还是坚持了，坚持到了最后。<br>这一天，我们一起吃了一家东北菜，还可以，也遇到了好多骑行的人，打算第二天早上看日出。</p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-be8805d83dcdd47e.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-59564aebf88aa2eb.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-0dc786d3ae2baeb7.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-de5b5c9d63667dc1.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-367dd2b3b8e05a43.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-8312389b23a365a5.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-088f5d85651b06b0.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-a18c909f5b4fab71.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-a96a7955d8a02513.jpg"><br><img src="//upload-images.jianshu.io/upload_images/3478485-fc42027411d20c87.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-e42b880cf21615a7.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-2714ac24c53d7dcf.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-5238f72de458bf24.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-637d2a29154c22e1.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-5482e66344923334.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-e13c82be26119cf3.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-1bd16c1ff33a6937.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-22d8d6c95ba45d8a.jpg"><br><img src="//upload-images.jianshu.io/upload_images/3478485-d0b6025bcbdf08bb.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-508f1ef834bea998.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-bb9b648eadd2a638.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-4e33a88e8d04e261.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-279ffa436b51ab31.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-2360bfe2cfb66182.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-9fc427143d41905e.jpg"></p>
+<h1 id="第六天——骑行第三站，兴隆"><a href="#第六天——骑行第三站，兴隆" class="headerlink" title="第六天——骑行第三站，兴隆"></a>第六天——骑行第三站，兴隆</h1><p>早上天黑着就起来了，听说这里可以看到日出，总是如此，想看肯定看不到，我是从来没有看到从海平面升起的太阳——简称日出。只好赤脚在沙滩上玩了一会儿，沙滩上鞋子，再一次我又写下了250，不知道从什么时候开始，很多时候都会想起250这个字符，因为包涵的太多过去吧。博鳌镇还挺好，我们能够吃一顿正常的早饭，不久开始了旅途，兴隆站。这里忘记说一件事情，昨天晚上因为住的地方没有热水，那些叔叔阿姨们就一直嚷嚷不停，真的是忍受不住了——这就是人多的坏处。又加上我们的行程从这里开始发生了分歧，所以大家就开始走散，各自开始各自的路。我们四个人，当然是要一起走的，虽然那时候我还有好多想法，但是被迫只能打消念头。<br>虽然我们目的地不一样，但是行走的路程还是很相似的，在路上我们又碰到了小强和另外一个哥们儿，或许是因为渴了，看到路边的椰子树不是很高，我们就想着尝一尝这路边的椰子，看看有啥不一样的地方。小强身手非常敏捷，一会儿就马上树，在那用刀割椰子，最后通过大伙儿的努力，最终搞到了两个吧，隔开放汁。除夕夜那天剩下的一次性杯子在此刻发挥了最后的功能，我们用来盛椰汁，两个椰子，最后倒了好多杯，每个人都能够喝到。<br>由于路上的再次偶遇，叔叔阿姨们又和我们走到了一起，最终又变回了一个大团体，集体到了兴隆。路上风景甚是美妙，有牛在路上，天很蓝，视野很开阔。这是第三天了，我们的身体确实很累了，听说兴隆是有温泉的，我们就想着找一个温泉宾馆，结果还是老老实实的选了普通的宾馆住下了，因为叔叔阿姨的缘故，我们也没有去兴隆的517住宿，他们年级确实也大了，有些东西确实也经受不起了。也能够理解吧，不过那个时候可不是这样的想法，就是觉得他们太麻烦了，出来旅游还挑这挑那的，真的特别烦，在这一刻，我是真的不想和他们一起了。晚饭还是一起吃的，一家大排档，人一多，到底吃什么东西就很难下定论了，要讨论好久，而我早已经饿的不行了。大排档，点了没几个菜，觉得很贵，饭貌似也没有吃饱，真的那时候特别的心灰意冷，什么心情都没有了。晚上吃完饭，我们几个人就走回去了，好像还打包了什么东西回去吃的，不过根本吃不了了，结果好像被扔掉了。</p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-390e35b8d105577e.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-555245b7d9834ab9.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-5b7d8b7c4bd000f3.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-be501fe6fbf48e19.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-2a1e5cd48670a003.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-0fd86412141b7c25.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-478ae713f9067066.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-203194ff2a3aae8c.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-64cc303a3e007e39.jpg"><br><img src="//upload-images.jianshu.io/upload_images/3478485-a9ed3ef54036111c.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-65f28d96537aeb97.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-42e61d295abbaff6.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-7db32a7eba12543b.jpg"></p>
+<h1 id="第七天——骑行第四站，陵水"><a href="#第七天——骑行第四站，陵水" class="headerlink" title="第七天——骑行第四站，陵水"></a>第七天——骑行第四站，陵水</h1><p>最后一段路很长，我们还需要分为两天来骑，最后可以到达三亚。我们一群人还是在一起的，早上也一起出发，在酒店门口又拍了一张照片。早饭，在酒店旁吃的，这顿早饭印象深刻。兴隆生产咖啡，当地人在早上也常常喝咖啡，也离不开咖啡，我倒是没有喝，毕竟还是喝不惯，我要了一杯豆浆和油条。在这里，我发现了一样奇怪的东西，当地人就着咖啡吃，可以在嘴里不停的嚼，嚼多了，牙齿会变黄，和吸烟就差不多的功效——新鲜的槟榔。有些人就只是喝咖啡和吃槟榔，一边聊天一遍喝咖啡嚼槟榔，这断早餐时光特别的惬意，很享受。在吃完离开的那一会儿，我也想试一试，于是花了5块钱，买了4颗，可是好像直到骑行结束，我都没有吃，因为实在是味道太大，真的吃不了这个东西啊。<br>这一天真的是充满了变数，有事不容易的一天，不知道谁带的路，我们被带偏了，远离了国道，进入了小乡村，不过确实，我们也见到了不一样的风景。天都已经黑了，我们的实物都吃完了，水也差不多没有了，也没有地方住，那一天真的很害怕，产生了恐惧。虽然途中遇到了好心人，想要收留我们，可是人实在是太多了，没有办法，只能放弃（这又体现出来，人太多可能也是一种麻烦）。在我们夜行不一会儿，路边的保安大叔突然喊住了我们，说你们是不是在找住的地方，我知道离这儿不远就到国道了，那里有旅馆的，不过过去的路是小路，碎石路，很难骑，晚上有点危险，那时候根本顾不了那么多了，找个地方安顿下来才是王道，我们恳请保安大叔开着摩托车为我们带路，最后大叔答应了，遇到好心人了，不然真的不知道那天晚上会发生什么事情，之后的日程可能也要改变了。<br>到了国道边，找到了几家旅馆和吃饭的地方，先订下了睡觉的地方然后再找吃的，沿途遇到的宾馆都比较破旧，但是能够睡觉也已经不错了，价格也不贵，将就一万就可以了。<br>有好多旅馆也批发水果，结果我们买了一个菠萝蜜，30块钱左右，反正不知道比江浙地区便宜多少了，我们觉得特别划算。晚上，我们分开在不同的饭店吃饭，我们是找到了一家很不错的店，量很足，饭管饱，比昨天在兴隆吃的大排档好很多很多了，这大概是我们这一路上最满意的一顿饭，我们四人都称赞不已。</p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-bfcebc1ff48cb058.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-2ed65edddb208453.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-a85573093f06c8eb.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-f2faade41df15cfa.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-7236a21ff4b06aba.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-3e92bfeb7823e53f.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-842f12d291486ede.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-a6400ec38c096917.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-d0d55a64fcb997fb.jpg"><br><img src="//upload-images.jianshu.io/upload_images/3478485-66483d3754ecff0a.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-0a781c852473f42a.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-23704e5aaf4f4ba1.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-6bf7f80898ce0731.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-d5bd927b62e21248.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-2cdee52a0275c6d5.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-b6923082e78ef81c.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-931b89602b7caf55.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-60cab54e4839dd35.jpg"><br><img src="//upload-images.jianshu.io/upload_images/3478485-fecce8670c55c645.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-b21bf081cfe265f8.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-2447358f33a13407.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-c40211259b07123d.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-4b67adfcf9b2404f.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-fc5d9f73f676049c.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-842dc0c0384e9f89.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-350530219afae84f.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-e46647d350609750.jpg"><br><img src="//upload-images.jianshu.io/upload_images/3478485-da1ab82f25a38291.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-4952e4170766824a.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-12b0e1a460e2d89e.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-894e648c3b315ee7.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-89c6bd66b2dab6b0.jpg"><br><img src="//upload-images.jianshu.io/upload_images/3478485-7366dc2f0d2bf1c5.jpg"><br><img src="//upload-images.jianshu.io/upload_images/3478485-7113178e9245b97f.jpg"><br><img src="//upload-images.jianshu.io/upload_images/3478485-6928ed830be7c9c4.jpg"></p>
+<h1 id="第八天——终点站，三亚"><a href="#第八天——终点站，三亚" class="headerlink" title="第八天——终点站，三亚"></a>第八天——终点站，三亚</h1><p>这一天，我们终于要结束了，结束我们的环岛骑行，大概400公里的路程，也是我们骑行的第五天了，平均每天80公里左右，对于我们这些从未锻炼过的人来说，真的有点不可思议，不论怎样，我们坚持下来了，我们完成了海南岛的东海岸的骑行，虽然有些地方我们没有去，比如说神舟，还是很满足。最后一段路，我们的小伙伴突然身体也不太好，貌似中暑，差点要中途放弃，坐动车回家了，不过后来在大叔们的帮助了，还是克服了，还是坚持了下来。夕阳西下，在海南的国道上骑行，周围都是水果地，有菠萝，木瓜，菠萝蜜，有榴莲，这些热带水果始终陪伴我们前行，那种感觉妙不可言，只有亲自体验，才能够真正的体会到。<br>这一天早上，我们实在是起不来了，睡到大概9点左右，阿姨叔叔们先出发了，我们睡饱了再说，我们带上菠萝蜜继续前行，吃了沙县，吃完早饭来俩瓣菠萝蜜，真的是不一样的早餐，神奇的搭配，很快菠萝蜜直接被干完了，很快，不过真的是很好吃。这一路上，没有什么变数，我们在我的带领下终于到了三亚517。青旅果然住宿的条件不好，除了海口的517以及文昌的517（我们没有预约到房间的那一次），其余的驿站好像条件真的不是特别好，三亚的517也算是比较靠市中心的，那天下午，我们终于到了，还车，收拾行李，晚上出去吃一顿，逛一下，买点吃的，打打扑克牌，这天晚上过的还不错。骑行终于结束，然而马上我们又要开始新的旅途，回家之旅。</p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-8fac3db2ccc66dd6.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-d7153206d540b70c.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-5ac2c09921a7ad17.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-6aa4bd40cca7d96d.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-7e6f8eeed8b67c5a.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-4ec9fafc20f16350.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-60b9d3721b4a33fa.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-7d07e9fbec16b5d2.jpg"><br><img src="//upload-images.jianshu.io/upload_images/3478485-803616a01bf0a5a6.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-bd08a326df92949b.jpg"><br><img src="//upload-images.jianshu.io/upload_images/3478485-1e07a5d835613dfb.jpg"></p>
+<h1 id="第九天——归途，海口"><a href="#第九天——归途，海口" class="headerlink" title="第九天——归途，海口"></a>第九天——归途，海口</h1><p>结束骑行，我们在三亚也没有多待一会儿，发现三亚没有还有那样的舒服，静谧。三亚显得很浮躁，很杂乱。我更喜欢海口，气候舒适，环境优雅，人也不错。第二天，我们就买了动车票，从三亚到海口东的动车，晚上的末班车，最后我们抵达了海口，大晚上的。快要离开了，我们就在海口准备买点海南的特产，邮寄回学校，于是第二个清晨，我们购买了很多物资，发往江浙地区。之后我们依旧选择轮渡，毅然离开了海口，前往广东海安。到达广东，我们真的是差点被卖掉的感觉，一路上好像都是黑车，超载的特别严重，而且还没有地方坐，司机特别凶，感觉你不老实一点，就要打你，半路我们还被放下了，坐了另一辆车，最后的最后，我们终于从广东的最最西边，到达了比较文明的城市，珠海市。从来没有来过这里，这一次也是因为老牛的同学在这里工作，所以我们就顺道过来看一下，还在她朋友的房子里住了下来，他朋友去了朋友的地方住。很小的房间，我们四个人挤一挤总算是住下了。晚上他朋友还好好的款待了我们，吃了大肉火锅，很是不错。之后我们在珠海逛了一个早上，吃了广东比较正宗的早茶，一家比较有名的早茶店，大概花了400多，我们5个人，着实有点小贵，不过味道真的不错呢。珠海与澳门交界，跨国一个门，我们就能够到了，可是我们恰恰没有护照，没有准备，结果真的有点遗憾，只能隔着门，远远望着澳门。当天下午，我们坐了城轨，返回广州，因为飞机比较晚，所以我们还在广州玩了一会儿，逛了小吃街，看了<strong>小蛮腰</strong>，之后坐飞机返回温州龙湾国际机场，打的去了动车站，就此所有的行程结束。</p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-fbf410ea3dea3561.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-0e27cb5eab0bcbde.jpg"><br><img src="//upload-images.jianshu.io/upload_images/3478485-16c7aebe438c08a3.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-615c3dd8e93970f8.jpg"><br><img src="//upload-images.jianshu.io/upload_images/3478485-9b49d92c66de6c37.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-b8555fdeffc3a7c1.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-bccb6224620a61c0.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-cf059d808c31c935.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-68cc6e0e60a4ab44.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-04345119ff0a4818.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-0ff054a2d2794aee.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-0c1d9005ac609367.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-eb4f1d0a3a2646e4.jpg"></p>
+<h1 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h1><p>第一次这样疯狂的玩，这样没有顾虑的玩，走出了第一步，打开了新的一扇门，于是有了不一样的期待，希望走遍祖国的各个角落，欣赏丰富多彩的风景。慢慢的打算，虽然在做科研的自己时间很是有限，然而一切都不是什么问题，总是能够找到机会。重要的是，要保持这样的心态，永远希望在路上的心态，永远年轻，喜欢折腾，喜欢旅行。下一次，我们大西北再见。</p>
+]]></content>
+      <categories>
+        <category>在路上的日子</category>
+      </categories>
+      <tags>
+        <tag>旅行</tag>
+        <tag>海南</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>狼伴归途</title>
+    <url>//2018/09/13/%E7%8B%BC%E4%BC%B4%E5%BD%92%E9%80%94/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![狼伴归途](https://upload-images.jianshu.io/upload_images/3478485-71c67307e95546df.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+9月9日，星期六，公元2018年
+
+<span id="more"></span>
+
+<p>狼伴归途，最精彩的就是宏大的史前场景再现，让人看了非常的享受，被其所征服。故事的情节还是比较的简单，年轻的孩子在失去父母呵护之后，通过自己的和狼的努力，经历千辛万苦最后回到了父母的怀抱。狼和孩子一起，最终平安到家，并为部落带来了狼这种动物，我想之后就是被驯化成狗。<br>觉得还是可以去看一下，电影场景很唯美。</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-1847b7b43f7ef666.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="wolf2.jpg"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-7acc324003fe7eeb.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="wolf3.jpg"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-05dda12e9ab338f8.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="wolf4.jpg"></p>
+]]></content>
+      <categories>
+        <category>影评领域</category>
+      </categories>
+      <tags>
+        <tag>电影</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>疫情记</title>
+    <url>//2020/04/12/%E7%96%AB%E6%83%85%E8%AE%B0/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/Image/20200412232125.png"></p>
+<span id="more"></span>
+
+<p>2020年1月19日回家到现在会学校，时间差不多过去了3个月。似乎从来没有在家里休息过那么长时间，细细回想起来，也没有做什么事情。最主要的就是以下几件事情：</p>
+<h3 id="读书"><a href="#读书" class="headerlink" title="读书"></a><font color="green">读书</font></h3><p>感觉自己从来没有连续读那么多的书，当然数量仅仅和我自己比较，有两三年加起来都没有这个寒假期间读的多。就这一点而言，我觉得很满足很充实，读书的时候其实很享受，会有一种与周围环境脱离的感受，到了另一个境界。我的书单：<a href="https://post.smzdm.com/p/aeke0x4k/">好书一起分享。</a></p>
+<p>突然让我意识到，自己是否已经舍弃这个习惯很久。我打算重新拾起这件事，哪怕晚上睡觉前只用5分钟的时间来阅读，也是很美好。另外一个习惯——买书，我也打算有规律的去执行，每个月花100块钱，买3-4本书，那么一年下来也有50本左右的新书加入我的书库。积少成多，水滴石穿，<strong>持续坚持积累</strong>觉不可小觑。</p>
+<h3 id="Python"><a href="#Python" class="headerlink" title="Python"></a><font color="green">Python</font></h3><p>Python这件事，出于偶然。帮<strong>大牛</strong>抢口罩，只抢到了一次，后面怎么也抢不到。朋友圈看到师弟使用Python写了web自动化程序，让电脑自动帮你点击按钮，抢购口罩。我使用他的程序成功抢到了，从此我觉得应该学习Python。</p>
+<p>我一直觉得未来社会，必须要有编程思维。我不是想通过这个方向来找工作，我想使用程序语言，来帮助我去完成大量重复性任务，为我的科研奠定基础。一直以来，我都难以有规则的完整的学习一门语言，从Linux的shell，到Perl语言，再到R语言，然后C语言，最后就是现在的Python。我内心渴望能够学习至少一门语言，能够帮助我解决科研问题。然而从来都是<strong>入门到放弃</strong>。</p>
+<p>这一次，我真的下定决心开始了Python的学习。我买了课程，从头至尾一步一步走，不断地前进。目前课程仍在更新中，我也每周在学习，<strong>继续积累</strong>。同时还有另外一个目的，我想给<strong>大牛</strong>写一个游戏，她说是她的新年愿望。</p>
+<h3 id="写作记录"><a href="#写作记录" class="headerlink" title="写作记录"></a><font color="green">写作记录</font></h3><p>寒假，我也重新拾起了一个好习惯——写作记录。在<strong>什么值得买</strong>写自己的心得，在简书记录学习心得，在百度经验与<strong>何大牛</strong>一起经营记录遇到的问题。写作这件事，我确实中断了很久，这次是<strong>何大牛</strong>的参与，让我重新也拾起来，总感觉两个人比一个人更能干，更有动力，更开心。</p>
+<h3 id="做家常菜"><a href="#做家常菜" class="headerlink" title="做家常菜"></a><font color="green">做家常菜</font></h3><p>大学，假期时间长，每次总是会学习做菜，其实也不算学习，只是凭感觉完成任务。爸妈比较忙，我大多数时候需要准备午餐和晚餐。这个假期，我感觉自己<strong>厨艺</strong>进步非常大，我做的菜明显感觉提升了档次，难道是我的学习能力提高了。</p>
+<p>其实都是相同的方法，我们需要去学习别人的经验，去模仿别人，从而快速让我们自己成长起来。一开始做菜，拍照分享给<strong>何大牛</strong>，都不夸我一下，还说我不务正业，还是有点难受。后期，开始了完全相反的状态，我不做了，她反而持续不断搞花样（<strong>雪花酥，海底捞，雪媚娘，电饭锅蛋糕，干锅包菜，煎猪蹄，做清明饺</strong>）。偶尔还会知道我，让我做这个，这个怎么做，妥妥的导师模样。</p>
+<h3 id="视频剪辑"><a href="#视频剪辑" class="headerlink" title="视频剪辑"></a><font color="green">视频剪辑</font></h3><p>2019年末，买了八爪鱼，我突然开始了视频拍摄。最开始的还是拍<strong>何大牛</strong>，她做<u>蛋白实验</u>，后面还有<u>剪番茄子叶</u>，后来就变成了我们日常生活记录——<strong>吃饭，玩耍，浇水和犯傻行为</strong>。</p>
+<p>回家后，开始学习编辑视频，将之前的所有视频几乎整理，同时也清理手机存储。我慢慢地会<strong>用iMovie，用screenflow，和final cut Pro</strong>做简单的视频剪辑。这些工具是越用月熟练，但我的电脑确实内存不太够，在导出视频的时候，风扇疯狂地转。</p>
+]]></content>
+      <categories>
+        <category>人生小结</category>
+      </categories>
+      <tags>
+        <tag>日记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>碟中谍6: 全面瓦解</title>
+    <url>//2018/09/01/%E7%A2%9F%E4%B8%AD%E8%B0%8D6-%E5%85%A8%E9%9D%A2%E7%93%A6%E8%A7%A3/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![碟中谍6：全面瓦解](https://upload-images.jianshu.io/upload_images/3478485-ba43addff850f0fb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+<p>9月1日，星期六，公元2018年。</p>
+<span id="more"></span>
+
+<p>我从周五看到了周六，从8月看到了9月。因为电影近140分钟，我从10点开始，自然就看到了第二天凌晨。</p>
+<p>故事一开始，就发布一个任务，亨特自然就接受了，关于夺回核武器，防止使徒们（恐怖组织成员）的大规模投弹。接受之后，必然按着故事线走下去。一切都很精彩，法国巴黎和英国伦敦以及克什米尔地区的景观都是相当吸引眼球，很明显的好莱坞大片元素，场面非常宏大，视觉体验非常棒。此外，这么大年纪的阿汤哥，拍这部电影真是拼命。悬崖，直升机，跑酷等等都是很危险的动作，飞车大战，摩托车巴黎飙车，一切都非常刺激，整部影片几乎没有比较安静的场景。一切都快速的进行中，没有一刻停缓，因为要保护世界。</p>
+<p>好莱坞大片，必不可少的情节，那就是拯救地球，拯救全世界。都是机器宏大的目标，放眼全世界，就是救世主。有时候就会让你遐想，会有带入感，让你也感觉自己能拯救世界，也是一种精神上的吸引。情节依旧老套，又是防止大规模杀伤性武器被恐怖组织利用，不惜一切去组织，而且必然每次都是成功，能够拯救世界。</p>
+<p>可以说，碟中谍系列，是很好看的特工电影，看着很刺激，这次第六部的上映，也是让影迷们产生一种情怀，当然为了刺激宏大场面，也是完全可以看得，基本不会让你失望太过。</p>
+]]></content>
+      <categories>
+        <category>影评领域</category>
+      </categories>
+      <tags>
+        <tag>电影</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>离家回归</title>
+    <url>//2018/08/23/%E7%A6%BB%E5%AE%B6%E5%9B%9E%E5%BD%92/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![railway，图片来自于pexels网站](https://upload-images.jianshu.io/upload_images/3478485-7fdc279179af9b76.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+<span id="more"></span>
+
+
+
+<blockquote>
+<p><strong>离开，亦是回归。</strong></p>
+</blockquote>
+<p>8月22日，星期三，公元2018年。<br>在12306官网上，已订购了今天下午的车票。像往日一样，心中突然生出无尽的焦虑，极其不安定。离开家（现在我将它定义为：父母开的只为你一人服务的旅馆），意味着回归，回到每天充满焦虑的生活。2015年毕业之后，似乎再也没有安稳的日子，总要去面对去担当，去谋划。我不知道自己时候是否已然锻炼成一名合格的人生蓝图设计师，我设计的很抽象，就来我自己也看不出，领悟不出其中的意义。<br>时间是下午3点，高铁站的KFC，看着价格，心里突然犹豫不定。买，觉得太贵；不买，半途饿惨。已经体验过无数次半途饿个半死，似乎没有得到教训，不清楚人生的错一犯再犯，从不反思，是从什么时候开始。买了一个汉堡和一对鸡翅，离开车20分钟，吃得很快，味道很咸，没有想象中的美味。<br>动车缓缓的驶入，又缓缓的驶出站台。我也跟它很像，从来都是在家这个站台驶入驶出，不是我的终点站，而我又找不到我的终点站，一直在人生这条轨道上永远跑着。路过太多，错过太多；遇到太多，又错过太多。拿出佛洛姆的《爱的艺术》，再一次开启。我发誓，我已经看过很多遍，请不要怀疑我。但是很遗憾，每次看过都会忘得七七八八，而再次开启，又觉得能够记起一切。</p>
+<blockquote>
+<p><strong>爱，是一门艺术。要求我们必须努力发展自己的全部人格，从而来达到创造倾向性。</strong></p>
+</blockquote>
+<p>这句话中的关键词：<strong>全部人格和创造倾向性</strong>，我至今还是没有办法理解。半个小时，一眨眼就过去，留在了轨道上。广播已经开始响起；“前方到站，杭州站，请旅客整理好自己的行李，准备下车”。我只需将书塞入包中，起身就可以离开，丝毫没有留恋。<br>几年里的终点到了，几年后是否改变，我没法笃定地给出答案，未来可以见分晓。</p>
+]]></content>
+      <categories>
+        <category>随记</category>
+      </categories>
+      <tags>
+        <tag>家</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>科学与好奇心</title>
+    <url>//2018/08/29/%E7%A7%91%E5%AD%A6%E4%B8%8E%E5%A5%BD%E5%A5%87%E5%BF%83/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![curiosity.png](https://upload-images.jianshu.io/upload_images/3478485-167898110b8d9438.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+<p>那一年，我还是博士二年级，刚开始。然而，时间极速流失，却无能为力。</p>
+<span id="more"></span>
+
+<p>已经开始了我们学校夏季学期的课程，已经博士二年级了，上完了所有的课程，只有剩下这门专业选修课——现代生态学。在上了两节课之后，我感受最深的，或者是学习到的一点，就是为什么我们做科学研究，到底是为了什么而进行？老师给了一个答案——好奇心。我们花了纳税人的钱，为了是满足他们的好奇心。这样的回答，让我感到很新奇，很特殊的一种解答。我从来没有想到过，为了满足好奇心，从而使得这么多人在从事这一个行业。</p>
+<p>好奇心，curiosity，至关重要。想想，我们很多人每天在实验室工作，其实根本没有精神气，像这几天的我，真是一塌糊涂，没有任何精神，一切真的是那样的麻木，味同嚼蜡这个词可以形容大多数时间的我，我想不只是我一个，大多数人都是在这样的层次。有时候就会想，到底是什么促使我们在坚持，使得人类在这样的发展，有这样的发展史。或许就是好奇心吧，因为好奇，所以要去探究，要去探究，就要不断思考，从而不断推进人类认知的发展，不断向前走。</p>
+<p>人太容易变化，很多时候没有一个定数，没有那样的稳定的体系。但是，从大体上来说，纵观一生，或许可以说是比较稳定的，人的性格，人的品质。但从很小的尺度来看，人就是变幻无常的，我们极其容易受到外界坏境的影响，变得焦躁不安。非常的头疼，对我来说，这样的自己让我变得难以接受，无法那样的安静稳定，或者说是专注。分析原因，有一个可能就是好奇心的缺失，没有好奇心，一切都没法集中，没有办法使自己的熵减小，在自然状态下，自然界包括我们人类社会，甚至整个宇宙，都是一个熵增的过程，一定需要外在的能量输入，使其保持一定的熵值，相对变得稳定，而不是那样的混乱焦躁。好奇心，从另一个方面来说，或许就是一种能量，能够维持我们人类的稳定。</p>
+<p>我也发现，这几天的游离状态，好像就是因为没有了好奇心，不管是什么，实验还是其他的知识，都失去了好奇心，使得我的内心一下子熵增了不少，变得无序混沌，乱七八糟，无法收拾。直到某个时刻，我能够找到外界的力量——能够获得对外界某些事物的好奇心，那么我可以说，我又会复活，变得稳定，变成另一个状态。人，说到底也就两种状态，熵减和熵增的状态，而且这两个状态本身是一个动态的变化过程，不是一个固定的状态，始终在变化。而两者之间也在不停的互相转换，这就是客观规律。所以啊，很多时候就要想得开，人的情绪不断变化是非常正常的现象，不要去疑惑，为什么刚才好好地，一下子就变得不一样了呢？</p>
+]]></content>
+      <categories>
+        <category>随记</category>
+      </categories>
+      <tags>
+        <tag>科学</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>科普吗？</title>
+    <url>//2018/08/26/%E7%A7%91%E6%99%AE%E5%90%97%EF%BC%9F/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![physical，图片来源于pexels网站](https://upload-images.jianshu.io/upload_images/3478485-2dae4e412aae35b9.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+<p>8月25日，星期六，公元2018年。</p>
+<span id="more"></span>
+
+<p>8月25日，星期六，公元2018年。</p>
+<p>《发现的乐趣》中，记录了1964年伟大的物理学家理查德·费曼发表了一篇研究，讨论了科学对宗教、社会和哲学的影响，还强调了我们的质疑能力将决定未来的文明走向。</p>
+<p>在阐述科学和社会关系的时候，费曼先生提到了迷信思想充斥着社会，公民科学素质依旧缺乏。科普在一定程度上能够提高公民科学素养，破除一些封建迷信。科学家要担负起科普的责任，当然最好是主动。</p>
+<blockquote>
+<p>一般说来，科学普及是指学校正规科学教育以外的、主要通过大众传媒以及各类宣传、展教等方式传播科学知识、方法等内容的社会教育活动。</p>
+</blockquote>
+<p>在21世纪，互联网的快速发展以及知识大爆炸的时代，科普似乎简单了很多。但是没有正规的学科教育作为基础，恐怕科普的任务依旧很难。大众传媒日益发达，作为了公众主要的知识信息来源，担任着很重要的科普角色，关键在于控制这些信息的真实性。</p>
+<p>科学团体到底该怎么去承担科普的重担？我所在的科学团体中，始终没有时间去做这方面的工作，导师忙着写项目，申请课题，还有教学任务。博士生，整体做实验，一心想着毕业，始终根本不会考虑到这个问题——将科学与社会联系起来。说实在的，实在是我们非常的忙，课题太多，根本无暇顾及科普这个问题，从不会进入到我们的大脑里。其实，想想也是有些难过，这么大的一个科研团队，每年发现那么多新的知识，从没有想着去用这些东西（当然，用来申请科研项目）。目前来看，在普通大众观念里，做科学研究的就是高大上，好像根本不可能与他们产生联系。我在想，是否我们该承担其这个义务？</p>
+<p>要做科普这件事，还是需要多方的协作和交流沟通。国家也越来越重视提高公民素质，科学素质就是其中的一部分；非政府组织也再进行这些工作；一些科研机构也会承担一部分。大众传媒，是一种很有效的方式，作为传播的工具。而我们个人，是否也该行动？怎样的方式？很多问题有待解决。我从来没有参与其中，从来不知道这个门槛在哪里，高不高，怎么样的形式参与进去，心中充满疑惑。</p>
+<p>最关键的一点，我认识到了我的义务——科普的义务。</p>
+]]></content>
+      <categories>
+        <category>读书笔记</category>
+      </categories>
+      <tags>
+        <tag>科普</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>科研诚信</title>
+    <url>//2018/08/30/%E7%A7%91%E7%A0%94%E8%AF%9A%E4%BF%A1/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![发现的乐趣](https://upload-images.jianshu.io/upload_images/3478485-580c16a9b28a9f34.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+<p>8月30日，星期四，公元2018年。</p>
+<p>近期在读费曼先生的演讲和访谈集，想来还是很有意思。这个伟大的物理学家，太有意思，充满着小孩子气，一点没有摆架子的做作。</p>
+<span id="more"></span>
+
+<p>我最影响深刻的是，他讲的科研诚信那一篇。至今，对处于科研岗位的工作者，任然具有重要的参考意义。在科研的过程中，我们必须记录成功和失败两面，而不是只记录能够解释你猜测的结果。不只是正确的结果能够帮助他人得出结论，错误的结果同样可以实现。此外，我们也必须将实验的过程仔细记录，在发表科研成果的同时，需要将一切公开，这对别人判断你的科研成果是否有价值非常关键。科研诚信，就要求我们要完整的呈现你实验的所有相关信息，失败的，成功的都需要。费曼先生就举例来说明：</p>
+<blockquote>
+<p>某一个食用油广告，说这种食用油不会深入到食物中去。这是真的，不能说欺骗消费者。科研诚信问题，就是应该给这个事实加上一句描述：在某一温度下，任何一种油都不会渗入食物，但是在另一个温度下，所有的油都会渗入食物，这种油也一样。所以你看，这个广告只把部分事实告诉消费者，而不是全部事实。而这两者的区别我们需要澄清。</p>
+</blockquote>
+<p>可以看到，费曼先生用多么形象的例子来说明科研诚信要求我们要将所有信息公布，而不是一部分。</p>
+<p>此外，费曼先生还讲了一条极其重要的原则——<strong>你绝对不能够欺骗自己。自己是最容易欺骗自己的，只有做到不欺骗自己，才能相对容易地不去欺骗其他人。</strong>当看到这句话的时候，产生了共鸣。很多时候你做科研，做某个实验，你很容易欺骗自己，比如：有时候，你会发现因之前处理或者其他可能会导致实验结果不准确，可是就算如此，你可能还会固执地去进行，得出一个连你自己都不相信的结果。面对这样的情况，就该直接放弃，重新来过。</p>
+<p>面对伟大的科学家，我们要学习地太多太多。</p>
+]]></content>
+      <categories>
+        <category>读书笔记</category>
+      </categories>
+      <tags>
+        <tag>费曼</tag>
+        <tag>诚信</tag>
       </tags>
   </entry>
   <entry>
@@ -1501,365 +1860,6 @@ characterization of aluminum resistance in Populus"><br>这里我先用比较麻
       </tags>
   </entry>
   <entry>
-    <title>植物Cas9靶点设计网站简介</title>
-    <url>//2019/02/05/%E6%A4%8D%E7%89%A9Cas9%E9%9D%B6%E7%82%B9%E8%AE%BE%E8%AE%A1%E7%BD%91%E7%AB%99%E7%AE%80%E4%BB%8B/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![cas9模型](https://upload-images.jianshu.io/upload_images/3478485-e845fed2bd99b07b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-<span id="more"></span>
-
-<p>我在前面的简文中已经基本阐述了Cas9的作用机制，详细内容可以看<a href="https://www.jianshu.com/p/1e7bff7d5830">CRISPR-Cas9系统简介</a>一文。今天，就来讲一讲怎么实际使用这个系统来帮助我们进行功能基因的研究。这个技术一问世，很多大牛就开始使用，植物学领域的应用，使得我们能够更方便的有目的的去编辑我们想要编辑的植物基因组。今天就推荐几个网站，寻找靶点序列的网站。前面我们也提到过，好的靶点的选择，可以减小脱靶率，大大提高我们编辑的效率。能够极大提高我们的实验效率，不然像我们植物学领域的苦逼博士，不得疯掉，一直一直脱靶的话，那么就真的非常的酸爽。</p>
-<h3 id="CRISPR-PLANT"><a href="#CRISPR-PLANT" class="headerlink" title="CRISPR-PLANT"></a><font color = "green">CRISPR-PLANT</font></h3><p>具体网址：<a href="https://www.genome.arizona.edu/crispr/index.html">https://www.genome.arizona.edu/crispr/index.html</a>。 看这个网址，应该是Arizona大学出品的。这是一个专门针对植物CRISPR靶点设计网站，比较专业，较为好用的网站。首页有一张模式图，而且还有对CRISPR-Cas9系统的基本介绍，大概可以了解。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-f2f550500f26be7a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="网站首页"><br>导航栏中有几个标签链接，如果你不知道怎么使用，那么你就可以点击instruction来学习，里面有比较详细的介绍。如果要开始找靶点，那就点击search。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-6181cec9ae7ec031.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="导航栏"><br>进入search主页，就可以看到查找的方式。这里它也建议你先看知道手册，然后在进行设计。查找的输入信息有两种，a.染色体位置信息；b.基因locus，通常情况下我们在查找的时候感觉locus用的比较多，一般你肯定是知道基因的信息去进行search。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-2e0980dc0152cf1e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="search主页"><br>这个网站可以找的物种包括拟南芥、二穗短柄草、大豆、蒺藜苜蓿、水稻、高粱、番茄和玉米；还是挺多的，一般都能符合需求。当然，如果你的物种实在是太过于小众，那么可惜，没法用这个网站进行。那么，下面这个网站就可以一定程度满足你。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-0b1d6da7b6ab97bd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="这里给的物种基因组"></p>
-<h3 id="CRISPRSCAN"><a href="#CRISPRSCAN" class="headerlink" title="CRISPRSCAN"></a><font color="green">CRISPRSCAN</font></h3><p>具体网址：<a href="http://www.crisprscan.org/?page=sequence">http://www.crisprscan.org/?page=sequence</a>。这个网站是都是动物的，没有植物物种的，但是为什么要推荐这个网站呢？因为我们最开始就是使用这个网站进行靶点筛选的，之后在拟南芥和番茄中进行了尝试敲除，结果都能够得到敲除的株系，也是能够使用这个来进行引物的设计。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-ef69894d221d6ddc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="网站首页"><br>这个网站里，有很多动物，果蝇、人类、小鼠和鸡等物种，没有植物的，但是你可以选择No search这个选项，然后将你的序列黏贴进去，之后会出来靶点，但是它的评估只有一个score，没有其他的了。这个网站，现在对我们植物的来说，还是基本不用了，有其他专门的植物的网站。下面这个网站就更好了，非常全面的植物的网站。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-a8e5bf4933bff970.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="这个网站有的一些物种"></p>
-<h3 id="CRISPR-P-2-0"><a href="#CRISPR-P-2-0" class="headerlink" title="CRISPR-P 2.0"></a><font color = "green">CRISPR-P 2.0</font></h3><p>具体网址：<a href="http://crispr.hzau.edu.cn/CRISPR2/">http://crispr.hzau.edu.cn/CRISPR2/</a>。这个网站是华中农业大学大学设计的，做的还是很不错的。用了之后，感觉比前面两个的内容更丰富，而且评估的更全面。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-43966e8205ae6ee8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="网站首页，也很漂亮"><br>点击网站右上角的start design，你就可以开始设计相应的引物。里面的信息更加细化。有pam类型选择，启动子选择，引导序列的长度，物种基因组选择，可以通过locus以及位置信息和序列进行靶基因的选定。它这个网站的物种数据是整合了NCBI数据库，所以基本包括了已经测序完全的植物基因组，解决了物种限制这个问题，普遍性强了。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-6b15fc0bac0d5e23.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="设计页面"><br>我用网站中的例子，来展示一下靶点搜索结果。它可以根据开始的碱基A/G来筛选靶点，也可以通过score、gc含量和位置信息来进行靶点筛选。此外，当你将鼠标移到靶点上，会出现具体信息：显示了位置，打分，序列，切割位点（红色箭头），启动子，以及脱靶位点数量和错位碱基数等，可以说相当丰富。而且，如果某些靶点存在酶切位点，也会同时显示出来。如果不理解这些参数，网站首页的<strong>help</strong>会有详细的解释，包括怎么选择靶点。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-3ce8f6271f54d084.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="靶点"><br><img src="https://upload-images.jianshu.io/upload_images/3478485-c617285e77a1dab2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="靶点信息"><br>这几个CRISPR相关的网站介绍就到这里结束了，具体应用还是需要有实际例子去使用，尝试。<br>今天是大年初一，给大家拜个年，新春快乐，实验顺利，早发paper。</p>
-]]></content>
-      <categories>
-        <category>学习记录</category>
-      </categories>
-      <tags>
-        <tag>Cas9</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>狼伴归途</title>
-    <url>//2018/09/13/%E7%8B%BC%E4%BC%B4%E5%BD%92%E9%80%94/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![狼伴归途](https://upload-images.jianshu.io/upload_images/3478485-71c67307e95546df.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-9月9日，星期六，公元2018年
-
-<span id="more"></span>
-
-<p>狼伴归途，最精彩的就是宏大的史前场景再现，让人看了非常的享受，被其所征服。故事的情节还是比较的简单，年轻的孩子在失去父母呵护之后，通过自己的和狼的努力，经历千辛万苦最后回到了父母的怀抱。狼和孩子一起，最终平安到家，并为部落带来了狼这种动物，我想之后就是被驯化成狗。<br>觉得还是可以去看一下，电影场景很唯美。</p>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-1847b7b43f7ef666.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="wolf2.jpg"></p>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-7acc324003fe7eeb.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="wolf3.jpg"></p>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-05dda12e9ab338f8.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="wolf4.jpg"></p>
-]]></content>
-      <categories>
-        <category>影评领域</category>
-      </categories>
-      <tags>
-        <tag>电影</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>海南环岛游记</title>
-    <url>//2018/08/31/%E6%B5%B7%E5%8D%97%E7%8E%AF%E5%B2%9B%E6%B8%B8%E8%AE%B0/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![travel world.jpeg](https://upload-images.jianshu.io/upload_images/3478485-f3fc300e6094dcfd.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-<blockquote>
-<p>想了很久需要做的事情，就是想把自己在路上的一切记录下来，写成游记的类型。这一篇，就是开始，一切在路上的开始。时隔一年半了，手机里的照片一直还在，没有删除，每一次的浏览，都会激起那时的回忆，想想就觉得很美好。总有一天，希望走遍这个世界。</p>
-</blockquote>
-<span id="more"></span>
-
-<h1 id="缘由"><a href="#缘由" class="headerlink" title="缘由"></a>缘由</h1><p>想去外面独自走走，这个想法，来自我的初中同学<strong>老牛</strong>。比我多读了一年的书，我在大三的时候，她大二，开始了她的计划。不知道哪里来的勇气，开始一个人的穷游之旅。或许因为是音乐学院的学生，可能比我们一般人更为理想一些。钱，始终是限制条件，没有经济收入的学生，只能通过兼职这个行为来获得微小的收入，又一个优势显现出来，音乐生兼职收入比较高。这些条件，可能推动了之后的行为。<br>我，作为初中的前后桌，不错的关系，她想到了邀请我参加，一起旅行，而我最大的限制或许是钱，但是更大的限制或许是自己对前途的担忧，她屡次邀请而我屡次拒绝，我没法放弃手头的工作。就这样，我就错过了，错过了提早去外面看看的可能。但是，我始终没有放弃过这个想法，每当朋友圈看到她的沿途纪事所经历的一切，我就无比的羡慕。除了我之外，我经常跟同学将老牛的经历，搞得好几个同学都想一起去，那时候的我始终没有计划，没有勇气走出那一步。250算是其中一个，特别想去外面玩，最后在大学期间，始终没有一起出去玩一趟自由行，也算是一种遗憾。<br>2015年的寒假，我已经完成了那时候的任务，或者是人生的一个小目标，考上了理想中的研究生。而老牛走遍了祖国的各个地方之后，最终一个愿望还没有实现，就是想去海南骑行，因为以前走过的路上，很多骑行的人，产生的一种强烈的欲望，希望能够体验一下。而我，在这一年的寒假，也有时间了，放弃了在家过春节，而是选择了远方。再次的邀请，我也终于答应，于是购买一张机票，开始了我的首次遥远的旅途……</p>
-<h2 id="第一天——在路上"><a href="#第一天——在路上" class="headerlink" title="第一天——在路上"></a>第一天——在路上</h2><p>这一天是2016年2月4号，从余姚北站到温州南站，从温州南站到龙湾飞机场，第一次坐飞机，心情还是有些激动。当天晚上7点多，我们来到广州白云机场，走出机场，我们坐上大巴车，来到汽车站，买了当天晚上10点多去湛江的长途汽车。一路上特别的累，压根儿就没有睡好，终于天亮了，我们到达湛江，最后来到了海安新港，海南是一个岛屿，必须要轮渡，才能够到达海口。长途汽车都是通过轮船过渡到海口。<br><img src="//upload-images.jianshu.io/upload_images/3478485-933c2cab5ec194c4.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-f4b5f22806972fa7.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-aa6fafd428986372.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-3065a4024303b00c.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-0b0bb162366082c9.jpg"><br><img src="//upload-images.jianshu.io/upload_images/3478485-14d63a7417486b3e.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-22dbb99e4294374c.jpg"></p>
-<h1 id="第二天——一半在路上一半在吃"><a href="#第二天——一半在路上一半在吃" class="headerlink" title="第二天——一半在路上一半在吃"></a>第二天——一半在路上一半在吃</h1><p>我们坐了通宵的长途汽车，为了赶路，我们必须要牺牲一些东西，睡眠没有了很好的保障，但是终归是到了渡口，马上就要进入海南海口。又激动了一段时间，轮渡的时间大概是一个半小时。到了海口，我们还得做公交，到达最终的目的地，517驿站。晚上四五点，我们终于是到达了，没有什么特殊的情况出现，房间是提前订好的，也不贵，大概50块钱一个晚上，能够接受。<br>收拾好行李，安顿好一切，我们决定去海口骑楼小吃街逛一逛，吃点东西，休息一下，感受一下。吃完决定也就一般，我们就在外面走了走，看了看海口的夜晚景色。<br><img src="//upload-images.jianshu.io/upload_images/3478485-2ceff751da47f0b9.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-f456b4e0d13985b1.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-4a8b0458c4585f21.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-0e5661224ba4a00a.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-718b7a2e2b439ba1.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-fbf791081651dd5a.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-2bfca9fb7bf304a5.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-ccd92a5660f86324.jpg"><br><img src="//upload-images.jianshu.io/upload_images/3478485-aae2f13afdbebd1f.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-1d8f161551485d7e.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-f5eb088d5e8b99cc.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-e368bc288e81fe48.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-471c10b8030c1116.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-3027a42cc61d29fc.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-fa64a5e71e9c9254.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-8836901ec20c9048.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-3394cdedac800643.jpg"><br><img src="//upload-images.jianshu.io/upload_images/3478485-68c2158fec900dca.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-f583064a51b03e16.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-6e7b4a58dd456ea0.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-39b66b03ad3fc360.jpg"></p>
-<h1 id="第三天——海口一日游"><a href="#第三天——海口一日游" class="headerlink" title="第三天——海口一日游"></a>第三天——海口一日游</h1><p>今天是2月6号大年28，我们决定不在海口过年了，打算今天玩一天，明天开始正式骑行，开始我们的环岛之旅。这一天，或许是我们这几天最轻松自在，最无忧无虑的一天。正好老牛的朋友正好是海口人，于是，我们就在这位老司机的带领下，玩边了海口，吃了很多好吃的，享受了从未享受到的海口风光。<br>这一次的遗憾，就是没有了解一些海口及海南的历史，缺少了重要的一块内容，没有很好的领略这一座城市。<br>吃玩海口一天，准备明天的出发，我们也计划了一下我们的骑行计划。<br><img src="//upload-images.jianshu.io/upload_images/3478485-e113ecd98d184831.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-f137df22d9bfc06c.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-a03110c7c6c31044.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-fdc2ecf964458ee5.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-b40fb40307bea61e.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-22e7ea491c5b13c9.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-25169b31ae53bf74.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-b8e88f2f87805c15.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-e6995c71ddd8ab45.jpg"><br><img src="//upload-images.jianshu.io/upload_images/3478485-8240317f8797c9e1.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-deace0eceba740c8.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-fef76741ee41323d.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-19e2b5aff5a0be15.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-0cb45b2ac11476b2.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-b21ed4d7efa4920e.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-bade99c3fd51e08f.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-4d01361af2ff5646.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-0a203c1f64dea459.jpg"><br><img src="//upload-images.jianshu.io/upload_images/3478485-10fb4d55d0c38e23.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-9d1af7c41eb9267d.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-b81bc345e25911b2.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-1f7b72cb456fea18.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-8921d1a97293de54.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-6abdc547c1026738.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-9fae154c549e16af.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-c6d09e5e4501c39a.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-22d1d765c28d1e33.jpg"><br><img src="//upload-images.jianshu.io/upload_images/3478485-f4dea965ffc09528.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-db271afb3e61bd6c.jpg"><br><img src="//upload-images.jianshu.io/upload_images/3478485-9b447b7bf1777bee.jpg"></p>
-<h1 id="第四天——骑行第一站，文昌"><a href="#第四天——骑行第一站，文昌" class="headerlink" title="第四天——骑行第一站，文昌"></a>第四天——骑行第一站，文昌</h1><p>今天已经是大年30了，我们决定启程，开始我们的旅途，在517，我们结伴了两个小伙伴，两个人都是已经工作了的，有一个已经骑行了好多地方，全国好多个地方都去了，那时候真的是非常的佩服，非常的向往那一种自在的旅行。在路上，我们又遇到了一群退休的大爷大妈，结果居然神奇的一起结伴而行，人多有人多的好处，人少有人少的好处，我们一路上都遇到了。由于是第一天，我们都没有提前预定好文昌的517房子，搞得最后天黑了都没有找到住所，幸好后来联系到了，主在航天旅馆商务宾馆。因为今天是除夕，我们本来打算在517做饭，吃个年夜饭，在来的路上，已经买好了好多食材，其实也很惨，因为除夕，菜市场都没有什么卖家了，只剩了一个卖蔬菜的大妈，我们于是就买了番茄，白菜，土豆等等。还好最后航天商务宾馆的老板也比较体贴，给我们提供了一个厨房，及其简易的厨具，于是，我们就自己动手，准备做一顿大餐，确实也是不错，吃的很饱，而且连第二天的早饭也一起弄好了。这个除夕是一辈子都忘不了的除夕，一辈子也仅此一次，很珍贵。<br><img src="//upload-images.jianshu.io/upload_images/3478485-b447f0f32f949683.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-3eeebb35eac1b18a.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-f921ff58ce8e592a.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-00e2f9a3dc256252.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-ce8e2965ef4ce6b0.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-d68ca0d3fb24876b.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-6bcd3d8796d39db9.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-6ef154927011b53b.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-faff18049a3f0cee.jpg"></p>
-<h1 id="第五天——骑行第二站，博鳌"><a href="#第五天——骑行第二站，博鳌" class="headerlink" title="第五天——骑行第二站，博鳌"></a>第五天——骑行第二站，博鳌</h1><p>今天大年初一，我们出发到往第二站，博鳌。就是开博鳌亚洲论坛的那个地方，会址也在那个地方，可以去看一眼，最后因为需要门票，我们就放弃了。早上起来，收拾完成，准备出发。屁股真的是痛的不行，昨天第一天，完全没有适应，真的超级酸，不过骑着骑着，也还好，大家都坚持下来了。这一次，我们聪明了，我们是提前预定好了博鳌517的房间，能够有房子住，这是最重要的，傍晚，我们准时到达了博鳌。途中，我们好像特意弥补了昨天的不足，去了东郊椰林，因为路线的缘故，我们去这里后，必须选择轮渡，才能够节省时间，准时到达博鳌。载着自行车，我们也坐了一会儿船，感觉很棒。东郊椰林不好找，我们问了好多当地人，最后好不容易找到，集体拍了照片，能够看到比较开阔的海。之后，海出了一点意外，我们的一个小伙伴摔了一跤，手破了，脚也磨破了皮，但还是坚持了，坚持到了最后。<br>这一天，我们一起吃了一家东北菜，还可以，也遇到了好多骑行的人，打算第二天早上看日出。</p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-be8805d83dcdd47e.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-59564aebf88aa2eb.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-0dc786d3ae2baeb7.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-de5b5c9d63667dc1.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-367dd2b3b8e05a43.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-8312389b23a365a5.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-088f5d85651b06b0.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-a18c909f5b4fab71.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-a96a7955d8a02513.jpg"><br><img src="//upload-images.jianshu.io/upload_images/3478485-fc42027411d20c87.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-e42b880cf21615a7.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-2714ac24c53d7dcf.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-5238f72de458bf24.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-637d2a29154c22e1.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-5482e66344923334.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-e13c82be26119cf3.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-1bd16c1ff33a6937.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-22d8d6c95ba45d8a.jpg"><br><img src="//upload-images.jianshu.io/upload_images/3478485-d0b6025bcbdf08bb.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-508f1ef834bea998.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-bb9b648eadd2a638.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-4e33a88e8d04e261.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-279ffa436b51ab31.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-2360bfe2cfb66182.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-9fc427143d41905e.jpg"></p>
-<h1 id="第六天——骑行第三站，兴隆"><a href="#第六天——骑行第三站，兴隆" class="headerlink" title="第六天——骑行第三站，兴隆"></a>第六天——骑行第三站，兴隆</h1><p>早上天黑着就起来了，听说这里可以看到日出，总是如此，想看肯定看不到，我是从来没有看到从海平面升起的太阳——简称日出。只好赤脚在沙滩上玩了一会儿，沙滩上鞋子，再一次我又写下了250，不知道从什么时候开始，很多时候都会想起250这个字符，因为包涵的太多过去吧。博鳌镇还挺好，我们能够吃一顿正常的早饭，不久开始了旅途，兴隆站。这里忘记说一件事情，昨天晚上因为住的地方没有热水，那些叔叔阿姨们就一直嚷嚷不停，真的是忍受不住了——这就是人多的坏处。又加上我们的行程从这里开始发生了分歧，所以大家就开始走散，各自开始各自的路。我们四个人，当然是要一起走的，虽然那时候我还有好多想法，但是被迫只能打消念头。<br>虽然我们目的地不一样，但是行走的路程还是很相似的，在路上我们又碰到了小强和另外一个哥们儿，或许是因为渴了，看到路边的椰子树不是很高，我们就想着尝一尝这路边的椰子，看看有啥不一样的地方。小强身手非常敏捷，一会儿就马上树，在那用刀割椰子，最后通过大伙儿的努力，最终搞到了两个吧，隔开放汁。除夕夜那天剩下的一次性杯子在此刻发挥了最后的功能，我们用来盛椰汁，两个椰子，最后倒了好多杯，每个人都能够喝到。<br>由于路上的再次偶遇，叔叔阿姨们又和我们走到了一起，最终又变回了一个大团体，集体到了兴隆。路上风景甚是美妙，有牛在路上，天很蓝，视野很开阔。这是第三天了，我们的身体确实很累了，听说兴隆是有温泉的，我们就想着找一个温泉宾馆，结果还是老老实实的选了普通的宾馆住下了，因为叔叔阿姨的缘故，我们也没有去兴隆的517住宿，他们年级确实也大了，有些东西确实也经受不起了。也能够理解吧，不过那个时候可不是这样的想法，就是觉得他们太麻烦了，出来旅游还挑这挑那的，真的特别烦，在这一刻，我是真的不想和他们一起了。晚饭还是一起吃的，一家大排档，人一多，到底吃什么东西就很难下定论了，要讨论好久，而我早已经饿的不行了。大排档，点了没几个菜，觉得很贵，饭貌似也没有吃饱，真的那时候特别的心灰意冷，什么心情都没有了。晚上吃完饭，我们几个人就走回去了，好像还打包了什么东西回去吃的，不过根本吃不了了，结果好像被扔掉了。</p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-390e35b8d105577e.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-555245b7d9834ab9.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-5b7d8b7c4bd000f3.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-be501fe6fbf48e19.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-2a1e5cd48670a003.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-0fd86412141b7c25.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-478ae713f9067066.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-203194ff2a3aae8c.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-64cc303a3e007e39.jpg"><br><img src="//upload-images.jianshu.io/upload_images/3478485-a9ed3ef54036111c.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-65f28d96537aeb97.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-42e61d295abbaff6.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-7db32a7eba12543b.jpg"></p>
-<h1 id="第七天——骑行第四站，陵水"><a href="#第七天——骑行第四站，陵水" class="headerlink" title="第七天——骑行第四站，陵水"></a>第七天——骑行第四站，陵水</h1><p>最后一段路很长，我们还需要分为两天来骑，最后可以到达三亚。我们一群人还是在一起的，早上也一起出发，在酒店门口又拍了一张照片。早饭，在酒店旁吃的，这顿早饭印象深刻。兴隆生产咖啡，当地人在早上也常常喝咖啡，也离不开咖啡，我倒是没有喝，毕竟还是喝不惯，我要了一杯豆浆和油条。在这里，我发现了一样奇怪的东西，当地人就着咖啡吃，可以在嘴里不停的嚼，嚼多了，牙齿会变黄，和吸烟就差不多的功效——新鲜的槟榔。有些人就只是喝咖啡和吃槟榔，一边聊天一遍喝咖啡嚼槟榔，这断早餐时光特别的惬意，很享受。在吃完离开的那一会儿，我也想试一试，于是花了5块钱，买了4颗，可是好像直到骑行结束，我都没有吃，因为实在是味道太大，真的吃不了这个东西啊。<br>这一天真的是充满了变数，有事不容易的一天，不知道谁带的路，我们被带偏了，远离了国道，进入了小乡村，不过确实，我们也见到了不一样的风景。天都已经黑了，我们的实物都吃完了，水也差不多没有了，也没有地方住，那一天真的很害怕，产生了恐惧。虽然途中遇到了好心人，想要收留我们，可是人实在是太多了，没有办法，只能放弃（这又体现出来，人太多可能也是一种麻烦）。在我们夜行不一会儿，路边的保安大叔突然喊住了我们，说你们是不是在找住的地方，我知道离这儿不远就到国道了，那里有旅馆的，不过过去的路是小路，碎石路，很难骑，晚上有点危险，那时候根本顾不了那么多了，找个地方安顿下来才是王道，我们恳请保安大叔开着摩托车为我们带路，最后大叔答应了，遇到好心人了，不然真的不知道那天晚上会发生什么事情，之后的日程可能也要改变了。<br>到了国道边，找到了几家旅馆和吃饭的地方，先订下了睡觉的地方然后再找吃的，沿途遇到的宾馆都比较破旧，但是能够睡觉也已经不错了，价格也不贵，将就一万就可以了。<br>有好多旅馆也批发水果，结果我们买了一个菠萝蜜，30块钱左右，反正不知道比江浙地区便宜多少了，我们觉得特别划算。晚上，我们分开在不同的饭店吃饭，我们是找到了一家很不错的店，量很足，饭管饱，比昨天在兴隆吃的大排档好很多很多了，这大概是我们这一路上最满意的一顿饭，我们四人都称赞不已。</p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-bfcebc1ff48cb058.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-2ed65edddb208453.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-a85573093f06c8eb.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-f2faade41df15cfa.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-7236a21ff4b06aba.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-3e92bfeb7823e53f.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-842f12d291486ede.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-a6400ec38c096917.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-d0d55a64fcb997fb.jpg"><br><img src="//upload-images.jianshu.io/upload_images/3478485-66483d3754ecff0a.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-0a781c852473f42a.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-23704e5aaf4f4ba1.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-6bf7f80898ce0731.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-d5bd927b62e21248.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-2cdee52a0275c6d5.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-b6923082e78ef81c.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-931b89602b7caf55.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-60cab54e4839dd35.jpg"><br><img src="//upload-images.jianshu.io/upload_images/3478485-fecce8670c55c645.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-b21bf081cfe265f8.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-2447358f33a13407.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-c40211259b07123d.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-4b67adfcf9b2404f.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-fc5d9f73f676049c.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-842dc0c0384e9f89.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-350530219afae84f.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-e46647d350609750.jpg"><br><img src="//upload-images.jianshu.io/upload_images/3478485-da1ab82f25a38291.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-4952e4170766824a.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-12b0e1a460e2d89e.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-894e648c3b315ee7.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-89c6bd66b2dab6b0.jpg"><br><img src="//upload-images.jianshu.io/upload_images/3478485-7366dc2f0d2bf1c5.jpg"><br><img src="//upload-images.jianshu.io/upload_images/3478485-7113178e9245b97f.jpg"><br><img src="//upload-images.jianshu.io/upload_images/3478485-6928ed830be7c9c4.jpg"></p>
-<h1 id="第八天——终点站，三亚"><a href="#第八天——终点站，三亚" class="headerlink" title="第八天——终点站，三亚"></a>第八天——终点站，三亚</h1><p>这一天，我们终于要结束了，结束我们的环岛骑行，大概400公里的路程，也是我们骑行的第五天了，平均每天80公里左右，对于我们这些从未锻炼过的人来说，真的有点不可思议，不论怎样，我们坚持下来了，我们完成了海南岛的东海岸的骑行，虽然有些地方我们没有去，比如说神舟，还是很满足。最后一段路，我们的小伙伴突然身体也不太好，貌似中暑，差点要中途放弃，坐动车回家了，不过后来在大叔们的帮助了，还是克服了，还是坚持了下来。夕阳西下，在海南的国道上骑行，周围都是水果地，有菠萝，木瓜，菠萝蜜，有榴莲，这些热带水果始终陪伴我们前行，那种感觉妙不可言，只有亲自体验，才能够真正的体会到。<br>这一天早上，我们实在是起不来了，睡到大概9点左右，阿姨叔叔们先出发了，我们睡饱了再说，我们带上菠萝蜜继续前行，吃了沙县，吃完早饭来俩瓣菠萝蜜，真的是不一样的早餐，神奇的搭配，很快菠萝蜜直接被干完了，很快，不过真的是很好吃。这一路上，没有什么变数，我们在我的带领下终于到了三亚517。青旅果然住宿的条件不好，除了海口的517以及文昌的517（我们没有预约到房间的那一次），其余的驿站好像条件真的不是特别好，三亚的517也算是比较靠市中心的，那天下午，我们终于到了，还车，收拾行李，晚上出去吃一顿，逛一下，买点吃的，打打扑克牌，这天晚上过的还不错。骑行终于结束，然而马上我们又要开始新的旅途，回家之旅。</p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-8fac3db2ccc66dd6.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-d7153206d540b70c.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-5ac2c09921a7ad17.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-6aa4bd40cca7d96d.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-7e6f8eeed8b67c5a.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-4ec9fafc20f16350.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-60b9d3721b4a33fa.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-7d07e9fbec16b5d2.jpg"><br><img src="//upload-images.jianshu.io/upload_images/3478485-803616a01bf0a5a6.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-bd08a326df92949b.jpg"><br><img src="//upload-images.jianshu.io/upload_images/3478485-1e07a5d835613dfb.jpg"></p>
-<h1 id="第九天——归途，海口"><a href="#第九天——归途，海口" class="headerlink" title="第九天——归途，海口"></a>第九天——归途，海口</h1><p>结束骑行，我们在三亚也没有多待一会儿，发现三亚没有还有那样的舒服，静谧。三亚显得很浮躁，很杂乱。我更喜欢海口，气候舒适，环境优雅，人也不错。第二天，我们就买了动车票，从三亚到海口东的动车，晚上的末班车，最后我们抵达了海口，大晚上的。快要离开了，我们就在海口准备买点海南的特产，邮寄回学校，于是第二个清晨，我们购买了很多物资，发往江浙地区。之后我们依旧选择轮渡，毅然离开了海口，前往广东海安。到达广东，我们真的是差点被卖掉的感觉，一路上好像都是黑车，超载的特别严重，而且还没有地方坐，司机特别凶，感觉你不老实一点，就要打你，半路我们还被放下了，坐了另一辆车，最后的最后，我们终于从广东的最最西边，到达了比较文明的城市，珠海市。从来没有来过这里，这一次也是因为老牛的同学在这里工作，所以我们就顺道过来看一下，还在她朋友的房子里住了下来，他朋友去了朋友的地方住。很小的房间，我们四个人挤一挤总算是住下了。晚上他朋友还好好的款待了我们，吃了大肉火锅，很是不错。之后我们在珠海逛了一个早上，吃了广东比较正宗的早茶，一家比较有名的早茶店，大概花了400多，我们5个人，着实有点小贵，不过味道真的不错呢。珠海与澳门交界，跨国一个门，我们就能够到了，可是我们恰恰没有护照，没有准备，结果真的有点遗憾，只能隔着门，远远望着澳门。当天下午，我们坐了城轨，返回广州，因为飞机比较晚，所以我们还在广州玩了一会儿，逛了小吃街，看了<strong>小蛮腰</strong>，之后坐飞机返回温州龙湾国际机场，打的去了动车站，就此所有的行程结束。</p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-fbf410ea3dea3561.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-0e27cb5eab0bcbde.jpg"><br><img src="//upload-images.jianshu.io/upload_images/3478485-16c7aebe438c08a3.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-615c3dd8e93970f8.jpg"><br><img src="//upload-images.jianshu.io/upload_images/3478485-9b49d92c66de6c37.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-b8555fdeffc3a7c1.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-bccb6224620a61c0.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-cf059d808c31c935.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-68cc6e0e60a4ab44.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-04345119ff0a4818.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-0ff054a2d2794aee.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-0c1d9005ac609367.jpg"></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-eb4f1d0a3a2646e4.jpg"></p>
-<h1 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h1><p>第一次这样疯狂的玩，这样没有顾虑的玩，走出了第一步，打开了新的一扇门，于是有了不一样的期待，希望走遍祖国的各个角落，欣赏丰富多彩的风景。慢慢的打算，虽然在做科研的自己时间很是有限，然而一切都不是什么问题，总是能够找到机会。重要的是，要保持这样的心态，永远希望在路上的心态，永远年轻，喜欢折腾，喜欢旅行。下一次，我们大西北再见。</p>
-]]></content>
-      <categories>
-        <category>在路上的日子</category>
-      </categories>
-      <tags>
-        <tag>旅行</tag>
-        <tag>海南</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>疫情记</title>
-    <url>//2020/04/12/%E7%96%AB%E6%83%85%E8%AE%B0/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-
-<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/Image/20200412232125.png"></p>
-<span id="more"></span>
-
-<p>2020年1月19日回家到现在会学校，时间差不多过去了3个月。似乎从来没有在家里休息过那么长时间，细细回想起来，也没有做什么事情。最主要的就是以下几件事情：</p>
-<h3 id="读书"><a href="#读书" class="headerlink" title="读书"></a><font color="green">读书</font></h3><p>感觉自己从来没有连续读那么多的书，当然数量仅仅和我自己比较，有两三年加起来都没有这个寒假期间读的多。就这一点而言，我觉得很满足很充实，读书的时候其实很享受，会有一种与周围环境脱离的感受，到了另一个境界。我的书单：<a href="https://post.smzdm.com/p/aeke0x4k/">好书一起分享。</a></p>
-<p>突然让我意识到，自己是否已经舍弃这个习惯很久。我打算重新拾起这件事，哪怕晚上睡觉前只用5分钟的时间来阅读，也是很美好。另外一个习惯——买书，我也打算有规律的去执行，每个月花100块钱，买3-4本书，那么一年下来也有50本左右的新书加入我的书库。积少成多，水滴石穿，<strong>持续坚持积累</strong>觉不可小觑。</p>
-<h3 id="Python"><a href="#Python" class="headerlink" title="Python"></a><font color="green">Python</font></h3><p>Python这件事，出于偶然。帮<strong>大牛</strong>抢口罩，只抢到了一次，后面怎么也抢不到。朋友圈看到师弟使用Python写了web自动化程序，让电脑自动帮你点击按钮，抢购口罩。我使用他的程序成功抢到了，从此我觉得应该学习Python。</p>
-<p>我一直觉得未来社会，必须要有编程思维。我不是想通过这个方向来找工作，我想使用程序语言，来帮助我去完成大量重复性任务，为我的科研奠定基础。一直以来，我都难以有规则的完整的学习一门语言，从Linux的shell，到Perl语言，再到R语言，然后C语言，最后就是现在的Python。我内心渴望能够学习至少一门语言，能够帮助我解决科研问题。然而从来都是<strong>入门到放弃</strong>。</p>
-<p>这一次，我真的下定决心开始了Python的学习。我买了课程，从头至尾一步一步走，不断地前进。目前课程仍在更新中，我也每周在学习，<strong>继续积累</strong>。同时还有另外一个目的，我想给<strong>大牛</strong>写一个游戏，她说是她的新年愿望。</p>
-<h3 id="写作记录"><a href="#写作记录" class="headerlink" title="写作记录"></a><font color="green">写作记录</font></h3><p>寒假，我也重新拾起了一个好习惯——写作记录。在<strong>什么值得买</strong>写自己的心得，在简书记录学习心得，在百度经验与<strong>何大牛</strong>一起经营记录遇到的问题。写作这件事，我确实中断了很久，这次是<strong>何大牛</strong>的参与，让我重新也拾起来，总感觉两个人比一个人更能干，更有动力，更开心。</p>
-<h3 id="做家常菜"><a href="#做家常菜" class="headerlink" title="做家常菜"></a><font color="green">做家常菜</font></h3><p>大学，假期时间长，每次总是会学习做菜，其实也不算学习，只是凭感觉完成任务。爸妈比较忙，我大多数时候需要准备午餐和晚餐。这个假期，我感觉自己<strong>厨艺</strong>进步非常大，我做的菜明显感觉提升了档次，难道是我的学习能力提高了。</p>
-<p>其实都是相同的方法，我们需要去学习别人的经验，去模仿别人，从而快速让我们自己成长起来。一开始做菜，拍照分享给<strong>何大牛</strong>，都不夸我一下，还说我不务正业，还是有点难受。后期，开始了完全相反的状态，我不做了，她反而持续不断搞花样（<strong>雪花酥，海底捞，雪媚娘，电饭锅蛋糕，干锅包菜，煎猪蹄，做清明饺</strong>）。偶尔还会知道我，让我做这个，这个怎么做，妥妥的导师模样。</p>
-<h3 id="视频剪辑"><a href="#视频剪辑" class="headerlink" title="视频剪辑"></a><font color="green">视频剪辑</font></h3><p>2019年末，买了八爪鱼，我突然开始了视频拍摄。最开始的还是拍<strong>何大牛</strong>，她做<u>蛋白实验</u>，后面还有<u>剪番茄子叶</u>，后来就变成了我们日常生活记录——<strong>吃饭，玩耍，浇水和犯傻行为</strong>。</p>
-<p>回家后，开始学习编辑视频，将之前的所有视频几乎整理，同时也清理手机存储。我慢慢地会<strong>用iMovie，用screenflow，和final cut Pro</strong>做简单的视频剪辑。这些工具是越用月熟练，但我的电脑确实内存不太够，在导出视频的时候，风扇疯狂地转。</p>
-]]></content>
-      <categories>
-        <category>人生小结</category>
-      </categories>
-      <tags>
-        <tag>日记</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>碟中谍6: 全面瓦解</title>
-    <url>//2018/09/01/%E7%A2%9F%E4%B8%AD%E8%B0%8D6-%E5%85%A8%E9%9D%A2%E7%93%A6%E8%A7%A3/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![碟中谍6：全面瓦解](https://upload-images.jianshu.io/upload_images/3478485-ba43addff850f0fb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-<p>9月1日，星期六，公元2018年。</p>
-<span id="more"></span>
-
-<p>我从周五看到了周六，从8月看到了9月。因为电影近140分钟，我从10点开始，自然就看到了第二天凌晨。</p>
-<p>故事一开始，就发布一个任务，亨特自然就接受了，关于夺回核武器，防止使徒们（恐怖组织成员）的大规模投弹。接受之后，必然按着故事线走下去。一切都很精彩，法国巴黎和英国伦敦以及克什米尔地区的景观都是相当吸引眼球，很明显的好莱坞大片元素，场面非常宏大，视觉体验非常棒。此外，这么大年纪的阿汤哥，拍这部电影真是拼命。悬崖，直升机，跑酷等等都是很危险的动作，飞车大战，摩托车巴黎飙车，一切都非常刺激，整部影片几乎没有比较安静的场景。一切都快速的进行中，没有一刻停缓，因为要保护世界。</p>
-<p>好莱坞大片，必不可少的情节，那就是拯救地球，拯救全世界。都是机器宏大的目标，放眼全世界，就是救世主。有时候就会让你遐想，会有带入感，让你也感觉自己能拯救世界，也是一种精神上的吸引。情节依旧老套，又是防止大规模杀伤性武器被恐怖组织利用，不惜一切去组织，而且必然每次都是成功，能够拯救世界。</p>
-<p>可以说，碟中谍系列，是很好看的特工电影，看着很刺激，这次第六部的上映，也是让影迷们产生一种情怀，当然为了刺激宏大场面，也是完全可以看得，基本不会让你失望太过。</p>
-]]></content>
-      <categories>
-        <category>影评领域</category>
-      </categories>
-      <tags>
-        <tag>电影</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>离家回归</title>
-    <url>//2018/08/23/%E7%A6%BB%E5%AE%B6%E5%9B%9E%E5%BD%92/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![railway，图片来自于pexels网站](https://upload-images.jianshu.io/upload_images/3478485-7fdc279179af9b76.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-<span id="more"></span>
-
-
-
-<blockquote>
-<p><strong>离开，亦是回归。</strong></p>
-</blockquote>
-<p>8月22日，星期三，公元2018年。<br>在12306官网上，已订购了今天下午的车票。像往日一样，心中突然生出无尽的焦虑，极其不安定。离开家（现在我将它定义为：父母开的只为你一人服务的旅馆），意味着回归，回到每天充满焦虑的生活。2015年毕业之后，似乎再也没有安稳的日子，总要去面对去担当，去谋划。我不知道自己时候是否已然锻炼成一名合格的人生蓝图设计师，我设计的很抽象，就来我自己也看不出，领悟不出其中的意义。<br>时间是下午3点，高铁站的KFC，看着价格，心里突然犹豫不定。买，觉得太贵；不买，半途饿惨。已经体验过无数次半途饿个半死，似乎没有得到教训，不清楚人生的错一犯再犯，从不反思，是从什么时候开始。买了一个汉堡和一对鸡翅，离开车20分钟，吃得很快，味道很咸，没有想象中的美味。<br>动车缓缓的驶入，又缓缓的驶出站台。我也跟它很像，从来都是在家这个站台驶入驶出，不是我的终点站，而我又找不到我的终点站，一直在人生这条轨道上永远跑着。路过太多，错过太多；遇到太多，又错过太多。拿出佛洛姆的《爱的艺术》，再一次开启。我发誓，我已经看过很多遍，请不要怀疑我。但是很遗憾，每次看过都会忘得七七八八，而再次开启，又觉得能够记起一切。</p>
-<blockquote>
-<p><strong>爱，是一门艺术。要求我们必须努力发展自己的全部人格，从而来达到创造倾向性。</strong></p>
-</blockquote>
-<p>这句话中的关键词：<strong>全部人格和创造倾向性</strong>，我至今还是没有办法理解。半个小时，一眨眼就过去，留在了轨道上。广播已经开始响起；“前方到站，杭州站，请旅客整理好自己的行李，准备下车”。我只需将书塞入包中，起身就可以离开，丝毫没有留恋。<br>几年里的终点到了，几年后是否改变，我没法笃定地给出答案，未来可以见分晓。</p>
-]]></content>
-      <categories>
-        <category>随记</category>
-      </categories>
-      <tags>
-        <tag>家</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>科研诚信</title>
-    <url>//2018/08/30/%E7%A7%91%E7%A0%94%E8%AF%9A%E4%BF%A1/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![发现的乐趣](https://upload-images.jianshu.io/upload_images/3478485-580c16a9b28a9f34.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-<p>8月30日，星期四，公元2018年。</p>
-<p>近期在读费曼先生的演讲和访谈集，想来还是很有意思。这个伟大的物理学家，太有意思，充满着小孩子气，一点没有摆架子的做作。</p>
-<span id="more"></span>
-
-<p>我最影响深刻的是，他讲的科研诚信那一篇。至今，对处于科研岗位的工作者，任然具有重要的参考意义。在科研的过程中，我们必须记录成功和失败两面，而不是只记录能够解释你猜测的结果。不只是正确的结果能够帮助他人得出结论，错误的结果同样可以实现。此外，我们也必须将实验的过程仔细记录，在发表科研成果的同时，需要将一切公开，这对别人判断你的科研成果是否有价值非常关键。科研诚信，就要求我们要完整的呈现你实验的所有相关信息，失败的，成功的都需要。费曼先生就举例来说明：</p>
-<blockquote>
-<p>某一个食用油广告，说这种食用油不会深入到食物中去。这是真的，不能说欺骗消费者。科研诚信问题，就是应该给这个事实加上一句描述：在某一温度下，任何一种油都不会渗入食物，但是在另一个温度下，所有的油都会渗入食物，这种油也一样。所以你看，这个广告只把部分事实告诉消费者，而不是全部事实。而这两者的区别我们需要澄清。</p>
-</blockquote>
-<p>可以看到，费曼先生用多么形象的例子来说明科研诚信要求我们要将所有信息公布，而不是一部分。</p>
-<p>此外，费曼先生还讲了一条极其重要的原则——<strong>你绝对不能够欺骗自己。自己是最容易欺骗自己的，只有做到不欺骗自己，才能相对容易地不去欺骗其他人。</strong>当看到这句话的时候，产生了共鸣。很多时候你做科研，做某个实验，你很容易欺骗自己，比如：有时候，你会发现因之前处理或者其他可能会导致实验结果不准确，可是就算如此，你可能还会固执地去进行，得出一个连你自己都不相信的结果。面对这样的情况，就该直接放弃，重新来过。</p>
-<p>面对伟大的科学家，我们要学习地太多太多。</p>
-]]></content>
-      <categories>
-        <category>读书笔记</category>
-      </categories>
-      <tags>
-        <tag>费曼</tag>
-        <tag>诚信</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>科学与好奇心</title>
-    <url>//2018/08/29/%E7%A7%91%E5%AD%A6%E4%B8%8E%E5%A5%BD%E5%A5%87%E5%BF%83/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![curiosity.png](https://upload-images.jianshu.io/upload_images/3478485-167898110b8d9438.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-<p>那一年，我还是博士二年级，刚开始。然而，时间极速流失，却无能为力。</p>
-<span id="more"></span>
-
-<p>已经开始了我们学校夏季学期的课程，已经博士二年级了，上完了所有的课程，只有剩下这门专业选修课——现代生态学。在上了两节课之后，我感受最深的，或者是学习到的一点，就是为什么我们做科学研究，到底是为了什么而进行？老师给了一个答案——好奇心。我们花了纳税人的钱，为了是满足他们的好奇心。这样的回答，让我感到很新奇，很特殊的一种解答。我从来没有想到过，为了满足好奇心，从而使得这么多人在从事这一个行业。</p>
-<p>好奇心，curiosity，至关重要。想想，我们很多人每天在实验室工作，其实根本没有精神气，像这几天的我，真是一塌糊涂，没有任何精神，一切真的是那样的麻木，味同嚼蜡这个词可以形容大多数时间的我，我想不只是我一个，大多数人都是在这样的层次。有时候就会想，到底是什么促使我们在坚持，使得人类在这样的发展，有这样的发展史。或许就是好奇心吧，因为好奇，所以要去探究，要去探究，就要不断思考，从而不断推进人类认知的发展，不断向前走。</p>
-<p>人太容易变化，很多时候没有一个定数，没有那样的稳定的体系。但是，从大体上来说，纵观一生，或许可以说是比较稳定的，人的性格，人的品质。但从很小的尺度来看，人就是变幻无常的，我们极其容易受到外界坏境的影响，变得焦躁不安。非常的头疼，对我来说，这样的自己让我变得难以接受，无法那样的安静稳定，或者说是专注。分析原因，有一个可能就是好奇心的缺失，没有好奇心，一切都没法集中，没有办法使自己的熵减小，在自然状态下，自然界包括我们人类社会，甚至整个宇宙，都是一个熵增的过程，一定需要外在的能量输入，使其保持一定的熵值，相对变得稳定，而不是那样的混乱焦躁。好奇心，从另一个方面来说，或许就是一种能量，能够维持我们人类的稳定。</p>
-<p>我也发现，这几天的游离状态，好像就是因为没有了好奇心，不管是什么，实验还是其他的知识，都失去了好奇心，使得我的内心一下子熵增了不少，变得无序混沌，乱七八糟，无法收拾。直到某个时刻，我能够找到外界的力量——能够获得对外界某些事物的好奇心，那么我可以说，我又会复活，变得稳定，变成另一个状态。人，说到底也就两种状态，熵减和熵增的状态，而且这两个状态本身是一个动态的变化过程，不是一个固定的状态，始终在变化。而两者之间也在不停的互相转换，这就是客观规律。所以啊，很多时候就要想得开，人的情绪不断变化是非常正常的现象，不要去疑惑，为什么刚才好好地，一下子就变得不一样了呢？</p>
-]]></content>
-      <categories>
-        <category>随记</category>
-      </categories>
-      <tags>
-        <tag>科学</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>科普吗？</title>
-    <url>//2018/08/26/%E7%A7%91%E6%99%AE%E5%90%97%EF%BC%9F/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![physical，图片来源于pexels网站](https://upload-images.jianshu.io/upload_images/3478485-2dae4e412aae35b9.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-<p>8月25日，星期六，公元2018年。</p>
-<span id="more"></span>
-
-<p>8月25日，星期六，公元2018年。</p>
-<p>《发现的乐趣》中，记录了1964年伟大的物理学家理查德·费曼发表了一篇研究，讨论了科学对宗教、社会和哲学的影响，还强调了我们的质疑能力将决定未来的文明走向。</p>
-<p>在阐述科学和社会关系的时候，费曼先生提到了迷信思想充斥着社会，公民科学素质依旧缺乏。科普在一定程度上能够提高公民科学素养，破除一些封建迷信。科学家要担负起科普的责任，当然最好是主动。</p>
-<blockquote>
-<p>一般说来，科学普及是指学校正规科学教育以外的、主要通过大众传媒以及各类宣传、展教等方式传播科学知识、方法等内容的社会教育活动。</p>
-</blockquote>
-<p>在21世纪，互联网的快速发展以及知识大爆炸的时代，科普似乎简单了很多。但是没有正规的学科教育作为基础，恐怕科普的任务依旧很难。大众传媒日益发达，作为了公众主要的知识信息来源，担任着很重要的科普角色，关键在于控制这些信息的真实性。</p>
-<p>科学团体到底该怎么去承担科普的重担？我所在的科学团体中，始终没有时间去做这方面的工作，导师忙着写项目，申请课题，还有教学任务。博士生，整体做实验，一心想着毕业，始终根本不会考虑到这个问题——将科学与社会联系起来。说实在的，实在是我们非常的忙，课题太多，根本无暇顾及科普这个问题，从不会进入到我们的大脑里。其实，想想也是有些难过，这么大的一个科研团队，每年发现那么多新的知识，从没有想着去用这些东西（当然，用来申请科研项目）。目前来看，在普通大众观念里，做科学研究的就是高大上，好像根本不可能与他们产生联系。我在想，是否我们该承担其这个义务？</p>
-<p>要做科普这件事，还是需要多方的协作和交流沟通。国家也越来越重视提高公民素质，科学素质就是其中的一部分；非政府组织也再进行这些工作；一些科研机构也会承担一部分。大众传媒，是一种很有效的方式，作为传播的工具。而我们个人，是否也该行动？怎样的方式？很多问题有待解决。我从来没有参与其中，从来不知道这个门槛在哪里，高不高，怎么样的形式参与进去，心中充满疑惑。</p>
-<p>最关键的一点，我认识到了我的义务——科普的义务。</p>
-]]></content>
-      <categories>
-        <category>读书笔记</category>
-      </categories>
-      <tags>
-        <tag>科普</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>第一个LaTeX文档——Hello world！</title>
     <url>//2018/08/29/%E7%AC%AC%E4%B8%80%E4%B8%AALaTeX%E6%96%87%E6%A1%A3%E2%80%94%E2%80%94Hello-world%EF%BC%81/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -1949,40 +1949,6 @@ characterization of aluminum resistance in Populus"><br>这里我先用比较麻
       </tags>
   </entry>
   <entry>
-    <title>美洲小宇宙</title>
-    <url>//2018/09/06/%E7%BE%8E%E6%B4%B2%E5%B0%8F%E5%AE%87%E5%AE%99/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![美洲小宇宙](http://upload-images.jianshu.io/upload_images/3478485-21cddf3db814e6d1.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-> **读游记的方法**：一般需要有一张世界地图在旁边，或者有电脑也可以（最好使用Google地图）（游记不可避免的会出现地名，于是总会和地理扯上关系），一遍阅读，一遍看地图，找到所在地，能够很好的在脑海中形成画面，读起来不会那么累。
-
-<span id="more"></span>
-
-
-
-<p>其实最需要地图的是<strong>读史书</strong>：这时你肯定会遇到超级多从未有地理概念的国家或者地名，除了要有现代的地图，另外还需要历史地理地图。历史往往是将过去和现在作比较，从而来吸取经验。地图历史总是在不断变迁，从古代到现代，各个国家的发展及地理行政边界都是在发生不断变化，所以也要明白过去的情况。像人类的起源这方面的，必然会牵扯到人类在世界各地的迁移，人类文明的出现摇篮，总是出现大量的地理名词。因此，你需要读懂地图，了解地势，这对于喜欢历史的人非常关键，人类历史上，很多关键性的时刻，总是和地理位置息息相关，<strong>一个民族的历史走向也离不开自然地理的催化。</strong></p>
-<p>总之，读游记和读历史文化相关的书记，最好要做到心中有地图或者手中有地图的状态，否则读起来会困难不少呢！</p>
-<h1 id="序"><a href="#序" class="headerlink" title="序"></a>序</h1><p>此次美洲之行主要去了墨西哥，哥斯达黎加，巴拿马，古巴和厄瓜多尔，去的国家不是特别多，故事还是很丰富，作者大概是跟着旅行团去的，遇到的都是特别正常的事情，描述的都是美好的事物，而遭遇到一些负面的事物。傅真在她的《最好金龟换酒》中提到，自己和他的老公是自由行，在墨西哥遇到了比较可怕的事情，还体会了极其贫困地区人们的生活状况，感觉更完整一些。但是，要论深度，确实傅真要差挺多，毕老师还是深厚的历史文化底蕴，涉及到的面比较广泛。反正都有可看之处。</p>
-<p>南美洲，受西班牙殖民，很多国家都将西班牙语作为官网语言，因此要是自己会西班牙语或者有个会西班牙语的朋友一起去美洲旅行，那么肯定会有趣不少。或许下次在打算自己去南美洲旅行的时候，可以提前3个月左右恶补一下西班牙语，少一些语言障碍的自由行会非常的有意思。<br>说起语言，我又忍不住想多说几句。我对语言的起源，很是有兴趣，然而并没有时间去深究。词源对于语言的学习有莫大的帮助，我深信这一点，我其实也特别想多学习几门语言，然而最终还是放弃，到现在为止，连英语都没有学好，真是惭愧。<strong>西班牙语</strong>，属于印欧语系罗曼语族西罗曼语支，约有4亿人将其作为母语，为世界第二大语言，仅次于汉语。</p>
-<p><img src="http://upload-images.jianshu.io/upload_images/3478485-eb8022421e4f3e33.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="中南美洲"></p>
-<h1 id="哥斯达黎加"><a href="#哥斯达黎加" class="headerlink" title="哥斯达黎加"></a>哥斯达黎加</h1><p>世界上第一个不设军队的国家，是永久的中立国，是一个将火山印在国旗上的国家，三座活火山成为很重要的景点。拥有世界上很少数的<strong>热带雾林</strong>。和热带雨林不一样，形成的条件苛刻：首先，必须出于热带；第二，有1300米以上的海拔高度，保持物种多样性；最后一点，距离海洋比较近，有强大的水汽供应，形成雾。</p>
-<h1 id="两个及其伟大的革命家"><a href="#两个及其伟大的革命家" class="headerlink" title="两个及其伟大的革命家"></a>两个及其伟大的革命家</h1><ol>
-<li>托洛茨基：具体介绍就不讲了（<a href="https://en.wikipedia.org/wiki/Leon_Trotsky">详细介绍</a>），最后的命运流亡海外，被暗杀。</li>
-<li>切格瓦拉：古巴革命的核心人物之一，任古巴国家银行行长。<a href="https://en.wikipedia.org/wiki/Che_Guevara">维基介绍</a>，看完毕老师对其一生的介绍，肃然起敬，伟大的人物就是有那样的魅力和人格。</li>
-</ol>
-<p><img src="http://upload-images.jianshu.io/upload_images/3478485-1e86acc106bb344b.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="切格瓦拉.jpg"></p>
-<h1 id="玛雅文明"><a href="#玛雅文明" class="headerlink" title="玛雅文明"></a>玛雅文明</h1><p>没有人不知道玛雅文明吧，2012年12月24日，就是因为玛雅人的世界末日预言而弄得人心惶惶，真的以为世界都要结束了，开启新的纪元。然而，现在已经到了2017年了，我此时此刻还在安静地看书打字。</p>
-<p><a href="https://en.wikipedia.org/wiki/Maya_civilization">玛雅文明</a>，是中美洲玛雅人创造的中美洲文明。曾经的辉煌，早已湮灭在热带雨林之中，金字塔毅然屹立在中美洲的大地之上，貌似在向世人们述说曾经的辉煌。</p>
-<p>墨西哥<strong>奇琴伊察</strong>玛雅城邦遗址，位于墨西哥东南部尤卡坦半岛，是玛雅文明最杰出的代表作，是玛雅古国最大、最繁华的城邦，始建于公元514年。主要的遗迹库库尔坎金字塔就位于此，库库尔坎金字塔由塔身和神庙两部分组成，塔高30米，塔底面为正方形，四方对称，底大上小，四边棱角分明。台基每边长55.5米，共9层，向上逐渐缩小至梯形平台，上有高6米的方形神庙。塔的四面各有91级台阶，四面共有364级，加上最上层的平台，正好是一年的天数。</p>
-]]></content>
-      <categories>
-        <category>读书笔记</category>
-      </categories>
-      <tags>
-        <tag>中南美洲</tag>
-        <tag>毕淑敏</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>算法与数据结构（3）：算法复杂度说明（上）</title>
     <url>//2018/10/10/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%EF%BC%883%EF%BC%89%EF%BC%9A%E7%AE%97%E6%B3%95%E5%A4%8D%E6%9D%82%E5%BA%A6%E8%AF%B4%E6%98%8E%EF%BC%88%E4%B8%8A%EF%BC%89/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -2016,6 +1982,40 @@ characterization of aluminum resistance in Populus"><br>这里我先用比较麻
       </categories>
       <tags>
         <tag>复杂度</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>美洲小宇宙</title>
+    <url>//2018/09/06/%E7%BE%8E%E6%B4%B2%E5%B0%8F%E5%AE%87%E5%AE%99/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![美洲小宇宙](http://upload-images.jianshu.io/upload_images/3478485-21cddf3db814e6d1.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+> **读游记的方法**：一般需要有一张世界地图在旁边，或者有电脑也可以（最好使用Google地图）（游记不可避免的会出现地名，于是总会和地理扯上关系），一遍阅读，一遍看地图，找到所在地，能够很好的在脑海中形成画面，读起来不会那么累。
+
+<span id="more"></span>
+
+
+
+<p>其实最需要地图的是<strong>读史书</strong>：这时你肯定会遇到超级多从未有地理概念的国家或者地名，除了要有现代的地图，另外还需要历史地理地图。历史往往是将过去和现在作比较，从而来吸取经验。地图历史总是在不断变迁，从古代到现代，各个国家的发展及地理行政边界都是在发生不断变化，所以也要明白过去的情况。像人类的起源这方面的，必然会牵扯到人类在世界各地的迁移，人类文明的出现摇篮，总是出现大量的地理名词。因此，你需要读懂地图，了解地势，这对于喜欢历史的人非常关键，人类历史上，很多关键性的时刻，总是和地理位置息息相关，<strong>一个民族的历史走向也离不开自然地理的催化。</strong></p>
+<p>总之，读游记和读历史文化相关的书记，最好要做到心中有地图或者手中有地图的状态，否则读起来会困难不少呢！</p>
+<h1 id="序"><a href="#序" class="headerlink" title="序"></a>序</h1><p>此次美洲之行主要去了墨西哥，哥斯达黎加，巴拿马，古巴和厄瓜多尔，去的国家不是特别多，故事还是很丰富，作者大概是跟着旅行团去的，遇到的都是特别正常的事情，描述的都是美好的事物，而遭遇到一些负面的事物。傅真在她的《最好金龟换酒》中提到，自己和他的老公是自由行，在墨西哥遇到了比较可怕的事情，还体会了极其贫困地区人们的生活状况，感觉更完整一些。但是，要论深度，确实傅真要差挺多，毕老师还是深厚的历史文化底蕴，涉及到的面比较广泛。反正都有可看之处。</p>
+<p>南美洲，受西班牙殖民，很多国家都将西班牙语作为官网语言，因此要是自己会西班牙语或者有个会西班牙语的朋友一起去美洲旅行，那么肯定会有趣不少。或许下次在打算自己去南美洲旅行的时候，可以提前3个月左右恶补一下西班牙语，少一些语言障碍的自由行会非常的有意思。<br>说起语言，我又忍不住想多说几句。我对语言的起源，很是有兴趣，然而并没有时间去深究。词源对于语言的学习有莫大的帮助，我深信这一点，我其实也特别想多学习几门语言，然而最终还是放弃，到现在为止，连英语都没有学好，真是惭愧。<strong>西班牙语</strong>，属于印欧语系罗曼语族西罗曼语支，约有4亿人将其作为母语，为世界第二大语言，仅次于汉语。</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/3478485-eb8022421e4f3e33.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="中南美洲"></p>
+<h1 id="哥斯达黎加"><a href="#哥斯达黎加" class="headerlink" title="哥斯达黎加"></a>哥斯达黎加</h1><p>世界上第一个不设军队的国家，是永久的中立国，是一个将火山印在国旗上的国家，三座活火山成为很重要的景点。拥有世界上很少数的<strong>热带雾林</strong>。和热带雨林不一样，形成的条件苛刻：首先，必须出于热带；第二，有1300米以上的海拔高度，保持物种多样性；最后一点，距离海洋比较近，有强大的水汽供应，形成雾。</p>
+<h1 id="两个及其伟大的革命家"><a href="#两个及其伟大的革命家" class="headerlink" title="两个及其伟大的革命家"></a>两个及其伟大的革命家</h1><ol>
+<li>托洛茨基：具体介绍就不讲了（<a href="https://en.wikipedia.org/wiki/Leon_Trotsky">详细介绍</a>），最后的命运流亡海外，被暗杀。</li>
+<li>切格瓦拉：古巴革命的核心人物之一，任古巴国家银行行长。<a href="https://en.wikipedia.org/wiki/Che_Guevara">维基介绍</a>，看完毕老师对其一生的介绍，肃然起敬，伟大的人物就是有那样的魅力和人格。</li>
+</ol>
+<p><img src="http://upload-images.jianshu.io/upload_images/3478485-1e86acc106bb344b.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="切格瓦拉.jpg"></p>
+<h1 id="玛雅文明"><a href="#玛雅文明" class="headerlink" title="玛雅文明"></a>玛雅文明</h1><p>没有人不知道玛雅文明吧，2012年12月24日，就是因为玛雅人的世界末日预言而弄得人心惶惶，真的以为世界都要结束了，开启新的纪元。然而，现在已经到了2017年了，我此时此刻还在安静地看书打字。</p>
+<p><a href="https://en.wikipedia.org/wiki/Maya_civilization">玛雅文明</a>，是中美洲玛雅人创造的中美洲文明。曾经的辉煌，早已湮灭在热带雨林之中，金字塔毅然屹立在中美洲的大地之上，貌似在向世人们述说曾经的辉煌。</p>
+<p>墨西哥<strong>奇琴伊察</strong>玛雅城邦遗址，位于墨西哥东南部尤卡坦半岛，是玛雅文明最杰出的代表作，是玛雅古国最大、最繁华的城邦，始建于公元514年。主要的遗迹库库尔坎金字塔就位于此，库库尔坎金字塔由塔身和神庙两部分组成，塔高30米，塔底面为正方形，四方对称，底大上小，四边棱角分明。台基每边长55.5米，共9层，向上逐渐缩小至梯形平台，上有高6米的方形神庙。塔的四面各有91级台阶，四面共有364级，加上最上层的平台，正好是一年的天数。</p>
+]]></content>
+      <categories>
+        <category>读书笔记</category>
+      </categories>
+      <tags>
+        <tag>中南美洲</tag>
+        <tag>毕淑敏</tag>
       </tags>
   </entry>
   <entry>
