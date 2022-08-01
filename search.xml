@@ -1,6 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>CRISPR-Cas9系统简介</title>
+    <url>//2018/12/30/CRISPR-Cas9%E7%B3%BB%E7%BB%9F%E7%AE%80%E4%BB%8B/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+
+
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-0bf1101b1c467285.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="图片来源：https://www.mygenefood.com/crispr-cas9-introduction-genome-editing/"></p>
+<p>Clustered regularly interspaced short palindromic repeats（CRISPR）——规律成簇的间隔短回文重复和CRISPR-associated protein 9（Cas9），共同组成了一套系统，是细菌用来防御噬菌体DNA注入和质粒转移的天然防御系统。但现在被人类所重新利用，构建了很强的RNA引导的DNA靶向平台——主要用来基因组编辑、转录扰乱、表观遗传调控等。</p>
+<span id="more"></span>
+
+
+
+<h3 id="细菌抵抗噬菌体入侵"><a href="#细菌抵抗噬菌体入侵" class="headerlink" title="细菌抵抗噬菌体入侵"></a><font color="green">细菌抵抗噬菌体入侵</font></h3><p>图中是细菌天然免疫系统。我们可以看到，CRISPR locus是由几个原件构成。一开始是个反向转录的RNA，是特异的非编码RNA，可以和重复序列部分互补（trancrRNA，橙色矩形），后面是各种cas基因（箭头表示），接着是CRISPR排列（棕色的菱形是重复序列，彩色的是间隔）。而这些间隔序列是细菌从噬菌体DNA中获得的遗传原件：当噬菌体感染细菌，细菌激活相关的cas基因——Cas1，Cas2,和Csn2，将其中新的间隔序列整合到自身的CRISPR arry中。一旦获得以后，新的spacer就会出现在pre-crRNA中，此时tracrRNA与不同的SPACER互补，在RNaseIII的作用下，产生crRNA，进一步在其他未知的核酸酶的作用，剪切crRNA的5’端，使得引导序列长为20nt。如果噬菌体注入DNA，那么这个免疫系统将被激活，来干扰噬菌体DNA。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-4c5c2be28472800d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="防御过程"></p>
+<h3 id="剪切与修复"><a href="#剪切与修复" class="headerlink" title="剪切与修复"></a><font color="green">剪切与修复</font></h3><p>我们目前主要使用II型CRISPR系统，它和他的区别在于，只是需要一个DNA内切酶Cas9来对与sgRNA20个互补碱基的带有PAM结构的DNA进行剪切。剪切后是DNA产生平末端的DSB（双链断裂），然后在进行非同源的末端连接过程中，容易随机插入或者删除或者替换。或者进行高保真的同源定向修复，修复DNA。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-be11ad0e6a3c0c5e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Type II Cas9"><br><img src="https://upload-images.jianshu.io/upload_images/3478485-827d8dc582062b62.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Cas9剪切及突变产生"></p>
+<h3 id="Cas9蛋白构象重组"><a href="#Cas9蛋白构象重组" class="headerlink" title="Cas9蛋白构象重组"></a><font color="green">Cas9蛋白构象重组</font></h3><p>这里的例子是化脓链球菌的SpyCas9，是一个含有1368个氨基酸的多结构和多功能的DNA核酸内切酶。它的切割位点在PAM上游的第三个碱基，通过HNH（sgRAN互补的目标序列）和RuvC核酸酶结构域（非目标序列）。要识别特定序列并进行剪切，sgRNA与Cas9组合成一个复合体，其中sgRNAy与Cas9结合起着关键的作用，能够使得Cas9构象重构，变得具有活性。crRNA前20碱基使得Cas9具有靶序列特异性，tracrRNA来招募Cas9蛋白。在这个系统中，有一个所谓的种子序列，20碱基spacer的3’端10-12个核苷酸。<strong>在种子序列的错配以及本身同源性都会严重影响系统特异性和脱靶效率。</strong>*<br><img src="https://upload-images.jianshu.io/upload_images/3478485-082186ee503a2b4a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="sgNRA"></p>
+<h3 id="目标DNA搜索与识别"><a href="#目标DNA搜索与识别" class="headerlink" title="目标DNA搜索与识别"></a><font color="green">目标DNA搜索与识别</font></h3><p><strong>PAM序列非常的关键</strong>，能够起到识别自身和外来的序列。有实验表明，如果PAM进行但突变，那么就能够让噬菌体入侵宿主。在sgRNA互补之前，首先是寻找PAM序列，如果没有合适的PAM，那么通过蛋白三维结构的坍塌，会离开DNA，直到找到合适的PAM。一旦找到PAM，Cas9就使DNA局部解链，RNA进入，与DNA互补，形成RNA-DNA结构。<strong>sg种子区域序列与靶DNA的完美互补是很重要的。</strong></p>
+<h3 id="CRISPR–Cas9介导的DNA靶定于剪切模型"><a href="#CRISPR–Cas9介导的DNA靶定于剪切模型" class="headerlink" title="CRISPR–Cas9介导的DNA靶定于剪切模型"></a><font color="green">CRISPR–Cas9介导的DNA靶定于剪切模型</font></h3><p>首先，guide RNA的结合，使得Cas9从一个未激活的构象变成具有DNA识别能力的构象。RNA种子序列先形成A型构象，为了目标结合和链入侵，PAM识别位点预先形成用来PAM识别。然后，Cas9结合到PAM序列，使得酶能够去识别附近的潜在的DNA靶序列。一旦Cas9在PAM附近找到了潜在的靶序列，会开始解双螺旋并继续检查剩余的靶序列。磷酸锁环稳定解旋的目标DNA，且第一个碱基开始翻转向上，与guide RNA碱基配对。而Cas9继续与非靶链上的翻转碱基作用，促进双螺旋解开。接着，碱基配对伴随着Cas9构象改变，促进种子序列前面的guide RNA从限制中释放出来，也形成配对，这个过程促使Cas9构象持续变化，直到到达有活性的状态。最终，guide RNA与目标DNA完全互补使得HNH具有稳定的，具有活性的构象，来剪切目标链DNA。与此同时，引起更大的构象变化，使得非目标链DNA进入RuvC催化中心被剪切，这种转态下，Cas9中牢牢结合在靶点序列上，直到其他的细胞因子过来替代它。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-4db71b549d557ab4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="剪切示意图"></p>
+<p>读了这篇review，进行一定程度的总结，有些地方还是有些不太清楚。</p>
+<blockquote>
+<p>Fuguo Jiang and Jennifer A. Doudna, CRISPR–Cas9 Structures and Mechanisms, Annual Review of Biophysics 2017 46:1, 505-529 </p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>学习记录</category>
+      </categories>
+      <tags>
+        <tag>Cas9</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Dropbox离线安装</title>
+    <url>//2018/12/08/Dropbox%E7%A6%BB%E7%BA%BF%E5%AE%89%E8%A3%85/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+
+
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-d5fc4ecb48065677.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<blockquote>
+<p>Dropbox 的安装一直是个问题，下载安装器，你永远没有办法链接网络，可能是电脑没有完全的全局。</p>
+</blockquote>
+<p>今天，因为要配置新的电脑，我就需要安装我的Dropbox。但是依旧是因为没有办法彻底的全局FQ，所以我就想着下载离线包，然后我就就Google，找到了下载离线安装包的办法，你只要在官网下载页面网址的基础上，在后面添加<code>&amp;full=1</code>就可以实现离线安装。<br>离线安装包下载网址：<a href="https://www.dropbox.com/downloading?src=index&full=1" title="shark0017">https://www.dropbox.com/downloading?src=index**&amp;full=1**</a>。已经顺利安装，下面可以愉快的使用了。</p>
+]]></content>
+      <categories>
+        <category>学习记录</category>
+      </categories>
+      <tags>
+        <tag>Dropbox</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>DJY-遇见盖北</title>
     <url>//2018/08/18/DJY-%E9%81%87%E8%A7%81%E7%9B%96%E5%8C%97/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -36,35 +84,6 @@
       </tags>
   </entry>
   <entry>
-    <title>CRISPR-Cas9系统简介</title>
-    <url>//2018/12/30/CRISPR-Cas9%E7%B3%BB%E7%BB%9F%E7%AE%80%E4%BB%8B/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-
-
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-0bf1101b1c467285.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="图片来源：https://www.mygenefood.com/crispr-cas9-introduction-genome-editing/"></p>
-<p>Clustered regularly interspaced short palindromic repeats（CRISPR）——规律成簇的间隔短回文重复和CRISPR-associated protein 9（Cas9），共同组成了一套系统，是细菌用来防御噬菌体DNA注入和质粒转移的天然防御系统。但现在被人类所重新利用，构建了很强的RNA引导的DNA靶向平台——主要用来基因组编辑、转录扰乱、表观遗传调控等。</p>
-<span id="more"></span>
-
-
-
-<h3 id="细菌抵抗噬菌体入侵"><a href="#细菌抵抗噬菌体入侵" class="headerlink" title="细菌抵抗噬菌体入侵"></a><font color="green">细菌抵抗噬菌体入侵</font></h3><p>图中是细菌天然免疫系统。我们可以看到，CRISPR locus是由几个原件构成。一开始是个反向转录的RNA，是特异的非编码RNA，可以和重复序列部分互补（trancrRNA，橙色矩形），后面是各种cas基因（箭头表示），接着是CRISPR排列（棕色的菱形是重复序列，彩色的是间隔）。而这些间隔序列是细菌从噬菌体DNA中获得的遗传原件：当噬菌体感染细菌，细菌激活相关的cas基因——Cas1，Cas2,和Csn2，将其中新的间隔序列整合到自身的CRISPR arry中。一旦获得以后，新的spacer就会出现在pre-crRNA中，此时tracrRNA与不同的SPACER互补，在RNaseIII的作用下，产生crRNA，进一步在其他未知的核酸酶的作用，剪切crRNA的5’端，使得引导序列长为20nt。如果噬菌体注入DNA，那么这个免疫系统将被激活，来干扰噬菌体DNA。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-4c5c2be28472800d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="防御过程"></p>
-<h3 id="剪切与修复"><a href="#剪切与修复" class="headerlink" title="剪切与修复"></a><font color="green">剪切与修复</font></h3><p>我们目前主要使用II型CRISPR系统，它和他的区别在于，只是需要一个DNA内切酶Cas9来对与sgRNA20个互补碱基的带有PAM结构的DNA进行剪切。剪切后是DNA产生平末端的DSB（双链断裂），然后在进行非同源的末端连接过程中，容易随机插入或者删除或者替换。或者进行高保真的同源定向修复，修复DNA。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-be11ad0e6a3c0c5e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Type II Cas9"><br><img src="https://upload-images.jianshu.io/upload_images/3478485-827d8dc582062b62.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Cas9剪切及突变产生"></p>
-<h3 id="Cas9蛋白构象重组"><a href="#Cas9蛋白构象重组" class="headerlink" title="Cas9蛋白构象重组"></a><font color="green">Cas9蛋白构象重组</font></h3><p>这里的例子是化脓链球菌的SpyCas9，是一个含有1368个氨基酸的多结构和多功能的DNA核酸内切酶。它的切割位点在PAM上游的第三个碱基，通过HNH（sgRAN互补的目标序列）和RuvC核酸酶结构域（非目标序列）。要识别特定序列并进行剪切，sgRNA与Cas9组合成一个复合体，其中sgRNAy与Cas9结合起着关键的作用，能够使得Cas9构象重构，变得具有活性。crRNA前20碱基使得Cas9具有靶序列特异性，tracrRNA来招募Cas9蛋白。在这个系统中，有一个所谓的种子序列，20碱基spacer的3’端10-12个核苷酸。<strong>在种子序列的错配以及本身同源性都会严重影响系统特异性和脱靶效率。</strong>*<br><img src="https://upload-images.jianshu.io/upload_images/3478485-082186ee503a2b4a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="sgNRA"></p>
-<h3 id="目标DNA搜索与识别"><a href="#目标DNA搜索与识别" class="headerlink" title="目标DNA搜索与识别"></a><font color="green">目标DNA搜索与识别</font></h3><p><strong>PAM序列非常的关键</strong>，能够起到识别自身和外来的序列。有实验表明，如果PAM进行但突变，那么就能够让噬菌体入侵宿主。在sgRNA互补之前，首先是寻找PAM序列，如果没有合适的PAM，那么通过蛋白三维结构的坍塌，会离开DNA，直到找到合适的PAM。一旦找到PAM，Cas9就使DNA局部解链，RNA进入，与DNA互补，形成RNA-DNA结构。<strong>sg种子区域序列与靶DNA的完美互补是很重要的。</strong></p>
-<h3 id="CRISPR–Cas9介导的DNA靶定于剪切模型"><a href="#CRISPR–Cas9介导的DNA靶定于剪切模型" class="headerlink" title="CRISPR–Cas9介导的DNA靶定于剪切模型"></a><font color="green">CRISPR–Cas9介导的DNA靶定于剪切模型</font></h3><p>首先，guide RNA的结合，使得Cas9从一个未激活的构象变成具有DNA识别能力的构象。RNA种子序列先形成A型构象，为了目标结合和链入侵，PAM识别位点预先形成用来PAM识别。然后，Cas9结合到PAM序列，使得酶能够去识别附近的潜在的DNA靶序列。一旦Cas9在PAM附近找到了潜在的靶序列，会开始解双螺旋并继续检查剩余的靶序列。磷酸锁环稳定解旋的目标DNA，且第一个碱基开始翻转向上，与guide RNA碱基配对。而Cas9继续与非靶链上的翻转碱基作用，促进双螺旋解开。接着，碱基配对伴随着Cas9构象改变，促进种子序列前面的guide RNA从限制中释放出来，也形成配对，这个过程促使Cas9构象持续变化，直到到达有活性的状态。最终，guide RNA与目标DNA完全互补使得HNH具有稳定的，具有活性的构象，来剪切目标链DNA。与此同时，引起更大的构象变化，使得非目标链DNA进入RuvC催化中心被剪切，这种转态下，Cas9中牢牢结合在靶点序列上，直到其他的细胞因子过来替代它。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-4db71b549d557ab4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="剪切示意图"></p>
-<p>读了这篇review，进行一定程度的总结，有些地方还是有些不太清楚。</p>
-<blockquote>
-<p>Fuguo Jiang and Jennifer A. Doudna, CRISPR–Cas9 Structures and Mechanisms, Annual Review of Biophysics 2017 46:1, 505-529 </p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>学习记录</category>
-      </categories>
-      <tags>
-        <tag>Cas9</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>2018年8月-小结</title>
     <url>//2018/09/02/2018%E5%B9%B48%E6%9C%88-%E5%B0%8F%E7%BB%93/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -86,25 +105,6 @@
       </categories>
       <tags>
         <tag>小结</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Dropbox离线安装</title>
-    <url>//2018/12/08/Dropbox%E7%A6%BB%E7%BA%BF%E5%AE%89%E8%A3%85/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-
-
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-d5fc4ecb48065677.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
-<blockquote>
-<p>Dropbox 的安装一直是个问题，下载安装器，你永远没有办法链接网络，可能是电脑没有完全的全局。</p>
-</blockquote>
-<p>今天，因为要配置新的电脑，我就需要安装我的Dropbox。但是依旧是因为没有办法彻底的全局FQ，所以我就想着下载离线包，然后我就就Google，找到了下载离线安装包的办法，你只要在官网下载页面网址的基础上，在后面添加<code>&amp;full=1</code>就可以实现离线安装。<br>离线安装包下载网址：<a href="https://www.dropbox.com/downloading?src=index&full=1" title="shark0017">https://www.dropbox.com/downloading?src=index**&amp;full=1**</a>。已经顺利安装，下面可以愉快的使用了。</p>
-]]></content>
-      <categories>
-        <category>学习记录</category>
-      </categories>
-      <tags>
-        <tag>Dropbox</tag>
       </tags>
   </entry>
   <entry>
@@ -301,30 +301,6 @@
       </tags>
   </entry>
   <entry>
-    <title>HTML5（1）——介绍</title>
-    <url>//2018/09/24/HTML5%EF%BC%881%EF%BC%89%E2%80%94%E2%80%94%E4%BB%8B%E7%BB%8D/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![中秋节就是面对电脑](https://upload-images.jianshu.io/upload_images/3478485-befca9c4894b99eb.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-<blockquote>
-<p>我就是用来玩一下，说好得，只是玩一下。</p>
-</blockquote>
-<span id="more"></span>
-
-<p>总是想干点事情，不想这么地浪费时间，学习一下html5语法，还是挺好的。我记得以前别人过节的时候，就会发一个网页过来，你打开就是节日祝福，还有音乐和动画，然后就觉得学计算机的人特别牛逼，现在看来，真得没有那么难，稍微学习一下，你就可以实现这样的效果，并没有想象中那么难。当然如果要深入下去，作为你吃饭的技能，那就不是一个层次，我就用来玩一下，增添一些生活的乐趣。</p>
-<p>有了以下这些基本的内容，你就可以写出一个自己的最简单的网页来了。</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span> <span class="comment">&lt;!--这是用来指定声明这篇文档是HTML5，帮助浏览器正确的显示网页--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span><span class="comment">&lt;!--这是网页根标签，每个网页都有，必不可少--&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span><span class="comment">&lt;!--head里面包含的是元信息，不会显示出来--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">title</span>&gt;</span>生活的质感<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">    </span><br><span class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span><span class="comment">&lt;!--body是网页不可少部分，是用来放可视的网页内容，是会展现出来的--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">h1</span>&gt;</span><span class="comment">&lt;!--h1是用来表示一级标题--&gt;</span></span><br><span class="line">            中秋节快乐</span><br><span class="line">        <span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="comment">&lt;!--p就是段落的意思，用来盛放正文的内容--&gt;</span></span><br><span class="line">            今天是中秋节，也没有回家过节，在宿舍里折腾了很久。</span><br><span class="line">        <span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>HTML5的标签是用&lt;&gt;括起来的。比如<code>&lt;p&gt;...&lt;/p&gt;</code>这样的段落标签。不带斜杠的是起始标签，带斜杆的是结束标签。</p>
-]]></content>
-      <categories>
-        <category>HTML5入门</category>
-      </categories>
-      <tags>
-        <tag>HTML5</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>HTML5（13）——CSS</title>
     <url>//2018/10/15/HTML5%EF%BC%8813%EF%BC%89%E2%80%94%E2%80%94CSS/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -379,6 +355,30 @@
       </tags>
   </entry>
   <entry>
+    <title>HTML5（1）——介绍</title>
+    <url>//2018/09/24/HTML5%EF%BC%881%EF%BC%89%E2%80%94%E2%80%94%E4%BB%8B%E7%BB%8D/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![中秋节就是面对电脑](https://upload-images.jianshu.io/upload_images/3478485-befca9c4894b99eb.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+<blockquote>
+<p>我就是用来玩一下，说好得，只是玩一下。</p>
+</blockquote>
+<span id="more"></span>
+
+<p>总是想干点事情，不想这么地浪费时间，学习一下html5语法，还是挺好的。我记得以前别人过节的时候，就会发一个网页过来，你打开就是节日祝福，还有音乐和动画，然后就觉得学计算机的人特别牛逼，现在看来，真得没有那么难，稍微学习一下，你就可以实现这样的效果，并没有想象中那么难。当然如果要深入下去，作为你吃饭的技能，那就不是一个层次，我就用来玩一下，增添一些生活的乐趣。</p>
+<p>有了以下这些基本的内容，你就可以写出一个自己的最简单的网页来了。</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span> <span class="comment">&lt;!--这是用来指定声明这篇文档是HTML5，帮助浏览器正确的显示网页--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span><span class="comment">&lt;!--这是网页根标签，每个网页都有，必不可少--&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span><span class="comment">&lt;!--head里面包含的是元信息，不会显示出来--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">title</span>&gt;</span>生活的质感<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">    </span><br><span class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span><span class="comment">&lt;!--body是网页不可少部分，是用来放可视的网页内容，是会展现出来的--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">h1</span>&gt;</span><span class="comment">&lt;!--h1是用来表示一级标题--&gt;</span></span><br><span class="line">            中秋节快乐</span><br><span class="line">        <span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="comment">&lt;!--p就是段落的意思，用来盛放正文的内容--&gt;</span></span><br><span class="line">            今天是中秋节，也没有回家过节，在宿舍里折腾了很久。</span><br><span class="line">        <span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>HTML5的标签是用&lt;&gt;括起来的。比如<code>&lt;p&gt;...&lt;/p&gt;</code>这样的段落标签。不带斜杠的是起始标签，带斜杆的是结束标签。</p>
+]]></content>
+      <categories>
+        <category>HTML5入门</category>
+      </categories>
+      <tags>
+        <tag>HTML5</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>HTML5（2）——编辑器</title>
     <url>//2018/09/30/HTML5%EF%BC%882%EF%BC%89%E2%80%94%E2%80%94%E7%BC%96%E8%BE%91%E5%99%A8/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -405,32 +405,6 @@
       </categories>
       <tags>
         <tag>HTML5</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>HTML5（4）——元素</title>
-    <url>//2018/10/02/HTML5%EF%BC%884%EF%BC%89%E2%80%94%E2%80%94%E5%85%83%E7%B4%A0/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![巨石阵，有朝一日能够去世界各地游玩](https://upload-images.jianshu.io/upload_images/3478485-d53a5e7f7a0f8675.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-<blockquote>
-<p>国庆第二天，毕业师姐过来那毕业证书，需要聚一波。今天继续学习HTML相关知识。上次学了最基本的知识，关于一些常见的HTML标签。今天是要讲HTML元素，标签包含的内容。</p>
-</blockquote>
-<span id="more"></span>
-
-<h2 id="网页元素"><a href="#网页元素" class="headerlink" title="网页元素"></a><font color="green">网页元素</font></h2><p>HTML网页元素，通常是由起始标签和结束标签以及在两者之间插入的内容。<code>&lt;tagname&gt;内容&lt;/tagname&gt;</code><br>所有的网页元素，都是从开始标签到结束标签。<code>&lt;p&gt;my director&lt;/p&gt;</code><br>可以分为有内容和无内容。而空内容的元素是没有结束标签的，只有起始标签。如<code>&lt;br&gt;</code></p>
-<h2 id="巢式网页元素"><a href="#巢式网页元素" class="headerlink" title="巢式网页元素"></a><font color="green">巢式网页元素</font></h2><p>所谓巢式（nested），就是说可以在网页元素之中，插入其他的元素，元素嵌套元素。一个网页文件，必定是由巢式元素，下面的例子中，包含了4个网页元素。</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>My First Heading<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>My first paragraph.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="空网页元素"><a href="#空网页元素" class="headerlink" title="空网页元素"></a><font color="green">空网页元素</font></h2><p>没有内容的网页元素就是空元素，<code>&lt;br&gt;</code>定义的是换行符，没有结束元素。当然，HTML也是可以关闭空元素的，形式就是在开始标签后面加斜杠<code>&lt;br /&gt;</code>。当然，也可以不关闭，但是如果是严格的来说，关闭空元素是肯定没有问题的，而且如果想被XML解析器解析，那么就必须关上空元素。</p>
-<h2 id="标签小写字母"><a href="#标签小写字母" class="headerlink" title="标签小写字母"></a><font color="green">标签小写字母</font></h2><p>HTML是字母识别的，大写小写字母是存在差别的，标签一定要使用小写字母来写。虽然HTML5中，没有要求小写字母标签，但是最好就是小写，跟严格的XHTML是必须要小写才能编译。</p>
-]]></content>
-      <categories>
-        <category>HTML5入门</category>
-      </categories>
-      <tags>
-        <tag>HTML5</tag>
-        <tag>元素</tag>
       </tags>
   </entry>
   <entry>
@@ -472,6 +446,32 @@
       <tags>
         <tag>HTML5</tag>
         <tag>标签</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>HTML5（4）——元素</title>
+    <url>//2018/10/02/HTML5%EF%BC%884%EF%BC%89%E2%80%94%E2%80%94%E5%85%83%E7%B4%A0/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![巨石阵，有朝一日能够去世界各地游玩](https://upload-images.jianshu.io/upload_images/3478485-d53a5e7f7a0f8675.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+<blockquote>
+<p>国庆第二天，毕业师姐过来那毕业证书，需要聚一波。今天继续学习HTML相关知识。上次学了最基本的知识，关于一些常见的HTML标签。今天是要讲HTML元素，标签包含的内容。</p>
+</blockquote>
+<span id="more"></span>
+
+<h2 id="网页元素"><a href="#网页元素" class="headerlink" title="网页元素"></a><font color="green">网页元素</font></h2><p>HTML网页元素，通常是由起始标签和结束标签以及在两者之间插入的内容。<code>&lt;tagname&gt;内容&lt;/tagname&gt;</code><br>所有的网页元素，都是从开始标签到结束标签。<code>&lt;p&gt;my director&lt;/p&gt;</code><br>可以分为有内容和无内容。而空内容的元素是没有结束标签的，只有起始标签。如<code>&lt;br&gt;</code></p>
+<h2 id="巢式网页元素"><a href="#巢式网页元素" class="headerlink" title="巢式网页元素"></a><font color="green">巢式网页元素</font></h2><p>所谓巢式（nested），就是说可以在网页元素之中，插入其他的元素，元素嵌套元素。一个网页文件，必定是由巢式元素，下面的例子中，包含了4个网页元素。</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>My First Heading<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>My first paragraph.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="空网页元素"><a href="#空网页元素" class="headerlink" title="空网页元素"></a><font color="green">空网页元素</font></h2><p>没有内容的网页元素就是空元素，<code>&lt;br&gt;</code>定义的是换行符，没有结束元素。当然，HTML也是可以关闭空元素的，形式就是在开始标签后面加斜杠<code>&lt;br /&gt;</code>。当然，也可以不关闭，但是如果是严格的来说，关闭空元素是肯定没有问题的，而且如果想被XML解析器解析，那么就必须关上空元素。</p>
+<h2 id="标签小写字母"><a href="#标签小写字母" class="headerlink" title="标签小写字母"></a><font color="green">标签小写字母</font></h2><p>HTML是字母识别的，大写小写字母是存在差别的，标签一定要使用小写字母来写。虽然HTML5中，没有要求小写字母标签，但是最好就是小写，跟严格的XHTML是必须要小写才能编译。</p>
+]]></content>
+      <categories>
+        <category>HTML5入门</category>
+      </categories>
+      <tags>
+        <tag>HTML5</tag>
+        <tag>元素</tag>
       </tags>
   </entry>
   <entry>
@@ -546,6 +546,39 @@
       <tags>
         <tag>HTML5</tag>
         <tag>标题</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>HTML5（7）——段落</title>
+    <url>//2018/10/06/HTML5%EF%BC%887%EF%BC%89%E2%80%94%E2%80%94%E6%AE%B5%E8%90%BD/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![想法很多，已没有经历实现](https://upload-images.jianshu.io/upload_images/3478485-f715b416af9c6294.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+> 现在不得不感叹，很多事情有想法，却找不到人一起去实现。继续学习HTML5，来讲一讲段落。
+
+
+
+<span id="more"></span>
+
+<h2 id="HTML段落"><a href="#HTML段落" class="headerlink" title="HTML段落"></a><font color="green">HTML段落</font></h2><p><code>&lt;p&gt;</code>元素是用来定义段落的，并且是由结束标签的。而且网页在解析时，会自动在段落前和段落后添加一些空格区域。</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line">&lt;<span class="selector-tag">p</span>&gt;This is <span class="selector-tag">a</span> paragraph.&lt;/<span class="selector-tag">p</span>&gt;</span><br><span class="line">&lt;<span class="selector-tag">p</span>&gt;This is another paragraph.&lt;/<span class="selector-tag">p</span>&gt;</span><br></pre></td></tr></table></figure>
+
+<h2 id="HTML段落显示"><a href="#HTML段落显示" class="headerlink" title="HTML段落显示"></a><font color="green">HTML段落显示</font></h2><p>你是没有办法去控制网页到底会怎么样显示，小的屏幕，大的屏幕等情况都会变得不一样。而且你也不能添加空格和换行来改变段落显示，网页会自动移除这些空格和空行，比如：</p>
+<figure class="highlight livecodeserver"><table><tr><td class="code"><pre><span class="line">&lt;p&gt;</span><br><span class="line">This <span class="keyword">paragraph</span></span><br><span class="line"><span class="keyword">contains</span> <span class="keyword">a</span> lot <span class="keyword">of</span> <span class="keyword">lines</span></span><br><span class="line"><span class="keyword">in</span> <span class="keyword">the</span> source code,</span><br><span class="line">but <span class="keyword">the</span> browser </span><br><span class="line">ignores <span class="keyword">it</span>.</span><br><span class="line">&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;p&gt;</span><br><span class="line">This <span class="keyword">paragraph</span></span><br><span class="line"><span class="keyword">contains</span>      <span class="keyword">a</span> lot <span class="keyword">of</span> spaces</span><br><span class="line"><span class="keyword">in</span> <span class="keyword">the</span> source     code,</span><br><span class="line">but <span class="keyword">the</span>    browser </span><br><span class="line">ignores <span class="keyword">it</span>.</span><br><span class="line">&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;p&gt;</span><br><span class="line">The <span class="built_in">number</span> <span class="keyword">of</span> <span class="keyword">lines</span> <span class="keyword">in</span> <span class="keyword">a</span> <span class="keyword">paragraph</span> depends <span class="keyword">on</span> <span class="title">the</span> <span class="title">size</span> <span class="title">of</span> <span class="title">the</span> <span class="title">browser</span> <span class="title">window</span>. <span class="title">If</span> <span class="title">you</span> <span class="title">resize</span> <span class="title">the</span> <span class="title">browser</span> <span class="title">window</span>, <span class="title">the</span> <span class="title">number</span> <span class="title">of</span> <span class="title">lines</span> <span class="title">in</span> <span class="title">this</span> <span class="title">paragraph</span> <span class="title">will</span> <span class="title">change</span>.</span><br><span class="line">&lt;/p&gt;</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-add480d3916a9ffc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="显示结果"></p>
+<h2 id="HTML换行"><a href="#HTML换行" class="headerlink" title="HTML换行"></a><font color="green">HTML换行</font></h2><p>HTML中换行，你需要<code>&lt;br&gt;</code>元素来进行实现。你可以在你想换行的地方添加<code>&lt;br&gt;</code>元素来进行换行。<br><code>&lt;p&gt;This is&lt;br&gt;a paragraph&lt;br&gt;with line breaks.&lt;/p&gt;</code></p>
+<h2 id="诗的显示问题"><a href="#诗的显示问题" class="headerlink" title="诗的显示问题"></a><font color="green">诗的显示问题</font></h2><figure class="highlight applescript"><table><tr><td class="code"><pre><span class="line">&lt;p&gt;In HTML, spaces <span class="keyword">and</span> new lines are ignored:&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;p&gt;</span><br><span class="line"></span><br><span class="line">  My Bonnie lies <span class="keyword">over</span> <span class="keyword">the</span> ocean.</span><br><span class="line"></span><br><span class="line">  My Bonnie lies <span class="keyword">over</span> <span class="keyword">the</span> sea.</span><br><span class="line"></span><br><span class="line">  My Bonnie lies <span class="keyword">over</span> <span class="keyword">the</span> ocean.</span><br><span class="line">  </span><br><span class="line">  Oh, bring <span class="keyword">back</span> <span class="keyword">my</span> Bonnie <span class="keyword">to</span> <span class="keyword">me</span>.</span><br><span class="line"></span><br><span class="line">&lt;/p&gt;</span><br></pre></td></tr></table></figure>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-dc60e763c5feda78.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="单行显示了"></p>
+<p>如果想要正常的显示诗，且能够保存空格，那么我们需要用到<code>&lt;pre&gt;</code>元素，它是用来预格式化文本的，能够保存文本原本的空格和换行且能够使字体宽度固定。</p>
+<figure class="highlight vim"><table><tr><td class="code"><pre><span class="line"><span class="symbol">&lt;p&gt;</span>The <span class="keyword">pre</span> <span class="keyword">tag</span> preserves both spaces <span class="built_in">and</span> <span class="built_in">line</span> <span class="keyword">break</span><span class="variable">s:</span>&lt;/<span class="keyword">p</span>&gt;</span><br><span class="line"></span><br><span class="line"><span class="symbol">&lt;pre&gt;</span></span><br><span class="line">   My Bonnie lies over the ocean.</span><br><span class="line"></span><br><span class="line">   My Bonnie lies over the sea.</span><br><span class="line"></span><br><span class="line">   My Bonnie lies over the ocean.</span><br><span class="line">   </span><br><span class="line">   Oh, bring back my Bonnie <span class="keyword">to</span> <span class="keyword">me</span>.</span><br><span class="line">&lt;/<span class="keyword">pre</span>&gt;</span><br></pre></td></tr></table></figure>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-88bb011547100448.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="正常显示诗"></p>
+]]></content>
+      <categories>
+        <category>HTML5入门</category>
+      </categories>
+      <tags>
+        <tag>HTML5</tag>
+        <tag>段落</tag>
       </tags>
   </entry>
   <entry>
@@ -625,59 +658,6 @@
       </categories>
       <tags>
         <tag>HTML5</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>HTML5（7）——段落</title>
-    <url>//2018/10/06/HTML5%EF%BC%887%EF%BC%89%E2%80%94%E2%80%94%E6%AE%B5%E8%90%BD/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![想法很多，已没有经历实现](https://upload-images.jianshu.io/upload_images/3478485-f715b416af9c6294.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-> 现在不得不感叹，很多事情有想法，却找不到人一起去实现。继续学习HTML5，来讲一讲段落。
-
-
-
-<span id="more"></span>
-
-<h2 id="HTML段落"><a href="#HTML段落" class="headerlink" title="HTML段落"></a><font color="green">HTML段落</font></h2><p><code>&lt;p&gt;</code>元素是用来定义段落的，并且是由结束标签的。而且网页在解析时，会自动在段落前和段落后添加一些空格区域。</p>
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line">&lt;<span class="selector-tag">p</span>&gt;This is <span class="selector-tag">a</span> paragraph.&lt;/<span class="selector-tag">p</span>&gt;</span><br><span class="line">&lt;<span class="selector-tag">p</span>&gt;This is another paragraph.&lt;/<span class="selector-tag">p</span>&gt;</span><br></pre></td></tr></table></figure>
-
-<h2 id="HTML段落显示"><a href="#HTML段落显示" class="headerlink" title="HTML段落显示"></a><font color="green">HTML段落显示</font></h2><p>你是没有办法去控制网页到底会怎么样显示，小的屏幕，大的屏幕等情况都会变得不一样。而且你也不能添加空格和换行来改变段落显示，网页会自动移除这些空格和空行，比如：</p>
-<figure class="highlight livecodeserver"><table><tr><td class="code"><pre><span class="line">&lt;p&gt;</span><br><span class="line">This <span class="keyword">paragraph</span></span><br><span class="line"><span class="keyword">contains</span> <span class="keyword">a</span> lot <span class="keyword">of</span> <span class="keyword">lines</span></span><br><span class="line"><span class="keyword">in</span> <span class="keyword">the</span> source code,</span><br><span class="line">but <span class="keyword">the</span> browser </span><br><span class="line">ignores <span class="keyword">it</span>.</span><br><span class="line">&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;p&gt;</span><br><span class="line">This <span class="keyword">paragraph</span></span><br><span class="line"><span class="keyword">contains</span>      <span class="keyword">a</span> lot <span class="keyword">of</span> spaces</span><br><span class="line"><span class="keyword">in</span> <span class="keyword">the</span> source     code,</span><br><span class="line">but <span class="keyword">the</span>    browser </span><br><span class="line">ignores <span class="keyword">it</span>.</span><br><span class="line">&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;p&gt;</span><br><span class="line">The <span class="built_in">number</span> <span class="keyword">of</span> <span class="keyword">lines</span> <span class="keyword">in</span> <span class="keyword">a</span> <span class="keyword">paragraph</span> depends <span class="keyword">on</span> <span class="title">the</span> <span class="title">size</span> <span class="title">of</span> <span class="title">the</span> <span class="title">browser</span> <span class="title">window</span>. <span class="title">If</span> <span class="title">you</span> <span class="title">resize</span> <span class="title">the</span> <span class="title">browser</span> <span class="title">window</span>, <span class="title">the</span> <span class="title">number</span> <span class="title">of</span> <span class="title">lines</span> <span class="title">in</span> <span class="title">this</span> <span class="title">paragraph</span> <span class="title">will</span> <span class="title">change</span>.</span><br><span class="line">&lt;/p&gt;</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-add480d3916a9ffc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="显示结果"></p>
-<h2 id="HTML换行"><a href="#HTML换行" class="headerlink" title="HTML换行"></a><font color="green">HTML换行</font></h2><p>HTML中换行，你需要<code>&lt;br&gt;</code>元素来进行实现。你可以在你想换行的地方添加<code>&lt;br&gt;</code>元素来进行换行。<br><code>&lt;p&gt;This is&lt;br&gt;a paragraph&lt;br&gt;with line breaks.&lt;/p&gt;</code></p>
-<h2 id="诗的显示问题"><a href="#诗的显示问题" class="headerlink" title="诗的显示问题"></a><font color="green">诗的显示问题</font></h2><figure class="highlight applescript"><table><tr><td class="code"><pre><span class="line">&lt;p&gt;In HTML, spaces <span class="keyword">and</span> new lines are ignored:&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;p&gt;</span><br><span class="line"></span><br><span class="line">  My Bonnie lies <span class="keyword">over</span> <span class="keyword">the</span> ocean.</span><br><span class="line"></span><br><span class="line">  My Bonnie lies <span class="keyword">over</span> <span class="keyword">the</span> sea.</span><br><span class="line"></span><br><span class="line">  My Bonnie lies <span class="keyword">over</span> <span class="keyword">the</span> ocean.</span><br><span class="line">  </span><br><span class="line">  Oh, bring <span class="keyword">back</span> <span class="keyword">my</span> Bonnie <span class="keyword">to</span> <span class="keyword">me</span>.</span><br><span class="line"></span><br><span class="line">&lt;/p&gt;</span><br></pre></td></tr></table></figure>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-dc60e763c5feda78.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="单行显示了"></p>
-<p>如果想要正常的显示诗，且能够保存空格，那么我们需要用到<code>&lt;pre&gt;</code>元素，它是用来预格式化文本的，能够保存文本原本的空格和换行且能够使字体宽度固定。</p>
-<figure class="highlight vim"><table><tr><td class="code"><pre><span class="line"><span class="symbol">&lt;p&gt;</span>The <span class="keyword">pre</span> <span class="keyword">tag</span> preserves both spaces <span class="built_in">and</span> <span class="built_in">line</span> <span class="keyword">break</span><span class="variable">s:</span>&lt;/<span class="keyword">p</span>&gt;</span><br><span class="line"></span><br><span class="line"><span class="symbol">&lt;pre&gt;</span></span><br><span class="line">   My Bonnie lies over the ocean.</span><br><span class="line"></span><br><span class="line">   My Bonnie lies over the sea.</span><br><span class="line"></span><br><span class="line">   My Bonnie lies over the ocean.</span><br><span class="line">   </span><br><span class="line">   Oh, bring back my Bonnie <span class="keyword">to</span> <span class="keyword">me</span>.</span><br><span class="line">&lt;/<span class="keyword">pre</span>&gt;</span><br></pre></td></tr></table></figure>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-88bb011547100448.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="正常显示诗"></p>
-]]></content>
-      <categories>
-        <category>HTML5入门</category>
-      </categories>
-      <tags>
-        <tag>HTML5</tag>
-        <tag>段落</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>LaTeX中文章节定义</title>
-    <url>//2020/03/10/LaTeX%E4%B8%AD%E6%96%87%E7%AB%A0%E8%8A%82%E5%AE%9A%E4%B9%89/</url>
-    <content><![CDATA[<h3 id="1-需要使用的宏包——ctex"><a href="#1-需要使用的宏包——ctex" class="headerlink" title="1. 需要使用的宏包——ctex"></a>1. 需要使用的宏包——ctex</h3><p>官方网址：<a href="http://www.ctex.org/PackageCTeX">CTEX:PackageCTEX</a>，目前这个宏包已经转移到<a href="https://github.com/CTeX-org/ctex-kit">GitHub</a>，仍旧在继续开发增加新功能。具体详细的可以下载pdf文档。</p>
-<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/Image/20200310163651.png"></p>
-<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/Image/20200310163739.png"></p>
-<h3 id="2-自定义设置中文文档的章节"><a href="#2-自定义设置中文文档的章节" class="headerlink" title="2. 自定义设置中文文档的章节"></a>2. 自定义设置中文文档的章节</h3><h4 id="2-1-代码如下："><a href="#2-1-代码如下：" class="headerlink" title="2.1 代码如下："></a>2.1 代码如下：</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">%格式设置</span><br><span class="line">\documentclass[a4paper, 12pt]&#123;book&#125; %文档类型，我们选择book</span><br><span class="line">\usepackage[heading=true]&#123;ctex&#125; %载入ctex宏包</span><br><span class="line">%具体章节格式定义，这是关键的设置</span><br><span class="line">\ctexset&#123;chapter=&#123;name=&#123;第,章&#125;&#125;,section=&#123;name=&#123;第,节&#125;,format=&#123;\raggedright\Large&#125;&#125;&#125;</span><br><span class="line">%正文中格式</span><br><span class="line">\begin&#123;document&#125;</span><br><span class="line">\chapter&#123;菌株系统&#125;</span><br><span class="line">\input&#123;chapter_1/mircobes&#125;	</span><br><span class="line">	\section&#123;大肠杆菌&#125;</span><br><span class="line">\end&#123;document&#125;</span><br></pre></td></tr></table></figure>
-
-<h4 id="2-2-内容说明"><a href="#2-2-内容说明" class="headerlink" title="2.2 内容说明"></a>2.2 内容说明</h4><p>我们在载入<code>ctex</code>包，里面有一个<code>heading=true</code>参数，这个是必须要有的，否则格式依旧是不对，是默认的样式。</p>
-<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/Image/20200310173247.png" alt="这是缺少heading的呈现结果"></p>
-<p>此外，最关键的章节定义就是通过<code>\ctexset</code>来进行设置，我这里是最简单的设置，具体更细节的设置我没有进一步去尝试。下面是根据我的代码呈现的结果：</p>
-<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/Image/20200310174223.png"></p>
-<p>这样的结果，就比较符合我的期望需求，基本设置成功。</p>]]></content>
-      <categories>
-        <category>LaTeX入门</category>
-      </categories>
-      <tags>
-        <tag>LaTeX</tag>
       </tags>
   </entry>
   <entry>
@@ -769,6 +749,26 @@
       <tags>
         <tag>LaTeX</tag>
         <tag>编码语法</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>LaTeX中文章节定义</title>
+    <url>//2020/03/10/LaTeX%E4%B8%AD%E6%96%87%E7%AB%A0%E8%8A%82%E5%AE%9A%E4%B9%89/</url>
+    <content><![CDATA[<h3 id="1-需要使用的宏包——ctex"><a href="#1-需要使用的宏包——ctex" class="headerlink" title="1. 需要使用的宏包——ctex"></a>1. 需要使用的宏包——ctex</h3><p>官方网址：<a href="http://www.ctex.org/PackageCTeX">CTEX:PackageCTEX</a>，目前这个宏包已经转移到<a href="https://github.com/CTeX-org/ctex-kit">GitHub</a>，仍旧在继续开发增加新功能。具体详细的可以下载pdf文档。</p>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/Image/20200310163651.png"></p>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/Image/20200310163739.png"></p>
+<h3 id="2-自定义设置中文文档的章节"><a href="#2-自定义设置中文文档的章节" class="headerlink" title="2. 自定义设置中文文档的章节"></a>2. 自定义设置中文文档的章节</h3><h4 id="2-1-代码如下："><a href="#2-1-代码如下：" class="headerlink" title="2.1 代码如下："></a>2.1 代码如下：</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">%格式设置</span><br><span class="line">\documentclass[a4paper, 12pt]&#123;book&#125; %文档类型，我们选择book</span><br><span class="line">\usepackage[heading=true]&#123;ctex&#125; %载入ctex宏包</span><br><span class="line">%具体章节格式定义，这是关键的设置</span><br><span class="line">\ctexset&#123;chapter=&#123;name=&#123;第,章&#125;&#125;,section=&#123;name=&#123;第,节&#125;,format=&#123;\raggedright\Large&#125;&#125;&#125;</span><br><span class="line">%正文中格式</span><br><span class="line">\begin&#123;document&#125;</span><br><span class="line">\chapter&#123;菌株系统&#125;</span><br><span class="line">\input&#123;chapter_1/mircobes&#125;	</span><br><span class="line">	\section&#123;大肠杆菌&#125;</span><br><span class="line">\end&#123;document&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="2-2-内容说明"><a href="#2-2-内容说明" class="headerlink" title="2.2 内容说明"></a>2.2 内容说明</h4><p>我们在载入<code>ctex</code>包，里面有一个<code>heading=true</code>参数，这个是必须要有的，否则格式依旧是不对，是默认的样式。</p>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/Image/20200310173247.png" alt="这是缺少heading的呈现结果"></p>
+<p>此外，最关键的章节定义就是通过<code>\ctexset</code>来进行设置，我这里是最简单的设置，具体更细节的设置我没有进一步去尝试。下面是根据我的代码呈现的结果：</p>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/Image/20200310174223.png"></p>
+<p>这样的结果，就比较符合我的期望需求，基本设置成功。</p>]]></content>
+      <categories>
+        <category>LaTeX入门</category>
+      </categories>
+      <tags>
+        <tag>LaTeX</tag>
       </tags>
   </entry>
   <entry>
@@ -962,43 +962,6 @@
       </tags>
   </entry>
   <entry>
-    <title>使用氮气瓶</title>
-    <url>//2022/01/07/%E4%BD%BF%E7%94%A8%E6%B0%AE%E6%B0%94%E7%93%B6/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-
-<span id="more"></span>
-
-<h2 id="1-基本构造"><a href="#1-基本构造" class="headerlink" title="1. 基本构造"></a>1. 基本构造</h2><p>关闭状态下，减压阀的仪表读数均为0，<strong>钢瓶顶部阀门</strong>是拧紧转态（<strong>顺时针拧紧关闭，逆时针打开</strong>），<strong>减压阀黑色阀门</strong>是松开状态（<strong>顺时针方向拧紧，表示打开；逆时针松开阀门，表示关闭</strong>），⚠️注意: 两个阀门开关方向是相反的，一定要注意！！！</p>
-<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-01-06-%E5%9B%BE%E7%89%87%E6%9D%A5%E8%87%AA%20%E6%B0%AE%E6%B0%94%E7%BD%90%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95%EF%BC%8C%E7%AC%AC%201%20%E9%A1%B5.png" alt="2022-01-06-图片来自氮气罐使用方法，第1页"></p>
-<h2 id="2-如何打开？"><a href="#2-如何打开？" class="headerlink" title="2. 如何打开？"></a>2. 如何打开？</h2><ul>
-<li>首先，逆时针方向拧开钢瓶顶部阀门，此时钢瓶气压表就会产生气压读数。</li>
-</ul>
-<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-01-06-%E5%9B%BE%E7%89%87%E6%9D%A5%E8%87%AA%20%E6%B0%AE%E6%B0%94%E7%BD%90%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95%EF%BC%8C%E7%AC%AC%202%20%E9%A1%B5.png" alt="2022-01-06-图片来自氮气罐使用方法，第2页"></p>
-<ul>
-<li>然后，顺时针逐渐拧紧黑色大阀门，直到有一定阻力，同时检测氮吹仪是否有气体产生，直到手能感受到氮吹仪出来的气体（⚠️注意：尽管有气体产生，但因管道气压过低，气压表读数基本看不到变化）。</li>
-</ul>
-<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-01-06-%E5%9B%BE%E7%89%87%E6%9D%A5%E8%87%AA%20%E6%B0%AE%E6%B0%94%E7%BD%90%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95%EF%BC%8C%E7%AC%AC%202%20.png" alt="2022-01-06-图片来自氮气罐使用方法，第2"></p>
-<h2 id="3-如何关闭装置"><a href="#3-如何关闭装置" class="headerlink" title="3. 如何关闭装置"></a>3. 如何关闭装置</h2><ul>
-<li>首先，顺时针拧紧钢瓶顶部的阀门，此时钢瓶气压表因气体残余，还会有读数。</li>
-</ul>
-<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-01-06-%E5%9B%BE%E7%89%87%E6%9D%A5%E8%87%AA%20%E6%B0%AE%E6%B0%94%E7%BD%90%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95%EF%BC%8C%E7%AC%AC%203%20%E9%A1%B5.png" alt="2022-01-06-图片来自氮气罐使用方法，第3页"></p>
-<ul>
-<li>其次，逐渐顺时针拧紧减压阀黑色大阀门，开放管道释放剩余气体，会听到一声气体释放的声音，此时，钢瓶气压表读数为零。</li>
-</ul>
-<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-01-06-%E5%9B%BE%E7%89%87%E6%9D%A5%E8%87%AA%20%E6%B0%AE%E6%B0%94%E7%BD%90%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95%EF%BC%8C%E7%AC%AC%20.png" alt="2022-01-06-图片来自氮气罐使用方法，第"></p>
-<ul>
-<li>最后，逆时针松开减压阀黑色大阀门，使其处于松开状态（<strong>关闭状态</strong>），至此所有阀门关闭。</li>
-</ul>
-<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-01-06-%E5%9B%BE%E7%89%87%E6%9D%A5%E8%87%AA%20%E6%B0%AE%E6%B0%94%E7%BD%90%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95%EF%BC%8C%E7%AC%AC%204%20%E9%A1%B5.png" alt="2022-01-06-图片来自氮气罐使用方法，第4页"></p>
-]]></content>
-      <categories>
-        <category>科研之路</category>
-      </categories>
-      <tags>
-        <tag>实验</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>印度，漂浮的次大陆</title>
     <url>//2018/09/06/%E5%8D%B0%E5%BA%A6%EF%BC%8C%E6%BC%82%E6%B5%AE%E7%9A%84%E6%AC%A1%E5%A4%A7%E9%99%86/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -1044,6 +1007,43 @@
       <tags>
         <tag>印度</tag>
         <tag>郭建龙</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>使用氮气瓶</title>
+    <url>//2022/01/07/%E4%BD%BF%E7%94%A8%E6%B0%AE%E6%B0%94%E7%93%B6/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+
+<span id="more"></span>
+
+<h2 id="1-基本构造"><a href="#1-基本构造" class="headerlink" title="1. 基本构造"></a>1. 基本构造</h2><p>关闭状态下，减压阀的仪表读数均为0，<strong>钢瓶顶部阀门</strong>是拧紧转态（<strong>顺时针拧紧关闭，逆时针打开</strong>），<strong>减压阀黑色阀门</strong>是松开状态（<strong>顺时针方向拧紧，表示打开；逆时针松开阀门，表示关闭</strong>），⚠️注意: 两个阀门开关方向是相反的，一定要注意！！！</p>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-01-06-%E5%9B%BE%E7%89%87%E6%9D%A5%E8%87%AA%20%E6%B0%AE%E6%B0%94%E7%BD%90%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95%EF%BC%8C%E7%AC%AC%201%20%E9%A1%B5.png" alt="2022-01-06-图片来自氮气罐使用方法，第1页"></p>
+<h2 id="2-如何打开？"><a href="#2-如何打开？" class="headerlink" title="2. 如何打开？"></a>2. 如何打开？</h2><ul>
+<li>首先，逆时针方向拧开钢瓶顶部阀门，此时钢瓶气压表就会产生气压读数。</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-01-06-%E5%9B%BE%E7%89%87%E6%9D%A5%E8%87%AA%20%E6%B0%AE%E6%B0%94%E7%BD%90%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95%EF%BC%8C%E7%AC%AC%202%20%E9%A1%B5.png" alt="2022-01-06-图片来自氮气罐使用方法，第2页"></p>
+<ul>
+<li>然后，顺时针逐渐拧紧黑色大阀门，直到有一定阻力，同时检测氮吹仪是否有气体产生，直到手能感受到氮吹仪出来的气体（⚠️注意：尽管有气体产生，但因管道气压过低，气压表读数基本看不到变化）。</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-01-06-%E5%9B%BE%E7%89%87%E6%9D%A5%E8%87%AA%20%E6%B0%AE%E6%B0%94%E7%BD%90%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95%EF%BC%8C%E7%AC%AC%202%20.png" alt="2022-01-06-图片来自氮气罐使用方法，第2"></p>
+<h2 id="3-如何关闭装置"><a href="#3-如何关闭装置" class="headerlink" title="3. 如何关闭装置"></a>3. 如何关闭装置</h2><ul>
+<li>首先，顺时针拧紧钢瓶顶部的阀门，此时钢瓶气压表因气体残余，还会有读数。</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-01-06-%E5%9B%BE%E7%89%87%E6%9D%A5%E8%87%AA%20%E6%B0%AE%E6%B0%94%E7%BD%90%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95%EF%BC%8C%E7%AC%AC%203%20%E9%A1%B5.png" alt="2022-01-06-图片来自氮气罐使用方法，第3页"></p>
+<ul>
+<li>其次，逐渐顺时针拧紧减压阀黑色大阀门，开放管道释放剩余气体，会听到一声气体释放的声音，此时，钢瓶气压表读数为零。</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-01-06-%E5%9B%BE%E7%89%87%E6%9D%A5%E8%87%AA%20%E6%B0%AE%E6%B0%94%E7%BD%90%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95%EF%BC%8C%E7%AC%AC%20.png" alt="2022-01-06-图片来自氮气罐使用方法，第"></p>
+<ul>
+<li>最后，逆时针松开减压阀黑色大阀门，使其处于松开状态（<strong>关闭状态</strong>），至此所有阀门关闭。</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-01-06-%E5%9B%BE%E7%89%87%E6%9D%A5%E8%87%AA%20%E6%B0%AE%E6%B0%94%E7%BD%90%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95%EF%BC%8C%E7%AC%AC%204%20%E9%A1%B5.png" alt="2022-01-06-图片来自氮气罐使用方法，第4页"></p>
+]]></content>
+      <categories>
+        <category>科研之路</category>
+      </categories>
+      <tags>
+        <tag>实验</tag>
       </tags>
   </entry>
   <entry>
@@ -1240,31 +1240,6 @@ characterization of aluminum resistance in Populus"><br>这里我先用比较麻
       </categories>
       <tags>
         <tag>技能</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>徒手攀岩</title>
-    <url>//2019/09/06/%E5%BE%92%E6%89%8B%E6%94%80%E5%B2%A9/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-07b4b1add5c215b1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
-<blockquote>
-<p>真的让人窒息，巨兽裂缝，始终受到局部挤压，痛苦。</p>
-</blockquote>
-<span id="more"></span>
-
-<p>今天我其实一直在犹豫要去看哪一部电影——《徒手攀岩》和《宝莱坞机器人2.0》，原因是我之前已经在网上看过一点徒手攀岩，对于纪录片我基本没有太大的热情去看，好像也没有什么耐心看。宝莱坞机器人看了预告，就觉得有点没啥意思，就是有点无脑砸特效的电影，有点打破了我对印度电影的印象。最终，还是选择了前者，而且为了视觉效果，还选择了IMAX。</p>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-27cf0e28cb3668ec.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
-<p>总的感觉就是刺激，从准备到练习，接着尝试，失败后再次尝试，最终成功无保护徒手攀岩成功。最后在自由的无人为干扰的条件下，完成了8年来Alex一直想要征服的Yosemite酋长岩。有好几个绝险的地方，根本没有办法看，连摄影师都没有办法注视着镜头，屏幕面前的我也是，几乎就不敢看屏幕了。还好我提醒自己，这是纪录片，基本是成功了，才敢勉强的注视着镜头。但是我的身体依旧没有控制住，我双手紧握拳头，手心冒着汗，应该是吓得出了汗，整个手都是湿的。这种情况下，你的身体是没有办法欺骗的，作出了遇见危险时该做出的反应。真的太刺激了，完全不输给那些科幻大片，难怪会获得奥斯卡最佳纪录片。</p>
-<p>对于像Alex这样的极度冒险者，真的无比敬佩。永远不会满足，一个一个的征服。即使看到很多圈子里优秀徒手攀岩者的跌落身亡，自己依然能够克服恐惧，敢于面对死亡。绝对不能出错，必须做到极致完美，才能够活着见到家人朋友。突然想想，这个世界真的太奇妙了，太多奇特的人和奇特的事。</p>
-<p>能够深度专注自己喜欢做的事，而这件事也能够养活自己，这对于每个人来说，都是非常渴望的事情。只有及其少数的人才能够找到这样的事情吧，或许是因为我们不够优秀，做得不够突出，做得不够极致，做得不够专注，因而我们才没有办法找到这样一件事。很多时候，我们只能取其一而不能两者兼得，这是大多数人的常态。我也没有能够找到这么一件事，至少现在没有，但我依旧希望能够在不久的未来找到这么一件值得我一辈子去付出，而且还感到开心的事。</p>
-<p>希望吧，总是不想那么普通。</p>
-]]></content>
-      <categories>
-        <category>影评领域</category>
-      </categories>
-      <tags>
-        <tag>电影</tag>
       </tags>
   </entry>
   <entry>
@@ -1478,45 +1453,28 @@ characterization of aluminum resistance in Populus"><br>这里我先用比较麻
       </tags>
   </entry>
   <entry>
-    <title>杂乱无章</title>
-    <url>//2018/08/28/%E6%9D%82%E4%B9%B1%E6%97%A0%E7%AB%A0/</url>
+    <title>徒手攀岩</title>
+    <url>//2019/09/06/%E5%BE%92%E6%89%8B%E6%94%80%E5%B2%A9/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![拿着相机，一个人旅行](https://upload-images.jianshu.io/upload_images/3478485-14565c6637c4fa19.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-<p>8月27日，星期一，公元2018年。</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-07b4b1add5c215b1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<blockquote>
+<p>真的让人窒息，巨兽裂缝，始终受到局部挤压，痛苦。</p>
+</blockquote>
 <span id="more"></span>
 
-<p>8月27日，星期一，公元2018年。</p>
-<p>干了一天，几乎没有坐下的时候。骑车离开生科院的时候，突然觉得自己就想是一个工人，白天工作，晚上运动健身和自学，想来也是非常的满足。然而，事情永远没有这么简单，真正工作以后，恐怕没有那么悠闲。</p>
-<p>最近已经能够比较好的控制一下自己，不再如此的散漫。在过去的6月份，真是觉得自个儿已经抛弃一部分超我，使得自我更多的释放。满满的都是娱乐活动，吃饭，看电影和旅游，比暑假更加潇洒。我知道，我一直以来就是这么一个人，对于别人，我总想让他们有一些仪式感，自己变得比别人更操心自己，但是前提是我想关心的人。这个是有点还是缺点，我并不能很好的定义对错，只是不该太过火。师姐的毕业典礼，我去拍照；校园风景，我去拍照；小伙伴的毕业旅行，我也一同参加。干了无数能够留下深刻印象的事。</p>
-<p>有目标，才有动力；有计划，才能有满足感；完成计划，才能有幸福感。大部分时候的状态，就是无目标和无计划，生活处在焦虑之中，特别地不安。这种状态的打破，就需要你自身的行动，想到的东西，要出尽快实行；要去解决你害怕去解决的问题；搞定心中的恐惧放空自己的内心，才能最终踏实满足。</p>
-<p>今年也算是旅行过了，南京之行，也非常的开心。但是，你要知道，很多时候内心就会有一种冲动，就想去看看更外面的世界。前两天看到了一条骑行路线，真的太诱人了，完全没法形容我内心的激动，即使不能够前去体验。看看，回想回想之前的经历，也能够让我开心一会儿，那也就够了。岁月慢慢流逝，一天天在变老，尽管思想还没有服气，但是身体很明显的不如从前了。</p>
-<p>我们没法改变，只能磨炼遇事不惊的心态。</p>
+<p>今天我其实一直在犹豫要去看哪一部电影——《徒手攀岩》和《宝莱坞机器人2.0》，原因是我之前已经在网上看过一点徒手攀岩，对于纪录片我基本没有太大的热情去看，好像也没有什么耐心看。宝莱坞机器人看了预告，就觉得有点没啥意思，就是有点无脑砸特效的电影，有点打破了我对印度电影的印象。最终，还是选择了前者，而且为了视觉效果，还选择了IMAX。</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-27cf0e28cb3668ec.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<p>总的感觉就是刺激，从准备到练习，接着尝试，失败后再次尝试，最终成功无保护徒手攀岩成功。最后在自由的无人为干扰的条件下，完成了8年来Alex一直想要征服的Yosemite酋长岩。有好几个绝险的地方，根本没有办法看，连摄影师都没有办法注视着镜头，屏幕面前的我也是，几乎就不敢看屏幕了。还好我提醒自己，这是纪录片，基本是成功了，才敢勉强的注视着镜头。但是我的身体依旧没有控制住，我双手紧握拳头，手心冒着汗，应该是吓得出了汗，整个手都是湿的。这种情况下，你的身体是没有办法欺骗的，作出了遇见危险时该做出的反应。真的太刺激了，完全不输给那些科幻大片，难怪会获得奥斯卡最佳纪录片。</p>
+<p>对于像Alex这样的极度冒险者，真的无比敬佩。永远不会满足，一个一个的征服。即使看到很多圈子里优秀徒手攀岩者的跌落身亡，自己依然能够克服恐惧，敢于面对死亡。绝对不能出错，必须做到极致完美，才能够活着见到家人朋友。突然想想，这个世界真的太奇妙了，太多奇特的人和奇特的事。</p>
+<p>能够深度专注自己喜欢做的事，而这件事也能够养活自己，这对于每个人来说，都是非常渴望的事情。只有及其少数的人才能够找到这样的事情吧，或许是因为我们不够优秀，做得不够突出，做得不够极致，做得不够专注，因而我们才没有办法找到这样一件事。很多时候，我们只能取其一而不能两者兼得，这是大多数人的常态。我也没有能够找到这么一件事，至少现在没有，但我依旧希望能够在不久的未来找到这么一件值得我一辈子去付出，而且还感到开心的事。</p>
+<p>希望吧，总是不想那么普通。</p>
 ]]></content>
       <categories>
-        <category>随记</category>
+        <category>影评领域</category>
       </categories>
       <tags>
-        <tag>旅行</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>植物Cas9靶点设计网站简介</title>
-    <url>//2019/02/05/%E6%A4%8D%E7%89%A9Cas9%E9%9D%B6%E7%82%B9%E8%AE%BE%E8%AE%A1%E7%BD%91%E7%AB%99%E7%AE%80%E4%BB%8B/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![cas9模型](https://upload-images.jianshu.io/upload_images/3478485-e845fed2bd99b07b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-<span id="more"></span>
-
-<p>我在前面的简文中已经基本阐述了Cas9的作用机制，详细内容可以看<a href="https://www.jianshu.com/p/1e7bff7d5830">CRISPR-Cas9系统简介</a>一文。今天，就来讲一讲怎么实际使用这个系统来帮助我们进行功能基因的研究。这个技术一问世，很多大牛就开始使用，植物学领域的应用，使得我们能够更方便的有目的的去编辑我们想要编辑的植物基因组。今天就推荐几个网站，寻找靶点序列的网站。前面我们也提到过，好的靶点的选择，可以减小脱靶率，大大提高我们编辑的效率。能够极大提高我们的实验效率，不然像我们植物学领域的苦逼博士，不得疯掉，一直一直脱靶的话，那么就真的非常的酸爽。</p>
-<h3 id="CRISPR-PLANT"><a href="#CRISPR-PLANT" class="headerlink" title="CRISPR-PLANT"></a><font color = "green">CRISPR-PLANT</font></h3><p>具体网址：<a href="https://www.genome.arizona.edu/crispr/index.html">https://www.genome.arizona.edu/crispr/index.html</a>。 看这个网址，应该是Arizona大学出品的。这是一个专门针对植物CRISPR靶点设计网站，比较专业，较为好用的网站。首页有一张模式图，而且还有对CRISPR-Cas9系统的基本介绍，大概可以了解。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-f2f550500f26be7a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="网站首页"><br>导航栏中有几个标签链接，如果你不知道怎么使用，那么你就可以点击instruction来学习，里面有比较详细的介绍。如果要开始找靶点，那就点击search。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-6181cec9ae7ec031.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="导航栏"><br>进入search主页，就可以看到查找的方式。这里它也建议你先看知道手册，然后在进行设计。查找的输入信息有两种，a.染色体位置信息；b.基因locus，通常情况下我们在查找的时候感觉locus用的比较多，一般你肯定是知道基因的信息去进行search。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-2e0980dc0152cf1e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="search主页"><br>这个网站可以找的物种包括拟南芥、二穗短柄草、大豆、蒺藜苜蓿、水稻、高粱、番茄和玉米；还是挺多的，一般都能符合需求。当然，如果你的物种实在是太过于小众，那么可惜，没法用这个网站进行。那么，下面这个网站就可以一定程度满足你。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-0b1d6da7b6ab97bd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="这里给的物种基因组"></p>
-<h3 id="CRISPRSCAN"><a href="#CRISPRSCAN" class="headerlink" title="CRISPRSCAN"></a><font color="green">CRISPRSCAN</font></h3><p>具体网址：<a href="http://www.crisprscan.org/?page=sequence">http://www.crisprscan.org/?page=sequence</a>。这个网站是都是动物的，没有植物物种的，但是为什么要推荐这个网站呢？因为我们最开始就是使用这个网站进行靶点筛选的，之后在拟南芥和番茄中进行了尝试敲除，结果都能够得到敲除的株系，也是能够使用这个来进行引物的设计。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-ef69894d221d6ddc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="网站首页"><br>这个网站里，有很多动物，果蝇、人类、小鼠和鸡等物种，没有植物的，但是你可以选择No search这个选项，然后将你的序列黏贴进去，之后会出来靶点，但是它的评估只有一个score，没有其他的了。这个网站，现在对我们植物的来说，还是基本不用了，有其他专门的植物的网站。下面这个网站就更好了，非常全面的植物的网站。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-a8e5bf4933bff970.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="这个网站有的一些物种"></p>
-<h3 id="CRISPR-P-2-0"><a href="#CRISPR-P-2-0" class="headerlink" title="CRISPR-P 2.0"></a><font color = "green">CRISPR-P 2.0</font></h3><p>具体网址：<a href="http://crispr.hzau.edu.cn/CRISPR2/">http://crispr.hzau.edu.cn/CRISPR2/</a>。这个网站是华中农业大学大学设计的，做的还是很不错的。用了之后，感觉比前面两个的内容更丰富，而且评估的更全面。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-43966e8205ae6ee8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="网站首页，也很漂亮"><br>点击网站右上角的start design，你就可以开始设计相应的引物。里面的信息更加细化。有pam类型选择，启动子选择，引导序列的长度，物种基因组选择，可以通过locus以及位置信息和序列进行靶基因的选定。它这个网站的物种数据是整合了NCBI数据库，所以基本包括了已经测序完全的植物基因组，解决了物种限制这个问题，普遍性强了。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-6b15fc0bac0d5e23.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="设计页面"><br>我用网站中的例子，来展示一下靶点搜索结果。它可以根据开始的碱基A/G来筛选靶点，也可以通过score、gc含量和位置信息来进行靶点筛选。此外，当你将鼠标移到靶点上，会出现具体信息：显示了位置，打分，序列，切割位点（红色箭头），启动子，以及脱靶位点数量和错位碱基数等，可以说相当丰富。而且，如果某些靶点存在酶切位点，也会同时显示出来。如果不理解这些参数，网站首页的<strong>help</strong>会有详细的解释，包括怎么选择靶点。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-3ce8f6271f54d084.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="靶点"><br><img src="https://upload-images.jianshu.io/upload_images/3478485-c617285e77a1dab2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="靶点信息"><br>这几个CRISPR相关的网站介绍就到这里结束了，具体应用还是需要有实际例子去使用，尝试。<br>今天是大年初一，给大家拜个年，新春快乐，实验顺利，早发paper。</p>
-]]></content>
-      <categories>
-        <category>学习记录</category>
-      </categories>
-      <tags>
-        <tag>Cas9</tag>
+        <tag>电影</tag>
       </tags>
   </entry>
   <entry>
@@ -1691,6 +1649,29 @@ characterization of aluminum resistance in Populus"><br>这里我先用比较麻
       </tags>
   </entry>
   <entry>
+    <title>杂乱无章</title>
+    <url>//2018/08/28/%E6%9D%82%E4%B9%B1%E6%97%A0%E7%AB%A0/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![拿着相机，一个人旅行](https://upload-images.jianshu.io/upload_images/3478485-14565c6637c4fa19.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+<p>8月27日，星期一，公元2018年。</p>
+<span id="more"></span>
+
+<p>8月27日，星期一，公元2018年。</p>
+<p>干了一天，几乎没有坐下的时候。骑车离开生科院的时候，突然觉得自己就想是一个工人，白天工作，晚上运动健身和自学，想来也是非常的满足。然而，事情永远没有这么简单，真正工作以后，恐怕没有那么悠闲。</p>
+<p>最近已经能够比较好的控制一下自己，不再如此的散漫。在过去的6月份，真是觉得自个儿已经抛弃一部分超我，使得自我更多的释放。满满的都是娱乐活动，吃饭，看电影和旅游，比暑假更加潇洒。我知道，我一直以来就是这么一个人，对于别人，我总想让他们有一些仪式感，自己变得比别人更操心自己，但是前提是我想关心的人。这个是有点还是缺点，我并不能很好的定义对错，只是不该太过火。师姐的毕业典礼，我去拍照；校园风景，我去拍照；小伙伴的毕业旅行，我也一同参加。干了无数能够留下深刻印象的事。</p>
+<p>有目标，才有动力；有计划，才能有满足感；完成计划，才能有幸福感。大部分时候的状态，就是无目标和无计划，生活处在焦虑之中，特别地不安。这种状态的打破，就需要你自身的行动，想到的东西，要出尽快实行；要去解决你害怕去解决的问题；搞定心中的恐惧放空自己的内心，才能最终踏实满足。</p>
+<p>今年也算是旅行过了，南京之行，也非常的开心。但是，你要知道，很多时候内心就会有一种冲动，就想去看看更外面的世界。前两天看到了一条骑行路线，真的太诱人了，完全没法形容我内心的激动，即使不能够前去体验。看看，回想回想之前的经历，也能够让我开心一会儿，那也就够了。岁月慢慢流逝，一天天在变老，尽管思想还没有服气，但是身体很明显的不如从前了。</p>
+<p>我们没法改变，只能磨炼遇事不惊的心态。</p>
+]]></content>
+      <categories>
+        <category>随记</category>
+      </categories>
+      <tags>
+        <tag>旅行</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>狼伴归途</title>
     <url>//2018/09/13/%E7%8B%BC%E4%BC%B4%E5%BD%92%E9%80%94/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -1709,6 +1690,25 @@ characterization of aluminum resistance in Populus"><br>这里我先用比较麻
       </categories>
       <tags>
         <tag>电影</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>植物Cas9靶点设计网站简介</title>
+    <url>//2019/02/05/%E6%A4%8D%E7%89%A9Cas9%E9%9D%B6%E7%82%B9%E8%AE%BE%E8%AE%A1%E7%BD%91%E7%AB%99%E7%AE%80%E4%BB%8B/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![cas9模型](https://upload-images.jianshu.io/upload_images/3478485-e845fed2bd99b07b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+<span id="more"></span>
+
+<p>我在前面的简文中已经基本阐述了Cas9的作用机制，详细内容可以看<a href="https://www.jianshu.com/p/1e7bff7d5830">CRISPR-Cas9系统简介</a>一文。今天，就来讲一讲怎么实际使用这个系统来帮助我们进行功能基因的研究。这个技术一问世，很多大牛就开始使用，植物学领域的应用，使得我们能够更方便的有目的的去编辑我们想要编辑的植物基因组。今天就推荐几个网站，寻找靶点序列的网站。前面我们也提到过，好的靶点的选择，可以减小脱靶率，大大提高我们编辑的效率。能够极大提高我们的实验效率，不然像我们植物学领域的苦逼博士，不得疯掉，一直一直脱靶的话，那么就真的非常的酸爽。</p>
+<h3 id="CRISPR-PLANT"><a href="#CRISPR-PLANT" class="headerlink" title="CRISPR-PLANT"></a><font color = "green">CRISPR-PLANT</font></h3><p>具体网址：<a href="https://www.genome.arizona.edu/crispr/index.html">https://www.genome.arizona.edu/crispr/index.html</a>。 看这个网址，应该是Arizona大学出品的。这是一个专门针对植物CRISPR靶点设计网站，比较专业，较为好用的网站。首页有一张模式图，而且还有对CRISPR-Cas9系统的基本介绍，大概可以了解。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-f2f550500f26be7a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="网站首页"><br>导航栏中有几个标签链接，如果你不知道怎么使用，那么你就可以点击instruction来学习，里面有比较详细的介绍。如果要开始找靶点，那就点击search。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-6181cec9ae7ec031.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="导航栏"><br>进入search主页，就可以看到查找的方式。这里它也建议你先看知道手册，然后在进行设计。查找的输入信息有两种，a.染色体位置信息；b.基因locus，通常情况下我们在查找的时候感觉locus用的比较多，一般你肯定是知道基因的信息去进行search。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-2e0980dc0152cf1e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="search主页"><br>这个网站可以找的物种包括拟南芥、二穗短柄草、大豆、蒺藜苜蓿、水稻、高粱、番茄和玉米；还是挺多的，一般都能符合需求。当然，如果你的物种实在是太过于小众，那么可惜，没法用这个网站进行。那么，下面这个网站就可以一定程度满足你。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-0b1d6da7b6ab97bd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="这里给的物种基因组"></p>
+<h3 id="CRISPRSCAN"><a href="#CRISPRSCAN" class="headerlink" title="CRISPRSCAN"></a><font color="green">CRISPRSCAN</font></h3><p>具体网址：<a href="http://www.crisprscan.org/?page=sequence">http://www.crisprscan.org/?page=sequence</a>。这个网站是都是动物的，没有植物物种的，但是为什么要推荐这个网站呢？因为我们最开始就是使用这个网站进行靶点筛选的，之后在拟南芥和番茄中进行了尝试敲除，结果都能够得到敲除的株系，也是能够使用这个来进行引物的设计。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-ef69894d221d6ddc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="网站首页"><br>这个网站里，有很多动物，果蝇、人类、小鼠和鸡等物种，没有植物的，但是你可以选择No search这个选项，然后将你的序列黏贴进去，之后会出来靶点，但是它的评估只有一个score，没有其他的了。这个网站，现在对我们植物的来说，还是基本不用了，有其他专门的植物的网站。下面这个网站就更好了，非常全面的植物的网站。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-a8e5bf4933bff970.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="这个网站有的一些物种"></p>
+<h3 id="CRISPR-P-2-0"><a href="#CRISPR-P-2-0" class="headerlink" title="CRISPR-P 2.0"></a><font color = "green">CRISPR-P 2.0</font></h3><p>具体网址：<a href="http://crispr.hzau.edu.cn/CRISPR2/">http://crispr.hzau.edu.cn/CRISPR2/</a>。这个网站是华中农业大学大学设计的，做的还是很不错的。用了之后，感觉比前面两个的内容更丰富，而且评估的更全面。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-43966e8205ae6ee8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="网站首页，也很漂亮"><br>点击网站右上角的start design，你就可以开始设计相应的引物。里面的信息更加细化。有pam类型选择，启动子选择，引导序列的长度，物种基因组选择，可以通过locus以及位置信息和序列进行靶基因的选定。它这个网站的物种数据是整合了NCBI数据库，所以基本包括了已经测序完全的植物基因组，解决了物种限制这个问题，普遍性强了。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-6b15fc0bac0d5e23.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="设计页面"><br>我用网站中的例子，来展示一下靶点搜索结果。它可以根据开始的碱基A/G来筛选靶点，也可以通过score、gc含量和位置信息来进行靶点筛选。此外，当你将鼠标移到靶点上，会出现具体信息：显示了位置，打分，序列，切割位点（红色箭头），启动子，以及脱靶位点数量和错位碱基数等，可以说相当丰富。而且，如果某些靶点存在酶切位点，也会同时显示出来。如果不理解这些参数，网站首页的<strong>help</strong>会有详细的解释，包括怎么选择靶点。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-3ce8f6271f54d084.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="靶点"><br><img src="https://upload-images.jianshu.io/upload_images/3478485-c617285e77a1dab2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="靶点信息"><br>这几个CRISPR相关的网站介绍就到这里结束了，具体应用还是需要有实际例子去使用，尝试。<br>今天是大年初一，给大家拜个年，新春快乐，实验顺利，早发paper。</p>
+]]></content>
+      <categories>
+        <category>学习记录</category>
+      </categories>
+      <tags>
+        <tag>Cas9</tag>
       </tags>
   </entry>
   <entry>
@@ -2019,6 +2019,28 @@ characterization of aluminum resistance in Populus"><br>这里我先用比较麻
       </tags>
   </entry>
   <entry>
+    <title>苏丹</title>
+    <url>//2018/09/04/%E8%8B%8F%E4%B8%B9/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![苏丹海报](https://upload-images.jianshu.io/upload_images/3478485-f6e5a66f7c60693c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+<p>9月3日，星期二，公元2018年。</p>
+<span id="more"></span>
+
+<p>虽然是进入9月，好像仍然没有开学的迹象。星期天上映的电影，一直没有办法去看。今日工作日，就偷偷抽出2个小时的时间，去看印度电影——苏丹。</p>
+<p>故事就是为爱而战，为生活而战，为自己而战。自己成为摔跤手，完全就是因为自己喜欢一个摔跤手的女孩，而且这个姑娘狠狠地侮辱了苏丹。之后一路毫无障碍，赢得所有比赛的冠军，包括亚运会，奥运会和世锦赛。然而，因在比赛，不再刚出生孩子身边，在需要输O型血的时候，找不到人，孩子的死亡，另夫妻之间产生隔阂，自己也难以原谅自己，从此退出摔跤场。这一段故事就是以朋友的视角，进行的回忆，说明个中缘由。</p>
+<p>综合格斗职业赛，商人连续亏本，在其父亲的引导下，邀请苏丹，最后苏丹为了建立血库，而再次走上不一样的平台，格斗场。多年的颓废生活，身体几乎完全不行，为重新找回以前的身体，努力拼命，丝毫不畏惧。最终，依旧战胜自己，赢得格斗赛的冠军。</p>
+<p>整部电影非常燃，非常的激励，全程都好看，没有走神过。我喜欢苏丹这种不服输，找回自己的尊严，努力战胜自己。电影其实也就是讲的爱情故事，但是却非常励志，为爱可以努力到什么程度，难以想象。</p>
+<p>很喜欢印度电影，歌舞永远在电影中出现，会让人非常的放松喜悦，已经慢慢地从刚开始的不适应到现在的喜欢过度了。有时候就是想去体验这种愉悦轻松放松的感受，而去看印度电影。</p>
+]]></content>
+      <categories>
+        <category>影评领域</category>
+      </categories>
+      <tags>
+        <tag>电影</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>聚餐川菜</title>
     <url>//2018/08/24/%E8%81%9A%E9%A4%90%E5%B7%9D%E8%8F%9C/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -2052,28 +2074,6 @@ characterization of aluminum resistance in Populus"><br>这里我先用比较麻
       </categories>
       <tags>
         <tag>美食</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>苏丹</title>
-    <url>//2018/09/04/%E8%8B%8F%E4%B8%B9/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![苏丹海报](https://upload-images.jianshu.io/upload_images/3478485-f6e5a66f7c60693c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-<p>9月3日，星期二，公元2018年。</p>
-<span id="more"></span>
-
-<p>虽然是进入9月，好像仍然没有开学的迹象。星期天上映的电影，一直没有办法去看。今日工作日，就偷偷抽出2个小时的时间，去看印度电影——苏丹。</p>
-<p>故事就是为爱而战，为生活而战，为自己而战。自己成为摔跤手，完全就是因为自己喜欢一个摔跤手的女孩，而且这个姑娘狠狠地侮辱了苏丹。之后一路毫无障碍，赢得所有比赛的冠军，包括亚运会，奥运会和世锦赛。然而，因在比赛，不再刚出生孩子身边，在需要输O型血的时候，找不到人，孩子的死亡，另夫妻之间产生隔阂，自己也难以原谅自己，从此退出摔跤场。这一段故事就是以朋友的视角，进行的回忆，说明个中缘由。</p>
-<p>综合格斗职业赛，商人连续亏本，在其父亲的引导下，邀请苏丹，最后苏丹为了建立血库，而再次走上不一样的平台，格斗场。多年的颓废生活，身体几乎完全不行，为重新找回以前的身体，努力拼命，丝毫不畏惧。最终，依旧战胜自己，赢得格斗赛的冠军。</p>
-<p>整部电影非常燃，非常的激励，全程都好看，没有走神过。我喜欢苏丹这种不服输，找回自己的尊严，努力战胜自己。电影其实也就是讲的爱情故事，但是却非常励志，为爱可以努力到什么程度，难以想象。</p>
-<p>很喜欢印度电影，歌舞永远在电影中出现，会让人非常的放松喜悦，已经慢慢地从刚开始的不适应到现在的喜欢过度了。有时候就是想去体验这种愉悦轻松放松的感受，而去看印度电影。</p>
-]]></content>
-      <categories>
-        <category>影评领域</category>
-      </categories>
-      <tags>
-        <tag>电影</tag>
       </tags>
   </entry>
   <entry>
