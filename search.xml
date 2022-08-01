@@ -1,59 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>2018年8月-小结</title>
-    <url>//2018/09/02/2018%E5%B9%B48%E6%9C%88-%E5%B0%8F%E7%BB%93/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![无尽之路](https://upload-images.jianshu.io/upload_images/3478485-6dc9021e15783f70.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-9月2日，星期日，公元2018年。
-
-
-
-<span id="more"></span>
-
-<p>9月开始崭露头角，8月已然逝去。秋天，似乎已经离我们越来越近，春困秋乏的状态又要来临。总结8月，展望9月，似乎迫不及待。</p>
-<p>8月，似乎是一个没有任何进展的月份。采葡萄，回家休息，然后就是游泳和看书。没有再多的事情，帮师姐搬了一下行李，仅此而已的8月。始终无法凝聚自己的精神专注力，聚焦在实验这一点上，整个8月确实是变得非常的散。</p>
-<p>我是否是太过于放松了，还是太过于自信，亦或是恐惧，更或是太多理想。很多很多事情似乎要做，不希望生活只有实验，希望有自己支配的时间，似乎实验只是占据了我一半左右的时间，我想对于真正地科研人员来说，这是少之又少的吧。我想游泳健身，我想博览群书（我感兴趣的），我想学习编程，我想看电影，我想去旅行，我还想学习摄影……想做的太多，精力太过分散，始终做不好任何一件事儿。</p>
-<p>我也清楚，问题关键抓不住重点，没有计划，亦或是没有目标。可是，我就认为生活也该有生活的样子，被一件事占据所有时间，也是一种悲哀。我的矛盾始终存在，那么解决矛盾的关键在于什么？我想，可能是提高时间利用率。你说不想花过多时间在实验上，那么你必须提高实验效率，要保证极高的实验成功率，在做一件事的时候，必须要专注于此，且不可散。</p>
-<p>整个大时间轴，你可以细分成你想要的份数，但是有一点你必须铭记，每一份都要讲所有的精神力注入其中，那是不可以分散的。9月，希望能够尝试这种方式，能够仅仅活在此时此刻，也是一种幸福。过多的展望，恰恰会迷失人的心智，摧毁人的意志力，因此，对于9月，我不想太多，做该做的事。</p>
-]]></content>
-      <categories>
-        <category>人生小结</category>
-      </categories>
-      <tags>
-        <tag>小结</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>CRISPR-Cas9系统简介</title>
-    <url>//2018/12/30/CRISPR-Cas9%E7%B3%BB%E7%BB%9F%E7%AE%80%E4%BB%8B/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-
-
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-0bf1101b1c467285.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="图片来源：https://www.mygenefood.com/crispr-cas9-introduction-genome-editing/"></p>
-<p>Clustered regularly interspaced short palindromic repeats（CRISPR）——规律成簇的间隔短回文重复和CRISPR-associated protein 9（Cas9），共同组成了一套系统，是细菌用来防御噬菌体DNA注入和质粒转移的天然防御系统。但现在被人类所重新利用，构建了很强的RNA引导的DNA靶向平台——主要用来基因组编辑、转录扰乱、表观遗传调控等。</p>
-<span id="more"></span>
-
-
-
-<h3 id="细菌抵抗噬菌体入侵"><a href="#细菌抵抗噬菌体入侵" class="headerlink" title="细菌抵抗噬菌体入侵"></a><font color="green">细菌抵抗噬菌体入侵</font></h3><p>图中是细菌天然免疫系统。我们可以看到，CRISPR locus是由几个原件构成。一开始是个反向转录的RNA，是特异的非编码RNA，可以和重复序列部分互补（trancrRNA，橙色矩形），后面是各种cas基因（箭头表示），接着是CRISPR排列（棕色的菱形是重复序列，彩色的是间隔）。而这些间隔序列是细菌从噬菌体DNA中获得的遗传原件：当噬菌体感染细菌，细菌激活相关的cas基因——Cas1，Cas2,和Csn2，将其中新的间隔序列整合到自身的CRISPR arry中。一旦获得以后，新的spacer就会出现在pre-crRNA中，此时tracrRNA与不同的SPACER互补，在RNaseIII的作用下，产生crRNA，进一步在其他未知的核酸酶的作用，剪切crRNA的5’端，使得引导序列长为20nt。如果噬菌体注入DNA，那么这个免疫系统将被激活，来干扰噬菌体DNA。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-4c5c2be28472800d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="防御过程"></p>
-<h3 id="剪切与修复"><a href="#剪切与修复" class="headerlink" title="剪切与修复"></a><font color="green">剪切与修复</font></h3><p>我们目前主要使用II型CRISPR系统，它和他的区别在于，只是需要一个DNA内切酶Cas9来对与sgRNA20个互补碱基的带有PAM结构的DNA进行剪切。剪切后是DNA产生平末端的DSB（双链断裂），然后在进行非同源的末端连接过程中，容易随机插入或者删除或者替换。或者进行高保真的同源定向修复，修复DNA。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-be11ad0e6a3c0c5e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Type II Cas9"><br><img src="https://upload-images.jianshu.io/upload_images/3478485-827d8dc582062b62.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Cas9剪切及突变产生"></p>
-<h3 id="Cas9蛋白构象重组"><a href="#Cas9蛋白构象重组" class="headerlink" title="Cas9蛋白构象重组"></a><font color="green">Cas9蛋白构象重组</font></h3><p>这里的例子是化脓链球菌的SpyCas9，是一个含有1368个氨基酸的多结构和多功能的DNA核酸内切酶。它的切割位点在PAM上游的第三个碱基，通过HNH（sgRAN互补的目标序列）和RuvC核酸酶结构域（非目标序列）。要识别特定序列并进行剪切，sgRNA与Cas9组合成一个复合体，其中sgRNAy与Cas9结合起着关键的作用，能够使得Cas9构象重构，变得具有活性。crRNA前20碱基使得Cas9具有靶序列特异性，tracrRNA来招募Cas9蛋白。在这个系统中，有一个所谓的种子序列，20碱基spacer的3’端10-12个核苷酸。<strong>在种子序列的错配以及本身同源性都会严重影响系统特异性和脱靶效率。</strong>*<br><img src="https://upload-images.jianshu.io/upload_images/3478485-082186ee503a2b4a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="sgNRA"></p>
-<h3 id="目标DNA搜索与识别"><a href="#目标DNA搜索与识别" class="headerlink" title="目标DNA搜索与识别"></a><font color="green">目标DNA搜索与识别</font></h3><p><strong>PAM序列非常的关键</strong>，能够起到识别自身和外来的序列。有实验表明，如果PAM进行但突变，那么就能够让噬菌体入侵宿主。在sgRNA互补之前，首先是寻找PAM序列，如果没有合适的PAM，那么通过蛋白三维结构的坍塌，会离开DNA，直到找到合适的PAM。一旦找到PAM，Cas9就使DNA局部解链，RNA进入，与DNA互补，形成RNA-DNA结构。<strong>sg种子区域序列与靶DNA的完美互补是很重要的。</strong></p>
-<h3 id="CRISPR–Cas9介导的DNA靶定于剪切模型"><a href="#CRISPR–Cas9介导的DNA靶定于剪切模型" class="headerlink" title="CRISPR–Cas9介导的DNA靶定于剪切模型"></a><font color="green">CRISPR–Cas9介导的DNA靶定于剪切模型</font></h3><p>首先，guide RNA的结合，使得Cas9从一个未激活的构象变成具有DNA识别能力的构象。RNA种子序列先形成A型构象，为了目标结合和链入侵，PAM识别位点预先形成用来PAM识别。然后，Cas9结合到PAM序列，使得酶能够去识别附近的潜在的DNA靶序列。一旦Cas9在PAM附近找到了潜在的靶序列，会开始解双螺旋并继续检查剩余的靶序列。磷酸锁环稳定解旋的目标DNA，且第一个碱基开始翻转向上，与guide RNA碱基配对。而Cas9继续与非靶链上的翻转碱基作用，促进双螺旋解开。接着，碱基配对伴随着Cas9构象改变，促进种子序列前面的guide RNA从限制中释放出来，也形成配对，这个过程促使Cas9构象持续变化，直到到达有活性的状态。最终，guide RNA与目标DNA完全互补使得HNH具有稳定的，具有活性的构象，来剪切目标链DNA。与此同时，引起更大的构象变化，使得非目标链DNA进入RuvC催化中心被剪切，这种转态下，Cas9中牢牢结合在靶点序列上，直到其他的细胞因子过来替代它。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-4db71b549d557ab4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="剪切示意图"></p>
-<p>读了这篇review，进行一定程度的总结，有些地方还是有些不太清楚。</p>
-<blockquote>
-<p>Fuguo Jiang and Jennifer A. Doudna, CRISPR–Cas9 Structures and Mechanisms, Annual Review of Biophysics 2017 46:1, 505-529 </p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>学习记录</category>
-      </categories>
-      <tags>
-        <tag>Cas9</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>DJY-遇见盖北</title>
     <url>//2018/08/18/DJY-%E9%81%87%E8%A7%81%E7%9B%96%E5%8C%97/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -202,31 +149,6 @@
       </tags>
   </entry>
   <entry>
-    <title>HTML5（11）——注释</title>
-    <url>//2018/10/10/HTML5%EF%BC%8811%EF%BC%89%E2%80%94%E2%80%94%E6%B3%A8%E9%87%8A/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![早上好，各位](https://upload-images.jianshu.io/upload_images/3478485-7b72bb3628e0f32c.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-> 早上起来已经快6点，我是被蚊子叮醒的，实在是没法睡觉了。果然昨天幻想的咖啡没有实现。
-> 昨天晚上我们学习了HTML的引用，今天学习注释。
-
-
-
-<span id="more"></span>
-
-<h2 id="注释标签"><a href="#注释标签" class="headerlink" title="注释标签"></a><font color="green">注释标签</font></h2><p>在HTML源文件中，你可以添加语句的注释，注释是用来对语言的解释说明，使得别人能够更好地理解你的HTML内容。你可以看到下面的例子，其中在opening 标签中是由”!”起始的，在HTML中，注释是不显示的，只是起到解释源代码的作用。</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- This is a comment --&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>This is a paragraph.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- Remember to add more information here --&gt;</span></span><br></pre></td></tr></table></figure>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-1e24ecc778955ce4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="不显示注释内容"></p>
-<p>今天的内容比较简单，就是一个知识点，就是给HTML源代码添加注释，方便别人的阅读和你自己的阅读。任何一门语言，你在写源代码的时候，最要添加比较详细的注释内容，这样可以减少很多后期的麻烦。</p>
-]]></content>
-      <categories>
-        <category>HTML5入门</category>
-      </categories>
-      <tags>
-        <tag>HTML5</tag>
-        <tag>注释</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>HTML5（10）——引用</title>
     <url>//2018/10/09/HTML5%EF%BC%8810%EF%BC%89%E2%80%94%E2%80%94%E5%BC%95%E7%94%A8/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -260,8 +182,33 @@
         <category>HTML5入门</category>
       </categories>
       <tags>
-        <tag>HTML5</tag>
         <tag>引用</tag>
+        <tag>HTML5</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>HTML5（11）——注释</title>
+    <url>//2018/10/10/HTML5%EF%BC%8811%EF%BC%89%E2%80%94%E2%80%94%E6%B3%A8%E9%87%8A/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![早上好，各位](https://upload-images.jianshu.io/upload_images/3478485-7b72bb3628e0f32c.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+> 早上起来已经快6点，我是被蚊子叮醒的，实在是没法睡觉了。果然昨天幻想的咖啡没有实现。
+> 昨天晚上我们学习了HTML的引用，今天学习注释。
+
+
+
+<span id="more"></span>
+
+<h2 id="注释标签"><a href="#注释标签" class="headerlink" title="注释标签"></a><font color="green">注释标签</font></h2><p>在HTML源文件中，你可以添加语句的注释，注释是用来对语言的解释说明，使得别人能够更好地理解你的HTML内容。你可以看到下面的例子，其中在opening 标签中是由”!”起始的，在HTML中，注释是不显示的，只是起到解释源代码的作用。</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- This is a comment --&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>This is a paragraph.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- Remember to add more information here --&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-1e24ecc778955ce4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="不显示注释内容"></p>
+<p>今天的内容比较简单，就是一个知识点，就是给HTML源代码添加注释，方便别人的阅读和你自己的阅读。任何一门语言，你在写源代码的时候，最要添加比较详细的注释内容，这样可以减少很多后期的麻烦。</p>
+]]></content>
+      <categories>
+        <category>HTML5入门</category>
+      </categories>
+      <tags>
+        <tag>HTML5</tag>
+        <tag>注释</tag>
       </tags>
   </entry>
   <entry>
@@ -298,6 +245,30 @@
       <tags>
         <tag>HTML5</tag>
         <tag>颜色</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>HTML5（1）——介绍</title>
+    <url>//2018/09/24/HTML5%EF%BC%881%EF%BC%89%E2%80%94%E2%80%94%E4%BB%8B%E7%BB%8D/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![中秋节就是面对电脑](https://upload-images.jianshu.io/upload_images/3478485-befca9c4894b99eb.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+<blockquote>
+<p>我就是用来玩一下，说好得，只是玩一下。</p>
+</blockquote>
+<span id="more"></span>
+
+<p>总是想干点事情，不想这么地浪费时间，学习一下html5语法，还是挺好的。我记得以前别人过节的时候，就会发一个网页过来，你打开就是节日祝福，还有音乐和动画，然后就觉得学计算机的人特别牛逼，现在看来，真得没有那么难，稍微学习一下，你就可以实现这样的效果，并没有想象中那么难。当然如果要深入下去，作为你吃饭的技能，那就不是一个层次，我就用来玩一下，增添一些生活的乐趣。</p>
+<p>有了以下这些基本的内容，你就可以写出一个自己的最简单的网页来了。</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span> <span class="comment">&lt;!--这是用来指定声明这篇文档是HTML5，帮助浏览器正确的显示网页--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span><span class="comment">&lt;!--这是网页根标签，每个网页都有，必不可少--&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span><span class="comment">&lt;!--head里面包含的是元信息，不会显示出来--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">title</span>&gt;</span>生活的质感<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">    </span><br><span class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span><span class="comment">&lt;!--body是网页不可少部分，是用来放可视的网页内容，是会展现出来的--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">h1</span>&gt;</span><span class="comment">&lt;!--h1是用来表示一级标题--&gt;</span></span><br><span class="line">            中秋节快乐</span><br><span class="line">        <span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="comment">&lt;!--p就是段落的意思，用来盛放正文的内容--&gt;</span></span><br><span class="line">            今天是中秋节，也没有回家过节，在宿舍里折腾了很久。</span><br><span class="line">        <span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>HTML5的标签是用&lt;&gt;括起来的。比如<code>&lt;p&gt;...&lt;/p&gt;</code>这样的段落标签。不带斜杠的是起始标签，带斜杆的是结束标签。</p>
+]]></content>
+      <categories>
+        <category>HTML5入门</category>
+      </categories>
+      <tags>
+        <tag>HTML5</tag>
       </tags>
   </entry>
   <entry>
@@ -355,30 +326,6 @@
       </tags>
   </entry>
   <entry>
-    <title>HTML5（1）——介绍</title>
-    <url>//2018/09/24/HTML5%EF%BC%881%EF%BC%89%E2%80%94%E2%80%94%E4%BB%8B%E7%BB%8D/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![中秋节就是面对电脑](https://upload-images.jianshu.io/upload_images/3478485-befca9c4894b99eb.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-<blockquote>
-<p>我就是用来玩一下，说好得，只是玩一下。</p>
-</blockquote>
-<span id="more"></span>
-
-<p>总是想干点事情，不想这么地浪费时间，学习一下html5语法，还是挺好的。我记得以前别人过节的时候，就会发一个网页过来，你打开就是节日祝福，还有音乐和动画，然后就觉得学计算机的人特别牛逼，现在看来，真得没有那么难，稍微学习一下，你就可以实现这样的效果，并没有想象中那么难。当然如果要深入下去，作为你吃饭的技能，那就不是一个层次，我就用来玩一下，增添一些生活的乐趣。</p>
-<p>有了以下这些基本的内容，你就可以写出一个自己的最简单的网页来了。</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span> <span class="comment">&lt;!--这是用来指定声明这篇文档是HTML5，帮助浏览器正确的显示网页--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span><span class="comment">&lt;!--这是网页根标签，每个网页都有，必不可少--&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span><span class="comment">&lt;!--head里面包含的是元信息，不会显示出来--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">title</span>&gt;</span>生活的质感<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">    </span><br><span class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span><span class="comment">&lt;!--body是网页不可少部分，是用来放可视的网页内容，是会展现出来的--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">h1</span>&gt;</span><span class="comment">&lt;!--h1是用来表示一级标题--&gt;</span></span><br><span class="line">            中秋节快乐</span><br><span class="line">        <span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="comment">&lt;!--p就是段落的意思，用来盛放正文的内容--&gt;</span></span><br><span class="line">            今天是中秋节，也没有回家过节，在宿舍里折腾了很久。</span><br><span class="line">        <span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>HTML5的标签是用&lt;&gt;括起来的。比如<code>&lt;p&gt;...&lt;/p&gt;</code>这样的段落标签。不带斜杠的是起始标签，带斜杆的是结束标签。</p>
-]]></content>
-      <categories>
-        <category>HTML5入门</category>
-      </categories>
-      <tags>
-        <tag>HTML5</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>HTML5（2）——编辑器</title>
     <url>//2018/09/30/HTML5%EF%BC%882%EF%BC%89%E2%80%94%E2%80%94%E7%BC%96%E8%BE%91%E5%99%A8/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -405,32 +352,6 @@
       </categories>
       <tags>
         <tag>HTML5</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>HTML5（4）——元素</title>
-    <url>//2018/10/02/HTML5%EF%BC%884%EF%BC%89%E2%80%94%E2%80%94%E5%85%83%E7%B4%A0/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![巨石阵，有朝一日能够去世界各地游玩](https://upload-images.jianshu.io/upload_images/3478485-d53a5e7f7a0f8675.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-<blockquote>
-<p>国庆第二天，毕业师姐过来那毕业证书，需要聚一波。今天继续学习HTML相关知识。上次学了最基本的知识，关于一些常见的HTML标签。今天是要讲HTML元素，标签包含的内容。</p>
-</blockquote>
-<span id="more"></span>
-
-<h2 id="网页元素"><a href="#网页元素" class="headerlink" title="网页元素"></a><font color="green">网页元素</font></h2><p>HTML网页元素，通常是由起始标签和结束标签以及在两者之间插入的内容。<code>&lt;tagname&gt;内容&lt;/tagname&gt;</code><br>所有的网页元素，都是从开始标签到结束标签。<code>&lt;p&gt;my director&lt;/p&gt;</code><br>可以分为有内容和无内容。而空内容的元素是没有结束标签的，只有起始标签。如<code>&lt;br&gt;</code></p>
-<h2 id="巢式网页元素"><a href="#巢式网页元素" class="headerlink" title="巢式网页元素"></a><font color="green">巢式网页元素</font></h2><p>所谓巢式（nested），就是说可以在网页元素之中，插入其他的元素，元素嵌套元素。一个网页文件，必定是由巢式元素，下面的例子中，包含了4个网页元素。</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>My First Heading<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>My first paragraph.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="空网页元素"><a href="#空网页元素" class="headerlink" title="空网页元素"></a><font color="green">空网页元素</font></h2><p>没有内容的网页元素就是空元素，<code>&lt;br&gt;</code>定义的是换行符，没有结束元素。当然，HTML也是可以关闭空元素的，形式就是在开始标签后面加斜杠<code>&lt;br /&gt;</code>。当然，也可以不关闭，但是如果是严格的来说，关闭空元素是肯定没有问题的，而且如果想被XML解析器解析，那么就必须关上空元素。</p>
-<h2 id="标签小写字母"><a href="#标签小写字母" class="headerlink" title="标签小写字母"></a><font color="green">标签小写字母</font></h2><p>HTML是字母识别的，大写小写字母是存在差别的，标签一定要使用小写字母来写。虽然HTML5中，没有要求小写字母标签，但是最好就是小写，跟严格的XHTML是必须要小写才能编译。</p>
-]]></content>
-      <categories>
-        <category>HTML5入门</category>
-      </categories>
-      <tags>
-        <tag>HTML5</tag>
-        <tag>元素</tag>
       </tags>
   </entry>
   <entry>
@@ -475,6 +396,32 @@
       </tags>
   </entry>
   <entry>
+    <title>HTML5（4）——元素</title>
+    <url>//2018/10/02/HTML5%EF%BC%884%EF%BC%89%E2%80%94%E2%80%94%E5%85%83%E7%B4%A0/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![巨石阵，有朝一日能够去世界各地游玩](https://upload-images.jianshu.io/upload_images/3478485-d53a5e7f7a0f8675.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+<blockquote>
+<p>国庆第二天，毕业师姐过来那毕业证书，需要聚一波。今天继续学习HTML相关知识。上次学了最基本的知识，关于一些常见的HTML标签。今天是要讲HTML元素，标签包含的内容。</p>
+</blockquote>
+<span id="more"></span>
+
+<h2 id="网页元素"><a href="#网页元素" class="headerlink" title="网页元素"></a><font color="green">网页元素</font></h2><p>HTML网页元素，通常是由起始标签和结束标签以及在两者之间插入的内容。<code>&lt;tagname&gt;内容&lt;/tagname&gt;</code><br>所有的网页元素，都是从开始标签到结束标签。<code>&lt;p&gt;my director&lt;/p&gt;</code><br>可以分为有内容和无内容。而空内容的元素是没有结束标签的，只有起始标签。如<code>&lt;br&gt;</code></p>
+<h2 id="巢式网页元素"><a href="#巢式网页元素" class="headerlink" title="巢式网页元素"></a><font color="green">巢式网页元素</font></h2><p>所谓巢式（nested），就是说可以在网页元素之中，插入其他的元素，元素嵌套元素。一个网页文件，必定是由巢式元素，下面的例子中，包含了4个网页元素。</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>My First Heading<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>My first paragraph.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="空网页元素"><a href="#空网页元素" class="headerlink" title="空网页元素"></a><font color="green">空网页元素</font></h2><p>没有内容的网页元素就是空元素，<code>&lt;br&gt;</code>定义的是换行符，没有结束元素。当然，HTML也是可以关闭空元素的，形式就是在开始标签后面加斜杠<code>&lt;br /&gt;</code>。当然，也可以不关闭，但是如果是严格的来说，关闭空元素是肯定没有问题的，而且如果想被XML解析器解析，那么就必须关上空元素。</p>
+<h2 id="标签小写字母"><a href="#标签小写字母" class="headerlink" title="标签小写字母"></a><font color="green">标签小写字母</font></h2><p>HTML是字母识别的，大写小写字母是存在差别的，标签一定要使用小写字母来写。虽然HTML5中，没有要求小写字母标签，但是最好就是小写，跟严格的XHTML是必须要小写才能编译。</p>
+]]></content>
+      <categories>
+        <category>HTML5入门</category>
+      </categories>
+      <tags>
+        <tag>HTML5</tag>
+        <tag>元素</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>HTML5（6）——标题</title>
     <url>//2018/10/06/HTML5%EF%BC%886%EF%BC%89%E2%80%94%E2%80%94%E6%A0%87%E9%A2%98/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -504,48 +451,6 @@
       <tags>
         <tag>HTML5</tag>
         <tag>标题</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>HTML5（5）——属性</title>
-    <url>//2018/10/06/HTML5%EF%BC%885%EF%BC%89%E2%80%94%E2%80%94%E5%B1%9E%E6%80%A7/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![咖啡豆](https://upload-images.jianshu.io/upload_images/3478485-9d881188bebeb5b7.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-> 其实，我一直有个愿望，我想每天早晨起来，喝着咖啡，写点东西。不过，到现在都还没有实现，我想我得先做到早起吧。上次，我们讲了是HTML5的元素，今天就讲元素属性。
-
-
-
-<span id="more"></span>
-
-<h2 id="HTML属性"><a href="#HTML属性" class="headerlink" title="HTML属性"></a><font color="green">HTML属性</font></h2><ul>
-<li>所有的HTML元素都是有属性的</li>
-<li>属性是添加元素的额外信息</li>
-<li>属性通常在起始标签添加</li>
-<li>属性的形式通常是键值配对：name=”value”</li>
-</ul>
-<h2 id="href属性"><a href="#href属性" class="headerlink" title="href属性"></a><font color="green">href属性</font></h2><p>在HTML中，用来指定链接的标签是<code>&lt;a&gt;</code>，链接地址通常用href属性来指定。例如<code>&lt;a href=&quot;https://www.w3schools.com&quot;&gt;This is a link&lt;/a&gt;</code></p>
-<h2 id="src属性"><a href="#src属性" class="headerlink" title="src属性"></a><font color="green">src属性</font></h2><p>在HTML中，网页中图片是用<code>&lt;img&gt;</code>标签使用图片，而图像源的文件名是用<code>src</code>属性来指定。例如<code>&lt;img src=&quot;img_girl.jpg&quot;&gt;</code></p>
-<h2 id="width和height属性"><a href="#width和height属性" class="headerlink" title="width和height属性"></a><font color="green">width和height属性</font></h2><p>图片的属性包括很多，其中大小属性就是用<code>width</code>和<code>height</code>属性来指定。如<code>&lt;img src=&quot;img_girl.jpg&quot; width=&quot;500&quot; height=&quot;600&quot;&gt;</code></p>
-<h2 id="alt属性"><a href="#alt属性" class="headerlink" title="alt属性"></a><font color="green">alt属性</font></h2><p><code>alt</code>属性在网页中的作用是给图片添加文本信息，当有些特殊情况下，我没有办法显示图片，那么只能一文字信息来替代，而<code>alt</code>就是起到这个作用。尤其是对于一些盲人，当在听网页内容的时候，就可以了解到图片的内容。当然，如果图片不存在，那么它也可以显示信息。如<code>&lt;img src=&quot;img_girl.jpg&quot; alt=&quot;Girl with a jacket&quot;&gt;</code></p>
-<h2 id="style属性"><a href="#style属性" class="headerlink" title="style属性"></a><font color="green">style属性</font></h2><p>在HTML中，<code>style</code>属性是用来修饰元素显示的风格，包括颜色，字体及大小。如<code>&lt;p style=&quot;color:red&quot;&gt;I am a paragraph&lt;/p&gt;</code>，就是将这个段落的字体设计成红色。</p>
-<h2 id="lang属性"><a href="#lang属性" class="headerlink" title="lang属性"></a><font color="green">lang属性</font></h2><p>在<code>&lt;html&gt;</code>标签中，可以使用<code>lang</code>属性来进行文档语言声明。<code>en</code>表示英语，<code>US</code>表示美式英语</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">&quot;en-US&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line">...</span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="title属性"><a href="#title属性" class="headerlink" title="title属性"></a><font color="green">title属性</font></h2><p>title一般就是用在段落标签中，这个属性会像提示一样，当你将鼠标放在段落上，就会显示title属性内容。</p>
-<figure class="highlight applescript"><table><tr><td class="code"><pre><span class="line">&lt;p title=<span class="string">&quot;I&#x27;m a tooltip&quot;</span>&gt;</span><br><span class="line">This <span class="keyword">is</span> a <span class="built_in">paragraph</span>.</span><br><span class="line">&lt;/p&gt;</span><br></pre></td></tr></table></figure>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-3e5aaa12e7f0b4cb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="title属性显示"></p>
-<h2 id="建议"><a href="#建议" class="headerlink" title="建议"></a><font color="green">建议</font></h2><ul>
-<li>属性最好使用小写字母</li>
-<li>属性的值用<code>&quot;&quot;</code>括起来</li>
-<li>如果需要多个双引号，那么就需要单引号的使用，两种情况：<figure class="highlight routeros"><table><tr><td class="code"><pre><span class="line">&lt;p <span class="attribute">title</span>=<span class="string">&#x27;John &quot;ShotGun&quot; Nelson&#x27;</span>&gt;</span><br><span class="line"></span><br><span class="line">&lt;p <span class="attribute">title</span>=<span class="string">&quot;John &#x27;ShotGun&#x27; Nelson&quot;</span>&gt;</span><br></pre></td></tr></table></figure></li>
-</ul>
-]]></content>
-      <categories>
-        <category>HTML5入门</category>
-      </categories>
-      <tags>
-        <tag>HTML5</tag>
-        <tag>属性</tag>
       </tags>
   </entry>
   <entry>
@@ -678,6 +583,30 @@
       </categories>
       <tags>
         <tag>LaTeX</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>2018年8月-小结</title>
+    <url>//2018/09/02/2018%E5%B9%B48%E6%9C%88-%E5%B0%8F%E7%BB%93/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![无尽之路](https://upload-images.jianshu.io/upload_images/3478485-6dc9021e15783f70.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+9月2日，星期日，公元2018年。
+
+
+
+<span id="more"></span>
+
+<p>9月开始崭露头角，8月已然逝去。秋天，似乎已经离我们越来越近，春困秋乏的状态又要来临。总结8月，展望9月，似乎迫不及待。</p>
+<p>8月，似乎是一个没有任何进展的月份。采葡萄，回家休息，然后就是游泳和看书。没有再多的事情，帮师姐搬了一下行李，仅此而已的8月。始终无法凝聚自己的精神专注力，聚焦在实验这一点上，整个8月确实是变得非常的散。</p>
+<p>我是否是太过于放松了，还是太过于自信，亦或是恐惧，更或是太多理想。很多很多事情似乎要做，不希望生活只有实验，希望有自己支配的时间，似乎实验只是占据了我一半左右的时间，我想对于真正地科研人员来说，这是少之又少的吧。我想游泳健身，我想博览群书（我感兴趣的），我想学习编程，我想看电影，我想去旅行，我还想学习摄影……想做的太多，精力太过分散，始终做不好任何一件事儿。</p>
+<p>我也清楚，问题关键抓不住重点，没有计划，亦或是没有目标。可是，我就认为生活也该有生活的样子，被一件事占据所有时间，也是一种悲哀。我的矛盾始终存在，那么解决矛盾的关键在于什么？我想，可能是提高时间利用率。你说不想花过多时间在实验上，那么你必须提高实验效率，要保证极高的实验成功率，在做一件事的时候，必须要专注于此，且不可散。</p>
+<p>整个大时间轴，你可以细分成你想要的份数，但是有一点你必须铭记，每一份都要讲所有的精神力注入其中，那是不可以分散的。9月，希望能够尝试这种方式，能够仅仅活在此时此刻，也是一种幸福。过多的展望，恰恰会迷失人的心智，摧毁人的意志力，因此，对于9月，我不想太多，做该做的事。</p>
+]]></content>
+      <categories>
+        <category>人生小结</category>
+      </categories>
+      <tags>
+        <tag>小结</tag>
       </tags>
   </entry>
   <entry>
@@ -962,40 +891,32 @@
       </tags>
   </entry>
   <entry>
-    <title>使用氮气瓶</title>
-    <url>//2022/01/07/%E4%BD%BF%E7%94%A8%E6%B0%AE%E6%B0%94%E7%93%B6/</url>
+    <title>CRISPR-Cas9系统简介</title>
+    <url>//2018/12/30/CRISPR-Cas9%E7%B3%BB%E7%BB%9F%E7%AE%80%E4%BB%8B/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
 
+
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-0bf1101b1c467285.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="图片来源：https://www.mygenefood.com/crispr-cas9-introduction-genome-editing/"></p>
+<p>Clustered regularly interspaced short palindromic repeats（CRISPR）——规律成簇的间隔短回文重复和CRISPR-associated protein 9（Cas9），共同组成了一套系统，是细菌用来防御噬菌体DNA注入和质粒转移的天然防御系统。但现在被人类所重新利用，构建了很强的RNA引导的DNA靶向平台——主要用来基因组编辑、转录扰乱、表观遗传调控等。</p>
 <span id="more"></span>
 
-<h2 id="1-基本构造"><a href="#1-基本构造" class="headerlink" title="1. 基本构造"></a>1. 基本构造</h2><p>关闭状态下，减压阀的仪表读数均为0，<strong>钢瓶顶部阀门</strong>是拧紧转态（<strong>顺时针拧紧关闭，逆时针打开</strong>），<strong>减压阀黑色阀门</strong>是松开状态（<strong>顺时针方向拧紧，表示打开；逆时针松开阀门，表示关闭</strong>），⚠️注意: 两个阀门开关方向是相反的，一定要注意！！！</p>
-<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-01-06-%E5%9B%BE%E7%89%87%E6%9D%A5%E8%87%AA%20%E6%B0%AE%E6%B0%94%E7%BD%90%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95%EF%BC%8C%E7%AC%AC%201%20%E9%A1%B5.png" alt="2022-01-06-图片来自氮气罐使用方法，第1页"></p>
-<h2 id="2-如何打开？"><a href="#2-如何打开？" class="headerlink" title="2. 如何打开？"></a>2. 如何打开？</h2><ul>
-<li>首先，逆时针方向拧开钢瓶顶部阀门，此时钢瓶气压表就会产生气压读数。</li>
-</ul>
-<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-01-06-%E5%9B%BE%E7%89%87%E6%9D%A5%E8%87%AA%20%E6%B0%AE%E6%B0%94%E7%BD%90%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95%EF%BC%8C%E7%AC%AC%202%20%E9%A1%B5.png" alt="2022-01-06-图片来自氮气罐使用方法，第2页"></p>
-<ul>
-<li>然后，顺时针逐渐拧紧黑色大阀门，直到有一定阻力，同时检测氮吹仪是否有气体产生，直到手能感受到氮吹仪出来的气体（⚠️注意：尽管有气体产生，但因管道气压过低，气压表读数基本看不到变化）。</li>
-</ul>
-<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-01-06-%E5%9B%BE%E7%89%87%E6%9D%A5%E8%87%AA%20%E6%B0%AE%E6%B0%94%E7%BD%90%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95%EF%BC%8C%E7%AC%AC%202%20.png" alt="2022-01-06-图片来自氮气罐使用方法，第2"></p>
-<h2 id="3-如何关闭装置"><a href="#3-如何关闭装置" class="headerlink" title="3. 如何关闭装置"></a>3. 如何关闭装置</h2><ul>
-<li>首先，顺时针拧紧钢瓶顶部的阀门，此时钢瓶气压表因气体残余，还会有读数。</li>
-</ul>
-<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-01-06-%E5%9B%BE%E7%89%87%E6%9D%A5%E8%87%AA%20%E6%B0%AE%E6%B0%94%E7%BD%90%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95%EF%BC%8C%E7%AC%AC%203%20%E9%A1%B5.png" alt="2022-01-06-图片来自氮气罐使用方法，第3页"></p>
-<ul>
-<li>其次，逐渐顺时针拧紧减压阀黑色大阀门，开放管道释放剩余气体，会听到一声气体释放的声音，此时，钢瓶气压表读数为零。</li>
-</ul>
-<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-01-06-%E5%9B%BE%E7%89%87%E6%9D%A5%E8%87%AA%20%E6%B0%AE%E6%B0%94%E7%BD%90%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95%EF%BC%8C%E7%AC%AC%20.png" alt="2022-01-06-图片来自氮气罐使用方法，第"></p>
-<ul>
-<li>最后，逆时针松开减压阀黑色大阀门，使其处于松开状态（<strong>关闭状态</strong>），至此所有阀门关闭。</li>
-</ul>
-<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-01-06-%E5%9B%BE%E7%89%87%E6%9D%A5%E8%87%AA%20%E6%B0%AE%E6%B0%94%E7%BD%90%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95%EF%BC%8C%E7%AC%AC%204%20%E9%A1%B5.png" alt="2022-01-06-图片来自氮气罐使用方法，第4页"></p>
+
+
+<h3 id="细菌抵抗噬菌体入侵"><a href="#细菌抵抗噬菌体入侵" class="headerlink" title="细菌抵抗噬菌体入侵"></a><font color="green">细菌抵抗噬菌体入侵</font></h3><p>图中是细菌天然免疫系统。我们可以看到，CRISPR locus是由几个原件构成。一开始是个反向转录的RNA，是特异的非编码RNA，可以和重复序列部分互补（trancrRNA，橙色矩形），后面是各种cas基因（箭头表示），接着是CRISPR排列（棕色的菱形是重复序列，彩色的是间隔）。而这些间隔序列是细菌从噬菌体DNA中获得的遗传原件：当噬菌体感染细菌，细菌激活相关的cas基因——Cas1，Cas2,和Csn2，将其中新的间隔序列整合到自身的CRISPR arry中。一旦获得以后，新的spacer就会出现在pre-crRNA中，此时tracrRNA与不同的SPACER互补，在RNaseIII的作用下，产生crRNA，进一步在其他未知的核酸酶的作用，剪切crRNA的5’端，使得引导序列长为20nt。如果噬菌体注入DNA，那么这个免疫系统将被激活，来干扰噬菌体DNA。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-4c5c2be28472800d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="防御过程"></p>
+<h3 id="剪切与修复"><a href="#剪切与修复" class="headerlink" title="剪切与修复"></a><font color="green">剪切与修复</font></h3><p>我们目前主要使用II型CRISPR系统，它和他的区别在于，只是需要一个DNA内切酶Cas9来对与sgRNA20个互补碱基的带有PAM结构的DNA进行剪切。剪切后是DNA产生平末端的DSB（双链断裂），然后在进行非同源的末端连接过程中，容易随机插入或者删除或者替换。或者进行高保真的同源定向修复，修复DNA。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-be11ad0e6a3c0c5e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Type II Cas9"><br><img src="https://upload-images.jianshu.io/upload_images/3478485-827d8dc582062b62.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Cas9剪切及突变产生"></p>
+<h3 id="Cas9蛋白构象重组"><a href="#Cas9蛋白构象重组" class="headerlink" title="Cas9蛋白构象重组"></a><font color="green">Cas9蛋白构象重组</font></h3><p>这里的例子是化脓链球菌的SpyCas9，是一个含有1368个氨基酸的多结构和多功能的DNA核酸内切酶。它的切割位点在PAM上游的第三个碱基，通过HNH（sgRAN互补的目标序列）和RuvC核酸酶结构域（非目标序列）。要识别特定序列并进行剪切，sgRNA与Cas9组合成一个复合体，其中sgRNAy与Cas9结合起着关键的作用，能够使得Cas9构象重构，变得具有活性。crRNA前20碱基使得Cas9具有靶序列特异性，tracrRNA来招募Cas9蛋白。在这个系统中，有一个所谓的种子序列，20碱基spacer的3’端10-12个核苷酸。<strong>在种子序列的错配以及本身同源性都会严重影响系统特异性和脱靶效率。</strong>*<br><img src="https://upload-images.jianshu.io/upload_images/3478485-082186ee503a2b4a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="sgNRA"></p>
+<h3 id="目标DNA搜索与识别"><a href="#目标DNA搜索与识别" class="headerlink" title="目标DNA搜索与识别"></a><font color="green">目标DNA搜索与识别</font></h3><p><strong>PAM序列非常的关键</strong>，能够起到识别自身和外来的序列。有实验表明，如果PAM进行但突变，那么就能够让噬菌体入侵宿主。在sgRNA互补之前，首先是寻找PAM序列，如果没有合适的PAM，那么通过蛋白三维结构的坍塌，会离开DNA，直到找到合适的PAM。一旦找到PAM，Cas9就使DNA局部解链，RNA进入，与DNA互补，形成RNA-DNA结构。<strong>sg种子区域序列与靶DNA的完美互补是很重要的。</strong></p>
+<h3 id="CRISPR–Cas9介导的DNA靶定于剪切模型"><a href="#CRISPR–Cas9介导的DNA靶定于剪切模型" class="headerlink" title="CRISPR–Cas9介导的DNA靶定于剪切模型"></a><font color="green">CRISPR–Cas9介导的DNA靶定于剪切模型</font></h3><p>首先，guide RNA的结合，使得Cas9从一个未激活的构象变成具有DNA识别能力的构象。RNA种子序列先形成A型构象，为了目标结合和链入侵，PAM识别位点预先形成用来PAM识别。然后，Cas9结合到PAM序列，使得酶能够去识别附近的潜在的DNA靶序列。一旦Cas9在PAM附近找到了潜在的靶序列，会开始解双螺旋并继续检查剩余的靶序列。磷酸锁环稳定解旋的目标DNA，且第一个碱基开始翻转向上，与guide RNA碱基配对。而Cas9继续与非靶链上的翻转碱基作用，促进双螺旋解开。接着，碱基配对伴随着Cas9构象改变，促进种子序列前面的guide RNA从限制中释放出来，也形成配对，这个过程促使Cas9构象持续变化，直到到达有活性的状态。最终，guide RNA与目标DNA完全互补使得HNH具有稳定的，具有活性的构象，来剪切目标链DNA。与此同时，引起更大的构象变化，使得非目标链DNA进入RuvC催化中心被剪切，这种转态下，Cas9中牢牢结合在靶点序列上，直到其他的细胞因子过来替代它。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-4db71b549d557ab4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="剪切示意图"></p>
+<p>读了这篇review，进行一定程度的总结，有些地方还是有些不太清楚。</p>
+<blockquote>
+<p>Fuguo Jiang and Jennifer A. Doudna, CRISPR–Cas9 Structures and Mechanisms, Annual Review of Biophysics 2017 46:1, 505-529 </p>
+</blockquote>
 ]]></content>
       <categories>
-        <category>科研之路</category>
+        <category>学习记录</category>
       </categories>
       <tags>
-        <tag>实验</tag>
+        <tag>Cas9</tag>
       </tags>
   </entry>
   <entry>
@@ -1044,6 +965,43 @@
       <tags>
         <tag>印度</tag>
         <tag>郭建龙</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>使用氮气瓶</title>
+    <url>//2022/01/07/%E4%BD%BF%E7%94%A8%E6%B0%AE%E6%B0%94%E7%93%B6/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+
+<span id="more"></span>
+
+<h2 id="1-基本构造"><a href="#1-基本构造" class="headerlink" title="1. 基本构造"></a>1. 基本构造</h2><p>关闭状态下，减压阀的仪表读数均为0，<strong>钢瓶顶部阀门</strong>是拧紧转态（<strong>顺时针拧紧关闭，逆时针打开</strong>），<strong>减压阀黑色阀门</strong>是松开状态（<strong>顺时针方向拧紧，表示打开；逆时针松开阀门，表示关闭</strong>），⚠️注意: 两个阀门开关方向是相反的，一定要注意！！！</p>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-01-06-%E5%9B%BE%E7%89%87%E6%9D%A5%E8%87%AA%20%E6%B0%AE%E6%B0%94%E7%BD%90%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95%EF%BC%8C%E7%AC%AC%201%20%E9%A1%B5.png" alt="2022-01-06-图片来自氮气罐使用方法，第1页"></p>
+<h2 id="2-如何打开？"><a href="#2-如何打开？" class="headerlink" title="2. 如何打开？"></a>2. 如何打开？</h2><ul>
+<li>首先，逆时针方向拧开钢瓶顶部阀门，此时钢瓶气压表就会产生气压读数。</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-01-06-%E5%9B%BE%E7%89%87%E6%9D%A5%E8%87%AA%20%E6%B0%AE%E6%B0%94%E7%BD%90%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95%EF%BC%8C%E7%AC%AC%202%20%E9%A1%B5.png" alt="2022-01-06-图片来自氮气罐使用方法，第2页"></p>
+<ul>
+<li>然后，顺时针逐渐拧紧黑色大阀门，直到有一定阻力，同时检测氮吹仪是否有气体产生，直到手能感受到氮吹仪出来的气体（⚠️注意：尽管有气体产生，但因管道气压过低，气压表读数基本看不到变化）。</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-01-06-%E5%9B%BE%E7%89%87%E6%9D%A5%E8%87%AA%20%E6%B0%AE%E6%B0%94%E7%BD%90%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95%EF%BC%8C%E7%AC%AC%202%20.png" alt="2022-01-06-图片来自氮气罐使用方法，第2"></p>
+<h2 id="3-如何关闭装置"><a href="#3-如何关闭装置" class="headerlink" title="3. 如何关闭装置"></a>3. 如何关闭装置</h2><ul>
+<li>首先，顺时针拧紧钢瓶顶部的阀门，此时钢瓶气压表因气体残余，还会有读数。</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-01-06-%E5%9B%BE%E7%89%87%E6%9D%A5%E8%87%AA%20%E6%B0%AE%E6%B0%94%E7%BD%90%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95%EF%BC%8C%E7%AC%AC%203%20%E9%A1%B5.png" alt="2022-01-06-图片来自氮气罐使用方法，第3页"></p>
+<ul>
+<li>其次，逐渐顺时针拧紧减压阀黑色大阀门，开放管道释放剩余气体，会听到一声气体释放的声音，此时，钢瓶气压表读数为零。</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-01-06-%E5%9B%BE%E7%89%87%E6%9D%A5%E8%87%AA%20%E6%B0%AE%E6%B0%94%E7%BD%90%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95%EF%BC%8C%E7%AC%AC%20.png" alt="2022-01-06-图片来自氮气罐使用方法，第"></p>
+<ul>
+<li>最后，逆时针松开减压阀黑色大阀门，使其处于松开状态（<strong>关闭状态</strong>），至此所有阀门关闭。</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-01-06-%E5%9B%BE%E7%89%87%E6%9D%A5%E8%87%AA%20%E6%B0%AE%E6%B0%94%E7%BD%90%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95%EF%BC%8C%E7%AC%AC%204%20%E9%A1%B5.png" alt="2022-01-06-图片来自氮气罐使用方法，第4页"></p>
+]]></content>
+      <categories>
+        <category>科研之路</category>
+      </categories>
+      <tags>
+        <tag>实验</tag>
       </tags>
   </entry>
   <entry>
@@ -1501,25 +1459,6 @@ characterization of aluminum resistance in Populus"><br>这里我先用比较麻
       </tags>
   </entry>
   <entry>
-    <title>植物Cas9靶点设计网站简介</title>
-    <url>//2019/02/05/%E6%A4%8D%E7%89%A9Cas9%E9%9D%B6%E7%82%B9%E8%AE%BE%E8%AE%A1%E7%BD%91%E7%AB%99%E7%AE%80%E4%BB%8B/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![cas9模型](https://upload-images.jianshu.io/upload_images/3478485-e845fed2bd99b07b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-<span id="more"></span>
-
-<p>我在前面的简文中已经基本阐述了Cas9的作用机制，详细内容可以看<a href="https://www.jianshu.com/p/1e7bff7d5830">CRISPR-Cas9系统简介</a>一文。今天，就来讲一讲怎么实际使用这个系统来帮助我们进行功能基因的研究。这个技术一问世，很多大牛就开始使用，植物学领域的应用，使得我们能够更方便的有目的的去编辑我们想要编辑的植物基因组。今天就推荐几个网站，寻找靶点序列的网站。前面我们也提到过，好的靶点的选择，可以减小脱靶率，大大提高我们编辑的效率。能够极大提高我们的实验效率，不然像我们植物学领域的苦逼博士，不得疯掉，一直一直脱靶的话，那么就真的非常的酸爽。</p>
-<h3 id="CRISPR-PLANT"><a href="#CRISPR-PLANT" class="headerlink" title="CRISPR-PLANT"></a><font color = "green">CRISPR-PLANT</font></h3><p>具体网址：<a href="https://www.genome.arizona.edu/crispr/index.html">https://www.genome.arizona.edu/crispr/index.html</a>。 看这个网址，应该是Arizona大学出品的。这是一个专门针对植物CRISPR靶点设计网站，比较专业，较为好用的网站。首页有一张模式图，而且还有对CRISPR-Cas9系统的基本介绍，大概可以了解。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-f2f550500f26be7a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="网站首页"><br>导航栏中有几个标签链接，如果你不知道怎么使用，那么你就可以点击instruction来学习，里面有比较详细的介绍。如果要开始找靶点，那就点击search。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-6181cec9ae7ec031.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="导航栏"><br>进入search主页，就可以看到查找的方式。这里它也建议你先看知道手册，然后在进行设计。查找的输入信息有两种，a.染色体位置信息；b.基因locus，通常情况下我们在查找的时候感觉locus用的比较多，一般你肯定是知道基因的信息去进行search。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-2e0980dc0152cf1e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="search主页"><br>这个网站可以找的物种包括拟南芥、二穗短柄草、大豆、蒺藜苜蓿、水稻、高粱、番茄和玉米；还是挺多的，一般都能符合需求。当然，如果你的物种实在是太过于小众，那么可惜，没法用这个网站进行。那么，下面这个网站就可以一定程度满足你。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-0b1d6da7b6ab97bd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="这里给的物种基因组"></p>
-<h3 id="CRISPRSCAN"><a href="#CRISPRSCAN" class="headerlink" title="CRISPRSCAN"></a><font color="green">CRISPRSCAN</font></h3><p>具体网址：<a href="http://www.crisprscan.org/?page=sequence">http://www.crisprscan.org/?page=sequence</a>。这个网站是都是动物的，没有植物物种的，但是为什么要推荐这个网站呢？因为我们最开始就是使用这个网站进行靶点筛选的，之后在拟南芥和番茄中进行了尝试敲除，结果都能够得到敲除的株系，也是能够使用这个来进行引物的设计。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-ef69894d221d6ddc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="网站首页"><br>这个网站里，有很多动物，果蝇、人类、小鼠和鸡等物种，没有植物的，但是你可以选择No search这个选项，然后将你的序列黏贴进去，之后会出来靶点，但是它的评估只有一个score，没有其他的了。这个网站，现在对我们植物的来说，还是基本不用了，有其他专门的植物的网站。下面这个网站就更好了，非常全面的植物的网站。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-a8e5bf4933bff970.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="这个网站有的一些物种"></p>
-<h3 id="CRISPR-P-2-0"><a href="#CRISPR-P-2-0" class="headerlink" title="CRISPR-P 2.0"></a><font color = "green">CRISPR-P 2.0</font></h3><p>具体网址：<a href="http://crispr.hzau.edu.cn/CRISPR2/">http://crispr.hzau.edu.cn/CRISPR2/</a>。这个网站是华中农业大学大学设计的，做的还是很不错的。用了之后，感觉比前面两个的内容更丰富，而且评估的更全面。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-43966e8205ae6ee8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="网站首页，也很漂亮"><br>点击网站右上角的start design，你就可以开始设计相应的引物。里面的信息更加细化。有pam类型选择，启动子选择，引导序列的长度，物种基因组选择，可以通过locus以及位置信息和序列进行靶基因的选定。它这个网站的物种数据是整合了NCBI数据库，所以基本包括了已经测序完全的植物基因组，解决了物种限制这个问题，普遍性强了。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-6b15fc0bac0d5e23.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="设计页面"><br>我用网站中的例子，来展示一下靶点搜索结果。它可以根据开始的碱基A/G来筛选靶点，也可以通过score、gc含量和位置信息来进行靶点筛选。此外，当你将鼠标移到靶点上，会出现具体信息：显示了位置，打分，序列，切割位点（红色箭头），启动子，以及脱靶位点数量和错位碱基数等，可以说相当丰富。而且，如果某些靶点存在酶切位点，也会同时显示出来。如果不理解这些参数，网站首页的<strong>help</strong>会有详细的解释，包括怎么选择靶点。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-3ce8f6271f54d084.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="靶点"><br><img src="https://upload-images.jianshu.io/upload_images/3478485-c617285e77a1dab2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="靶点信息"><br>这几个CRISPR相关的网站介绍就到这里结束了，具体应用还是需要有实际例子去使用，尝试。<br>今天是大年初一，给大家拜个年，新春快乐，实验顺利，早发paper。</p>
-]]></content>
-      <categories>
-        <category>学习记录</category>
-      </categories>
-      <tags>
-        <tag>Cas9</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>海南环岛游记</title>
     <url>//2018/08/31/%E6%B5%B7%E5%8D%97%E7%8E%AF%E5%B2%9B%E6%B8%B8%E8%AE%B0/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -1712,6 +1651,25 @@ characterization of aluminum resistance in Populus"><br>这里我先用比较麻
       </tags>
   </entry>
   <entry>
+    <title>植物Cas9靶点设计网站简介</title>
+    <url>//2019/02/05/%E6%A4%8D%E7%89%A9Cas9%E9%9D%B6%E7%82%B9%E8%AE%BE%E8%AE%A1%E7%BD%91%E7%AB%99%E7%AE%80%E4%BB%8B/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![cas9模型](https://upload-images.jianshu.io/upload_images/3478485-e845fed2bd99b07b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+<span id="more"></span>
+
+<p>我在前面的简文中已经基本阐述了Cas9的作用机制，详细内容可以看<a href="https://www.jianshu.com/p/1e7bff7d5830">CRISPR-Cas9系统简介</a>一文。今天，就来讲一讲怎么实际使用这个系统来帮助我们进行功能基因的研究。这个技术一问世，很多大牛就开始使用，植物学领域的应用，使得我们能够更方便的有目的的去编辑我们想要编辑的植物基因组。今天就推荐几个网站，寻找靶点序列的网站。前面我们也提到过，好的靶点的选择，可以减小脱靶率，大大提高我们编辑的效率。能够极大提高我们的实验效率，不然像我们植物学领域的苦逼博士，不得疯掉，一直一直脱靶的话，那么就真的非常的酸爽。</p>
+<h3 id="CRISPR-PLANT"><a href="#CRISPR-PLANT" class="headerlink" title="CRISPR-PLANT"></a><font color = "green">CRISPR-PLANT</font></h3><p>具体网址：<a href="https://www.genome.arizona.edu/crispr/index.html">https://www.genome.arizona.edu/crispr/index.html</a>。 看这个网址，应该是Arizona大学出品的。这是一个专门针对植物CRISPR靶点设计网站，比较专业，较为好用的网站。首页有一张模式图，而且还有对CRISPR-Cas9系统的基本介绍，大概可以了解。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-f2f550500f26be7a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="网站首页"><br>导航栏中有几个标签链接，如果你不知道怎么使用，那么你就可以点击instruction来学习，里面有比较详细的介绍。如果要开始找靶点，那就点击search。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-6181cec9ae7ec031.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="导航栏"><br>进入search主页，就可以看到查找的方式。这里它也建议你先看知道手册，然后在进行设计。查找的输入信息有两种，a.染色体位置信息；b.基因locus，通常情况下我们在查找的时候感觉locus用的比较多，一般你肯定是知道基因的信息去进行search。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-2e0980dc0152cf1e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="search主页"><br>这个网站可以找的物种包括拟南芥、二穗短柄草、大豆、蒺藜苜蓿、水稻、高粱、番茄和玉米；还是挺多的，一般都能符合需求。当然，如果你的物种实在是太过于小众，那么可惜，没法用这个网站进行。那么，下面这个网站就可以一定程度满足你。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-0b1d6da7b6ab97bd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="这里给的物种基因组"></p>
+<h3 id="CRISPRSCAN"><a href="#CRISPRSCAN" class="headerlink" title="CRISPRSCAN"></a><font color="green">CRISPRSCAN</font></h3><p>具体网址：<a href="http://www.crisprscan.org/?page=sequence">http://www.crisprscan.org/?page=sequence</a>。这个网站是都是动物的，没有植物物种的，但是为什么要推荐这个网站呢？因为我们最开始就是使用这个网站进行靶点筛选的，之后在拟南芥和番茄中进行了尝试敲除，结果都能够得到敲除的株系，也是能够使用这个来进行引物的设计。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-ef69894d221d6ddc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="网站首页"><br>这个网站里，有很多动物，果蝇、人类、小鼠和鸡等物种，没有植物的，但是你可以选择No search这个选项，然后将你的序列黏贴进去，之后会出来靶点，但是它的评估只有一个score，没有其他的了。这个网站，现在对我们植物的来说，还是基本不用了，有其他专门的植物的网站。下面这个网站就更好了，非常全面的植物的网站。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-a8e5bf4933bff970.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="这个网站有的一些物种"></p>
+<h3 id="CRISPR-P-2-0"><a href="#CRISPR-P-2-0" class="headerlink" title="CRISPR-P 2.0"></a><font color = "green">CRISPR-P 2.0</font></h3><p>具体网址：<a href="http://crispr.hzau.edu.cn/CRISPR2/">http://crispr.hzau.edu.cn/CRISPR2/</a>。这个网站是华中农业大学大学设计的，做的还是很不错的。用了之后，感觉比前面两个的内容更丰富，而且评估的更全面。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-43966e8205ae6ee8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="网站首页，也很漂亮"><br>点击网站右上角的start design，你就可以开始设计相应的引物。里面的信息更加细化。有pam类型选择，启动子选择，引导序列的长度，物种基因组选择，可以通过locus以及位置信息和序列进行靶基因的选定。它这个网站的物种数据是整合了NCBI数据库，所以基本包括了已经测序完全的植物基因组，解决了物种限制这个问题，普遍性强了。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-6b15fc0bac0d5e23.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="设计页面"><br>我用网站中的例子，来展示一下靶点搜索结果。它可以根据开始的碱基A/G来筛选靶点，也可以通过score、gc含量和位置信息来进行靶点筛选。此外，当你将鼠标移到靶点上，会出现具体信息：显示了位置，打分，序列，切割位点（红色箭头），启动子，以及脱靶位点数量和错位碱基数等，可以说相当丰富。而且，如果某些靶点存在酶切位点，也会同时显示出来。如果不理解这些参数，网站首页的<strong>help</strong>会有详细的解释，包括怎么选择靶点。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-3ce8f6271f54d084.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="靶点"><br><img src="https://upload-images.jianshu.io/upload_images/3478485-c617285e77a1dab2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="靶点信息"><br>这几个CRISPR相关的网站介绍就到这里结束了，具体应用还是需要有实际例子去使用，尝试。<br>今天是大年初一，给大家拜个年，新春快乐，实验顺利，早发paper。</p>
+]]></content>
+      <categories>
+        <category>学习记录</category>
+      </categories>
+      <tags>
+        <tag>Cas9</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>疫情记</title>
     <url>//2020/04/12/%E7%96%AB%E6%83%85%E8%AE%B0/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -1786,6 +1744,27 @@ characterization of aluminum resistance in Populus"><br>这里我先用比较麻
       </tags>
   </entry>
   <entry>
+    <title>科学与好奇心</title>
+    <url>//2018/08/29/%E7%A7%91%E5%AD%A6%E4%B8%8E%E5%A5%BD%E5%A5%87%E5%BF%83/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![curiosity.png](https://upload-images.jianshu.io/upload_images/3478485-167898110b8d9438.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+<p>那一年，我还是博士二年级，刚开始。然而，时间极速流失，却无能为力。</p>
+<span id="more"></span>
+
+<p>已经开始了我们学校夏季学期的课程，已经博士二年级了，上完了所有的课程，只有剩下这门专业选修课——现代生态学。在上了两节课之后，我感受最深的，或者是学习到的一点，就是为什么我们做科学研究，到底是为了什么而进行？老师给了一个答案——好奇心。我们花了纳税人的钱，为了是满足他们的好奇心。这样的回答，让我感到很新奇，很特殊的一种解答。我从来没有想到过，为了满足好奇心，从而使得这么多人在从事这一个行业。</p>
+<p>好奇心，curiosity，至关重要。想想，我们很多人每天在实验室工作，其实根本没有精神气，像这几天的我，真是一塌糊涂，没有任何精神，一切真的是那样的麻木，味同嚼蜡这个词可以形容大多数时间的我，我想不只是我一个，大多数人都是在这样的层次。有时候就会想，到底是什么促使我们在坚持，使得人类在这样的发展，有这样的发展史。或许就是好奇心吧，因为好奇，所以要去探究，要去探究，就要不断思考，从而不断推进人类认知的发展，不断向前走。</p>
+<p>人太容易变化，很多时候没有一个定数，没有那样的稳定的体系。但是，从大体上来说，纵观一生，或许可以说是比较稳定的，人的性格，人的品质。但从很小的尺度来看，人就是变幻无常的，我们极其容易受到外界坏境的影响，变得焦躁不安。非常的头疼，对我来说，这样的自己让我变得难以接受，无法那样的安静稳定，或者说是专注。分析原因，有一个可能就是好奇心的缺失，没有好奇心，一切都没法集中，没有办法使自己的熵减小，在自然状态下，自然界包括我们人类社会，甚至整个宇宙，都是一个熵增的过程，一定需要外在的能量输入，使其保持一定的熵值，相对变得稳定，而不是那样的混乱焦躁。好奇心，从另一个方面来说，或许就是一种能量，能够维持我们人类的稳定。</p>
+<p>我也发现，这几天的游离状态，好像就是因为没有了好奇心，不管是什么，实验还是其他的知识，都失去了好奇心，使得我的内心一下子熵增了不少，变得无序混沌，乱七八糟，无法收拾。直到某个时刻，我能够找到外界的力量——能够获得对外界某些事物的好奇心，那么我可以说，我又会复活，变得稳定，变成另一个状态。人，说到底也就两种状态，熵减和熵增的状态，而且这两个状态本身是一个动态的变化过程，不是一个固定的状态，始终在变化。而两者之间也在不停的互相转换，这就是客观规律。所以啊，很多时候就要想得开，人的情绪不断变化是非常正常的现象，不要去疑惑，为什么刚才好好地，一下子就变得不一样了呢？</p>
+]]></content>
+      <categories>
+        <category>随记</category>
+      </categories>
+      <tags>
+        <tag>科学</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>科普吗？</title>
     <url>//2018/08/26/%E7%A7%91%E6%99%AE%E5%90%97%EF%BC%9F/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -1810,27 +1789,6 @@ characterization of aluminum resistance in Populus"><br>这里我先用比较麻
       </categories>
       <tags>
         <tag>科普</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>科学与好奇心</title>
-    <url>//2018/08/29/%E7%A7%91%E5%AD%A6%E4%B8%8E%E5%A5%BD%E5%A5%87%E5%BF%83/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![curiosity.png](https://upload-images.jianshu.io/upload_images/3478485-167898110b8d9438.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-<p>那一年，我还是博士二年级，刚开始。然而，时间极速流失，却无能为力。</p>
-<span id="more"></span>
-
-<p>已经开始了我们学校夏季学期的课程，已经博士二年级了，上完了所有的课程，只有剩下这门专业选修课——现代生态学。在上了两节课之后，我感受最深的，或者是学习到的一点，就是为什么我们做科学研究，到底是为了什么而进行？老师给了一个答案——好奇心。我们花了纳税人的钱，为了是满足他们的好奇心。这样的回答，让我感到很新奇，很特殊的一种解答。我从来没有想到过，为了满足好奇心，从而使得这么多人在从事这一个行业。</p>
-<p>好奇心，curiosity，至关重要。想想，我们很多人每天在实验室工作，其实根本没有精神气，像这几天的我，真是一塌糊涂，没有任何精神，一切真的是那样的麻木，味同嚼蜡这个词可以形容大多数时间的我，我想不只是我一个，大多数人都是在这样的层次。有时候就会想，到底是什么促使我们在坚持，使得人类在这样的发展，有这样的发展史。或许就是好奇心吧，因为好奇，所以要去探究，要去探究，就要不断思考，从而不断推进人类认知的发展，不断向前走。</p>
-<p>人太容易变化，很多时候没有一个定数，没有那样的稳定的体系。但是，从大体上来说，纵观一生，或许可以说是比较稳定的，人的性格，人的品质。但从很小的尺度来看，人就是变幻无常的，我们极其容易受到外界坏境的影响，变得焦躁不安。非常的头疼，对我来说，这样的自己让我变得难以接受，无法那样的安静稳定，或者说是专注。分析原因，有一个可能就是好奇心的缺失，没有好奇心，一切都没法集中，没有办法使自己的熵减小，在自然状态下，自然界包括我们人类社会，甚至整个宇宙，都是一个熵增的过程，一定需要外在的能量输入，使其保持一定的熵值，相对变得稳定，而不是那样的混乱焦躁。好奇心，从另一个方面来说，或许就是一种能量，能够维持我们人类的稳定。</p>
-<p>我也发现，这几天的游离状态，好像就是因为没有了好奇心，不管是什么，实验还是其他的知识，都失去了好奇心，使得我的内心一下子熵增了不少，变得无序混沌，乱七八糟，无法收拾。直到某个时刻，我能够找到外界的力量——能够获得对外界某些事物的好奇心，那么我可以说，我又会复活，变得稳定，变成另一个状态。人，说到底也就两种状态，熵减和熵增的状态，而且这两个状态本身是一个动态的变化过程，不是一个固定的状态，始终在变化。而两者之间也在不停的互相转换，这就是客观规律。所以啊，很多时候就要想得开，人的情绪不断变化是非常正常的现象，不要去疑惑，为什么刚才好好地，一下子就变得不一样了呢？</p>
-]]></content>
-      <categories>
-        <category>随记</category>
-      </categories>
-      <tags>
-        <tag>科学</tag>
       </tags>
   </entry>
   <entry>
@@ -1949,6 +1907,40 @@ characterization of aluminum resistance in Populus"><br>这里我先用比较麻
       </tags>
   </entry>
   <entry>
+    <title>美洲小宇宙</title>
+    <url>//2018/09/06/%E7%BE%8E%E6%B4%B2%E5%B0%8F%E5%AE%87%E5%AE%99/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![美洲小宇宙](http://upload-images.jianshu.io/upload_images/3478485-21cddf3db814e6d1.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+> **读游记的方法**：一般需要有一张世界地图在旁边，或者有电脑也可以（最好使用Google地图）（游记不可避免的会出现地名，于是总会和地理扯上关系），一遍阅读，一遍看地图，找到所在地，能够很好的在脑海中形成画面，读起来不会那么累。
+
+<span id="more"></span>
+
+
+
+<p>其实最需要地图的是<strong>读史书</strong>：这时你肯定会遇到超级多从未有地理概念的国家或者地名，除了要有现代的地图，另外还需要历史地理地图。历史往往是将过去和现在作比较，从而来吸取经验。地图历史总是在不断变迁，从古代到现代，各个国家的发展及地理行政边界都是在发生不断变化，所以也要明白过去的情况。像人类的起源这方面的，必然会牵扯到人类在世界各地的迁移，人类文明的出现摇篮，总是出现大量的地理名词。因此，你需要读懂地图，了解地势，这对于喜欢历史的人非常关键，人类历史上，很多关键性的时刻，总是和地理位置息息相关，<strong>一个民族的历史走向也离不开自然地理的催化。</strong></p>
+<p>总之，读游记和读历史文化相关的书记，最好要做到心中有地图或者手中有地图的状态，否则读起来会困难不少呢！</p>
+<h1 id="序"><a href="#序" class="headerlink" title="序"></a>序</h1><p>此次美洲之行主要去了墨西哥，哥斯达黎加，巴拿马，古巴和厄瓜多尔，去的国家不是特别多，故事还是很丰富，作者大概是跟着旅行团去的，遇到的都是特别正常的事情，描述的都是美好的事物，而遭遇到一些负面的事物。傅真在她的《最好金龟换酒》中提到，自己和他的老公是自由行，在墨西哥遇到了比较可怕的事情，还体会了极其贫困地区人们的生活状况，感觉更完整一些。但是，要论深度，确实傅真要差挺多，毕老师还是深厚的历史文化底蕴，涉及到的面比较广泛。反正都有可看之处。</p>
+<p>南美洲，受西班牙殖民，很多国家都将西班牙语作为官网语言，因此要是自己会西班牙语或者有个会西班牙语的朋友一起去美洲旅行，那么肯定会有趣不少。或许下次在打算自己去南美洲旅行的时候，可以提前3个月左右恶补一下西班牙语，少一些语言障碍的自由行会非常的有意思。<br>说起语言，我又忍不住想多说几句。我对语言的起源，很是有兴趣，然而并没有时间去深究。词源对于语言的学习有莫大的帮助，我深信这一点，我其实也特别想多学习几门语言，然而最终还是放弃，到现在为止，连英语都没有学好，真是惭愧。<strong>西班牙语</strong>，属于印欧语系罗曼语族西罗曼语支，约有4亿人将其作为母语，为世界第二大语言，仅次于汉语。</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/3478485-eb8022421e4f3e33.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="中南美洲"></p>
+<h1 id="哥斯达黎加"><a href="#哥斯达黎加" class="headerlink" title="哥斯达黎加"></a>哥斯达黎加</h1><p>世界上第一个不设军队的国家，是永久的中立国，是一个将火山印在国旗上的国家，三座活火山成为很重要的景点。拥有世界上很少数的<strong>热带雾林</strong>。和热带雨林不一样，形成的条件苛刻：首先，必须出于热带；第二，有1300米以上的海拔高度，保持物种多样性；最后一点，距离海洋比较近，有强大的水汽供应，形成雾。</p>
+<h1 id="两个及其伟大的革命家"><a href="#两个及其伟大的革命家" class="headerlink" title="两个及其伟大的革命家"></a>两个及其伟大的革命家</h1><ol>
+<li>托洛茨基：具体介绍就不讲了（<a href="https://en.wikipedia.org/wiki/Leon_Trotsky">详细介绍</a>），最后的命运流亡海外，被暗杀。</li>
+<li>切格瓦拉：古巴革命的核心人物之一，任古巴国家银行行长。<a href="https://en.wikipedia.org/wiki/Che_Guevara">维基介绍</a>，看完毕老师对其一生的介绍，肃然起敬，伟大的人物就是有那样的魅力和人格。</li>
+</ol>
+<p><img src="http://upload-images.jianshu.io/upload_images/3478485-1e86acc106bb344b.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="切格瓦拉.jpg"></p>
+<h1 id="玛雅文明"><a href="#玛雅文明" class="headerlink" title="玛雅文明"></a>玛雅文明</h1><p>没有人不知道玛雅文明吧，2012年12月24日，就是因为玛雅人的世界末日预言而弄得人心惶惶，真的以为世界都要结束了，开启新的纪元。然而，现在已经到了2017年了，我此时此刻还在安静地看书打字。</p>
+<p><a href="https://en.wikipedia.org/wiki/Maya_civilization">玛雅文明</a>，是中美洲玛雅人创造的中美洲文明。曾经的辉煌，早已湮灭在热带雨林之中，金字塔毅然屹立在中美洲的大地之上，貌似在向世人们述说曾经的辉煌。</p>
+<p>墨西哥<strong>奇琴伊察</strong>玛雅城邦遗址，位于墨西哥东南部尤卡坦半岛，是玛雅文明最杰出的代表作，是玛雅古国最大、最繁华的城邦，始建于公元514年。主要的遗迹库库尔坎金字塔就位于此，库库尔坎金字塔由塔身和神庙两部分组成，塔高30米，塔底面为正方形，四方对称，底大上小，四边棱角分明。台基每边长55.5米，共9层，向上逐渐缩小至梯形平台，上有高6米的方形神庙。塔的四面各有91级台阶，四面共有364级，加上最上层的平台，正好是一年的天数。</p>
+]]></content>
+      <categories>
+        <category>读书笔记</category>
+      </categories>
+      <tags>
+        <tag>中南美洲</tag>
+        <tag>毕淑敏</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>算法与数据结构（3）：算法复杂度说明（上）</title>
     <url>//2018/10/10/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%EF%BC%883%EF%BC%89%EF%BC%9A%E7%AE%97%E6%B3%95%E5%A4%8D%E6%9D%82%E5%BA%A6%E8%AF%B4%E6%98%8E%EF%BC%88%E4%B8%8A%EF%BC%89/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -1982,40 +1974,6 @@ characterization of aluminum resistance in Populus"><br>这里我先用比较麻
       </categories>
       <tags>
         <tag>复杂度</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>美洲小宇宙</title>
-    <url>//2018/09/06/%E7%BE%8E%E6%B4%B2%E5%B0%8F%E5%AE%87%E5%AE%99/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![美洲小宇宙](http://upload-images.jianshu.io/upload_images/3478485-21cddf3db814e6d1.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-> **读游记的方法**：一般需要有一张世界地图在旁边，或者有电脑也可以（最好使用Google地图）（游记不可避免的会出现地名，于是总会和地理扯上关系），一遍阅读，一遍看地图，找到所在地，能够很好的在脑海中形成画面，读起来不会那么累。
-
-<span id="more"></span>
-
-
-
-<p>其实最需要地图的是<strong>读史书</strong>：这时你肯定会遇到超级多从未有地理概念的国家或者地名，除了要有现代的地图，另外还需要历史地理地图。历史往往是将过去和现在作比较，从而来吸取经验。地图历史总是在不断变迁，从古代到现代，各个国家的发展及地理行政边界都是在发生不断变化，所以也要明白过去的情况。像人类的起源这方面的，必然会牵扯到人类在世界各地的迁移，人类文明的出现摇篮，总是出现大量的地理名词。因此，你需要读懂地图，了解地势，这对于喜欢历史的人非常关键，人类历史上，很多关键性的时刻，总是和地理位置息息相关，<strong>一个民族的历史走向也离不开自然地理的催化。</strong></p>
-<p>总之，读游记和读历史文化相关的书记，最好要做到心中有地图或者手中有地图的状态，否则读起来会困难不少呢！</p>
-<h1 id="序"><a href="#序" class="headerlink" title="序"></a>序</h1><p>此次美洲之行主要去了墨西哥，哥斯达黎加，巴拿马，古巴和厄瓜多尔，去的国家不是特别多，故事还是很丰富，作者大概是跟着旅行团去的，遇到的都是特别正常的事情，描述的都是美好的事物，而遭遇到一些负面的事物。傅真在她的《最好金龟换酒》中提到，自己和他的老公是自由行，在墨西哥遇到了比较可怕的事情，还体会了极其贫困地区人们的生活状况，感觉更完整一些。但是，要论深度，确实傅真要差挺多，毕老师还是深厚的历史文化底蕴，涉及到的面比较广泛。反正都有可看之处。</p>
-<p>南美洲，受西班牙殖民，很多国家都将西班牙语作为官网语言，因此要是自己会西班牙语或者有个会西班牙语的朋友一起去美洲旅行，那么肯定会有趣不少。或许下次在打算自己去南美洲旅行的时候，可以提前3个月左右恶补一下西班牙语，少一些语言障碍的自由行会非常的有意思。<br>说起语言，我又忍不住想多说几句。我对语言的起源，很是有兴趣，然而并没有时间去深究。词源对于语言的学习有莫大的帮助，我深信这一点，我其实也特别想多学习几门语言，然而最终还是放弃，到现在为止，连英语都没有学好，真是惭愧。<strong>西班牙语</strong>，属于印欧语系罗曼语族西罗曼语支，约有4亿人将其作为母语，为世界第二大语言，仅次于汉语。</p>
-<p><img src="http://upload-images.jianshu.io/upload_images/3478485-eb8022421e4f3e33.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="中南美洲"></p>
-<h1 id="哥斯达黎加"><a href="#哥斯达黎加" class="headerlink" title="哥斯达黎加"></a>哥斯达黎加</h1><p>世界上第一个不设军队的国家，是永久的中立国，是一个将火山印在国旗上的国家，三座活火山成为很重要的景点。拥有世界上很少数的<strong>热带雾林</strong>。和热带雨林不一样，形成的条件苛刻：首先，必须出于热带；第二，有1300米以上的海拔高度，保持物种多样性；最后一点，距离海洋比较近，有强大的水汽供应，形成雾。</p>
-<h1 id="两个及其伟大的革命家"><a href="#两个及其伟大的革命家" class="headerlink" title="两个及其伟大的革命家"></a>两个及其伟大的革命家</h1><ol>
-<li>托洛茨基：具体介绍就不讲了（<a href="https://en.wikipedia.org/wiki/Leon_Trotsky">详细介绍</a>），最后的命运流亡海外，被暗杀。</li>
-<li>切格瓦拉：古巴革命的核心人物之一，任古巴国家银行行长。<a href="https://en.wikipedia.org/wiki/Che_Guevara">维基介绍</a>，看完毕老师对其一生的介绍，肃然起敬，伟大的人物就是有那样的魅力和人格。</li>
-</ol>
-<p><img src="http://upload-images.jianshu.io/upload_images/3478485-1e86acc106bb344b.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="切格瓦拉.jpg"></p>
-<h1 id="玛雅文明"><a href="#玛雅文明" class="headerlink" title="玛雅文明"></a>玛雅文明</h1><p>没有人不知道玛雅文明吧，2012年12月24日，就是因为玛雅人的世界末日预言而弄得人心惶惶，真的以为世界都要结束了，开启新的纪元。然而，现在已经到了2017年了，我此时此刻还在安静地看书打字。</p>
-<p><a href="https://en.wikipedia.org/wiki/Maya_civilization">玛雅文明</a>，是中美洲玛雅人创造的中美洲文明。曾经的辉煌，早已湮灭在热带雨林之中，金字塔毅然屹立在中美洲的大地之上，貌似在向世人们述说曾经的辉煌。</p>
-<p>墨西哥<strong>奇琴伊察</strong>玛雅城邦遗址，位于墨西哥东南部尤卡坦半岛，是玛雅文明最杰出的代表作，是玛雅古国最大、最繁华的城邦，始建于公元514年。主要的遗迹库库尔坎金字塔就位于此，库库尔坎金字塔由塔身和神庙两部分组成，塔高30米，塔底面为正方形，四方对称，底大上小，四边棱角分明。台基每边长55.5米，共9层，向上逐渐缩小至梯形平台，上有高6米的方形神庙。塔的四面各有91级台阶，四面共有364级，加上最上层的平台，正好是一年的天数。</p>
-]]></content>
-      <categories>
-        <category>读书笔记</category>
-      </categories>
-      <tags>
-        <tag>中南美洲</tag>
-        <tag>毕淑敏</tag>
       </tags>
   </entry>
   <entry>
@@ -2304,6 +2262,48 @@ characterization of aluminum resistance in Populus"><br>这里我先用比较麻
       <tags>
         <tag>旅行</tag>
         <tag>西北</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>HTML5（5）——属性</title>
+    <url>//2018/10/06/HTML5%EF%BC%885%EF%BC%89%E2%80%94%E2%80%94%E5%B1%9E%E6%80%A7/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![咖啡豆](https://upload-images.jianshu.io/upload_images/3478485-9d881188bebeb5b7.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+> 其实，我一直有个愿望，我想每天早晨起来，喝着咖啡，写点东西。不过，到现在都还没有实现，我想我得先做到早起吧。上次，我们讲了是HTML5的元素，今天就讲元素属性。
+
+
+
+<span id="more"></span>
+
+<h2 id="HTML属性"><a href="#HTML属性" class="headerlink" title="HTML属性"></a><font color="green">HTML属性</font></h2><ul>
+<li>所有的HTML元素都是有属性的</li>
+<li>属性是添加元素的额外信息</li>
+<li>属性通常在起始标签添加</li>
+<li>属性的形式通常是键值配对：name=”value”</li>
+</ul>
+<h2 id="href属性"><a href="#href属性" class="headerlink" title="href属性"></a><font color="green">href属性</font></h2><p>在HTML中，用来指定链接的标签是<code>&lt;a&gt;</code>，链接地址通常用href属性来指定。例如<code>&lt;a href=&quot;https://www.w3schools.com&quot;&gt;This is a link&lt;/a&gt;</code></p>
+<h2 id="src属性"><a href="#src属性" class="headerlink" title="src属性"></a><font color="green">src属性</font></h2><p>在HTML中，网页中图片是用<code>&lt;img&gt;</code>标签使用图片，而图像源的文件名是用<code>src</code>属性来指定。例如<code>&lt;img src=&quot;img_girl.jpg&quot;&gt;</code></p>
+<h2 id="width和height属性"><a href="#width和height属性" class="headerlink" title="width和height属性"></a><font color="green">width和height属性</font></h2><p>图片的属性包括很多，其中大小属性就是用<code>width</code>和<code>height</code>属性来指定。如<code>&lt;img src=&quot;img_girl.jpg&quot; width=&quot;500&quot; height=&quot;600&quot;&gt;</code></p>
+<h2 id="alt属性"><a href="#alt属性" class="headerlink" title="alt属性"></a><font color="green">alt属性</font></h2><p><code>alt</code>属性在网页中的作用是给图片添加文本信息，当有些特殊情况下，我没有办法显示图片，那么只能一文字信息来替代，而<code>alt</code>就是起到这个作用。尤其是对于一些盲人，当在听网页内容的时候，就可以了解到图片的内容。当然，如果图片不存在，那么它也可以显示信息。如<code>&lt;img src=&quot;img_girl.jpg&quot; alt=&quot;Girl with a jacket&quot;&gt;</code></p>
+<h2 id="style属性"><a href="#style属性" class="headerlink" title="style属性"></a><font color="green">style属性</font></h2><p>在HTML中，<code>style</code>属性是用来修饰元素显示的风格，包括颜色，字体及大小。如<code>&lt;p style=&quot;color:red&quot;&gt;I am a paragraph&lt;/p&gt;</code>，就是将这个段落的字体设计成红色。</p>
+<h2 id="lang属性"><a href="#lang属性" class="headerlink" title="lang属性"></a><font color="green">lang属性</font></h2><p>在<code>&lt;html&gt;</code>标签中，可以使用<code>lang</code>属性来进行文档语言声明。<code>en</code>表示英语，<code>US</code>表示美式英语</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">&quot;en-US&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line">...</span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="title属性"><a href="#title属性" class="headerlink" title="title属性"></a><font color="green">title属性</font></h2><p>title一般就是用在段落标签中，这个属性会像提示一样，当你将鼠标放在段落上，就会显示title属性内容。</p>
+<figure class="highlight applescript"><table><tr><td class="code"><pre><span class="line">&lt;p title=<span class="string">&quot;I&#x27;m a tooltip&quot;</span>&gt;</span><br><span class="line">This <span class="keyword">is</span> a <span class="built_in">paragraph</span>.</span><br><span class="line">&lt;/p&gt;</span><br></pre></td></tr></table></figure>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-3e5aaa12e7f0b4cb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="title属性显示"></p>
+<h2 id="建议"><a href="#建议" class="headerlink" title="建议"></a><font color="green">建议</font></h2><ul>
+<li>属性最好使用小写字母</li>
+<li>属性的值用<code>&quot;&quot;</code>括起来</li>
+<li>如果需要多个双引号，那么就需要单引号的使用，两种情况：<figure class="highlight routeros"><table><tr><td class="code"><pre><span class="line">&lt;p <span class="attribute">title</span>=<span class="string">&#x27;John &quot;ShotGun&quot; Nelson&#x27;</span>&gt;</span><br><span class="line"></span><br><span class="line">&lt;p <span class="attribute">title</span>=<span class="string">&quot;John &#x27;ShotGun&#x27; Nelson&quot;</span>&gt;</span><br></pre></td></tr></table></figure></li>
+</ul>
+]]></content>
+      <categories>
+        <category>HTML5入门</category>
+      </categories>
+      <tags>
+        <tag>HTML5</tag>
+        <tag>属性</tag>
       </tags>
   </entry>
 </search>
