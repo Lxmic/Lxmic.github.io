@@ -449,32 +449,6 @@
       </tags>
   </entry>
   <entry>
-    <title>HTML5（4）——元素</title>
-    <url>//2018/10/02/HTML5%EF%BC%884%EF%BC%89%E2%80%94%E2%80%94%E5%85%83%E7%B4%A0/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![巨石阵，有朝一日能够去世界各地游玩](https://upload-images.jianshu.io/upload_images/3478485-d53a5e7f7a0f8675.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-<blockquote>
-<p>国庆第二天，毕业师姐过来那毕业证书，需要聚一波。今天继续学习HTML相关知识。上次学了最基本的知识，关于一些常见的HTML标签。今天是要讲HTML元素，标签包含的内容。</p>
-</blockquote>
-<span id="more"></span>
-
-<h2 id="网页元素"><a href="#网页元素" class="headerlink" title="网页元素"></a><font color="green">网页元素</font></h2><p>HTML网页元素，通常是由起始标签和结束标签以及在两者之间插入的内容。<code>&lt;tagname&gt;内容&lt;/tagname&gt;</code><br>所有的网页元素，都是从开始标签到结束标签。<code>&lt;p&gt;my director&lt;/p&gt;</code><br>可以分为有内容和无内容。而空内容的元素是没有结束标签的，只有起始标签。如<code>&lt;br&gt;</code></p>
-<h2 id="巢式网页元素"><a href="#巢式网页元素" class="headerlink" title="巢式网页元素"></a><font color="green">巢式网页元素</font></h2><p>所谓巢式（nested），就是说可以在网页元素之中，插入其他的元素，元素嵌套元素。一个网页文件，必定是由巢式元素，下面的例子中，包含了4个网页元素。</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>My First Heading<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>My first paragraph.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="空网页元素"><a href="#空网页元素" class="headerlink" title="空网页元素"></a><font color="green">空网页元素</font></h2><p>没有内容的网页元素就是空元素，<code>&lt;br&gt;</code>定义的是换行符，没有结束元素。当然，HTML也是可以关闭空元素的，形式就是在开始标签后面加斜杠<code>&lt;br /&gt;</code>。当然，也可以不关闭，但是如果是严格的来说，关闭空元素是肯定没有问题的，而且如果想被XML解析器解析，那么就必须关上空元素。</p>
-<h2 id="标签小写字母"><a href="#标签小写字母" class="headerlink" title="标签小写字母"></a><font color="green">标签小写字母</font></h2><p>HTML是字母识别的，大写小写字母是存在差别的，标签一定要使用小写字母来写。虽然HTML5中，没有要求小写字母标签，但是最好就是小写，跟严格的XHTML是必须要小写才能编译。</p>
-]]></content>
-      <categories>
-        <category>HTML5入门</category>
-      </categories>
-      <tags>
-        <tag>HTML5</tag>
-        <tag>元素</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>HTML5（5）——属性</title>
     <url>//2018/10/06/HTML5%EF%BC%885%EF%BC%89%E2%80%94%E2%80%94%E5%B1%9E%E6%80%A7/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -517,6 +491,64 @@
       </tags>
   </entry>
   <entry>
+    <title>HTML5（6）——标题</title>
+    <url>//2018/10/06/HTML5%EF%BC%886%EF%BC%89%E2%80%94%E2%80%94%E6%A0%87%E9%A2%98/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![场景似曾相识](https://upload-images.jianshu.io/upload_images/3478485-81d5de5d560b5248.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+> 还有几个小时就要离开家了，每次都在离开的时候，才会变得清醒一些。上次一节是讲属性，今天我们来学习标题相关的内容。
+
+
+
+<span id="more"></span>
+
+<h2 id="HTML标题"><a href="#HTML标题" class="headerlink" title="HTML标题"></a><font color="green">HTML标题</font></h2><p>通常最多只有6级标题，一般情况我想都用不了这么多层次。</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>Heading 1<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h2</span>&gt;</span>Heading 2<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h3</span>&gt;</span>Heading 3<span class="tag">&lt;/<span class="name">h3</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h4</span>&gt;</span>Heading 4<span class="tag">&lt;/<span class="name">h4</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h5</span>&gt;</span>Heading 5<span class="tag">&lt;/<span class="name">h5</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h6</span>&gt;</span>Heading 6<span class="tag">&lt;/<span class="name">h6</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-a26bca45dcd4823b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="一般六级标题"></p>
+<h2 id="标题很重要"><a href="#标题很重要" class="headerlink" title="标题很重要"></a><font color="green">标题很重要</font></h2><p>搜索引擎利用标题来建立网页结构和内容的索引。标题应该一级一级的利用，而且标题只能用于标题，而不能使用在让字体变大的情况下。</p>
+<h2 id="标题字体大小"><a href="#标题字体大小" class="headerlink" title="标题字体大小"></a><font color="green">标题字体大小</font></h2><p>一般标题字体大小是网页默认的，而我们可以通过利用style属性，和CSS中font-size属性，来定制标题的大小，如</p>
+<p><code>&lt;h1 style=&quot;font-size:60px;&quot;&gt;Heading 1&lt;/h1&gt;</code></p>
+<h2 id="HTML水平分割线"><a href="#HTML水平分割线" class="headerlink" title="HTML水平分割线"></a><font color="green">HTML水平分割线</font></h2><p><code>&lt;hr&gt;</code>标签是水平分割线，用来将网页按主题分块，经常用来隔开不同的内容。</p>
+<figure class="highlight apache"><table><tr><td class="code"><pre><span class="line"><span class="section">&lt;h1&gt;</span><span class="attribute">This</span> is heading <span class="number">1</span>&lt;/h<span class="number">1</span>&gt;</span><br><span class="line"><span class="section">&lt;p&gt;</span><span class="attribute">This</span> is some text.&lt;/p&gt;</span><br><span class="line"><span class="section">&lt;hr&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="section">&lt;h2&gt;</span><span class="attribute">This</span> is heading <span class="number">2</span>&lt;/h<span class="number">2</span>&gt;</span><br><span class="line"><span class="section">&lt;p&gt;</span><span class="attribute">This</span> is some other text.&lt;/p&gt;</span><br><span class="line"><span class="section">&lt;hr&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="section">&lt;h2&gt;</span><span class="attribute">This</span> is heading <span class="number">2</span>&lt;/h<span class="number">2</span>&gt;</span><br><span class="line"><span class="section">&lt;p&gt;</span><span class="attribute">This</span> is some other text.&lt;/p&gt;</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-bd54e705f512b60a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="水平线"></p>
+<h2 id="HTML-lt-head-gt-元素"><a href="#HTML-lt-head-gt-元素" class="headerlink" title="HTML&lt;head&gt;元素"></a><font color="green">HTML<code>&lt;head&gt;</code>元素</font></h2><p><code>&lt;head&gt;</code>元素和标题没有什么关系。它是网页源数据的容器，是放在<code>&lt;html&gt;</code>和<code>&lt;body&gt;</code>标签之间。</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">title</span>&gt;</span>My First HTML<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;UTF-8&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>HTML5入门</category>
+      </categories>
+      <tags>
+        <tag>HTML5</tag>
+        <tag>标题</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>HTML5（4）——元素</title>
+    <url>//2018/10/02/HTML5%EF%BC%884%EF%BC%89%E2%80%94%E2%80%94%E5%85%83%E7%B4%A0/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![巨石阵，有朝一日能够去世界各地游玩](https://upload-images.jianshu.io/upload_images/3478485-d53a5e7f7a0f8675.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+<blockquote>
+<p>国庆第二天，毕业师姐过来那毕业证书，需要聚一波。今天继续学习HTML相关知识。上次学了最基本的知识，关于一些常见的HTML标签。今天是要讲HTML元素，标签包含的内容。</p>
+</blockquote>
+<span id="more"></span>
+
+<h2 id="网页元素"><a href="#网页元素" class="headerlink" title="网页元素"></a><font color="green">网页元素</font></h2><p>HTML网页元素，通常是由起始标签和结束标签以及在两者之间插入的内容。<code>&lt;tagname&gt;内容&lt;/tagname&gt;</code><br>所有的网页元素，都是从开始标签到结束标签。<code>&lt;p&gt;my director&lt;/p&gt;</code><br>可以分为有内容和无内容。而空内容的元素是没有结束标签的，只有起始标签。如<code>&lt;br&gt;</code></p>
+<h2 id="巢式网页元素"><a href="#巢式网页元素" class="headerlink" title="巢式网页元素"></a><font color="green">巢式网页元素</font></h2><p>所谓巢式（nested），就是说可以在网页元素之中，插入其他的元素，元素嵌套元素。一个网页文件，必定是由巢式元素，下面的例子中，包含了4个网页元素。</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>My First Heading<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>My first paragraph.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="空网页元素"><a href="#空网页元素" class="headerlink" title="空网页元素"></a><font color="green">空网页元素</font></h2><p>没有内容的网页元素就是空元素，<code>&lt;br&gt;</code>定义的是换行符，没有结束元素。当然，HTML也是可以关闭空元素的，形式就是在开始标签后面加斜杠<code>&lt;br /&gt;</code>。当然，也可以不关闭，但是如果是严格的来说，关闭空元素是肯定没有问题的，而且如果想被XML解析器解析，那么就必须关上空元素。</p>
+<h2 id="标签小写字母"><a href="#标签小写字母" class="headerlink" title="标签小写字母"></a><font color="green">标签小写字母</font></h2><p>HTML是字母识别的，大写小写字母是存在差别的，标签一定要使用小写字母来写。虽然HTML5中，没有要求小写字母标签，但是最好就是小写，跟严格的XHTML是必须要小写才能编译。</p>
+]]></content>
+      <categories>
+        <category>HTML5入门</category>
+      </categories>
+      <tags>
+        <tag>HTML5</tag>
+        <tag>元素</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>HTML5（7）——段落</title>
     <url>//2018/10/06/HTML5%EF%BC%887%EF%BC%89%E2%80%94%E2%80%94%E6%AE%B5%E8%90%BD/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -547,38 +579,6 @@
       <tags>
         <tag>HTML5</tag>
         <tag>段落</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>HTML5（6）——标题</title>
-    <url>//2018/10/06/HTML5%EF%BC%886%EF%BC%89%E2%80%94%E2%80%94%E6%A0%87%E9%A2%98/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![场景似曾相识](https://upload-images.jianshu.io/upload_images/3478485-81d5de5d560b5248.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-> 还有几个小时就要离开家了，每次都在离开的时候，才会变得清醒一些。上次一节是讲属性，今天我们来学习标题相关的内容。
-
-
-
-<span id="more"></span>
-
-<h2 id="HTML标题"><a href="#HTML标题" class="headerlink" title="HTML标题"></a><font color="green">HTML标题</font></h2><p>通常最多只有6级标题，一般情况我想都用不了这么多层次。</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>Heading 1<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h2</span>&gt;</span>Heading 2<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h3</span>&gt;</span>Heading 3<span class="tag">&lt;/<span class="name">h3</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h4</span>&gt;</span>Heading 4<span class="tag">&lt;/<span class="name">h4</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h5</span>&gt;</span>Heading 5<span class="tag">&lt;/<span class="name">h5</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h6</span>&gt;</span>Heading 6<span class="tag">&lt;/<span class="name">h6</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-a26bca45dcd4823b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="一般六级标题"></p>
-<h2 id="标题很重要"><a href="#标题很重要" class="headerlink" title="标题很重要"></a><font color="green">标题很重要</font></h2><p>搜索引擎利用标题来建立网页结构和内容的索引。标题应该一级一级的利用，而且标题只能用于标题，而不能使用在让字体变大的情况下。</p>
-<h2 id="标题字体大小"><a href="#标题字体大小" class="headerlink" title="标题字体大小"></a><font color="green">标题字体大小</font></h2><p>一般标题字体大小是网页默认的，而我们可以通过利用style属性，和CSS中font-size属性，来定制标题的大小，如</p>
-<p><code>&lt;h1 style=&quot;font-size:60px;&quot;&gt;Heading 1&lt;/h1&gt;</code></p>
-<h2 id="HTML水平分割线"><a href="#HTML水平分割线" class="headerlink" title="HTML水平分割线"></a><font color="green">HTML水平分割线</font></h2><p><code>&lt;hr&gt;</code>标签是水平分割线，用来将网页按主题分块，经常用来隔开不同的内容。</p>
-<figure class="highlight apache"><table><tr><td class="code"><pre><span class="line"><span class="section">&lt;h1&gt;</span><span class="attribute">This</span> is heading <span class="number">1</span>&lt;/h<span class="number">1</span>&gt;</span><br><span class="line"><span class="section">&lt;p&gt;</span><span class="attribute">This</span> is some text.&lt;/p&gt;</span><br><span class="line"><span class="section">&lt;hr&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="section">&lt;h2&gt;</span><span class="attribute">This</span> is heading <span class="number">2</span>&lt;/h<span class="number">2</span>&gt;</span><br><span class="line"><span class="section">&lt;p&gt;</span><span class="attribute">This</span> is some other text.&lt;/p&gt;</span><br><span class="line"><span class="section">&lt;hr&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="section">&lt;h2&gt;</span><span class="attribute">This</span> is heading <span class="number">2</span>&lt;/h<span class="number">2</span>&gt;</span><br><span class="line"><span class="section">&lt;p&gt;</span><span class="attribute">This</span> is some other text.&lt;/p&gt;</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-bd54e705f512b60a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="水平线"></p>
-<h2 id="HTML-lt-head-gt-元素"><a href="#HTML-lt-head-gt-元素" class="headerlink" title="HTML&lt;head&gt;元素"></a><font color="green">HTML<code>&lt;head&gt;</code>元素</font></h2><p><code>&lt;head&gt;</code>元素和标题没有什么关系。它是网页源数据的容器，是放在<code>&lt;html&gt;</code>和<code>&lt;body&gt;</code>标签之间。</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">title</span>&gt;</span>My First HTML<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;UTF-8&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>HTML5入门</category>
-      </categories>
-      <tags>
-        <tag>HTML5</tag>
-        <tag>标题</tag>
       </tags>
   </entry>
   <entry>
@@ -618,26 +618,6 @@
       <tags>
         <tag>HTML5</tag>
         <tag>样式</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>LaTeX中文章节定义</title>
-    <url>//2020/03/10/LaTeX%E4%B8%AD%E6%96%87%E7%AB%A0%E8%8A%82%E5%AE%9A%E4%B9%89/</url>
-    <content><![CDATA[<h3 id="1-需要使用的宏包——ctex"><a href="#1-需要使用的宏包——ctex" class="headerlink" title="1. 需要使用的宏包——ctex"></a>1. 需要使用的宏包——ctex</h3><p>官方网址：<a href="http://www.ctex.org/PackageCTeX">CTEX:PackageCTEX</a>，目前这个宏包已经转移到<a href="https://github.com/CTeX-org/ctex-kit">GitHub</a>，仍旧在继续开发增加新功能。具体详细的可以下载pdf文档。</p>
-<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/Image/20200310163651.png"></p>
-<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/Image/20200310163739.png"></p>
-<h3 id="2-自定义设置中文文档的章节"><a href="#2-自定义设置中文文档的章节" class="headerlink" title="2. 自定义设置中文文档的章节"></a>2. 自定义设置中文文档的章节</h3><h4 id="2-1-代码如下："><a href="#2-1-代码如下：" class="headerlink" title="2.1 代码如下："></a>2.1 代码如下：</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">%格式设置</span><br><span class="line">\documentclass[a4paper, 12pt]&#123;book&#125; %文档类型，我们选择book</span><br><span class="line">\usepackage[heading=true]&#123;ctex&#125; %载入ctex宏包</span><br><span class="line">%具体章节格式定义，这是关键的设置</span><br><span class="line">\ctexset&#123;chapter=&#123;name=&#123;第,章&#125;&#125;,section=&#123;name=&#123;第,节&#125;,format=&#123;\raggedright\Large&#125;&#125;&#125;</span><br><span class="line">%正文中格式</span><br><span class="line">\begin&#123;document&#125;</span><br><span class="line">\chapter&#123;菌株系统&#125;</span><br><span class="line">\input&#123;chapter_1/mircobes&#125;	</span><br><span class="line">	\section&#123;大肠杆菌&#125;</span><br><span class="line">\end&#123;document&#125;</span><br></pre></td></tr></table></figure>
-
-<h4 id="2-2-内容说明"><a href="#2-2-内容说明" class="headerlink" title="2.2 内容说明"></a>2.2 内容说明</h4><p>我们在载入<code>ctex</code>包，里面有一个<code>heading=true</code>参数，这个是必须要有的，否则格式依旧是不对，是默认的样式。</p>
-<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/Image/20200310173247.png" alt="这是缺少heading的呈现结果"></p>
-<p>此外，最关键的章节定义就是通过<code>\ctexset</code>来进行设置，我这里是最简单的设置，具体更细节的设置我没有进一步去尝试。下面是根据我的代码呈现的结果：</p>
-<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/Image/20200310174223.png"></p>
-<p>这样的结果，就比较符合我的期望需求，基本设置成功。</p>]]></content>
-      <categories>
-        <category>LaTeX入门</category>
-      </categories>
-      <tags>
-        <tag>LaTeX</tag>
       </tags>
   </entry>
   <entry>
@@ -681,6 +661,26 @@
       </tags>
   </entry>
   <entry>
+    <title>LaTeX中文章节定义</title>
+    <url>//2020/03/10/LaTeX%E4%B8%AD%E6%96%87%E7%AB%A0%E8%8A%82%E5%AE%9A%E4%B9%89/</url>
+    <content><![CDATA[<h3 id="1-需要使用的宏包——ctex"><a href="#1-需要使用的宏包——ctex" class="headerlink" title="1. 需要使用的宏包——ctex"></a>1. 需要使用的宏包——ctex</h3><p>官方网址：<a href="http://www.ctex.org/PackageCTeX">CTEX:PackageCTEX</a>，目前这个宏包已经转移到<a href="https://github.com/CTeX-org/ctex-kit">GitHub</a>，仍旧在继续开发增加新功能。具体详细的可以下载pdf文档。</p>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/Image/20200310163651.png"></p>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/Image/20200310163739.png"></p>
+<h3 id="2-自定义设置中文文档的章节"><a href="#2-自定义设置中文文档的章节" class="headerlink" title="2. 自定义设置中文文档的章节"></a>2. 自定义设置中文文档的章节</h3><h4 id="2-1-代码如下："><a href="#2-1-代码如下：" class="headerlink" title="2.1 代码如下："></a>2.1 代码如下：</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">%格式设置</span><br><span class="line">\documentclass[a4paper, 12pt]&#123;book&#125; %文档类型，我们选择book</span><br><span class="line">\usepackage[heading=true]&#123;ctex&#125; %载入ctex宏包</span><br><span class="line">%具体章节格式定义，这是关键的设置</span><br><span class="line">\ctexset&#123;chapter=&#123;name=&#123;第,章&#125;&#125;,section=&#123;name=&#123;第,节&#125;,format=&#123;\raggedright\Large&#125;&#125;&#125;</span><br><span class="line">%正文中格式</span><br><span class="line">\begin&#123;document&#125;</span><br><span class="line">\chapter&#123;菌株系统&#125;</span><br><span class="line">\input&#123;chapter_1/mircobes&#125;	</span><br><span class="line">	\section&#123;大肠杆菌&#125;</span><br><span class="line">\end&#123;document&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="2-2-内容说明"><a href="#2-2-内容说明" class="headerlink" title="2.2 内容说明"></a>2.2 内容说明</h4><p>我们在载入<code>ctex</code>包，里面有一个<code>heading=true</code>参数，这个是必须要有的，否则格式依旧是不对，是默认的样式。</p>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/Image/20200310173247.png" alt="这是缺少heading的呈现结果"></p>
+<p>此外，最关键的章节定义就是通过<code>\ctexset</code>来进行设置，我这里是最简单的设置，具体更细节的设置我没有进一步去尝试。下面是根据我的代码呈现的结果：</p>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/Image/20200310174223.png"></p>
+<p>这样的结果，就比较符合我的期望需求，基本设置成功。</p>]]></content>
+      <categories>
+        <category>LaTeX入门</category>
+      </categories>
+      <tags>
+        <tag>LaTeX</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>LaTeX参考文献</title>
     <url>//2018/09/15/LaTeX%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -721,39 +721,6 @@
       <tags>
         <tag>LaTeX</tag>
         <tag>参考文献</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>LaTeX插入表格</title>
-    <url>//2018/09/15/LaTeX%E6%8F%92%E5%85%A5%E8%A1%A8%E6%A0%BC/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![惬意的周末，我也想拥有](https://upload-images.jianshu.io/upload_images/3478485-300eb5efdef1a5fe.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-<blockquote>
-<p>周末了，下个礼拜终于要开学了，好像又要开始摆出努力的样子。一切都是在循环往复，还是希望进步，能够学习一些从没有接触过的实物和技术。</p>
-</blockquote>
-<p>LaTeX是极其专业的排版软件，我也想试试，我就来用它排版我的论文，这样走一遍之后，我想应该基本入门了。在插入表格的时候，遇到了一些问题，特异记录下来。</p>
-<span id="more"></span>
-
-<h3 id="1-如何插入庞大的表格"><a href="#1-如何插入庞大的表格" class="headerlink" title="1. 如何插入庞大的表格"></a>1. 如何插入庞大的表格</h3><p>我们都知道，LaTeX可以一行一行的插入表格，但是在我们遇到比较庞大的表格时，我们该怎么办，有一个办法就是利用<a href="http://www.tablesgenerator.com/latex_tables">在线工具</a>进行转换成LaTeX格式的表格，而不需要花大量的时间一行一行输入。<br>只要你输入你的表格，然后点generate，生成相应的表格，让后你只需要输入到你的编辑器中，进行编译就可以。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-b7d8758edc879c5b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="复制表格"></p>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-eb16ad35b99dd364.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="表格复制"></p>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-552021decf1e4701.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="复制表格的内容到编译文本"></p>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-e3adcd1c31950f73.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="可以看到编译后会有一定的溢出"></p>
-<h3 id="2-解决表格溢出的问题"><a href="#2-解决表格溢出的问题" class="headerlink" title="2. 解决表格溢出的问题"></a>2. 解决表格溢出的问题</h3><p>可以缩小字体，也可以修改行之间的距离，也可以缩小整个表格。可以看到，原因在于表头的字体太长了，因此需要使其分行显示，这样一来就可以了。分行你可以定义表格的宽度，使其自动分行或者也可以使用<code>makecell</code>包来进行强制分行。</p>
-<h5 id="2-1-首先我们看看定义表格单列宽度："><a href="#2-1-首先我们看看定义表格单列宽度：" class="headerlink" title="2.1 首先我们看看定义表格单列宽度："></a>2.1 首先我们看看定义表格单列宽度：</h5><p>在下面的代码中，<br><code>\begin&#123;tabular&#125;&#123;p&#123;2cm&#125;p&#123;3cm&#125;p&#123;2.5cm&#125;p&#123;2.5cm&#125;p&#123;2.5cm&#125;p&#123;2.5cm&#125;&#125;</code>，这句是真正起到调节作用的。<code>p&#123;2cm&#125;</code>就是代表第一列的宽度，后面依次是后面的宽度，然后会自动进行换行显示。但是有一个问题就是，发现自动换行以后，字母之间的距离变得很大，不像是只有一个空格的样子。</p>
-<figure class="highlight livescript"><table><tr><td class="code"><pre><span class="line"><span class="string">\begin&#123;table&#125;[]</span></span><br><span class="line">	<span class="string">\caption&#123;basic</span> structure&#125;</span><br><span class="line">	<span class="string">\vspace&#123;20pt&#125;</span></span><br><span class="line">	<span class="string">\centering</span></span><br><span class="line">	<span class="string">\begin&#123;tabular&#125;&#123;p&#123;2cm&#125;p&#123;3cm&#125;p&#123;2.5cm&#125;p&#123;2.5cm&#125;p&#123;2.5cm&#125;p&#123;2.5cm&#125;&#125;</span></span><br><span class="line">		<span class="string">\hline</span></span><br><span class="line">		Gene name &amp; Gene accession No. &amp; CDS length (bp) &amp; Protein size (aa) &amp; Protein MW (kDa) <span class="string">\\</span></span><br><span class="line">		<span class="string">\hline</span></span><br><span class="line">		<span class="number">001</span>  &amp; <span class="number">01g</span>009860.<span class="number">2</span>   &amp; <span class="number">819</span>             &amp; <span class="number">272</span>               &amp; <span class="number">31.34</span>            <span class="string">\\</span></span><br><span class="line">		<span class="number">002</span>  &amp; <span class="number">01g</span>021730.<span class="number">2</span>   &amp; <span class="number">798</span>             &amp; <span class="number">265</span>               &amp; <span class="number">30.37</span>            <span class="string">\\</span></span><br><span class="line">		<span class="number">003</span>  &amp; <span class="number">01g</span>094490.<span class="number">2</span>   &amp; <span class="number">630</span>             &amp; <span class="number">209</span>               &amp; <span class="number">24.58</span>            <span class="string">\\</span></span><br><span class="line">		<span class="number">004</span>  &amp; <span class="number">01g</span>102740.<span class="number">2</span>   &amp; <span class="number">1242</span>            &amp; <span class="number">413</span>               &amp; <span class="number">46.94</span>            <span class="string">\\</span></span><br><span class="line">		<span class="number">005</span>  &amp; <span class="number">01g</span>104900.<span class="number">2</span>   &amp; <span class="number">597</span>             &amp; <span class="number">198</span>               &amp; <span class="number">22.85</span>            <span class="string">\\</span></span><br><span class="line">		<span class="number">006</span>  &amp; <span class="number">02g</span>036430.<span class="number">1</span>   &amp; <span class="number">1698</span>            &amp; <span class="number">565</span>               &amp; <span class="number">64.88</span>            <span class="string">\\</span></span><br><span class="line">		<span class="number">007</span>  &amp; <span class="number">02g</span>061780.<span class="number">2</span>   &amp; <span class="number">735</span>             &amp; <span class="number">244</span>               &amp; <span class="number">28.23</span>            <span class="string">\\</span></span><br><span class="line">		<span class="number">008</span>  &amp; <span class="number">02g</span>061870.<span class="number">1</span>   &amp; <span class="number">660</span>             &amp; <span class="number">219</span>               &amp; <span class="number">25.21</span>            <span class="string">\\</span></span><br><span class="line">		<span class="number">009</span>  &amp; <span class="number">02g</span>061900.<span class="number">1</span>   &amp; <span class="number">915</span>             &amp; <span class="number">304</span>               &amp; <span class="number">34.61</span>            <span class="string">\\</span></span><br><span class="line">		<span class="number">010</span>  &amp; <span class="number">02g</span>061910.<span class="number">1</span>   &amp; <span class="number">795</span>             &amp; <span class="number">264</span>               &amp; <span class="number">29.92</span> <span class="string">\\</span>    </span><br><span class="line">		<span class="string">\hline</span>       </span><br><span class="line">	<span class="string">\end&#123;tabular&#125;</span></span><br><span class="line">	<span class="string">\label&#123;bs2&#125;</span></span><br><span class="line"><span class="string">\end&#123;table&#125;</span></span><br></pre></td></tr></table></figure>
-
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-087fc0b5b2bb79c4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="没有溢出"></p>
-<h5 id="2-2-通过makecell宏包来实现换行"><a href="#2-2-通过makecell宏包来实现换行" class="headerlink" title="2.2 通过makecell宏包来实现换行"></a>2.2 通过<code>makecell</code>宏包来实现换行</h5><p><code>makecell</code>中有一个专门的用来处理表头的命令<code>thead[可以选对齐方式]&#123;列名称&#125;</code>。比如文中所示，<code>thead[l]&#123;Gene\\name&#125;</code>就是将gene和name换行显示，l表示左对齐。可以发现，这种方法没有出现字间距变大的情况，比第一种要好。</p>
-<figure class="highlight taggerscript"><table><tr><td class="code"><pre><span class="line"><span class="symbol">\b</span>egin&#123;table&#125;[]</span><br><span class="line">    <span class="symbol">\c</span>aption&#123;basic structure&#125;</span><br><span class="line">    <span class="symbol">\v</span>space&#123;20pt&#125;</span><br><span class="line">	<span class="symbol">\c</span>entering</span><br><span class="line">	<span class="symbol">\b</span>egin&#123;tabular&#125;&#123;lllll&#125;</span><br><span class="line">		<span class="symbol">\h</span>line</span><br><span class="line">		<span class="symbol">\t</span>head[l]&#123;Gene<span class="symbol">\\</span>name&#125; &amp; <span class="symbol">\t</span>head[l]&#123;Gene accession<span class="symbol">\\</span>No. &#125;&amp; <span class="symbol">\t</span>head[l]&#123;CDS length<span class="symbol">\\</span>(bp)&#125; &amp; <span class="symbol">\t</span>head[l]&#123;Protein size<span class="symbol">\\</span>(aa)&#125; &amp; <span class="symbol">\t</span>head[l]&#123;Protein MW<span class="symbol">\\</span>(kDa)&#125; <span class="symbol">\\</span></span><br><span class="line">		<span class="symbol">\h</span>line</span><br><span class="line">		001  &amp; 01g009860.2   &amp; 819             &amp; 272               &amp; 31.34            <span class="symbol">\\</span></span><br><span class="line">		002  &amp; 01g021730.2   &amp; 798             &amp; 265               &amp; 30.37            <span class="symbol">\\</span></span><br><span class="line">		003  &amp; 01g094490.2   &amp; 630             &amp; 209               &amp; 24.58            <span class="symbol">\\</span></span><br><span class="line">		004  &amp; 01g102740.2   &amp; 1242            &amp; 413               &amp; 46.94            <span class="symbol">\\</span></span><br><span class="line">		005  &amp; 01g104900.2   &amp; 597             &amp; 198               &amp; 22.85            <span class="symbol">\\</span></span><br><span class="line">		006  &amp; 02g036430.1   &amp; 1698            &amp; 565               &amp; 64.88            <span class="symbol">\\</span></span><br><span class="line">		007  &amp; 02g061780.2   &amp; 735             &amp; 244               &amp; 28.23            <span class="symbol">\\</span></span><br><span class="line">		008  &amp; 02g061870.1   &amp; 660             &amp; 219               &amp; 25.21            <span class="symbol">\\</span></span><br><span class="line">		009  &amp; 02g061900.1   &amp; 915             &amp; 304               &amp; 34.61            <span class="symbol">\\</span></span><br><span class="line">		010  &amp; 02g061910.1   &amp; 795             &amp; 264               &amp; 29.92 <span class="symbol">\\</span>    </span><br><span class="line">		<span class="symbol">\h</span>line       </span><br><span class="line">	<span class="symbol">\e</span>nd&#123;tabular&#125;</span><br><span class="line">	<span class="symbol">\l</span>abel&#123;bs&#125;</span><br><span class="line"><span class="symbol">\e</span>nd&#123;table&#125;</span><br></pre></td></tr></table></figure>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-dd6fe8edb6086b60.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="编译后的效果"></p>
-]]></content>
-      <categories>
-        <category>LaTeX入门</category>
-      </categories>
-      <tags>
-        <tag>LaTeX</tag>
-        <tag>表格</tag>
       </tags>
   </entry>
   <entry>
@@ -805,6 +772,39 @@
       </tags>
   </entry>
   <entry>
+    <title>LaTeX插入表格</title>
+    <url>//2018/09/15/LaTeX%E6%8F%92%E5%85%A5%E8%A1%A8%E6%A0%BC/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![惬意的周末，我也想拥有](https://upload-images.jianshu.io/upload_images/3478485-300eb5efdef1a5fe.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+<blockquote>
+<p>周末了，下个礼拜终于要开学了，好像又要开始摆出努力的样子。一切都是在循环往复，还是希望进步，能够学习一些从没有接触过的实物和技术。</p>
+</blockquote>
+<p>LaTeX是极其专业的排版软件，我也想试试，我就来用它排版我的论文，这样走一遍之后，我想应该基本入门了。在插入表格的时候，遇到了一些问题，特异记录下来。</p>
+<span id="more"></span>
+
+<h3 id="1-如何插入庞大的表格"><a href="#1-如何插入庞大的表格" class="headerlink" title="1. 如何插入庞大的表格"></a>1. 如何插入庞大的表格</h3><p>我们都知道，LaTeX可以一行一行的插入表格，但是在我们遇到比较庞大的表格时，我们该怎么办，有一个办法就是利用<a href="http://www.tablesgenerator.com/latex_tables">在线工具</a>进行转换成LaTeX格式的表格，而不需要花大量的时间一行一行输入。<br>只要你输入你的表格，然后点generate，生成相应的表格，让后你只需要输入到你的编辑器中，进行编译就可以。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-b7d8758edc879c5b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="复制表格"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-eb16ad35b99dd364.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="表格复制"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-552021decf1e4701.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="复制表格的内容到编译文本"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-e3adcd1c31950f73.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="可以看到编译后会有一定的溢出"></p>
+<h3 id="2-解决表格溢出的问题"><a href="#2-解决表格溢出的问题" class="headerlink" title="2. 解决表格溢出的问题"></a>2. 解决表格溢出的问题</h3><p>可以缩小字体，也可以修改行之间的距离，也可以缩小整个表格。可以看到，原因在于表头的字体太长了，因此需要使其分行显示，这样一来就可以了。分行你可以定义表格的宽度，使其自动分行或者也可以使用<code>makecell</code>包来进行强制分行。</p>
+<h5 id="2-1-首先我们看看定义表格单列宽度："><a href="#2-1-首先我们看看定义表格单列宽度：" class="headerlink" title="2.1 首先我们看看定义表格单列宽度："></a>2.1 首先我们看看定义表格单列宽度：</h5><p>在下面的代码中，<br><code>\begin&#123;tabular&#125;&#123;p&#123;2cm&#125;p&#123;3cm&#125;p&#123;2.5cm&#125;p&#123;2.5cm&#125;p&#123;2.5cm&#125;p&#123;2.5cm&#125;&#125;</code>，这句是真正起到调节作用的。<code>p&#123;2cm&#125;</code>就是代表第一列的宽度，后面依次是后面的宽度，然后会自动进行换行显示。但是有一个问题就是，发现自动换行以后，字母之间的距离变得很大，不像是只有一个空格的样子。</p>
+<figure class="highlight livescript"><table><tr><td class="code"><pre><span class="line"><span class="string">\begin&#123;table&#125;[]</span></span><br><span class="line">	<span class="string">\caption&#123;basic</span> structure&#125;</span><br><span class="line">	<span class="string">\vspace&#123;20pt&#125;</span></span><br><span class="line">	<span class="string">\centering</span></span><br><span class="line">	<span class="string">\begin&#123;tabular&#125;&#123;p&#123;2cm&#125;p&#123;3cm&#125;p&#123;2.5cm&#125;p&#123;2.5cm&#125;p&#123;2.5cm&#125;p&#123;2.5cm&#125;&#125;</span></span><br><span class="line">		<span class="string">\hline</span></span><br><span class="line">		Gene name &amp; Gene accession No. &amp; CDS length (bp) &amp; Protein size (aa) &amp; Protein MW (kDa) <span class="string">\\</span></span><br><span class="line">		<span class="string">\hline</span></span><br><span class="line">		<span class="number">001</span>  &amp; <span class="number">01g</span>009860.<span class="number">2</span>   &amp; <span class="number">819</span>             &amp; <span class="number">272</span>               &amp; <span class="number">31.34</span>            <span class="string">\\</span></span><br><span class="line">		<span class="number">002</span>  &amp; <span class="number">01g</span>021730.<span class="number">2</span>   &amp; <span class="number">798</span>             &amp; <span class="number">265</span>               &amp; <span class="number">30.37</span>            <span class="string">\\</span></span><br><span class="line">		<span class="number">003</span>  &amp; <span class="number">01g</span>094490.<span class="number">2</span>   &amp; <span class="number">630</span>             &amp; <span class="number">209</span>               &amp; <span class="number">24.58</span>            <span class="string">\\</span></span><br><span class="line">		<span class="number">004</span>  &amp; <span class="number">01g</span>102740.<span class="number">2</span>   &amp; <span class="number">1242</span>            &amp; <span class="number">413</span>               &amp; <span class="number">46.94</span>            <span class="string">\\</span></span><br><span class="line">		<span class="number">005</span>  &amp; <span class="number">01g</span>104900.<span class="number">2</span>   &amp; <span class="number">597</span>             &amp; <span class="number">198</span>               &amp; <span class="number">22.85</span>            <span class="string">\\</span></span><br><span class="line">		<span class="number">006</span>  &amp; <span class="number">02g</span>036430.<span class="number">1</span>   &amp; <span class="number">1698</span>            &amp; <span class="number">565</span>               &amp; <span class="number">64.88</span>            <span class="string">\\</span></span><br><span class="line">		<span class="number">007</span>  &amp; <span class="number">02g</span>061780.<span class="number">2</span>   &amp; <span class="number">735</span>             &amp; <span class="number">244</span>               &amp; <span class="number">28.23</span>            <span class="string">\\</span></span><br><span class="line">		<span class="number">008</span>  &amp; <span class="number">02g</span>061870.<span class="number">1</span>   &amp; <span class="number">660</span>             &amp; <span class="number">219</span>               &amp; <span class="number">25.21</span>            <span class="string">\\</span></span><br><span class="line">		<span class="number">009</span>  &amp; <span class="number">02g</span>061900.<span class="number">1</span>   &amp; <span class="number">915</span>             &amp; <span class="number">304</span>               &amp; <span class="number">34.61</span>            <span class="string">\\</span></span><br><span class="line">		<span class="number">010</span>  &amp; <span class="number">02g</span>061910.<span class="number">1</span>   &amp; <span class="number">795</span>             &amp; <span class="number">264</span>               &amp; <span class="number">29.92</span> <span class="string">\\</span>    </span><br><span class="line">		<span class="string">\hline</span>       </span><br><span class="line">	<span class="string">\end&#123;tabular&#125;</span></span><br><span class="line">	<span class="string">\label&#123;bs2&#125;</span></span><br><span class="line"><span class="string">\end&#123;table&#125;</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-087fc0b5b2bb79c4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="没有溢出"></p>
+<h5 id="2-2-通过makecell宏包来实现换行"><a href="#2-2-通过makecell宏包来实现换行" class="headerlink" title="2.2 通过makecell宏包来实现换行"></a>2.2 通过<code>makecell</code>宏包来实现换行</h5><p><code>makecell</code>中有一个专门的用来处理表头的命令<code>thead[可以选对齐方式]&#123;列名称&#125;</code>。比如文中所示，<code>thead[l]&#123;Gene\\name&#125;</code>就是将gene和name换行显示，l表示左对齐。可以发现，这种方法没有出现字间距变大的情况，比第一种要好。</p>
+<figure class="highlight taggerscript"><table><tr><td class="code"><pre><span class="line"><span class="symbol">\b</span>egin&#123;table&#125;[]</span><br><span class="line">    <span class="symbol">\c</span>aption&#123;basic structure&#125;</span><br><span class="line">    <span class="symbol">\v</span>space&#123;20pt&#125;</span><br><span class="line">	<span class="symbol">\c</span>entering</span><br><span class="line">	<span class="symbol">\b</span>egin&#123;tabular&#125;&#123;lllll&#125;</span><br><span class="line">		<span class="symbol">\h</span>line</span><br><span class="line">		<span class="symbol">\t</span>head[l]&#123;Gene<span class="symbol">\\</span>name&#125; &amp; <span class="symbol">\t</span>head[l]&#123;Gene accession<span class="symbol">\\</span>No. &#125;&amp; <span class="symbol">\t</span>head[l]&#123;CDS length<span class="symbol">\\</span>(bp)&#125; &amp; <span class="symbol">\t</span>head[l]&#123;Protein size<span class="symbol">\\</span>(aa)&#125; &amp; <span class="symbol">\t</span>head[l]&#123;Protein MW<span class="symbol">\\</span>(kDa)&#125; <span class="symbol">\\</span></span><br><span class="line">		<span class="symbol">\h</span>line</span><br><span class="line">		001  &amp; 01g009860.2   &amp; 819             &amp; 272               &amp; 31.34            <span class="symbol">\\</span></span><br><span class="line">		002  &amp; 01g021730.2   &amp; 798             &amp; 265               &amp; 30.37            <span class="symbol">\\</span></span><br><span class="line">		003  &amp; 01g094490.2   &amp; 630             &amp; 209               &amp; 24.58            <span class="symbol">\\</span></span><br><span class="line">		004  &amp; 01g102740.2   &amp; 1242            &amp; 413               &amp; 46.94            <span class="symbol">\\</span></span><br><span class="line">		005  &amp; 01g104900.2   &amp; 597             &amp; 198               &amp; 22.85            <span class="symbol">\\</span></span><br><span class="line">		006  &amp; 02g036430.1   &amp; 1698            &amp; 565               &amp; 64.88            <span class="symbol">\\</span></span><br><span class="line">		007  &amp; 02g061780.2   &amp; 735             &amp; 244               &amp; 28.23            <span class="symbol">\\</span></span><br><span class="line">		008  &amp; 02g061870.1   &amp; 660             &amp; 219               &amp; 25.21            <span class="symbol">\\</span></span><br><span class="line">		009  &amp; 02g061900.1   &amp; 915             &amp; 304               &amp; 34.61            <span class="symbol">\\</span></span><br><span class="line">		010  &amp; 02g061910.1   &amp; 795             &amp; 264               &amp; 29.92 <span class="symbol">\\</span>    </span><br><span class="line">		<span class="symbol">\h</span>line       </span><br><span class="line">	<span class="symbol">\e</span>nd&#123;tabular&#125;</span><br><span class="line">	<span class="symbol">\l</span>abel&#123;bs&#125;</span><br><span class="line"><span class="symbol">\e</span>nd&#123;table&#125;</span><br></pre></td></tr></table></figure>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-dd6fe8edb6086b60.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="编译后的效果"></p>
+]]></content>
+      <categories>
+        <category>LaTeX入门</category>
+      </categories>
+      <tags>
+        <tag>LaTeX</tag>
+        <tag>表格</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>LaTeX表格溢出问题</title>
     <url>//2018/09/20/LaTeX%E8%A1%A8%E6%A0%BC%E6%BA%A2%E5%87%BA%E9%97%AE%E9%A2%98/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -828,28 +828,6 @@
       <tags>
         <tag>LaTeX</tag>
         <tag>表格</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Love</title>
-    <url>//2018/08/29/Love/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![love.jpeg](https://upload-images.jianshu.io/upload_images/3478485-7d3fb1e8df7d27b8.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-<p>那是发生在寒假某一天，突然想你。</p>
-<span id="more"></span>
-
-<p>2017年，已经完完整整的成为过去。有些东西永远留在心中，有些东西被遗忘，有些东西已经失去，有些人也离开。发生过的所有事，大概一定会留下痕迹吧。已经开启2018年的笔记本，所有已经发生过的痕迹，已经被记录在人生笔记本上的某一页，有些痕迹不及时查看，很快就会被翻页过去，永远地被遗忘。</p>
-<p>前两天，刚回家不久，开始组织高中同学会，发现没有什么人可以相聚，结果只有两个人有空，有时间能够相聚。聊着聊着总是会扯到找对象这件事，像我们这个年级的人，也差不多进入房子、车子和妹子的氛围中，无法逃脱。即使不想那么累，也不得不那么累。找对象，是经常被谈起的话题。每个人都有自己对爱情的独到见解。土豪同志说自己应该工作地点问题，和谈了3年左右的大学学妹分手了，现实很残酷，工作不在同一个地方，最后的结局基本就是分开。现在已经不想在校园里那样纯粹地去谈一场恋爱，首先考虑地往往就是工作地点，以及物质基础，周围越来越多的案例发生，历历在目。自己也变得越来越现实，爱情离我们越来越遥远，我真地没法理解。即使特别想要一份纯粹一些的爱情，但是仔细想想也是，你凭什么让一个人和你在一起吃苦，人生本来就短暂，不能好好地享受生活，还要跟着你吃苦，真得太艰难了。我永远处于这种矛盾之中，好像这个问题永远无解，没有办法找到最优的解，我已经苦苦寻求好久好久，依旧在黑暗中摸索。</p>
-<p>现在处于漂浮不定的状态，就是一种没法给人<strong>安全感</strong>的状态。没有办法去给别人任何关于未来的承诺，承担不了的责任，不要去硬抗，会累垮。我妈好像也不怎么着急，我也没有那么心急，有些东西该来的时候肯定还是会来的。<strong>遇见的时间不对，只能继续前行，希望在对的时空遇到对的人</strong>。注定一辈子活在不确定性当中，我貌似已经失去了对我自己生命的把控，决定权已经被剥夺。</p>
-<p>现在，我只选择好好地爱我的父母，考虑父母今后的日子。时间越来越少，现在的自己也有一点点的小小的能力让他们过得稍微好一点。对于父母，我好像不用在意承诺，父母是最伟大的存在，不用给出什么承诺，我也不怕，就想着尽早地尽孝，好好孝顺他们。越早越好，能孝顺多少是多少，不用考虑太多。现在看来，自己真的还有好多人情，好多爱需要反馈。长这么大，接受了多少人的爱，才有了今天的我，亲戚的爱，周围邻居的爱，同学的爱，老师的爱以及父母的爱。自己现在还没有什么能力去反馈给他们，让他们知道他们的付出我都是记在心里的，在我的<strong>生命笔记本</strong>中都好好地记录着，谁对我好我都清楚。现在或多或少，都该开始反馈了，或者通俗的报答感恩。</p>
-<p>2018年，开始回看<strong>生命笔记本</strong>，找出那些爱的痕迹，尽可能多地想到这些人，要放在心上。要重新对生活充满激情，热爱生活，才能更好地执行这件事。希望我能更久地陪在你们身边，让我有机会更对地给予你们<strong>爱的反馈。</strong></p>
-]]></content>
-      <categories>
-        <category>随记</category>
-      </categories>
-      <tags>
-        <tag>爱</tag>
       </tags>
   </entry>
   <entry>
@@ -879,26 +857,25 @@
       </tags>
   </entry>
   <entry>
-    <title>TBtools中关于染色体定位的问题</title>
-    <url>//2018/09/20/TBtools%E4%B8%AD%E5%85%B3%E4%BA%8E%E6%9F%93%E8%89%B2%E4%BD%93%E5%AE%9A%E4%BD%8D%E7%9A%84%E9%97%AE%E9%A2%98/</url>
+    <title>Love</title>
+    <url>//2018/08/29/Love/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![coffee-hand](https://upload-images.jianshu.io/upload_images/3478485-7bf2e57593f9e24b.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-> 我说明一下，很多时候我只是喜欢放图，不一定和内容有关联，只是喜欢。
+![love.jpeg](https://upload-images.jianshu.io/upload_images/3478485-7d3fb1e8df7d27b8.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
+<p>那是发生在寒假某一天，突然想你。</p>
 <span id="more"></span>
 
-<p>我们在进行染色体绘制的时候，会出现问题，比如没法出图。今天我就遇到了这样一个问题，最后我检查了一下，发现就是我自己在重新命名这个文件中，没有按照规定的格式来进行，导致没有办法出现图。我现在用的是下图中蓝色第一个框：gene location from gff/gtf，因为圈图现在版本的TBtools还没有办法基因坐标重叠的问题。</p>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-52240843d34844ea.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="两个主要的工具"></p>
-<p>点击就会出现下面的输入界面，你只要把相关的文件拖入其中，点击start，就会出来图。然后，我今天在最后面一个文件，input gene renaming file。我出现了两次错误，第一次是没有注意到需要用tab键来分开名字，第二次是出现了一行空行，两者都导致我没有得到图片。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-941aad648bddba1d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="输入界面"></p>
-<p>后面进行修正，图就出来了，然后在进行染色体位置的调整，相关细节在AI中进行调整，包括字体的大小，线的颜色和位置，以及图像的颜色，调整到你自己满意的程度就好了。</p>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-0f1ab14348ba9f95.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="我稍微修整后的图"></p>
+<p>2017年，已经完完整整的成为过去。有些东西永远留在心中，有些东西被遗忘，有些东西已经失去，有些人也离开。发生过的所有事，大概一定会留下痕迹吧。已经开启2018年的笔记本，所有已经发生过的痕迹，已经被记录在人生笔记本上的某一页，有些痕迹不及时查看，很快就会被翻页过去，永远地被遗忘。</p>
+<p>前两天，刚回家不久，开始组织高中同学会，发现没有什么人可以相聚，结果只有两个人有空，有时间能够相聚。聊着聊着总是会扯到找对象这件事，像我们这个年级的人，也差不多进入房子、车子和妹子的氛围中，无法逃脱。即使不想那么累，也不得不那么累。找对象，是经常被谈起的话题。每个人都有自己对爱情的独到见解。土豪同志说自己应该工作地点问题，和谈了3年左右的大学学妹分手了，现实很残酷，工作不在同一个地方，最后的结局基本就是分开。现在已经不想在校园里那样纯粹地去谈一场恋爱，首先考虑地往往就是工作地点，以及物质基础，周围越来越多的案例发生，历历在目。自己也变得越来越现实，爱情离我们越来越遥远，我真地没法理解。即使特别想要一份纯粹一些的爱情，但是仔细想想也是，你凭什么让一个人和你在一起吃苦，人生本来就短暂，不能好好地享受生活，还要跟着你吃苦，真得太艰难了。我永远处于这种矛盾之中，好像这个问题永远无解，没有办法找到最优的解，我已经苦苦寻求好久好久，依旧在黑暗中摸索。</p>
+<p>现在处于漂浮不定的状态，就是一种没法给人<strong>安全感</strong>的状态。没有办法去给别人任何关于未来的承诺，承担不了的责任，不要去硬抗，会累垮。我妈好像也不怎么着急，我也没有那么心急，有些东西该来的时候肯定还是会来的。<strong>遇见的时间不对，只能继续前行，希望在对的时空遇到对的人</strong>。注定一辈子活在不确定性当中，我貌似已经失去了对我自己生命的把控，决定权已经被剥夺。</p>
+<p>现在，我只选择好好地爱我的父母，考虑父母今后的日子。时间越来越少，现在的自己也有一点点的小小的能力让他们过得稍微好一点。对于父母，我好像不用在意承诺，父母是最伟大的存在，不用给出什么承诺，我也不怕，就想着尽早地尽孝，好好孝顺他们。越早越好，能孝顺多少是多少，不用考虑太多。现在看来，自己真的还有好多人情，好多爱需要反馈。长这么大，接受了多少人的爱，才有了今天的我，亲戚的爱，周围邻居的爱，同学的爱，老师的爱以及父母的爱。自己现在还没有什么能力去反馈给他们，让他们知道他们的付出我都是记在心里的，在我的<strong>生命笔记本</strong>中都好好地记录着，谁对我好我都清楚。现在或多或少，都该开始反馈了，或者通俗的报答感恩。</p>
+<p>2018年，开始回看<strong>生命笔记本</strong>，找出那些爱的痕迹，尽可能多地想到这些人，要放在心上。要重新对生活充满激情，热爱生活，才能更好地执行这件事。希望我能更久地陪在你们身边，让我有机会更对地给予你们<strong>爱的反馈。</strong></p>
 ]]></content>
       <categories>
-        <category>TBtools使用</category>
+        <category>随记</category>
       </categories>
       <tags>
-        <tag>染色体定位</tag>
-        <tag>TBtools</tag>
+        <tag>爱</tag>
       </tags>
   </entry>
   <entry>
@@ -943,6 +920,29 @@
       <tags>
         <tag>LaTeX</tag>
         <tag>排版</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>TBtools中关于染色体定位的问题</title>
+    <url>//2018/09/20/TBtools%E4%B8%AD%E5%85%B3%E4%BA%8E%E6%9F%93%E8%89%B2%E4%BD%93%E5%AE%9A%E4%BD%8D%E7%9A%84%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![coffee-hand](https://upload-images.jianshu.io/upload_images/3478485-7bf2e57593f9e24b.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+> 我说明一下，很多时候我只是喜欢放图，不一定和内容有关联，只是喜欢。
+
+<span id="more"></span>
+
+<p>我们在进行染色体绘制的时候，会出现问题，比如没法出图。今天我就遇到了这样一个问题，最后我检查了一下，发现就是我自己在重新命名这个文件中，没有按照规定的格式来进行，导致没有办法出现图。我现在用的是下图中蓝色第一个框：gene location from gff/gtf，因为圈图现在版本的TBtools还没有办法基因坐标重叠的问题。</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-52240843d34844ea.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="两个主要的工具"></p>
+<p>点击就会出现下面的输入界面，你只要把相关的文件拖入其中，点击start，就会出来图。然后，我今天在最后面一个文件，input gene renaming file。我出现了两次错误，第一次是没有注意到需要用tab键来分开名字，第二次是出现了一行空行，两者都导致我没有得到图片。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-941aad648bddba1d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="输入界面"></p>
+<p>后面进行修正，图就出来了，然后在进行染色体位置的调整，相关细节在AI中进行调整，包括字体的大小，线的颜色和位置，以及图像的颜色，调整到你自己满意的程度就好了。</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-0f1ab14348ba9f95.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="我稍微修整后的图"></p>
+]]></content>
+      <categories>
+        <category>TBtools使用</category>
+      </categories>
+      <tags>
+        <tag>染色体定位</tag>
+        <tag>TBtools</tag>
       </tags>
   </entry>
   <entry>
@@ -1127,6 +1127,31 @@ characterization of aluminum resistance in Populus"><br>这里我先用比较麻
       </tags>
   </entry>
   <entry>
+    <title>如何使用Excel查找重复项</title>
+    <url>//2018/09/24/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8Excel%E6%9F%A5%E6%89%BE%E9%87%8D%E5%A4%8D%E9%A1%B9/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![flying](https://upload-images.jianshu.io/upload_images/3478485-3028f91254eb81be.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+<blockquote>
+<p>折腾过后，剩下的只有笔记。我们需要找到相同的东西，来获得共性，才能得以下一步的发展。</p>
+</blockquote>
+<span id="more"></span>
+
+<p>在处理转录组数据的时候，对于生信的小白，也不经常敲代码，很多时候还是利用一些比较熟悉的工具省事。当然，我的内心是无比希望能够使用编程来解决这些问题，可是很无奈。<br>今天，我在处理转录组数据，我希望从好几万个基因中找到我感兴趣的那些基因，我想搜索一下转录组中的数据并拿到他。<br>我用的方法是通过vlookup函数来进行查找，公式就是：VLOOKUP(B1,A:A,1,0)。这个公式的意思是，你想找到在B列中与A列中相同的值，并且可以在另外一行显示B列中相同值得为之。</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-75012f75ac9aa958.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="可以看到，在C列中，我们找到了重复值，且跟B列中的位置对应。"></p>
+<blockquote>
+<p>参考资料：<a href="http://blog.51cto.com/xueli/920592">http://blog.51cto.com/xueli/920592</a></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>学习记录</category>
+      </categories>
+      <tags>
+        <tag>Excel</tag>
+        <tag>重复项</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>大悦城小聚</title>
     <url>//2018/09/29/%E5%A4%A7%E6%82%A6%E5%9F%8E%E5%B0%8F%E8%81%9A/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -1175,31 +1200,6 @@ characterization of aluminum resistance in Populus"><br>这里我先用比较麻
       <tags>
         <tag>泰国菜</tag>
         <tag>大学</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>如何使用Excel查找重复项</title>
-    <url>//2018/09/24/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8Excel%E6%9F%A5%E6%89%BE%E9%87%8D%E5%A4%8D%E9%A1%B9/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![flying](https://upload-images.jianshu.io/upload_images/3478485-3028f91254eb81be.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-<blockquote>
-<p>折腾过后，剩下的只有笔记。我们需要找到相同的东西，来获得共性，才能得以下一步的发展。</p>
-</blockquote>
-<span id="more"></span>
-
-<p>在处理转录组数据的时候，对于生信的小白，也不经常敲代码，很多时候还是利用一些比较熟悉的工具省事。当然，我的内心是无比希望能够使用编程来解决这些问题，可是很无奈。<br>今天，我在处理转录组数据，我希望从好几万个基因中找到我感兴趣的那些基因，我想搜索一下转录组中的数据并拿到他。<br>我用的方法是通过vlookup函数来进行查找，公式就是：VLOOKUP(B1,A:A,1,0)。这个公式的意思是，你想找到在B列中与A列中相同的值，并且可以在另外一行显示B列中相同值得为之。</p>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-75012f75ac9aa958.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="可以看到，在C列中，我们找到了重复值，且跟B列中的位置对应。"></p>
-<blockquote>
-<p>参考资料：<a href="http://blog.51cto.com/xueli/920592">http://blog.51cto.com/xueli/920592</a></p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>学习记录</category>
-      </categories>
-      <tags>
-        <tag>Excel</tag>
-        <tag>重复项</tag>
       </tags>
   </entry>
   <entry>
@@ -1807,32 +1807,6 @@ characterization of aluminum resistance in Populus"><br>这里我先用比较麻
       </tags>
   </entry>
   <entry>
-    <title>科研诚信</title>
-    <url>//2018/08/30/%E7%A7%91%E7%A0%94%E8%AF%9A%E4%BF%A1/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![发现的乐趣](https://upload-images.jianshu.io/upload_images/3478485-580c16a9b28a9f34.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-<p>8月30日，星期四，公元2018年。</p>
-<p>近期在读费曼先生的演讲和访谈集，想来还是很有意思。这个伟大的物理学家，太有意思，充满着小孩子气，一点没有摆架子的做作。</p>
-<span id="more"></span>
-
-<p>我最影响深刻的是，他讲的科研诚信那一篇。至今，对处于科研岗位的工作者，任然具有重要的参考意义。在科研的过程中，我们必须记录成功和失败两面，而不是只记录能够解释你猜测的结果。不只是正确的结果能够帮助他人得出结论，错误的结果同样可以实现。此外，我们也必须将实验的过程仔细记录，在发表科研成果的同时，需要将一切公开，这对别人判断你的科研成果是否有价值非常关键。科研诚信，就要求我们要完整的呈现你实验的所有相关信息，失败的，成功的都需要。费曼先生就举例来说明：</p>
-<blockquote>
-<p>某一个食用油广告，说这种食用油不会深入到食物中去。这是真的，不能说欺骗消费者。科研诚信问题，就是应该给这个事实加上一句描述：在某一温度下，任何一种油都不会渗入食物，但是在另一个温度下，所有的油都会渗入食物，这种油也一样。所以你看，这个广告只把部分事实告诉消费者，而不是全部事实。而这两者的区别我们需要澄清。</p>
-</blockquote>
-<p>可以看到，费曼先生用多么形象的例子来说明科研诚信要求我们要将所有信息公布，而不是一部分。</p>
-<p>此外，费曼先生还讲了一条极其重要的原则——<strong>你绝对不能够欺骗自己。自己是最容易欺骗自己的，只有做到不欺骗自己，才能相对容易地不去欺骗其他人。</strong>当看到这句话的时候，产生了共鸣。很多时候你做科研，做某个实验，你很容易欺骗自己，比如：有时候，你会发现因之前处理或者其他可能会导致实验结果不准确，可是就算如此，你可能还会固执地去进行，得出一个连你自己都不相信的结果。面对这样的情况，就该直接放弃，重新来过。</p>
-<p>面对伟大的科学家，我们要学习地太多太多。</p>
-]]></content>
-      <categories>
-        <category>读书笔记</category>
-      </categories>
-      <tags>
-        <tag>费曼</tag>
-        <tag>诚信</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>科普吗？</title>
     <url>//2018/08/26/%E7%A7%91%E6%99%AE%E5%90%97%EF%BC%9F/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -1857,6 +1831,32 @@ characterization of aluminum resistance in Populus"><br>这里我先用比较麻
       </categories>
       <tags>
         <tag>科普</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>科研诚信</title>
+    <url>//2018/08/30/%E7%A7%91%E7%A0%94%E8%AF%9A%E4%BF%A1/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![发现的乐趣](https://upload-images.jianshu.io/upload_images/3478485-580c16a9b28a9f34.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+<p>8月30日，星期四，公元2018年。</p>
+<p>近期在读费曼先生的演讲和访谈集，想来还是很有意思。这个伟大的物理学家，太有意思，充满着小孩子气，一点没有摆架子的做作。</p>
+<span id="more"></span>
+
+<p>我最影响深刻的是，他讲的科研诚信那一篇。至今，对处于科研岗位的工作者，任然具有重要的参考意义。在科研的过程中，我们必须记录成功和失败两面，而不是只记录能够解释你猜测的结果。不只是正确的结果能够帮助他人得出结论，错误的结果同样可以实现。此外，我们也必须将实验的过程仔细记录，在发表科研成果的同时，需要将一切公开，这对别人判断你的科研成果是否有价值非常关键。科研诚信，就要求我们要完整的呈现你实验的所有相关信息，失败的，成功的都需要。费曼先生就举例来说明：</p>
+<blockquote>
+<p>某一个食用油广告，说这种食用油不会深入到食物中去。这是真的，不能说欺骗消费者。科研诚信问题，就是应该给这个事实加上一句描述：在某一温度下，任何一种油都不会渗入食物，但是在另一个温度下，所有的油都会渗入食物，这种油也一样。所以你看，这个广告只把部分事实告诉消费者，而不是全部事实。而这两者的区别我们需要澄清。</p>
+</blockquote>
+<p>可以看到，费曼先生用多么形象的例子来说明科研诚信要求我们要将所有信息公布，而不是一部分。</p>
+<p>此外，费曼先生还讲了一条极其重要的原则——<strong>你绝对不能够欺骗自己。自己是最容易欺骗自己的，只有做到不欺骗自己，才能相对容易地不去欺骗其他人。</strong>当看到这句话的时候，产生了共鸣。很多时候你做科研，做某个实验，你很容易欺骗自己，比如：有时候，你会发现因之前处理或者其他可能会导致实验结果不准确，可是就算如此，你可能还会固执地去进行，得出一个连你自己都不相信的结果。面对这样的情况，就该直接放弃，重新来过。</p>
+<p>面对伟大的科学家，我们要学习地太多太多。</p>
+]]></content>
+      <categories>
+        <category>读书笔记</category>
+      </categories>
+      <tags>
+        <tag>费曼</tag>
+        <tag>诚信</tag>
       </tags>
   </entry>
   <entry>
