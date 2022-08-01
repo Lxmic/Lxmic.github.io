@@ -1,6 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>2018年8月-小结</title>
+    <url>//2018/09/02/2018%E5%B9%B48%E6%9C%88-%E5%B0%8F%E7%BB%93/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![无尽之路](https://upload-images.jianshu.io/upload_images/3478485-6dc9021e15783f70.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+9月2日，星期日，公元2018年。
+
+
+
+<span id="more"></span>
+
+<p>9月开始崭露头角，8月已然逝去。秋天，似乎已经离我们越来越近，春困秋乏的状态又要来临。总结8月，展望9月，似乎迫不及待。</p>
+<p>8月，似乎是一个没有任何进展的月份。采葡萄，回家休息，然后就是游泳和看书。没有再多的事情，帮师姐搬了一下行李，仅此而已的8月。始终无法凝聚自己的精神专注力，聚焦在实验这一点上，整个8月确实是变得非常的散。</p>
+<p>我是否是太过于放松了，还是太过于自信，亦或是恐惧，更或是太多理想。很多很多事情似乎要做，不希望生活只有实验，希望有自己支配的时间，似乎实验只是占据了我一半左右的时间，我想对于真正地科研人员来说，这是少之又少的吧。我想游泳健身，我想博览群书（我感兴趣的），我想学习编程，我想看电影，我想去旅行，我还想学习摄影……想做的太多，精力太过分散，始终做不好任何一件事儿。</p>
+<p>我也清楚，问题关键抓不住重点，没有计划，亦或是没有目标。可是，我就认为生活也该有生活的样子，被一件事占据所有时间，也是一种悲哀。我的矛盾始终存在，那么解决矛盾的关键在于什么？我想，可能是提高时间利用率。你说不想花过多时间在实验上，那么你必须提高实验效率，要保证极高的实验成功率，在做一件事的时候，必须要专注于此，且不可散。</p>
+<p>整个大时间轴，你可以细分成你想要的份数，但是有一点你必须铭记，每一份都要讲所有的精神力注入其中，那是不可以分散的。9月，希望能够尝试这种方式，能够仅仅活在此时此刻，也是一种幸福。过多的展望，恰恰会迷失人的心智，摧毁人的意志力，因此，对于9月，我不想太多，做该做的事。</p>
+]]></content>
+      <categories>
+        <category>人生小结</category>
+      </categories>
+      <tags>
+        <tag>小结</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>CRISPR-Cas9系统简介</title>
+    <url>//2018/12/30/CRISPR-Cas9%E7%B3%BB%E7%BB%9F%E7%AE%80%E4%BB%8B/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+
+
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-0bf1101b1c467285.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="图片来源：https://www.mygenefood.com/crispr-cas9-introduction-genome-editing/"></p>
+<p>Clustered regularly interspaced short palindromic repeats（CRISPR）——规律成簇的间隔短回文重复和CRISPR-associated protein 9（Cas9），共同组成了一套系统，是细菌用来防御噬菌体DNA注入和质粒转移的天然防御系统。但现在被人类所重新利用，构建了很强的RNA引导的DNA靶向平台——主要用来基因组编辑、转录扰乱、表观遗传调控等。</p>
+<span id="more"></span>
+
+
+
+<h3 id="细菌抵抗噬菌体入侵"><a href="#细菌抵抗噬菌体入侵" class="headerlink" title="细菌抵抗噬菌体入侵"></a><font color="green">细菌抵抗噬菌体入侵</font></h3><p>图中是细菌天然免疫系统。我们可以看到，CRISPR locus是由几个原件构成。一开始是个反向转录的RNA，是特异的非编码RNA，可以和重复序列部分互补（trancrRNA，橙色矩形），后面是各种cas基因（箭头表示），接着是CRISPR排列（棕色的菱形是重复序列，彩色的是间隔）。而这些间隔序列是细菌从噬菌体DNA中获得的遗传原件：当噬菌体感染细菌，细菌激活相关的cas基因——Cas1，Cas2,和Csn2，将其中新的间隔序列整合到自身的CRISPR arry中。一旦获得以后，新的spacer就会出现在pre-crRNA中，此时tracrRNA与不同的SPACER互补，在RNaseIII的作用下，产生crRNA，进一步在其他未知的核酸酶的作用，剪切crRNA的5’端，使得引导序列长为20nt。如果噬菌体注入DNA，那么这个免疫系统将被激活，来干扰噬菌体DNA。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-4c5c2be28472800d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="防御过程"></p>
+<h3 id="剪切与修复"><a href="#剪切与修复" class="headerlink" title="剪切与修复"></a><font color="green">剪切与修复</font></h3><p>我们目前主要使用II型CRISPR系统，它和他的区别在于，只是需要一个DNA内切酶Cas9来对与sgRNA20个互补碱基的带有PAM结构的DNA进行剪切。剪切后是DNA产生平末端的DSB（双链断裂），然后在进行非同源的末端连接过程中，容易随机插入或者删除或者替换。或者进行高保真的同源定向修复，修复DNA。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-be11ad0e6a3c0c5e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Type II Cas9"><br><img src="https://upload-images.jianshu.io/upload_images/3478485-827d8dc582062b62.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Cas9剪切及突变产生"></p>
+<h3 id="Cas9蛋白构象重组"><a href="#Cas9蛋白构象重组" class="headerlink" title="Cas9蛋白构象重组"></a><font color="green">Cas9蛋白构象重组</font></h3><p>这里的例子是化脓链球菌的SpyCas9，是一个含有1368个氨基酸的多结构和多功能的DNA核酸内切酶。它的切割位点在PAM上游的第三个碱基，通过HNH（sgRAN互补的目标序列）和RuvC核酸酶结构域（非目标序列）。要识别特定序列并进行剪切，sgRNA与Cas9组合成一个复合体，其中sgRNAy与Cas9结合起着关键的作用，能够使得Cas9构象重构，变得具有活性。crRNA前20碱基使得Cas9具有靶序列特异性，tracrRNA来招募Cas9蛋白。在这个系统中，有一个所谓的种子序列，20碱基spacer的3’端10-12个核苷酸。<strong>在种子序列的错配以及本身同源性都会严重影响系统特异性和脱靶效率。</strong>*<br><img src="https://upload-images.jianshu.io/upload_images/3478485-082186ee503a2b4a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="sgNRA"></p>
+<h3 id="目标DNA搜索与识别"><a href="#目标DNA搜索与识别" class="headerlink" title="目标DNA搜索与识别"></a><font color="green">目标DNA搜索与识别</font></h3><p><strong>PAM序列非常的关键</strong>，能够起到识别自身和外来的序列。有实验表明，如果PAM进行但突变，那么就能够让噬菌体入侵宿主。在sgRNA互补之前，首先是寻找PAM序列，如果没有合适的PAM，那么通过蛋白三维结构的坍塌，会离开DNA，直到找到合适的PAM。一旦找到PAM，Cas9就使DNA局部解链，RNA进入，与DNA互补，形成RNA-DNA结构。<strong>sg种子区域序列与靶DNA的完美互补是很重要的。</strong></p>
+<h3 id="CRISPR–Cas9介导的DNA靶定于剪切模型"><a href="#CRISPR–Cas9介导的DNA靶定于剪切模型" class="headerlink" title="CRISPR–Cas9介导的DNA靶定于剪切模型"></a><font color="green">CRISPR–Cas9介导的DNA靶定于剪切模型</font></h3><p>首先，guide RNA的结合，使得Cas9从一个未激活的构象变成具有DNA识别能力的构象。RNA种子序列先形成A型构象，为了目标结合和链入侵，PAM识别位点预先形成用来PAM识别。然后，Cas9结合到PAM序列，使得酶能够去识别附近的潜在的DNA靶序列。一旦Cas9在PAM附近找到了潜在的靶序列，会开始解双螺旋并继续检查剩余的靶序列。磷酸锁环稳定解旋的目标DNA，且第一个碱基开始翻转向上，与guide RNA碱基配对。而Cas9继续与非靶链上的翻转碱基作用，促进双螺旋解开。接着，碱基配对伴随着Cas9构象改变，促进种子序列前面的guide RNA从限制中释放出来，也形成配对，这个过程促使Cas9构象持续变化，直到到达有活性的状态。最终，guide RNA与目标DNA完全互补使得HNH具有稳定的，具有活性的构象，来剪切目标链DNA。与此同时，引起更大的构象变化，使得非目标链DNA进入RuvC催化中心被剪切，这种转态下，Cas9中牢牢结合在靶点序列上，直到其他的细胞因子过来替代它。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-4db71b549d557ab4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="剪切示意图"></p>
+<p>读了这篇review，进行一定程度的总结，有些地方还是有些不太清楚。</p>
+<blockquote>
+<p>Fuguo Jiang and Jennifer A. Doudna, CRISPR–Cas9 Structures and Mechanisms, Annual Review of Biophysics 2017 46:1, 505-529 </p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>学习记录</category>
+      </categories>
+      <tags>
+        <tag>Cas9</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Dropbox离线安装</title>
+    <url>//2018/12/08/Dropbox%E7%A6%BB%E7%BA%BF%E5%AE%89%E8%A3%85/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+
+
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-d5fc4ecb48065677.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<blockquote>
+<p>Dropbox 的安装一直是个问题，下载安装器，你永远没有办法链接网络，可能是电脑没有完全的全局。</p>
+</blockquote>
+<p>今天，因为要配置新的电脑，我就需要安装我的Dropbox。但是依旧是因为没有办法彻底的全局FQ，所以我就想着下载离线包，然后我就就Google，找到了下载离线安装包的办法，你只要在官网下载页面网址的基础上，在后面添加<code>&amp;full=1</code>就可以实现离线安装。<br>离线安装包下载网址：<a href="https://www.dropbox.com/downloading?src=index&full=1" title="shark0017">https://www.dropbox.com/downloading?src=index**&amp;full=1**</a>。已经顺利安装，下面可以愉快的使用了。</p>
+]]></content>
+      <categories>
+        <category>学习记录</category>
+      </categories>
+      <tags>
+        <tag>Dropbox</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>DJY-遇见盖北</title>
     <url>//2018/08/18/DJY-%E9%81%87%E8%A7%81%E7%9B%96%E5%8C%97/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -33,25 +105,6 @@
       </categories>
       <tags>
         <tag>葡萄</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Dropbox离线安装</title>
-    <url>//2018/12/08/Dropbox%E7%A6%BB%E7%BA%BF%E5%AE%89%E8%A3%85/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-
-
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-d5fc4ecb48065677.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
-<blockquote>
-<p>Dropbox 的安装一直是个问题，下载安装器，你永远没有办法链接网络，可能是电脑没有完全的全局。</p>
-</blockquote>
-<p>今天，因为要配置新的电脑，我就需要安装我的Dropbox。但是依旧是因为没有办法彻底的全局FQ，所以我就想着下载离线包，然后我就就Google，找到了下载离线安装包的办法，你只要在官网下载页面网址的基础上，在后面添加<code>&amp;full=1</code>就可以实现离线安装。<br>离线安装包下载网址：<a href="https://www.dropbox.com/downloading?src=index&full=1" title="shark0017">https://www.dropbox.com/downloading?src=index**&amp;full=1**</a>。已经顺利安装，下面可以愉快的使用了。</p>
-]]></content>
-      <categories>
-        <category>学习记录</category>
-      </categories>
-      <tags>
-        <tag>Dropbox</tag>
       </tags>
   </entry>
   <entry>
@@ -248,30 +301,6 @@
       </tags>
   </entry>
   <entry>
-    <title>HTML5（1）——介绍</title>
-    <url>//2018/09/24/HTML5%EF%BC%881%EF%BC%89%E2%80%94%E2%80%94%E4%BB%8B%E7%BB%8D/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![中秋节就是面对电脑](https://upload-images.jianshu.io/upload_images/3478485-befca9c4894b99eb.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-<blockquote>
-<p>我就是用来玩一下，说好得，只是玩一下。</p>
-</blockquote>
-<span id="more"></span>
-
-<p>总是想干点事情，不想这么地浪费时间，学习一下html5语法，还是挺好的。我记得以前别人过节的时候，就会发一个网页过来，你打开就是节日祝福，还有音乐和动画，然后就觉得学计算机的人特别牛逼，现在看来，真得没有那么难，稍微学习一下，你就可以实现这样的效果，并没有想象中那么难。当然如果要深入下去，作为你吃饭的技能，那就不是一个层次，我就用来玩一下，增添一些生活的乐趣。</p>
-<p>有了以下这些基本的内容，你就可以写出一个自己的最简单的网页来了。</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span> <span class="comment">&lt;!--这是用来指定声明这篇文档是HTML5，帮助浏览器正确的显示网页--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span><span class="comment">&lt;!--这是网页根标签，每个网页都有，必不可少--&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span><span class="comment">&lt;!--head里面包含的是元信息，不会显示出来--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">title</span>&gt;</span>生活的质感<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">    </span><br><span class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span><span class="comment">&lt;!--body是网页不可少部分，是用来放可视的网页内容，是会展现出来的--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">h1</span>&gt;</span><span class="comment">&lt;!--h1是用来表示一级标题--&gt;</span></span><br><span class="line">            中秋节快乐</span><br><span class="line">        <span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="comment">&lt;!--p就是段落的意思，用来盛放正文的内容--&gt;</span></span><br><span class="line">            今天是中秋节，也没有回家过节，在宿舍里折腾了很久。</span><br><span class="line">        <span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>HTML5的标签是用&lt;&gt;括起来的。比如<code>&lt;p&gt;...&lt;/p&gt;</code>这样的段落标签。不带斜杠的是起始标签，带斜杆的是结束标签。</p>
-]]></content>
-      <categories>
-        <category>HTML5入门</category>
-      </categories>
-      <tags>
-        <tag>HTML5</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>HTML5（13）——CSS</title>
     <url>//2018/10/15/HTML5%EF%BC%8813%EF%BC%89%E2%80%94%E2%80%94CSS/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -326,26 +355,21 @@
       </tags>
   </entry>
   <entry>
-    <title>HTML5（2）——编辑器</title>
-    <url>//2018/09/30/HTML5%EF%BC%882%EF%BC%89%E2%80%94%E2%80%94%E7%BC%96%E8%BE%91%E5%99%A8/</url>
+    <title>HTML5（1）——介绍</title>
+    <url>//2018/09/24/HTML5%EF%BC%881%EF%BC%89%E2%80%94%E2%80%94%E4%BB%8B%E7%BB%8D/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![国庆前夕](https://upload-images.jianshu.io/upload_images/3478485-d9dfcf26595c1c1e.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![中秋节就是面对电脑](https://upload-images.jianshu.io/upload_images/3478485-befca9c4894b99eb.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 <blockquote>
-<p>今天已经是9月最后一天，还有一件事情需要去做，之后就可以回家待两天。上次写了第一篇HTML基本语法介绍，今天来看一下你可以用哪些编辑器来编写你的web。</p>
+<p>我就是用来玩一下，说好得，只是玩一下。</p>
 </blockquote>
 <span id="more"></span>
 
-<h3 id="Windows-Notepad"><a href="#Windows-Notepad" class="headerlink" title="Windows Notepad"></a><font color="green">Windows Notepad</font></h3><p>这个大家应该都非常熟悉的，虽然平常用的很少，一直有些嫌弃，但是也还可以。从开始菜单——程序——附件——Notepad或者直接右键——新建文本文档就可以开始写代码。写完之后，你需要保存成html或htm后缀的文件，这样直接可以使用你的浏览器打开，来看编译后的结果。</p>
-<h3 id="Mac-TextEdit"><a href="#Mac-TextEdit" class="headerlink" title="Mac TextEdit"></a><font color="green">Mac TextEdit</font></h3><p>点开你的启动台，然后你就可以看到文本编辑器，打开它。然后你需要在它的偏好设置——格式——选择纯文本文档，然后点击另一个标签打开和保存——。然后你就可以新建文档，开始编写代码，最后保存成html格式文件。</p>
-<ul>
-<li>勾选第一个<br><img src="https://upload-images.jianshu.io/upload_images/3478485-8ad786f2b38f8482.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"></li>
-</ul>
-<h3 id="Adobe-Brackets"><a href="#Adobe-Brackets" class="headerlink" title="Adobe Brackets"></a><font color="green">Adobe Brackets</font></h3><p>Adobe公司的Brackets网上很多都说是web神器，我也是才开始用，很多东西也不是特别了解，比如怎么实时显示代码编译结果，我下载后貌似没发实现，问题在哪里我也不太清楚。</p>
-<ul>
-<li>软件界面<br><img src="https://upload-images.jianshu.io/upload_images/3478485-654fe29edc44f95e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"></li>
-</ul>
-<p>最后，希望你们有好的编辑器可以推荐给我。</p>
+<p>总是想干点事情，不想这么地浪费时间，学习一下html5语法，还是挺好的。我记得以前别人过节的时候，就会发一个网页过来，你打开就是节日祝福，还有音乐和动画，然后就觉得学计算机的人特别牛逼，现在看来，真得没有那么难，稍微学习一下，你就可以实现这样的效果，并没有想象中那么难。当然如果要深入下去，作为你吃饭的技能，那就不是一个层次，我就用来玩一下，增添一些生活的乐趣。</p>
+<p>有了以下这些基本的内容，你就可以写出一个自己的最简单的网页来了。</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span> <span class="comment">&lt;!--这是用来指定声明这篇文档是HTML5，帮助浏览器正确的显示网页--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span><span class="comment">&lt;!--这是网页根标签，每个网页都有，必不可少--&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span><span class="comment">&lt;!--head里面包含的是元信息，不会显示出来--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">title</span>&gt;</span>生活的质感<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">    </span><br><span class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span><span class="comment">&lt;!--body是网页不可少部分，是用来放可视的网页内容，是会展现出来的--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">h1</span>&gt;</span><span class="comment">&lt;!--h1是用来表示一级标题--&gt;</span></span><br><span class="line">            中秋节快乐</span><br><span class="line">        <span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="comment">&lt;!--p就是段落的意思，用来盛放正文的内容--&gt;</span></span><br><span class="line">            今天是中秋节，也没有回家过节，在宿舍里折腾了很久。</span><br><span class="line">        <span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>HTML5的标签是用&lt;&gt;括起来的。比如<code>&lt;p&gt;...&lt;/p&gt;</code>这样的段落标签。不带斜杠的是起始标签，带斜杆的是结束标签。</p>
 ]]></content>
       <categories>
         <category>HTML5入门</category>
@@ -396,6 +420,35 @@
       </tags>
   </entry>
   <entry>
+    <title>HTML5（2）——编辑器</title>
+    <url>//2018/09/30/HTML5%EF%BC%882%EF%BC%89%E2%80%94%E2%80%94%E7%BC%96%E8%BE%91%E5%99%A8/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![国庆前夕](https://upload-images.jianshu.io/upload_images/3478485-d9dfcf26595c1c1e.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+<blockquote>
+<p>今天已经是9月最后一天，还有一件事情需要去做，之后就可以回家待两天。上次写了第一篇HTML基本语法介绍，今天来看一下你可以用哪些编辑器来编写你的web。</p>
+</blockquote>
+<span id="more"></span>
+
+<h3 id="Windows-Notepad"><a href="#Windows-Notepad" class="headerlink" title="Windows Notepad"></a><font color="green">Windows Notepad</font></h3><p>这个大家应该都非常熟悉的，虽然平常用的很少，一直有些嫌弃，但是也还可以。从开始菜单——程序——附件——Notepad或者直接右键——新建文本文档就可以开始写代码。写完之后，你需要保存成html或htm后缀的文件，这样直接可以使用你的浏览器打开，来看编译后的结果。</p>
+<h3 id="Mac-TextEdit"><a href="#Mac-TextEdit" class="headerlink" title="Mac TextEdit"></a><font color="green">Mac TextEdit</font></h3><p>点开你的启动台，然后你就可以看到文本编辑器，打开它。然后你需要在它的偏好设置——格式——选择纯文本文档，然后点击另一个标签打开和保存——。然后你就可以新建文档，开始编写代码，最后保存成html格式文件。</p>
+<ul>
+<li>勾选第一个<br><img src="https://upload-images.jianshu.io/upload_images/3478485-8ad786f2b38f8482.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"></li>
+</ul>
+<h3 id="Adobe-Brackets"><a href="#Adobe-Brackets" class="headerlink" title="Adobe Brackets"></a><font color="green">Adobe Brackets</font></h3><p>Adobe公司的Brackets网上很多都说是web神器，我也是才开始用，很多东西也不是特别了解，比如怎么实时显示代码编译结果，我下载后貌似没发实现，问题在哪里我也不太清楚。</p>
+<ul>
+<li>软件界面<br><img src="https://upload-images.jianshu.io/upload_images/3478485-654fe29edc44f95e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"></li>
+</ul>
+<p>最后，希望你们有好的编辑器可以推荐给我。</p>
+]]></content>
+      <categories>
+        <category>HTML5入门</category>
+      </categories>
+      <tags>
+        <tag>HTML5</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>HTML5（4）——元素</title>
     <url>//2018/10/02/HTML5%EF%BC%884%EF%BC%89%E2%80%94%E2%80%94%E5%85%83%E7%B4%A0/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -419,6 +472,48 @@
       <tags>
         <tag>HTML5</tag>
         <tag>元素</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>HTML5（5）——属性</title>
+    <url>//2018/10/06/HTML5%EF%BC%885%EF%BC%89%E2%80%94%E2%80%94%E5%B1%9E%E6%80%A7/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![咖啡豆](https://upload-images.jianshu.io/upload_images/3478485-9d881188bebeb5b7.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+> 其实，我一直有个愿望，我想每天早晨起来，喝着咖啡，写点东西。不过，到现在都还没有实现，我想我得先做到早起吧。上次，我们讲了是HTML5的元素，今天就讲元素属性。
+
+
+
+<span id="more"></span>
+
+<h2 id="HTML属性"><a href="#HTML属性" class="headerlink" title="HTML属性"></a><font color="green">HTML属性</font></h2><ul>
+<li>所有的HTML元素都是有属性的</li>
+<li>属性是添加元素的额外信息</li>
+<li>属性通常在起始标签添加</li>
+<li>属性的形式通常是键值配对：name=”value”</li>
+</ul>
+<h2 id="href属性"><a href="#href属性" class="headerlink" title="href属性"></a><font color="green">href属性</font></h2><p>在HTML中，用来指定链接的标签是<code>&lt;a&gt;</code>，链接地址通常用href属性来指定。例如<code>&lt;a href=&quot;https://www.w3schools.com&quot;&gt;This is a link&lt;/a&gt;</code></p>
+<h2 id="src属性"><a href="#src属性" class="headerlink" title="src属性"></a><font color="green">src属性</font></h2><p>在HTML中，网页中图片是用<code>&lt;img&gt;</code>标签使用图片，而图像源的文件名是用<code>src</code>属性来指定。例如<code>&lt;img src=&quot;img_girl.jpg&quot;&gt;</code></p>
+<h2 id="width和height属性"><a href="#width和height属性" class="headerlink" title="width和height属性"></a><font color="green">width和height属性</font></h2><p>图片的属性包括很多，其中大小属性就是用<code>width</code>和<code>height</code>属性来指定。如<code>&lt;img src=&quot;img_girl.jpg&quot; width=&quot;500&quot; height=&quot;600&quot;&gt;</code></p>
+<h2 id="alt属性"><a href="#alt属性" class="headerlink" title="alt属性"></a><font color="green">alt属性</font></h2><p><code>alt</code>属性在网页中的作用是给图片添加文本信息，当有些特殊情况下，我没有办法显示图片，那么只能一文字信息来替代，而<code>alt</code>就是起到这个作用。尤其是对于一些盲人，当在听网页内容的时候，就可以了解到图片的内容。当然，如果图片不存在，那么它也可以显示信息。如<code>&lt;img src=&quot;img_girl.jpg&quot; alt=&quot;Girl with a jacket&quot;&gt;</code></p>
+<h2 id="style属性"><a href="#style属性" class="headerlink" title="style属性"></a><font color="green">style属性</font></h2><p>在HTML中，<code>style</code>属性是用来修饰元素显示的风格，包括颜色，字体及大小。如<code>&lt;p style=&quot;color:red&quot;&gt;I am a paragraph&lt;/p&gt;</code>，就是将这个段落的字体设计成红色。</p>
+<h2 id="lang属性"><a href="#lang属性" class="headerlink" title="lang属性"></a><font color="green">lang属性</font></h2><p>在<code>&lt;html&gt;</code>标签中，可以使用<code>lang</code>属性来进行文档语言声明。<code>en</code>表示英语，<code>US</code>表示美式英语</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">&quot;en-US&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line">...</span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="title属性"><a href="#title属性" class="headerlink" title="title属性"></a><font color="green">title属性</font></h2><p>title一般就是用在段落标签中，这个属性会像提示一样，当你将鼠标放在段落上，就会显示title属性内容。</p>
+<figure class="highlight applescript"><table><tr><td class="code"><pre><span class="line">&lt;p title=<span class="string">&quot;I&#x27;m a tooltip&quot;</span>&gt;</span><br><span class="line">This <span class="keyword">is</span> a <span class="built_in">paragraph</span>.</span><br><span class="line">&lt;/p&gt;</span><br></pre></td></tr></table></figure>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-3e5aaa12e7f0b4cb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="title属性显示"></p>
+<h2 id="建议"><a href="#建议" class="headerlink" title="建议"></a><font color="green">建议</font></h2><ul>
+<li>属性最好使用小写字母</li>
+<li>属性的值用<code>&quot;&quot;</code>括起来</li>
+<li>如果需要多个双引号，那么就需要单引号的使用，两种情况：<figure class="highlight routeros"><table><tr><td class="code"><pre><span class="line">&lt;p <span class="attribute">title</span>=<span class="string">&#x27;John &quot;ShotGun&quot; Nelson&#x27;</span>&gt;</span><br><span class="line"></span><br><span class="line">&lt;p <span class="attribute">title</span>=<span class="string">&quot;John &#x27;ShotGun&#x27; Nelson&quot;</span>&gt;</span><br></pre></td></tr></table></figure></li>
+</ul>
+]]></content>
+      <categories>
+        <category>HTML5入门</category>
+      </categories>
+      <tags>
+        <tag>HTML5</tag>
+        <tag>属性</tag>
       </tags>
   </entry>
   <entry>
@@ -487,45 +582,6 @@
       </tags>
   </entry>
   <entry>
-    <title>HTML5（8）——样式</title>
-    <url>//2018/10/07/HTML5%EF%BC%888%EF%BC%89%E2%80%94%E2%80%94%E6%A0%B7%E5%BC%8F/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![](https://upload-images.jianshu.io/upload_images/3478485-00b11fdad0f37597.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-> 假期最后一天，我继续学习我的HTML5内容。上次我们提到了段落，今天要学习样式（styles）。
-
-
-
-<span id="more"></span>
-
-<h2 id="HTML样式"><a href="#HTML样式" class="headerlink" title="HTML样式"></a><font color="green">HTML样式</font></h2><p>像图中的红色字体，蓝色字体和字体大小变化，这些都是可以通过样式属性来控制的。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-98b1c83a61eee9b0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="样式调整字体"></p>
-<h2 id="样式属性"><a href="#样式属性" class="headerlink" title="样式属性"></a><font color="green">样式属性</font></h2><p>HTML元素的样式设置，可以通过<code>style</code>属性来控制。<code>style</code>属性语法如下：</p>
-<figure class="highlight routeros"><table><tr><td class="code"><pre><span class="line">&lt;tagname <span class="attribute">style</span>=<span class="string">&quot;property:value;&quot;</span>&gt;</span><br></pre></td></tr></table></figure>
-<p>其中，property 和value都是属于CSS范畴，这个我们在以后的章节中会学习，这里先不做解释。</p>
-<h2 id="HTML背景颜色"><a href="#HTML背景颜色" class="headerlink" title="HTML背景颜色"></a><font color="green">HTML背景颜色</font></h2><p><code>background-color</code>属性（property）定义了网页元素的背景颜色。</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span> <span class="attr">style</span>=<span class="string">&quot;background-color:powderblue;&quot;</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>This is a heading<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>This is a paragraph.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-dc290afb99dbd433.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="定义整个页面的背景颜色"></p>
-<h2 id="HTML字体颜色"><a href="#HTML字体颜色" class="headerlink" title="HTML字体颜色"></a><font color="green">HTML字体颜色</font></h2><p>需要使用<code>color</code>property来定义文本的颜色。下面是将标题设置为蓝色，段落字体为红色。</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">style</span>=<span class="string">&quot;color:blue;&quot;</span>&gt;</span>This is a heading<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">style</span>=<span class="string">&quot;color:red;&quot;</span>&gt;</span>This is a paragraph.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-adb41aa7310916f1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="文本颜色改变"></p>
-<h2 id="字体选择"><a href="#字体选择" class="headerlink" title="字体选择"></a><font color="green">字体选择</font></h2><p>HTML通过<code>font-family</code>属性来选择字体种类。</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">style</span>=<span class="string">&quot;font-family:verdana;&quot;</span>&gt;</span>This is a heading<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">style</span>=<span class="string">&quot;font-family:courier;&quot;</span>&gt;</span>This is a paragraph.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>改变了字体类型。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-111733be61886475.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="不同的字体"></p>
-<h2 id="HTML文本大小"><a href="#HTML文本大小" class="headerlink" title="HTML文本大小"></a><font color="green">HTML文本大小</font></h2><p><code>font-size</code>属性是用来定义网页元素文本的大小。语法如下：</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">style</span>=<span class="string">&quot;font-size:300%;&quot;</span>&gt;</span>This is a heading<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">style</span>=<span class="string">&quot;font-size:160%;&quot;</span>&gt;</span>This is a paragraph.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>是用百分数来表示，就是原来大小的几倍。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-957ebcbe484e4557.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="不同大小文本"></p>
-<h2 id="HTML文本的对齐方式"><a href="#HTML文本的对齐方式" class="headerlink" title="HTML文本的对齐方式"></a><font color="green">HTML文本的对齐方式</font></h2><p>在HTML中，我们需要属性<code>font-align</code>来定义水平文本的对齐方式。下面是全部居中的代码：</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">style</span>=<span class="string">&quot;text-align:center;&quot;</span>&gt;</span>Centered Heading<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">style</span>=<span class="string">&quot;text-align:center;&quot;</span>&gt;</span>Centered paragraph.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>标题和段落都居中显示。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-06df6e05d44066bd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="居中显示"></p>
-]]></content>
-      <categories>
-        <category>HTML5入门</category>
-      </categories>
-      <tags>
-        <tag>HTML5</tag>
-        <tag>样式</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>HTML5（9）——文本格式</title>
     <url>//2018/10/08/HTML5%EF%BC%889%EF%BC%89%E2%80%94%E2%80%94%E6%96%87%E6%9C%AC%E6%A0%BC%E5%BC%8F/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -566,47 +622,42 @@
       </tags>
   </entry>
   <entry>
-    <title>LaTeX中文章节定义</title>
-    <url>//2020/03/10/LaTeX%E4%B8%AD%E6%96%87%E7%AB%A0%E8%8A%82%E5%AE%9A%E4%B9%89/</url>
-    <content><![CDATA[<h3 id="1-需要使用的宏包——ctex"><a href="#1-需要使用的宏包——ctex" class="headerlink" title="1. 需要使用的宏包——ctex"></a>1. 需要使用的宏包——ctex</h3><p>官方网址：<a href="http://www.ctex.org/PackageCTeX">CTEX:PackageCTEX</a>，目前这个宏包已经转移到<a href="https://github.com/CTeX-org/ctex-kit">GitHub</a>，仍旧在继续开发增加新功能。具体详细的可以下载pdf文档。</p>
-<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/Image/20200310163651.png"></p>
-<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/Image/20200310163739.png"></p>
-<h3 id="2-自定义设置中文文档的章节"><a href="#2-自定义设置中文文档的章节" class="headerlink" title="2. 自定义设置中文文档的章节"></a>2. 自定义设置中文文档的章节</h3><h4 id="2-1-代码如下："><a href="#2-1-代码如下：" class="headerlink" title="2.1 代码如下："></a>2.1 代码如下：</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">%格式设置</span><br><span class="line">\documentclass[a4paper, 12pt]&#123;book&#125; %文档类型，我们选择book</span><br><span class="line">\usepackage[heading=true]&#123;ctex&#125; %载入ctex宏包</span><br><span class="line">%具体章节格式定义，这是关键的设置</span><br><span class="line">\ctexset&#123;chapter=&#123;name=&#123;第,章&#125;&#125;,section=&#123;name=&#123;第,节&#125;,format=&#123;\raggedright\Large&#125;&#125;&#125;</span><br><span class="line">%正文中格式</span><br><span class="line">\begin&#123;document&#125;</span><br><span class="line">\chapter&#123;菌株系统&#125;</span><br><span class="line">\input&#123;chapter_1/mircobes&#125;	</span><br><span class="line">	\section&#123;大肠杆菌&#125;</span><br><span class="line">\end&#123;document&#125;</span><br></pre></td></tr></table></figure>
-
-<h4 id="2-2-内容说明"><a href="#2-2-内容说明" class="headerlink" title="2.2 内容说明"></a>2.2 内容说明</h4><p>我们在载入<code>ctex</code>包，里面有一个<code>heading=true</code>参数，这个是必须要有的，否则格式依旧是不对，是默认的样式。</p>
-<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/Image/20200310173247.png" alt="这是缺少heading的呈现结果"></p>
-<p>此外，最关键的章节定义就是通过<code>\ctexset</code>来进行设置，我这里是最简单的设置，具体更细节的设置我没有进一步去尝试。下面是根据我的代码呈现的结果：</p>
-<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/Image/20200310174223.png"></p>
-<p>这样的结果，就比较符合我的期望需求，基本设置成功。</p>]]></content>
-      <categories>
-        <category>LaTeX入门</category>
-      </categories>
-      <tags>
-        <tag>LaTeX</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>2018年8月-小结</title>
-    <url>//2018/09/02/2018%E5%B9%B48%E6%9C%88-%E5%B0%8F%E7%BB%93/</url>
+    <title>HTML5（8）——样式</title>
+    <url>//2018/10/07/HTML5%EF%BC%888%EF%BC%89%E2%80%94%E2%80%94%E6%A0%B7%E5%BC%8F/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![无尽之路](https://upload-images.jianshu.io/upload_images/3478485-6dc9021e15783f70.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-9月2日，星期日，公元2018年。
+![](https://upload-images.jianshu.io/upload_images/3478485-00b11fdad0f37597.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+> 假期最后一天，我继续学习我的HTML5内容。上次我们提到了段落，今天要学习样式（styles）。
 
 
 
 <span id="more"></span>
 
-<p>9月开始崭露头角，8月已然逝去。秋天，似乎已经离我们越来越近，春困秋乏的状态又要来临。总结8月，展望9月，似乎迫不及待。</p>
-<p>8月，似乎是一个没有任何进展的月份。采葡萄，回家休息，然后就是游泳和看书。没有再多的事情，帮师姐搬了一下行李，仅此而已的8月。始终无法凝聚自己的精神专注力，聚焦在实验这一点上，整个8月确实是变得非常的散。</p>
-<p>我是否是太过于放松了，还是太过于自信，亦或是恐惧，更或是太多理想。很多很多事情似乎要做，不希望生活只有实验，希望有自己支配的时间，似乎实验只是占据了我一半左右的时间，我想对于真正地科研人员来说，这是少之又少的吧。我想游泳健身，我想博览群书（我感兴趣的），我想学习编程，我想看电影，我想去旅行，我还想学习摄影……想做的太多，精力太过分散，始终做不好任何一件事儿。</p>
-<p>我也清楚，问题关键抓不住重点，没有计划，亦或是没有目标。可是，我就认为生活也该有生活的样子，被一件事占据所有时间，也是一种悲哀。我的矛盾始终存在，那么解决矛盾的关键在于什么？我想，可能是提高时间利用率。你说不想花过多时间在实验上，那么你必须提高实验效率，要保证极高的实验成功率，在做一件事的时候，必须要专注于此，且不可散。</p>
-<p>整个大时间轴，你可以细分成你想要的份数，但是有一点你必须铭记，每一份都要讲所有的精神力注入其中，那是不可以分散的。9月，希望能够尝试这种方式，能够仅仅活在此时此刻，也是一种幸福。过多的展望，恰恰会迷失人的心智，摧毁人的意志力，因此，对于9月，我不想太多，做该做的事。</p>
+<h2 id="HTML样式"><a href="#HTML样式" class="headerlink" title="HTML样式"></a><font color="green">HTML样式</font></h2><p>像图中的红色字体，蓝色字体和字体大小变化，这些都是可以通过样式属性来控制的。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-98b1c83a61eee9b0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="样式调整字体"></p>
+<h2 id="样式属性"><a href="#样式属性" class="headerlink" title="样式属性"></a><font color="green">样式属性</font></h2><p>HTML元素的样式设置，可以通过<code>style</code>属性来控制。<code>style</code>属性语法如下：</p>
+<figure class="highlight routeros"><table><tr><td class="code"><pre><span class="line">&lt;tagname <span class="attribute">style</span>=<span class="string">&quot;property:value;&quot;</span>&gt;</span><br></pre></td></tr></table></figure>
+<p>其中，property 和value都是属于CSS范畴，这个我们在以后的章节中会学习，这里先不做解释。</p>
+<h2 id="HTML背景颜色"><a href="#HTML背景颜色" class="headerlink" title="HTML背景颜色"></a><font color="green">HTML背景颜色</font></h2><p><code>background-color</code>属性（property）定义了网页元素的背景颜色。</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span> <span class="attr">style</span>=<span class="string">&quot;background-color:powderblue;&quot;</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>This is a heading<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>This is a paragraph.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-dc290afb99dbd433.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="定义整个页面的背景颜色"></p>
+<h2 id="HTML字体颜色"><a href="#HTML字体颜色" class="headerlink" title="HTML字体颜色"></a><font color="green">HTML字体颜色</font></h2><p>需要使用<code>color</code>property来定义文本的颜色。下面是将标题设置为蓝色，段落字体为红色。</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">style</span>=<span class="string">&quot;color:blue;&quot;</span>&gt;</span>This is a heading<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">style</span>=<span class="string">&quot;color:red;&quot;</span>&gt;</span>This is a paragraph.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-adb41aa7310916f1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="文本颜色改变"></p>
+<h2 id="字体选择"><a href="#字体选择" class="headerlink" title="字体选择"></a><font color="green">字体选择</font></h2><p>HTML通过<code>font-family</code>属性来选择字体种类。</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">style</span>=<span class="string">&quot;font-family:verdana;&quot;</span>&gt;</span>This is a heading<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">style</span>=<span class="string">&quot;font-family:courier;&quot;</span>&gt;</span>This is a paragraph.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>改变了字体类型。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-111733be61886475.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="不同的字体"></p>
+<h2 id="HTML文本大小"><a href="#HTML文本大小" class="headerlink" title="HTML文本大小"></a><font color="green">HTML文本大小</font></h2><p><code>font-size</code>属性是用来定义网页元素文本的大小。语法如下：</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">style</span>=<span class="string">&quot;font-size:300%;&quot;</span>&gt;</span>This is a heading<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">style</span>=<span class="string">&quot;font-size:160%;&quot;</span>&gt;</span>This is a paragraph.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>是用百分数来表示，就是原来大小的几倍。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-957ebcbe484e4557.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="不同大小文本"></p>
+<h2 id="HTML文本的对齐方式"><a href="#HTML文本的对齐方式" class="headerlink" title="HTML文本的对齐方式"></a><font color="green">HTML文本的对齐方式</font></h2><p>在HTML中，我们需要属性<code>font-align</code>来定义水平文本的对齐方式。下面是全部居中的代码：</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">style</span>=<span class="string">&quot;text-align:center;&quot;</span>&gt;</span>Centered Heading<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">style</span>=<span class="string">&quot;text-align:center;&quot;</span>&gt;</span>Centered paragraph.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>标题和段落都居中显示。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-06df6e05d44066bd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="居中显示"></p>
 ]]></content>
       <categories>
-        <category>人生小结</category>
+        <category>HTML5入门</category>
       </categories>
       <tags>
-        <tag>小结</tag>
+        <tag>HTML5</tag>
+        <tag>样式</tag>
       </tags>
   </entry>
   <entry>
@@ -650,6 +701,26 @@
       <tags>
         <tag>LaTeX</tag>
         <tag>参考文献</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>LaTeX中文章节定义</title>
+    <url>//2020/03/10/LaTeX%E4%B8%AD%E6%96%87%E7%AB%A0%E8%8A%82%E5%AE%9A%E4%B9%89/</url>
+    <content><![CDATA[<h3 id="1-需要使用的宏包——ctex"><a href="#1-需要使用的宏包——ctex" class="headerlink" title="1. 需要使用的宏包——ctex"></a>1. 需要使用的宏包——ctex</h3><p>官方网址：<a href="http://www.ctex.org/PackageCTeX">CTEX:PackageCTEX</a>，目前这个宏包已经转移到<a href="https://github.com/CTeX-org/ctex-kit">GitHub</a>，仍旧在继续开发增加新功能。具体详细的可以下载pdf文档。</p>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/Image/20200310163651.png"></p>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/Image/20200310163739.png"></p>
+<h3 id="2-自定义设置中文文档的章节"><a href="#2-自定义设置中文文档的章节" class="headerlink" title="2. 自定义设置中文文档的章节"></a>2. 自定义设置中文文档的章节</h3><h4 id="2-1-代码如下："><a href="#2-1-代码如下：" class="headerlink" title="2.1 代码如下："></a>2.1 代码如下：</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">%格式设置</span><br><span class="line">\documentclass[a4paper, 12pt]&#123;book&#125; %文档类型，我们选择book</span><br><span class="line">\usepackage[heading=true]&#123;ctex&#125; %载入ctex宏包</span><br><span class="line">%具体章节格式定义，这是关键的设置</span><br><span class="line">\ctexset&#123;chapter=&#123;name=&#123;第,章&#125;&#125;,section=&#123;name=&#123;第,节&#125;,format=&#123;\raggedright\Large&#125;&#125;&#125;</span><br><span class="line">%正文中格式</span><br><span class="line">\begin&#123;document&#125;</span><br><span class="line">\chapter&#123;菌株系统&#125;</span><br><span class="line">\input&#123;chapter_1/mircobes&#125;	</span><br><span class="line">	\section&#123;大肠杆菌&#125;</span><br><span class="line">\end&#123;document&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="2-2-内容说明"><a href="#2-2-内容说明" class="headerlink" title="2.2 内容说明"></a>2.2 内容说明</h4><p>我们在载入<code>ctex</code>包，里面有一个<code>heading=true</code>参数，这个是必须要有的，否则格式依旧是不对，是默认的样式。</p>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/Image/20200310173247.png" alt="这是缺少heading的呈现结果"></p>
+<p>此外，最关键的章节定义就是通过<code>\ctexset</code>来进行设置，我这里是最简单的设置，具体更细节的设置我没有进一步去尝试。下面是根据我的代码呈现的结果：</p>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/Image/20200310174223.png"></p>
+<p>这样的结果，就比较符合我的期望需求，基本设置成功。</p>]]></content>
+      <categories>
+        <category>LaTeX入门</category>
+      </categories>
+      <tags>
+        <tag>LaTeX</tag>
       </tags>
   </entry>
   <entry>
@@ -701,6 +772,32 @@
       </tags>
   </entry>
   <entry>
+    <title>LaTeX表格溢出问题</title>
+    <url>//2018/09/20/LaTeX%E8%A1%A8%E6%A0%BC%E6%BA%A2%E5%87%BA%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-a4ba2098aa1800cb.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="海，使人放下自己的身段"></p>
+<p>前面的<a href="https://www.jianshu.com/writer#/notebooks/23465256/notes/33812322">LaTeX插入表格</a>一文主要是来说明怎么插入表格，如果没有看过可以跳到前面去看。今天我们来说一下关于表格的一些细节处理问题。</p>
+<span id="more"></span>
+
+<h1 id="1-表格过长的问题"><a href="#1-表格过长的问题" class="headerlink" title="1 表格过长的问题"></a>1 表格过长的问题</h1><p>有时候我们的表格往往会超过一页的长度，这个时候依旧使用<code>\begin&#123;tabular&#125;...\end&#123;tabular&#125;</code>环境的话，那么肯定会导致表格的溢出，完全看不到表格超出的部分。这个时候我们就需要选择其他的宏包，来进行表格环境的设置。一般来说，我们有几种选择，但是共同的一点是，<strong>必须处理在第二页及后面几页的表头和表尾。</strong><code>\endfirsthead、\endhead、\endfoot和\endlastfoot</code>，这些参数分别用来设置第一页表头，后面每一页表头，后面每一页表尾和最后一页表尾。</p>
+<h3 id="1-1-longtable宏包"><a href="#1-1-longtable宏包" class="headerlink" title="1.1 longtable宏包"></a>1.1 longtable宏包</h3><p>在导言区你需要加载宏包<code>\usepackage&#123;longtable&#125;</code>，它的环境和tabular类似，这里不细讲。</p>
+<figure class="highlight livescript"><table><tr><td class="code"><pre><span class="line"><span class="string">\usepackage&#123;longtable&#125;</span></span><br><span class="line"><span class="string">\begin&#123;longtable&#125;&#123;表格格式&#125;</span></span><br><span class="line"><span class="string">\endhead</span></span><br><span class="line"><span class="string">\endfirsthead</span></span><br><span class="line"><span class="string">\endfoot</span></span><br><span class="line"><span class="string">\endlastfoot</span></span><br><span class="line"><span class="string">\end&#123;longtable&#125;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="1-2-tabu宏包"><a href="#1-2-tabu宏包" class="headerlink" title="1.2 tabu宏包"></a>1.2 tabu宏包</h3><p>首先也是要在导言区导入tabu和longtable宏包，然后使用的环境是，基本上没有什么区别，只是不同宏包的使用。此外还有一个包也可以使用，就是<code>ltxtable</code>宏包，它的特点是将表格独立为一个tex文件，然后要使用的时候就去引用它。</p>
+<figure class="highlight livescript"><table><tr><td class="code"><pre><span class="line"><span class="string">\usepackage&#123;tabu&#125;</span></span><br><span class="line"><span class="string">\usepackage&#123;longtable&#125;</span></span><br><span class="line"><span class="string">\begin&#123;longtabu&#125;&#123;格式&#125;</span></span><br><span class="line"><span class="string">\endhead</span></span><br><span class="line"><span class="string">\endfirsthead</span></span><br><span class="line"><span class="string">\endfoot</span></span><br><span class="line"><span class="string">\endlastfoot</span></span><br><span class="line"><span class="string">\end&#123;longtabu&#125;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h1 id="2-表格过宽的问题"><a href="#2-表格过宽的问题" class="headerlink" title="2 表格过宽的问题"></a>2 表格过宽的问题</h1><p>这个问题就比表格过长棘手一点，你没有现成的宏包可以使用，只能通过一些间接的方式将表格变窄，包括表格字体缩小，表格横放，表格列间距缩小，表格每一列的宽度减少，修改表头的行数，也可以让表格自动换行，来处理一些溢出的情况。貌似到目前为止还没有很好的宏包来解决。<br>我一般使用的是将每一列的宽度减少，进行适合的调整，到达最好的效果，其中可以使用一个强制换行的宏包来处理表头<code>makecell</code>。没一列宽度的调整就是在上面的环境后面的格式中调整，具体也不做展开，之后再写一篇细节问题来说明。</p>
+]]></content>
+      <categories>
+        <category>LaTeX入门</category>
+      </categories>
+      <tags>
+        <tag>LaTeX</tag>
+        <tag>表格</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>LaTeX插入表格</title>
     <url>//2018/09/15/LaTeX%E6%8F%92%E5%85%A5%E8%A1%A8%E6%A0%BC/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -724,32 +821,6 @@
 <h5 id="2-2-通过makecell宏包来实现换行"><a href="#2-2-通过makecell宏包来实现换行" class="headerlink" title="2.2 通过makecell宏包来实现换行"></a>2.2 通过<code>makecell</code>宏包来实现换行</h5><p><code>makecell</code>中有一个专门的用来处理表头的命令<code>thead[可以选对齐方式]&#123;列名称&#125;</code>。比如文中所示，<code>thead[l]&#123;Gene\\name&#125;</code>就是将gene和name换行显示，l表示左对齐。可以发现，这种方法没有出现字间距变大的情况，比第一种要好。</p>
 <figure class="highlight taggerscript"><table><tr><td class="code"><pre><span class="line"><span class="symbol">\b</span>egin&#123;table&#125;[]</span><br><span class="line">    <span class="symbol">\c</span>aption&#123;basic structure&#125;</span><br><span class="line">    <span class="symbol">\v</span>space&#123;20pt&#125;</span><br><span class="line">	<span class="symbol">\c</span>entering</span><br><span class="line">	<span class="symbol">\b</span>egin&#123;tabular&#125;&#123;lllll&#125;</span><br><span class="line">		<span class="symbol">\h</span>line</span><br><span class="line">		<span class="symbol">\t</span>head[l]&#123;Gene<span class="symbol">\\</span>name&#125; &amp; <span class="symbol">\t</span>head[l]&#123;Gene accession<span class="symbol">\\</span>No. &#125;&amp; <span class="symbol">\t</span>head[l]&#123;CDS length<span class="symbol">\\</span>(bp)&#125; &amp; <span class="symbol">\t</span>head[l]&#123;Protein size<span class="symbol">\\</span>(aa)&#125; &amp; <span class="symbol">\t</span>head[l]&#123;Protein MW<span class="symbol">\\</span>(kDa)&#125; <span class="symbol">\\</span></span><br><span class="line">		<span class="symbol">\h</span>line</span><br><span class="line">		001  &amp; 01g009860.2   &amp; 819             &amp; 272               &amp; 31.34            <span class="symbol">\\</span></span><br><span class="line">		002  &amp; 01g021730.2   &amp; 798             &amp; 265               &amp; 30.37            <span class="symbol">\\</span></span><br><span class="line">		003  &amp; 01g094490.2   &amp; 630             &amp; 209               &amp; 24.58            <span class="symbol">\\</span></span><br><span class="line">		004  &amp; 01g102740.2   &amp; 1242            &amp; 413               &amp; 46.94            <span class="symbol">\\</span></span><br><span class="line">		005  &amp; 01g104900.2   &amp; 597             &amp; 198               &amp; 22.85            <span class="symbol">\\</span></span><br><span class="line">		006  &amp; 02g036430.1   &amp; 1698            &amp; 565               &amp; 64.88            <span class="symbol">\\</span></span><br><span class="line">		007  &amp; 02g061780.2   &amp; 735             &amp; 244               &amp; 28.23            <span class="symbol">\\</span></span><br><span class="line">		008  &amp; 02g061870.1   &amp; 660             &amp; 219               &amp; 25.21            <span class="symbol">\\</span></span><br><span class="line">		009  &amp; 02g061900.1   &amp; 915             &amp; 304               &amp; 34.61            <span class="symbol">\\</span></span><br><span class="line">		010  &amp; 02g061910.1   &amp; 795             &amp; 264               &amp; 29.92 <span class="symbol">\\</span>    </span><br><span class="line">		<span class="symbol">\h</span>line       </span><br><span class="line">	<span class="symbol">\e</span>nd&#123;tabular&#125;</span><br><span class="line">	<span class="symbol">\l</span>abel&#123;bs&#125;</span><br><span class="line"><span class="symbol">\e</span>nd&#123;table&#125;</span><br></pre></td></tr></table></figure>
 <p><img src="https://upload-images.jianshu.io/upload_images/3478485-dd6fe8edb6086b60.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="编译后的效果"></p>
-]]></content>
-      <categories>
-        <category>LaTeX入门</category>
-      </categories>
-      <tags>
-        <tag>LaTeX</tag>
-        <tag>表格</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>LaTeX表格溢出问题</title>
-    <url>//2018/09/20/LaTeX%E8%A1%A8%E6%A0%BC%E6%BA%A2%E5%87%BA%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-a4ba2098aa1800cb.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="海，使人放下自己的身段"></p>
-<p>前面的<a href="https://www.jianshu.com/writer#/notebooks/23465256/notes/33812322">LaTeX插入表格</a>一文主要是来说明怎么插入表格，如果没有看过可以跳到前面去看。今天我们来说一下关于表格的一些细节处理问题。</p>
-<span id="more"></span>
-
-<h1 id="1-表格过长的问题"><a href="#1-表格过长的问题" class="headerlink" title="1 表格过长的问题"></a>1 表格过长的问题</h1><p>有时候我们的表格往往会超过一页的长度，这个时候依旧使用<code>\begin&#123;tabular&#125;...\end&#123;tabular&#125;</code>环境的话，那么肯定会导致表格的溢出，完全看不到表格超出的部分。这个时候我们就需要选择其他的宏包，来进行表格环境的设置。一般来说，我们有几种选择，但是共同的一点是，<strong>必须处理在第二页及后面几页的表头和表尾。</strong><code>\endfirsthead、\endhead、\endfoot和\endlastfoot</code>，这些参数分别用来设置第一页表头，后面每一页表头，后面每一页表尾和最后一页表尾。</p>
-<h3 id="1-1-longtable宏包"><a href="#1-1-longtable宏包" class="headerlink" title="1.1 longtable宏包"></a>1.1 longtable宏包</h3><p>在导言区你需要加载宏包<code>\usepackage&#123;longtable&#125;</code>，它的环境和tabular类似，这里不细讲。</p>
-<figure class="highlight livescript"><table><tr><td class="code"><pre><span class="line"><span class="string">\usepackage&#123;longtable&#125;</span></span><br><span class="line"><span class="string">\begin&#123;longtable&#125;&#123;表格格式&#125;</span></span><br><span class="line"><span class="string">\endhead</span></span><br><span class="line"><span class="string">\endfirsthead</span></span><br><span class="line"><span class="string">\endfoot</span></span><br><span class="line"><span class="string">\endlastfoot</span></span><br><span class="line"><span class="string">\end&#123;longtable&#125;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h3 id="1-2-tabu宏包"><a href="#1-2-tabu宏包" class="headerlink" title="1.2 tabu宏包"></a>1.2 tabu宏包</h3><p>首先也是要在导言区导入tabu和longtable宏包，然后使用的环境是，基本上没有什么区别，只是不同宏包的使用。此外还有一个包也可以使用，就是<code>ltxtable</code>宏包，它的特点是将表格独立为一个tex文件，然后要使用的时候就去引用它。</p>
-<figure class="highlight livescript"><table><tr><td class="code"><pre><span class="line"><span class="string">\usepackage&#123;tabu&#125;</span></span><br><span class="line"><span class="string">\usepackage&#123;longtable&#125;</span></span><br><span class="line"><span class="string">\begin&#123;longtabu&#125;&#123;格式&#125;</span></span><br><span class="line"><span class="string">\endhead</span></span><br><span class="line"><span class="string">\endfirsthead</span></span><br><span class="line"><span class="string">\endfoot</span></span><br><span class="line"><span class="string">\endlastfoot</span></span><br><span class="line"><span class="string">\end&#123;longtabu&#125;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h1 id="2-表格过宽的问题"><a href="#2-表格过宽的问题" class="headerlink" title="2 表格过宽的问题"></a>2 表格过宽的问题</h1><p>这个问题就比表格过长棘手一点，你没有现成的宏包可以使用，只能通过一些间接的方式将表格变窄，包括表格字体缩小，表格横放，表格列间距缩小，表格每一列的宽度减少，修改表头的行数，也可以让表格自动换行，来处理一些溢出的情况。貌似到目前为止还没有很好的宏包来解决。<br>我一般使用的是将每一列的宽度减少，进行适合的调整，到达最好的效果，其中可以使用一个强制换行的宏包来处理表头<code>makecell</code>。没一列宽度的调整就是在上面的环境后面的格式中调整，具体也不做展开，之后再写一篇细节问题来说明。</p>
 ]]></content>
       <categories>
         <category>LaTeX入门</category>
@@ -891,83 +962,6 @@
       </tags>
   </entry>
   <entry>
-    <title>CRISPR-Cas9系统简介</title>
-    <url>//2018/12/30/CRISPR-Cas9%E7%B3%BB%E7%BB%9F%E7%AE%80%E4%BB%8B/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-
-
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-0bf1101b1c467285.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="图片来源：https://www.mygenefood.com/crispr-cas9-introduction-genome-editing/"></p>
-<p>Clustered regularly interspaced short palindromic repeats（CRISPR）——规律成簇的间隔短回文重复和CRISPR-associated protein 9（Cas9），共同组成了一套系统，是细菌用来防御噬菌体DNA注入和质粒转移的天然防御系统。但现在被人类所重新利用，构建了很强的RNA引导的DNA靶向平台——主要用来基因组编辑、转录扰乱、表观遗传调控等。</p>
-<span id="more"></span>
-
-
-
-<h3 id="细菌抵抗噬菌体入侵"><a href="#细菌抵抗噬菌体入侵" class="headerlink" title="细菌抵抗噬菌体入侵"></a><font color="green">细菌抵抗噬菌体入侵</font></h3><p>图中是细菌天然免疫系统。我们可以看到，CRISPR locus是由几个原件构成。一开始是个反向转录的RNA，是特异的非编码RNA，可以和重复序列部分互补（trancrRNA，橙色矩形），后面是各种cas基因（箭头表示），接着是CRISPR排列（棕色的菱形是重复序列，彩色的是间隔）。而这些间隔序列是细菌从噬菌体DNA中获得的遗传原件：当噬菌体感染细菌，细菌激活相关的cas基因——Cas1，Cas2,和Csn2，将其中新的间隔序列整合到自身的CRISPR arry中。一旦获得以后，新的spacer就会出现在pre-crRNA中，此时tracrRNA与不同的SPACER互补，在RNaseIII的作用下，产生crRNA，进一步在其他未知的核酸酶的作用，剪切crRNA的5’端，使得引导序列长为20nt。如果噬菌体注入DNA，那么这个免疫系统将被激活，来干扰噬菌体DNA。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-4c5c2be28472800d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="防御过程"></p>
-<h3 id="剪切与修复"><a href="#剪切与修复" class="headerlink" title="剪切与修复"></a><font color="green">剪切与修复</font></h3><p>我们目前主要使用II型CRISPR系统，它和他的区别在于，只是需要一个DNA内切酶Cas9来对与sgRNA20个互补碱基的带有PAM结构的DNA进行剪切。剪切后是DNA产生平末端的DSB（双链断裂），然后在进行非同源的末端连接过程中，容易随机插入或者删除或者替换。或者进行高保真的同源定向修复，修复DNA。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-be11ad0e6a3c0c5e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Type II Cas9"><br><img src="https://upload-images.jianshu.io/upload_images/3478485-827d8dc582062b62.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Cas9剪切及突变产生"></p>
-<h3 id="Cas9蛋白构象重组"><a href="#Cas9蛋白构象重组" class="headerlink" title="Cas9蛋白构象重组"></a><font color="green">Cas9蛋白构象重组</font></h3><p>这里的例子是化脓链球菌的SpyCas9，是一个含有1368个氨基酸的多结构和多功能的DNA核酸内切酶。它的切割位点在PAM上游的第三个碱基，通过HNH（sgRAN互补的目标序列）和RuvC核酸酶结构域（非目标序列）。要识别特定序列并进行剪切，sgRNA与Cas9组合成一个复合体，其中sgRNAy与Cas9结合起着关键的作用，能够使得Cas9构象重构，变得具有活性。crRNA前20碱基使得Cas9具有靶序列特异性，tracrRNA来招募Cas9蛋白。在这个系统中，有一个所谓的种子序列，20碱基spacer的3’端10-12个核苷酸。<strong>在种子序列的错配以及本身同源性都会严重影响系统特异性和脱靶效率。</strong>*<br><img src="https://upload-images.jianshu.io/upload_images/3478485-082186ee503a2b4a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="sgNRA"></p>
-<h3 id="目标DNA搜索与识别"><a href="#目标DNA搜索与识别" class="headerlink" title="目标DNA搜索与识别"></a><font color="green">目标DNA搜索与识别</font></h3><p><strong>PAM序列非常的关键</strong>，能够起到识别自身和外来的序列。有实验表明，如果PAM进行但突变，那么就能够让噬菌体入侵宿主。在sgRNA互补之前，首先是寻找PAM序列，如果没有合适的PAM，那么通过蛋白三维结构的坍塌，会离开DNA，直到找到合适的PAM。一旦找到PAM，Cas9就使DNA局部解链，RNA进入，与DNA互补，形成RNA-DNA结构。<strong>sg种子区域序列与靶DNA的完美互补是很重要的。</strong></p>
-<h3 id="CRISPR–Cas9介导的DNA靶定于剪切模型"><a href="#CRISPR–Cas9介导的DNA靶定于剪切模型" class="headerlink" title="CRISPR–Cas9介导的DNA靶定于剪切模型"></a><font color="green">CRISPR–Cas9介导的DNA靶定于剪切模型</font></h3><p>首先，guide RNA的结合，使得Cas9从一个未激活的构象变成具有DNA识别能力的构象。RNA种子序列先形成A型构象，为了目标结合和链入侵，PAM识别位点预先形成用来PAM识别。然后，Cas9结合到PAM序列，使得酶能够去识别附近的潜在的DNA靶序列。一旦Cas9在PAM附近找到了潜在的靶序列，会开始解双螺旋并继续检查剩余的靶序列。磷酸锁环稳定解旋的目标DNA，且第一个碱基开始翻转向上，与guide RNA碱基配对。而Cas9继续与非靶链上的翻转碱基作用，促进双螺旋解开。接着，碱基配对伴随着Cas9构象改变，促进种子序列前面的guide RNA从限制中释放出来，也形成配对，这个过程促使Cas9构象持续变化，直到到达有活性的状态。最终，guide RNA与目标DNA完全互补使得HNH具有稳定的，具有活性的构象，来剪切目标链DNA。与此同时，引起更大的构象变化，使得非目标链DNA进入RuvC催化中心被剪切，这种转态下，Cas9中牢牢结合在靶点序列上，直到其他的细胞因子过来替代它。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-4db71b549d557ab4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="剪切示意图"></p>
-<p>读了这篇review，进行一定程度的总结，有些地方还是有些不太清楚。</p>
-<blockquote>
-<p>Fuguo Jiang and Jennifer A. Doudna, CRISPR–Cas9 Structures and Mechanisms, Annual Review of Biophysics 2017 46:1, 505-529 </p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>学习记录</category>
-      </categories>
-      <tags>
-        <tag>Cas9</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>印度，漂浮的次大陆</title>
-    <url>//2018/09/06/%E5%8D%B0%E5%BA%A6%EF%BC%8C%E6%BC%82%E6%B5%AE%E7%9A%84%E6%AC%A1%E5%A4%A7%E9%99%86/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![印度，漂浮的次大陆](http://upload-images.jianshu.io/upload_images/3478485-b11c23f0c98ac99f.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-> 俞敏洪老师的推荐，于是就去读了郭建龙一个系列的游记。《穿越百年中东》、《骑车去元朝》、《印度，漂浮的次大陆》和《三千佛塔烟云下》都读了一遍，信息量超级大，不过读起来特别的畅快，特别的流畅。
-> 郭建龙是个文化旅者，总是亲身去体验某个地方的文化，历史，地理，政治，经济和宗教，最后凭借自己的文笔，写出独具特色的游记，我个人非常喜欢，推荐阅读。
-> 内容摘录自郭建龙的《印度，漂浮的次大陆》这本书。
-
-
-
-<span id="more"></span>
-
-<p>哈拉帕（巴基斯坦），洛塔尔（印度）。<br>洛塔尔遗址，手工业和贸易促使其如此的发达。然而，公元前2000年左右，整个印度河文明都衰落了。<br>在欧洲，存在着非洲两次走出的古人类相遇证据。那就是第二次的克罗马农人取代了第一次的尼安德特人，成为现代欧洲人的祖先。那么古印度人的祖先从哪里过来？在比莫贝特卡，发现了穴居文化。</p>
-<p>印度人之前一直以雅利安人的血统引以为豪，认为自己是雅利安人的后裔。但是当考古发现，公元前5000，已经在印度河流域出现了本土的古印度文明，比雅利安人入侵印度次大陆早千年，不得不承认存在高度发达的古印度文明。但印度人和雅利安人有着紧密的联系，<strong>英国人威廉琼斯公爵从语言学上发现，印度的梵语，拉丁语和欧洲的语言有着同一起源，从而也证明了确实雅利安人和印度人有着紧密的联系。</strong>而后来的考古发现也证明，大约在公元前3000年，在中亚大草原、里海附近的雅利安人，分为两支：一支进入欧洲，成为现代欧洲人的祖先；而另一支，经伊朗阿富汗，翻过兴都库什山脉，顺着开伯尔山口进入印度河谷地，最终扩散到整个印度。为什么古老发达的文明无法抵抗雅利安人？因为，在公元前2000左右，古印度文明开始衰落，而此时雅利安人正好在恰当的时机到来，从而入侵整个印度。</p>
-<p><strong>虽然古印度文明消亡了，但是人种并不会就此消失。</strong>在现代的南印度，存在达罗毗荼人，可能与印度河文明的人种一致，且他们拥有自己的语言系统。<strong>现在的印度，分为两种语系，在南方属于达罗毗荼语系，而在北方则是属于梵语。</strong>在印度神奇的是，雅利安人已经入侵印度几千年了，到现在为止，雅利安人和达罗毗荼人还没有完成融合，跟中国社会的情况完全不同。原因：<strong>强大的种姓制度。</strong></p>
-<h2 id="印度教"><a href="#印度教" class="headerlink" title="印度教"></a>印度教</h2><p>雅利安人为了防止自己被当地原始居民同化，从而建立了严格的种姓制度，出现了<strong>四种种姓：婆罗门，刹帝什，吠舍和首陀罗</strong>。分别担任宗教和精神领袖，国王和武士，从事商业，最底层。还有没有种姓的贱民。规定人一出生就确定了种姓，永远也不可能改变，无法进阶到更高的种姓。但是，如果长期下去，最底层的人会越来越多，最终会通过暴力手段推翻这种限制，然而<strong>为什么这种制度能够如此长久的维持？</strong>只能通过宗教信仰手段，将<strong>种姓制度融入到宗教</strong>之中，使其能够自动的被大众接受，这个宗教就是<strong>印度教</strong>。教义强调：人的灵魂是可以轮回的，这一世为人，下一世可能为动物，也可能身为更高种姓的人类，所以给了人们虚假的承诺，使得人们遵从现有的制度而不加以反抗，与中国的儒教相似。</p>
-<p><strong>世界上所有的宗教一般都包括了信仰和伦理两方面，其中信仰是个人化的体验，关系到个人与神之间的沟通，而伦理是一种社会化的体验，主要强调人与人之间的交流。侧重点的不同，宗教分为两大类：基督教和佛教侧重信仰，而印度教和儒教侧重伦理。伊斯兰教处在两者中间。</strong></p>
-<p>在这一时期，印度的神祇也得到了确立，形成了<strong>三大主神：梵天，毗湿奴和湿婆以及无所不包的各路神仙</strong>。其中湿婆是受到最广泛崇拜的主神，同时也是生殖力的代表，于是有了崇拜生殖和崇拜阴茎的传统。湿婆的化身往往是一根石柱，象征着阴茎和生殖力，叫做林伽。在西藏的外喜马拉雅山脉中，有一座形同阴茎的山峰，叫做冈仁波齐，在印度称为凯拉什山，是藏传佛教，苯教和印度教的神山。印度人将前往冈仁波齐看成朝圣的极致。</p>
-<p>同时这一时期，印度史诗也形成。最早的梵语经典<strong>《吠陀经》</strong>成型，<strong>印度的传奇史诗《罗摩衍那》和《摩诃婆罗多》逐渐流传开来。</strong>《罗摩衍那》家喻户晓。</p>
-<h2 id="佛教"><a href="#佛教" class="headerlink" title="佛教"></a>佛教</h2><p><strong>佛陀，或称释迦摩尼，名字叫悉达多乔达摩</strong>。出身在印度十六国时期的迦毗罗卫国的<strong>蓝毗尼</strong>的一棵树下，现在的尼泊尔境内。父亲是迦毗罗卫国的国王净饭王，这个小国依附于大国拘萨罗，是由雅利安人种释迦族建立的，属于刹帝什种姓。母亲摩耶夫人。年轻的悉达多，在王宫中长大，不问世事，整天沉迷爱情俗世，有三位妻子和自己的孩子，在孩子出身的那一年，当悉达多看到世外的人所受的苦难，于是开始思考人生的意义，离开皇宫开始寻找答案。在菩提迦耶的菩提树下，悉达多决定放弃苦修，开始打坐静修。本来他的五位随从认为他已经放弃寻找真理了，于是离开了他。不久，他就彻底领悟，找到了属于自己的<strong>一套理论体系</strong>，<strong>人生的意义是使得自己死后的灵魂得到永恒，也是与印度教类似的轮回机制，但是佛教的是认为轮回本身是一种痛苦，需要跳出轮回，灵魂才能得到永恒。那么如何跳出这个永无止境的轮回呢？</strong>悉达多构想出了<strong>“四谛”</strong>理论体系：<strong>苦谛</strong>，指的人生的一切苦难。<strong>集谛</strong>，贪嗔痴三毒是苦难产生的原因。<strong>灭谛</strong>，消灭苦难就要消灭三毒。<strong>道谛</strong>，修行的行为规范，指八正道，帮助人们消灭三毒的方法，修行得当的人都可以跳出轮回之苦，从而达到活着的意义和死后的永恒。</p>
-<p><strong>四谛</strong>是悉达多理论的核心，因为这个体系<strong>打破了种姓的界限，强调了人生的平等</strong>。任何人要是想跳出轮回，必须要按这种修行方式进行。</p>
-<p>获得顿悟的悉达多没有立即离开，继续思考完善体系，后来来到了一个叫做鹿野苑的地方，收了第一批信徒。这就是之前离开他的五个人，是其父亲在其离开时选派的五位宗室子弟。也就是佛教史上有名的五比丘。也就在此刻开始，佛教的佛、法、僧已经圆满集结，悉达多乔达摩也正式成为佛陀。之后继续传教，走向全国。最后，在晚年，佛陀带了少量弟子来到名叫拘尸那罗的地方，一病不起，不久圆寂与此。而此时的迦毗罗卫国也被拘萨罗消灭，而最后拘萨罗也被摩揭陀国所灭，为印度的统一打下了基础。</p>
-<h2 id="耆那教"><a href="#耆那教" class="headerlink" title="耆那教"></a>耆那教</h2><p>耆那教<strong>人口很少</strong>的宗教，但是在印度却有着及其重大的影响，甚至在<strong>影响力上超过了佛教</strong>。主要有两方面，第一，<strong>更强调苦行</strong>，对于人的要求高，更小众，使得能够接受的它的人很少，但是却是非常的坚定；第二，<strong>没有国际化</strong>。耆那教的创始人，<strong>筏陀摩耶被称为大雄</strong>，他的活动范围与佛陀重叠，也是在摩揭陀国的影响范围内。他强调的是苦行，为了完全达到断绝物欲的地步，甚至拒绝穿衣服，连身上有屎尿都毫不在意。而佛陀是放弃苦修的，过着质朴的生活，不是特意吃苦。</p>
-<p><strong>耆那教和印度教的神庙在外表上有相似之处，但是也有区别</strong>。耆那教的外部花式更加简单，而印度教的华丽高大。内部，耆那教的装饰复杂华丽，奢华无比，而印度教的却是及其简单，最简单的石板搭建的。</p>
-<h2 id="超级大国的更替"><a href="#超级大国的更替" class="headerlink" title="超级大国的更替"></a>超级大国的更替</h2><p>中国对印度的影响在公元前后到达，在这之前，对印度影响至深的是西方的希腊传导过去的事件，<strong>亚历山大的东征</strong>。但在亚历山大东征统治世界之前，是西亚的波斯文明主导全世界的强大政权。</p>
-<p>当西亚的新巴比伦帝国衰亡之后，伊朗境内兴起了一个新的帝国——<strong>波斯的阿契美尼德王朝</strong>，这是后来统治中亚的历代波斯王朝中的第一个。西亚的政治中心也从伊拉克两河流域转移到了伊朗境内。</p>
-<p>公元前7世纪，当时整个波斯在米底人的统治下。阿契美尼德死后，其儿子脱离了米底王国，经历过几代的继承，到了<strong>居鲁士二世</strong>统治时期，消灭了米底人的政权，还将前霸主新巴比伦帝国也消灭了。此后其儿子冈比西斯二世征服了埃及和非洲的大批领土，而其继承者<strong>大流士一世</strong>却改变了征服方向，开始向东方，越过开伯尔山口，进入印度河平原地区。之后又改变方向，又向西，入侵了希腊人的领土，<strong>从此将不起眼的希腊和欧洲带入了世界的舞台</strong>。希腊本来在东方的眼里根本不值得一提，只是生意人，他们航海走向各地，建立殖民地，只是为了做生意而不是扩张领土。<strong>波斯人入侵希腊，使得希腊各个弱小的城邦抱团抵抗，爆发出了强大的力量，使得波斯人战败</strong>。大流士一世之后，儿子薛西斯发动了第二次入侵，希腊人再次胜利，此后波斯就进入了衰落期，而西方兴起了新的霸主希腊。</p>
-<p>但希腊的这种团结不久就分裂，两个最大的城邦<strong>雅典和斯巴达</strong>开始争夺希腊的领导权，最终在波斯人的帮助下，斯巴达打败了雅典。但结果是两败俱伤。</p>
-<p>与此同时，一个希腊人看不起的<strong>希腊北部的马其顿</strong>兴起了，马其顿国王<strong>腓力二世</strong>打败了雅典和科林斯强权，使整个<strong>希腊半岛在历史上第一次统一</strong>。腓力二世的儿子就是著名的<strong>亚历山大大帝</strong>，这时整个希腊已经属于马其顿，他先进军<strong>小亚细亚</strong>，再把<strong>埃及</strong>纳入自己的版图，埃及的古老文明从此消失。接着进军<strong>波斯</strong>，打败波斯王大流士三世，最终波斯王朝覆灭。之后继续挥兵<strong>中亚阿富汗</strong>，塔吉克斯坦直到新疆以西的<strong>河中地区</strong>。突然就做了一个决定，向<strong>印度</strong>进军。<strong>此时的印度，内部也在进行着激烈的整合。摩揭陀国成为胜利者，几乎统一了全国</strong>。摩揭陀共包含了四个朝代，最后的难陀王朝是非常重要的承上启下的朝代，这时的印度的疆域已经有目前的一半大小，囊括整个北印度，和现代孟加拉国和缅甸的一部分。正是在这个朝代，亚历山大挥师进入印度。在印度，面临的是许多具有单独作战实力地区，如同游击战，亚历山大大帝陷入了全面作战的汪洋大海中，加之印度南北跨度几千公里，气候复杂，最后被迫撤退。不久，<strong>33岁的亚历山大大帝在巴比伦得病去世</strong>，留下了许多亚历山大的城市和希腊化的世界，其余化为传说。而这一次入侵对于印度的政治影响，间接促成了本土的伟大帝国的出现——<strong>孔雀帝国，印度第一次统一</strong>。</p>
-<p>亚历山大大帝撤退，使得整个西北印度陷入了权利的真空状态。原有的政治势力被破坏掉了，犍陀罗等国家被征服，另一方面难陀王朝还没有将控制力延伸过去。这时一个名叫<strong>旃陀罗笈多孔雀的人</strong>汇集大军向摩揭陀的难陀王朝进军，这时的难陀王朝也已经腐败无能，也希望新的君王接管权力。大军压境，难陀国王选择退位，避免了一场血腥的战争，孔雀王朝继承了难陀王打下了的江山。旃陀罗笈多孔雀最后在一个山洞里修行，信奉耆那教，最后默默的死去。他的孙子<strong>阿育王</strong>经过继承战，据说杀死了自己的99个亲兄弟，从自己的父亲频头娑罗哪里得到了孔雀王朝的宝座。阿育王前半生在杀戮中度过，而后半生却信奉佛教，在全国建造了数万座佛塔，然而现在剩下的只有<strong>桑吉大塔</strong>和鹿野苑的<strong>答枚克塔</strong>。</p>
-<p><strong>贵霜人</strong>的历史，最早可以从中国的战国时期找到痕迹，在中国西部的甘肃河西走廊一带，有一个半游牧民族在这里生活了很久。从某种程度上来说，<strong>月氏人</strong>是一个过渡民族，恰好夹在了游牧和定居之间，且受到了双方的威胁。其中在南方是定居的<strong>华夏民族</strong>，经过了春秋战国，秦国正在崛起，而在北方则是<strong>游牧民族匈奴</strong>。事实证明，游牧民族的威胁更大。直到秦朝末年，匈奴还比月氏人弱小，作为寄主国，当时匈奴的王位继承人只能以人质身份在月氏人当中生活，最后一位是叫做<strong>冒顿</strong>的匈奴人，没有受到善待，仇视月氏人，最后其逃回自己的部落，成为新的单于，从此以后月氏人进入了噩梦时期，<strong>冒顿挥师南下，屠杀，公元前202年左右，月氏人被迫放弃了肥沃的河西走廊，向西迁移。</strong>公元前177年左右，冒顿再次击败月氏人，被迫再次迁移，一部分南下进入了<strong>青海境内</strong>，被当地人同化；另一部分继续西迁，到达了新疆的<strong>准葛尔盆地</strong>。公元前162年，冒顿的儿子老上，再次打败月氏人，将月氏王的头颅砍下，当了酒器。只好再次西迁到了<strong>新疆的伊犁一带</strong>。这一次的西迁，引起了<strong>连锁反应</strong>，原本在伊犁这一带的<strong>斯基泰人向西南运动</strong>，进入了阿富汗境内。而这时在伊犁的月氏人因为被汉王朝打击的匈奴人的西迁，只好向西方的中亚地区前进，进入了著名<strong>河中地区</strong>，也就是阿姆河和锡尔河中间地带。而在河中地区，遭到了当地人的驱赶，不得不向南，进入了阿富汗伊朗境内，使得在这里的<strong>斯基泰人再次向南移动</strong>。在此之前，阿富汗和伊朗境内居住者安息人和希腊人，亚历山大征服中亚后，希腊人的后裔在这里建立起了大夏王国，在斯基泰人和月氏人的压力下，<strong>巴克特里亚人纷纷南下，进入印度境内，成为了入侵印度的第一波势力</strong>。</p>
-<p>由匈奴人和月氏人搅动的一系列民族迁徙活动，将一波一波的人们赶往了印度次大陆。张骞出使西域本来想联合月氏人给匈奴人来个东西夹击，但是月氏人拒绝了，不想再回到中国，此后月氏人彻底离开了中国的范围。<strong>公元前140年</strong>，在斯基泰人之后，月氏人也南下到了<strong>大夏边境</strong>，此时月氏人已经分成了5个部落，而贵霜就是其中的一个。之后打败了西部的安息国，继续占领大夏东部地区。此时接触到了大夏的希腊化文明，<strong>月氏人开始希腊化，从此变成了定居民族</strong>。并发行自己的货币和开始发展商贸关系。这时也受到了印度佛教的影响，开始将佛教作为他们的宗教。公元前1世纪初，<strong>贵霜部落</strong>打败其余部落，建立了<strong>贵霜帝国</strong>。在印度希腊人、印度斯基泰人、印度安息人之后，印度贵霜帝国正式登场。</p>
-<p><strong>维查耶纳加尔</strong>是印度教最后一个伟大帝国，负有捍卫印度教、抵抗伊斯兰教的重任。毁灭后，伊斯兰教长驱直入，在次大陆占据了主导地位，开始了几百年的伊斯兰政权时期。实际上，<strong>维查耶纳加尔就是为了对抗伊斯兰才出现</strong>。当北印度处于德里苏丹国统治的时候，南印度曾经强大的遮卢迦王国和拉什特拉库塔王国已经消亡。取而代之的四个小王国，分别是雅达瓦、卡卡提亚，潘地亚王国和霍伊萨拉王国。</p>
-<p>阿拉-乌德-丁用一生与南印度各国征战，其中就征服了雅达瓦和霍伊萨拉。前者为穆斯林提供了新的都城，而后者灭亡使得维查耶纳加尔在其土地上成长起来。</p>
-<p>巴马尼苏丹国的出现，这个伊斯兰国家的兴起与德里苏丹穆罕穆德图格鲁克迁都失败有关。比达尔城是该国的首都，与汉皮相比，伊斯兰教有最先进的战争理念，而印度教徒却是将首都看成生活的地方，由此也可以看出，两者在对战是的成败。南印度就在这两个教权国家的残忍战争中被扭曲，直到其中一个国家垮掉。最后，巴马尼苏丹最先垮掉，分为五个小苏丹国，这五个小国又内斗，最后成为三个苏丹国，最后联合起来，打败了维查耶纳加尔国，历史仅留下了汉皮这片废墟。此时，南印度也成了伊斯兰教的天下。这三个苏丹国也进入了黄金时代，而印度教最后的伟大政权也终于轰然倒塌。这时候，同属于伊斯兰教的来自北方的莫卧儿人出现了。</p>
-<p>在<strong>中世纪</strong>，虽然印度的佛教被印度教取代，但仍旧是世界的<strong>佛教中心</strong>，其中最有名的就是那烂陀大学，学术圣殿。但是在<strong>12世纪</strong>时，当古尔人到来，穆罕默德首领下的努力将军库特卜<strong>占领毁灭了那烂陀大学</strong>，<strong>使得佛教从印度消失</strong>。13世纪初，库特卜成立德里苏丹国，在莫卧尔人到来前，控制印度300多年。<strong>德里，现在印度的首都开始登上历史舞台。</strong></p>
-<p><strong>13世纪，成吉思汗带着蒙古人席卷了整个世界</strong>，在中国建立了元朝，在波斯建立了<strong>伊尔汗国</strong>，在俄罗斯人的土地上建立了<strong>金帐汗国</strong>，在如今的新疆西部、中亚建立了<strong>察合台汗国</strong>，在新疆北部和蒙古东部建立了<strong>窝阔台汗国</strong>。这五大汗国占领了当时已知世界的一大半。之后蒙古很快衰败，在<strong>察合台汗国</strong>的土地上，在14世纪后半期突厥人<strong>帖木儿</strong>威慑整个中亚、西亚和中欧，甚至占领了印度的一部分。但是在进攻明朝时，突然途中去世，此后帖木儿帝国分崩离析。<strong>然而此时，中亚出现了一位蒙古人和突厥人的双重后裔，巴布尔</strong>。让他占领印度，并开创了一个伟大的王朝。<br><strong>巴布尔在父系上是帖木儿的直系后裔，从母系来说，是成吉思汗的后裔。</strong>因此，从1483年出生，就带着世界上最有血性的两个人的基因。</p>
-<p>河中地区的城市撒马尔罕是帖木儿的都城，要称霸中亚必须拿下撒马尔罕，但是命中注定不属于巴布尔，一世经过三次进攻，却一次都没有成功，中亚的大门从此关闭。然而，经过分析，印度是个不错的可以暂时栖息之地，前四次进攻印度只是在外围，现在的巴基斯坦境内，没有深入到德里地区，然而第五次，德里苏丹出现内乱，有人请他去去德里，于是决心进军德里。<strong>这次战役的胜利，决定了印度历史的未来300年，建立了一个伟大的帝国。</strong>巴布尔在阿拉格建立了帝国的首都，阿拉格是用艺术和建筑征服印度，其后代也大都继承了祖先的艺术气质，使得<strong>莫卧尔成为艺术世界的巅峰</strong>。此后，巴布尔平定了整个北部地区，不久去世，他的儿子胡马雍继承王位，但此时的帝国还没有稳定，<strong>胡马雍</strong>不善战，被东方孟加拉的将军舍尔汗打败，被赶出了印度，退到了阿富汗。而舍尔汗在位期间，使整个印度政局稳定。死后，胡马雍很快从其后代那里夺回了印度，继承了舍尔汗开创的一系列制度，并重新将首都迁到了德里。之后不小心摔死在图书馆，成为第一个葬在印度土地上的莫卧尔皇帝。</p>
-]]></content>
-      <categories>
-        <category>读书笔记</category>
-      </categories>
-      <tags>
-        <tag>印度</tag>
-        <tag>郭建龙</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>使用氮气瓶</title>
     <url>//2022/01/07/%E4%BD%BF%E7%94%A8%E6%B0%AE%E6%B0%94%E7%93%B6/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -1082,6 +1076,54 @@ characterization of aluminum resistance in Populus"><br>这里我先用比较麻
       </categories>
       <tags>
         <tag>gene</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>印度，漂浮的次大陆</title>
+    <url>//2018/09/06/%E5%8D%B0%E5%BA%A6%EF%BC%8C%E6%BC%82%E6%B5%AE%E7%9A%84%E6%AC%A1%E5%A4%A7%E9%99%86/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![印度，漂浮的次大陆](http://upload-images.jianshu.io/upload_images/3478485-b11c23f0c98ac99f.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+> 俞敏洪老师的推荐，于是就去读了郭建龙一个系列的游记。《穿越百年中东》、《骑车去元朝》、《印度，漂浮的次大陆》和《三千佛塔烟云下》都读了一遍，信息量超级大，不过读起来特别的畅快，特别的流畅。
+> 郭建龙是个文化旅者，总是亲身去体验某个地方的文化，历史，地理，政治，经济和宗教，最后凭借自己的文笔，写出独具特色的游记，我个人非常喜欢，推荐阅读。
+> 内容摘录自郭建龙的《印度，漂浮的次大陆》这本书。
+
+
+
+<span id="more"></span>
+
+<p>哈拉帕（巴基斯坦），洛塔尔（印度）。<br>洛塔尔遗址，手工业和贸易促使其如此的发达。然而，公元前2000年左右，整个印度河文明都衰落了。<br>在欧洲，存在着非洲两次走出的古人类相遇证据。那就是第二次的克罗马农人取代了第一次的尼安德特人，成为现代欧洲人的祖先。那么古印度人的祖先从哪里过来？在比莫贝特卡，发现了穴居文化。</p>
+<p>印度人之前一直以雅利安人的血统引以为豪，认为自己是雅利安人的后裔。但是当考古发现，公元前5000，已经在印度河流域出现了本土的古印度文明，比雅利安人入侵印度次大陆早千年，不得不承认存在高度发达的古印度文明。但印度人和雅利安人有着紧密的联系，<strong>英国人威廉琼斯公爵从语言学上发现，印度的梵语，拉丁语和欧洲的语言有着同一起源，从而也证明了确实雅利安人和印度人有着紧密的联系。</strong>而后来的考古发现也证明，大约在公元前3000年，在中亚大草原、里海附近的雅利安人，分为两支：一支进入欧洲，成为现代欧洲人的祖先；而另一支，经伊朗阿富汗，翻过兴都库什山脉，顺着开伯尔山口进入印度河谷地，最终扩散到整个印度。为什么古老发达的文明无法抵抗雅利安人？因为，在公元前2000左右，古印度文明开始衰落，而此时雅利安人正好在恰当的时机到来，从而入侵整个印度。</p>
+<p><strong>虽然古印度文明消亡了，但是人种并不会就此消失。</strong>在现代的南印度，存在达罗毗荼人，可能与印度河文明的人种一致，且他们拥有自己的语言系统。<strong>现在的印度，分为两种语系，在南方属于达罗毗荼语系，而在北方则是属于梵语。</strong>在印度神奇的是，雅利安人已经入侵印度几千年了，到现在为止，雅利安人和达罗毗荼人还没有完成融合，跟中国社会的情况完全不同。原因：<strong>强大的种姓制度。</strong></p>
+<h2 id="印度教"><a href="#印度教" class="headerlink" title="印度教"></a>印度教</h2><p>雅利安人为了防止自己被当地原始居民同化，从而建立了严格的种姓制度，出现了<strong>四种种姓：婆罗门，刹帝什，吠舍和首陀罗</strong>。分别担任宗教和精神领袖，国王和武士，从事商业，最底层。还有没有种姓的贱民。规定人一出生就确定了种姓，永远也不可能改变，无法进阶到更高的种姓。但是，如果长期下去，最底层的人会越来越多，最终会通过暴力手段推翻这种限制，然而<strong>为什么这种制度能够如此长久的维持？</strong>只能通过宗教信仰手段，将<strong>种姓制度融入到宗教</strong>之中，使其能够自动的被大众接受，这个宗教就是<strong>印度教</strong>。教义强调：人的灵魂是可以轮回的，这一世为人，下一世可能为动物，也可能身为更高种姓的人类，所以给了人们虚假的承诺，使得人们遵从现有的制度而不加以反抗，与中国的儒教相似。</p>
+<p><strong>世界上所有的宗教一般都包括了信仰和伦理两方面，其中信仰是个人化的体验，关系到个人与神之间的沟通，而伦理是一种社会化的体验，主要强调人与人之间的交流。侧重点的不同，宗教分为两大类：基督教和佛教侧重信仰，而印度教和儒教侧重伦理。伊斯兰教处在两者中间。</strong></p>
+<p>在这一时期，印度的神祇也得到了确立，形成了<strong>三大主神：梵天，毗湿奴和湿婆以及无所不包的各路神仙</strong>。其中湿婆是受到最广泛崇拜的主神，同时也是生殖力的代表，于是有了崇拜生殖和崇拜阴茎的传统。湿婆的化身往往是一根石柱，象征着阴茎和生殖力，叫做林伽。在西藏的外喜马拉雅山脉中，有一座形同阴茎的山峰，叫做冈仁波齐，在印度称为凯拉什山，是藏传佛教，苯教和印度教的神山。印度人将前往冈仁波齐看成朝圣的极致。</p>
+<p>同时这一时期，印度史诗也形成。最早的梵语经典<strong>《吠陀经》</strong>成型，<strong>印度的传奇史诗《罗摩衍那》和《摩诃婆罗多》逐渐流传开来。</strong>《罗摩衍那》家喻户晓。</p>
+<h2 id="佛教"><a href="#佛教" class="headerlink" title="佛教"></a>佛教</h2><p><strong>佛陀，或称释迦摩尼，名字叫悉达多乔达摩</strong>。出身在印度十六国时期的迦毗罗卫国的<strong>蓝毗尼</strong>的一棵树下，现在的尼泊尔境内。父亲是迦毗罗卫国的国王净饭王，这个小国依附于大国拘萨罗，是由雅利安人种释迦族建立的，属于刹帝什种姓。母亲摩耶夫人。年轻的悉达多，在王宫中长大，不问世事，整天沉迷爱情俗世，有三位妻子和自己的孩子，在孩子出身的那一年，当悉达多看到世外的人所受的苦难，于是开始思考人生的意义，离开皇宫开始寻找答案。在菩提迦耶的菩提树下，悉达多决定放弃苦修，开始打坐静修。本来他的五位随从认为他已经放弃寻找真理了，于是离开了他。不久，他就彻底领悟，找到了属于自己的<strong>一套理论体系</strong>，<strong>人生的意义是使得自己死后的灵魂得到永恒，也是与印度教类似的轮回机制，但是佛教的是认为轮回本身是一种痛苦，需要跳出轮回，灵魂才能得到永恒。那么如何跳出这个永无止境的轮回呢？</strong>悉达多构想出了<strong>“四谛”</strong>理论体系：<strong>苦谛</strong>，指的人生的一切苦难。<strong>集谛</strong>，贪嗔痴三毒是苦难产生的原因。<strong>灭谛</strong>，消灭苦难就要消灭三毒。<strong>道谛</strong>，修行的行为规范，指八正道，帮助人们消灭三毒的方法，修行得当的人都可以跳出轮回之苦，从而达到活着的意义和死后的永恒。</p>
+<p><strong>四谛</strong>是悉达多理论的核心，因为这个体系<strong>打破了种姓的界限，强调了人生的平等</strong>。任何人要是想跳出轮回，必须要按这种修行方式进行。</p>
+<p>获得顿悟的悉达多没有立即离开，继续思考完善体系，后来来到了一个叫做鹿野苑的地方，收了第一批信徒。这就是之前离开他的五个人，是其父亲在其离开时选派的五位宗室子弟。也就是佛教史上有名的五比丘。也就在此刻开始，佛教的佛、法、僧已经圆满集结，悉达多乔达摩也正式成为佛陀。之后继续传教，走向全国。最后，在晚年，佛陀带了少量弟子来到名叫拘尸那罗的地方，一病不起，不久圆寂与此。而此时的迦毗罗卫国也被拘萨罗消灭，而最后拘萨罗也被摩揭陀国所灭，为印度的统一打下了基础。</p>
+<h2 id="耆那教"><a href="#耆那教" class="headerlink" title="耆那教"></a>耆那教</h2><p>耆那教<strong>人口很少</strong>的宗教，但是在印度却有着及其重大的影响，甚至在<strong>影响力上超过了佛教</strong>。主要有两方面，第一，<strong>更强调苦行</strong>，对于人的要求高，更小众，使得能够接受的它的人很少，但是却是非常的坚定；第二，<strong>没有国际化</strong>。耆那教的创始人，<strong>筏陀摩耶被称为大雄</strong>，他的活动范围与佛陀重叠，也是在摩揭陀国的影响范围内。他强调的是苦行，为了完全达到断绝物欲的地步，甚至拒绝穿衣服，连身上有屎尿都毫不在意。而佛陀是放弃苦修的，过着质朴的生活，不是特意吃苦。</p>
+<p><strong>耆那教和印度教的神庙在外表上有相似之处，但是也有区别</strong>。耆那教的外部花式更加简单，而印度教的华丽高大。内部，耆那教的装饰复杂华丽，奢华无比，而印度教的却是及其简单，最简单的石板搭建的。</p>
+<h2 id="超级大国的更替"><a href="#超级大国的更替" class="headerlink" title="超级大国的更替"></a>超级大国的更替</h2><p>中国对印度的影响在公元前后到达，在这之前，对印度影响至深的是西方的希腊传导过去的事件，<strong>亚历山大的东征</strong>。但在亚历山大东征统治世界之前，是西亚的波斯文明主导全世界的强大政权。</p>
+<p>当西亚的新巴比伦帝国衰亡之后，伊朗境内兴起了一个新的帝国——<strong>波斯的阿契美尼德王朝</strong>，这是后来统治中亚的历代波斯王朝中的第一个。西亚的政治中心也从伊拉克两河流域转移到了伊朗境内。</p>
+<p>公元前7世纪，当时整个波斯在米底人的统治下。阿契美尼德死后，其儿子脱离了米底王国，经历过几代的继承，到了<strong>居鲁士二世</strong>统治时期，消灭了米底人的政权，还将前霸主新巴比伦帝国也消灭了。此后其儿子冈比西斯二世征服了埃及和非洲的大批领土，而其继承者<strong>大流士一世</strong>却改变了征服方向，开始向东方，越过开伯尔山口，进入印度河平原地区。之后又改变方向，又向西，入侵了希腊人的领土，<strong>从此将不起眼的希腊和欧洲带入了世界的舞台</strong>。希腊本来在东方的眼里根本不值得一提，只是生意人，他们航海走向各地，建立殖民地，只是为了做生意而不是扩张领土。<strong>波斯人入侵希腊，使得希腊各个弱小的城邦抱团抵抗，爆发出了强大的力量，使得波斯人战败</strong>。大流士一世之后，儿子薛西斯发动了第二次入侵，希腊人再次胜利，此后波斯就进入了衰落期，而西方兴起了新的霸主希腊。</p>
+<p>但希腊的这种团结不久就分裂，两个最大的城邦<strong>雅典和斯巴达</strong>开始争夺希腊的领导权，最终在波斯人的帮助下，斯巴达打败了雅典。但结果是两败俱伤。</p>
+<p>与此同时，一个希腊人看不起的<strong>希腊北部的马其顿</strong>兴起了，马其顿国王<strong>腓力二世</strong>打败了雅典和科林斯强权，使整个<strong>希腊半岛在历史上第一次统一</strong>。腓力二世的儿子就是著名的<strong>亚历山大大帝</strong>，这时整个希腊已经属于马其顿，他先进军<strong>小亚细亚</strong>，再把<strong>埃及</strong>纳入自己的版图，埃及的古老文明从此消失。接着进军<strong>波斯</strong>，打败波斯王大流士三世，最终波斯王朝覆灭。之后继续挥兵<strong>中亚阿富汗</strong>，塔吉克斯坦直到新疆以西的<strong>河中地区</strong>。突然就做了一个决定，向<strong>印度</strong>进军。<strong>此时的印度，内部也在进行着激烈的整合。摩揭陀国成为胜利者，几乎统一了全国</strong>。摩揭陀共包含了四个朝代，最后的难陀王朝是非常重要的承上启下的朝代，这时的印度的疆域已经有目前的一半大小，囊括整个北印度，和现代孟加拉国和缅甸的一部分。正是在这个朝代，亚历山大挥师进入印度。在印度，面临的是许多具有单独作战实力地区，如同游击战，亚历山大大帝陷入了全面作战的汪洋大海中，加之印度南北跨度几千公里，气候复杂，最后被迫撤退。不久，<strong>33岁的亚历山大大帝在巴比伦得病去世</strong>，留下了许多亚历山大的城市和希腊化的世界，其余化为传说。而这一次入侵对于印度的政治影响，间接促成了本土的伟大帝国的出现——<strong>孔雀帝国，印度第一次统一</strong>。</p>
+<p>亚历山大大帝撤退，使得整个西北印度陷入了权利的真空状态。原有的政治势力被破坏掉了，犍陀罗等国家被征服，另一方面难陀王朝还没有将控制力延伸过去。这时一个名叫<strong>旃陀罗笈多孔雀的人</strong>汇集大军向摩揭陀的难陀王朝进军，这时的难陀王朝也已经腐败无能，也希望新的君王接管权力。大军压境，难陀国王选择退位，避免了一场血腥的战争，孔雀王朝继承了难陀王打下了的江山。旃陀罗笈多孔雀最后在一个山洞里修行，信奉耆那教，最后默默的死去。他的孙子<strong>阿育王</strong>经过继承战，据说杀死了自己的99个亲兄弟，从自己的父亲频头娑罗哪里得到了孔雀王朝的宝座。阿育王前半生在杀戮中度过，而后半生却信奉佛教，在全国建造了数万座佛塔，然而现在剩下的只有<strong>桑吉大塔</strong>和鹿野苑的<strong>答枚克塔</strong>。</p>
+<p><strong>贵霜人</strong>的历史，最早可以从中国的战国时期找到痕迹，在中国西部的甘肃河西走廊一带，有一个半游牧民族在这里生活了很久。从某种程度上来说，<strong>月氏人</strong>是一个过渡民族，恰好夹在了游牧和定居之间，且受到了双方的威胁。其中在南方是定居的<strong>华夏民族</strong>，经过了春秋战国，秦国正在崛起，而在北方则是<strong>游牧民族匈奴</strong>。事实证明，游牧民族的威胁更大。直到秦朝末年，匈奴还比月氏人弱小，作为寄主国，当时匈奴的王位继承人只能以人质身份在月氏人当中生活，最后一位是叫做<strong>冒顿</strong>的匈奴人，没有受到善待，仇视月氏人，最后其逃回自己的部落，成为新的单于，从此以后月氏人进入了噩梦时期，<strong>冒顿挥师南下，屠杀，公元前202年左右，月氏人被迫放弃了肥沃的河西走廊，向西迁移。</strong>公元前177年左右，冒顿再次击败月氏人，被迫再次迁移，一部分南下进入了<strong>青海境内</strong>，被当地人同化；另一部分继续西迁，到达了新疆的<strong>准葛尔盆地</strong>。公元前162年，冒顿的儿子老上，再次打败月氏人，将月氏王的头颅砍下，当了酒器。只好再次西迁到了<strong>新疆的伊犁一带</strong>。这一次的西迁，引起了<strong>连锁反应</strong>，原本在伊犁这一带的<strong>斯基泰人向西南运动</strong>，进入了阿富汗境内。而这时在伊犁的月氏人因为被汉王朝打击的匈奴人的西迁，只好向西方的中亚地区前进，进入了著名<strong>河中地区</strong>，也就是阿姆河和锡尔河中间地带。而在河中地区，遭到了当地人的驱赶，不得不向南，进入了阿富汗伊朗境内，使得在这里的<strong>斯基泰人再次向南移动</strong>。在此之前，阿富汗和伊朗境内居住者安息人和希腊人，亚历山大征服中亚后，希腊人的后裔在这里建立起了大夏王国，在斯基泰人和月氏人的压力下，<strong>巴克特里亚人纷纷南下，进入印度境内，成为了入侵印度的第一波势力</strong>。</p>
+<p>由匈奴人和月氏人搅动的一系列民族迁徙活动，将一波一波的人们赶往了印度次大陆。张骞出使西域本来想联合月氏人给匈奴人来个东西夹击，但是月氏人拒绝了，不想再回到中国，此后月氏人彻底离开了中国的范围。<strong>公元前140年</strong>，在斯基泰人之后，月氏人也南下到了<strong>大夏边境</strong>，此时月氏人已经分成了5个部落，而贵霜就是其中的一个。之后打败了西部的安息国，继续占领大夏东部地区。此时接触到了大夏的希腊化文明，<strong>月氏人开始希腊化，从此变成了定居民族</strong>。并发行自己的货币和开始发展商贸关系。这时也受到了印度佛教的影响，开始将佛教作为他们的宗教。公元前1世纪初，<strong>贵霜部落</strong>打败其余部落，建立了<strong>贵霜帝国</strong>。在印度希腊人、印度斯基泰人、印度安息人之后，印度贵霜帝国正式登场。</p>
+<p><strong>维查耶纳加尔</strong>是印度教最后一个伟大帝国，负有捍卫印度教、抵抗伊斯兰教的重任。毁灭后，伊斯兰教长驱直入，在次大陆占据了主导地位，开始了几百年的伊斯兰政权时期。实际上，<strong>维查耶纳加尔就是为了对抗伊斯兰才出现</strong>。当北印度处于德里苏丹国统治的时候，南印度曾经强大的遮卢迦王国和拉什特拉库塔王国已经消亡。取而代之的四个小王国，分别是雅达瓦、卡卡提亚，潘地亚王国和霍伊萨拉王国。</p>
+<p>阿拉-乌德-丁用一生与南印度各国征战，其中就征服了雅达瓦和霍伊萨拉。前者为穆斯林提供了新的都城，而后者灭亡使得维查耶纳加尔在其土地上成长起来。</p>
+<p>巴马尼苏丹国的出现，这个伊斯兰国家的兴起与德里苏丹穆罕穆德图格鲁克迁都失败有关。比达尔城是该国的首都，与汉皮相比，伊斯兰教有最先进的战争理念，而印度教徒却是将首都看成生活的地方，由此也可以看出，两者在对战是的成败。南印度就在这两个教权国家的残忍战争中被扭曲，直到其中一个国家垮掉。最后，巴马尼苏丹最先垮掉，分为五个小苏丹国，这五个小国又内斗，最后成为三个苏丹国，最后联合起来，打败了维查耶纳加尔国，历史仅留下了汉皮这片废墟。此时，南印度也成了伊斯兰教的天下。这三个苏丹国也进入了黄金时代，而印度教最后的伟大政权也终于轰然倒塌。这时候，同属于伊斯兰教的来自北方的莫卧儿人出现了。</p>
+<p>在<strong>中世纪</strong>，虽然印度的佛教被印度教取代，但仍旧是世界的<strong>佛教中心</strong>，其中最有名的就是那烂陀大学，学术圣殿。但是在<strong>12世纪</strong>时，当古尔人到来，穆罕默德首领下的努力将军库特卜<strong>占领毁灭了那烂陀大学</strong>，<strong>使得佛教从印度消失</strong>。13世纪初，库特卜成立德里苏丹国，在莫卧尔人到来前，控制印度300多年。<strong>德里，现在印度的首都开始登上历史舞台。</strong></p>
+<p><strong>13世纪，成吉思汗带着蒙古人席卷了整个世界</strong>，在中国建立了元朝，在波斯建立了<strong>伊尔汗国</strong>，在俄罗斯人的土地上建立了<strong>金帐汗国</strong>，在如今的新疆西部、中亚建立了<strong>察合台汗国</strong>，在新疆北部和蒙古东部建立了<strong>窝阔台汗国</strong>。这五大汗国占领了当时已知世界的一大半。之后蒙古很快衰败，在<strong>察合台汗国</strong>的土地上，在14世纪后半期突厥人<strong>帖木儿</strong>威慑整个中亚、西亚和中欧，甚至占领了印度的一部分。但是在进攻明朝时，突然途中去世，此后帖木儿帝国分崩离析。<strong>然而此时，中亚出现了一位蒙古人和突厥人的双重后裔，巴布尔</strong>。让他占领印度，并开创了一个伟大的王朝。<br><strong>巴布尔在父系上是帖木儿的直系后裔，从母系来说，是成吉思汗的后裔。</strong>因此，从1483年出生，就带着世界上最有血性的两个人的基因。</p>
+<p>河中地区的城市撒马尔罕是帖木儿的都城，要称霸中亚必须拿下撒马尔罕，但是命中注定不属于巴布尔，一世经过三次进攻，却一次都没有成功，中亚的大门从此关闭。然而，经过分析，印度是个不错的可以暂时栖息之地，前四次进攻印度只是在外围，现在的巴基斯坦境内，没有深入到德里地区，然而第五次，德里苏丹出现内乱，有人请他去去德里，于是决心进军德里。<strong>这次战役的胜利，决定了印度历史的未来300年，建立了一个伟大的帝国。</strong>巴布尔在阿拉格建立了帝国的首都，阿拉格是用艺术和建筑征服印度，其后代也大都继承了祖先的艺术气质，使得<strong>莫卧尔成为艺术世界的巅峰</strong>。此后，巴布尔平定了整个北部地区，不久去世，他的儿子胡马雍继承王位，但此时的帝国还没有稳定，<strong>胡马雍</strong>不善战，被东方孟加拉的将军舍尔汗打败，被赶出了印度，退到了阿富汗。而舍尔汗在位期间，使整个印度政局稳定。死后，胡马雍很快从其后代那里夺回了印度，继承了舍尔汗开创的一系列制度，并重新将首都迁到了德里。之后不小心摔死在图书馆，成为第一个葬在印度土地上的莫卧尔皇帝。</p>
+]]></content>
+      <categories>
+        <category>读书笔记</category>
+      </categories>
+      <tags>
+        <tag>印度</tag>
+        <tag>郭建龙</tag>
       </tags>
   </entry>
   <entry>
@@ -1459,6 +1501,25 @@ characterization of aluminum resistance in Populus"><br>这里我先用比较麻
       </tags>
   </entry>
   <entry>
+    <title>植物Cas9靶点设计网站简介</title>
+    <url>//2019/02/05/%E6%A4%8D%E7%89%A9Cas9%E9%9D%B6%E7%82%B9%E8%AE%BE%E8%AE%A1%E7%BD%91%E7%AB%99%E7%AE%80%E4%BB%8B/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![cas9模型](https://upload-images.jianshu.io/upload_images/3478485-e845fed2bd99b07b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+<span id="more"></span>
+
+<p>我在前面的简文中已经基本阐述了Cas9的作用机制，详细内容可以看<a href="https://www.jianshu.com/p/1e7bff7d5830">CRISPR-Cas9系统简介</a>一文。今天，就来讲一讲怎么实际使用这个系统来帮助我们进行功能基因的研究。这个技术一问世，很多大牛就开始使用，植物学领域的应用，使得我们能够更方便的有目的的去编辑我们想要编辑的植物基因组。今天就推荐几个网站，寻找靶点序列的网站。前面我们也提到过，好的靶点的选择，可以减小脱靶率，大大提高我们编辑的效率。能够极大提高我们的实验效率，不然像我们植物学领域的苦逼博士，不得疯掉，一直一直脱靶的话，那么就真的非常的酸爽。</p>
+<h3 id="CRISPR-PLANT"><a href="#CRISPR-PLANT" class="headerlink" title="CRISPR-PLANT"></a><font color = "green">CRISPR-PLANT</font></h3><p>具体网址：<a href="https://www.genome.arizona.edu/crispr/index.html">https://www.genome.arizona.edu/crispr/index.html</a>。 看这个网址，应该是Arizona大学出品的。这是一个专门针对植物CRISPR靶点设计网站，比较专业，较为好用的网站。首页有一张模式图，而且还有对CRISPR-Cas9系统的基本介绍，大概可以了解。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-f2f550500f26be7a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="网站首页"><br>导航栏中有几个标签链接，如果你不知道怎么使用，那么你就可以点击instruction来学习，里面有比较详细的介绍。如果要开始找靶点，那就点击search。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-6181cec9ae7ec031.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="导航栏"><br>进入search主页，就可以看到查找的方式。这里它也建议你先看知道手册，然后在进行设计。查找的输入信息有两种，a.染色体位置信息；b.基因locus，通常情况下我们在查找的时候感觉locus用的比较多，一般你肯定是知道基因的信息去进行search。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-2e0980dc0152cf1e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="search主页"><br>这个网站可以找的物种包括拟南芥、二穗短柄草、大豆、蒺藜苜蓿、水稻、高粱、番茄和玉米；还是挺多的，一般都能符合需求。当然，如果你的物种实在是太过于小众，那么可惜，没法用这个网站进行。那么，下面这个网站就可以一定程度满足你。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-0b1d6da7b6ab97bd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="这里给的物种基因组"></p>
+<h3 id="CRISPRSCAN"><a href="#CRISPRSCAN" class="headerlink" title="CRISPRSCAN"></a><font color="green">CRISPRSCAN</font></h3><p>具体网址：<a href="http://www.crisprscan.org/?page=sequence">http://www.crisprscan.org/?page=sequence</a>。这个网站是都是动物的，没有植物物种的，但是为什么要推荐这个网站呢？因为我们最开始就是使用这个网站进行靶点筛选的，之后在拟南芥和番茄中进行了尝试敲除，结果都能够得到敲除的株系，也是能够使用这个来进行引物的设计。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-ef69894d221d6ddc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="网站首页"><br>这个网站里，有很多动物，果蝇、人类、小鼠和鸡等物种，没有植物的，但是你可以选择No search这个选项，然后将你的序列黏贴进去，之后会出来靶点，但是它的评估只有一个score，没有其他的了。这个网站，现在对我们植物的来说，还是基本不用了，有其他专门的植物的网站。下面这个网站就更好了，非常全面的植物的网站。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-a8e5bf4933bff970.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="这个网站有的一些物种"></p>
+<h3 id="CRISPR-P-2-0"><a href="#CRISPR-P-2-0" class="headerlink" title="CRISPR-P 2.0"></a><font color = "green">CRISPR-P 2.0</font></h3><p>具体网址：<a href="http://crispr.hzau.edu.cn/CRISPR2/">http://crispr.hzau.edu.cn/CRISPR2/</a>。这个网站是华中农业大学大学设计的，做的还是很不错的。用了之后，感觉比前面两个的内容更丰富，而且评估的更全面。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-43966e8205ae6ee8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="网站首页，也很漂亮"><br>点击网站右上角的start design，你就可以开始设计相应的引物。里面的信息更加细化。有pam类型选择，启动子选择，引导序列的长度，物种基因组选择，可以通过locus以及位置信息和序列进行靶基因的选定。它这个网站的物种数据是整合了NCBI数据库，所以基本包括了已经测序完全的植物基因组，解决了物种限制这个问题，普遍性强了。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-6b15fc0bac0d5e23.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="设计页面"><br>我用网站中的例子，来展示一下靶点搜索结果。它可以根据开始的碱基A/G来筛选靶点，也可以通过score、gc含量和位置信息来进行靶点筛选。此外，当你将鼠标移到靶点上，会出现具体信息：显示了位置，打分，序列，切割位点（红色箭头），启动子，以及脱靶位点数量和错位碱基数等，可以说相当丰富。而且，如果某些靶点存在酶切位点，也会同时显示出来。如果不理解这些参数，网站首页的<strong>help</strong>会有详细的解释，包括怎么选择靶点。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-3ce8f6271f54d084.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="靶点"><br><img src="https://upload-images.jianshu.io/upload_images/3478485-c617285e77a1dab2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="靶点信息"><br>这几个CRISPR相关的网站介绍就到这里结束了，具体应用还是需要有实际例子去使用，尝试。<br>今天是大年初一，给大家拜个年，新春快乐，实验顺利，早发paper。</p>
+]]></content>
+      <categories>
+        <category>学习记录</category>
+      </categories>
+      <tags>
+        <tag>Cas9</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>海南环岛游记</title>
     <url>//2018/08/31/%E6%B5%B7%E5%8D%97%E7%8E%AF%E5%B2%9B%E6%B8%B8%E8%AE%B0/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -1651,25 +1712,6 @@ characterization of aluminum resistance in Populus"><br>这里我先用比较麻
       </tags>
   </entry>
   <entry>
-    <title>植物Cas9靶点设计网站简介</title>
-    <url>//2019/02/05/%E6%A4%8D%E7%89%A9Cas9%E9%9D%B6%E7%82%B9%E8%AE%BE%E8%AE%A1%E7%BD%91%E7%AB%99%E7%AE%80%E4%BB%8B/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![cas9模型](https://upload-images.jianshu.io/upload_images/3478485-e845fed2bd99b07b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-<span id="more"></span>
-
-<p>我在前面的简文中已经基本阐述了Cas9的作用机制，详细内容可以看<a href="https://www.jianshu.com/p/1e7bff7d5830">CRISPR-Cas9系统简介</a>一文。今天，就来讲一讲怎么实际使用这个系统来帮助我们进行功能基因的研究。这个技术一问世，很多大牛就开始使用，植物学领域的应用，使得我们能够更方便的有目的的去编辑我们想要编辑的植物基因组。今天就推荐几个网站，寻找靶点序列的网站。前面我们也提到过，好的靶点的选择，可以减小脱靶率，大大提高我们编辑的效率。能够极大提高我们的实验效率，不然像我们植物学领域的苦逼博士，不得疯掉，一直一直脱靶的话，那么就真的非常的酸爽。</p>
-<h3 id="CRISPR-PLANT"><a href="#CRISPR-PLANT" class="headerlink" title="CRISPR-PLANT"></a><font color = "green">CRISPR-PLANT</font></h3><p>具体网址：<a href="https://www.genome.arizona.edu/crispr/index.html">https://www.genome.arizona.edu/crispr/index.html</a>。 看这个网址，应该是Arizona大学出品的。这是一个专门针对植物CRISPR靶点设计网站，比较专业，较为好用的网站。首页有一张模式图，而且还有对CRISPR-Cas9系统的基本介绍，大概可以了解。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-f2f550500f26be7a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="网站首页"><br>导航栏中有几个标签链接，如果你不知道怎么使用，那么你就可以点击instruction来学习，里面有比较详细的介绍。如果要开始找靶点，那就点击search。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-6181cec9ae7ec031.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="导航栏"><br>进入search主页，就可以看到查找的方式。这里它也建议你先看知道手册，然后在进行设计。查找的输入信息有两种，a.染色体位置信息；b.基因locus，通常情况下我们在查找的时候感觉locus用的比较多，一般你肯定是知道基因的信息去进行search。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-2e0980dc0152cf1e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="search主页"><br>这个网站可以找的物种包括拟南芥、二穗短柄草、大豆、蒺藜苜蓿、水稻、高粱、番茄和玉米；还是挺多的，一般都能符合需求。当然，如果你的物种实在是太过于小众，那么可惜，没法用这个网站进行。那么，下面这个网站就可以一定程度满足你。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-0b1d6da7b6ab97bd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="这里给的物种基因组"></p>
-<h3 id="CRISPRSCAN"><a href="#CRISPRSCAN" class="headerlink" title="CRISPRSCAN"></a><font color="green">CRISPRSCAN</font></h3><p>具体网址：<a href="http://www.crisprscan.org/?page=sequence">http://www.crisprscan.org/?page=sequence</a>。这个网站是都是动物的，没有植物物种的，但是为什么要推荐这个网站呢？因为我们最开始就是使用这个网站进行靶点筛选的，之后在拟南芥和番茄中进行了尝试敲除，结果都能够得到敲除的株系，也是能够使用这个来进行引物的设计。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-ef69894d221d6ddc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="网站首页"><br>这个网站里，有很多动物，果蝇、人类、小鼠和鸡等物种，没有植物的，但是你可以选择No search这个选项，然后将你的序列黏贴进去，之后会出来靶点，但是它的评估只有一个score，没有其他的了。这个网站，现在对我们植物的来说，还是基本不用了，有其他专门的植物的网站。下面这个网站就更好了，非常全面的植物的网站。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-a8e5bf4933bff970.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="这个网站有的一些物种"></p>
-<h3 id="CRISPR-P-2-0"><a href="#CRISPR-P-2-0" class="headerlink" title="CRISPR-P 2.0"></a><font color = "green">CRISPR-P 2.0</font></h3><p>具体网址：<a href="http://crispr.hzau.edu.cn/CRISPR2/">http://crispr.hzau.edu.cn/CRISPR2/</a>。这个网站是华中农业大学大学设计的，做的还是很不错的。用了之后，感觉比前面两个的内容更丰富，而且评估的更全面。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-43966e8205ae6ee8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="网站首页，也很漂亮"><br>点击网站右上角的start design，你就可以开始设计相应的引物。里面的信息更加细化。有pam类型选择，启动子选择，引导序列的长度，物种基因组选择，可以通过locus以及位置信息和序列进行靶基因的选定。它这个网站的物种数据是整合了NCBI数据库，所以基本包括了已经测序完全的植物基因组，解决了物种限制这个问题，普遍性强了。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-6b15fc0bac0d5e23.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="设计页面"><br>我用网站中的例子，来展示一下靶点搜索结果。它可以根据开始的碱基A/G来筛选靶点，也可以通过score、gc含量和位置信息来进行靶点筛选。此外，当你将鼠标移到靶点上，会出现具体信息：显示了位置，打分，序列，切割位点（红色箭头），启动子，以及脱靶位点数量和错位碱基数等，可以说相当丰富。而且，如果某些靶点存在酶切位点，也会同时显示出来。如果不理解这些参数，网站首页的<strong>help</strong>会有详细的解释，包括怎么选择靶点。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-3ce8f6271f54d084.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="靶点"><br><img src="https://upload-images.jianshu.io/upload_images/3478485-c617285e77a1dab2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="靶点信息"><br>这几个CRISPR相关的网站介绍就到这里结束了，具体应用还是需要有实际例子去使用，尝试。<br>今天是大年初一，给大家拜个年，新春快乐，实验顺利，早发paper。</p>
-]]></content>
-      <categories>
-        <category>学习记录</category>
-      </categories>
-      <tags>
-        <tag>Cas9</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>疫情记</title>
     <url>//2020/04/12/%E7%96%AB%E6%83%85%E8%AE%B0/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -1694,27 +1736,6 @@ characterization of aluminum resistance in Populus"><br>这里我先用比较麻
       </categories>
       <tags>
         <tag>日记</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>碟中谍6: 全面瓦解</title>
-    <url>//2018/09/01/%E7%A2%9F%E4%B8%AD%E8%B0%8D6-%E5%85%A8%E9%9D%A2%E7%93%A6%E8%A7%A3/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![碟中谍6：全面瓦解](https://upload-images.jianshu.io/upload_images/3478485-ba43addff850f0fb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-<p>9月1日，星期六，公元2018年。</p>
-<span id="more"></span>
-
-<p>我从周五看到了周六，从8月看到了9月。因为电影近140分钟，我从10点开始，自然就看到了第二天凌晨。</p>
-<p>故事一开始，就发布一个任务，亨特自然就接受了，关于夺回核武器，防止使徒们（恐怖组织成员）的大规模投弹。接受之后，必然按着故事线走下去。一切都很精彩，法国巴黎和英国伦敦以及克什米尔地区的景观都是相当吸引眼球，很明显的好莱坞大片元素，场面非常宏大，视觉体验非常棒。此外，这么大年纪的阿汤哥，拍这部电影真是拼命。悬崖，直升机，跑酷等等都是很危险的动作，飞车大战，摩托车巴黎飙车，一切都非常刺激，整部影片几乎没有比较安静的场景。一切都快速的进行中，没有一刻停缓，因为要保护世界。</p>
-<p>好莱坞大片，必不可少的情节，那就是拯救地球，拯救全世界。都是机器宏大的目标，放眼全世界，就是救世主。有时候就会让你遐想，会有带入感，让你也感觉自己能拯救世界，也是一种精神上的吸引。情节依旧老套，又是防止大规模杀伤性武器被恐怖组织利用，不惜一切去组织，而且必然每次都是成功，能够拯救世界。</p>
-<p>可以说，碟中谍系列，是很好看的特工电影，看着很刺激，这次第六部的上映，也是让影迷们产生一种情怀，当然为了刺激宏大场面，也是完全可以看得，基本不会让你失望太过。</p>
-]]></content>
-      <categories>
-        <category>影评领域</category>
-      </categories>
-      <tags>
-        <tag>电影</tag>
       </tags>
   </entry>
   <entry>
@@ -1744,24 +1765,24 @@ characterization of aluminum resistance in Populus"><br>这里我先用比较麻
       </tags>
   </entry>
   <entry>
-    <title>科学与好奇心</title>
-    <url>//2018/08/29/%E7%A7%91%E5%AD%A6%E4%B8%8E%E5%A5%BD%E5%A5%87%E5%BF%83/</url>
+    <title>碟中谍6: 全面瓦解</title>
+    <url>//2018/09/01/%E7%A2%9F%E4%B8%AD%E8%B0%8D6-%E5%85%A8%E9%9D%A2%E7%93%A6%E8%A7%A3/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![curiosity.png](https://upload-images.jianshu.io/upload_images/3478485-167898110b8d9438.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![碟中谍6：全面瓦解](https://upload-images.jianshu.io/upload_images/3478485-ba43addff850f0fb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-<p>那一年，我还是博士二年级，刚开始。然而，时间极速流失，却无能为力。</p>
+<p>9月1日，星期六，公元2018年。</p>
 <span id="more"></span>
 
-<p>已经开始了我们学校夏季学期的课程，已经博士二年级了，上完了所有的课程，只有剩下这门专业选修课——现代生态学。在上了两节课之后，我感受最深的，或者是学习到的一点，就是为什么我们做科学研究，到底是为了什么而进行？老师给了一个答案——好奇心。我们花了纳税人的钱，为了是满足他们的好奇心。这样的回答，让我感到很新奇，很特殊的一种解答。我从来没有想到过，为了满足好奇心，从而使得这么多人在从事这一个行业。</p>
-<p>好奇心，curiosity，至关重要。想想，我们很多人每天在实验室工作，其实根本没有精神气，像这几天的我，真是一塌糊涂，没有任何精神，一切真的是那样的麻木，味同嚼蜡这个词可以形容大多数时间的我，我想不只是我一个，大多数人都是在这样的层次。有时候就会想，到底是什么促使我们在坚持，使得人类在这样的发展，有这样的发展史。或许就是好奇心吧，因为好奇，所以要去探究，要去探究，就要不断思考，从而不断推进人类认知的发展，不断向前走。</p>
-<p>人太容易变化，很多时候没有一个定数，没有那样的稳定的体系。但是，从大体上来说，纵观一生，或许可以说是比较稳定的，人的性格，人的品质。但从很小的尺度来看，人就是变幻无常的，我们极其容易受到外界坏境的影响，变得焦躁不安。非常的头疼，对我来说，这样的自己让我变得难以接受，无法那样的安静稳定，或者说是专注。分析原因，有一个可能就是好奇心的缺失，没有好奇心，一切都没法集中，没有办法使自己的熵减小，在自然状态下，自然界包括我们人类社会，甚至整个宇宙，都是一个熵增的过程，一定需要外在的能量输入，使其保持一定的熵值，相对变得稳定，而不是那样的混乱焦躁。好奇心，从另一个方面来说，或许就是一种能量，能够维持我们人类的稳定。</p>
-<p>我也发现，这几天的游离状态，好像就是因为没有了好奇心，不管是什么，实验还是其他的知识，都失去了好奇心，使得我的内心一下子熵增了不少，变得无序混沌，乱七八糟，无法收拾。直到某个时刻，我能够找到外界的力量——能够获得对外界某些事物的好奇心，那么我可以说，我又会复活，变得稳定，变成另一个状态。人，说到底也就两种状态，熵减和熵增的状态，而且这两个状态本身是一个动态的变化过程，不是一个固定的状态，始终在变化。而两者之间也在不停的互相转换，这就是客观规律。所以啊，很多时候就要想得开，人的情绪不断变化是非常正常的现象，不要去疑惑，为什么刚才好好地，一下子就变得不一样了呢？</p>
+<p>我从周五看到了周六，从8月看到了9月。因为电影近140分钟，我从10点开始，自然就看到了第二天凌晨。</p>
+<p>故事一开始，就发布一个任务，亨特自然就接受了，关于夺回核武器，防止使徒们（恐怖组织成员）的大规模投弹。接受之后，必然按着故事线走下去。一切都很精彩，法国巴黎和英国伦敦以及克什米尔地区的景观都是相当吸引眼球，很明显的好莱坞大片元素，场面非常宏大，视觉体验非常棒。此外，这么大年纪的阿汤哥，拍这部电影真是拼命。悬崖，直升机，跑酷等等都是很危险的动作，飞车大战，摩托车巴黎飙车，一切都非常刺激，整部影片几乎没有比较安静的场景。一切都快速的进行中，没有一刻停缓，因为要保护世界。</p>
+<p>好莱坞大片，必不可少的情节，那就是拯救地球，拯救全世界。都是机器宏大的目标，放眼全世界，就是救世主。有时候就会让你遐想，会有带入感，让你也感觉自己能拯救世界，也是一种精神上的吸引。情节依旧老套，又是防止大规模杀伤性武器被恐怖组织利用，不惜一切去组织，而且必然每次都是成功，能够拯救世界。</p>
+<p>可以说，碟中谍系列，是很好看的特工电影，看着很刺激，这次第六部的上映，也是让影迷们产生一种情怀，当然为了刺激宏大场面，也是完全可以看得，基本不会让你失望太过。</p>
 ]]></content>
       <categories>
-        <category>随记</category>
+        <category>影评领域</category>
       </categories>
       <tags>
-        <tag>科学</tag>
+        <tag>电影</tag>
       </tags>
   </entry>
   <entry>
@@ -1789,6 +1810,27 @@ characterization of aluminum resistance in Populus"><br>这里我先用比较麻
       </categories>
       <tags>
         <tag>科普</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>科学与好奇心</title>
+    <url>//2018/08/29/%E7%A7%91%E5%AD%A6%E4%B8%8E%E5%A5%BD%E5%A5%87%E5%BF%83/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![curiosity.png](https://upload-images.jianshu.io/upload_images/3478485-167898110b8d9438.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+<p>那一年，我还是博士二年级，刚开始。然而，时间极速流失，却无能为力。</p>
+<span id="more"></span>
+
+<p>已经开始了我们学校夏季学期的课程，已经博士二年级了，上完了所有的课程，只有剩下这门专业选修课——现代生态学。在上了两节课之后，我感受最深的，或者是学习到的一点，就是为什么我们做科学研究，到底是为了什么而进行？老师给了一个答案——好奇心。我们花了纳税人的钱，为了是满足他们的好奇心。这样的回答，让我感到很新奇，很特殊的一种解答。我从来没有想到过，为了满足好奇心，从而使得这么多人在从事这一个行业。</p>
+<p>好奇心，curiosity，至关重要。想想，我们很多人每天在实验室工作，其实根本没有精神气，像这几天的我，真是一塌糊涂，没有任何精神，一切真的是那样的麻木，味同嚼蜡这个词可以形容大多数时间的我，我想不只是我一个，大多数人都是在这样的层次。有时候就会想，到底是什么促使我们在坚持，使得人类在这样的发展，有这样的发展史。或许就是好奇心吧，因为好奇，所以要去探究，要去探究，就要不断思考，从而不断推进人类认知的发展，不断向前走。</p>
+<p>人太容易变化，很多时候没有一个定数，没有那样的稳定的体系。但是，从大体上来说，纵观一生，或许可以说是比较稳定的，人的性格，人的品质。但从很小的尺度来看，人就是变幻无常的，我们极其容易受到外界坏境的影响，变得焦躁不安。非常的头疼，对我来说，这样的自己让我变得难以接受，无法那样的安静稳定，或者说是专注。分析原因，有一个可能就是好奇心的缺失，没有好奇心，一切都没法集中，没有办法使自己的熵减小，在自然状态下，自然界包括我们人类社会，甚至整个宇宙，都是一个熵增的过程，一定需要外在的能量输入，使其保持一定的熵值，相对变得稳定，而不是那样的混乱焦躁。好奇心，从另一个方面来说，或许就是一种能量，能够维持我们人类的稳定。</p>
+<p>我也发现，这几天的游离状态，好像就是因为没有了好奇心，不管是什么，实验还是其他的知识，都失去了好奇心，使得我的内心一下子熵增了不少，变得无序混沌，乱七八糟，无法收拾。直到某个时刻，我能够找到外界的力量——能够获得对外界某些事物的好奇心，那么我可以说，我又会复活，变得稳定，变成另一个状态。人，说到底也就两种状态，熵减和熵增的状态，而且这两个状态本身是一个动态的变化过程，不是一个固定的状态，始终在变化。而两者之间也在不停的互相转换，这就是客观规律。所以啊，很多时候就要想得开，人的情绪不断变化是非常正常的现象，不要去疑惑，为什么刚才好好地，一下子就变得不一样了呢？</p>
+]]></content>
+      <categories>
+        <category>随记</category>
+      </categories>
+      <tags>
+        <tag>科学</tag>
       </tags>
   </entry>
   <entry>
@@ -1907,40 +1949,6 @@ characterization of aluminum resistance in Populus"><br>这里我先用比较麻
       </tags>
   </entry>
   <entry>
-    <title>美洲小宇宙</title>
-    <url>//2018/09/06/%E7%BE%8E%E6%B4%B2%E5%B0%8F%E5%AE%87%E5%AE%99/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![美洲小宇宙](http://upload-images.jianshu.io/upload_images/3478485-21cddf3db814e6d1.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-> **读游记的方法**：一般需要有一张世界地图在旁边，或者有电脑也可以（最好使用Google地图）（游记不可避免的会出现地名，于是总会和地理扯上关系），一遍阅读，一遍看地图，找到所在地，能够很好的在脑海中形成画面，读起来不会那么累。
-
-<span id="more"></span>
-
-
-
-<p>其实最需要地图的是<strong>读史书</strong>：这时你肯定会遇到超级多从未有地理概念的国家或者地名，除了要有现代的地图，另外还需要历史地理地图。历史往往是将过去和现在作比较，从而来吸取经验。地图历史总是在不断变迁，从古代到现代，各个国家的发展及地理行政边界都是在发生不断变化，所以也要明白过去的情况。像人类的起源这方面的，必然会牵扯到人类在世界各地的迁移，人类文明的出现摇篮，总是出现大量的地理名词。因此，你需要读懂地图，了解地势，这对于喜欢历史的人非常关键，人类历史上，很多关键性的时刻，总是和地理位置息息相关，<strong>一个民族的历史走向也离不开自然地理的催化。</strong></p>
-<p>总之，读游记和读历史文化相关的书记，最好要做到心中有地图或者手中有地图的状态，否则读起来会困难不少呢！</p>
-<h1 id="序"><a href="#序" class="headerlink" title="序"></a>序</h1><p>此次美洲之行主要去了墨西哥，哥斯达黎加，巴拿马，古巴和厄瓜多尔，去的国家不是特别多，故事还是很丰富，作者大概是跟着旅行团去的，遇到的都是特别正常的事情，描述的都是美好的事物，而遭遇到一些负面的事物。傅真在她的《最好金龟换酒》中提到，自己和他的老公是自由行，在墨西哥遇到了比较可怕的事情，还体会了极其贫困地区人们的生活状况，感觉更完整一些。但是，要论深度，确实傅真要差挺多，毕老师还是深厚的历史文化底蕴，涉及到的面比较广泛。反正都有可看之处。</p>
-<p>南美洲，受西班牙殖民，很多国家都将西班牙语作为官网语言，因此要是自己会西班牙语或者有个会西班牙语的朋友一起去美洲旅行，那么肯定会有趣不少。或许下次在打算自己去南美洲旅行的时候，可以提前3个月左右恶补一下西班牙语，少一些语言障碍的自由行会非常的有意思。<br>说起语言，我又忍不住想多说几句。我对语言的起源，很是有兴趣，然而并没有时间去深究。词源对于语言的学习有莫大的帮助，我深信这一点，我其实也特别想多学习几门语言，然而最终还是放弃，到现在为止，连英语都没有学好，真是惭愧。<strong>西班牙语</strong>，属于印欧语系罗曼语族西罗曼语支，约有4亿人将其作为母语，为世界第二大语言，仅次于汉语。</p>
-<p><img src="http://upload-images.jianshu.io/upload_images/3478485-eb8022421e4f3e33.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="中南美洲"></p>
-<h1 id="哥斯达黎加"><a href="#哥斯达黎加" class="headerlink" title="哥斯达黎加"></a>哥斯达黎加</h1><p>世界上第一个不设军队的国家，是永久的中立国，是一个将火山印在国旗上的国家，三座活火山成为很重要的景点。拥有世界上很少数的<strong>热带雾林</strong>。和热带雨林不一样，形成的条件苛刻：首先，必须出于热带；第二，有1300米以上的海拔高度，保持物种多样性；最后一点，距离海洋比较近，有强大的水汽供应，形成雾。</p>
-<h1 id="两个及其伟大的革命家"><a href="#两个及其伟大的革命家" class="headerlink" title="两个及其伟大的革命家"></a>两个及其伟大的革命家</h1><ol>
-<li>托洛茨基：具体介绍就不讲了（<a href="https://en.wikipedia.org/wiki/Leon_Trotsky">详细介绍</a>），最后的命运流亡海外，被暗杀。</li>
-<li>切格瓦拉：古巴革命的核心人物之一，任古巴国家银行行长。<a href="https://en.wikipedia.org/wiki/Che_Guevara">维基介绍</a>，看完毕老师对其一生的介绍，肃然起敬，伟大的人物就是有那样的魅力和人格。</li>
-</ol>
-<p><img src="http://upload-images.jianshu.io/upload_images/3478485-1e86acc106bb344b.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="切格瓦拉.jpg"></p>
-<h1 id="玛雅文明"><a href="#玛雅文明" class="headerlink" title="玛雅文明"></a>玛雅文明</h1><p>没有人不知道玛雅文明吧，2012年12月24日，就是因为玛雅人的世界末日预言而弄得人心惶惶，真的以为世界都要结束了，开启新的纪元。然而，现在已经到了2017年了，我此时此刻还在安静地看书打字。</p>
-<p><a href="https://en.wikipedia.org/wiki/Maya_civilization">玛雅文明</a>，是中美洲玛雅人创造的中美洲文明。曾经的辉煌，早已湮灭在热带雨林之中，金字塔毅然屹立在中美洲的大地之上，貌似在向世人们述说曾经的辉煌。</p>
-<p>墨西哥<strong>奇琴伊察</strong>玛雅城邦遗址，位于墨西哥东南部尤卡坦半岛，是玛雅文明最杰出的代表作，是玛雅古国最大、最繁华的城邦，始建于公元514年。主要的遗迹库库尔坎金字塔就位于此，库库尔坎金字塔由塔身和神庙两部分组成，塔高30米，塔底面为正方形，四方对称，底大上小，四边棱角分明。台基每边长55.5米，共9层，向上逐渐缩小至梯形平台，上有高6米的方形神庙。塔的四面各有91级台阶，四面共有364级，加上最上层的平台，正好是一年的天数。</p>
-]]></content>
-      <categories>
-        <category>读书笔记</category>
-      </categories>
-      <tags>
-        <tag>中南美洲</tag>
-        <tag>毕淑敏</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>算法与数据结构（3）：算法复杂度说明（上）</title>
     <url>//2018/10/10/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%EF%BC%883%EF%BC%89%EF%BC%9A%E7%AE%97%E6%B3%95%E5%A4%8D%E6%9D%82%E5%BA%A6%E8%AF%B4%E6%98%8E%EF%BC%88%E4%B8%8A%EF%BC%89/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -1974,6 +1982,40 @@ characterization of aluminum resistance in Populus"><br>这里我先用比较麻
       </categories>
       <tags>
         <tag>复杂度</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>美洲小宇宙</title>
+    <url>//2018/09/06/%E7%BE%8E%E6%B4%B2%E5%B0%8F%E5%AE%87%E5%AE%99/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![美洲小宇宙](http://upload-images.jianshu.io/upload_images/3478485-21cddf3db814e6d1.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+> **读游记的方法**：一般需要有一张世界地图在旁边，或者有电脑也可以（最好使用Google地图）（游记不可避免的会出现地名，于是总会和地理扯上关系），一遍阅读，一遍看地图，找到所在地，能够很好的在脑海中形成画面，读起来不会那么累。
+
+<span id="more"></span>
+
+
+
+<p>其实最需要地图的是<strong>读史书</strong>：这时你肯定会遇到超级多从未有地理概念的国家或者地名，除了要有现代的地图，另外还需要历史地理地图。历史往往是将过去和现在作比较，从而来吸取经验。地图历史总是在不断变迁，从古代到现代，各个国家的发展及地理行政边界都是在发生不断变化，所以也要明白过去的情况。像人类的起源这方面的，必然会牵扯到人类在世界各地的迁移，人类文明的出现摇篮，总是出现大量的地理名词。因此，你需要读懂地图，了解地势，这对于喜欢历史的人非常关键，人类历史上，很多关键性的时刻，总是和地理位置息息相关，<strong>一个民族的历史走向也离不开自然地理的催化。</strong></p>
+<p>总之，读游记和读历史文化相关的书记，最好要做到心中有地图或者手中有地图的状态，否则读起来会困难不少呢！</p>
+<h1 id="序"><a href="#序" class="headerlink" title="序"></a>序</h1><p>此次美洲之行主要去了墨西哥，哥斯达黎加，巴拿马，古巴和厄瓜多尔，去的国家不是特别多，故事还是很丰富，作者大概是跟着旅行团去的，遇到的都是特别正常的事情，描述的都是美好的事物，而遭遇到一些负面的事物。傅真在她的《最好金龟换酒》中提到，自己和他的老公是自由行，在墨西哥遇到了比较可怕的事情，还体会了极其贫困地区人们的生活状况，感觉更完整一些。但是，要论深度，确实傅真要差挺多，毕老师还是深厚的历史文化底蕴，涉及到的面比较广泛。反正都有可看之处。</p>
+<p>南美洲，受西班牙殖民，很多国家都将西班牙语作为官网语言，因此要是自己会西班牙语或者有个会西班牙语的朋友一起去美洲旅行，那么肯定会有趣不少。或许下次在打算自己去南美洲旅行的时候，可以提前3个月左右恶补一下西班牙语，少一些语言障碍的自由行会非常的有意思。<br>说起语言，我又忍不住想多说几句。我对语言的起源，很是有兴趣，然而并没有时间去深究。词源对于语言的学习有莫大的帮助，我深信这一点，我其实也特别想多学习几门语言，然而最终还是放弃，到现在为止，连英语都没有学好，真是惭愧。<strong>西班牙语</strong>，属于印欧语系罗曼语族西罗曼语支，约有4亿人将其作为母语，为世界第二大语言，仅次于汉语。</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/3478485-eb8022421e4f3e33.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="中南美洲"></p>
+<h1 id="哥斯达黎加"><a href="#哥斯达黎加" class="headerlink" title="哥斯达黎加"></a>哥斯达黎加</h1><p>世界上第一个不设军队的国家，是永久的中立国，是一个将火山印在国旗上的国家，三座活火山成为很重要的景点。拥有世界上很少数的<strong>热带雾林</strong>。和热带雨林不一样，形成的条件苛刻：首先，必须出于热带；第二，有1300米以上的海拔高度，保持物种多样性；最后一点，距离海洋比较近，有强大的水汽供应，形成雾。</p>
+<h1 id="两个及其伟大的革命家"><a href="#两个及其伟大的革命家" class="headerlink" title="两个及其伟大的革命家"></a>两个及其伟大的革命家</h1><ol>
+<li>托洛茨基：具体介绍就不讲了（<a href="https://en.wikipedia.org/wiki/Leon_Trotsky">详细介绍</a>），最后的命运流亡海外，被暗杀。</li>
+<li>切格瓦拉：古巴革命的核心人物之一，任古巴国家银行行长。<a href="https://en.wikipedia.org/wiki/Che_Guevara">维基介绍</a>，看完毕老师对其一生的介绍，肃然起敬，伟大的人物就是有那样的魅力和人格。</li>
+</ol>
+<p><img src="http://upload-images.jianshu.io/upload_images/3478485-1e86acc106bb344b.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="切格瓦拉.jpg"></p>
+<h1 id="玛雅文明"><a href="#玛雅文明" class="headerlink" title="玛雅文明"></a>玛雅文明</h1><p>没有人不知道玛雅文明吧，2012年12月24日，就是因为玛雅人的世界末日预言而弄得人心惶惶，真的以为世界都要结束了，开启新的纪元。然而，现在已经到了2017年了，我此时此刻还在安静地看书打字。</p>
+<p><a href="https://en.wikipedia.org/wiki/Maya_civilization">玛雅文明</a>，是中美洲玛雅人创造的中美洲文明。曾经的辉煌，早已湮灭在热带雨林之中，金字塔毅然屹立在中美洲的大地之上，貌似在向世人们述说曾经的辉煌。</p>
+<p>墨西哥<strong>奇琴伊察</strong>玛雅城邦遗址，位于墨西哥东南部尤卡坦半岛，是玛雅文明最杰出的代表作，是玛雅古国最大、最繁华的城邦，始建于公元514年。主要的遗迹库库尔坎金字塔就位于此，库库尔坎金字塔由塔身和神庙两部分组成，塔高30米，塔底面为正方形，四方对称，底大上小，四边棱角分明。台基每边长55.5米，共9层，向上逐渐缩小至梯形平台，上有高6米的方形神庙。塔的四面各有91级台阶，四面共有364级，加上最上层的平台，正好是一年的天数。</p>
+]]></content>
+      <categories>
+        <category>读书笔记</category>
+      </categories>
+      <tags>
+        <tag>中南美洲</tag>
+        <tag>毕淑敏</tag>
       </tags>
   </entry>
   <entry>
@@ -2262,48 +2304,6 @@ characterization of aluminum resistance in Populus"><br>这里我先用比较麻
       <tags>
         <tag>旅行</tag>
         <tag>西北</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>HTML5（5）——属性</title>
-    <url>//2018/10/06/HTML5%EF%BC%885%EF%BC%89%E2%80%94%E2%80%94%E5%B1%9E%E6%80%A7/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![咖啡豆](https://upload-images.jianshu.io/upload_images/3478485-9d881188bebeb5b7.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-> 其实，我一直有个愿望，我想每天早晨起来，喝着咖啡，写点东西。不过，到现在都还没有实现，我想我得先做到早起吧。上次，我们讲了是HTML5的元素，今天就讲元素属性。
-
-
-
-<span id="more"></span>
-
-<h2 id="HTML属性"><a href="#HTML属性" class="headerlink" title="HTML属性"></a><font color="green">HTML属性</font></h2><ul>
-<li>所有的HTML元素都是有属性的</li>
-<li>属性是添加元素的额外信息</li>
-<li>属性通常在起始标签添加</li>
-<li>属性的形式通常是键值配对：name=”value”</li>
-</ul>
-<h2 id="href属性"><a href="#href属性" class="headerlink" title="href属性"></a><font color="green">href属性</font></h2><p>在HTML中，用来指定链接的标签是<code>&lt;a&gt;</code>，链接地址通常用href属性来指定。例如<code>&lt;a href=&quot;https://www.w3schools.com&quot;&gt;This is a link&lt;/a&gt;</code></p>
-<h2 id="src属性"><a href="#src属性" class="headerlink" title="src属性"></a><font color="green">src属性</font></h2><p>在HTML中，网页中图片是用<code>&lt;img&gt;</code>标签使用图片，而图像源的文件名是用<code>src</code>属性来指定。例如<code>&lt;img src=&quot;img_girl.jpg&quot;&gt;</code></p>
-<h2 id="width和height属性"><a href="#width和height属性" class="headerlink" title="width和height属性"></a><font color="green">width和height属性</font></h2><p>图片的属性包括很多，其中大小属性就是用<code>width</code>和<code>height</code>属性来指定。如<code>&lt;img src=&quot;img_girl.jpg&quot; width=&quot;500&quot; height=&quot;600&quot;&gt;</code></p>
-<h2 id="alt属性"><a href="#alt属性" class="headerlink" title="alt属性"></a><font color="green">alt属性</font></h2><p><code>alt</code>属性在网页中的作用是给图片添加文本信息，当有些特殊情况下，我没有办法显示图片，那么只能一文字信息来替代，而<code>alt</code>就是起到这个作用。尤其是对于一些盲人，当在听网页内容的时候，就可以了解到图片的内容。当然，如果图片不存在，那么它也可以显示信息。如<code>&lt;img src=&quot;img_girl.jpg&quot; alt=&quot;Girl with a jacket&quot;&gt;</code></p>
-<h2 id="style属性"><a href="#style属性" class="headerlink" title="style属性"></a><font color="green">style属性</font></h2><p>在HTML中，<code>style</code>属性是用来修饰元素显示的风格，包括颜色，字体及大小。如<code>&lt;p style=&quot;color:red&quot;&gt;I am a paragraph&lt;/p&gt;</code>，就是将这个段落的字体设计成红色。</p>
-<h2 id="lang属性"><a href="#lang属性" class="headerlink" title="lang属性"></a><font color="green">lang属性</font></h2><p>在<code>&lt;html&gt;</code>标签中，可以使用<code>lang</code>属性来进行文档语言声明。<code>en</code>表示英语，<code>US</code>表示美式英语</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">&quot;en-US&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line">...</span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="title属性"><a href="#title属性" class="headerlink" title="title属性"></a><font color="green">title属性</font></h2><p>title一般就是用在段落标签中，这个属性会像提示一样，当你将鼠标放在段落上，就会显示title属性内容。</p>
-<figure class="highlight applescript"><table><tr><td class="code"><pre><span class="line">&lt;p title=<span class="string">&quot;I&#x27;m a tooltip&quot;</span>&gt;</span><br><span class="line">This <span class="keyword">is</span> a <span class="built_in">paragraph</span>.</span><br><span class="line">&lt;/p&gt;</span><br></pre></td></tr></table></figure>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-3e5aaa12e7f0b4cb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="title属性显示"></p>
-<h2 id="建议"><a href="#建议" class="headerlink" title="建议"></a><font color="green">建议</font></h2><ul>
-<li>属性最好使用小写字母</li>
-<li>属性的值用<code>&quot;&quot;</code>括起来</li>
-<li>如果需要多个双引号，那么就需要单引号的使用，两种情况：<figure class="highlight routeros"><table><tr><td class="code"><pre><span class="line">&lt;p <span class="attribute">title</span>=<span class="string">&#x27;John &quot;ShotGun&quot; Nelson&#x27;</span>&gt;</span><br><span class="line"></span><br><span class="line">&lt;p <span class="attribute">title</span>=<span class="string">&quot;John &#x27;ShotGun&#x27; Nelson&quot;</span>&gt;</span><br></pre></td></tr></table></figure></li>
-</ul>
-]]></content>
-      <categories>
-        <category>HTML5入门</category>
-      </categories>
-      <tags>
-        <tag>HTML5</tag>
-        <tag>属性</tag>
       </tags>
   </entry>
 </search>
