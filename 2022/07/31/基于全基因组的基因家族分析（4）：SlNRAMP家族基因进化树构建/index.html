@@ -1,37 +1,470 @@
-{% extends '_layout.swig' %}
-{% import '_macro/post.swig' as post_template %}
-{% import '_macro/sidebar.swig' as sidebar_template %}
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.0.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
 
 
-{% block title %}{{ page.title }} | {{ config.title }}{% endblock %}
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
 
-{% block page_class %}page-post-detail{% endblock %}
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta property="og:type" content="article">
+<meta property="og:title" content="基于全基因组的基因家族分析（4）：SlNRAMP家族基因进化树构建">
+<meta property="og:url" content="http://yoursite.com/2022/07/31/%E5%9F%BA%E4%BA%8E%E5%85%A8%E5%9F%BA%E5%9B%A0%E7%BB%84%E7%9A%84%E5%9F%BA%E5%9B%A0%E5%AE%B6%E6%97%8F%E5%88%86%E6%9E%90%EF%BC%884%EF%BC%89%EF%BC%9ASlNRAMP%E5%AE%B6%E6%97%8F%E5%9F%BA%E5%9B%A0%E8%BF%9B%E5%8C%96%E6%A0%91%E6%9E%84%E5%BB%BA/index.html">
+<meta property="og:site_name" content="Lxmic Blog">
+<meta property="og:locale">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-49635e61c7543d10.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-ff1cf964e96d4376.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-ba53538a78b96a2f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-4cad4bff4349c657.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-779429a1b1463077.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-9726eff29f00de4b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-a0e6ef3780614a54.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-305e609a0fb72bf3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="article:published_time" content="2022-07-31T14:04:20.831Z">
+<meta property="article:modified_time" content="2022-07-31T14:04:20.831Z">
+<meta property="article:author" content="Jin JF">
+<meta property="article:tag" content="gene">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://upload-images.jianshu.io/upload_images/3478485-49635e61c7543d10.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+
+<link rel="canonical" href="http://yoursite.com/2022/07/31/%E5%9F%BA%E4%BA%8E%E5%85%A8%E5%9F%BA%E5%9B%A0%E7%BB%84%E7%9A%84%E5%9F%BA%E5%9B%A0%E5%AE%B6%E6%97%8F%E5%88%86%E6%9E%90%EF%BC%884%EF%BC%89%EF%BC%9ASlNRAMP%E5%AE%B6%E6%97%8F%E5%9F%BA%E5%9B%A0%E8%BF%9B%E5%8C%96%E6%A0%91%E6%9E%84%E5%BB%BA/">
 
 
-{% block content %}
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-Hans'
+  };
+</script>
 
-  <div id="posts" class="posts-expand">
-    {{ post_template.render(page) }}
+  <title>基于全基因组的基因家族分析（4）：SlNRAMP家族基因进化树构建 | Lxmic Blog</title>
+  
 
-    <div class="post-spread">
-      {% if theme.jiathis %}
-        {% include '_partials/share/jiathis.swig' %}
-      {% elseif theme.baidushare %}
-        {% include '_partials/share/baidushare.swig' %}
-      {% elseif theme.add_this_id %}
-        {% include '_partials/share/add-this.swig' %}
-      {% elseif theme.duoshuo_shortname and theme.duoshuo_share %}
-        {% include '_partials/share/duoshuo_share.swig' %}
-      {% endif %}
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
     </div>
   </div>
 
-{% endblock %}
+  <div class="site-meta">
 
-{% block sidebar %}
-  {{ sidebar_template.render(true) }}
-{% endblock %}
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Lxmic Blog</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">Everything from life</p>
+  </div>
 
-{% block script_extra %}
-  {% include '_scripts/pages/post-details.swig' %}
-{% endblock %}
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>Archives</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2022/07/31/%E5%9F%BA%E4%BA%8E%E5%85%A8%E5%9F%BA%E5%9B%A0%E7%BB%84%E7%9A%84%E5%9F%BA%E5%9B%A0%E5%AE%B6%E6%97%8F%E5%88%86%E6%9E%90%EF%BC%884%EF%BC%89%EF%BC%9ASlNRAMP%E5%AE%B6%E6%97%8F%E5%9F%BA%E5%9B%A0%E8%BF%9B%E5%8C%96%E6%A0%91%E6%9E%84%E5%BB%BA/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Jin JF">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Lxmic Blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          基于全基因组的基因家族分析（4）：SlNRAMP家族基因进化树构建
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2022-07-31 22:04:20" itemprop="dateCreated datePublished" datetime="2022-07-31T22:04:20+08:00">2022-07-31</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%A7%91%E7%A0%94%E4%B9%8B%E8%B7%AF/" itemprop="url" rel="index"><span itemprop="name">科研之路</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <meta name="referrer" content="no-referrer" />
+
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-49635e61c7543d10.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="cherry tomato.jpg"></p>
+<span id="more"></span>
+
+<blockquote>
+<p>继续之前还没有完成的内容。因为最近在学习Y叔的R包–ggtree，所以就顺便拿这个内容来进行展示，作为一个例子来记录。nwk树文件和R代码文件我已经放在github：<a target="_blank" rel="noopener" href="https://github.com/Lxmic/ggtree_note">https://github.com/Lxmic/ggtree_note</a></p>
+</blockquote>
+<h2 id="1-ggtree安装"><a href="#1-ggtree安装" class="headerlink" title="1. ggtree安装"></a>1. ggtree安装</h2><p>关于这个包，y叔已经写了相当详细的说明，有一个完整的电子书《<a target="_blank" rel="noopener" href="https://yulab-smu.github.io/treedata-book/chapter5.html#visualizing-and-annotating-tree-using-grammar-of-graphics">Data Integration, Manipulation and Visualization of Phylogenetic Trees</a>》。这个包是在<a target="_blank" rel="noopener" href="http://bioconductor.org/packages/release/bioc/html/ggtree.html">Bioconductor</a>上面，有非常详细的介绍，可以去查找相关的内容。</p>
+<figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#安装相关的包，包括ggtree以及ggplot2</span></span><br><span class="line"><span class="comment">#对于R版本在3.6及以上的，需要使用BiocManager包来安装bioconductor上的包</span></span><br><span class="line"><span class="keyword">if</span> (!requireNamespace(<span class="string">&quot;BiocManager&quot;</span>, quietly = <span class="keyword">TRUE</span>))</span><br><span class="line">    <span class="keyword">install</span>.packages(<span class="string">&quot;BiocManager&quot;</span>)</span><br><span class="line"></span><br><span class="line">BiocManager::<span class="keyword">install</span>(<span class="string">&quot;ggtree&quot;</span>)</span><br><span class="line"><span class="comment">#ggplot2安装</span></span><br><span class="line"><span class="keyword">install</span>.packages(<span class="string">&quot;ggplot2&quot;</span>)</span><br><span class="line"><span class="comment">#载入两个包</span></span><br><span class="line">library(ggplot2)</span><br><span class="line">library(ggtree)</span><br></pre></td></tr></table></figure>
+<h2 id="2-读取及可视化树结构"><a href="#2-读取及可视化树结构" class="headerlink" title="2. 读取及可视化树结构"></a>2. 读取及可视化树结构</h2><p>关于用什么算法以及什么软件来构建你自己需要的树，完全看个人的需要，y叔在电子文档《<a target="_blank" rel="noopener" href="https://yulab-smu.github.io/treedata-book/chapter5.html#visualizing-and-annotating-tree-using-grammar-of-graphics">Data Integration, Manipulation and Visualization of Phylogenetic Trees</a>》中有很详细的介绍各种树以及各种算法，有兴趣了解一下（反正我是看不太懂）。我就用最简单，最常用的方法来获得进化树——MEGA软件，可以输出newick格式的树，非常常用的进化树文件（我们需要保存其bootstrap值以及branch.length值）。</p>
+<figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 读取newick树，在当前工作目录中的nramp.nwk文件，并赋值给tree</span></span><br><span class="line"><span class="attribute">tree</span> &lt;- read.newick(<span class="string">&quot;nramp.nwk&quot;</span>)</span><br><span class="line"><span class="comment"># 可视化树结构，这里用环形树来展示</span></span><br><span class="line"><span class="attribute">p1</span> &lt;- ggtree(tree, layout = <span class="string">&quot;circular&quot;</span>, branch.length = <span class="string">&quot;none&quot;</span>)</span><br><span class="line"><span class="comment"># 将进化树打印出来显示</span></span><br><span class="line"><span class="attribute">print</span>(p<span class="number">1</span>)</span><br><span class="line"><span class="comment"># 如果要将branch.length展示，那么只需要删除branch.length = &quot;none&quot;</span></span><br><span class="line"><span class="attribute">p2</span> &lt;- ggtree(tree, layout=<span class="string">&quot;circular&quot;</span>)</span><br><span class="line"><span class="comment"># 可以看到，目前的进化树还没有tiplab，因此我们需要添加lab，跟ggplot2一样，再添加一个图层，就可以实现。</span></span><br><span class="line"><span class="attribute">p3</span> &lt;- p<span class="number">1</span> + geom_tiplab<span class="number">2</span>(color=<span class="string">&quot;seagreen&quot;</span>, size = <span class="number">3</span>, hjust = -.<span class="number">2</span>)+xlim(NA, <span class="number">22</span>)</span><br><span class="line"><span class="attribute">print</span>(p<span class="number">3</span>)</span><br><span class="line"><span class="comment"># 此外，我们通常需要给树的某个node来添加背景色高亮显示，也只需要通过一个函数添加图层。一般首先我们要了解节点ID，要知道你需要高亮显示的节点。</span></span><br><span class="line"><span class="comment">#显示进化树的节点ID</span></span><br><span class="line"><span class="attribute">p4</span> &lt;- p<span class="number">3</span> + geom_text<span class="number">2</span>(aes(label=node))</span><br><span class="line"><span class="attribute">print</span>(p<span class="number">4</span>)</span><br><span class="line"><span class="comment">#为一部分树添加背景颜色，着重显示</span></span><br><span class="line"><span class="attribute">p5</span> &lt;- p<span class="number">3</span> + geom_hilight(node = <span class="number">33</span>, fill = <span class="string">&quot;red&quot;</span>, alpha = <span class="number">0</span>.<span class="number">6</span>)</span><br><span class="line"><span class="attribute">print</span>(p<span class="number">5</span>)</span><br><span class="line"><span class="comment">#打印所有图片，这里还需要安装一个cowplot包，用来排版的</span></span><br><span class="line"><span class="attribute">install</span>.packages(<span class="string">&quot;cowplot&quot;</span>)</span><br><span class="line"><span class="attribute">plot_grid</span>(p<span class="number">1</span>, p<span class="number">2</span>, p<span class="number">3</span>, p<span class="number">4</span> ,p<span class="number">5</span>, ncol=<span class="number">3</span>, labels=c(<span class="string">&quot;A&quot;</span>,<span class="string">&quot;B&quot;</span>, <span class="string">&quot;C&quot;</span>, <span class="string">&quot;D&quot;</span>, <span class="string">&quot;E&quot;</span>))</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-ff1cf964e96d4376.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="p1,p2,p3,p4 and p5"></p>
+<h2 id="3-进化树修饰"><a href="#3-进化树修饰" class="headerlink" title="3. 进化树修饰"></a>3. 进化树修饰</h2><p>对于iTOLs这个进化树修饰软件，虽然功能也强大，但是我本身用起来还是觉得很费事，而且各种配置文件很多，感觉有点头大，真是伤不起，重复性不高。由于这个原因，我还是决定学习R包-ggtree，今天就进一步来修饰一下进化树，使其变得更加美观一些。用代码来修饰进化树，重复性可想而知，非常节省时间。</p>
+<p>-对一些参数进行说明<br>函数<code>geom_tiplab2()</code>是用来添加taxa的label的，也就是你的基因名。还有一个基本相同的用来给矩形树添加label的<code>geom_tiplab()</code>。这两个函数区别在前者可以根据树来自动调整角度，来达到比较好的可读性。我这里画的圈图，就适合用前者。</p>
+<figure class="highlight nix"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 这个p6跟上面的图C是一样的，就是我改变来它的xlim的范围，为了后面添加strip，需要控制xlim。</span></span><br><span class="line"><span class="comment"># size是字体大小，color是字体颜色，hjust是距离节点的距离。</span></span><br><span class="line">p6 &lt;- ggtree(tree, <span class="attr">layout</span> = <span class="string">&quot;circular&quot;</span>, branch.<span class="attr">length</span> = <span class="string">&quot;none&quot;</span>)</span><br><span class="line">+geom_tiplab2(<span class="attr">color</span> = <span class="string">&quot;seagreen&quot;</span>,  <span class="attr">size=3,</span> <span class="attr">hjust=-.05)</span></span><br><span class="line">+ xlim(NA, <span class="number">20</span>)</span><br><span class="line">print(p6)</span><br><span class="line">p61 &lt;- ggtree(tree, <span class="attr">layout</span> = <span class="string">&quot;circular&quot;</span>, branch.<span class="attr">length</span> = <span class="string">&quot;none&quot;</span>, )+geom_tiplab2(<span class="attr">color</span> = <span class="string">&quot;red&quot;</span>,  <span class="attr">size=2,</span> <span class="attr">hjust=-.1)+</span> xlim(NA, <span class="number">20</span>)</span><br><span class="line">print(p61)</span><br><span class="line">plot_grid(p6, p61, <span class="attr">ncol</span> = <span class="number">2</span>, <span class="attr">labels</span> = c(<span class="string">&quot;F&quot;</span>,<span class="string">&quot;G&quot;</span>))</span><br></pre></td></tr></table></figure>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-ba53538a78b96a2f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="改变颜色和字体大小"></p>
+<ul>
+<li>进化树基本都会聚类成几个分支，对于基因家族，就可以相应的进行亚家族分类，下面就用文献中常见的strip来将进化树进一步分类。在<code>ggtree</code>中对应的函数是<code>geom_strip()</code>，下面我们来看具体的代码以及参数。</li>
+<li><code>geom_strip()</code>函数可以在进化树的外围来添加具有色彩的条带。根据图d中的节点，我们来进行相应的添加。其中的前两个数字就是对应的节点(<code>taxa1</code>和<code>taxa2</code>)，从起始到结束。<code>barsize</code>就是色块的宽度， 以及<code>color</code>就是色块颜色。</li>
+<li><code>offset</code>就是距离节点的位置，这个参数就需要和之前的<code>xlim</code>进行配合，才能够将色块放到合适的位置，不会和  <code>tiplab</code>互相覆盖。这里的<code>label</code>就是色块想块的名字，也就分类名例如Clade I这种。</li>
+<li><code>offset.text</code>这个参数是来调整label的位置的，它的起始位置就是strip开始的，而不是taxa开始的。<code>extend</code>是用来调整色块之间的间隔大小，默认是0；如果是0.5的话，那么正好可以将色块拼接成一个完整的圈。</li>
+<li><code>angle</code>是用来调整<code>label</code>的角度, 默认是0，顺时针就是正的数值。<code>align</code>在这里似乎没有什么作用。</li>
+<li><code>hjust= &quot;center&quot;</code>的作用就是将label放置在strip的中间位置。这么以来，基本所有的问题就解决来，可以直接出比较好看的圈图。<figure class="highlight reasonml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">p7 &lt;- p6 </span><br><span class="line">+ geom<span class="constructor">_strip(14, 17, <span class="params">barsize</span> = 3, <span class="params">color</span> = <span class="string">&quot;steelblue&quot;</span>, <span class="params">offset</span> = 7, <span class="params">label</span> = <span class="string">&quot;Clade I&quot;</span>, <span class="params">offset</span>.<span class="params">text</span> = 1, <span class="params">angle</span> = 60, <span class="params">fontsize</span> = 4, <span class="params">hjust</span> = <span class="string">&quot;center&quot;</span>, <span class="params">extend</span> = 0.3)</span> </span><br><span class="line">+ geom<span class="constructor">_strip(11, 13, <span class="params">color</span> = <span class="string">&quot;red&quot;</span>, <span class="params">barsize</span> = 3, <span class="params">offset</span> = 7, <span class="params">label</span> = <span class="string">&quot;Clade II&quot;</span>, <span class="params">offset</span>.<span class="params">text</span> = 1, <span class="params">angle</span> = -15, <span class="params">fontsize</span> = 4, <span class="params">hjust</span> = <span class="string">&quot;center&quot;</span>, <span class="params">extend</span> = 0.3)</span> </span><br><span class="line">+ geom<span class="constructor">_strip(6, 9, <span class="params">color</span> = <span class="string">&quot;orange&quot;</span>, <span class="params">barsize</span> = 3, <span class="params">offset</span> = 7, <span class="params">label</span> = <span class="string">&quot;Clade III&quot;</span>, <span class="params">offset</span>.<span class="params">text</span> = 1, <span class="params">angle</span> = 10, <span class="params">fontsize</span> = 4, <span class="params">hjust</span> = <span class="string">&quot;center&quot;</span>, <span class="params">extend</span> = 0.3)</span></span><br><span class="line">print(p7)</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>这里我有一个问题，就是说我还不知道对于里面只有一个基因的node，我该怎么给它添加strip，因为<code>geom_strip()</code>这个函数是需要两个taxa来添加的，只有一个的条件下，我没有办法。而且我尝试过将<code>taxa1 = taxa2</code>，还是没有起作用。我已经在ggtree group中提出来问题，希望能得到解答</p>
+</blockquote>
+</li>
+</ul>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-4cad4bff4349c657.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="圈图最终的结果"></p>
+<h2 id="4-分组给分支上色"><a href="#4-分组给分支上色" class="headerlink" title="4. 分组给分支上色"></a>4. 分组给分支上色</h2><p>在别人的文章中，也经常会看到将tiplabel分为不同的颜色来进行上色，以更好的区分不容的clade。例如这篇jxb关于杨树mate家族基因分析的文章(doi:10.1093/jxb/erx370)，进化树的展示:<br><img src="https://upload-images.jianshu.io/upload_images/3478485-779429a1b1463077.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Genome-wide analysis of MATE transporters and molecular
+characterization of aluminum resistance in Populus"><br>这里我先用比较麻烦的办法来实现它。我们只需要自己构建一个颜色文件，然后强行插入到树文件中并进行可视化就可以完成。</p>
+<ul>
+<li><p>构建一个颜色文件， 只要包含两个参数就行——node和color，和之前的进化树的node 号一一对应起来。这样的格式就可以了。</p>
+<table>
+<thead>
+<tr>
+<th>node</th>
+<th>color</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>orange</td>
+</tr>
+<tr>
+<td>2</td>
+<td>orange</td>
+</tr>
+<tr>
+<td>3</td>
+<td>orange</td>
+</tr>
+</tbody></table>
+</li>
+<li><p>读取这个颜色文件，我习惯用<code>read.csv()</code>来载入外部数据。</p>
+<figure class="highlight haskell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#让进化树着色，变成自己需要的颜色。先根据节点，构建自己的颜色数据框</span></span><br><span class="line"><span class="title">d</span> &lt;- read.csv(<span class="string">&quot;nramp_color.csv&quot;</span>, header = <span class="type">TRUE</span>)</span><br><span class="line"><span class="title">d</span> &lt;- <span class="class"><span class="keyword">data</span>.frame(<span class="title">d</span>)</span></span><br><span class="line"><span class="meta">#使用`%&lt;+%`符号强插入颜色数据到树文件中</span></span><br><span class="line"><span class="title">p8</span> &lt;- p7%&lt;+%d + aes(color = <span class="type">I</span>(color))</span><br></pre></td></tr></table></figure>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-9726eff29f00de4b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="ok, 大功告成"></p>
+</li>
+<li><p>如果tiplab字体颜色要改变成各种分支的颜色，那么在之前的p6代码中，去掉color就可以了或者全部改成黑色。</p>
+<figure class="highlight nix"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#变成黑色字体</span></span><br><span class="line">p6 &lt;- ggtree(tree, <span class="attr">layout</span> = <span class="string">&quot;circular&quot;</span>, branch.<span class="attr">length</span> = <span class="string">&quot;none&quot;</span>)+geom_tiplab2(<span class="attr">color</span> = <span class="string">&quot;black&quot;</span>,  <span class="attr">size=3,</span> <span class="attr">hjust=-.05)+</span> xlim(NA, <span class="number">20</span>)</span><br><span class="line"><span class="comment">#变成相应的彩色</span></span><br><span class="line">p6 &lt;- ggtree(tree, <span class="attr">layout</span> = <span class="string">&quot;circular&quot;</span>, branch.<span class="attr">length</span> = <span class="string">&quot;none&quot;</span>)+geom_tiplab2(<span class="attr">size=3,</span> <span class="attr">hjust=-.05)+</span> xlim(NA, <span class="number">20</span>)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-a0e6ef3780614a54.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="黑色字体"></p>
+</li>
+</ul>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-305e609a0fb72bf3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="彩色字体"></p>
+<h2 id="5-总结"><a href="#5-总结" class="headerlink" title="5. 总结"></a>5. 总结</h2><p>虽然Y叔确实写了非常详细的说明书，但是对于新手来说，还是会有一定的入门难度。尤其是有些参数并没有仔细说明用途，点到为止。所以我自己也摸索了好久，还不断在ggtree group这个Y叔创建的问题论坛问问题，来一步步解决。Y叔还是解答的很及时的，经常会马上回答你。希望能够帮助需要的人，同时我也能够不断地继续摸索前行，永无止境。</p>
+<blockquote>
+<p>参考资料：<br>(1) <a target="_blank" rel="noopener" href="https://yulab-smu.github.io/treedata-book/chapter4.html#introduction-1">https://yulab-smu.github.io/treedata-book/chapter4.html#introduction-1</a><br>(2) <a target="_blank" rel="noopener" href="https://bioconductor.org/packages/release/bioc/manuals/ggtree/man/ggtree.pdf">https://bioconductor.org/packages/release/bioc/manuals/ggtree/man/ggtree.pdf</a><br>(3) <a target="_blank" rel="noopener" href="https://github.com/GuangchuangYu/ggtree/issues/52">https://github.com/GuangchuangYu/ggtree/issues/52</a></p>
+</blockquote>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/gene/" rel="tag"># gene</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2022/01/07/%E4%BD%BF%E7%94%A8%E6%B0%AE%E6%B0%94%E7%93%B6/" rel="prev" title="使用氮气瓶">
+      <i class="fa fa-chevron-left"></i> 使用氮气瓶
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-ggtree%E5%AE%89%E8%A3%85"><span class="nav-number">1.</span> <span class="nav-text">1. ggtree安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E8%AF%BB%E5%8F%96%E5%8F%8A%E5%8F%AF%E8%A7%86%E5%8C%96%E6%A0%91%E7%BB%93%E6%9E%84"><span class="nav-number">2.</span> <span class="nav-text">2. 读取及可视化树结构</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-%E8%BF%9B%E5%8C%96%E6%A0%91%E4%BF%AE%E9%A5%B0"><span class="nav-number">3.</span> <span class="nav-text">3. 进化树修饰</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-%E5%88%86%E7%BB%84%E7%BB%99%E5%88%86%E6%94%AF%E4%B8%8A%E8%89%B2"><span class="nav-number">4.</span> <span class="nav-text">4. 分组给分支上色</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-%E6%80%BB%E7%BB%93"><span class="nav-number">5.</span> <span class="nav-text">5. 总结</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Jin JF</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">55</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+        <span class="site-state-item-count">11</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+        <span class="site-state-item-count">52</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Jin JF</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a>
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>

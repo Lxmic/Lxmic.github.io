@@ -1,37 +1,730 @@
-{% extends '_layout.swig' %}
-{% import '_macro/post.swig' as post_template %}
-{% import '_macro/sidebar.swig' as sidebar_template %}
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.0.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
 
 
-{% block title %}{{ page.title }} | {{ config.title }}{% endblock %}
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
 
-{% block page_class %}page-post-detail{% endblock %}
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="![travel world.jpeg](https:&#x2F;&#x2F;upload-images.jianshu.io&#x2F;upload_images&#x2F;3478485-f3fc300e6094dcfd.jpeg?imageMogr2&#x2F;auto-orient&#x2F;strip%7CimageView2&#x2F;2&#x2F;w&#x2F;1240)   想了很久需要做的事情，就是想把自己在路上的一切记录下来，写成游记的类型。这一篇，就是开始，一切">
+<meta property="og:type" content="article">
+<meta property="og:title" content="海南环岛游记">
+<meta property="og:url" content="http://yoursite.com/2018/08/31/%E6%B5%B7%E5%8D%97%E7%8E%AF%E5%B2%9B%E6%B8%B8%E8%AE%B0/index.html">
+<meta property="og:site_name" content="Lxmic Blog">
+<meta property="og:description" content="![travel world.jpeg](https:&#x2F;&#x2F;upload-images.jianshu.io&#x2F;upload_images&#x2F;3478485-f3fc300e6094dcfd.jpeg?imageMogr2&#x2F;auto-orient&#x2F;strip%7CimageView2&#x2F;2&#x2F;w&#x2F;1240)   想了很久需要做的事情，就是想把自己在路上的一切记录下来，写成游记的类型。这一篇，就是开始，一切">
+<meta property="og:locale">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-933c2cab5ec194c4.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-f4b5f22806972fa7.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-aa6fafd428986372.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-3065a4024303b00c.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-0b0bb162366082c9.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-14d63a7417486b3e.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-22dbb99e4294374c.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-2ceff751da47f0b9.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-f456b4e0d13985b1.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-4a8b0458c4585f21.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-0e5661224ba4a00a.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-718b7a2e2b439ba1.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-fbf791081651dd5a.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-2bfca9fb7bf304a5.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-ccd92a5660f86324.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-aae2f13afdbebd1f.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-1d8f161551485d7e.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-f5eb088d5e8b99cc.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-e368bc288e81fe48.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-471c10b8030c1116.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-3027a42cc61d29fc.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-fa64a5e71e9c9254.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-8836901ec20c9048.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-3394cdedac800643.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-68c2158fec900dca.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-f583064a51b03e16.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-6e7b4a58dd456ea0.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-39b66b03ad3fc360.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-e113ecd98d184831.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-f137df22d9bfc06c.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-a03110c7c6c31044.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-fdc2ecf964458ee5.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-b40fb40307bea61e.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-22e7ea491c5b13c9.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-25169b31ae53bf74.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-b8e88f2f87805c15.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-e6995c71ddd8ab45.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-8240317f8797c9e1.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-deace0eceba740c8.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-fef76741ee41323d.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-19e2b5aff5a0be15.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-0cb45b2ac11476b2.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-b21ed4d7efa4920e.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-bade99c3fd51e08f.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-4d01361af2ff5646.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-0a203c1f64dea459.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-10fb4d55d0c38e23.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-9d1af7c41eb9267d.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-b81bc345e25911b2.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-1f7b72cb456fea18.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-8921d1a97293de54.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-6abdc547c1026738.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-9fae154c549e16af.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-c6d09e5e4501c39a.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-22d1d765c28d1e33.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-f4dea965ffc09528.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-db271afb3e61bd6c.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-9b447b7bf1777bee.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-b447f0f32f949683.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-3eeebb35eac1b18a.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-f921ff58ce8e592a.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-00e2f9a3dc256252.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-ce8e2965ef4ce6b0.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-d68ca0d3fb24876b.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-6bcd3d8796d39db9.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-6ef154927011b53b.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-faff18049a3f0cee.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-be8805d83dcdd47e.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-59564aebf88aa2eb.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-0dc786d3ae2baeb7.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-de5b5c9d63667dc1.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-367dd2b3b8e05a43.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-8312389b23a365a5.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-088f5d85651b06b0.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-a18c909f5b4fab71.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-a96a7955d8a02513.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-fc42027411d20c87.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-e42b880cf21615a7.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-2714ac24c53d7dcf.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-5238f72de458bf24.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-637d2a29154c22e1.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-5482e66344923334.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-e13c82be26119cf3.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-1bd16c1ff33a6937.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-22d8d6c95ba45d8a.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-d0b6025bcbdf08bb.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-508f1ef834bea998.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-bb9b648eadd2a638.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-4e33a88e8d04e261.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-279ffa436b51ab31.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-2360bfe2cfb66182.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-9fc427143d41905e.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-390e35b8d105577e.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-555245b7d9834ab9.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-5b7d8b7c4bd000f3.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-be501fe6fbf48e19.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-2a1e5cd48670a003.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-0fd86412141b7c25.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-478ae713f9067066.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-203194ff2a3aae8c.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-64cc303a3e007e39.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-a9ed3ef54036111c.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-65f28d96537aeb97.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-42e61d295abbaff6.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-7db32a7eba12543b.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-bfcebc1ff48cb058.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-2ed65edddb208453.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-a85573093f06c8eb.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-f2faade41df15cfa.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-7236a21ff4b06aba.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-3e92bfeb7823e53f.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-842f12d291486ede.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-a6400ec38c096917.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-d0d55a64fcb997fb.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-66483d3754ecff0a.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-0a781c852473f42a.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-23704e5aaf4f4ba1.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-6bf7f80898ce0731.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-d5bd927b62e21248.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-2cdee52a0275c6d5.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-b6923082e78ef81c.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-931b89602b7caf55.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-60cab54e4839dd35.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-fecce8670c55c645.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-b21bf081cfe265f8.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-2447358f33a13407.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-c40211259b07123d.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-4b67adfcf9b2404f.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-fc5d9f73f676049c.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-842dc0c0384e9f89.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-350530219afae84f.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-e46647d350609750.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-da1ab82f25a38291.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-4952e4170766824a.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-12b0e1a460e2d89e.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-894e648c3b315ee7.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-89c6bd66b2dab6b0.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-7366dc2f0d2bf1c5.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-7113178e9245b97f.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-6928ed830be7c9c4.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-8fac3db2ccc66dd6.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-d7153206d540b70c.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-5ac2c09921a7ad17.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-6aa4bd40cca7d96d.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-7e6f8eeed8b67c5a.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-4ec9fafc20f16350.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-60b9d3721b4a33fa.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-7d07e9fbec16b5d2.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-803616a01bf0a5a6.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-bd08a326df92949b.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-1e07a5d835613dfb.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-fbf410ea3dea3561.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-0e27cb5eab0bcbde.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-16c7aebe438c08a3.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-615c3dd8e93970f8.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-9b49d92c66de6c37.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-b8555fdeffc3a7c1.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-bccb6224620a61c0.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-cf059d808c31c935.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-68cc6e0e60a4ab44.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-04345119ff0a4818.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-0ff054a2d2794aee.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-0c1d9005ac609367.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3478485-eb4f1d0a3a2646e4.jpg">
+<meta property="article:published_time" content="2018-08-30T23:47:51.000Z">
+<meta property="article:modified_time" content="2022-07-31T14:04:20.833Z">
+<meta property="article:author" content="Jin JF">
+<meta property="article:tag" content="旅行">
+<meta property="article:tag" content="海南">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://upload-images.jianshu.io/upload_images/3478485-933c2cab5ec194c4.jpg">
+
+<link rel="canonical" href="http://yoursite.com/2018/08/31/%E6%B5%B7%E5%8D%97%E7%8E%AF%E5%B2%9B%E6%B8%B8%E8%AE%B0/">
 
 
-{% block content %}
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-Hans'
+  };
+</script>
 
-  <div id="posts" class="posts-expand">
-    {{ post_template.render(page) }}
+  <title>海南环岛游记 | Lxmic Blog</title>
+  
 
-    <div class="post-spread">
-      {% if theme.jiathis %}
-        {% include '_partials/share/jiathis.swig' %}
-      {% elseif theme.baidushare %}
-        {% include '_partials/share/baidushare.swig' %}
-      {% elseif theme.add_this_id %}
-        {% include '_partials/share/add-this.swig' %}
-      {% elseif theme.duoshuo_shortname and theme.duoshuo_share %}
-        {% include '_partials/share/duoshuo_share.swig' %}
-      {% endif %}
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
     </div>
   </div>
 
-{% endblock %}
+  <div class="site-meta">
 
-{% block sidebar %}
-  {{ sidebar_template.render(true) }}
-{% endblock %}
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Lxmic Blog</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">Everything from life</p>
+  </div>
 
-{% block script_extra %}
-  {% include '_scripts/pages/post-details.swig' %}
-{% endblock %}
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>Archives</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/31/%E6%B5%B7%E5%8D%97%E7%8E%AF%E5%B2%9B%E6%B8%B8%E8%AE%B0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Jin JF">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Lxmic Blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          海南环岛游记
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2018-08-31 07:47:51" itemprop="dateCreated datePublished" datetime="2018-08-31T07:47:51+08:00">2018-08-31</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2022-07-31 22:04:20" itemprop="dateModified" datetime="2022-07-31T22:04:20+08:00">2022-07-31</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%9C%A8%E8%B7%AF%E4%B8%8A%E7%9A%84%E6%97%A5%E5%AD%90/" itemprop="url" rel="index"><span itemprop="name">在路上的日子</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <meta name="referrer" content="no-referrer" />
+![travel world.jpeg](https://upload-images.jianshu.io/upload_images/3478485-f3fc300e6094dcfd.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+<blockquote>
+<p>想了很久需要做的事情，就是想把自己在路上的一切记录下来，写成游记的类型。这一篇，就是开始，一切在路上的开始。时隔一年半了，手机里的照片一直还在，没有删除，每一次的浏览，都会激起那时的回忆，想想就觉得很美好。总有一天，希望走遍这个世界。</p>
+</blockquote>
+<span id="more"></span>
+
+<h1 id="缘由"><a href="#缘由" class="headerlink" title="缘由"></a>缘由</h1><p>想去外面独自走走，这个想法，来自我的初中同学<strong>老牛</strong>。比我多读了一年的书，我在大三的时候，她大二，开始了她的计划。不知道哪里来的勇气，开始一个人的穷游之旅。或许因为是音乐学院的学生，可能比我们一般人更为理想一些。钱，始终是限制条件，没有经济收入的学生，只能通过兼职这个行为来获得微小的收入，又一个优势显现出来，音乐生兼职收入比较高。这些条件，可能推动了之后的行为。<br>我，作为初中的前后桌，不错的关系，她想到了邀请我参加，一起旅行，而我最大的限制或许是钱，但是更大的限制或许是自己对前途的担忧，她屡次邀请而我屡次拒绝，我没法放弃手头的工作。就这样，我就错过了，错过了提早去外面看看的可能。但是，我始终没有放弃过这个想法，每当朋友圈看到她的沿途纪事所经历的一切，我就无比的羡慕。除了我之外，我经常跟同学将老牛的经历，搞得好几个同学都想一起去，那时候的我始终没有计划，没有勇气走出那一步。250算是其中一个，特别想去外面玩，最后在大学期间，始终没有一起出去玩一趟自由行，也算是一种遗憾。<br>2015年的寒假，我已经完成了那时候的任务，或者是人生的一个小目标，考上了理想中的研究生。而老牛走遍了祖国的各个地方之后，最终一个愿望还没有实现，就是想去海南骑行，因为以前走过的路上，很多骑行的人，产生的一种强烈的欲望，希望能够体验一下。而我，在这一年的寒假，也有时间了，放弃了在家过春节，而是选择了远方。再次的邀请，我也终于答应，于是购买一张机票，开始了我的首次遥远的旅途……</p>
+<h2 id="第一天——在路上"><a href="#第一天——在路上" class="headerlink" title="第一天——在路上"></a>第一天——在路上</h2><p>这一天是2016年2月4号，从余姚北站到温州南站，从温州南站到龙湾飞机场，第一次坐飞机，心情还是有些激动。当天晚上7点多，我们来到广州白云机场，走出机场，我们坐上大巴车，来到汽车站，买了当天晚上10点多去湛江的长途汽车。一路上特别的累，压根儿就没有睡好，终于天亮了，我们到达湛江，最后来到了海安新港，海南是一个岛屿，必须要轮渡，才能够到达海口。长途汽车都是通过轮船过渡到海口。<br><img src="//upload-images.jianshu.io/upload_images/3478485-933c2cab5ec194c4.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-f4b5f22806972fa7.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-aa6fafd428986372.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-3065a4024303b00c.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-0b0bb162366082c9.jpg"><br><img src="//upload-images.jianshu.io/upload_images/3478485-14d63a7417486b3e.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-22dbb99e4294374c.jpg"></p>
+<h1 id="第二天——一半在路上一半在吃"><a href="#第二天——一半在路上一半在吃" class="headerlink" title="第二天——一半在路上一半在吃"></a>第二天——一半在路上一半在吃</h1><p>我们坐了通宵的长途汽车，为了赶路，我们必须要牺牲一些东西，睡眠没有了很好的保障，但是终归是到了渡口，马上就要进入海南海口。又激动了一段时间，轮渡的时间大概是一个半小时。到了海口，我们还得做公交，到达最终的目的地，517驿站。晚上四五点，我们终于是到达了，没有什么特殊的情况出现，房间是提前订好的，也不贵，大概50块钱一个晚上，能够接受。<br>收拾好行李，安顿好一切，我们决定去海口骑楼小吃街逛一逛，吃点东西，休息一下，感受一下。吃完决定也就一般，我们就在外面走了走，看了看海口的夜晚景色。<br><img src="//upload-images.jianshu.io/upload_images/3478485-2ceff751da47f0b9.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-f456b4e0d13985b1.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-4a8b0458c4585f21.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-0e5661224ba4a00a.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-718b7a2e2b439ba1.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-fbf791081651dd5a.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-2bfca9fb7bf304a5.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-ccd92a5660f86324.jpg"><br><img src="//upload-images.jianshu.io/upload_images/3478485-aae2f13afdbebd1f.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-1d8f161551485d7e.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-f5eb088d5e8b99cc.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-e368bc288e81fe48.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-471c10b8030c1116.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-3027a42cc61d29fc.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-fa64a5e71e9c9254.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-8836901ec20c9048.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-3394cdedac800643.jpg"><br><img src="//upload-images.jianshu.io/upload_images/3478485-68c2158fec900dca.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-f583064a51b03e16.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-6e7b4a58dd456ea0.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-39b66b03ad3fc360.jpg"></p>
+<h1 id="第三天——海口一日游"><a href="#第三天——海口一日游" class="headerlink" title="第三天——海口一日游"></a>第三天——海口一日游</h1><p>今天是2月6号大年28，我们决定不在海口过年了，打算今天玩一天，明天开始正式骑行，开始我们的环岛之旅。这一天，或许是我们这几天最轻松自在，最无忧无虑的一天。正好老牛的朋友正好是海口人，于是，我们就在这位老司机的带领下，玩边了海口，吃了很多好吃的，享受了从未享受到的海口风光。<br>这一次的遗憾，就是没有了解一些海口及海南的历史，缺少了重要的一块内容，没有很好的领略这一座城市。<br>吃玩海口一天，准备明天的出发，我们也计划了一下我们的骑行计划。<br><img src="//upload-images.jianshu.io/upload_images/3478485-e113ecd98d184831.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-f137df22d9bfc06c.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-a03110c7c6c31044.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-fdc2ecf964458ee5.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-b40fb40307bea61e.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-22e7ea491c5b13c9.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-25169b31ae53bf74.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-b8e88f2f87805c15.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-e6995c71ddd8ab45.jpg"><br><img src="//upload-images.jianshu.io/upload_images/3478485-8240317f8797c9e1.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-deace0eceba740c8.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-fef76741ee41323d.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-19e2b5aff5a0be15.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-0cb45b2ac11476b2.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-b21ed4d7efa4920e.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-bade99c3fd51e08f.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-4d01361af2ff5646.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-0a203c1f64dea459.jpg"><br><img src="//upload-images.jianshu.io/upload_images/3478485-10fb4d55d0c38e23.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-9d1af7c41eb9267d.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-b81bc345e25911b2.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-1f7b72cb456fea18.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-8921d1a97293de54.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-6abdc547c1026738.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-9fae154c549e16af.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-c6d09e5e4501c39a.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-22d1d765c28d1e33.jpg"><br><img src="//upload-images.jianshu.io/upload_images/3478485-f4dea965ffc09528.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-db271afb3e61bd6c.jpg"><br><img src="//upload-images.jianshu.io/upload_images/3478485-9b447b7bf1777bee.jpg"></p>
+<h1 id="第四天——骑行第一站，文昌"><a href="#第四天——骑行第一站，文昌" class="headerlink" title="第四天——骑行第一站，文昌"></a>第四天——骑行第一站，文昌</h1><p>今天已经是大年30了，我们决定启程，开始我们的旅途，在517，我们结伴了两个小伙伴，两个人都是已经工作了的，有一个已经骑行了好多地方，全国好多个地方都去了，那时候真的是非常的佩服，非常的向往那一种自在的旅行。在路上，我们又遇到了一群退休的大爷大妈，结果居然神奇的一起结伴而行，人多有人多的好处，人少有人少的好处，我们一路上都遇到了。由于是第一天，我们都没有提前预定好文昌的517房子，搞得最后天黑了都没有找到住所，幸好后来联系到了，主在航天旅馆商务宾馆。因为今天是除夕，我们本来打算在517做饭，吃个年夜饭，在来的路上，已经买好了好多食材，其实也很惨，因为除夕，菜市场都没有什么卖家了，只剩了一个卖蔬菜的大妈，我们于是就买了番茄，白菜，土豆等等。还好最后航天商务宾馆的老板也比较体贴，给我们提供了一个厨房，及其简易的厨具，于是，我们就自己动手，准备做一顿大餐，确实也是不错，吃的很饱，而且连第二天的早饭也一起弄好了。这个除夕是一辈子都忘不了的除夕，一辈子也仅此一次，很珍贵。<br><img src="//upload-images.jianshu.io/upload_images/3478485-b447f0f32f949683.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-3eeebb35eac1b18a.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-f921ff58ce8e592a.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-00e2f9a3dc256252.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-ce8e2965ef4ce6b0.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-d68ca0d3fb24876b.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-6bcd3d8796d39db9.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-6ef154927011b53b.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-faff18049a3f0cee.jpg"></p>
+<h1 id="第五天——骑行第二站，博鳌"><a href="#第五天——骑行第二站，博鳌" class="headerlink" title="第五天——骑行第二站，博鳌"></a>第五天——骑行第二站，博鳌</h1><p>今天大年初一，我们出发到往第二站，博鳌。就是开博鳌亚洲论坛的那个地方，会址也在那个地方，可以去看一眼，最后因为需要门票，我们就放弃了。早上起来，收拾完成，准备出发。屁股真的是痛的不行，昨天第一天，完全没有适应，真的超级酸，不过骑着骑着，也还好，大家都坚持下来了。这一次，我们聪明了，我们是提前预定好了博鳌517的房间，能够有房子住，这是最重要的，傍晚，我们准时到达了博鳌。途中，我们好像特意弥补了昨天的不足，去了东郊椰林，因为路线的缘故，我们去这里后，必须选择轮渡，才能够节省时间，准时到达博鳌。载着自行车，我们也坐了一会儿船，感觉很棒。东郊椰林不好找，我们问了好多当地人，最后好不容易找到，集体拍了照片，能够看到比较开阔的海。之后，海出了一点意外，我们的一个小伙伴摔了一跤，手破了，脚也磨破了皮，但还是坚持了，坚持到了最后。<br>这一天，我们一起吃了一家东北菜，还可以，也遇到了好多骑行的人，打算第二天早上看日出。</p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-be8805d83dcdd47e.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-59564aebf88aa2eb.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-0dc786d3ae2baeb7.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-de5b5c9d63667dc1.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-367dd2b3b8e05a43.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-8312389b23a365a5.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-088f5d85651b06b0.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-a18c909f5b4fab71.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-a96a7955d8a02513.jpg"><br><img src="//upload-images.jianshu.io/upload_images/3478485-fc42027411d20c87.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-e42b880cf21615a7.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-2714ac24c53d7dcf.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-5238f72de458bf24.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-637d2a29154c22e1.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-5482e66344923334.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-e13c82be26119cf3.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-1bd16c1ff33a6937.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-22d8d6c95ba45d8a.jpg"><br><img src="//upload-images.jianshu.io/upload_images/3478485-d0b6025bcbdf08bb.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-508f1ef834bea998.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-bb9b648eadd2a638.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-4e33a88e8d04e261.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-279ffa436b51ab31.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-2360bfe2cfb66182.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-9fc427143d41905e.jpg"></p>
+<h1 id="第六天——骑行第三站，兴隆"><a href="#第六天——骑行第三站，兴隆" class="headerlink" title="第六天——骑行第三站，兴隆"></a>第六天——骑行第三站，兴隆</h1><p>早上天黑着就起来了，听说这里可以看到日出，总是如此，想看肯定看不到，我是从来没有看到从海平面升起的太阳——简称日出。只好赤脚在沙滩上玩了一会儿，沙滩上鞋子，再一次我又写下了250，不知道从什么时候开始，很多时候都会想起250这个字符，因为包涵的太多过去吧。博鳌镇还挺好，我们能够吃一顿正常的早饭，不久开始了旅途，兴隆站。这里忘记说一件事情，昨天晚上因为住的地方没有热水，那些叔叔阿姨们就一直嚷嚷不停，真的是忍受不住了——这就是人多的坏处。又加上我们的行程从这里开始发生了分歧，所以大家就开始走散，各自开始各自的路。我们四个人，当然是要一起走的，虽然那时候我还有好多想法，但是被迫只能打消念头。<br>虽然我们目的地不一样，但是行走的路程还是很相似的，在路上我们又碰到了小强和另外一个哥们儿，或许是因为渴了，看到路边的椰子树不是很高，我们就想着尝一尝这路边的椰子，看看有啥不一样的地方。小强身手非常敏捷，一会儿就马上树，在那用刀割椰子，最后通过大伙儿的努力，最终搞到了两个吧，隔开放汁。除夕夜那天剩下的一次性杯子在此刻发挥了最后的功能，我们用来盛椰汁，两个椰子，最后倒了好多杯，每个人都能够喝到。<br>由于路上的再次偶遇，叔叔阿姨们又和我们走到了一起，最终又变回了一个大团体，集体到了兴隆。路上风景甚是美妙，有牛在路上，天很蓝，视野很开阔。这是第三天了，我们的身体确实很累了，听说兴隆是有温泉的，我们就想着找一个温泉宾馆，结果还是老老实实的选了普通的宾馆住下了，因为叔叔阿姨的缘故，我们也没有去兴隆的517住宿，他们年级确实也大了，有些东西确实也经受不起了。也能够理解吧，不过那个时候可不是这样的想法，就是觉得他们太麻烦了，出来旅游还挑这挑那的，真的特别烦，在这一刻，我是真的不想和他们一起了。晚饭还是一起吃的，一家大排档，人一多，到底吃什么东西就很难下定论了，要讨论好久，而我早已经饿的不行了。大排档，点了没几个菜，觉得很贵，饭貌似也没有吃饱，真的那时候特别的心灰意冷，什么心情都没有了。晚上吃完饭，我们几个人就走回去了，好像还打包了什么东西回去吃的，不过根本吃不了了，结果好像被扔掉了。</p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-390e35b8d105577e.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-555245b7d9834ab9.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-5b7d8b7c4bd000f3.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-be501fe6fbf48e19.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-2a1e5cd48670a003.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-0fd86412141b7c25.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-478ae713f9067066.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-203194ff2a3aae8c.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-64cc303a3e007e39.jpg"><br><img src="//upload-images.jianshu.io/upload_images/3478485-a9ed3ef54036111c.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-65f28d96537aeb97.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-42e61d295abbaff6.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-7db32a7eba12543b.jpg"></p>
+<h1 id="第七天——骑行第四站，陵水"><a href="#第七天——骑行第四站，陵水" class="headerlink" title="第七天——骑行第四站，陵水"></a>第七天——骑行第四站，陵水</h1><p>最后一段路很长，我们还需要分为两天来骑，最后可以到达三亚。我们一群人还是在一起的，早上也一起出发，在酒店门口又拍了一张照片。早饭，在酒店旁吃的，这顿早饭印象深刻。兴隆生产咖啡，当地人在早上也常常喝咖啡，也离不开咖啡，我倒是没有喝，毕竟还是喝不惯，我要了一杯豆浆和油条。在这里，我发现了一样奇怪的东西，当地人就着咖啡吃，可以在嘴里不停的嚼，嚼多了，牙齿会变黄，和吸烟就差不多的功效——新鲜的槟榔。有些人就只是喝咖啡和吃槟榔，一边聊天一遍喝咖啡嚼槟榔，这断早餐时光特别的惬意，很享受。在吃完离开的那一会儿，我也想试一试，于是花了5块钱，买了4颗，可是好像直到骑行结束，我都没有吃，因为实在是味道太大，真的吃不了这个东西啊。<br>这一天真的是充满了变数，有事不容易的一天，不知道谁带的路，我们被带偏了，远离了国道，进入了小乡村，不过确实，我们也见到了不一样的风景。天都已经黑了，我们的实物都吃完了，水也差不多没有了，也没有地方住，那一天真的很害怕，产生了恐惧。虽然途中遇到了好心人，想要收留我们，可是人实在是太多了，没有办法，只能放弃（这又体现出来，人太多可能也是一种麻烦）。在我们夜行不一会儿，路边的保安大叔突然喊住了我们，说你们是不是在找住的地方，我知道离这儿不远就到国道了，那里有旅馆的，不过过去的路是小路，碎石路，很难骑，晚上有点危险，那时候根本顾不了那么多了，找个地方安顿下来才是王道，我们恳请保安大叔开着摩托车为我们带路，最后大叔答应了，遇到好心人了，不然真的不知道那天晚上会发生什么事情，之后的日程可能也要改变了。<br>到了国道边，找到了几家旅馆和吃饭的地方，先订下了睡觉的地方然后再找吃的，沿途遇到的宾馆都比较破旧，但是能够睡觉也已经不错了，价格也不贵，将就一万就可以了。<br>有好多旅馆也批发水果，结果我们买了一个菠萝蜜，30块钱左右，反正不知道比江浙地区便宜多少了，我们觉得特别划算。晚上，我们分开在不同的饭店吃饭，我们是找到了一家很不错的店，量很足，饭管饱，比昨天在兴隆吃的大排档好很多很多了，这大概是我们这一路上最满意的一顿饭，我们四人都称赞不已。</p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-bfcebc1ff48cb058.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-2ed65edddb208453.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-a85573093f06c8eb.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-f2faade41df15cfa.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-7236a21ff4b06aba.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-3e92bfeb7823e53f.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-842f12d291486ede.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-a6400ec38c096917.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-d0d55a64fcb997fb.jpg"><br><img src="//upload-images.jianshu.io/upload_images/3478485-66483d3754ecff0a.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-0a781c852473f42a.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-23704e5aaf4f4ba1.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-6bf7f80898ce0731.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-d5bd927b62e21248.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-2cdee52a0275c6d5.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-b6923082e78ef81c.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-931b89602b7caf55.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-60cab54e4839dd35.jpg"><br><img src="//upload-images.jianshu.io/upload_images/3478485-fecce8670c55c645.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-b21bf081cfe265f8.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-2447358f33a13407.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-c40211259b07123d.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-4b67adfcf9b2404f.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-fc5d9f73f676049c.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-842dc0c0384e9f89.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-350530219afae84f.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-e46647d350609750.jpg"><br><img src="//upload-images.jianshu.io/upload_images/3478485-da1ab82f25a38291.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-4952e4170766824a.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-12b0e1a460e2d89e.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-894e648c3b315ee7.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-89c6bd66b2dab6b0.jpg"><br><img src="//upload-images.jianshu.io/upload_images/3478485-7366dc2f0d2bf1c5.jpg"><br><img src="//upload-images.jianshu.io/upload_images/3478485-7113178e9245b97f.jpg"><br><img src="//upload-images.jianshu.io/upload_images/3478485-6928ed830be7c9c4.jpg"></p>
+<h1 id="第八天——终点站，三亚"><a href="#第八天——终点站，三亚" class="headerlink" title="第八天——终点站，三亚"></a>第八天——终点站，三亚</h1><p>这一天，我们终于要结束了，结束我们的环岛骑行，大概400公里的路程，也是我们骑行的第五天了，平均每天80公里左右，对于我们这些从未锻炼过的人来说，真的有点不可思议，不论怎样，我们坚持下来了，我们完成了海南岛的东海岸的骑行，虽然有些地方我们没有去，比如说神舟，还是很满足。最后一段路，我们的小伙伴突然身体也不太好，貌似中暑，差点要中途放弃，坐动车回家了，不过后来在大叔们的帮助了，还是克服了，还是坚持了下来。夕阳西下，在海南的国道上骑行，周围都是水果地，有菠萝，木瓜，菠萝蜜，有榴莲，这些热带水果始终陪伴我们前行，那种感觉妙不可言，只有亲自体验，才能够真正的体会到。<br>这一天早上，我们实在是起不来了，睡到大概9点左右，阿姨叔叔们先出发了，我们睡饱了再说，我们带上菠萝蜜继续前行，吃了沙县，吃完早饭来俩瓣菠萝蜜，真的是不一样的早餐，神奇的搭配，很快菠萝蜜直接被干完了，很快，不过真的是很好吃。这一路上，没有什么变数，我们在我的带领下终于到了三亚517。青旅果然住宿的条件不好，除了海口的517以及文昌的517（我们没有预约到房间的那一次），其余的驿站好像条件真的不是特别好，三亚的517也算是比较靠市中心的，那天下午，我们终于到了，还车，收拾行李，晚上出去吃一顿，逛一下，买点吃的，打打扑克牌，这天晚上过的还不错。骑行终于结束，然而马上我们又要开始新的旅途，回家之旅。</p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-8fac3db2ccc66dd6.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-d7153206d540b70c.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-5ac2c09921a7ad17.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-6aa4bd40cca7d96d.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-7e6f8eeed8b67c5a.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-4ec9fafc20f16350.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-60b9d3721b4a33fa.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-7d07e9fbec16b5d2.jpg"><br><img src="//upload-images.jianshu.io/upload_images/3478485-803616a01bf0a5a6.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-bd08a326df92949b.jpg"><br><img src="//upload-images.jianshu.io/upload_images/3478485-1e07a5d835613dfb.jpg"></p>
+<h1 id="第九天——归途，海口"><a href="#第九天——归途，海口" class="headerlink" title="第九天——归途，海口"></a>第九天——归途，海口</h1><p>结束骑行，我们在三亚也没有多待一会儿，发现三亚没有还有那样的舒服，静谧。三亚显得很浮躁，很杂乱。我更喜欢海口，气候舒适，环境优雅，人也不错。第二天，我们就买了动车票，从三亚到海口东的动车，晚上的末班车，最后我们抵达了海口，大晚上的。快要离开了，我们就在海口准备买点海南的特产，邮寄回学校，于是第二个清晨，我们购买了很多物资，发往江浙地区。之后我们依旧选择轮渡，毅然离开了海口，前往广东海安。到达广东，我们真的是差点被卖掉的感觉，一路上好像都是黑车，超载的特别严重，而且还没有地方坐，司机特别凶，感觉你不老实一点，就要打你，半路我们还被放下了，坐了另一辆车，最后的最后，我们终于从广东的最最西边，到达了比较文明的城市，珠海市。从来没有来过这里，这一次也是因为老牛的同学在这里工作，所以我们就顺道过来看一下，还在她朋友的房子里住了下来，他朋友去了朋友的地方住。很小的房间，我们四个人挤一挤总算是住下了。晚上他朋友还好好的款待了我们，吃了大肉火锅，很是不错。之后我们在珠海逛了一个早上，吃了广东比较正宗的早茶，一家比较有名的早茶店，大概花了400多，我们5个人，着实有点小贵，不过味道真的不错呢。珠海与澳门交界，跨国一个门，我们就能够到了，可是我们恰恰没有护照，没有准备，结果真的有点遗憾，只能隔着门，远远望着澳门。当天下午，我们坐了城轨，返回广州，因为飞机比较晚，所以我们还在广州玩了一会儿，逛了小吃街，看了<strong>小蛮腰</strong>，之后坐飞机返回温州龙湾国际机场，打的去了动车站，就此所有的行程结束。</p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-fbf410ea3dea3561.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-0e27cb5eab0bcbde.jpg"><br><img src="//upload-images.jianshu.io/upload_images/3478485-16c7aebe438c08a3.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-615c3dd8e93970f8.jpg"><br><img src="//upload-images.jianshu.io/upload_images/3478485-9b49d92c66de6c37.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-b8555fdeffc3a7c1.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-bccb6224620a61c0.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-cf059d808c31c935.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-68cc6e0e60a4ab44.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-04345119ff0a4818.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-0ff054a2d2794aee.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-0c1d9005ac609367.jpg"></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-eb4f1d0a3a2646e4.jpg"></p>
+<h1 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h1><p>第一次这样疯狂的玩，这样没有顾虑的玩，走出了第一步，打开了新的一扇门，于是有了不一样的期待，希望走遍祖国的各个角落，欣赏丰富多彩的风景。慢慢的打算，虽然在做科研的自己时间很是有限，然而一切都不是什么问题，总是能够找到机会。重要的是，要保持这样的心态，永远希望在路上的心态，永远年轻，喜欢折腾，喜欢旅行。下一次，我们大西北再见。</p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E6%97%85%E8%A1%8C/" rel="tag"># 旅行</a>
+              <a href="/tags/%E6%B5%B7%E5%8D%97/" rel="tag"># 海南</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2018/08/30/%E7%A7%91%E7%A0%94%E8%AF%9A%E4%BF%A1/" rel="prev" title="科研诚信">
+      <i class="fa fa-chevron-left"></i> 科研诚信
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2018/08/31/%E8%A5%BF%E5%8C%97%E4%B9%8B%E8%A1%8C/" rel="next" title="西北之行">
+      西北之行 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%BC%98%E7%94%B1"><span class="nav-number">1.</span> <span class="nav-text">缘由</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC%E4%B8%80%E5%A4%A9%E2%80%94%E2%80%94%E5%9C%A8%E8%B7%AF%E4%B8%8A"><span class="nav-number">1.1.</span> <span class="nav-text">第一天——在路上</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AC%AC%E4%BA%8C%E5%A4%A9%E2%80%94%E2%80%94%E4%B8%80%E5%8D%8A%E5%9C%A8%E8%B7%AF%E4%B8%8A%E4%B8%80%E5%8D%8A%E5%9C%A8%E5%90%83"><span class="nav-number">2.</span> <span class="nav-text">第二天——一半在路上一半在吃</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AC%AC%E4%B8%89%E5%A4%A9%E2%80%94%E2%80%94%E6%B5%B7%E5%8F%A3%E4%B8%80%E6%97%A5%E6%B8%B8"><span class="nav-number">3.</span> <span class="nav-text">第三天——海口一日游</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AC%AC%E5%9B%9B%E5%A4%A9%E2%80%94%E2%80%94%E9%AA%91%E8%A1%8C%E7%AC%AC%E4%B8%80%E7%AB%99%EF%BC%8C%E6%96%87%E6%98%8C"><span class="nav-number">4.</span> <span class="nav-text">第四天——骑行第一站，文昌</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AC%AC%E4%BA%94%E5%A4%A9%E2%80%94%E2%80%94%E9%AA%91%E8%A1%8C%E7%AC%AC%E4%BA%8C%E7%AB%99%EF%BC%8C%E5%8D%9A%E9%B3%8C"><span class="nav-number">5.</span> <span class="nav-text">第五天——骑行第二站，博鳌</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AC%AC%E5%85%AD%E5%A4%A9%E2%80%94%E2%80%94%E9%AA%91%E8%A1%8C%E7%AC%AC%E4%B8%89%E7%AB%99%EF%BC%8C%E5%85%B4%E9%9A%86"><span class="nav-number">6.</span> <span class="nav-text">第六天——骑行第三站，兴隆</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AC%AC%E4%B8%83%E5%A4%A9%E2%80%94%E2%80%94%E9%AA%91%E8%A1%8C%E7%AC%AC%E5%9B%9B%E7%AB%99%EF%BC%8C%E9%99%B5%E6%B0%B4"><span class="nav-number">7.</span> <span class="nav-text">第七天——骑行第四站，陵水</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AC%AC%E5%85%AB%E5%A4%A9%E2%80%94%E2%80%94%E7%BB%88%E7%82%B9%E7%AB%99%EF%BC%8C%E4%B8%89%E4%BA%9A"><span class="nav-number">8.</span> <span class="nav-text">第八天——终点站，三亚</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AC%AC%E4%B9%9D%E5%A4%A9%E2%80%94%E2%80%94%E5%BD%92%E9%80%94%EF%BC%8C%E6%B5%B7%E5%8F%A3"><span class="nav-number">9.</span> <span class="nav-text">第九天——归途，海口</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%90%8E%E8%AE%B0"><span class="nav-number">10.</span> <span class="nav-text">后记</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Jin JF</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">55</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+        <span class="site-state-item-count">11</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+        <span class="site-state-item-count">52</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Jin JF</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a>
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>

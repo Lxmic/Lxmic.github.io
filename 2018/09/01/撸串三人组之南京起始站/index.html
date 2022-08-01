@@ -1,37 +1,774 @@
-{% extends '_layout.swig' %}
-{% import '_macro/post.swig' as post_template %}
-{% import '_macro/sidebar.swig' as sidebar_template %}
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.0.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
 
 
-{% block title %}{{ page.title }} | {{ config.title }}{% endblock %}
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
 
-{% block page_class %}page-post-detail{% endblock %}
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="![南京的梧桐](https:&#x2F;&#x2F;upload-images.jianshu.io&#x2F;upload_images&#x2F;3478485-d3beff1a5daa7550.JPG?imageMogr2&#x2F;auto-orient&#x2F;strip%7CimageView2&#x2F;2&#x2F;w&#x2F;1240)   结束往往意味着重新开始，三年同窗（当然也不算是真正意义上的读书了，已经有工作性质的研究生生涯），能够偶然地在浙里遇见，实">
+<meta property="og:type" content="article">
+<meta property="og:title" content="撸串三人组之南京起始站">
+<meta property="og:url" content="http://yoursite.com/2018/09/01/%E6%92%B8%E4%B8%B2%E4%B8%89%E4%BA%BA%E7%BB%84%E4%B9%8B%E5%8D%97%E4%BA%AC%E8%B5%B7%E5%A7%8B%E7%AB%99/index.html">
+<meta property="og:site_name" content="Lxmic Blog">
+<meta property="og:description" content="![南京的梧桐](https:&#x2F;&#x2F;upload-images.jianshu.io&#x2F;upload_images&#x2F;3478485-d3beff1a5daa7550.JPG?imageMogr2&#x2F;auto-orient&#x2F;strip%7CimageView2&#x2F;2&#x2F;w&#x2F;1240)   结束往往意味着重新开始，三年同窗（当然也不算是真正意义上的读书了，已经有工作性质的研究生生涯），能够偶然地在浙里遇见，实">
+<meta property="og:locale">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-1999f3daa756a337.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-85bb0b6a747a2ed8.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-2e84fe912b8daff5.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-a70486cb7fc947dd.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-e926f5bddc34950d.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-b3be90d35471230f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-24b4955569a5fb0c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-bfb14f5a6346b06e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-e4401be8517ef47f.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-acee5658fa4674bc.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-928cdbfa8e6fada1.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-a90789a36882d03b.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-7df8cc63219cbb69.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-a40648af070213d3.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-f796cc08494fe4a0.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-5c63a858c09205c6.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-bbd40d05ecff3ab7.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-667ce41c3ae84d63.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-3905d906904031b7.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-934f282ddf32194a.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-0d08af18e31e515f.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-cabc043ce06728bb.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-422365b8153d37d6.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-5b3988ff93c86412.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-149131838fbafa36.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-000f3da26bd5ea07.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-41ff7ac0ced8a552.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-7888dd266c429746.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-291728fb90b074b0.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-257a452d3e01661d.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-8b615802aef2653e.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-e55cd8271600c812.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-42fb33598aa8de9c.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-fa4fdd93096101ae.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-3ec360fb52a136a0.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-3fd0a59724ec75ca.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-9e73fba66b9d8572.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-473e3fb9fa5edd76.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-cc6e4eab68efcc4e.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-e4b3a62c262cc5a5.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-86f55beff7162c0c.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-85f2e679cd8c8501.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-76fcdafddc90c5dd.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-b84a2a7f6585eb5b.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-05bd43d43392522e.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-28e09d49842a39ed.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-cfeafff69321c6cb.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-edfb833560de2a2a.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-a51d45bb98b982b3.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-1e96a975d9f10f6b.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-c99b9255035ae6e0.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-8796f2e78f79795b.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-819b3e620081bf9c.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-99b83d99ce9e3cf5.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-ad787706e408d076.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-578e0d96612d5e44.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-b75d42c4d612d090.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-7a12a939e0358ead.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-fa91bb974f52acda.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-c53e4255c631b252.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-c279123f2ee462cb.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-de50d479dcff14d1.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-61a3608aa08a0232.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-ab9eb46dd63b5b10.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-74e13de41dfcb629.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-30dc8d58ffc03e05.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-403ee5ecefb15b61.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-625a7f4e39ce4a6f.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-5a9382cce4812d75.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-37be08884552472c.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-903863bd3f68b050.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-ba7bef2d6a975fcd.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-26ca7e407412d206.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-bffbaf461c608b00.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-1301234a7a3e9136.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-ea5519068cc01941.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-64b89065d74b6c6d.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-645eba4d13e0cc65.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-51d00ef647b90ef9.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-4596b3937135138a.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-f7d1072df76453fe.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-9decbc307157f31e.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-23d51cb7820787d0.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-975bcdef069769f0.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-b28e1dac9d2b49d8.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-032f7ce949ef1697.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-5c188c97c873cfcb.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-feefc2d921b09fb0.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-4b9ea2541c0df703.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-ea8589fec33db289.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-91efbd5eb0659246.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-bd3b3c3b18864cb8.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-e91bb80769e9f1b9.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-93e45cda98bbcfd8.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-6bf963fafc9d6fda.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-309e2402f111a3f5.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-3d9b2df78bcefab7.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-63bab92c0ce44ad6.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-87f64e9ebcbf9a9e.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-c03e6f3c92767653.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-ce8f83a06a5cbdc2.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-4e674cfd2847f12b.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-a84d97d027d026d0.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-5c8c31a3269bb11d.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-dfbed17fe25bf082.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-2600f8fdca5a8c07.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-df5399a5417c70ab.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-90afcc88ff000aff.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-6451157f271106e6.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-a7e2fd02da4c5ea9.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-48bb0316f7a00741.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-36f85179ea23d8c7.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-f1579addb3814213.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-00d03efcb8413ce3.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-8eb75cc9ba9df752.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-d9bbaf26f60103e7.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-4ce001b65c846cd7.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-3199517b807d317f.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-33c519f51e2d2a81.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-a45f0459c915c0ef.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-cd1e4918f3af1034.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-d21c0db5f7e8c39c.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-1f173695fb020670.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-418c4d31d727db90.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-7c0fee279feec2d2.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-79329063c3d72f71.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-27d7aff8920c5b7f.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-5e752ecc12e30a4f.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-00bf2de8e484630e.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-ca486208ed7bae26.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-a5b10b423267905f.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-693757546e8741f4.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-50aa6f89f6fd3263.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-2ff1a8c43db38a9f.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-a22338bd1f687db1.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-55c0f86b5b94f8df.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-34a04ce7eb40109b.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-f9b8a8c9f0c7adbd.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-9203916280cbf51d.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-3e4e52c64b1078f8.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-beed50afa869e903.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-b92a7c3fca194f9d.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-599bfe9456ca490f.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-052ffb480f3dd944.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-38a5d801d351c5a7.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-4b210383bf249648.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-c3c0aef908a772de.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-fe6615de5e0fa20b.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-89f84238923ea1c2.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-5364257745e2e40e.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-c32d322b5e3fcf5e.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-340753292e00c67d.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-38a851e0e7677b43.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-f45be954869f6b7c.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-e1b653405b47dc5d.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-8cdb91bf5aa466a7.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-235be318b46afcab.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-31638c6ba9f8ab99.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-419a9cc0b44e4a0b.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-86bb6b23ac68aa60.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-be483ee9c8c79b67.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-e68dfa223d93a292.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-64bd11fc6ad44b6a.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-a7dd658c315524c4.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-40075ae35c20e51d.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-7b3931f34990e7d1.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-7ed677c7107164f2.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-98c4f02944e35799.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-7c05ce8660cb52d6.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="article:published_time" content="2018-09-01T00:47:23.000Z">
+<meta property="article:modified_time" content="2022-07-31T14:04:20.832Z">
+<meta property="article:author" content="Jin JF">
+<meta property="article:tag" content="旅行">
+<meta property="article:tag" content="南京">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://upload-images.jianshu.io/upload_images/3478485-1999f3daa756a337.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+
+<link rel="canonical" href="http://yoursite.com/2018/09/01/%E6%92%B8%E4%B8%B2%E4%B8%89%E4%BA%BA%E7%BB%84%E4%B9%8B%E5%8D%97%E4%BA%AC%E8%B5%B7%E5%A7%8B%E7%AB%99/">
 
 
-{% block content %}
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-Hans'
+  };
+</script>
 
-  <div id="posts" class="posts-expand">
-    {{ post_template.render(page) }}
+  <title>撸串三人组之南京起始站 | Lxmic Blog</title>
+  
 
-    <div class="post-spread">
-      {% if theme.jiathis %}
-        {% include '_partials/share/jiathis.swig' %}
-      {% elseif theme.baidushare %}
-        {% include '_partials/share/baidushare.swig' %}
-      {% elseif theme.add_this_id %}
-        {% include '_partials/share/add-this.swig' %}
-      {% elseif theme.duoshuo_shortname and theme.duoshuo_share %}
-        {% include '_partials/share/duoshuo_share.swig' %}
-      {% endif %}
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
     </div>
   </div>
 
-{% endblock %}
+  <div class="site-meta">
 
-{% block sidebar %}
-  {{ sidebar_template.render(true) }}
-{% endblock %}
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Lxmic Blog</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">Everything from life</p>
+  </div>
 
-{% block script_extra %}
-  {% include '_scripts/pages/post-details.swig' %}
-{% endblock %}
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>Archives</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/01/%E6%92%B8%E4%B8%B2%E4%B8%89%E4%BA%BA%E7%BB%84%E4%B9%8B%E5%8D%97%E4%BA%AC%E8%B5%B7%E5%A7%8B%E7%AB%99/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Jin JF">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Lxmic Blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          撸串三人组之南京起始站
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2018-09-01 08:47:23" itemprop="dateCreated datePublished" datetime="2018-09-01T08:47:23+08:00">2018-09-01</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2022-07-31 22:04:20" itemprop="dateModified" datetime="2022-07-31T22:04:20+08:00">2022-07-31</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%9C%A8%E8%B7%AF%E4%B8%8A%E7%9A%84%E6%97%A5%E5%AD%90/" itemprop="url" rel="index"><span itemprop="name">在路上的日子</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <meta name="referrer" content="no-referrer" />
+![南京的梧桐](https://upload-images.jianshu.io/upload_images/3478485-d3beff1a5daa7550.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+<blockquote>
+<p>结束往往意味着重新开始，三年同窗（当然也不算是真正意义上的读书了，已经有工作性质的研究生生涯），能够偶然地在浙里遇见，实属不易。从研究生复试，三个人中的两个人开始产生了交集，那一刻开始了，注定要形成撸串三人组——一起学习，一起吃饭，一起看电影，一起旅行（就是这次，平时真得很难遇到适合的时间）。</p>
+</blockquote>
+<span id="more"></span>
+
+<p>所有的行程都是“明逼”一手操办的，好像还琢磨了很久。那也没有办法，谁叫你是南京人呢，你不弄，难道我和浩哥来弄吗？还是假装的感谢一下，其实真的很感谢的。3天的行程（2018-6-19至6-21），好像没花什么钱，亲，不要怀疑，几乎一切都是明哥搞定的，钱也是由明哥来，以后难得有这样的机会了。蹭吃蹭喝，住宿和车费也全包，太完美。那么，这就开始了……</p>
+<h1 id="Day-one"><a href="#Day-one" class="headerlink" title="Day one"></a>Day one</h1><p>动车上，没什么好说的，睡睡吃吃，很快就到了南京南，但是有一件事让我痛心疾首——我带了单反却忘带了存储卡，顿时很懵逼。上地铁（还是明哥贴心，我们是永远也学不来的，给我和浩哥一人一张南京交通卡），貌似是3号线，我也记不得了，第一站就是鸡鸣寺。</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-1999f3daa756a337.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="江苏交通卡"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-85bb0b6a747a2ed8.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="古鸡鸣寺入口"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-2e84fe912b8daff5.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="入口处拿了免费的三炷香，我和浩哥的第一张合影"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-a70486cb7fc947dd.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="奥运五环，古城墙上，这是南京举办青奥会的时候建的，一直在那里放着，也算是一处景点"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-e926f5bddc34950d.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="鸡鸣寺最高处，可以望见古城墙和上脚下的房子，那天正好下雨了，本来是可以望见远处的玄武湖，而且非常清晰"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-b3be90d35471230f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="很快就到了吃午饭的时候，吃素斋，真的挺贵的，不过味道还不错。这是豆丝，真的非常的清淡"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-24b4955569a5fb0c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="这碗面很好吃，淡淡的甜味，四季豆很爽口，量当然很少，每个菜都有一个很文雅的名字，可以我都忘记了"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-bfb14f5a6346b06e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="吃完饭，我们把三炷香放在了这个地方，专门用来插香的，点燃之后，拜了东南西北四个方向，然后插入"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-e4401be8517ef47f.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="上去的时候没有发现，下山发现荷花还不错"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-acee5658fa4674bc.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="这个寿字是怎么塑造出来的，有些疑问？"></p>
+<p>上午主要还是在车上度过的，逛了鸡鸣寺，吃了素斋，就结束了第一个景点的游玩。下午走古城墙和游玩玄武湖，结果下大雨，逛完古城墙后，去了南京市博物院。下午的行程还是有些累，走了很多路。</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-928cdbfa8e6fada1.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="从城墙上看古鸡鸣寺，雾气真的很大，不一会儿就开始下雨"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-a90789a36882d03b.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="不明白，这些大炮为什么要朝向城墙内，打自己人吗？"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-7df8cc63219cbb69.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="古时候的武器，好像是用来抛石头的"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-a40648af070213d3.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="远处的玄武湖，本来还可以三个人泛舟，结果大风大雨，计划泡汤"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-f796cc08494fe4a0.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="城墙上还有一个展览区，记录城墙建造的一些事迹。构建城墙的每一块砖都是有名字的，据说当时没人都要贡献砖块"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-5c63a858c09205c6.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="这就是明哥，比我高出一个头了，有些自卑"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-bbd40d05ecff3ab7.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="浩哥，也比我高出一个头了，我是个矮子"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-667ce41c3ae84d63.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="走着走着，边说边走，城墙上几乎没有人，两三个行人，特别的清静，走到了玄武门，走不下去了，太累。"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-3905d906904031b7.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="继续来张合影，这技术真的是太烂了"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-934f282ddf32194a.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="进去就是玄武湖公园了，拍了荷花，实在是扛不住了，大风大雨的，赶紧去博物馆，室内活动"></p>
+<ul>
+<li>不管怎么样，来都来了，拍照纪念还是需要的，真是挺烂的技术哦</li>
+</ul>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-0d08af18e31e515f.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-cabc043ce06728bb.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="地铁加11路公交，立马专场到博物馆"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-422365b8153d37d6.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="进门就是大草坪"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-5b3988ff93c86412.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="门口合影，好像技术好了一些"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-149131838fbafa36.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="我是道具，一直站着"></p>
+<p>下面是一些博物院的文物，我也不知道怎么介绍，就放一些图片。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-000f3da26bd5ea07.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="DSC01604.JPG"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-41ff7ac0ced8a552.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="DSC01608.JPG"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-7888dd266c429746.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="DSC01576.JPG"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-291728fb90b074b0.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="DSC01577.JPG"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-257a452d3e01661d.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="DSC01580.JPG"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-8b615802aef2653e.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="DSC01582.JPG"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-e55cd8271600c812.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="DSC01586.JPG"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-42fb33598aa8de9c.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="DSC01588.JPG"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-fa4fdd93096101ae.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="DSC01590.JPG"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-3ec360fb52a136a0.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="DSC01597.JPG"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-3fd0a59724ec75ca.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="DSC01600.JPG"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-9e73fba66b9d8572.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="IMG_9206.JPG"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-473e3fb9fa5edd76.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="IMG_9207.JPG"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-cc6e4eab68efcc4e.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="DSC01576.JPG"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-e4b3a62c262cc5a5.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="DSC01577.JPG"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-86f55beff7162c0c.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="DSC01580.JPG"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-85f2e679cd8c8501.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="DSC01582.JPG"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-76fcdafddc90c5dd.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="DSC01586.JPG"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-b84a2a7f6585eb5b.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="DSC01588.JPG"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-05bd43d43392522e.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="DSC01590.JPG"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-28e09d49842a39ed.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="DSC01597.JPG"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-cfeafff69321c6cb.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="DSC01600.JPG"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-edfb833560de2a2a.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="DSC01604.JPG"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-a51d45bb98b982b3.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="DSC01608.JPG"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-1e96a975d9f10f6b.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="DSC01629.JPG"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-c99b9255035ae6e0.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="DSC01631.JPG"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-8796f2e78f79795b.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="DSC01637.JPG"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-819b3e620081bf9c.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="DSC01640.JPG"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-99b83d99ce9e3cf5.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="IMG_9204.JPG"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-ad787706e408d076.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="IMG_9213.JPG"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-578e0d96612d5e44.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="IMG_9214.JPG"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-b75d42c4d612d090.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="IMG_9210.JPG"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-7a12a939e0358ead.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="逛累了也是要休息，去了顶楼，坐了一会儿，给你俩来个合影"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-fa91bb974f52acda.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="好像在扣鼻屎，仔细一看不是"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-c53e4255c631b252.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="绝对是商界的大佬，这气势"></p>
+<p>一会儿，到了民国一条街，景色还不错，是个很好的场景，很多毕业生穿着民国的服装在那里进行拍摄毕业照。</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-c279123f2ee462cb.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="IMG_9230.JPG"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-de50d479dcff14d1.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="IMG_9248.JPG"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-61a3608aa08a0232.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="IMG_9231.JPG"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-ab9eb46dd63b5b10.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="IMG_9264.JPG"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-74e13de41dfcb629.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="IMG_9270.JPG"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-30dc8d58ffc03e05.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="IMG_9279.JPG"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-403ee5ecefb15b61.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="IMG_9288.JPG"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-625a7f4e39ce4a6f.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="IMG_9289.JPG"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-5a9382cce4812d75.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="IMG_9297.JPG"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-37be08884552472c.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="IMG_9302.JPG"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-903863bd3f68b050.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="IMG_9308.JPG"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-ba7bef2d6a975fcd.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="IMG_9310.JPG"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-26ca7e407412d206.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="IMG_9314.JPG"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-bffbaf461c608b00.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="IMG_9319.JPG"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-1301234a7a3e9136.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="结束了，又想在门口照一下"></p>
+<p>下午就到此结束了，没有什么特别神奇的事情发生，慢慢地欣赏，品味六朝古都。到了该吃晚餐的时候了，明哥还是考虑周到的，先去住的地方歇歇脚，然后在充满活力的去吃。大排档，每一样都很好吃，我要放图了，不一定每个都知道是啥东西，反正很好吃。</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-ea5519068cc01941.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="里面是这样的，还有人唱苏州弹评，我不是很能够欣赏，但是有些氛围产生"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-64b89065d74b6c6d.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="蟹黄豆腐，还是挺好吃的，只可惜，其他东西太多了，吃不过来"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-645eba4d13e0cc65.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="宋美龄粥，里面有牛奶和山药，甜甜的味道也好"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-51d00ef647b90ef9.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="狮子头，超级嫩，就是入口即化的那种，而且特别入味"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-4596b3937135138a.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="南京盐水鸭，这是很正宗的，而且也香，不只是只有咸味，和真空包装的真是天差地别"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-f7d1072df76453fe.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="活鸡蛋，我以前只吃过鸭蛋，这个还真是第一次吃，不过还是一样的鲜美，只要一点点盐，足够将其鲜美充分释放"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-9decbc307157f31e.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="蟹黄流汤包，这也是无敌好吃，汤汁很多，还是偏甜的，这是我最爱的口味"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-23d51cb7820787d0.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="虾饼，这个味道没有很独特，但是也好吃"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-975bcdef069769f0.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="慢慢地一桌，边吃边撤空盘子"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-b28e1dac9d2b49d8.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="桂花糯米条，超级软，有奶香味，口感非常好，从来没有吃过这么软这么细腻的糯米"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-032f7ce949ef1697.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="桂花汤圆，貌似叫这个名字，我到不是特别喜欢这个"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-5c188c97c873cfcb.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="这个好吃，红豆沙元宵"></p>
+<p>吃完大排档，接下去就是逛一下南京大学和先锋书店（算是南京的一种文化了）</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-feefc2d921b09fb0.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="南京大学，大晚上的啥都看不清"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-4b9ea2541c0df703.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="主干道，南大"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-ea8589fec33db289.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="先锋书店，还是挺大的，一个地下车库"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-91efbd5eb0659246.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="很深"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-bd3b3c3b18864cb8.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="人不多，看书的"></p>
+<p>第一天的行程，圆满结束，走得有些累，但是很满足，领略了不一样的南京。一人一杯奶茶，就这杯奶茶，明哥没有出钱，回到了住处。洗漱完，看看电视，结束一天。</p>
+<h1 id="Day-two"><a href="#Day-two" class="headerlink" title="Day two"></a>Day two</h1><p>整整一天，都是在陵墓度过的，明孝陵和中山陵，加上晚上的秦淮河边闲逛，又是走了一整天，完全被充满了，好像从来没有过如此充满的旅游行程，走了一整天，几乎没有时间歇脚。中午也没有吃什么好的，因为离市区很远，只能买点干粮啃，但是早饭吃的超级满足哦。</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-e91bb80769e9f1b9.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="牛肉锅贴，超级好吃，外酥里嫩，而且馅甜甜的有不腻，特别好吃"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-93e45cda98bbcfd8.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="锅贴配鸭血粉丝汤"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-6bf963fafc9d6fda.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="锅贴"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-309e2402f111a3f5.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="鸭血粉丝汤，料特别足，鸭血，鸭胗，鸭肝和鸭肠，只是鸭肝有些苦，吃不了"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-3d9b2df78bcefab7.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="好像还有鸭心，超大一碗，浩哥完全吃不了，我也是吃得非常饱"></p>
+<p>早饭结束，总得消化一下吧，开始出发，明孝陵第一站</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-63bab92c0ce44ad6.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="下了地铁，到入口，看到了守卫陵墓的营地，孝陵卫"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-87f64e9ebcbf9a9e.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="继续合影留念"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-c03e6f3c92767653.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="风景还是挺好"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-ce8f83a06a5cbdc2.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="文化园，还是留张照片"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-4e674cfd2847f12b.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="博物馆，介绍一些明孝陵的情况，以及当时挖掘的一些信息"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-a84d97d027d026d0.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="宝座"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-5c8c31a3269bb11d.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="整个明孝陵建筑模型"></p>
+<p>出来之后，就要开始真正的进入陵墓里面，下面放一些明孝陵的照片。</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-dfbed17fe25bf082.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="IMG_9376.JPG"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-2600f8fdca5a8c07.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="IMG_9377.JPG"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-df5399a5417c70ab.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="IMG_9405.JPG"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-90afcc88ff000aff.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="IMG_9412.JPG"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-6451157f271106e6.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-a7e2fd02da4c5ea9.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="IMG_9400.JPG"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-48bb0316f7a00741.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="IMG_9423.JPG"></p>
+<p>很快，我们结束了明孝陵的行程，接下去就是中山陵，孙中山先生的陵墓，每个来南京的人，这个应该是必到的一个景点，来看一下孙中山先生。在这里，我们解决了中饭问题，可惜的是三个傻逼，居然只有一瓶矿泉水，真的要疯掉了，太苦逼了。</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-36f85179ea23d8c7.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="IMG_9470.JPG"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-f1579addb3814213.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="IMG_9471.JPG"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-00d03efcb8413ce3.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="IMG_9473.JPG"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-8eb75cc9ba9df752.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="继续合影，姿势不对"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-d9bbaf26f60103e7.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="刚进门口处"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-4ce001b65c846cd7.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="IMG_9482.JPG"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-3199517b807d317f.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="IMG_9485.JPG"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-33c519f51e2d2a81.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="台阶真是超级多，没数有多少"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-a45f0459c915c0ef.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="IMG_9494.JPG"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-cd1e4918f3af1034.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="孙中山先生的三民主义"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-d21c0db5f7e8c39c.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="一直从最远处，走到现在的位置"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-1f173695fb020670.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="浩哥的拍照技术真的一般"></p>
+<p>差不多到2点多，我们就逛完了中山陵，先到另一个宾馆歇歇脚，没错我们换了住的地方，根据旅游地点来定。明哥赶紧给我们买了一块鸡排，和一些番茄和荔枝，先补充一下，中饭吃的太惨了。3点多，出发去夫子庙老门东那一块地方，也就是一些古街，有些历史气息，买的都是现代商业化的东西及餐饮，也没什么意思，开始吧。</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-418c4d31d727db90.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="一块牌坊，入口"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-7c0fee279feec2d2.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="普通的商业街"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-79329063c3d72f71.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="星巴克也有，只是门面变成了古建筑风格，格调貌似更高了"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-27d7aff8920c5b7f.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="里面都是这种小胡同，还是挺有意思的，不显得那么直白，有些婉约"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-5e752ecc12e30a4f.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="IMG_9530.JPG"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-00bf2de8e484630e.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="前往夫子庙的路上，买了三杯奶茶，这个我们能够负担的起，明哥你歇会儿"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-ca486208ed7bae26.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="秦淮边，也是能够通往夫子庙里面，我们从这里进去"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-a5b10b423267905f.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="另一种字体，是草书吗？"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-693757546e8741f4.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="江南贡院，前面的广场，明朝进京赶考就是在这个地方考试"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-50aa6f89f6fd3263.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="一格一格的小窗户就是考生的考试房间，据说要考十天半个月的，可不像我们现在最多考三天吧，还是辛苦的"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-2ff1a8c43db38a9f.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="写着状元、榜眼和探花，这应该是全国前三名"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-a22338bd1f687db1.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="IMG_9566.JPG"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-55c0f86b5b94f8df.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="IMG_9567.JPG"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-34a04ce7eb40109b.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="傍晚的秦淮人家"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-f9b8a8c9f0c7adbd.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="秦淮河上的游船"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-9203916280cbf51d.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="IMG_9571.JPG"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-3e4e52c64b1078f8.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="从夫子庙这里出来，差不多吃晚饭了"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-beed50afa869e903.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="下午吃了水果，鸡排还有喝了一大杯奶茶，完全不饿，只能随便吃一点，先来点花生，小菜一碟"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-b92a7c3fca194f9d.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="酸菜鱼，也不是特别饿，但还是被掏空"></p>
+<p>晚上，继续逛夫子庙，这次从正确的门进去，感觉也一般哦。看看夜晚了秦淮河边的辉煌。</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-599bfe9456ca490f.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="晚上的夫子庙"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-052ffb480f3dd944.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="继续往里走"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-38a5d801d351c5a7.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="夜晚的秦淮人家"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-4b210383bf249648.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="秦淮河边的灯，人是超级多，都要坐游船"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-c3c0aef908a772de.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="IMG_9592.JPG"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-fe6615de5e0fa20b.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="IMG_9594.JPG"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-89f84238923ea1c2.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="人很多"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-5364257745e2e40e.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"></p>
+<p>结束第二天，今天的步数应该是最多的。完全废了，真的一整天。明天上午再去个景点，就结束了。我和浩哥回住处，明哥又是先回家了。明天早上再见面，逛总统府。</p>
+<h1 id="Day-three"><a href="#Day-three" class="headerlink" title="Day three"></a>Day three</h1><p>早上明哥准时来宾馆与我们汇合，就在旁边小区吃了早饭，面食。味道很重，我偶尔吃一次可以，但是肯定不能频率太高。今早只能坐公交，我们所在的位置也是中心地带，南京航空航天大学大学附近，这里的公交可以通往整个南京市，及其方便。我们选择了坐公交车，人也挺多的，我们只能站着，不就也到了。总统府面积很大，完整逛一圈，最少就是一个上午，如果你比较感兴趣，那就是能研究好一会儿，走走看看，我们这种就是走马观花，感受一下那时候的氛围。</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-c32d322b5e3fcf5e.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="总统府门口"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-340753292e00c67d.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="进门廊道"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-38a851e0e7677b43.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="IMG_9613.JPG"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-f45be954869f6b7c.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="IMG_9614.JPG"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-e1b653405b47dc5d.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="忘记是谁的办公区了"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-8cdb91bf5aa466a7.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="IMG_9619.JPG"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-235be318b46afcab.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="是会议室"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-31638c6ba9f8ab99.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="IMG_9624.JPG"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-419a9cc0b44e4a0b.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="中轴线上，一间又一间的房子"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-86bb6b23ac68aa60.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="电报文"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-be483ee9c8c79b67.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="IMG_9634.JPG"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-e68dfa223d93a292.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="行政院，这是最后一个景点，整个总统府差不多结束，整个旅行也快告一段落了，回到门口，稍微休息一下，开始中饭"></p>
+<p>最后，我们被送到了南京南站，真是贴心了一路，圆满结束2天半的旅程。最后的最后，附上一些后期的图片，明哥手机拍摄的，又是很多合照。</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-64bd11fc6ad44b6a.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="我和浩哥，在南京博物院楼顶的合照"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-a7dd658c315524c4.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="手机的水平还是可以的"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-40075ae35c20e51d.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="南京大学门口的合照"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-7b3931f34990e7d1.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="秦淮河边"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-7ed677c7107164f2.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="桥上"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-98c4f02944e35799.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="会议室的合照"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-7c05ce8660cb52d6.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="政府门口"></p>
+<p>最后，我们被送到了南京南站，真是贴心了一路，圆满结束2天半的旅程。最后的最后，附上一些后期的图片，明哥手机拍摄的，又是很多合照。</p>
+<h1 id="结束亦是开始"><a href="#结束亦是开始" class="headerlink" title="结束亦是开始"></a>结束亦是开始</h1><p>三年的硕士生涯，一起留下很多的美好回忆。看到这些照片，还是很怀念那些时光，虽然只是过去了一个月左右，但显然已经开始怀念过去了。尤其是一个人吃饭，一个人看电影的时候，还是会想起你俩。<br>现在，大家都是开始了自己新的追求，希望下次见面的时候，各自都能变得更好。</p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E6%97%85%E8%A1%8C/" rel="tag"># 旅行</a>
+              <a href="/tags/%E5%8D%97%E4%BA%AC/" rel="tag"># 南京</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2018/08/31/%E8%A5%BF%E5%8C%97%E4%B9%8B%E8%A1%8C/" rel="prev" title="西北之行">
+      <i class="fa fa-chevron-left"></i> 西北之行
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2018/09/01/%E7%A2%9F%E4%B8%AD%E8%B0%8D6-%E5%85%A8%E9%9D%A2%E7%93%A6%E8%A7%A3/" rel="next" title="碟中谍6: 全面瓦解">
+      碟中谍6: 全面瓦解 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Day-one"><span class="nav-number">1.</span> <span class="nav-text">Day one</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Day-two"><span class="nav-number">2.</span> <span class="nav-text">Day two</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Day-three"><span class="nav-number">3.</span> <span class="nav-text">Day three</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%BB%93%E6%9D%9F%E4%BA%A6%E6%98%AF%E5%BC%80%E5%A7%8B"><span class="nav-number">4.</span> <span class="nav-text">结束亦是开始</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Jin JF</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">55</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+        <span class="site-state-item-count">11</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+        <span class="site-state-item-count">52</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Jin JF</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a>
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>

@@ -1,37 +1,490 @@
-{% extends '_layout.swig' %}
-{% import '_macro/post.swig' as post_template %}
-{% import '_macro/sidebar.swig' as sidebar_template %}
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.0.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
 
 
-{% block title %}{{ page.title }} | {{ config.title }}{% endblock %}
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
 
-{% block page_class %}page-post-detail{% endblock %}
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="GUS应用及原理Gus基因存在于某些细菌体内，编码β-葡萄糖苷酸酶（β-glucuronidase，GUS），该酶是一种水解酶，能催化许多β-葡萄糖苷酯类物质的水解。因为绝大多数植物细胞内不存在内源的GUS活性，因此gus基因广泛用作转基因植物的报告基因，尤其是在研究外源基因瞬时表达的转化实验中广泛应有。此外，gus基因3’端与其他结构形式的融合基因也能够正常表达，所产生的融合蛋白仍具有GU">
+<meta property="og:type" content="article">
+<meta property="og:title" content="GUS染色方法">
+<meta property="og:url" content="http://yoursite.com/2019/02/05/GUS%E6%9F%93%E8%89%B2%E6%96%B9%E6%B3%95/index.html">
+<meta property="og:site_name" content="Lxmic Blog">
+<meta property="og:description" content="GUS应用及原理Gus基因存在于某些细菌体内，编码β-葡萄糖苷酸酶（β-glucuronidase，GUS），该酶是一种水解酶，能催化许多β-葡萄糖苷酯类物质的水解。因为绝大多数植物细胞内不存在内源的GUS活性，因此gus基因广泛用作转基因植物的报告基因，尤其是在研究外源基因瞬时表达的转化实验中广泛应有。此外，gus基因3’端与其他结构形式的融合基因也能够正常表达，所产生的融合蛋白仍具有GU">
+<meta property="og:locale">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-53ed8602f38c0fd3.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="article:published_time" content="2019-02-05T04:21:24.000Z">
+<meta property="article:modified_time" content="2022-07-31T14:04:20.826Z">
+<meta property="article:author" content="Jin JF">
+<meta property="article:tag" content="实验方法">
+<meta property="article:tag" content="GUS">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://upload-images.jianshu.io/upload_images/3478485-53ed8602f38c0fd3.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+
+<link rel="canonical" href="http://yoursite.com/2019/02/05/GUS%E6%9F%93%E8%89%B2%E6%96%B9%E6%B3%95/">
 
 
-{% block content %}
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-Hans'
+  };
+</script>
 
-  <div id="posts" class="posts-expand">
-    {{ post_template.render(page) }}
+  <title>GUS染色方法 | Lxmic Blog</title>
+  
 
-    <div class="post-spread">
-      {% if theme.jiathis %}
-        {% include '_partials/share/jiathis.swig' %}
-      {% elseif theme.baidushare %}
-        {% include '_partials/share/baidushare.swig' %}
-      {% elseif theme.add_this_id %}
-        {% include '_partials/share/add-this.swig' %}
-      {% elseif theme.duoshuo_shortname and theme.duoshuo_share %}
-        {% include '_partials/share/duoshuo_share.swig' %}
-      {% endif %}
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
     </div>
   </div>
 
-{% endblock %}
+  <div class="site-meta">
 
-{% block sidebar %}
-  {{ sidebar_template.render(true) }}
-{% endblock %}
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Lxmic Blog</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">Everything from life</p>
+  </div>
 
-{% block script_extra %}
-  {% include '_scripts/pages/post-details.swig' %}
-{% endblock %}
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>Archives</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/02/05/GUS%E6%9F%93%E8%89%B2%E6%96%B9%E6%B3%95/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Jin JF">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Lxmic Blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          GUS染色方法
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2019-02-05 12:21:24" itemprop="dateCreated datePublished" datetime="2019-02-05T12:21:24+08:00">2019-02-05</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2022-07-31 22:04:20" itemprop="dateModified" datetime="2022-07-31T22:04:20+08:00">2022-07-31</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%A7%91%E7%A0%94%E4%B9%8B%E8%B7%AF/" itemprop="url" rel="index"><span itemprop="name">科研之路</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <meta name="referrer" content="no-referrer" />
+
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-53ed8602f38c0fd3.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="blur.jpg"></p>
+<h3 id="GUS应用及原理"><a href="#GUS应用及原理" class="headerlink" title="GUS应用及原理"></a><font color="green">GUS应用及原理</font></h3><p><em>Gus</em>基因存在于某些细菌体内，编码β-葡萄糖苷酸酶（β-glucuronidase，GUS），该酶是一种水解酶，能催化许多β-葡萄糖苷酯类物质的水解。因为绝大多数植物细胞内不存在内源的GUS活性，因此gus基因广泛用作转基因植物的报告基因，尤其是在研究外源基因瞬时表达的转化实验中广泛应有。此外，gus基因3’端与其他结构形式的融合基因也能够正常表达，所产生的融合蛋白仍具有GUS活性，这对研究外源基因表达的具体细胞部位提供了方便条件，也是它相对于其他报告基因的一个优点。  在适宜条件下，该酶可将<strong>X-Gluc</strong>水解生成蓝色物质，初始产物并不带颜色，为无色的吲哚衍生物，后经氧化二聚作用形成<strong>5,5’-二溴-4,4’-二氯</strong>靛蓝染料，此靛蓝染料使具有GUS活性的部位或位点呈现蓝色，可用肉眼或在显微镜下观察到。一般用来显示某基因的组织表达模式。</p>
+<blockquote>
+<p>以上内容出自网页内容：<a target="_blank" rel="noopener" href="http://www.real-times.com.cn/Technology/GUS.htm">http://www.real-times.com.cn/Technology/GUS.htm</a></p>
+</blockquote>
+<span id="more"></span>
+
+
+
+<h3 id="GUS染液配制"><a href="#GUS染液配制" class="headerlink" title="GUS染液配制"></a><font color="green">GUS染液配制</font></h3><blockquote>
+<p>我们使用的是翊圣公司的X-Gluc，下面的protocol也是翊圣公司的。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>试剂（母液浓度）</th>
+<th>体积（1 ml ）</th>
+<th>终浓度</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>ddH<sub>2</sub>O</td>
+<td>830 μl</td>
+<td>-</td>
+</tr>
+<tr>
+<td>1 M 磷酸钠（pH7.0）</td>
+<td>100 μl</td>
+<td>0.1 M</td>
+</tr>
+<tr>
+<td>0.5 M EDTA, pH8.0</td>
+<td>20 μl</td>
+<td>10 mM</td>
+</tr>
+<tr>
+<td>10% Triton X-100</td>
+<td>10 μl</td>
+<td>0.1 (v/v)</td>
+</tr>
+<tr>
+<td>50 mM 铁氰化钾</td>
+<td>20 μl</td>
+<td>1 mM</td>
+</tr>
+<tr>
+<td>0.1M X-Gluc(50 mg/ml ) in DMF</td>
+<td>20 μl</td>
+<td>2 mM</td>
+</tr>
+</tbody></table>
+<p>以上这些试剂除了EDTA，其他试剂配制比较简单。下面是这些试剂配制的具体方法：</p>
+<ul>
+<li><p><strong>1 M 磷酸钠</strong></p>
+<p>  需要称取磷酸氢二钠和磷酸二氢钠各6.659 g和1.778 g，加入25 ml 左右的ddH<sub>2</sub>O，最后定容到30 <strong>ml</strong> ，基本上混合均匀完全溶解即可达到pH7.0左右，无需调pH。</p>
+<blockquote>
+<p>注意：两者混合后一开始可能无法全溶解，需要过个几分钟才可以溶解。</p>
+</blockquote>
+</li>
+<li><p><strong>0.5 M EDTA</strong></p>
+<p>  我们用的就是Na盐，称取5.584 g，加入20 ml ddH<sub>2</sub>O，此时看到的是白色沉淀，无法溶解（只有在pH8.0左右的时候，EDTA才能够完全溶解于水中），然后加入0.5 g片状NaOH，此时pH可能还没有到达8.0，然后用9 M的NaOH溶液进行缓慢pH调整，观察溶液是否澄清。澄清时测定pH，调整直到8.0，最后定容到30 ml 。</p>
+<blockquote>
+<p>当EDTA全部溶解的时候，pH值大概就在8.0左右。</p>
+</blockquote>
+</li>
+<li><p><strong>10% Triton X-100</strong></p>
+<p>  取0.5 ml Triton X-100，加入到4.5 ml的ddH<sub>2</sub>O中，使其充分溶解，但是因为是表面活性剂，可能会出现较多的泡沫，静置一段时间后，自然会消失。</p>
+</li>
+<li><p><strong>50 mM K<sub>3</sub>Fe(CN)<sub>6</sub></strong></p>
+<p>  称取0.165 g，加入8 ml的ddH<sub>2</sub>O，溶解后定容至10 ml。最后溶液的颜色是淡黄色的。</p>
+<blockquote>
+<p>三价铁容易被还原，因此需要将其避光保存，一旦发现颜色发生了变化，那么就需要重新配制。</p>
+</blockquote>
+</li>
+<li><p><strong>50 mg/ml X-Gluc</strong></p>
+<p>  1 ml DMF溶解50 mg的X-Gluc粉末，浓度就是50 mg/ml。一般都是现配现用，需要多少用多少。一个样品染色，需要500 μl。根据样品的多少来称取粉末的量，不要太浪费。</p>
+</li>
+</ul>
+<h3 id="染色"><a href="#染色" class="headerlink" title="染色"></a><font color="green">染色</font></h3><p>取上一步配制好的GUS染液，将你的样品加入其中，然后用锡箔纸包起来，放置于37℃，12h-16h左右，就可以看到靛蓝色。染色具体时间依据实验设计而定，可灵活变动。</p>
+<h3 id="显微成像"><a href="#显微成像" class="headerlink" title="显微成像"></a><font color="green">显微成像</font></h3><p>使用显微镜进行染色结果的记录，拍照可以调整几个参数，曝光值，自动白平衡，基本就这两个参数，尽量将背景拍得明亮一些，显得干净。拍摄之后要记得添加标尺scale，一般需要调整为一致的标尺。</p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E5%AE%9E%E9%AA%8C%E6%96%B9%E6%B3%95/" rel="tag"># 实验方法</a>
+              <a href="/tags/GUS/" rel="tag"># GUS</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2019/02/05/%E6%A4%8D%E7%89%A9Cas9%E9%9D%B6%E7%82%B9%E8%AE%BE%E8%AE%A1%E7%BD%91%E7%AB%99%E7%AE%80%E4%BB%8B/" rel="prev" title="植物Cas9靶点设计网站简介">
+      <i class="fa fa-chevron-left"></i> 植物Cas9靶点设计网站简介
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2019/09/06/%E5%BE%92%E6%89%8B%E6%94%80%E5%B2%A9/" rel="next" title="徒手攀岩">
+      徒手攀岩 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#GUS%E5%BA%94%E7%94%A8%E5%8F%8A%E5%8E%9F%E7%90%86"><span class="nav-number">1.</span> <span class="nav-text">GUS应用及原理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#GUS%E6%9F%93%E6%B6%B2%E9%85%8D%E5%88%B6"><span class="nav-number">2.</span> <span class="nav-text">GUS染液配制</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9F%93%E8%89%B2"><span class="nav-number">3.</span> <span class="nav-text">染色</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%98%BE%E5%BE%AE%E6%88%90%E5%83%8F"><span class="nav-number">4.</span> <span class="nav-text">显微成像</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Jin JF</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">55</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+        <span class="site-state-item-count">11</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+        <span class="site-state-item-count">52</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Jin JF</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a>
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
