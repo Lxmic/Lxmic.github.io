@@ -54,25 +54,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Dropbox离线安装</title>
-    <url>//2018/12/08/Dropbox%E7%A6%BB%E7%BA%BF%E5%AE%89%E8%A3%85/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-
-
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-d5fc4ecb48065677.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
-<blockquote>
-<p>Dropbox 的安装一直是个问题，下载安装器，你永远没有办法链接网络，可能是电脑没有完全的全局。</p>
-</blockquote>
-<p>今天，因为要配置新的电脑，我就需要安装我的Dropbox。但是依旧是因为没有办法彻底的全局FQ，所以我就想着下载离线包，然后我就就Google，找到了下载离线安装包的办法，你只要在官网下载页面网址的基础上，在后面添加<code>&amp;full=1</code>就可以实现离线安装。<br>离线安装包下载网址：<a href="https://www.dropbox.com/downloading?src=index&full=1" title="shark0017">https://www.dropbox.com/downloading?src=index**&amp;full=1**</a>。已经顺利安装，下面可以愉快的使用了。</p>
-]]></content>
-      <categories>
-        <category>学习记录</category>
-      </categories>
-      <tags>
-        <tag>Dropbox</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>DJY-遇见盖北</title>
     <url>//2018/08/18/DJY-%E9%81%87%E8%A7%81%E7%9B%96%E5%8C%97/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -105,6 +86,25 @@
       </categories>
       <tags>
         <tag>葡萄</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Dropbox离线安装</title>
+    <url>//2018/12/08/Dropbox%E7%A6%BB%E7%BA%BF%E5%AE%89%E8%A3%85/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+
+
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-d5fc4ecb48065677.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<blockquote>
+<p>Dropbox 的安装一直是个问题，下载安装器，你永远没有办法链接网络，可能是电脑没有完全的全局。</p>
+</blockquote>
+<p>今天，因为要配置新的电脑，我就需要安装我的Dropbox。但是依旧是因为没有办法彻底的全局FQ，所以我就想着下载离线包，然后我就就Google，找到了下载离线安装包的办法，你只要在官网下载页面网址的基础上，在后面添加<code>&amp;full=1</code>就可以实现离线安装。<br>离线安装包下载网址：<a href="https://www.dropbox.com/downloading?src=index&full=1" title="shark0017">https://www.dropbox.com/downloading?src=index**&amp;full=1**</a>。已经顺利安装，下面可以愉快的使用了。</p>
+]]></content>
+      <categories>
+        <category>学习记录</category>
+      </categories>
+      <tags>
+        <tag>Dropbox</tag>
       </tags>
   </entry>
   <entry>
@@ -379,6 +379,35 @@
       </tags>
   </entry>
   <entry>
+    <title>HTML5（2）——编辑器</title>
+    <url>//2018/09/30/HTML5%EF%BC%882%EF%BC%89%E2%80%94%E2%80%94%E7%BC%96%E8%BE%91%E5%99%A8/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![国庆前夕](https://upload-images.jianshu.io/upload_images/3478485-d9dfcf26595c1c1e.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+<blockquote>
+<p>今天已经是9月最后一天，还有一件事情需要去做，之后就可以回家待两天。上次写了第一篇HTML基本语法介绍，今天来看一下你可以用哪些编辑器来编写你的web。</p>
+</blockquote>
+<span id="more"></span>
+
+<h3 id="Windows-Notepad"><a href="#Windows-Notepad" class="headerlink" title="Windows Notepad"></a><font color="green">Windows Notepad</font></h3><p>这个大家应该都非常熟悉的，虽然平常用的很少，一直有些嫌弃，但是也还可以。从开始菜单——程序——附件——Notepad或者直接右键——新建文本文档就可以开始写代码。写完之后，你需要保存成html或htm后缀的文件，这样直接可以使用你的浏览器打开，来看编译后的结果。</p>
+<h3 id="Mac-TextEdit"><a href="#Mac-TextEdit" class="headerlink" title="Mac TextEdit"></a><font color="green">Mac TextEdit</font></h3><p>点开你的启动台，然后你就可以看到文本编辑器，打开它。然后你需要在它的偏好设置——格式——选择纯文本文档，然后点击另一个标签打开和保存——。然后你就可以新建文档，开始编写代码，最后保存成html格式文件。</p>
+<ul>
+<li>勾选第一个<br><img src="https://upload-images.jianshu.io/upload_images/3478485-8ad786f2b38f8482.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"></li>
+</ul>
+<h3 id="Adobe-Brackets"><a href="#Adobe-Brackets" class="headerlink" title="Adobe Brackets"></a><font color="green">Adobe Brackets</font></h3><p>Adobe公司的Brackets网上很多都说是web神器，我也是才开始用，很多东西也不是特别了解，比如怎么实时显示代码编译结果，我下载后貌似没发实现，问题在哪里我也不太清楚。</p>
+<ul>
+<li>软件界面<br><img src="https://upload-images.jianshu.io/upload_images/3478485-654fe29edc44f95e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"></li>
+</ul>
+<p>最后，希望你们有好的编辑器可以推荐给我。</p>
+]]></content>
+      <categories>
+        <category>HTML5入门</category>
+      </categories>
+      <tags>
+        <tag>HTML5</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>HTML5（3）——基础标签</title>
     <url>//2018/10/01/HTML5%EF%BC%883%EF%BC%89%E2%80%94%E2%80%94%E5%9F%BA%E7%A1%80%E6%A0%87%E7%AD%BE/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -417,35 +446,6 @@
       <tags>
         <tag>HTML5</tag>
         <tag>标签</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>HTML5（2）——编辑器</title>
-    <url>//2018/09/30/HTML5%EF%BC%882%EF%BC%89%E2%80%94%E2%80%94%E7%BC%96%E8%BE%91%E5%99%A8/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![国庆前夕](https://upload-images.jianshu.io/upload_images/3478485-d9dfcf26595c1c1e.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-<blockquote>
-<p>今天已经是9月最后一天，还有一件事情需要去做，之后就可以回家待两天。上次写了第一篇HTML基本语法介绍，今天来看一下你可以用哪些编辑器来编写你的web。</p>
-</blockquote>
-<span id="more"></span>
-
-<h3 id="Windows-Notepad"><a href="#Windows-Notepad" class="headerlink" title="Windows Notepad"></a><font color="green">Windows Notepad</font></h3><p>这个大家应该都非常熟悉的，虽然平常用的很少，一直有些嫌弃，但是也还可以。从开始菜单——程序——附件——Notepad或者直接右键——新建文本文档就可以开始写代码。写完之后，你需要保存成html或htm后缀的文件，这样直接可以使用你的浏览器打开，来看编译后的结果。</p>
-<h3 id="Mac-TextEdit"><a href="#Mac-TextEdit" class="headerlink" title="Mac TextEdit"></a><font color="green">Mac TextEdit</font></h3><p>点开你的启动台，然后你就可以看到文本编辑器，打开它。然后你需要在它的偏好设置——格式——选择纯文本文档，然后点击另一个标签打开和保存——。然后你就可以新建文档，开始编写代码，最后保存成html格式文件。</p>
-<ul>
-<li>勾选第一个<br><img src="https://upload-images.jianshu.io/upload_images/3478485-8ad786f2b38f8482.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"></li>
-</ul>
-<h3 id="Adobe-Brackets"><a href="#Adobe-Brackets" class="headerlink" title="Adobe Brackets"></a><font color="green">Adobe Brackets</font></h3><p>Adobe公司的Brackets网上很多都说是web神器，我也是才开始用，很多东西也不是特别了解，比如怎么实时显示代码编译结果，我下载后貌似没发实现，问题在哪里我也不太清楚。</p>
-<ul>
-<li>软件界面<br><img src="https://upload-images.jianshu.io/upload_images/3478485-654fe29edc44f95e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"></li>
-</ul>
-<p>最后，希望你们有好的编辑器可以推荐给我。</p>
-]]></content>
-      <categories>
-        <category>HTML5入门</category>
-      </categories>
-      <tags>
-        <tag>HTML5</tag>
       </tags>
   </entry>
   <entry>
@@ -517,6 +517,39 @@
       </tags>
   </entry>
   <entry>
+    <title>HTML5（7）——段落</title>
+    <url>//2018/10/06/HTML5%EF%BC%887%EF%BC%89%E2%80%94%E2%80%94%E6%AE%B5%E8%90%BD/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![想法很多，已没有经历实现](https://upload-images.jianshu.io/upload_images/3478485-f715b416af9c6294.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+> 现在不得不感叹，很多事情有想法，却找不到人一起去实现。继续学习HTML5，来讲一讲段落。
+
+
+
+<span id="more"></span>
+
+<h2 id="HTML段落"><a href="#HTML段落" class="headerlink" title="HTML段落"></a><font color="green">HTML段落</font></h2><p><code>&lt;p&gt;</code>元素是用来定义段落的，并且是由结束标签的。而且网页在解析时，会自动在段落前和段落后添加一些空格区域。</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line">&lt;<span class="selector-tag">p</span>&gt;This is <span class="selector-tag">a</span> paragraph.&lt;/<span class="selector-tag">p</span>&gt;</span><br><span class="line">&lt;<span class="selector-tag">p</span>&gt;This is another paragraph.&lt;/<span class="selector-tag">p</span>&gt;</span><br></pre></td></tr></table></figure>
+
+<h2 id="HTML段落显示"><a href="#HTML段落显示" class="headerlink" title="HTML段落显示"></a><font color="green">HTML段落显示</font></h2><p>你是没有办法去控制网页到底会怎么样显示，小的屏幕，大的屏幕等情况都会变得不一样。而且你也不能添加空格和换行来改变段落显示，网页会自动移除这些空格和空行，比如：</p>
+<figure class="highlight livecodeserver"><table><tr><td class="code"><pre><span class="line">&lt;p&gt;</span><br><span class="line">This <span class="keyword">paragraph</span></span><br><span class="line"><span class="keyword">contains</span> <span class="keyword">a</span> lot <span class="keyword">of</span> <span class="keyword">lines</span></span><br><span class="line"><span class="keyword">in</span> <span class="keyword">the</span> source code,</span><br><span class="line">but <span class="keyword">the</span> browser </span><br><span class="line">ignores <span class="keyword">it</span>.</span><br><span class="line">&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;p&gt;</span><br><span class="line">This <span class="keyword">paragraph</span></span><br><span class="line"><span class="keyword">contains</span>      <span class="keyword">a</span> lot <span class="keyword">of</span> spaces</span><br><span class="line"><span class="keyword">in</span> <span class="keyword">the</span> source     code,</span><br><span class="line">but <span class="keyword">the</span>    browser </span><br><span class="line">ignores <span class="keyword">it</span>.</span><br><span class="line">&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;p&gt;</span><br><span class="line">The <span class="built_in">number</span> <span class="keyword">of</span> <span class="keyword">lines</span> <span class="keyword">in</span> <span class="keyword">a</span> <span class="keyword">paragraph</span> depends <span class="keyword">on</span> <span class="title">the</span> <span class="title">size</span> <span class="title">of</span> <span class="title">the</span> <span class="title">browser</span> <span class="title">window</span>. <span class="title">If</span> <span class="title">you</span> <span class="title">resize</span> <span class="title">the</span> <span class="title">browser</span> <span class="title">window</span>, <span class="title">the</span> <span class="title">number</span> <span class="title">of</span> <span class="title">lines</span> <span class="title">in</span> <span class="title">this</span> <span class="title">paragraph</span> <span class="title">will</span> <span class="title">change</span>.</span><br><span class="line">&lt;/p&gt;</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-add480d3916a9ffc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="显示结果"></p>
+<h2 id="HTML换行"><a href="#HTML换行" class="headerlink" title="HTML换行"></a><font color="green">HTML换行</font></h2><p>HTML中换行，你需要<code>&lt;br&gt;</code>元素来进行实现。你可以在你想换行的地方添加<code>&lt;br&gt;</code>元素来进行换行。<br><code>&lt;p&gt;This is&lt;br&gt;a paragraph&lt;br&gt;with line breaks.&lt;/p&gt;</code></p>
+<h2 id="诗的显示问题"><a href="#诗的显示问题" class="headerlink" title="诗的显示问题"></a><font color="green">诗的显示问题</font></h2><figure class="highlight applescript"><table><tr><td class="code"><pre><span class="line">&lt;p&gt;In HTML, spaces <span class="keyword">and</span> new lines are ignored:&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;p&gt;</span><br><span class="line"></span><br><span class="line">  My Bonnie lies <span class="keyword">over</span> <span class="keyword">the</span> ocean.</span><br><span class="line"></span><br><span class="line">  My Bonnie lies <span class="keyword">over</span> <span class="keyword">the</span> sea.</span><br><span class="line"></span><br><span class="line">  My Bonnie lies <span class="keyword">over</span> <span class="keyword">the</span> ocean.</span><br><span class="line">  </span><br><span class="line">  Oh, bring <span class="keyword">back</span> <span class="keyword">my</span> Bonnie <span class="keyword">to</span> <span class="keyword">me</span>.</span><br><span class="line"></span><br><span class="line">&lt;/p&gt;</span><br></pre></td></tr></table></figure>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-dc60e763c5feda78.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="单行显示了"></p>
+<p>如果想要正常的显示诗，且能够保存空格，那么我们需要用到<code>&lt;pre&gt;</code>元素，它是用来预格式化文本的，能够保存文本原本的空格和换行且能够使字体宽度固定。</p>
+<figure class="highlight vim"><table><tr><td class="code"><pre><span class="line"><span class="symbol">&lt;p&gt;</span>The <span class="keyword">pre</span> <span class="keyword">tag</span> preserves both spaces <span class="built_in">and</span> <span class="built_in">line</span> <span class="keyword">break</span><span class="variable">s:</span>&lt;/<span class="keyword">p</span>&gt;</span><br><span class="line"></span><br><span class="line"><span class="symbol">&lt;pre&gt;</span></span><br><span class="line">   My Bonnie lies over the ocean.</span><br><span class="line"></span><br><span class="line">   My Bonnie lies over the sea.</span><br><span class="line"></span><br><span class="line">   My Bonnie lies over the ocean.</span><br><span class="line">   </span><br><span class="line">   Oh, bring back my Bonnie <span class="keyword">to</span> <span class="keyword">me</span>.</span><br><span class="line">&lt;/<span class="keyword">pre</span>&gt;</span><br></pre></td></tr></table></figure>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-88bb011547100448.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="正常显示诗"></p>
+]]></content>
+      <categories>
+        <category>HTML5入门</category>
+      </categories>
+      <tags>
+        <tag>HTML5</tag>
+        <tag>段落</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>HTML5（6）——标题</title>
     <url>//2018/10/06/HTML5%EF%BC%886%EF%BC%89%E2%80%94%E2%80%94%E6%A0%87%E9%A2%98/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -549,36 +582,62 @@
       </tags>
   </entry>
   <entry>
-    <title>HTML5（7）——段落</title>
-    <url>//2018/10/06/HTML5%EF%BC%887%EF%BC%89%E2%80%94%E2%80%94%E6%AE%B5%E8%90%BD/</url>
+    <title>HTML5（8）——样式</title>
+    <url>//2018/10/07/HTML5%EF%BC%888%EF%BC%89%E2%80%94%E2%80%94%E6%A0%B7%E5%BC%8F/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![想法很多，已没有经历实现](https://upload-images.jianshu.io/upload_images/3478485-f715b416af9c6294.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-> 现在不得不感叹，很多事情有想法，却找不到人一起去实现。继续学习HTML5，来讲一讲段落。
+![](https://upload-images.jianshu.io/upload_images/3478485-00b11fdad0f37597.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+> 假期最后一天，我继续学习我的HTML5内容。上次我们提到了段落，今天要学习样式（styles）。
 
 
 
 <span id="more"></span>
 
-<h2 id="HTML段落"><a href="#HTML段落" class="headerlink" title="HTML段落"></a><font color="green">HTML段落</font></h2><p><code>&lt;p&gt;</code>元素是用来定义段落的，并且是由结束标签的。而且网页在解析时，会自动在段落前和段落后添加一些空格区域。</p>
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line">&lt;<span class="selector-tag">p</span>&gt;This is <span class="selector-tag">a</span> paragraph.&lt;/<span class="selector-tag">p</span>&gt;</span><br><span class="line">&lt;<span class="selector-tag">p</span>&gt;This is another paragraph.&lt;/<span class="selector-tag">p</span>&gt;</span><br></pre></td></tr></table></figure>
-
-<h2 id="HTML段落显示"><a href="#HTML段落显示" class="headerlink" title="HTML段落显示"></a><font color="green">HTML段落显示</font></h2><p>你是没有办法去控制网页到底会怎么样显示，小的屏幕，大的屏幕等情况都会变得不一样。而且你也不能添加空格和换行来改变段落显示，网页会自动移除这些空格和空行，比如：</p>
-<figure class="highlight livecodeserver"><table><tr><td class="code"><pre><span class="line">&lt;p&gt;</span><br><span class="line">This <span class="keyword">paragraph</span></span><br><span class="line"><span class="keyword">contains</span> <span class="keyword">a</span> lot <span class="keyword">of</span> <span class="keyword">lines</span></span><br><span class="line"><span class="keyword">in</span> <span class="keyword">the</span> source code,</span><br><span class="line">but <span class="keyword">the</span> browser </span><br><span class="line">ignores <span class="keyword">it</span>.</span><br><span class="line">&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;p&gt;</span><br><span class="line">This <span class="keyword">paragraph</span></span><br><span class="line"><span class="keyword">contains</span>      <span class="keyword">a</span> lot <span class="keyword">of</span> spaces</span><br><span class="line"><span class="keyword">in</span> <span class="keyword">the</span> source     code,</span><br><span class="line">but <span class="keyword">the</span>    browser </span><br><span class="line">ignores <span class="keyword">it</span>.</span><br><span class="line">&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;p&gt;</span><br><span class="line">The <span class="built_in">number</span> <span class="keyword">of</span> <span class="keyword">lines</span> <span class="keyword">in</span> <span class="keyword">a</span> <span class="keyword">paragraph</span> depends <span class="keyword">on</span> <span class="title">the</span> <span class="title">size</span> <span class="title">of</span> <span class="title">the</span> <span class="title">browser</span> <span class="title">window</span>. <span class="title">If</span> <span class="title">you</span> <span class="title">resize</span> <span class="title">the</span> <span class="title">browser</span> <span class="title">window</span>, <span class="title">the</span> <span class="title">number</span> <span class="title">of</span> <span class="title">lines</span> <span class="title">in</span> <span class="title">this</span> <span class="title">paragraph</span> <span class="title">will</span> <span class="title">change</span>.</span><br><span class="line">&lt;/p&gt;</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-add480d3916a9ffc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="显示结果"></p>
-<h2 id="HTML换行"><a href="#HTML换行" class="headerlink" title="HTML换行"></a><font color="green">HTML换行</font></h2><p>HTML中换行，你需要<code>&lt;br&gt;</code>元素来进行实现。你可以在你想换行的地方添加<code>&lt;br&gt;</code>元素来进行换行。<br><code>&lt;p&gt;This is&lt;br&gt;a paragraph&lt;br&gt;with line breaks.&lt;/p&gt;</code></p>
-<h2 id="诗的显示问题"><a href="#诗的显示问题" class="headerlink" title="诗的显示问题"></a><font color="green">诗的显示问题</font></h2><figure class="highlight applescript"><table><tr><td class="code"><pre><span class="line">&lt;p&gt;In HTML, spaces <span class="keyword">and</span> new lines are ignored:&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;p&gt;</span><br><span class="line"></span><br><span class="line">  My Bonnie lies <span class="keyword">over</span> <span class="keyword">the</span> ocean.</span><br><span class="line"></span><br><span class="line">  My Bonnie lies <span class="keyword">over</span> <span class="keyword">the</span> sea.</span><br><span class="line"></span><br><span class="line">  My Bonnie lies <span class="keyword">over</span> <span class="keyword">the</span> ocean.</span><br><span class="line">  </span><br><span class="line">  Oh, bring <span class="keyword">back</span> <span class="keyword">my</span> Bonnie <span class="keyword">to</span> <span class="keyword">me</span>.</span><br><span class="line"></span><br><span class="line">&lt;/p&gt;</span><br></pre></td></tr></table></figure>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-dc60e763c5feda78.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="单行显示了"></p>
-<p>如果想要正常的显示诗，且能够保存空格，那么我们需要用到<code>&lt;pre&gt;</code>元素，它是用来预格式化文本的，能够保存文本原本的空格和换行且能够使字体宽度固定。</p>
-<figure class="highlight vim"><table><tr><td class="code"><pre><span class="line"><span class="symbol">&lt;p&gt;</span>The <span class="keyword">pre</span> <span class="keyword">tag</span> preserves both spaces <span class="built_in">and</span> <span class="built_in">line</span> <span class="keyword">break</span><span class="variable">s:</span>&lt;/<span class="keyword">p</span>&gt;</span><br><span class="line"></span><br><span class="line"><span class="symbol">&lt;pre&gt;</span></span><br><span class="line">   My Bonnie lies over the ocean.</span><br><span class="line"></span><br><span class="line">   My Bonnie lies over the sea.</span><br><span class="line"></span><br><span class="line">   My Bonnie lies over the ocean.</span><br><span class="line">   </span><br><span class="line">   Oh, bring back my Bonnie <span class="keyword">to</span> <span class="keyword">me</span>.</span><br><span class="line">&lt;/<span class="keyword">pre</span>&gt;</span><br></pre></td></tr></table></figure>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-88bb011547100448.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="正常显示诗"></p>
+<h2 id="HTML样式"><a href="#HTML样式" class="headerlink" title="HTML样式"></a><font color="green">HTML样式</font></h2><p>像图中的红色字体，蓝色字体和字体大小变化，这些都是可以通过样式属性来控制的。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-98b1c83a61eee9b0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="样式调整字体"></p>
+<h2 id="样式属性"><a href="#样式属性" class="headerlink" title="样式属性"></a><font color="green">样式属性</font></h2><p>HTML元素的样式设置，可以通过<code>style</code>属性来控制。<code>style</code>属性语法如下：</p>
+<figure class="highlight routeros"><table><tr><td class="code"><pre><span class="line">&lt;tagname <span class="attribute">style</span>=<span class="string">&quot;property:value;&quot;</span>&gt;</span><br></pre></td></tr></table></figure>
+<p>其中，property 和value都是属于CSS范畴，这个我们在以后的章节中会学习，这里先不做解释。</p>
+<h2 id="HTML背景颜色"><a href="#HTML背景颜色" class="headerlink" title="HTML背景颜色"></a><font color="green">HTML背景颜色</font></h2><p><code>background-color</code>属性（property）定义了网页元素的背景颜色。</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span> <span class="attr">style</span>=<span class="string">&quot;background-color:powderblue;&quot;</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>This is a heading<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>This is a paragraph.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-dc290afb99dbd433.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="定义整个页面的背景颜色"></p>
+<h2 id="HTML字体颜色"><a href="#HTML字体颜色" class="headerlink" title="HTML字体颜色"></a><font color="green">HTML字体颜色</font></h2><p>需要使用<code>color</code>property来定义文本的颜色。下面是将标题设置为蓝色，段落字体为红色。</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">style</span>=<span class="string">&quot;color:blue;&quot;</span>&gt;</span>This is a heading<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">style</span>=<span class="string">&quot;color:red;&quot;</span>&gt;</span>This is a paragraph.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-adb41aa7310916f1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="文本颜色改变"></p>
+<h2 id="字体选择"><a href="#字体选择" class="headerlink" title="字体选择"></a><font color="green">字体选择</font></h2><p>HTML通过<code>font-family</code>属性来选择字体种类。</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">style</span>=<span class="string">&quot;font-family:verdana;&quot;</span>&gt;</span>This is a heading<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">style</span>=<span class="string">&quot;font-family:courier;&quot;</span>&gt;</span>This is a paragraph.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>改变了字体类型。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-111733be61886475.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="不同的字体"></p>
+<h2 id="HTML文本大小"><a href="#HTML文本大小" class="headerlink" title="HTML文本大小"></a><font color="green">HTML文本大小</font></h2><p><code>font-size</code>属性是用来定义网页元素文本的大小。语法如下：</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">style</span>=<span class="string">&quot;font-size:300%;&quot;</span>&gt;</span>This is a heading<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">style</span>=<span class="string">&quot;font-size:160%;&quot;</span>&gt;</span>This is a paragraph.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>是用百分数来表示，就是原来大小的几倍。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-957ebcbe484e4557.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="不同大小文本"></p>
+<h2 id="HTML文本的对齐方式"><a href="#HTML文本的对齐方式" class="headerlink" title="HTML文本的对齐方式"></a><font color="green">HTML文本的对齐方式</font></h2><p>在HTML中，我们需要属性<code>font-align</code>来定义水平文本的对齐方式。下面是全部居中的代码：</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">style</span>=<span class="string">&quot;text-align:center;&quot;</span>&gt;</span>Centered Heading<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">style</span>=<span class="string">&quot;text-align:center;&quot;</span>&gt;</span>Centered paragraph.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>标题和段落都居中显示。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-06df6e05d44066bd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="居中显示"></p>
 ]]></content>
       <categories>
         <category>HTML5入门</category>
       </categories>
       <tags>
         <tag>HTML5</tag>
-        <tag>段落</tag>
+        <tag>样式</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>LaTeX中文章节定义</title>
+    <url>//2020/03/10/LaTeX%E4%B8%AD%E6%96%87%E7%AB%A0%E8%8A%82%E5%AE%9A%E4%B9%89/</url>
+    <content><![CDATA[<h3 id="1-需要使用的宏包——ctex"><a href="#1-需要使用的宏包——ctex" class="headerlink" title="1. 需要使用的宏包——ctex"></a>1. 需要使用的宏包——ctex</h3><p>官方网址：<a href="http://www.ctex.org/PackageCTeX">CTEX:PackageCTEX</a>，目前这个宏包已经转移到<a href="https://github.com/CTeX-org/ctex-kit">GitHub</a>，仍旧在继续开发增加新功能。具体详细的可以下载pdf文档。</p>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/Image/20200310163651.png"></p>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/Image/20200310163739.png"></p>
+<h3 id="2-自定义设置中文文档的章节"><a href="#2-自定义设置中文文档的章节" class="headerlink" title="2. 自定义设置中文文档的章节"></a>2. 自定义设置中文文档的章节</h3><h4 id="2-1-代码如下："><a href="#2-1-代码如下：" class="headerlink" title="2.1 代码如下："></a>2.1 代码如下：</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">%格式设置</span><br><span class="line">\documentclass[a4paper, 12pt]&#123;book&#125; %文档类型，我们选择book</span><br><span class="line">\usepackage[heading=true]&#123;ctex&#125; %载入ctex宏包</span><br><span class="line">%具体章节格式定义，这是关键的设置</span><br><span class="line">\ctexset&#123;chapter=&#123;name=&#123;第,章&#125;&#125;,section=&#123;name=&#123;第,节&#125;,format=&#123;\raggedright\Large&#125;&#125;&#125;</span><br><span class="line">%正文中格式</span><br><span class="line">\begin&#123;document&#125;</span><br><span class="line">\chapter&#123;菌株系统&#125;</span><br><span class="line">\input&#123;chapter_1/mircobes&#125;	</span><br><span class="line">	\section&#123;大肠杆菌&#125;</span><br><span class="line">\end&#123;document&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="2-2-内容说明"><a href="#2-2-内容说明" class="headerlink" title="2.2 内容说明"></a>2.2 内容说明</h4><p>我们在载入<code>ctex</code>包，里面有一个<code>heading=true</code>参数，这个是必须要有的，否则格式依旧是不对，是默认的样式。</p>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/Image/20200310173247.png" alt="这是缺少heading的呈现结果"></p>
+<p>此外，最关键的章节定义就是通过<code>\ctexset</code>来进行设置，我这里是最简单的设置，具体更细节的设置我没有进一步去尝试。下面是根据我的代码呈现的结果：</p>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/Image/20200310174223.png"></p>
+<p>这样的结果，就比较符合我的期望需求，基本设置成功。</p>]]></content>
+      <categories>
+        <category>LaTeX入门</category>
+      </categories>
+      <tags>
+        <tag>LaTeX</tag>
       </tags>
   </entry>
   <entry>
@@ -619,45 +678,6 @@
       </categories>
       <tags>
         <tag>HTML5</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>HTML5（8）——样式</title>
-    <url>//2018/10/07/HTML5%EF%BC%888%EF%BC%89%E2%80%94%E2%80%94%E6%A0%B7%E5%BC%8F/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![](https://upload-images.jianshu.io/upload_images/3478485-00b11fdad0f37597.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-> 假期最后一天，我继续学习我的HTML5内容。上次我们提到了段落，今天要学习样式（styles）。
-
-
-
-<span id="more"></span>
-
-<h2 id="HTML样式"><a href="#HTML样式" class="headerlink" title="HTML样式"></a><font color="green">HTML样式</font></h2><p>像图中的红色字体，蓝色字体和字体大小变化，这些都是可以通过样式属性来控制的。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-98b1c83a61eee9b0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="样式调整字体"></p>
-<h2 id="样式属性"><a href="#样式属性" class="headerlink" title="样式属性"></a><font color="green">样式属性</font></h2><p>HTML元素的样式设置，可以通过<code>style</code>属性来控制。<code>style</code>属性语法如下：</p>
-<figure class="highlight routeros"><table><tr><td class="code"><pre><span class="line">&lt;tagname <span class="attribute">style</span>=<span class="string">&quot;property:value;&quot;</span>&gt;</span><br></pre></td></tr></table></figure>
-<p>其中，property 和value都是属于CSS范畴，这个我们在以后的章节中会学习，这里先不做解释。</p>
-<h2 id="HTML背景颜色"><a href="#HTML背景颜色" class="headerlink" title="HTML背景颜色"></a><font color="green">HTML背景颜色</font></h2><p><code>background-color</code>属性（property）定义了网页元素的背景颜色。</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span> <span class="attr">style</span>=<span class="string">&quot;background-color:powderblue;&quot;</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>This is a heading<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>This is a paragraph.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-dc290afb99dbd433.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="定义整个页面的背景颜色"></p>
-<h2 id="HTML字体颜色"><a href="#HTML字体颜色" class="headerlink" title="HTML字体颜色"></a><font color="green">HTML字体颜色</font></h2><p>需要使用<code>color</code>property来定义文本的颜色。下面是将标题设置为蓝色，段落字体为红色。</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">style</span>=<span class="string">&quot;color:blue;&quot;</span>&gt;</span>This is a heading<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">style</span>=<span class="string">&quot;color:red;&quot;</span>&gt;</span>This is a paragraph.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-adb41aa7310916f1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="文本颜色改变"></p>
-<h2 id="字体选择"><a href="#字体选择" class="headerlink" title="字体选择"></a><font color="green">字体选择</font></h2><p>HTML通过<code>font-family</code>属性来选择字体种类。</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">style</span>=<span class="string">&quot;font-family:verdana;&quot;</span>&gt;</span>This is a heading<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">style</span>=<span class="string">&quot;font-family:courier;&quot;</span>&gt;</span>This is a paragraph.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>改变了字体类型。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-111733be61886475.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="不同的字体"></p>
-<h2 id="HTML文本大小"><a href="#HTML文本大小" class="headerlink" title="HTML文本大小"></a><font color="green">HTML文本大小</font></h2><p><code>font-size</code>属性是用来定义网页元素文本的大小。语法如下：</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">style</span>=<span class="string">&quot;font-size:300%;&quot;</span>&gt;</span>This is a heading<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">style</span>=<span class="string">&quot;font-size:160%;&quot;</span>&gt;</span>This is a paragraph.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>是用百分数来表示，就是原来大小的几倍。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-957ebcbe484e4557.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="不同大小文本"></p>
-<h2 id="HTML文本的对齐方式"><a href="#HTML文本的对齐方式" class="headerlink" title="HTML文本的对齐方式"></a><font color="green">HTML文本的对齐方式</font></h2><p>在HTML中，我们需要属性<code>font-align</code>来定义水平文本的对齐方式。下面是全部居中的代码：</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">style</span>=<span class="string">&quot;text-align:center;&quot;</span>&gt;</span>Centered Heading<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">style</span>=<span class="string">&quot;text-align:center;&quot;</span>&gt;</span>Centered paragraph.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>标题和段落都居中显示。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-06df6e05d44066bd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="居中显示"></p>
-]]></content>
-      <categories>
-        <category>HTML5入门</category>
-      </categories>
-      <tags>
-        <tag>HTML5</tag>
-        <tag>样式</tag>
       </tags>
   </entry>
   <entry>
@@ -704,23 +724,36 @@
       </tags>
   </entry>
   <entry>
-    <title>LaTeX中文章节定义</title>
-    <url>//2020/03/10/LaTeX%E4%B8%AD%E6%96%87%E7%AB%A0%E8%8A%82%E5%AE%9A%E4%B9%89/</url>
-    <content><![CDATA[<h3 id="1-需要使用的宏包——ctex"><a href="#1-需要使用的宏包——ctex" class="headerlink" title="1. 需要使用的宏包——ctex"></a>1. 需要使用的宏包——ctex</h3><p>官方网址：<a href="http://www.ctex.org/PackageCTeX">CTEX:PackageCTEX</a>，目前这个宏包已经转移到<a href="https://github.com/CTeX-org/ctex-kit">GitHub</a>，仍旧在继续开发增加新功能。具体详细的可以下载pdf文档。</p>
-<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/Image/20200310163651.png"></p>
-<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/Image/20200310163739.png"></p>
-<h3 id="2-自定义设置中文文档的章节"><a href="#2-自定义设置中文文档的章节" class="headerlink" title="2. 自定义设置中文文档的章节"></a>2. 自定义设置中文文档的章节</h3><h4 id="2-1-代码如下："><a href="#2-1-代码如下：" class="headerlink" title="2.1 代码如下："></a>2.1 代码如下：</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">%格式设置</span><br><span class="line">\documentclass[a4paper, 12pt]&#123;book&#125; %文档类型，我们选择book</span><br><span class="line">\usepackage[heading=true]&#123;ctex&#125; %载入ctex宏包</span><br><span class="line">%具体章节格式定义，这是关键的设置</span><br><span class="line">\ctexset&#123;chapter=&#123;name=&#123;第,章&#125;&#125;,section=&#123;name=&#123;第,节&#125;,format=&#123;\raggedright\Large&#125;&#125;&#125;</span><br><span class="line">%正文中格式</span><br><span class="line">\begin&#123;document&#125;</span><br><span class="line">\chapter&#123;菌株系统&#125;</span><br><span class="line">\input&#123;chapter_1/mircobes&#125;	</span><br><span class="line">	\section&#123;大肠杆菌&#125;</span><br><span class="line">\end&#123;document&#125;</span><br></pre></td></tr></table></figure>
+    <title>LaTeX插入表格</title>
+    <url>//2018/09/15/LaTeX%E6%8F%92%E5%85%A5%E8%A1%A8%E6%A0%BC/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![惬意的周末，我也想拥有](https://upload-images.jianshu.io/upload_images/3478485-300eb5efdef1a5fe.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-<h4 id="2-2-内容说明"><a href="#2-2-内容说明" class="headerlink" title="2.2 内容说明"></a>2.2 内容说明</h4><p>我们在载入<code>ctex</code>包，里面有一个<code>heading=true</code>参数，这个是必须要有的，否则格式依旧是不对，是默认的样式。</p>
-<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/Image/20200310173247.png" alt="这是缺少heading的呈现结果"></p>
-<p>此外，最关键的章节定义就是通过<code>\ctexset</code>来进行设置，我这里是最简单的设置，具体更细节的设置我没有进一步去尝试。下面是根据我的代码呈现的结果：</p>
-<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/Image/20200310174223.png"></p>
-<p>这样的结果，就比较符合我的期望需求，基本设置成功。</p>]]></content>
+<blockquote>
+<p>周末了，下个礼拜终于要开学了，好像又要开始摆出努力的样子。一切都是在循环往复，还是希望进步，能够学习一些从没有接触过的实物和技术。</p>
+</blockquote>
+<p>LaTeX是极其专业的排版软件，我也想试试，我就来用它排版我的论文，这样走一遍之后，我想应该基本入门了。在插入表格的时候，遇到了一些问题，特异记录下来。</p>
+<span id="more"></span>
+
+<h3 id="1-如何插入庞大的表格"><a href="#1-如何插入庞大的表格" class="headerlink" title="1. 如何插入庞大的表格"></a>1. 如何插入庞大的表格</h3><p>我们都知道，LaTeX可以一行一行的插入表格，但是在我们遇到比较庞大的表格时，我们该怎么办，有一个办法就是利用<a href="http://www.tablesgenerator.com/latex_tables">在线工具</a>进行转换成LaTeX格式的表格，而不需要花大量的时间一行一行输入。<br>只要你输入你的表格，然后点generate，生成相应的表格，让后你只需要输入到你的编辑器中，进行编译就可以。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-b7d8758edc879c5b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="复制表格"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-eb16ad35b99dd364.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="表格复制"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-552021decf1e4701.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="复制表格的内容到编译文本"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-e3adcd1c31950f73.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="可以看到编译后会有一定的溢出"></p>
+<h3 id="2-解决表格溢出的问题"><a href="#2-解决表格溢出的问题" class="headerlink" title="2. 解决表格溢出的问题"></a>2. 解决表格溢出的问题</h3><p>可以缩小字体，也可以修改行之间的距离，也可以缩小整个表格。可以看到，原因在于表头的字体太长了，因此需要使其分行显示，这样一来就可以了。分行你可以定义表格的宽度，使其自动分行或者也可以使用<code>makecell</code>包来进行强制分行。</p>
+<h5 id="2-1-首先我们看看定义表格单列宽度："><a href="#2-1-首先我们看看定义表格单列宽度：" class="headerlink" title="2.1 首先我们看看定义表格单列宽度："></a>2.1 首先我们看看定义表格单列宽度：</h5><p>在下面的代码中，<br><code>\begin&#123;tabular&#125;&#123;p&#123;2cm&#125;p&#123;3cm&#125;p&#123;2.5cm&#125;p&#123;2.5cm&#125;p&#123;2.5cm&#125;p&#123;2.5cm&#125;&#125;</code>，这句是真正起到调节作用的。<code>p&#123;2cm&#125;</code>就是代表第一列的宽度，后面依次是后面的宽度，然后会自动进行换行显示。但是有一个问题就是，发现自动换行以后，字母之间的距离变得很大，不像是只有一个空格的样子。</p>
+<figure class="highlight livescript"><table><tr><td class="code"><pre><span class="line"><span class="string">\begin&#123;table&#125;[]</span></span><br><span class="line">	<span class="string">\caption&#123;basic</span> structure&#125;</span><br><span class="line">	<span class="string">\vspace&#123;20pt&#125;</span></span><br><span class="line">	<span class="string">\centering</span></span><br><span class="line">	<span class="string">\begin&#123;tabular&#125;&#123;p&#123;2cm&#125;p&#123;3cm&#125;p&#123;2.5cm&#125;p&#123;2.5cm&#125;p&#123;2.5cm&#125;p&#123;2.5cm&#125;&#125;</span></span><br><span class="line">		<span class="string">\hline</span></span><br><span class="line">		Gene name &amp; Gene accession No. &amp; CDS length (bp) &amp; Protein size (aa) &amp; Protein MW (kDa) <span class="string">\\</span></span><br><span class="line">		<span class="string">\hline</span></span><br><span class="line">		<span class="number">001</span>  &amp; <span class="number">01g</span>009860.<span class="number">2</span>   &amp; <span class="number">819</span>             &amp; <span class="number">272</span>               &amp; <span class="number">31.34</span>            <span class="string">\\</span></span><br><span class="line">		<span class="number">002</span>  &amp; <span class="number">01g</span>021730.<span class="number">2</span>   &amp; <span class="number">798</span>             &amp; <span class="number">265</span>               &amp; <span class="number">30.37</span>            <span class="string">\\</span></span><br><span class="line">		<span class="number">003</span>  &amp; <span class="number">01g</span>094490.<span class="number">2</span>   &amp; <span class="number">630</span>             &amp; <span class="number">209</span>               &amp; <span class="number">24.58</span>            <span class="string">\\</span></span><br><span class="line">		<span class="number">004</span>  &amp; <span class="number">01g</span>102740.<span class="number">2</span>   &amp; <span class="number">1242</span>            &amp; <span class="number">413</span>               &amp; <span class="number">46.94</span>            <span class="string">\\</span></span><br><span class="line">		<span class="number">005</span>  &amp; <span class="number">01g</span>104900.<span class="number">2</span>   &amp; <span class="number">597</span>             &amp; <span class="number">198</span>               &amp; <span class="number">22.85</span>            <span class="string">\\</span></span><br><span class="line">		<span class="number">006</span>  &amp; <span class="number">02g</span>036430.<span class="number">1</span>   &amp; <span class="number">1698</span>            &amp; <span class="number">565</span>               &amp; <span class="number">64.88</span>            <span class="string">\\</span></span><br><span class="line">		<span class="number">007</span>  &amp; <span class="number">02g</span>061780.<span class="number">2</span>   &amp; <span class="number">735</span>             &amp; <span class="number">244</span>               &amp; <span class="number">28.23</span>            <span class="string">\\</span></span><br><span class="line">		<span class="number">008</span>  &amp; <span class="number">02g</span>061870.<span class="number">1</span>   &amp; <span class="number">660</span>             &amp; <span class="number">219</span>               &amp; <span class="number">25.21</span>            <span class="string">\\</span></span><br><span class="line">		<span class="number">009</span>  &amp; <span class="number">02g</span>061900.<span class="number">1</span>   &amp; <span class="number">915</span>             &amp; <span class="number">304</span>               &amp; <span class="number">34.61</span>            <span class="string">\\</span></span><br><span class="line">		<span class="number">010</span>  &amp; <span class="number">02g</span>061910.<span class="number">1</span>   &amp; <span class="number">795</span>             &amp; <span class="number">264</span>               &amp; <span class="number">29.92</span> <span class="string">\\</span>    </span><br><span class="line">		<span class="string">\hline</span>       </span><br><span class="line">	<span class="string">\end&#123;tabular&#125;</span></span><br><span class="line">	<span class="string">\label&#123;bs2&#125;</span></span><br><span class="line"><span class="string">\end&#123;table&#125;</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-087fc0b5b2bb79c4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="没有溢出"></p>
+<h5 id="2-2-通过makecell宏包来实现换行"><a href="#2-2-通过makecell宏包来实现换行" class="headerlink" title="2.2 通过makecell宏包来实现换行"></a>2.2 通过<code>makecell</code>宏包来实现换行</h5><p><code>makecell</code>中有一个专门的用来处理表头的命令<code>thead[可以选对齐方式]&#123;列名称&#125;</code>。比如文中所示，<code>thead[l]&#123;Gene\\name&#125;</code>就是将gene和name换行显示，l表示左对齐。可以发现，这种方法没有出现字间距变大的情况，比第一种要好。</p>
+<figure class="highlight taggerscript"><table><tr><td class="code"><pre><span class="line"><span class="symbol">\b</span>egin&#123;table&#125;[]</span><br><span class="line">    <span class="symbol">\c</span>aption&#123;basic structure&#125;</span><br><span class="line">    <span class="symbol">\v</span>space&#123;20pt&#125;</span><br><span class="line">	<span class="symbol">\c</span>entering</span><br><span class="line">	<span class="symbol">\b</span>egin&#123;tabular&#125;&#123;lllll&#125;</span><br><span class="line">		<span class="symbol">\h</span>line</span><br><span class="line">		<span class="symbol">\t</span>head[l]&#123;Gene<span class="symbol">\\</span>name&#125; &amp; <span class="symbol">\t</span>head[l]&#123;Gene accession<span class="symbol">\\</span>No. &#125;&amp; <span class="symbol">\t</span>head[l]&#123;CDS length<span class="symbol">\\</span>(bp)&#125; &amp; <span class="symbol">\t</span>head[l]&#123;Protein size<span class="symbol">\\</span>(aa)&#125; &amp; <span class="symbol">\t</span>head[l]&#123;Protein MW<span class="symbol">\\</span>(kDa)&#125; <span class="symbol">\\</span></span><br><span class="line">		<span class="symbol">\h</span>line</span><br><span class="line">		001  &amp; 01g009860.2   &amp; 819             &amp; 272               &amp; 31.34            <span class="symbol">\\</span></span><br><span class="line">		002  &amp; 01g021730.2   &amp; 798             &amp; 265               &amp; 30.37            <span class="symbol">\\</span></span><br><span class="line">		003  &amp; 01g094490.2   &amp; 630             &amp; 209               &amp; 24.58            <span class="symbol">\\</span></span><br><span class="line">		004  &amp; 01g102740.2   &amp; 1242            &amp; 413               &amp; 46.94            <span class="symbol">\\</span></span><br><span class="line">		005  &amp; 01g104900.2   &amp; 597             &amp; 198               &amp; 22.85            <span class="symbol">\\</span></span><br><span class="line">		006  &amp; 02g036430.1   &amp; 1698            &amp; 565               &amp; 64.88            <span class="symbol">\\</span></span><br><span class="line">		007  &amp; 02g061780.2   &amp; 735             &amp; 244               &amp; 28.23            <span class="symbol">\\</span></span><br><span class="line">		008  &amp; 02g061870.1   &amp; 660             &amp; 219               &amp; 25.21            <span class="symbol">\\</span></span><br><span class="line">		009  &amp; 02g061900.1   &amp; 915             &amp; 304               &amp; 34.61            <span class="symbol">\\</span></span><br><span class="line">		010  &amp; 02g061910.1   &amp; 795             &amp; 264               &amp; 29.92 <span class="symbol">\\</span>    </span><br><span class="line">		<span class="symbol">\h</span>line       </span><br><span class="line">	<span class="symbol">\e</span>nd&#123;tabular&#125;</span><br><span class="line">	<span class="symbol">\l</span>abel&#123;bs&#125;</span><br><span class="line"><span class="symbol">\e</span>nd&#123;table&#125;</span><br></pre></td></tr></table></figure>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-dd6fe8edb6086b60.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="编译后的效果"></p>
+]]></content>
       <categories>
         <category>LaTeX入门</category>
       </categories>
       <tags>
         <tag>LaTeX</tag>
+        <tag>表格</tag>
       </tags>
   </entry>
   <entry>
@@ -798,36 +831,25 @@
       </tags>
   </entry>
   <entry>
-    <title>LaTeX插入表格</title>
-    <url>//2018/09/15/LaTeX%E6%8F%92%E5%85%A5%E8%A1%A8%E6%A0%BC/</url>
+    <title>Love</title>
+    <url>//2018/08/29/Love/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![惬意的周末，我也想拥有](https://upload-images.jianshu.io/upload_images/3478485-300eb5efdef1a5fe.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![love.jpeg](https://upload-images.jianshu.io/upload_images/3478485-7d3fb1e8df7d27b8.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-<blockquote>
-<p>周末了，下个礼拜终于要开学了，好像又要开始摆出努力的样子。一切都是在循环往复，还是希望进步，能够学习一些从没有接触过的实物和技术。</p>
-</blockquote>
-<p>LaTeX是极其专业的排版软件，我也想试试，我就来用它排版我的论文，这样走一遍之后，我想应该基本入门了。在插入表格的时候，遇到了一些问题，特异记录下来。</p>
+<p>那是发生在寒假某一天，突然想你。</p>
 <span id="more"></span>
 
-<h3 id="1-如何插入庞大的表格"><a href="#1-如何插入庞大的表格" class="headerlink" title="1. 如何插入庞大的表格"></a>1. 如何插入庞大的表格</h3><p>我们都知道，LaTeX可以一行一行的插入表格，但是在我们遇到比较庞大的表格时，我们该怎么办，有一个办法就是利用<a href="http://www.tablesgenerator.com/latex_tables">在线工具</a>进行转换成LaTeX格式的表格，而不需要花大量的时间一行一行输入。<br>只要你输入你的表格，然后点generate，生成相应的表格，让后你只需要输入到你的编辑器中，进行编译就可以。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-b7d8758edc879c5b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="复制表格"></p>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-eb16ad35b99dd364.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="表格复制"></p>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-552021decf1e4701.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="复制表格的内容到编译文本"></p>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-e3adcd1c31950f73.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="可以看到编译后会有一定的溢出"></p>
-<h3 id="2-解决表格溢出的问题"><a href="#2-解决表格溢出的问题" class="headerlink" title="2. 解决表格溢出的问题"></a>2. 解决表格溢出的问题</h3><p>可以缩小字体，也可以修改行之间的距离，也可以缩小整个表格。可以看到，原因在于表头的字体太长了，因此需要使其分行显示，这样一来就可以了。分行你可以定义表格的宽度，使其自动分行或者也可以使用<code>makecell</code>包来进行强制分行。</p>
-<h5 id="2-1-首先我们看看定义表格单列宽度："><a href="#2-1-首先我们看看定义表格单列宽度：" class="headerlink" title="2.1 首先我们看看定义表格单列宽度："></a>2.1 首先我们看看定义表格单列宽度：</h5><p>在下面的代码中，<br><code>\begin&#123;tabular&#125;&#123;p&#123;2cm&#125;p&#123;3cm&#125;p&#123;2.5cm&#125;p&#123;2.5cm&#125;p&#123;2.5cm&#125;p&#123;2.5cm&#125;&#125;</code>，这句是真正起到调节作用的。<code>p&#123;2cm&#125;</code>就是代表第一列的宽度，后面依次是后面的宽度，然后会自动进行换行显示。但是有一个问题就是，发现自动换行以后，字母之间的距离变得很大，不像是只有一个空格的样子。</p>
-<figure class="highlight livescript"><table><tr><td class="code"><pre><span class="line"><span class="string">\begin&#123;table&#125;[]</span></span><br><span class="line">	<span class="string">\caption&#123;basic</span> structure&#125;</span><br><span class="line">	<span class="string">\vspace&#123;20pt&#125;</span></span><br><span class="line">	<span class="string">\centering</span></span><br><span class="line">	<span class="string">\begin&#123;tabular&#125;&#123;p&#123;2cm&#125;p&#123;3cm&#125;p&#123;2.5cm&#125;p&#123;2.5cm&#125;p&#123;2.5cm&#125;p&#123;2.5cm&#125;&#125;</span></span><br><span class="line">		<span class="string">\hline</span></span><br><span class="line">		Gene name &amp; Gene accession No. &amp; CDS length (bp) &amp; Protein size (aa) &amp; Protein MW (kDa) <span class="string">\\</span></span><br><span class="line">		<span class="string">\hline</span></span><br><span class="line">		<span class="number">001</span>  &amp; <span class="number">01g</span>009860.<span class="number">2</span>   &amp; <span class="number">819</span>             &amp; <span class="number">272</span>               &amp; <span class="number">31.34</span>            <span class="string">\\</span></span><br><span class="line">		<span class="number">002</span>  &amp; <span class="number">01g</span>021730.<span class="number">2</span>   &amp; <span class="number">798</span>             &amp; <span class="number">265</span>               &amp; <span class="number">30.37</span>            <span class="string">\\</span></span><br><span class="line">		<span class="number">003</span>  &amp; <span class="number">01g</span>094490.<span class="number">2</span>   &amp; <span class="number">630</span>             &amp; <span class="number">209</span>               &amp; <span class="number">24.58</span>            <span class="string">\\</span></span><br><span class="line">		<span class="number">004</span>  &amp; <span class="number">01g</span>102740.<span class="number">2</span>   &amp; <span class="number">1242</span>            &amp; <span class="number">413</span>               &amp; <span class="number">46.94</span>            <span class="string">\\</span></span><br><span class="line">		<span class="number">005</span>  &amp; <span class="number">01g</span>104900.<span class="number">2</span>   &amp; <span class="number">597</span>             &amp; <span class="number">198</span>               &amp; <span class="number">22.85</span>            <span class="string">\\</span></span><br><span class="line">		<span class="number">006</span>  &amp; <span class="number">02g</span>036430.<span class="number">1</span>   &amp; <span class="number">1698</span>            &amp; <span class="number">565</span>               &amp; <span class="number">64.88</span>            <span class="string">\\</span></span><br><span class="line">		<span class="number">007</span>  &amp; <span class="number">02g</span>061780.<span class="number">2</span>   &amp; <span class="number">735</span>             &amp; <span class="number">244</span>               &amp; <span class="number">28.23</span>            <span class="string">\\</span></span><br><span class="line">		<span class="number">008</span>  &amp; <span class="number">02g</span>061870.<span class="number">1</span>   &amp; <span class="number">660</span>             &amp; <span class="number">219</span>               &amp; <span class="number">25.21</span>            <span class="string">\\</span></span><br><span class="line">		<span class="number">009</span>  &amp; <span class="number">02g</span>061900.<span class="number">1</span>   &amp; <span class="number">915</span>             &amp; <span class="number">304</span>               &amp; <span class="number">34.61</span>            <span class="string">\\</span></span><br><span class="line">		<span class="number">010</span>  &amp; <span class="number">02g</span>061910.<span class="number">1</span>   &amp; <span class="number">795</span>             &amp; <span class="number">264</span>               &amp; <span class="number">29.92</span> <span class="string">\\</span>    </span><br><span class="line">		<span class="string">\hline</span>       </span><br><span class="line">	<span class="string">\end&#123;tabular&#125;</span></span><br><span class="line">	<span class="string">\label&#123;bs2&#125;</span></span><br><span class="line"><span class="string">\end&#123;table&#125;</span></span><br></pre></td></tr></table></figure>
-
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-087fc0b5b2bb79c4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="没有溢出"></p>
-<h5 id="2-2-通过makecell宏包来实现换行"><a href="#2-2-通过makecell宏包来实现换行" class="headerlink" title="2.2 通过makecell宏包来实现换行"></a>2.2 通过<code>makecell</code>宏包来实现换行</h5><p><code>makecell</code>中有一个专门的用来处理表头的命令<code>thead[可以选对齐方式]&#123;列名称&#125;</code>。比如文中所示，<code>thead[l]&#123;Gene\\name&#125;</code>就是将gene和name换行显示，l表示左对齐。可以发现，这种方法没有出现字间距变大的情况，比第一种要好。</p>
-<figure class="highlight taggerscript"><table><tr><td class="code"><pre><span class="line"><span class="symbol">\b</span>egin&#123;table&#125;[]</span><br><span class="line">    <span class="symbol">\c</span>aption&#123;basic structure&#125;</span><br><span class="line">    <span class="symbol">\v</span>space&#123;20pt&#125;</span><br><span class="line">	<span class="symbol">\c</span>entering</span><br><span class="line">	<span class="symbol">\b</span>egin&#123;tabular&#125;&#123;lllll&#125;</span><br><span class="line">		<span class="symbol">\h</span>line</span><br><span class="line">		<span class="symbol">\t</span>head[l]&#123;Gene<span class="symbol">\\</span>name&#125; &amp; <span class="symbol">\t</span>head[l]&#123;Gene accession<span class="symbol">\\</span>No. &#125;&amp; <span class="symbol">\t</span>head[l]&#123;CDS length<span class="symbol">\\</span>(bp)&#125; &amp; <span class="symbol">\t</span>head[l]&#123;Protein size<span class="symbol">\\</span>(aa)&#125; &amp; <span class="symbol">\t</span>head[l]&#123;Protein MW<span class="symbol">\\</span>(kDa)&#125; <span class="symbol">\\</span></span><br><span class="line">		<span class="symbol">\h</span>line</span><br><span class="line">		001  &amp; 01g009860.2   &amp; 819             &amp; 272               &amp; 31.34            <span class="symbol">\\</span></span><br><span class="line">		002  &amp; 01g021730.2   &amp; 798             &amp; 265               &amp; 30.37            <span class="symbol">\\</span></span><br><span class="line">		003  &amp; 01g094490.2   &amp; 630             &amp; 209               &amp; 24.58            <span class="symbol">\\</span></span><br><span class="line">		004  &amp; 01g102740.2   &amp; 1242            &amp; 413               &amp; 46.94            <span class="symbol">\\</span></span><br><span class="line">		005  &amp; 01g104900.2   &amp; 597             &amp; 198               &amp; 22.85            <span class="symbol">\\</span></span><br><span class="line">		006  &amp; 02g036430.1   &amp; 1698            &amp; 565               &amp; 64.88            <span class="symbol">\\</span></span><br><span class="line">		007  &amp; 02g061780.2   &amp; 735             &amp; 244               &amp; 28.23            <span class="symbol">\\</span></span><br><span class="line">		008  &amp; 02g061870.1   &amp; 660             &amp; 219               &amp; 25.21            <span class="symbol">\\</span></span><br><span class="line">		009  &amp; 02g061900.1   &amp; 915             &amp; 304               &amp; 34.61            <span class="symbol">\\</span></span><br><span class="line">		010  &amp; 02g061910.1   &amp; 795             &amp; 264               &amp; 29.92 <span class="symbol">\\</span>    </span><br><span class="line">		<span class="symbol">\h</span>line       </span><br><span class="line">	<span class="symbol">\e</span>nd&#123;tabular&#125;</span><br><span class="line">	<span class="symbol">\l</span>abel&#123;bs&#125;</span><br><span class="line"><span class="symbol">\e</span>nd&#123;table&#125;</span><br></pre></td></tr></table></figure>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-dd6fe8edb6086b60.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="编译后的效果"></p>
+<p>2017年，已经完完整整的成为过去。有些东西永远留在心中，有些东西被遗忘，有些东西已经失去，有些人也离开。发生过的所有事，大概一定会留下痕迹吧。已经开启2018年的笔记本，所有已经发生过的痕迹，已经被记录在人生笔记本上的某一页，有些痕迹不及时查看，很快就会被翻页过去，永远地被遗忘。</p>
+<p>前两天，刚回家不久，开始组织高中同学会，发现没有什么人可以相聚，结果只有两个人有空，有时间能够相聚。聊着聊着总是会扯到找对象这件事，像我们这个年级的人，也差不多进入房子、车子和妹子的氛围中，无法逃脱。即使不想那么累，也不得不那么累。找对象，是经常被谈起的话题。每个人都有自己对爱情的独到见解。土豪同志说自己应该工作地点问题，和谈了3年左右的大学学妹分手了，现实很残酷，工作不在同一个地方，最后的结局基本就是分开。现在已经不想在校园里那样纯粹地去谈一场恋爱，首先考虑地往往就是工作地点，以及物质基础，周围越来越多的案例发生，历历在目。自己也变得越来越现实，爱情离我们越来越遥远，我真地没法理解。即使特别想要一份纯粹一些的爱情，但是仔细想想也是，你凭什么让一个人和你在一起吃苦，人生本来就短暂，不能好好地享受生活，还要跟着你吃苦，真得太艰难了。我永远处于这种矛盾之中，好像这个问题永远无解，没有办法找到最优的解，我已经苦苦寻求好久好久，依旧在黑暗中摸索。</p>
+<p>现在处于漂浮不定的状态，就是一种没法给人<strong>安全感</strong>的状态。没有办法去给别人任何关于未来的承诺，承担不了的责任，不要去硬抗，会累垮。我妈好像也不怎么着急，我也没有那么心急，有些东西该来的时候肯定还是会来的。<strong>遇见的时间不对，只能继续前行，希望在对的时空遇到对的人</strong>。注定一辈子活在不确定性当中，我貌似已经失去了对我自己生命的把控，决定权已经被剥夺。</p>
+<p>现在，我只选择好好地爱我的父母，考虑父母今后的日子。时间越来越少，现在的自己也有一点点的小小的能力让他们过得稍微好一点。对于父母，我好像不用在意承诺，父母是最伟大的存在，不用给出什么承诺，我也不怕，就想着尽早地尽孝，好好孝顺他们。越早越好，能孝顺多少是多少，不用考虑太多。现在看来，自己真的还有好多人情，好多爱需要反馈。长这么大，接受了多少人的爱，才有了今天的我，亲戚的爱，周围邻居的爱，同学的爱，老师的爱以及父母的爱。自己现在还没有什么能力去反馈给他们，让他们知道他们的付出我都是记在心里的，在我的<strong>生命笔记本</strong>中都好好地记录着，谁对我好我都清楚。现在或多或少，都该开始反馈了，或者通俗的报答感恩。</p>
+<p>2018年，开始回看<strong>生命笔记本</strong>，找出那些爱的痕迹，尽可能多地想到这些人，要放在心上。要重新对生活充满激情，热爱生活，才能更好地执行这件事。希望我能更久地陪在你们身边，让我有机会更对地给予你们<strong>爱的反馈。</strong></p>
 ]]></content>
       <categories>
-        <category>LaTeX入门</category>
+        <category>随记</category>
       </categories>
       <tags>
-        <tag>LaTeX</tag>
-        <tag>表格</tag>
+        <tag>爱</tag>
       </tags>
   </entry>
   <entry>
@@ -854,28 +876,6 @@
       <tags>
         <tag>LaTeX</tag>
         <tag>longtable</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Love</title>
-    <url>//2018/08/29/Love/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![love.jpeg](https://upload-images.jianshu.io/upload_images/3478485-7d3fb1e8df7d27b8.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-<p>那是发生在寒假某一天，突然想你。</p>
-<span id="more"></span>
-
-<p>2017年，已经完完整整的成为过去。有些东西永远留在心中，有些东西被遗忘，有些东西已经失去，有些人也离开。发生过的所有事，大概一定会留下痕迹吧。已经开启2018年的笔记本，所有已经发生过的痕迹，已经被记录在人生笔记本上的某一页，有些痕迹不及时查看，很快就会被翻页过去，永远地被遗忘。</p>
-<p>前两天，刚回家不久，开始组织高中同学会，发现没有什么人可以相聚，结果只有两个人有空，有时间能够相聚。聊着聊着总是会扯到找对象这件事，像我们这个年级的人，也差不多进入房子、车子和妹子的氛围中，无法逃脱。即使不想那么累，也不得不那么累。找对象，是经常被谈起的话题。每个人都有自己对爱情的独到见解。土豪同志说自己应该工作地点问题，和谈了3年左右的大学学妹分手了，现实很残酷，工作不在同一个地方，最后的结局基本就是分开。现在已经不想在校园里那样纯粹地去谈一场恋爱，首先考虑地往往就是工作地点，以及物质基础，周围越来越多的案例发生，历历在目。自己也变得越来越现实，爱情离我们越来越遥远，我真地没法理解。即使特别想要一份纯粹一些的爱情，但是仔细想想也是，你凭什么让一个人和你在一起吃苦，人生本来就短暂，不能好好地享受生活，还要跟着你吃苦，真得太艰难了。我永远处于这种矛盾之中，好像这个问题永远无解，没有办法找到最优的解，我已经苦苦寻求好久好久，依旧在黑暗中摸索。</p>
-<p>现在处于漂浮不定的状态，就是一种没法给人<strong>安全感</strong>的状态。没有办法去给别人任何关于未来的承诺，承担不了的责任，不要去硬抗，会累垮。我妈好像也不怎么着急，我也没有那么心急，有些东西该来的时候肯定还是会来的。<strong>遇见的时间不对，只能继续前行，希望在对的时空遇到对的人</strong>。注定一辈子活在不确定性当中，我貌似已经失去了对我自己生命的把控，决定权已经被剥夺。</p>
-<p>现在，我只选择好好地爱我的父母，考虑父母今后的日子。时间越来越少，现在的自己也有一点点的小小的能力让他们过得稍微好一点。对于父母，我好像不用在意承诺，父母是最伟大的存在，不用给出什么承诺，我也不怕，就想着尽早地尽孝，好好孝顺他们。越早越好，能孝顺多少是多少，不用考虑太多。现在看来，自己真的还有好多人情，好多爱需要反馈。长这么大，接受了多少人的爱，才有了今天的我，亲戚的爱，周围邻居的爱，同学的爱，老师的爱以及父母的爱。自己现在还没有什么能力去反馈给他们，让他们知道他们的付出我都是记在心里的，在我的<strong>生命笔记本</strong>中都好好地记录着，谁对我好我都清楚。现在或多或少，都该开始反馈了，或者通俗的报答感恩。</p>
-<p>2018年，开始回看<strong>生命笔记本</strong>，找出那些爱的痕迹，尽可能多地想到这些人，要放在心上。要重新对生活充满激情，热爱生活，才能更好地执行这件事。希望我能更久地陪在你们身边，让我有机会更对地给予你们<strong>爱的反馈。</strong></p>
-]]></content>
-      <categories>
-        <category>随记</category>
-      </categories>
-      <tags>
-        <tag>爱</tag>
       </tags>
   </entry>
   <entry>
@@ -999,6 +999,54 @@
       </tags>
   </entry>
   <entry>
+    <title>印度，漂浮的次大陆</title>
+    <url>//2018/09/06/%E5%8D%B0%E5%BA%A6%EF%BC%8C%E6%BC%82%E6%B5%AE%E7%9A%84%E6%AC%A1%E5%A4%A7%E9%99%86/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![印度，漂浮的次大陆](http://upload-images.jianshu.io/upload_images/3478485-b11c23f0c98ac99f.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+> 俞敏洪老师的推荐，于是就去读了郭建龙一个系列的游记。《穿越百年中东》、《骑车去元朝》、《印度，漂浮的次大陆》和《三千佛塔烟云下》都读了一遍，信息量超级大，不过读起来特别的畅快，特别的流畅。
+> 郭建龙是个文化旅者，总是亲身去体验某个地方的文化，历史，地理，政治，经济和宗教，最后凭借自己的文笔，写出独具特色的游记，我个人非常喜欢，推荐阅读。
+> 内容摘录自郭建龙的《印度，漂浮的次大陆》这本书。
+
+
+
+<span id="more"></span>
+
+<p>哈拉帕（巴基斯坦），洛塔尔（印度）。<br>洛塔尔遗址，手工业和贸易促使其如此的发达。然而，公元前2000年左右，整个印度河文明都衰落了。<br>在欧洲，存在着非洲两次走出的古人类相遇证据。那就是第二次的克罗马农人取代了第一次的尼安德特人，成为现代欧洲人的祖先。那么古印度人的祖先从哪里过来？在比莫贝特卡，发现了穴居文化。</p>
+<p>印度人之前一直以雅利安人的血统引以为豪，认为自己是雅利安人的后裔。但是当考古发现，公元前5000，已经在印度河流域出现了本土的古印度文明，比雅利安人入侵印度次大陆早千年，不得不承认存在高度发达的古印度文明。但印度人和雅利安人有着紧密的联系，<strong>英国人威廉琼斯公爵从语言学上发现，印度的梵语，拉丁语和欧洲的语言有着同一起源，从而也证明了确实雅利安人和印度人有着紧密的联系。</strong>而后来的考古发现也证明，大约在公元前3000年，在中亚大草原、里海附近的雅利安人，分为两支：一支进入欧洲，成为现代欧洲人的祖先；而另一支，经伊朗阿富汗，翻过兴都库什山脉，顺着开伯尔山口进入印度河谷地，最终扩散到整个印度。为什么古老发达的文明无法抵抗雅利安人？因为，在公元前2000左右，古印度文明开始衰落，而此时雅利安人正好在恰当的时机到来，从而入侵整个印度。</p>
+<p><strong>虽然古印度文明消亡了，但是人种并不会就此消失。</strong>在现代的南印度，存在达罗毗荼人，可能与印度河文明的人种一致，且他们拥有自己的语言系统。<strong>现在的印度，分为两种语系，在南方属于达罗毗荼语系，而在北方则是属于梵语。</strong>在印度神奇的是，雅利安人已经入侵印度几千年了，到现在为止，雅利安人和达罗毗荼人还没有完成融合，跟中国社会的情况完全不同。原因：<strong>强大的种姓制度。</strong></p>
+<h2 id="印度教"><a href="#印度教" class="headerlink" title="印度教"></a>印度教</h2><p>雅利安人为了防止自己被当地原始居民同化，从而建立了严格的种姓制度，出现了<strong>四种种姓：婆罗门，刹帝什，吠舍和首陀罗</strong>。分别担任宗教和精神领袖，国王和武士，从事商业，最底层。还有没有种姓的贱民。规定人一出生就确定了种姓，永远也不可能改变，无法进阶到更高的种姓。但是，如果长期下去，最底层的人会越来越多，最终会通过暴力手段推翻这种限制，然而<strong>为什么这种制度能够如此长久的维持？</strong>只能通过宗教信仰手段，将<strong>种姓制度融入到宗教</strong>之中，使其能够自动的被大众接受，这个宗教就是<strong>印度教</strong>。教义强调：人的灵魂是可以轮回的，这一世为人，下一世可能为动物，也可能身为更高种姓的人类，所以给了人们虚假的承诺，使得人们遵从现有的制度而不加以反抗，与中国的儒教相似。</p>
+<p><strong>世界上所有的宗教一般都包括了信仰和伦理两方面，其中信仰是个人化的体验，关系到个人与神之间的沟通，而伦理是一种社会化的体验，主要强调人与人之间的交流。侧重点的不同，宗教分为两大类：基督教和佛教侧重信仰，而印度教和儒教侧重伦理。伊斯兰教处在两者中间。</strong></p>
+<p>在这一时期，印度的神祇也得到了确立，形成了<strong>三大主神：梵天，毗湿奴和湿婆以及无所不包的各路神仙</strong>。其中湿婆是受到最广泛崇拜的主神，同时也是生殖力的代表，于是有了崇拜生殖和崇拜阴茎的传统。湿婆的化身往往是一根石柱，象征着阴茎和生殖力，叫做林伽。在西藏的外喜马拉雅山脉中，有一座形同阴茎的山峰，叫做冈仁波齐，在印度称为凯拉什山，是藏传佛教，苯教和印度教的神山。印度人将前往冈仁波齐看成朝圣的极致。</p>
+<p>同时这一时期，印度史诗也形成。最早的梵语经典<strong>《吠陀经》</strong>成型，<strong>印度的传奇史诗《罗摩衍那》和《摩诃婆罗多》逐渐流传开来。</strong>《罗摩衍那》家喻户晓。</p>
+<h2 id="佛教"><a href="#佛教" class="headerlink" title="佛教"></a>佛教</h2><p><strong>佛陀，或称释迦摩尼，名字叫悉达多乔达摩</strong>。出身在印度十六国时期的迦毗罗卫国的<strong>蓝毗尼</strong>的一棵树下，现在的尼泊尔境内。父亲是迦毗罗卫国的国王净饭王，这个小国依附于大国拘萨罗，是由雅利安人种释迦族建立的，属于刹帝什种姓。母亲摩耶夫人。年轻的悉达多，在王宫中长大，不问世事，整天沉迷爱情俗世，有三位妻子和自己的孩子，在孩子出身的那一年，当悉达多看到世外的人所受的苦难，于是开始思考人生的意义，离开皇宫开始寻找答案。在菩提迦耶的菩提树下，悉达多决定放弃苦修，开始打坐静修。本来他的五位随从认为他已经放弃寻找真理了，于是离开了他。不久，他就彻底领悟，找到了属于自己的<strong>一套理论体系</strong>，<strong>人生的意义是使得自己死后的灵魂得到永恒，也是与印度教类似的轮回机制，但是佛教的是认为轮回本身是一种痛苦，需要跳出轮回，灵魂才能得到永恒。那么如何跳出这个永无止境的轮回呢？</strong>悉达多构想出了<strong>“四谛”</strong>理论体系：<strong>苦谛</strong>，指的人生的一切苦难。<strong>集谛</strong>，贪嗔痴三毒是苦难产生的原因。<strong>灭谛</strong>，消灭苦难就要消灭三毒。<strong>道谛</strong>，修行的行为规范，指八正道，帮助人们消灭三毒的方法，修行得当的人都可以跳出轮回之苦，从而达到活着的意义和死后的永恒。</p>
+<p><strong>四谛</strong>是悉达多理论的核心，因为这个体系<strong>打破了种姓的界限，强调了人生的平等</strong>。任何人要是想跳出轮回，必须要按这种修行方式进行。</p>
+<p>获得顿悟的悉达多没有立即离开，继续思考完善体系，后来来到了一个叫做鹿野苑的地方，收了第一批信徒。这就是之前离开他的五个人，是其父亲在其离开时选派的五位宗室子弟。也就是佛教史上有名的五比丘。也就在此刻开始，佛教的佛、法、僧已经圆满集结，悉达多乔达摩也正式成为佛陀。之后继续传教，走向全国。最后，在晚年，佛陀带了少量弟子来到名叫拘尸那罗的地方，一病不起，不久圆寂与此。而此时的迦毗罗卫国也被拘萨罗消灭，而最后拘萨罗也被摩揭陀国所灭，为印度的统一打下了基础。</p>
+<h2 id="耆那教"><a href="#耆那教" class="headerlink" title="耆那教"></a>耆那教</h2><p>耆那教<strong>人口很少</strong>的宗教，但是在印度却有着及其重大的影响，甚至在<strong>影响力上超过了佛教</strong>。主要有两方面，第一，<strong>更强调苦行</strong>，对于人的要求高，更小众，使得能够接受的它的人很少，但是却是非常的坚定；第二，<strong>没有国际化</strong>。耆那教的创始人，<strong>筏陀摩耶被称为大雄</strong>，他的活动范围与佛陀重叠，也是在摩揭陀国的影响范围内。他强调的是苦行，为了完全达到断绝物欲的地步，甚至拒绝穿衣服，连身上有屎尿都毫不在意。而佛陀是放弃苦修的，过着质朴的生活，不是特意吃苦。</p>
+<p><strong>耆那教和印度教的神庙在外表上有相似之处，但是也有区别</strong>。耆那教的外部花式更加简单，而印度教的华丽高大。内部，耆那教的装饰复杂华丽，奢华无比，而印度教的却是及其简单，最简单的石板搭建的。</p>
+<h2 id="超级大国的更替"><a href="#超级大国的更替" class="headerlink" title="超级大国的更替"></a>超级大国的更替</h2><p>中国对印度的影响在公元前后到达，在这之前，对印度影响至深的是西方的希腊传导过去的事件，<strong>亚历山大的东征</strong>。但在亚历山大东征统治世界之前，是西亚的波斯文明主导全世界的强大政权。</p>
+<p>当西亚的新巴比伦帝国衰亡之后，伊朗境内兴起了一个新的帝国——<strong>波斯的阿契美尼德王朝</strong>，这是后来统治中亚的历代波斯王朝中的第一个。西亚的政治中心也从伊拉克两河流域转移到了伊朗境内。</p>
+<p>公元前7世纪，当时整个波斯在米底人的统治下。阿契美尼德死后，其儿子脱离了米底王国，经历过几代的继承，到了<strong>居鲁士二世</strong>统治时期，消灭了米底人的政权，还将前霸主新巴比伦帝国也消灭了。此后其儿子冈比西斯二世征服了埃及和非洲的大批领土，而其继承者<strong>大流士一世</strong>却改变了征服方向，开始向东方，越过开伯尔山口，进入印度河平原地区。之后又改变方向，又向西，入侵了希腊人的领土，<strong>从此将不起眼的希腊和欧洲带入了世界的舞台</strong>。希腊本来在东方的眼里根本不值得一提，只是生意人，他们航海走向各地，建立殖民地，只是为了做生意而不是扩张领土。<strong>波斯人入侵希腊，使得希腊各个弱小的城邦抱团抵抗，爆发出了强大的力量，使得波斯人战败</strong>。大流士一世之后，儿子薛西斯发动了第二次入侵，希腊人再次胜利，此后波斯就进入了衰落期，而西方兴起了新的霸主希腊。</p>
+<p>但希腊的这种团结不久就分裂，两个最大的城邦<strong>雅典和斯巴达</strong>开始争夺希腊的领导权，最终在波斯人的帮助下，斯巴达打败了雅典。但结果是两败俱伤。</p>
+<p>与此同时，一个希腊人看不起的<strong>希腊北部的马其顿</strong>兴起了，马其顿国王<strong>腓力二世</strong>打败了雅典和科林斯强权，使整个<strong>希腊半岛在历史上第一次统一</strong>。腓力二世的儿子就是著名的<strong>亚历山大大帝</strong>，这时整个希腊已经属于马其顿，他先进军<strong>小亚细亚</strong>，再把<strong>埃及</strong>纳入自己的版图，埃及的古老文明从此消失。接着进军<strong>波斯</strong>，打败波斯王大流士三世，最终波斯王朝覆灭。之后继续挥兵<strong>中亚阿富汗</strong>，塔吉克斯坦直到新疆以西的<strong>河中地区</strong>。突然就做了一个决定，向<strong>印度</strong>进军。<strong>此时的印度，内部也在进行着激烈的整合。摩揭陀国成为胜利者，几乎统一了全国</strong>。摩揭陀共包含了四个朝代，最后的难陀王朝是非常重要的承上启下的朝代，这时的印度的疆域已经有目前的一半大小，囊括整个北印度，和现代孟加拉国和缅甸的一部分。正是在这个朝代，亚历山大挥师进入印度。在印度，面临的是许多具有单独作战实力地区，如同游击战，亚历山大大帝陷入了全面作战的汪洋大海中，加之印度南北跨度几千公里，气候复杂，最后被迫撤退。不久，<strong>33岁的亚历山大大帝在巴比伦得病去世</strong>，留下了许多亚历山大的城市和希腊化的世界，其余化为传说。而这一次入侵对于印度的政治影响，间接促成了本土的伟大帝国的出现——<strong>孔雀帝国，印度第一次统一</strong>。</p>
+<p>亚历山大大帝撤退，使得整个西北印度陷入了权利的真空状态。原有的政治势力被破坏掉了，犍陀罗等国家被征服，另一方面难陀王朝还没有将控制力延伸过去。这时一个名叫<strong>旃陀罗笈多孔雀的人</strong>汇集大军向摩揭陀的难陀王朝进军，这时的难陀王朝也已经腐败无能，也希望新的君王接管权力。大军压境，难陀国王选择退位，避免了一场血腥的战争，孔雀王朝继承了难陀王打下了的江山。旃陀罗笈多孔雀最后在一个山洞里修行，信奉耆那教，最后默默的死去。他的孙子<strong>阿育王</strong>经过继承战，据说杀死了自己的99个亲兄弟，从自己的父亲频头娑罗哪里得到了孔雀王朝的宝座。阿育王前半生在杀戮中度过，而后半生却信奉佛教，在全国建造了数万座佛塔，然而现在剩下的只有<strong>桑吉大塔</strong>和鹿野苑的<strong>答枚克塔</strong>。</p>
+<p><strong>贵霜人</strong>的历史，最早可以从中国的战国时期找到痕迹，在中国西部的甘肃河西走廊一带，有一个半游牧民族在这里生活了很久。从某种程度上来说，<strong>月氏人</strong>是一个过渡民族，恰好夹在了游牧和定居之间，且受到了双方的威胁。其中在南方是定居的<strong>华夏民族</strong>，经过了春秋战国，秦国正在崛起，而在北方则是<strong>游牧民族匈奴</strong>。事实证明，游牧民族的威胁更大。直到秦朝末年，匈奴还比月氏人弱小，作为寄主国，当时匈奴的王位继承人只能以人质身份在月氏人当中生活，最后一位是叫做<strong>冒顿</strong>的匈奴人，没有受到善待，仇视月氏人，最后其逃回自己的部落，成为新的单于，从此以后月氏人进入了噩梦时期，<strong>冒顿挥师南下，屠杀，公元前202年左右，月氏人被迫放弃了肥沃的河西走廊，向西迁移。</strong>公元前177年左右，冒顿再次击败月氏人，被迫再次迁移，一部分南下进入了<strong>青海境内</strong>，被当地人同化；另一部分继续西迁，到达了新疆的<strong>准葛尔盆地</strong>。公元前162年，冒顿的儿子老上，再次打败月氏人，将月氏王的头颅砍下，当了酒器。只好再次西迁到了<strong>新疆的伊犁一带</strong>。这一次的西迁，引起了<strong>连锁反应</strong>，原本在伊犁这一带的<strong>斯基泰人向西南运动</strong>，进入了阿富汗境内。而这时在伊犁的月氏人因为被汉王朝打击的匈奴人的西迁，只好向西方的中亚地区前进，进入了著名<strong>河中地区</strong>，也就是阿姆河和锡尔河中间地带。而在河中地区，遭到了当地人的驱赶，不得不向南，进入了阿富汗伊朗境内，使得在这里的<strong>斯基泰人再次向南移动</strong>。在此之前，阿富汗和伊朗境内居住者安息人和希腊人，亚历山大征服中亚后，希腊人的后裔在这里建立起了大夏王国，在斯基泰人和月氏人的压力下，<strong>巴克特里亚人纷纷南下，进入印度境内，成为了入侵印度的第一波势力</strong>。</p>
+<p>由匈奴人和月氏人搅动的一系列民族迁徙活动，将一波一波的人们赶往了印度次大陆。张骞出使西域本来想联合月氏人给匈奴人来个东西夹击，但是月氏人拒绝了，不想再回到中国，此后月氏人彻底离开了中国的范围。<strong>公元前140年</strong>，在斯基泰人之后，月氏人也南下到了<strong>大夏边境</strong>，此时月氏人已经分成了5个部落，而贵霜就是其中的一个。之后打败了西部的安息国，继续占领大夏东部地区。此时接触到了大夏的希腊化文明，<strong>月氏人开始希腊化，从此变成了定居民族</strong>。并发行自己的货币和开始发展商贸关系。这时也受到了印度佛教的影响，开始将佛教作为他们的宗教。公元前1世纪初，<strong>贵霜部落</strong>打败其余部落，建立了<strong>贵霜帝国</strong>。在印度希腊人、印度斯基泰人、印度安息人之后，印度贵霜帝国正式登场。</p>
+<p><strong>维查耶纳加尔</strong>是印度教最后一个伟大帝国，负有捍卫印度教、抵抗伊斯兰教的重任。毁灭后，伊斯兰教长驱直入，在次大陆占据了主导地位，开始了几百年的伊斯兰政权时期。实际上，<strong>维查耶纳加尔就是为了对抗伊斯兰才出现</strong>。当北印度处于德里苏丹国统治的时候，南印度曾经强大的遮卢迦王国和拉什特拉库塔王国已经消亡。取而代之的四个小王国，分别是雅达瓦、卡卡提亚，潘地亚王国和霍伊萨拉王国。</p>
+<p>阿拉-乌德-丁用一生与南印度各国征战，其中就征服了雅达瓦和霍伊萨拉。前者为穆斯林提供了新的都城，而后者灭亡使得维查耶纳加尔在其土地上成长起来。</p>
+<p>巴马尼苏丹国的出现，这个伊斯兰国家的兴起与德里苏丹穆罕穆德图格鲁克迁都失败有关。比达尔城是该国的首都，与汉皮相比，伊斯兰教有最先进的战争理念，而印度教徒却是将首都看成生活的地方，由此也可以看出，两者在对战是的成败。南印度就在这两个教权国家的残忍战争中被扭曲，直到其中一个国家垮掉。最后，巴马尼苏丹最先垮掉，分为五个小苏丹国，这五个小国又内斗，最后成为三个苏丹国，最后联合起来，打败了维查耶纳加尔国，历史仅留下了汉皮这片废墟。此时，南印度也成了伊斯兰教的天下。这三个苏丹国也进入了黄金时代，而印度教最后的伟大政权也终于轰然倒塌。这时候，同属于伊斯兰教的来自北方的莫卧儿人出现了。</p>
+<p>在<strong>中世纪</strong>，虽然印度的佛教被印度教取代，但仍旧是世界的<strong>佛教中心</strong>，其中最有名的就是那烂陀大学，学术圣殿。但是在<strong>12世纪</strong>时，当古尔人到来，穆罕默德首领下的努力将军库特卜<strong>占领毁灭了那烂陀大学</strong>，<strong>使得佛教从印度消失</strong>。13世纪初，库特卜成立德里苏丹国，在莫卧尔人到来前，控制印度300多年。<strong>德里，现在印度的首都开始登上历史舞台。</strong></p>
+<p><strong>13世纪，成吉思汗带着蒙古人席卷了整个世界</strong>，在中国建立了元朝，在波斯建立了<strong>伊尔汗国</strong>，在俄罗斯人的土地上建立了<strong>金帐汗国</strong>，在如今的新疆西部、中亚建立了<strong>察合台汗国</strong>，在新疆北部和蒙古东部建立了<strong>窝阔台汗国</strong>。这五大汗国占领了当时已知世界的一大半。之后蒙古很快衰败，在<strong>察合台汗国</strong>的土地上，在14世纪后半期突厥人<strong>帖木儿</strong>威慑整个中亚、西亚和中欧，甚至占领了印度的一部分。但是在进攻明朝时，突然途中去世，此后帖木儿帝国分崩离析。<strong>然而此时，中亚出现了一位蒙古人和突厥人的双重后裔，巴布尔</strong>。让他占领印度，并开创了一个伟大的王朝。<br><strong>巴布尔在父系上是帖木儿的直系后裔，从母系来说，是成吉思汗的后裔。</strong>因此，从1483年出生，就带着世界上最有血性的两个人的基因。</p>
+<p>河中地区的城市撒马尔罕是帖木儿的都城，要称霸中亚必须拿下撒马尔罕，但是命中注定不属于巴布尔，一世经过三次进攻，却一次都没有成功，中亚的大门从此关闭。然而，经过分析，印度是个不错的可以暂时栖息之地，前四次进攻印度只是在外围，现在的巴基斯坦境内，没有深入到德里地区，然而第五次，德里苏丹出现内乱，有人请他去去德里，于是决心进军德里。<strong>这次战役的胜利，决定了印度历史的未来300年，建立了一个伟大的帝国。</strong>巴布尔在阿拉格建立了帝国的首都，阿拉格是用艺术和建筑征服印度，其后代也大都继承了祖先的艺术气质，使得<strong>莫卧尔成为艺术世界的巅峰</strong>。此后，巴布尔平定了整个北部地区，不久去世，他的儿子胡马雍继承王位，但此时的帝国还没有稳定，<strong>胡马雍</strong>不善战，被东方孟加拉的将军舍尔汗打败，被赶出了印度，退到了阿富汗。而舍尔汗在位期间，使整个印度政局稳定。死后，胡马雍很快从其后代那里夺回了印度，继承了舍尔汗开创的一系列制度，并重新将首都迁到了德里。之后不小心摔死在图书馆，成为第一个葬在印度土地上的莫卧尔皇帝。</p>
+]]></content>
+      <categories>
+        <category>读书笔记</category>
+      </categories>
+      <tags>
+        <tag>印度</tag>
+        <tag>郭建龙</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>基于全基因组的基因家族分析（4）：SlNRAMP家族基因进化树构建</title>
     <url>//2022/07/31/%E5%9F%BA%E4%BA%8E%E5%85%A8%E5%9F%BA%E5%9B%A0%E7%BB%84%E7%9A%84%E5%9F%BA%E5%9B%A0%E5%AE%B6%E6%97%8F%E5%88%86%E6%9E%90%EF%BC%884%EF%BC%89%EF%BC%9ASlNRAMP%E5%AE%B6%E6%97%8F%E5%9F%BA%E5%9B%A0%E8%BF%9B%E5%8C%96%E6%A0%91%E6%9E%84%E5%BB%BA/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -1076,54 +1124,6 @@ characterization of aluminum resistance in Populus"><br>这里我先用比较麻
       </categories>
       <tags>
         <tag>gene</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>印度，漂浮的次大陆</title>
-    <url>//2018/09/06/%E5%8D%B0%E5%BA%A6%EF%BC%8C%E6%BC%82%E6%B5%AE%E7%9A%84%E6%AC%A1%E5%A4%A7%E9%99%86/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![印度，漂浮的次大陆](http://upload-images.jianshu.io/upload_images/3478485-b11c23f0c98ac99f.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-> 俞敏洪老师的推荐，于是就去读了郭建龙一个系列的游记。《穿越百年中东》、《骑车去元朝》、《印度，漂浮的次大陆》和《三千佛塔烟云下》都读了一遍，信息量超级大，不过读起来特别的畅快，特别的流畅。
-> 郭建龙是个文化旅者，总是亲身去体验某个地方的文化，历史，地理，政治，经济和宗教，最后凭借自己的文笔，写出独具特色的游记，我个人非常喜欢，推荐阅读。
-> 内容摘录自郭建龙的《印度，漂浮的次大陆》这本书。
-
-
-
-<span id="more"></span>
-
-<p>哈拉帕（巴基斯坦），洛塔尔（印度）。<br>洛塔尔遗址，手工业和贸易促使其如此的发达。然而，公元前2000年左右，整个印度河文明都衰落了。<br>在欧洲，存在着非洲两次走出的古人类相遇证据。那就是第二次的克罗马农人取代了第一次的尼安德特人，成为现代欧洲人的祖先。那么古印度人的祖先从哪里过来？在比莫贝特卡，发现了穴居文化。</p>
-<p>印度人之前一直以雅利安人的血统引以为豪，认为自己是雅利安人的后裔。但是当考古发现，公元前5000，已经在印度河流域出现了本土的古印度文明，比雅利安人入侵印度次大陆早千年，不得不承认存在高度发达的古印度文明。但印度人和雅利安人有着紧密的联系，<strong>英国人威廉琼斯公爵从语言学上发现，印度的梵语，拉丁语和欧洲的语言有着同一起源，从而也证明了确实雅利安人和印度人有着紧密的联系。</strong>而后来的考古发现也证明，大约在公元前3000年，在中亚大草原、里海附近的雅利安人，分为两支：一支进入欧洲，成为现代欧洲人的祖先；而另一支，经伊朗阿富汗，翻过兴都库什山脉，顺着开伯尔山口进入印度河谷地，最终扩散到整个印度。为什么古老发达的文明无法抵抗雅利安人？因为，在公元前2000左右，古印度文明开始衰落，而此时雅利安人正好在恰当的时机到来，从而入侵整个印度。</p>
-<p><strong>虽然古印度文明消亡了，但是人种并不会就此消失。</strong>在现代的南印度，存在达罗毗荼人，可能与印度河文明的人种一致，且他们拥有自己的语言系统。<strong>现在的印度，分为两种语系，在南方属于达罗毗荼语系，而在北方则是属于梵语。</strong>在印度神奇的是，雅利安人已经入侵印度几千年了，到现在为止，雅利安人和达罗毗荼人还没有完成融合，跟中国社会的情况完全不同。原因：<strong>强大的种姓制度。</strong></p>
-<h2 id="印度教"><a href="#印度教" class="headerlink" title="印度教"></a>印度教</h2><p>雅利安人为了防止自己被当地原始居民同化，从而建立了严格的种姓制度，出现了<strong>四种种姓：婆罗门，刹帝什，吠舍和首陀罗</strong>。分别担任宗教和精神领袖，国王和武士，从事商业，最底层。还有没有种姓的贱民。规定人一出生就确定了种姓，永远也不可能改变，无法进阶到更高的种姓。但是，如果长期下去，最底层的人会越来越多，最终会通过暴力手段推翻这种限制，然而<strong>为什么这种制度能够如此长久的维持？</strong>只能通过宗教信仰手段，将<strong>种姓制度融入到宗教</strong>之中，使其能够自动的被大众接受，这个宗教就是<strong>印度教</strong>。教义强调：人的灵魂是可以轮回的，这一世为人，下一世可能为动物，也可能身为更高种姓的人类，所以给了人们虚假的承诺，使得人们遵从现有的制度而不加以反抗，与中国的儒教相似。</p>
-<p><strong>世界上所有的宗教一般都包括了信仰和伦理两方面，其中信仰是个人化的体验，关系到个人与神之间的沟通，而伦理是一种社会化的体验，主要强调人与人之间的交流。侧重点的不同，宗教分为两大类：基督教和佛教侧重信仰，而印度教和儒教侧重伦理。伊斯兰教处在两者中间。</strong></p>
-<p>在这一时期，印度的神祇也得到了确立，形成了<strong>三大主神：梵天，毗湿奴和湿婆以及无所不包的各路神仙</strong>。其中湿婆是受到最广泛崇拜的主神，同时也是生殖力的代表，于是有了崇拜生殖和崇拜阴茎的传统。湿婆的化身往往是一根石柱，象征着阴茎和生殖力，叫做林伽。在西藏的外喜马拉雅山脉中，有一座形同阴茎的山峰，叫做冈仁波齐，在印度称为凯拉什山，是藏传佛教，苯教和印度教的神山。印度人将前往冈仁波齐看成朝圣的极致。</p>
-<p>同时这一时期，印度史诗也形成。最早的梵语经典<strong>《吠陀经》</strong>成型，<strong>印度的传奇史诗《罗摩衍那》和《摩诃婆罗多》逐渐流传开来。</strong>《罗摩衍那》家喻户晓。</p>
-<h2 id="佛教"><a href="#佛教" class="headerlink" title="佛教"></a>佛教</h2><p><strong>佛陀，或称释迦摩尼，名字叫悉达多乔达摩</strong>。出身在印度十六国时期的迦毗罗卫国的<strong>蓝毗尼</strong>的一棵树下，现在的尼泊尔境内。父亲是迦毗罗卫国的国王净饭王，这个小国依附于大国拘萨罗，是由雅利安人种释迦族建立的，属于刹帝什种姓。母亲摩耶夫人。年轻的悉达多，在王宫中长大，不问世事，整天沉迷爱情俗世，有三位妻子和自己的孩子，在孩子出身的那一年，当悉达多看到世外的人所受的苦难，于是开始思考人生的意义，离开皇宫开始寻找答案。在菩提迦耶的菩提树下，悉达多决定放弃苦修，开始打坐静修。本来他的五位随从认为他已经放弃寻找真理了，于是离开了他。不久，他就彻底领悟，找到了属于自己的<strong>一套理论体系</strong>，<strong>人生的意义是使得自己死后的灵魂得到永恒，也是与印度教类似的轮回机制，但是佛教的是认为轮回本身是一种痛苦，需要跳出轮回，灵魂才能得到永恒。那么如何跳出这个永无止境的轮回呢？</strong>悉达多构想出了<strong>“四谛”</strong>理论体系：<strong>苦谛</strong>，指的人生的一切苦难。<strong>集谛</strong>，贪嗔痴三毒是苦难产生的原因。<strong>灭谛</strong>，消灭苦难就要消灭三毒。<strong>道谛</strong>，修行的行为规范，指八正道，帮助人们消灭三毒的方法，修行得当的人都可以跳出轮回之苦，从而达到活着的意义和死后的永恒。</p>
-<p><strong>四谛</strong>是悉达多理论的核心，因为这个体系<strong>打破了种姓的界限，强调了人生的平等</strong>。任何人要是想跳出轮回，必须要按这种修行方式进行。</p>
-<p>获得顿悟的悉达多没有立即离开，继续思考完善体系，后来来到了一个叫做鹿野苑的地方，收了第一批信徒。这就是之前离开他的五个人，是其父亲在其离开时选派的五位宗室子弟。也就是佛教史上有名的五比丘。也就在此刻开始，佛教的佛、法、僧已经圆满集结，悉达多乔达摩也正式成为佛陀。之后继续传教，走向全国。最后，在晚年，佛陀带了少量弟子来到名叫拘尸那罗的地方，一病不起，不久圆寂与此。而此时的迦毗罗卫国也被拘萨罗消灭，而最后拘萨罗也被摩揭陀国所灭，为印度的统一打下了基础。</p>
-<h2 id="耆那教"><a href="#耆那教" class="headerlink" title="耆那教"></a>耆那教</h2><p>耆那教<strong>人口很少</strong>的宗教，但是在印度却有着及其重大的影响，甚至在<strong>影响力上超过了佛教</strong>。主要有两方面，第一，<strong>更强调苦行</strong>，对于人的要求高，更小众，使得能够接受的它的人很少，但是却是非常的坚定；第二，<strong>没有国际化</strong>。耆那教的创始人，<strong>筏陀摩耶被称为大雄</strong>，他的活动范围与佛陀重叠，也是在摩揭陀国的影响范围内。他强调的是苦行，为了完全达到断绝物欲的地步，甚至拒绝穿衣服，连身上有屎尿都毫不在意。而佛陀是放弃苦修的，过着质朴的生活，不是特意吃苦。</p>
-<p><strong>耆那教和印度教的神庙在外表上有相似之处，但是也有区别</strong>。耆那教的外部花式更加简单，而印度教的华丽高大。内部，耆那教的装饰复杂华丽，奢华无比，而印度教的却是及其简单，最简单的石板搭建的。</p>
-<h2 id="超级大国的更替"><a href="#超级大国的更替" class="headerlink" title="超级大国的更替"></a>超级大国的更替</h2><p>中国对印度的影响在公元前后到达，在这之前，对印度影响至深的是西方的希腊传导过去的事件，<strong>亚历山大的东征</strong>。但在亚历山大东征统治世界之前，是西亚的波斯文明主导全世界的强大政权。</p>
-<p>当西亚的新巴比伦帝国衰亡之后，伊朗境内兴起了一个新的帝国——<strong>波斯的阿契美尼德王朝</strong>，这是后来统治中亚的历代波斯王朝中的第一个。西亚的政治中心也从伊拉克两河流域转移到了伊朗境内。</p>
-<p>公元前7世纪，当时整个波斯在米底人的统治下。阿契美尼德死后，其儿子脱离了米底王国，经历过几代的继承，到了<strong>居鲁士二世</strong>统治时期，消灭了米底人的政权，还将前霸主新巴比伦帝国也消灭了。此后其儿子冈比西斯二世征服了埃及和非洲的大批领土，而其继承者<strong>大流士一世</strong>却改变了征服方向，开始向东方，越过开伯尔山口，进入印度河平原地区。之后又改变方向，又向西，入侵了希腊人的领土，<strong>从此将不起眼的希腊和欧洲带入了世界的舞台</strong>。希腊本来在东方的眼里根本不值得一提，只是生意人，他们航海走向各地，建立殖民地，只是为了做生意而不是扩张领土。<strong>波斯人入侵希腊，使得希腊各个弱小的城邦抱团抵抗，爆发出了强大的力量，使得波斯人战败</strong>。大流士一世之后，儿子薛西斯发动了第二次入侵，希腊人再次胜利，此后波斯就进入了衰落期，而西方兴起了新的霸主希腊。</p>
-<p>但希腊的这种团结不久就分裂，两个最大的城邦<strong>雅典和斯巴达</strong>开始争夺希腊的领导权，最终在波斯人的帮助下，斯巴达打败了雅典。但结果是两败俱伤。</p>
-<p>与此同时，一个希腊人看不起的<strong>希腊北部的马其顿</strong>兴起了，马其顿国王<strong>腓力二世</strong>打败了雅典和科林斯强权，使整个<strong>希腊半岛在历史上第一次统一</strong>。腓力二世的儿子就是著名的<strong>亚历山大大帝</strong>，这时整个希腊已经属于马其顿，他先进军<strong>小亚细亚</strong>，再把<strong>埃及</strong>纳入自己的版图，埃及的古老文明从此消失。接着进军<strong>波斯</strong>，打败波斯王大流士三世，最终波斯王朝覆灭。之后继续挥兵<strong>中亚阿富汗</strong>，塔吉克斯坦直到新疆以西的<strong>河中地区</strong>。突然就做了一个决定，向<strong>印度</strong>进军。<strong>此时的印度，内部也在进行着激烈的整合。摩揭陀国成为胜利者，几乎统一了全国</strong>。摩揭陀共包含了四个朝代，最后的难陀王朝是非常重要的承上启下的朝代，这时的印度的疆域已经有目前的一半大小，囊括整个北印度，和现代孟加拉国和缅甸的一部分。正是在这个朝代，亚历山大挥师进入印度。在印度，面临的是许多具有单独作战实力地区，如同游击战，亚历山大大帝陷入了全面作战的汪洋大海中，加之印度南北跨度几千公里，气候复杂，最后被迫撤退。不久，<strong>33岁的亚历山大大帝在巴比伦得病去世</strong>，留下了许多亚历山大的城市和希腊化的世界，其余化为传说。而这一次入侵对于印度的政治影响，间接促成了本土的伟大帝国的出现——<strong>孔雀帝国，印度第一次统一</strong>。</p>
-<p>亚历山大大帝撤退，使得整个西北印度陷入了权利的真空状态。原有的政治势力被破坏掉了，犍陀罗等国家被征服，另一方面难陀王朝还没有将控制力延伸过去。这时一个名叫<strong>旃陀罗笈多孔雀的人</strong>汇集大军向摩揭陀的难陀王朝进军，这时的难陀王朝也已经腐败无能，也希望新的君王接管权力。大军压境，难陀国王选择退位，避免了一场血腥的战争，孔雀王朝继承了难陀王打下了的江山。旃陀罗笈多孔雀最后在一个山洞里修行，信奉耆那教，最后默默的死去。他的孙子<strong>阿育王</strong>经过继承战，据说杀死了自己的99个亲兄弟，从自己的父亲频头娑罗哪里得到了孔雀王朝的宝座。阿育王前半生在杀戮中度过，而后半生却信奉佛教，在全国建造了数万座佛塔，然而现在剩下的只有<strong>桑吉大塔</strong>和鹿野苑的<strong>答枚克塔</strong>。</p>
-<p><strong>贵霜人</strong>的历史，最早可以从中国的战国时期找到痕迹，在中国西部的甘肃河西走廊一带，有一个半游牧民族在这里生活了很久。从某种程度上来说，<strong>月氏人</strong>是一个过渡民族，恰好夹在了游牧和定居之间，且受到了双方的威胁。其中在南方是定居的<strong>华夏民族</strong>，经过了春秋战国，秦国正在崛起，而在北方则是<strong>游牧民族匈奴</strong>。事实证明，游牧民族的威胁更大。直到秦朝末年，匈奴还比月氏人弱小，作为寄主国，当时匈奴的王位继承人只能以人质身份在月氏人当中生活，最后一位是叫做<strong>冒顿</strong>的匈奴人，没有受到善待，仇视月氏人，最后其逃回自己的部落，成为新的单于，从此以后月氏人进入了噩梦时期，<strong>冒顿挥师南下，屠杀，公元前202年左右，月氏人被迫放弃了肥沃的河西走廊，向西迁移。</strong>公元前177年左右，冒顿再次击败月氏人，被迫再次迁移，一部分南下进入了<strong>青海境内</strong>，被当地人同化；另一部分继续西迁，到达了新疆的<strong>准葛尔盆地</strong>。公元前162年，冒顿的儿子老上，再次打败月氏人，将月氏王的头颅砍下，当了酒器。只好再次西迁到了<strong>新疆的伊犁一带</strong>。这一次的西迁，引起了<strong>连锁反应</strong>，原本在伊犁这一带的<strong>斯基泰人向西南运动</strong>，进入了阿富汗境内。而这时在伊犁的月氏人因为被汉王朝打击的匈奴人的西迁，只好向西方的中亚地区前进，进入了著名<strong>河中地区</strong>，也就是阿姆河和锡尔河中间地带。而在河中地区，遭到了当地人的驱赶，不得不向南，进入了阿富汗伊朗境内，使得在这里的<strong>斯基泰人再次向南移动</strong>。在此之前，阿富汗和伊朗境内居住者安息人和希腊人，亚历山大征服中亚后，希腊人的后裔在这里建立起了大夏王国，在斯基泰人和月氏人的压力下，<strong>巴克特里亚人纷纷南下，进入印度境内，成为了入侵印度的第一波势力</strong>。</p>
-<p>由匈奴人和月氏人搅动的一系列民族迁徙活动，将一波一波的人们赶往了印度次大陆。张骞出使西域本来想联合月氏人给匈奴人来个东西夹击，但是月氏人拒绝了，不想再回到中国，此后月氏人彻底离开了中国的范围。<strong>公元前140年</strong>，在斯基泰人之后，月氏人也南下到了<strong>大夏边境</strong>，此时月氏人已经分成了5个部落，而贵霜就是其中的一个。之后打败了西部的安息国，继续占领大夏东部地区。此时接触到了大夏的希腊化文明，<strong>月氏人开始希腊化，从此变成了定居民族</strong>。并发行自己的货币和开始发展商贸关系。这时也受到了印度佛教的影响，开始将佛教作为他们的宗教。公元前1世纪初，<strong>贵霜部落</strong>打败其余部落，建立了<strong>贵霜帝国</strong>。在印度希腊人、印度斯基泰人、印度安息人之后，印度贵霜帝国正式登场。</p>
-<p><strong>维查耶纳加尔</strong>是印度教最后一个伟大帝国，负有捍卫印度教、抵抗伊斯兰教的重任。毁灭后，伊斯兰教长驱直入，在次大陆占据了主导地位，开始了几百年的伊斯兰政权时期。实际上，<strong>维查耶纳加尔就是为了对抗伊斯兰才出现</strong>。当北印度处于德里苏丹国统治的时候，南印度曾经强大的遮卢迦王国和拉什特拉库塔王国已经消亡。取而代之的四个小王国，分别是雅达瓦、卡卡提亚，潘地亚王国和霍伊萨拉王国。</p>
-<p>阿拉-乌德-丁用一生与南印度各国征战，其中就征服了雅达瓦和霍伊萨拉。前者为穆斯林提供了新的都城，而后者灭亡使得维查耶纳加尔在其土地上成长起来。</p>
-<p>巴马尼苏丹国的出现，这个伊斯兰国家的兴起与德里苏丹穆罕穆德图格鲁克迁都失败有关。比达尔城是该国的首都，与汉皮相比，伊斯兰教有最先进的战争理念，而印度教徒却是将首都看成生活的地方，由此也可以看出，两者在对战是的成败。南印度就在这两个教权国家的残忍战争中被扭曲，直到其中一个国家垮掉。最后，巴马尼苏丹最先垮掉，分为五个小苏丹国，这五个小国又内斗，最后成为三个苏丹国，最后联合起来，打败了维查耶纳加尔国，历史仅留下了汉皮这片废墟。此时，南印度也成了伊斯兰教的天下。这三个苏丹国也进入了黄金时代，而印度教最后的伟大政权也终于轰然倒塌。这时候，同属于伊斯兰教的来自北方的莫卧儿人出现了。</p>
-<p>在<strong>中世纪</strong>，虽然印度的佛教被印度教取代，但仍旧是世界的<strong>佛教中心</strong>，其中最有名的就是那烂陀大学，学术圣殿。但是在<strong>12世纪</strong>时，当古尔人到来，穆罕默德首领下的努力将军库特卜<strong>占领毁灭了那烂陀大学</strong>，<strong>使得佛教从印度消失</strong>。13世纪初，库特卜成立德里苏丹国，在莫卧尔人到来前，控制印度300多年。<strong>德里，现在印度的首都开始登上历史舞台。</strong></p>
-<p><strong>13世纪，成吉思汗带着蒙古人席卷了整个世界</strong>，在中国建立了元朝，在波斯建立了<strong>伊尔汗国</strong>，在俄罗斯人的土地上建立了<strong>金帐汗国</strong>，在如今的新疆西部、中亚建立了<strong>察合台汗国</strong>，在新疆北部和蒙古东部建立了<strong>窝阔台汗国</strong>。这五大汗国占领了当时已知世界的一大半。之后蒙古很快衰败，在<strong>察合台汗国</strong>的土地上，在14世纪后半期突厥人<strong>帖木儿</strong>威慑整个中亚、西亚和中欧，甚至占领了印度的一部分。但是在进攻明朝时，突然途中去世，此后帖木儿帝国分崩离析。<strong>然而此时，中亚出现了一位蒙古人和突厥人的双重后裔，巴布尔</strong>。让他占领印度，并开创了一个伟大的王朝。<br><strong>巴布尔在父系上是帖木儿的直系后裔，从母系来说，是成吉思汗的后裔。</strong>因此，从1483年出生，就带着世界上最有血性的两个人的基因。</p>
-<p>河中地区的城市撒马尔罕是帖木儿的都城，要称霸中亚必须拿下撒马尔罕，但是命中注定不属于巴布尔，一世经过三次进攻，却一次都没有成功，中亚的大门从此关闭。然而，经过分析，印度是个不错的可以暂时栖息之地，前四次进攻印度只是在外围，现在的巴基斯坦境内，没有深入到德里地区，然而第五次，德里苏丹出现内乱，有人请他去去德里，于是决心进军德里。<strong>这次战役的胜利，决定了印度历史的未来300年，建立了一个伟大的帝国。</strong>巴布尔在阿拉格建立了帝国的首都，阿拉格是用艺术和建筑征服印度，其后代也大都继承了祖先的艺术气质，使得<strong>莫卧尔成为艺术世界的巅峰</strong>。此后，巴布尔平定了整个北部地区，不久去世，他的儿子胡马雍继承王位，但此时的帝国还没有稳定，<strong>胡马雍</strong>不善战，被东方孟加拉的将军舍尔汗打败，被赶出了印度，退到了阿富汗。而舍尔汗在位期间，使整个印度政局稳定。死后，胡马雍很快从其后代那里夺回了印度，继承了舍尔汗开创的一系列制度，并重新将首都迁到了德里。之后不小心摔死在图书馆，成为第一个葬在印度土地上的莫卧尔皇帝。</p>
-]]></content>
-      <categories>
-        <category>读书笔记</category>
-      </categories>
-      <tags>
-        <tag>印度</tag>
-        <tag>郭建龙</tag>
       </tags>
   </entry>
   <entry>
@@ -1265,29 +1265,6 @@ characterization of aluminum resistance in Populus"><br>这里我先用比较麻
       </categories>
       <tags>
         <tag>电影</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>杂乱无章</title>
-    <url>//2018/08/28/%E6%9D%82%E4%B9%B1%E6%97%A0%E7%AB%A0/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![拿着相机，一个人旅行](https://upload-images.jianshu.io/upload_images/3478485-14565c6637c4fa19.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-<p>8月27日，星期一，公元2018年。</p>
-<span id="more"></span>
-
-<p>8月27日，星期一，公元2018年。</p>
-<p>干了一天，几乎没有坐下的时候。骑车离开生科院的时候，突然觉得自己就想是一个工人，白天工作，晚上运动健身和自学，想来也是非常的满足。然而，事情永远没有这么简单，真正工作以后，恐怕没有那么悠闲。</p>
-<p>最近已经能够比较好的控制一下自己，不再如此的散漫。在过去的6月份，真是觉得自个儿已经抛弃一部分超我，使得自我更多的释放。满满的都是娱乐活动，吃饭，看电影和旅游，比暑假更加潇洒。我知道，我一直以来就是这么一个人，对于别人，我总想让他们有一些仪式感，自己变得比别人更操心自己，但是前提是我想关心的人。这个是有点还是缺点，我并不能很好的定义对错，只是不该太过火。师姐的毕业典礼，我去拍照；校园风景，我去拍照；小伙伴的毕业旅行，我也一同参加。干了无数能够留下深刻印象的事。</p>
-<p>有目标，才有动力；有计划，才能有满足感；完成计划，才能有幸福感。大部分时候的状态，就是无目标和无计划，生活处在焦虑之中，特别地不安。这种状态的打破，就需要你自身的行动，想到的东西，要出尽快实行；要去解决你害怕去解决的问题；搞定心中的恐惧放空自己的内心，才能最终踏实满足。</p>
-<p>今年也算是旅行过了，南京之行，也非常的开心。但是，你要知道，很多时候内心就会有一种冲动，就想去看看更外面的世界。前两天看到了一条骑行路线，真的太诱人了，完全没法形容我内心的激动，即使不能够前去体验。看看，回想回想之前的经历，也能够让我开心一会儿，那也就够了。岁月慢慢流逝，一天天在变老，尽管思想还没有服气，但是身体很明显的不如从前了。</p>
-<p>我们没法改变，只能磨炼遇事不惊的心态。</p>
-]]></content>
-      <categories>
-        <category>随记</category>
-      </categories>
-      <tags>
-        <tag>旅行</tag>
       </tags>
   </entry>
   <entry>
@@ -1498,6 +1475,29 @@ characterization of aluminum resistance in Populus"><br>这里我先用比较麻
       <tags>
         <tag>旅行</tag>
         <tag>南京</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>杂乱无章</title>
+    <url>//2018/08/28/%E6%9D%82%E4%B9%B1%E6%97%A0%E7%AB%A0/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![拿着相机，一个人旅行](https://upload-images.jianshu.io/upload_images/3478485-14565c6637c4fa19.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+<p>8月27日，星期一，公元2018年。</p>
+<span id="more"></span>
+
+<p>8月27日，星期一，公元2018年。</p>
+<p>干了一天，几乎没有坐下的时候。骑车离开生科院的时候，突然觉得自己就想是一个工人，白天工作，晚上运动健身和自学，想来也是非常的满足。然而，事情永远没有这么简单，真正工作以后，恐怕没有那么悠闲。</p>
+<p>最近已经能够比较好的控制一下自己，不再如此的散漫。在过去的6月份，真是觉得自个儿已经抛弃一部分超我，使得自我更多的释放。满满的都是娱乐活动，吃饭，看电影和旅游，比暑假更加潇洒。我知道，我一直以来就是这么一个人，对于别人，我总想让他们有一些仪式感，自己变得比别人更操心自己，但是前提是我想关心的人。这个是有点还是缺点，我并不能很好的定义对错，只是不该太过火。师姐的毕业典礼，我去拍照；校园风景，我去拍照；小伙伴的毕业旅行，我也一同参加。干了无数能够留下深刻印象的事。</p>
+<p>有目标，才有动力；有计划，才能有满足感；完成计划，才能有幸福感。大部分时候的状态，就是无目标和无计划，生活处在焦虑之中，特别地不安。这种状态的打破，就需要你自身的行动，想到的东西，要出尽快实行；要去解决你害怕去解决的问题；搞定心中的恐惧放空自己的内心，才能最终踏实满足。</p>
+<p>今年也算是旅行过了，南京之行，也非常的开心。但是，你要知道，很多时候内心就会有一种冲动，就想去看看更外面的世界。前两天看到了一条骑行路线，真的太诱人了，完全没法形容我内心的激动，即使不能够前去体验。看看，回想回想之前的经历，也能够让我开心一会儿，那也就够了。岁月慢慢流逝，一天天在变老，尽管思想还没有服气，但是身体很明显的不如从前了。</p>
+<p>我们没法改变，只能磨炼遇事不惊的心态。</p>
+]]></content>
+      <categories>
+        <category>随记</category>
+      </categories>
+      <tags>
+        <tag>旅行</tag>
       </tags>
   </entry>
   <entry>
@@ -1739,6 +1739,27 @@ characterization of aluminum resistance in Populus"><br>这里我先用比较麻
       </tags>
   </entry>
   <entry>
+    <title>碟中谍6: 全面瓦解</title>
+    <url>//2018/09/01/%E7%A2%9F%E4%B8%AD%E8%B0%8D6-%E5%85%A8%E9%9D%A2%E7%93%A6%E8%A7%A3/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![碟中谍6：全面瓦解](https://upload-images.jianshu.io/upload_images/3478485-ba43addff850f0fb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+<p>9月1日，星期六，公元2018年。</p>
+<span id="more"></span>
+
+<p>我从周五看到了周六，从8月看到了9月。因为电影近140分钟，我从10点开始，自然就看到了第二天凌晨。</p>
+<p>故事一开始，就发布一个任务，亨特自然就接受了，关于夺回核武器，防止使徒们（恐怖组织成员）的大规模投弹。接受之后，必然按着故事线走下去。一切都很精彩，法国巴黎和英国伦敦以及克什米尔地区的景观都是相当吸引眼球，很明显的好莱坞大片元素，场面非常宏大，视觉体验非常棒。此外，这么大年纪的阿汤哥，拍这部电影真是拼命。悬崖，直升机，跑酷等等都是很危险的动作，飞车大战，摩托车巴黎飙车，一切都非常刺激，整部影片几乎没有比较安静的场景。一切都快速的进行中，没有一刻停缓，因为要保护世界。</p>
+<p>好莱坞大片，必不可少的情节，那就是拯救地球，拯救全世界。都是机器宏大的目标，放眼全世界，就是救世主。有时候就会让你遐想，会有带入感，让你也感觉自己能拯救世界，也是一种精神上的吸引。情节依旧老套，又是防止大规模杀伤性武器被恐怖组织利用，不惜一切去组织，而且必然每次都是成功，能够拯救世界。</p>
+<p>可以说，碟中谍系列，是很好看的特工电影，看着很刺激，这次第六部的上映，也是让影迷们产生一种情怀，当然为了刺激宏大场面，也是完全可以看得，基本不会让你失望太过。</p>
+]]></content>
+      <categories>
+        <category>影评领域</category>
+      </categories>
+      <tags>
+        <tag>电影</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>离家回归</title>
     <url>//2018/08/23/%E7%A6%BB%E5%AE%B6%E5%9B%9E%E5%BD%92/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -1762,54 +1783,6 @@ characterization of aluminum resistance in Populus"><br>这里我先用比较麻
       </categories>
       <tags>
         <tag>家</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>碟中谍6: 全面瓦解</title>
-    <url>//2018/09/01/%E7%A2%9F%E4%B8%AD%E8%B0%8D6-%E5%85%A8%E9%9D%A2%E7%93%A6%E8%A7%A3/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![碟中谍6：全面瓦解](https://upload-images.jianshu.io/upload_images/3478485-ba43addff850f0fb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-<p>9月1日，星期六，公元2018年。</p>
-<span id="more"></span>
-
-<p>我从周五看到了周六，从8月看到了9月。因为电影近140分钟，我从10点开始，自然就看到了第二天凌晨。</p>
-<p>故事一开始，就发布一个任务，亨特自然就接受了，关于夺回核武器，防止使徒们（恐怖组织成员）的大规模投弹。接受之后，必然按着故事线走下去。一切都很精彩，法国巴黎和英国伦敦以及克什米尔地区的景观都是相当吸引眼球，很明显的好莱坞大片元素，场面非常宏大，视觉体验非常棒。此外，这么大年纪的阿汤哥，拍这部电影真是拼命。悬崖，直升机，跑酷等等都是很危险的动作，飞车大战，摩托车巴黎飙车，一切都非常刺激，整部影片几乎没有比较安静的场景。一切都快速的进行中，没有一刻停缓，因为要保护世界。</p>
-<p>好莱坞大片，必不可少的情节，那就是拯救地球，拯救全世界。都是机器宏大的目标，放眼全世界，就是救世主。有时候就会让你遐想，会有带入感，让你也感觉自己能拯救世界，也是一种精神上的吸引。情节依旧老套，又是防止大规模杀伤性武器被恐怖组织利用，不惜一切去组织，而且必然每次都是成功，能够拯救世界。</p>
-<p>可以说，碟中谍系列，是很好看的特工电影，看着很刺激，这次第六部的上映，也是让影迷们产生一种情怀，当然为了刺激宏大场面，也是完全可以看得，基本不会让你失望太过。</p>
-]]></content>
-      <categories>
-        <category>影评领域</category>
-      </categories>
-      <tags>
-        <tag>电影</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>科普吗？</title>
-    <url>//2018/08/26/%E7%A7%91%E6%99%AE%E5%90%97%EF%BC%9F/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![physical，图片来源于pexels网站](https://upload-images.jianshu.io/upload_images/3478485-2dae4e412aae35b9.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-<p>8月25日，星期六，公元2018年。</p>
-<span id="more"></span>
-
-<p>8月25日，星期六，公元2018年。</p>
-<p>《发现的乐趣》中，记录了1964年伟大的物理学家理查德·费曼发表了一篇研究，讨论了科学对宗教、社会和哲学的影响，还强调了我们的质疑能力将决定未来的文明走向。</p>
-<p>在阐述科学和社会关系的时候，费曼先生提到了迷信思想充斥着社会，公民科学素质依旧缺乏。科普在一定程度上能够提高公民科学素养，破除一些封建迷信。科学家要担负起科普的责任，当然最好是主动。</p>
-<blockquote>
-<p>一般说来，科学普及是指学校正规科学教育以外的、主要通过大众传媒以及各类宣传、展教等方式传播科学知识、方法等内容的社会教育活动。</p>
-</blockquote>
-<p>在21世纪，互联网的快速发展以及知识大爆炸的时代，科普似乎简单了很多。但是没有正规的学科教育作为基础，恐怕科普的任务依旧很难。大众传媒日益发达，作为了公众主要的知识信息来源，担任着很重要的科普角色，关键在于控制这些信息的真实性。</p>
-<p>科学团体到底该怎么去承担科普的重担？我所在的科学团体中，始终没有时间去做这方面的工作，导师忙着写项目，申请课题，还有教学任务。博士生，整体做实验，一心想着毕业，始终根本不会考虑到这个问题——将科学与社会联系起来。说实在的，实在是我们非常的忙，课题太多，根本无暇顾及科普这个问题，从不会进入到我们的大脑里。其实，想想也是有些难过，这么大的一个科研团队，每年发现那么多新的知识，从没有想着去用这些东西（当然，用来申请科研项目）。目前来看，在普通大众观念里，做科学研究的就是高大上，好像根本不可能与他们产生联系。我在想，是否我们该承担其这个义务？</p>
-<p>要做科普这件事，还是需要多方的协作和交流沟通。国家也越来越重视提高公民素质，科学素质就是其中的一部分；非政府组织也再进行这些工作；一些科研机构也会承担一部分。大众传媒，是一种很有效的方式，作为传播的工具。而我们个人，是否也该行动？怎样的方式？很多问题有待解决。我从来没有参与其中，从来不知道这个门槛在哪里，高不高，怎么样的形式参与进去，心中充满疑惑。</p>
-<p>最关键的一点，我认识到了我的义务——科普的义务。</p>
-]]></content>
-      <categories>
-        <category>读书笔记</category>
-      </categories>
-      <tags>
-        <tag>科普</tag>
       </tags>
   </entry>
   <entry>
@@ -1857,6 +1830,33 @@ characterization of aluminum resistance in Populus"><br>这里我先用比较麻
       <tags>
         <tag>费曼</tag>
         <tag>诚信</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>科普吗？</title>
+    <url>//2018/08/26/%E7%A7%91%E6%99%AE%E5%90%97%EF%BC%9F/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![physical，图片来源于pexels网站](https://upload-images.jianshu.io/upload_images/3478485-2dae4e412aae35b9.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+<p>8月25日，星期六，公元2018年。</p>
+<span id="more"></span>
+
+<p>8月25日，星期六，公元2018年。</p>
+<p>《发现的乐趣》中，记录了1964年伟大的物理学家理查德·费曼发表了一篇研究，讨论了科学对宗教、社会和哲学的影响，还强调了我们的质疑能力将决定未来的文明走向。</p>
+<p>在阐述科学和社会关系的时候，费曼先生提到了迷信思想充斥着社会，公民科学素质依旧缺乏。科普在一定程度上能够提高公民科学素养，破除一些封建迷信。科学家要担负起科普的责任，当然最好是主动。</p>
+<blockquote>
+<p>一般说来，科学普及是指学校正规科学教育以外的、主要通过大众传媒以及各类宣传、展教等方式传播科学知识、方法等内容的社会教育活动。</p>
+</blockquote>
+<p>在21世纪，互联网的快速发展以及知识大爆炸的时代，科普似乎简单了很多。但是没有正规的学科教育作为基础，恐怕科普的任务依旧很难。大众传媒日益发达，作为了公众主要的知识信息来源，担任着很重要的科普角色，关键在于控制这些信息的真实性。</p>
+<p>科学团体到底该怎么去承担科普的重担？我所在的科学团体中，始终没有时间去做这方面的工作，导师忙着写项目，申请课题，还有教学任务。博士生，整体做实验，一心想着毕业，始终根本不会考虑到这个问题——将科学与社会联系起来。说实在的，实在是我们非常的忙，课题太多，根本无暇顾及科普这个问题，从不会进入到我们的大脑里。其实，想想也是有些难过，这么大的一个科研团队，每年发现那么多新的知识，从没有想着去用这些东西（当然，用来申请科研项目）。目前来看，在普通大众观念里，做科学研究的就是高大上，好像根本不可能与他们产生联系。我在想，是否我们该承担其这个义务？</p>
+<p>要做科普这件事，还是需要多方的协作和交流沟通。国家也越来越重视提高公民素质，科学素质就是其中的一部分；非政府组织也再进行这些工作；一些科研机构也会承担一部分。大众传媒，是一种很有效的方式，作为传播的工具。而我们个人，是否也该行动？怎样的方式？很多问题有待解决。我从来没有参与其中，从来不知道这个门槛在哪里，高不高，怎么样的形式参与进去，心中充满疑惑。</p>
+<p>最关键的一点，我认识到了我的义务——科普的义务。</p>
+]]></content>
+      <categories>
+        <category>读书笔记</category>
+      </categories>
+      <tags>
+        <tag>科普</tag>
       </tags>
   </entry>
   <entry>
