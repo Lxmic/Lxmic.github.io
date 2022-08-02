@@ -54,6 +54,25 @@
       </tags>
   </entry>
   <entry>
+    <title>Dropbox离线安装</title>
+    <url>//2018/12/08/Dropbox%E7%A6%BB%E7%BA%BF%E5%AE%89%E8%A3%85/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+
+
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-d5fc4ecb48065677.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<blockquote>
+<p>Dropbox 的安装一直是个问题，下载安装器，你永远没有办法链接网络，可能是电脑没有完全的全局。</p>
+</blockquote>
+<p>今天，因为要配置新的电脑，我就需要安装我的Dropbox。但是依旧是因为没有办法彻底的全局FQ，所以我就想着下载离线包，然后我就就Google，找到了下载离线安装包的办法，你只要在官网下载页面网址的基础上，在后面添加<code>&amp;full=1</code>就可以实现离线安装。<br>离线安装包下载网址：<a href="https://www.dropbox.com/downloading?src=index&full=1" title="shark0017">https://www.dropbox.com/downloading?src=index**&amp;full=1**</a>。已经顺利安装，下面可以愉快的使用了。</p>
+]]></content>
+      <categories>
+        <category>学习记录</category>
+      </categories>
+      <tags>
+        <tag>Dropbox</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>DJY-遇见盖北</title>
     <url>//2018/08/18/DJY-%E9%81%87%E8%A7%81%E7%9B%96%E5%8C%97/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -86,25 +105,6 @@
       </categories>
       <tags>
         <tag>葡萄</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Dropbox离线安装</title>
-    <url>//2018/12/08/Dropbox%E7%A6%BB%E7%BA%BF%E5%AE%89%E8%A3%85/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-
-
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-d5fc4ecb48065677.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
-<blockquote>
-<p>Dropbox 的安装一直是个问题，下载安装器，你永远没有办法链接网络，可能是电脑没有完全的全局。</p>
-</blockquote>
-<p>今天，因为要配置新的电脑，我就需要安装我的Dropbox。但是依旧是因为没有办法彻底的全局FQ，所以我就想着下载离线包，然后我就就Google，找到了下载离线安装包的办法，你只要在官网下载页面网址的基础上，在后面添加<code>&amp;full=1</code>就可以实现离线安装。<br>离线安装包下载网址：<a href="https://www.dropbox.com/downloading?src=index&full=1" title="shark0017">https://www.dropbox.com/downloading?src=index**&amp;full=1**</a>。已经顺利安装，下面可以愉快的使用了。</p>
-]]></content>
-      <categories>
-        <category>学习记录</category>
-      </categories>
-      <tags>
-        <tag>Dropbox</tag>
       </tags>
   </entry>
   <entry>
@@ -408,6 +408,48 @@
       </tags>
   </entry>
   <entry>
+    <title>HTML5（5）——属性</title>
+    <url>//2018/10/06/HTML5%EF%BC%885%EF%BC%89%E2%80%94%E2%80%94%E5%B1%9E%E6%80%A7/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![咖啡豆](https://upload-images.jianshu.io/upload_images/3478485-9d881188bebeb5b7.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+> 其实，我一直有个愿望，我想每天早晨起来，喝着咖啡，写点东西。不过，到现在都还没有实现，我想我得先做到早起吧。上次，我们讲了是HTML5的元素，今天就讲元素属性。
+
+
+
+<span id="more"></span>
+
+<h2 id="HTML属性"><a href="#HTML属性" class="headerlink" title="HTML属性"></a><font color="green">HTML属性</font></h2><ul>
+<li>所有的HTML元素都是有属性的</li>
+<li>属性是添加元素的额外信息</li>
+<li>属性通常在起始标签添加</li>
+<li>属性的形式通常是键值配对：name=”value”</li>
+</ul>
+<h2 id="href属性"><a href="#href属性" class="headerlink" title="href属性"></a><font color="green">href属性</font></h2><p>在HTML中，用来指定链接的标签是<code>&lt;a&gt;</code>，链接地址通常用href属性来指定。例如<code>&lt;a href=&quot;https://www.w3schools.com&quot;&gt;This is a link&lt;/a&gt;</code></p>
+<h2 id="src属性"><a href="#src属性" class="headerlink" title="src属性"></a><font color="green">src属性</font></h2><p>在HTML中，网页中图片是用<code>&lt;img&gt;</code>标签使用图片，而图像源的文件名是用<code>src</code>属性来指定。例如<code>&lt;img src=&quot;img_girl.jpg&quot;&gt;</code></p>
+<h2 id="width和height属性"><a href="#width和height属性" class="headerlink" title="width和height属性"></a><font color="green">width和height属性</font></h2><p>图片的属性包括很多，其中大小属性就是用<code>width</code>和<code>height</code>属性来指定。如<code>&lt;img src=&quot;img_girl.jpg&quot; width=&quot;500&quot; height=&quot;600&quot;&gt;</code></p>
+<h2 id="alt属性"><a href="#alt属性" class="headerlink" title="alt属性"></a><font color="green">alt属性</font></h2><p><code>alt</code>属性在网页中的作用是给图片添加文本信息，当有些特殊情况下，我没有办法显示图片，那么只能一文字信息来替代，而<code>alt</code>就是起到这个作用。尤其是对于一些盲人，当在听网页内容的时候，就可以了解到图片的内容。当然，如果图片不存在，那么它也可以显示信息。如<code>&lt;img src=&quot;img_girl.jpg&quot; alt=&quot;Girl with a jacket&quot;&gt;</code></p>
+<h2 id="style属性"><a href="#style属性" class="headerlink" title="style属性"></a><font color="green">style属性</font></h2><p>在HTML中，<code>style</code>属性是用来修饰元素显示的风格，包括颜色，字体及大小。如<code>&lt;p style=&quot;color:red&quot;&gt;I am a paragraph&lt;/p&gt;</code>，就是将这个段落的字体设计成红色。</p>
+<h2 id="lang属性"><a href="#lang属性" class="headerlink" title="lang属性"></a><font color="green">lang属性</font></h2><p>在<code>&lt;html&gt;</code>标签中，可以使用<code>lang</code>属性来进行文档语言声明。<code>en</code>表示英语，<code>US</code>表示美式英语</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">&quot;en-US&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line">...</span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="title属性"><a href="#title属性" class="headerlink" title="title属性"></a><font color="green">title属性</font></h2><p>title一般就是用在段落标签中，这个属性会像提示一样，当你将鼠标放在段落上，就会显示title属性内容。</p>
+<figure class="highlight applescript"><table><tr><td class="code"><pre><span class="line">&lt;p title=<span class="string">&quot;I&#x27;m a tooltip&quot;</span>&gt;</span><br><span class="line">This <span class="keyword">is</span> a <span class="built_in">paragraph</span>.</span><br><span class="line">&lt;/p&gt;</span><br></pre></td></tr></table></figure>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-3e5aaa12e7f0b4cb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="title属性显示"></p>
+<h2 id="建议"><a href="#建议" class="headerlink" title="建议"></a><font color="green">建议</font></h2><ul>
+<li>属性最好使用小写字母</li>
+<li>属性的值用<code>&quot;&quot;</code>括起来</li>
+<li>如果需要多个双引号，那么就需要单引号的使用，两种情况：<figure class="highlight routeros"><table><tr><td class="code"><pre><span class="line">&lt;p <span class="attribute">title</span>=<span class="string">&#x27;John &quot;ShotGun&quot; Nelson&#x27;</span>&gt;</span><br><span class="line"></span><br><span class="line">&lt;p <span class="attribute">title</span>=<span class="string">&quot;John &#x27;ShotGun&#x27; Nelson&quot;</span>&gt;</span><br></pre></td></tr></table></figure></li>
+</ul>
+]]></content>
+      <categories>
+        <category>HTML5入门</category>
+      </categories>
+      <tags>
+        <tag>HTML5</tag>
+        <tag>属性</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>HTML5（3）——基础标签</title>
     <url>//2018/10/01/HTML5%EF%BC%883%EF%BC%89%E2%80%94%E2%80%94%E5%9F%BA%E7%A1%80%E6%A0%87%E7%AD%BE/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -472,48 +514,6 @@
       <tags>
         <tag>HTML5</tag>
         <tag>元素</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>HTML5（5）——属性</title>
-    <url>//2018/10/06/HTML5%EF%BC%885%EF%BC%89%E2%80%94%E2%80%94%E5%B1%9E%E6%80%A7/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![咖啡豆](https://upload-images.jianshu.io/upload_images/3478485-9d881188bebeb5b7.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-> 其实，我一直有个愿望，我想每天早晨起来，喝着咖啡，写点东西。不过，到现在都还没有实现，我想我得先做到早起吧。上次，我们讲了是HTML5的元素，今天就讲元素属性。
-
-
-
-<span id="more"></span>
-
-<h2 id="HTML属性"><a href="#HTML属性" class="headerlink" title="HTML属性"></a><font color="green">HTML属性</font></h2><ul>
-<li>所有的HTML元素都是有属性的</li>
-<li>属性是添加元素的额外信息</li>
-<li>属性通常在起始标签添加</li>
-<li>属性的形式通常是键值配对：name=”value”</li>
-</ul>
-<h2 id="href属性"><a href="#href属性" class="headerlink" title="href属性"></a><font color="green">href属性</font></h2><p>在HTML中，用来指定链接的标签是<code>&lt;a&gt;</code>，链接地址通常用href属性来指定。例如<code>&lt;a href=&quot;https://www.w3schools.com&quot;&gt;This is a link&lt;/a&gt;</code></p>
-<h2 id="src属性"><a href="#src属性" class="headerlink" title="src属性"></a><font color="green">src属性</font></h2><p>在HTML中，网页中图片是用<code>&lt;img&gt;</code>标签使用图片，而图像源的文件名是用<code>src</code>属性来指定。例如<code>&lt;img src=&quot;img_girl.jpg&quot;&gt;</code></p>
-<h2 id="width和height属性"><a href="#width和height属性" class="headerlink" title="width和height属性"></a><font color="green">width和height属性</font></h2><p>图片的属性包括很多，其中大小属性就是用<code>width</code>和<code>height</code>属性来指定。如<code>&lt;img src=&quot;img_girl.jpg&quot; width=&quot;500&quot; height=&quot;600&quot;&gt;</code></p>
-<h2 id="alt属性"><a href="#alt属性" class="headerlink" title="alt属性"></a><font color="green">alt属性</font></h2><p><code>alt</code>属性在网页中的作用是给图片添加文本信息，当有些特殊情况下，我没有办法显示图片，那么只能一文字信息来替代，而<code>alt</code>就是起到这个作用。尤其是对于一些盲人，当在听网页内容的时候，就可以了解到图片的内容。当然，如果图片不存在，那么它也可以显示信息。如<code>&lt;img src=&quot;img_girl.jpg&quot; alt=&quot;Girl with a jacket&quot;&gt;</code></p>
-<h2 id="style属性"><a href="#style属性" class="headerlink" title="style属性"></a><font color="green">style属性</font></h2><p>在HTML中，<code>style</code>属性是用来修饰元素显示的风格，包括颜色，字体及大小。如<code>&lt;p style=&quot;color:red&quot;&gt;I am a paragraph&lt;/p&gt;</code>，就是将这个段落的字体设计成红色。</p>
-<h2 id="lang属性"><a href="#lang属性" class="headerlink" title="lang属性"></a><font color="green">lang属性</font></h2><p>在<code>&lt;html&gt;</code>标签中，可以使用<code>lang</code>属性来进行文档语言声明。<code>en</code>表示英语，<code>US</code>表示美式英语</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">&quot;en-US&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line">...</span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="title属性"><a href="#title属性" class="headerlink" title="title属性"></a><font color="green">title属性</font></h2><p>title一般就是用在段落标签中，这个属性会像提示一样，当你将鼠标放在段落上，就会显示title属性内容。</p>
-<figure class="highlight applescript"><table><tr><td class="code"><pre><span class="line">&lt;p title=<span class="string">&quot;I&#x27;m a tooltip&quot;</span>&gt;</span><br><span class="line">This <span class="keyword">is</span> a <span class="built_in">paragraph</span>.</span><br><span class="line">&lt;/p&gt;</span><br></pre></td></tr></table></figure>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-3e5aaa12e7f0b4cb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="title属性显示"></p>
-<h2 id="建议"><a href="#建议" class="headerlink" title="建议"></a><font color="green">建议</font></h2><ul>
-<li>属性最好使用小写字母</li>
-<li>属性的值用<code>&quot;&quot;</code>括起来</li>
-<li>如果需要多个双引号，那么就需要单引号的使用，两种情况：<figure class="highlight routeros"><table><tr><td class="code"><pre><span class="line">&lt;p <span class="attribute">title</span>=<span class="string">&#x27;John &quot;ShotGun&quot; Nelson&#x27;</span>&gt;</span><br><span class="line"></span><br><span class="line">&lt;p <span class="attribute">title</span>=<span class="string">&quot;John &#x27;ShotGun&#x27; Nelson&quot;</span>&gt;</span><br></pre></td></tr></table></figure></li>
-</ul>
-]]></content>
-      <categories>
-        <category>HTML5入门</category>
-      </categories>
-      <tags>
-        <tag>HTML5</tag>
-        <tag>属性</tag>
       </tags>
   </entry>
   <entry>
@@ -879,16 +879,19 @@
       </tags>
   </entry>
   <entry>
-    <title>Rstudio服务器使用.md</title>
-    <url>//2022/08/02/Rstudio%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%BD%BF%E7%94%A8-md/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+    <title>Rstudio服务器使用</title>
+    <url>//2022/08/02/Rstudio%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<blockquote>
+<p>如何使用Rstudio server版本。</p>
+</blockquote>
+<meta name="referrer" content="no-referrer" />
 
 <span id="more"></span>
 
-<h1 id="打开RStudio-Sever"><a href="#打开RStudio-Sever" class="headerlink" title="打开RStudio Sever"></a>打开RStudio Sever</h1><h3 id="输入R服务器网址"><a href="#输入R服务器网址" class="headerlink" title="输入R服务器网址"></a>输入R服务器网址</h3><p>RStudio Server的默认端口是8787，所以我们打开浏览器，输入<code>服务器ip:8787</code>，就可以打开Rstudio。例如在Google浏览器网址栏中输入：192.168.1.130:8787，就会出现账户登录界面。</p>
+<h2 id="输入R服务器网址"><a href="#输入R服务器网址" class="headerlink" title="输入R服务器网址"></a><font color="green">输入R服务器网址</font></h2><p>RStudio Server的默认端口是8787，所以我们打开浏览器，输入<code>服务器ip:8787</code>，就可以打开Rstudio。例如在Google浏览器网址栏中输入：192.168.1.130:8787，就会出现账户登录界面。</p>
 <p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-05-01-xvJpuN.png" alt="20220501xvJpuN"></p>
-<h3 id="输入Linux用户名和密码登录"><a href="#输入Linux用户名和密码登录" class="headerlink" title="输入Linux用户名和密码登录"></a>输入Linux用户名和密码登录</h3><p>用户名和密码是创建用户给大家设置过，可以查看<code>/Lab-Shared-Folder/Protocols/Bioinformatics method</code> 路径下的文件《系统进化树构建》，有相应的说明。 <img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-04-19-e50ftc.png" alt="20220419e50ftc"></p>
-<h3 id="正常使用界面"><a href="#正常使用界面" class="headerlink" title="正常使用界面"></a>正常使用界面</h3><p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-04-19-f40ife.png" alt="2022-04-19-f40ife"></p>
+<h2 id="输入Linux用户名和密码登录"><a href="#输入Linux用户名和密码登录" class="headerlink" title="输入Linux用户名和密码登录"></a><font color="green">输入Linux用户名和密码登录</font></h2><p>用户名和密码是创建用户给大家设置过，可以查看<code>/Lab-Shared-Folder/Protocols/Bioinformatics method</code> 路径下的文件《系统进化树构建》，有相应的说明。 <img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-04-19-e50ftc.png" alt="20220419e50ftc"></p>
+<h2 id="正常使用界面"><a href="#正常使用界面" class="headerlink" title="正常使用界面"></a><font color="green">正常使用界面</font></h2><p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-04-19-f40ife.png" alt="2022-04-19-f40ife"></p>
 ]]></content>
       <categories>
         <category>科研之路</category>
@@ -963,22 +966,6 @@
       <tags>
         <tag>LaTeX</tag>
         <tag>排版</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>传奇的诞生</title>
-    <url>//2018/09/11/%E4%BC%A0%E5%A5%87%E7%9A%84%E8%AF%9E%E7%94%9F/</url>
-    <content><![CDATA[<p>在看这部电影之前，我一直都不知道还有这样一个传奇的存在，对于足球，我个人没有特别大的兴趣爱好，因此我都不太了解足球这方面的巨星和故事。但是，看着题目，你能够想象到这可能是一个激励的故事，又是一碗鸡汤，我决定去喝了它。</p>
-<p>故事开始，一群孩子在小巷子里玩着自己做的足球，规则是不让足球落地，通过大家的配合。主人公迪科，踢得非常的好，很明显你可以看出来，这也铺垫了后面的比赛。跟其他的故事一样，一开始总是被父母认为没有出息的东西，结果往往是因为这个，而有了巨大的成就。贝利的母亲极力的反对，而他父亲确实很支持。而在这背后，往往有着一段不一样的经历，才能够导致现在这样的局面。母亲和父亲就是因为足球而结缘，同样也是因为足球而失去了太多，最终对其充满失望。</p>
-<p>那时候，巴西因为1950年和1954年的世界杯惨败，而一直 没有走出来。因为世界杯的失败，人们将责任推到没有规则和野蛮的踢球方式，最终一直被厌恶。但是贝利已经将这种提法融入血液之中，无法改变。就是因为贝利的坚持，带动了整个巴西国家队，在1958年世界杯上，打败瑞典队，一雪前耻，巴西人再一次因为足球而世界闻名，而这历史性的时刻，也是标志了贝利时代的来临。</p>
-<p>一个人具有这样的影响力，能够担负起相当大的重担，能够让国家在世界面前站立起来，真得难以置信。贝利被授予“巴西国宝”的称号，还保持着多项足球方面的记录，至今无人能打破，被国际奥委会认为是20世纪最具有影响力的运动员。</p>
-<p>电影就是讲贝利的一生，就是传奇的一生。被人嘲讽，受尽屈辱，最后通过自己的努力，母亲父亲的鼓励和支持，最后成为影响力极大的人物。真的是传奇，只受过正规的足球训练18个月，就帮助巴西国家队拿到了世界杯冠军，除了贝利，还有谁能完成吗？在之后的两届世界杯，贝利带领巴西队两次夺冠，成为目前为止唯一一个获得三次世界杯冠军的球员。</p>
-<p>一切，就是因为传奇的诞生。</p>]]></content>
-      <categories>
-        <category>影评领域</category>
-      </categories>
-      <tags>
-        <tag>电影</tag>
       </tags>
   </entry>
   <entry>
@@ -1067,6 +1054,57 @@
       </tags>
   </entry>
   <entry>
+    <title>大悦城小聚</title>
+    <url>//2018/09/29/%E5%A4%A7%E6%82%A6%E5%9F%8E%E5%B0%8F%E8%81%9A/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![虽然没有我们的照片，但是有这个意思](https://upload-images.jianshu.io/upload_images/3478485-ccf80350d2a43ed6.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+<blockquote>
+<p>星期一就接到了大学室友“大叔”的诚挚邀请，请我吃饭。好不犹豫的答应之后，一直等待着。</p>
+</blockquote>
+<span id="more"></span>
+
+<p>礼拜三，本来已经提前说了，最后有点情况，还是没有去。然后就是礼拜五，晚上六点在新开的大悦城吃饭，天泰泰国菜，貌似是一家网红店，味道确实很不错，尤其是咖喱牛肉，辣辣的感觉出现在入口一段时间之后，很是享受。此外，还有泰式奶茶，味道特别浓厚且独特，很是喜欢。这家店确实可以，比我想象中精致一些，人均价位100多，偶尔享受一下这样的食物，心情都会变好很多。</p>
+<ul>
+<li>土豆咖喱炖牛肉</li>
+</ul>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-464c0f630b16116c.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="土豆咖喱炖牛肉"></p>
+<ul>
+<li>泰式传统虾饼，真是满满的都是虾肉，特别鲜</li>
+</ul>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-75a90853bc691151.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="泰式传统虾饼，真是满满的都是虾肉，特别鲜"></p>
+<ul>
+<li>菠萝炒饭，一般是必点的泰国菜</li>
+</ul>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-a08a47b3e9d958d2.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="菠萝炒饭，一般是必点的泰国菜"></p>
+<ul>
+<li>炒粉，很劲道，味道很棒，配着旁边的酱料</li>
+</ul>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-b8314beafe3e997f.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="炒粉，很劲道，味道很棒，配着旁边的酱料"></p>
+<ul>
+<li>椰蓉布丁，口感非常好，椰香特别浓厚，下面是一层晶莹透明的西米</li>
+</ul>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-8d9391ea6f0ef287.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="椰蓉布丁，口感非常好，椰香特别浓厚，下面是一层晶莹透明的西米"></p>
+<ul>
+<li>这就是我喝的奶茶了，看起来就非常的高端大气，确实味道也特别的棒</li>
+</ul>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-d6b3972175e63e1d.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="这就是我喝的奶茶了，看起来就非常的高端大气，确实味道也特别的棒"></p>
+<p>吃完这些菜，并没有很好的满足我们的欲望，果断又去吃了一家烤鱼，叫江边城外。不过说真的，还是有点饱了，不过有特别想尝试，结果味道很是不错，而且还是两种口味，一半一半，双拼烤鱼。</p>
+<ul>
+<li>烤鱼，一半酱香一半蒜香</li>
+</ul>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-990751167b0d3e42.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="烤鱼，一半酱香一半蒜香"></p>
+<p>吃完，也就结束了。喜欢这样的感觉，偶尔有空且机会正好，一定要想到好友，一起吃个饭，闲聊几句，很是舒心，没有太过多余的想法，放下很多事情。骑自行车回去学校，没有再逛，下次再约。</p>
+]]></content>
+      <categories>
+        <category>随记</category>
+      </categories>
+      <tags>
+        <tag>泰国菜</tag>
+        <tag>大学</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>基于全基因组的基因家族分析（4）：SlNRAMP家族基因进化树构建</title>
     <url>//2022/07/31/%E5%9F%BA%E4%BA%8E%E5%85%A8%E5%9F%BA%E5%9B%A0%E7%BB%84%E7%9A%84%E5%9F%BA%E5%9B%A0%E5%AE%B6%E6%97%8F%E5%88%86%E6%9E%90%EF%BC%884%EF%BC%89%EF%BC%9ASlNRAMP%E5%AE%B6%E6%97%8F%E5%9F%BA%E5%9B%A0%E8%BF%9B%E5%8C%96%E6%A0%91%E6%9E%84%E5%BB%BA/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -1144,57 +1182,6 @@ characterization of aluminum resistance in Populus"><br>这里我先用比较麻
       </categories>
       <tags>
         <tag>gene</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>大悦城小聚</title>
-    <url>//2018/09/29/%E5%A4%A7%E6%82%A6%E5%9F%8E%E5%B0%8F%E8%81%9A/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![虽然没有我们的照片，但是有这个意思](https://upload-images.jianshu.io/upload_images/3478485-ccf80350d2a43ed6.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-<blockquote>
-<p>星期一就接到了大学室友“大叔”的诚挚邀请，请我吃饭。好不犹豫的答应之后，一直等待着。</p>
-</blockquote>
-<span id="more"></span>
-
-<p>礼拜三，本来已经提前说了，最后有点情况，还是没有去。然后就是礼拜五，晚上六点在新开的大悦城吃饭，天泰泰国菜，貌似是一家网红店，味道确实很不错，尤其是咖喱牛肉，辣辣的感觉出现在入口一段时间之后，很是享受。此外，还有泰式奶茶，味道特别浓厚且独特，很是喜欢。这家店确实可以，比我想象中精致一些，人均价位100多，偶尔享受一下这样的食物，心情都会变好很多。</p>
-<ul>
-<li>土豆咖喱炖牛肉</li>
-</ul>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-464c0f630b16116c.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="土豆咖喱炖牛肉"></p>
-<ul>
-<li>泰式传统虾饼，真是满满的都是虾肉，特别鲜</li>
-</ul>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-75a90853bc691151.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="泰式传统虾饼，真是满满的都是虾肉，特别鲜"></p>
-<ul>
-<li>菠萝炒饭，一般是必点的泰国菜</li>
-</ul>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-a08a47b3e9d958d2.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="菠萝炒饭，一般是必点的泰国菜"></p>
-<ul>
-<li>炒粉，很劲道，味道很棒，配着旁边的酱料</li>
-</ul>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-b8314beafe3e997f.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="炒粉，很劲道，味道很棒，配着旁边的酱料"></p>
-<ul>
-<li>椰蓉布丁，口感非常好，椰香特别浓厚，下面是一层晶莹透明的西米</li>
-</ul>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-8d9391ea6f0ef287.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="椰蓉布丁，口感非常好，椰香特别浓厚，下面是一层晶莹透明的西米"></p>
-<ul>
-<li>这就是我喝的奶茶了，看起来就非常的高端大气，确实味道也特别的棒</li>
-</ul>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-d6b3972175e63e1d.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="这就是我喝的奶茶了，看起来就非常的高端大气，确实味道也特别的棒"></p>
-<p>吃完这些菜，并没有很好的满足我们的欲望，果断又去吃了一家烤鱼，叫江边城外。不过说真的，还是有点饱了，不过有特别想尝试，结果味道很是不错，而且还是两种口味，一半一半，双拼烤鱼。</p>
-<ul>
-<li>烤鱼，一半酱香一半蒜香</li>
-</ul>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-990751167b0d3e42.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="烤鱼，一半酱香一半蒜香"></p>
-<p>吃完，也就结束了。喜欢这样的感觉，偶尔有空且机会正好，一定要想到好友，一起吃个饭，闲聊几句，很是舒心，没有太过多余的想法，放下很多事情。骑自行车回去学校，没有再逛，下次再约。</p>
-]]></content>
-      <categories>
-        <category>随记</category>
-      </categories>
-      <tags>
-        <tag>泰国菜</tag>
-        <tag>大学</tag>
       </tags>
   </entry>
   <entry>
@@ -1824,6 +1811,22 @@ characterization of aluminum resistance in Populus"><br>这里我先用比较麻
       </categories>
       <tags>
         <tag>科学</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>传奇的诞生</title>
+    <url>//2018/09/11/%E4%BC%A0%E5%A5%87%E7%9A%84%E8%AF%9E%E7%94%9F/</url>
+    <content><![CDATA[<p>在看这部电影之前，我一直都不知道还有这样一个传奇的存在，对于足球，我个人没有特别大的兴趣爱好，因此我都不太了解足球这方面的巨星和故事。但是，看着题目，你能够想象到这可能是一个激励的故事，又是一碗鸡汤，我决定去喝了它。</p>
+<p>故事开始，一群孩子在小巷子里玩着自己做的足球，规则是不让足球落地，通过大家的配合。主人公迪科，踢得非常的好，很明显你可以看出来，这也铺垫了后面的比赛。跟其他的故事一样，一开始总是被父母认为没有出息的东西，结果往往是因为这个，而有了巨大的成就。贝利的母亲极力的反对，而他父亲确实很支持。而在这背后，往往有着一段不一样的经历，才能够导致现在这样的局面。母亲和父亲就是因为足球而结缘，同样也是因为足球而失去了太多，最终对其充满失望。</p>
+<p>那时候，巴西因为1950年和1954年的世界杯惨败，而一直 没有走出来。因为世界杯的失败，人们将责任推到没有规则和野蛮的踢球方式，最终一直被厌恶。但是贝利已经将这种提法融入血液之中，无法改变。就是因为贝利的坚持，带动了整个巴西国家队，在1958年世界杯上，打败瑞典队，一雪前耻，巴西人再一次因为足球而世界闻名，而这历史性的时刻，也是标志了贝利时代的来临。</p>
+<p>一个人具有这样的影响力，能够担负起相当大的重担，能够让国家在世界面前站立起来，真得难以置信。贝利被授予“巴西国宝”的称号，还保持着多项足球方面的记录，至今无人能打破，被国际奥委会认为是20世纪最具有影响力的运动员。</p>
+<p>电影就是讲贝利的一生，就是传奇的一生。被人嘲讽，受尽屈辱，最后通过自己的努力，母亲父亲的鼓励和支持，最后成为影响力极大的人物。真的是传奇，只受过正规的足球训练18个月，就帮助巴西国家队拿到了世界杯冠军，除了贝利，还有谁能完成吗？在之后的两届世界杯，贝利带领巴西队两次夺冠，成为目前为止唯一一个获得三次世界杯冠军的球员。</p>
+<p>一切，就是因为传奇的诞生。</p>]]></content>
+      <categories>
+        <category>影评领域</category>
+      </categories>
+      <tags>
+        <tag>电影</tag>
       </tags>
   </entry>
   <entry>
