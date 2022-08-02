@@ -6,7 +6,7 @@ tags:
 - 教程
 categories: 科研之路
 ---
-
+> 如何使用Rstudio server版本。 
 <meta name="referrer" content="no-referrer" />
 
 <!--more-->
