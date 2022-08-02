@@ -108,44 +108,6 @@
       </tags>
   </entry>
   <entry>
-    <title>HTML5（10）——引用</title>
-    <url>//2018/10/09/HTML5%EF%BC%8810%EF%BC%89%E2%80%94%E2%80%94%E5%BC%95%E7%94%A8/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![coffee](https://upload-images.jianshu.io/upload_images/3478485-fb61d3d831bf7dd0.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-<blockquote>
-<p>今天突然特别期待明天早上，莫名觉得早上5点特别的美好，起床泡一杯咖啡，写写东西，看看窗外天空一片漆黑，心突然特别得静。<br>上一节学习了HTML的文本格式，今天学习HTML中的引用。</p>
-</blockquote>
-<span id="more"></span>
-
-<h2 id="q元素是用于较短的文本引用"><a href="#q元素是用于较短的文本引用" class="headerlink" title="q元素是用于较短的文本引用"></a><font color="green">q元素是用于较短的文本引用</font></h2><p>一般在HTML中，就使用<code>&lt;q&gt;</code>来进行短引文，它一般是行内引用，浏览器会解析为双引号。</p>
-<figure class="highlight applescript"><table><tr><td class="code"><pre><span class="line">&lt;p&gt;WWF&#x27;s goal <span class="keyword">is</span> <span class="keyword">to</span>: &lt;q&gt;Build a future <span class="keyword">where</span> people live <span class="keyword">in</span></span><br><span class="line"> harmony <span class="keyword">with</span> nature.&lt;/q&gt;&lt;/p&gt;</span><br></pre></td></tr></table></figure>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-b592fbec7d72642a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="双引号引用起来"></p>
-<h2 id="blockquote元素是用来引用长文本"><a href="#blockquote元素是用来引用长文本" class="headerlink" title="blockquote元素是用来引用长文本"></a><font color="green">blockquote元素是用来引用长文本</font></h2><p>HTML中，长文本的引用使用<code>&lt;blockquote&gt;</code>元素来进行引用，是块引用，浏览器会解析为缩进。</p>
-<figure class="highlight apache"><table><tr><td class="code"><pre><span class="line"><span class="section">&lt;p&gt;</span><span class="attribute">Browsers</span> usually indent blockquote elements.&lt;/p&gt;</span><br><span class="line"></span><br><span class="line"><span class="section">&lt;blockquote cite=<span class="string">&quot;http://www.worldwildlife.org/who/index.html&quot;</span>&gt;</span></span><br><span class="line"><span class="attribute">For</span> <span class="number">50</span> years, WWF has been protecting the future of nature.</span><br><span class="line"><span class="attribute">The</span> world&#x27;s leading conservation organization,</span><br><span class="line"><span class="attribute">WWF</span> works in <span class="number">100</span> countries and is supported by</span><br><span class="line"><span class="attribute">1</span>.<span class="number">2</span> million members in the United States and</span><br><span class="line"><span class="attribute">close</span> to <span class="number">5</span> million globally.</span><br><span class="line"><span class="section">&lt;/blockquote&gt;</span></span><br></pre></td></tr></table></figure>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-7c429ee1741ae084.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="缩进引用"></p>
-<h2 id="HTML缩写"><a href="#HTML缩写" class="headerlink" title="HTML缩写"></a><font color="green">HTML缩写</font></h2><p>在网页中，很多时候我们都需要用到缩写，将一长串的词缩写成大写字母。’<abbr>‘元素就是用来干这样的事情的，将鼠标放在缩写词上，会悬浮出现完整的词。其中<code>title</code>属性是用来放完整的词。</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>The <span class="tag">&lt;<span class="name">abbr</span> <span class="attr">title</span>=<span class="string">&quot;World Health Organization&quot;</span>&gt;</span>WHO<span class="tag">&lt;/<span class="name">abbr</span>&gt;</span> was founded in 1948.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-36a0846e5d3a86fc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"></p>
-<h2 id="联系信息元素引用"><a href="#联系信息元素引用" class="headerlink" title="联系信息元素引用"></a><font color="green">联系信息元素引用</font></h2><p><code>&lt;address&gt;</code>元素是用来引用个人联系方式，地址等联系信息。浏览器解析为斜体。</p>
-<figure class="highlight stata"><table><tr><td class="code"><pre><span class="line">&lt;address&gt;</span><br><span class="line">Written <span class="keyword">by</span> John <span class="keyword">Doe</span>.&lt;<span class="keyword">br</span>&gt; </span><br><span class="line">Visit <span class="keyword">us</span> at:&lt;<span class="keyword">br</span>&gt;</span><br><span class="line">Example.com&lt;<span class="keyword">br</span>&gt;</span><br><span class="line">Box 564, Disneyland&lt;<span class="keyword">br</span>&gt;</span><br><span class="line">USA</span><br><span class="line">&lt;/address&gt;</span><br></pre></td></tr></table></figure>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-10e3c875a56be233.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="联系信息"></p>
-<h2 id="作品名字引用"><a href="#作品名字引用" class="headerlink" title="作品名字引用"></a><font color="green">作品名字引用</font></h2><p>HTML中，<code>&lt;cite&gt;</code>元素就是专门用来引用作品名字，也是解析为斜体。</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="tag">&lt;<span class="name">cite</span>&gt;</span>The Scream<span class="tag">&lt;/<span class="name">cite</span>&gt;</span> by Edvard Munch. Painted in 1893.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-023a2548348b11fc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="斜体"></p>
-<h2 id="bdo元素用来双向覆盖"><a href="#bdo元素用来双向覆盖" class="headerlink" title="bdo元素用来双向覆盖"></a><font color="green">bdo元素用来双向覆盖</font></h2><p>一般<code>&lt;bdo&gt;</code>元素就是用来覆盖当前文本的方向。<code>dir</code>元素是用来指定书写方向的。</p>
-<figure class="highlight vim"><table><tr><td class="code"><pre><span class="line"><span class="symbol">&lt;p&gt;</span>If your browser supports bi-directional override (bdo), the <span class="keyword">next</span> <span class="built_in">line</span> will <span class="keyword">be</span> written from <span class="keyword">right</span> <span class="keyword">to</span> <span class="keyword">left</span> (rtl):&lt;/<span class="keyword">p</span>&gt;</span><br><span class="line"></span><br><span class="line">&lt;bdo dir=<span class="string">&quot;rtl&quot;</span>&gt;This <span class="built_in">line</span> will <span class="keyword">be</span> written from <span class="keyword">right</span> <span class="keyword">to</span> <span class="keyword">left</span>&lt;/bdo&gt;</span><br></pre></td></tr></table></figure>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-65946c58656a9485.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="完全就是从右到左"></p>
-]]></content>
-      <categories>
-        <category>HTML5入门</category>
-      </categories>
-      <tags>
-        <tag>引用</tag>
-        <tag>HTML5</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>GUS染色方法</title>
     <url>//2019/02/05/GUS%E6%9F%93%E8%89%B2%E6%96%B9%E6%B3%95/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -240,6 +202,44 @@
       </tags>
   </entry>
   <entry>
+    <title>HTML5（10）——引用</title>
+    <url>//2018/10/09/HTML5%EF%BC%8810%EF%BC%89%E2%80%94%E2%80%94%E5%BC%95%E7%94%A8/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![coffee](https://upload-images.jianshu.io/upload_images/3478485-fb61d3d831bf7dd0.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+<blockquote>
+<p>今天突然特别期待明天早上，莫名觉得早上5点特别的美好，起床泡一杯咖啡，写写东西，看看窗外天空一片漆黑，心突然特别得静。<br>上一节学习了HTML的文本格式，今天学习HTML中的引用。</p>
+</blockquote>
+<span id="more"></span>
+
+<h2 id="q元素是用于较短的文本引用"><a href="#q元素是用于较短的文本引用" class="headerlink" title="q元素是用于较短的文本引用"></a><font color="green">q元素是用于较短的文本引用</font></h2><p>一般在HTML中，就使用<code>&lt;q&gt;</code>来进行短引文，它一般是行内引用，浏览器会解析为双引号。</p>
+<figure class="highlight applescript"><table><tr><td class="code"><pre><span class="line">&lt;p&gt;WWF&#x27;s goal <span class="keyword">is</span> <span class="keyword">to</span>: &lt;q&gt;Build a future <span class="keyword">where</span> people live <span class="keyword">in</span></span><br><span class="line"> harmony <span class="keyword">with</span> nature.&lt;/q&gt;&lt;/p&gt;</span><br></pre></td></tr></table></figure>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-b592fbec7d72642a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="双引号引用起来"></p>
+<h2 id="blockquote元素是用来引用长文本"><a href="#blockquote元素是用来引用长文本" class="headerlink" title="blockquote元素是用来引用长文本"></a><font color="green">blockquote元素是用来引用长文本</font></h2><p>HTML中，长文本的引用使用<code>&lt;blockquote&gt;</code>元素来进行引用，是块引用，浏览器会解析为缩进。</p>
+<figure class="highlight apache"><table><tr><td class="code"><pre><span class="line"><span class="section">&lt;p&gt;</span><span class="attribute">Browsers</span> usually indent blockquote elements.&lt;/p&gt;</span><br><span class="line"></span><br><span class="line"><span class="section">&lt;blockquote cite=<span class="string">&quot;http://www.worldwildlife.org/who/index.html&quot;</span>&gt;</span></span><br><span class="line"><span class="attribute">For</span> <span class="number">50</span> years, WWF has been protecting the future of nature.</span><br><span class="line"><span class="attribute">The</span> world&#x27;s leading conservation organization,</span><br><span class="line"><span class="attribute">WWF</span> works in <span class="number">100</span> countries and is supported by</span><br><span class="line"><span class="attribute">1</span>.<span class="number">2</span> million members in the United States and</span><br><span class="line"><span class="attribute">close</span> to <span class="number">5</span> million globally.</span><br><span class="line"><span class="section">&lt;/blockquote&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-7c429ee1741ae084.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="缩进引用"></p>
+<h2 id="HTML缩写"><a href="#HTML缩写" class="headerlink" title="HTML缩写"></a><font color="green">HTML缩写</font></h2><p>在网页中，很多时候我们都需要用到缩写，将一长串的词缩写成大写字母。’<abbr>‘元素就是用来干这样的事情的，将鼠标放在缩写词上，会悬浮出现完整的词。其中<code>title</code>属性是用来放完整的词。</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>The <span class="tag">&lt;<span class="name">abbr</span> <span class="attr">title</span>=<span class="string">&quot;World Health Organization&quot;</span>&gt;</span>WHO<span class="tag">&lt;/<span class="name">abbr</span>&gt;</span> was founded in 1948.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-36a0846e5d3a86fc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"></p>
+<h2 id="联系信息元素引用"><a href="#联系信息元素引用" class="headerlink" title="联系信息元素引用"></a><font color="green">联系信息元素引用</font></h2><p><code>&lt;address&gt;</code>元素是用来引用个人联系方式，地址等联系信息。浏览器解析为斜体。</p>
+<figure class="highlight stata"><table><tr><td class="code"><pre><span class="line">&lt;address&gt;</span><br><span class="line">Written <span class="keyword">by</span> John <span class="keyword">Doe</span>.&lt;<span class="keyword">br</span>&gt; </span><br><span class="line">Visit <span class="keyword">us</span> at:&lt;<span class="keyword">br</span>&gt;</span><br><span class="line">Example.com&lt;<span class="keyword">br</span>&gt;</span><br><span class="line">Box 564, Disneyland&lt;<span class="keyword">br</span>&gt;</span><br><span class="line">USA</span><br><span class="line">&lt;/address&gt;</span><br></pre></td></tr></table></figure>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-10e3c875a56be233.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="联系信息"></p>
+<h2 id="作品名字引用"><a href="#作品名字引用" class="headerlink" title="作品名字引用"></a><font color="green">作品名字引用</font></h2><p>HTML中，<code>&lt;cite&gt;</code>元素就是专门用来引用作品名字，也是解析为斜体。</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="tag">&lt;<span class="name">cite</span>&gt;</span>The Scream<span class="tag">&lt;/<span class="name">cite</span>&gt;</span> by Edvard Munch. Painted in 1893.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-023a2548348b11fc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="斜体"></p>
+<h2 id="bdo元素用来双向覆盖"><a href="#bdo元素用来双向覆盖" class="headerlink" title="bdo元素用来双向覆盖"></a><font color="green">bdo元素用来双向覆盖</font></h2><p>一般<code>&lt;bdo&gt;</code>元素就是用来覆盖当前文本的方向。<code>dir</code>元素是用来指定书写方向的。</p>
+<figure class="highlight vim"><table><tr><td class="code"><pre><span class="line"><span class="symbol">&lt;p&gt;</span>If your browser supports bi-directional override (bdo), the <span class="keyword">next</span> <span class="built_in">line</span> will <span class="keyword">be</span> written from <span class="keyword">right</span> <span class="keyword">to</span> <span class="keyword">left</span> (rtl):&lt;/<span class="keyword">p</span>&gt;</span><br><span class="line"></span><br><span class="line">&lt;bdo dir=<span class="string">&quot;rtl&quot;</span>&gt;This <span class="built_in">line</span> will <span class="keyword">be</span> written from <span class="keyword">right</span> <span class="keyword">to</span> <span class="keyword">left</span>&lt;/bdo&gt;</span><br></pre></td></tr></table></figure>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-65946c58656a9485.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="完全就是从右到左"></p>
+]]></content>
+      <categories>
+        <category>HTML5入门</category>
+      </categories>
+      <tags>
+        <tag>引用</tag>
+        <tag>HTML5</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>HTML5（11）——注释</title>
     <url>//2018/10/10/HTML5%EF%BC%8811%EF%BC%89%E2%80%94%E2%80%94%E6%B3%A8%E9%87%8A/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -262,6 +262,42 @@
       <tags>
         <tag>HTML5</tag>
         <tag>注释</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>HTML5（12）——颜色</title>
+    <url>//2018/10/13/HTML5%EF%BC%8812%EF%BC%89%E2%80%94%E2%80%94%E9%A2%9C%E8%89%B2/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![整洁的桌面](https://upload-images.jianshu.io/upload_images/3478485-a135213ca8dbdc9a.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+> 前两天算是有一些事情要处理，没有来得及更新学习。今天我们来讲一下HTML中颜色的控制。
+
+
+
+<span id="more"></span>
+
+<h2 id="颜色的名称"><a href="#颜色的名称" class="headerlink" title="颜色的名称"></a><font color="green">颜色的名称</font></h2><p>在HTML中，要使用颜色的话，需要用他们的名称来引用。HTML支持大概140种标准颜色，可以看链接：<a href="https://www.w3schools.com/colors/colors_names.asp">Color Names Supported by All Browsers</a>。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-9aed6c0e3fd1bc35.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="颜色名称"></p>
+<h2 id="网页背景颜色"><a href="#网页背景颜色" class="headerlink" title="网页背景颜色"></a><font color="green">网页背景颜色</font></h2><p>前面我们在<a href="https://www.jianshu.com/p/e228f6dca9d2">HTML5(5)——属性</a>一文中简要提到过style属性，而在<a href="https://www.jianshu.com/p/0fd28725d9fb">HTML5（8）——样式
+</a>一文中详细介绍了<code>style</code>的各个property的作用，这里我们用它来控制网页背景颜色，文本颜色等。语法大概如下：</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">style</span>=<span class="string">&quot;background-color:DodgerBlue;&quot;</span>&gt;</span>Hello World<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">style</span>=<span class="string">&quot;background-color:Tomato;&quot;</span>&gt;</span>Lorem ipsum...<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-4f6115d2a7015ea4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"></p>
+<h2 id="文本颜色"><a href="#文本颜色" class="headerlink" title="文本颜色"></a><font color="green">文本颜色</font></h2><p>同背景颜色一样设置，其中一些不同。style中属性不同，这里就是<code>color</code>属性，值就是颜色名称。</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">style</span>=<span class="string">&quot;color:Tomato;&quot;</span>&gt;</span>Hello World<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">style</span>=<span class="string">&quot;color:DodgerBlue;&quot;</span>&gt;</span>Lorem ipsum...<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">style</span>=<span class="string">&quot;color:MediumSeaGreen;&quot;</span>&gt;</span>Ut wisi enim...<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-56751396fea53dc8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"></p>
+<h2 id="边框颜色"><a href="#边框颜色" class="headerlink" title="边框颜色"></a><font color="green">边框颜色</font></h2><p>这里就使用<code>border</code>property，而它的值包括粗细，填充，颜色，你可以使用自己想要的值。</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">style</span>=<span class="string">&quot;border:2px solid Tomato;&quot;</span>&gt;</span>Hello World<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">style</span>=<span class="string">&quot;border:2px solid DodgerBlue;&quot;</span>&gt;</span>Hello World<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">style</span>=<span class="string">&quot;border:2px solid Violet;&quot;</span>&gt;</span>Hello World<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-24f79cac76a2db2e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"></p>
+<h2 id="颜色值"><a href="#颜色值" class="headerlink" title="颜色值"></a><font color="green">颜色值</font></h2><p>在HTML中，颜色可以用几种类型的值来描述：RGB, HEX, HSL, RGBA 和HSLA。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-14a56383cbb765e9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"></p>
+<h3 id="RGB"><a href="#RGB" class="headerlink" title="RGB"></a>RGB</h3><p><code>rgb(red,green,blue)</code>，每一种参数都是颜色的密度值，范围在0-255之间。例如，rgb(0,0,0)是黑色，rgb(255,255,255)是白色。不同的灰度，是3种颜色相同的情况下的改变。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-cee9ba3646f62c92.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"><br><img src="https://upload-images.jianshu.io/upload_images/3478485-438ed0ed84fb3b54.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<h3 id="HEX"><a href="#HEX" class="headerlink" title="HEX"></a>HEX</h3><p>这是用16进制来表示RGB的三种颜色，也是三种值，范围都在00-ff之间。同样灰度也是用相同的三种颜色的值大小，来表示。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-26108c125a656dde.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"></p>
+<h3 id="HSL"><a href="#HSL" class="headerlink" title="HSL"></a>HSL</h3><p>这种颜色的是通过色调，饱和度和亮度，来表示某种颜色。<br><code>hsl(hue, saturation, lightness)</code>。色调的值在0-360之间。0是红色，120是绿色，240是蓝色。饱和度是百分数表示的，0%表示灰色，100%是颜色本身。亮度也是百分数，0%是黑色，50%是适中，100%是白色。灰度是色调和饱和度都为0值，而通过亮度的调节来改变。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-c9d6ff8c82aecb3a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"></p>
+<h3 id="RGBA和HSLA"><a href="#RGBA和HSLA" class="headerlink" title="RGBA和HSLA"></a>RGBA和HSLA</h3><p>这两者都是在RGB和HSL的基础上，增加了第四个参数，透明度（alpha）。透明度的范围在0.0-1.0之间。0.0是全透明，而1.0是不透明。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-4269eabcd987dddb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"></p>
+]]></content>
+      <categories>
+        <category>HTML5入门</category>
+      </categories>
+      <tags>
+        <tag>HTML5</tag>
+        <tag>颜色</tag>
       </tags>
   </entry>
   <entry>
@@ -316,66 +352,6 @@
       <tags>
         <tag>HTML5</tag>
         <tag>CSS</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>HTML5（12）——颜色</title>
-    <url>//2018/10/13/HTML5%EF%BC%8812%EF%BC%89%E2%80%94%E2%80%94%E9%A2%9C%E8%89%B2/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![整洁的桌面](https://upload-images.jianshu.io/upload_images/3478485-a135213ca8dbdc9a.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-> 前两天算是有一些事情要处理，没有来得及更新学习。今天我们来讲一下HTML中颜色的控制。
-
-
-
-<span id="more"></span>
-
-<h2 id="颜色的名称"><a href="#颜色的名称" class="headerlink" title="颜色的名称"></a><font color="green">颜色的名称</font></h2><p>在HTML中，要使用颜色的话，需要用他们的名称来引用。HTML支持大概140种标准颜色，可以看链接：<a href="https://www.w3schools.com/colors/colors_names.asp">Color Names Supported by All Browsers</a>。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-9aed6c0e3fd1bc35.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="颜色名称"></p>
-<h2 id="网页背景颜色"><a href="#网页背景颜色" class="headerlink" title="网页背景颜色"></a><font color="green">网页背景颜色</font></h2><p>前面我们在<a href="https://www.jianshu.com/p/e228f6dca9d2">HTML5(5)——属性</a>一文中简要提到过style属性，而在<a href="https://www.jianshu.com/p/0fd28725d9fb">HTML5（8）——样式
-</a>一文中详细介绍了<code>style</code>的各个property的作用，这里我们用它来控制网页背景颜色，文本颜色等。语法大概如下：</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">style</span>=<span class="string">&quot;background-color:DodgerBlue;&quot;</span>&gt;</span>Hello World<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">style</span>=<span class="string">&quot;background-color:Tomato;&quot;</span>&gt;</span>Lorem ipsum...<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-4f6115d2a7015ea4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"></p>
-<h2 id="文本颜色"><a href="#文本颜色" class="headerlink" title="文本颜色"></a><font color="green">文本颜色</font></h2><p>同背景颜色一样设置，其中一些不同。style中属性不同，这里就是<code>color</code>属性，值就是颜色名称。</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">style</span>=<span class="string">&quot;color:Tomato;&quot;</span>&gt;</span>Hello World<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">style</span>=<span class="string">&quot;color:DodgerBlue;&quot;</span>&gt;</span>Lorem ipsum...<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">style</span>=<span class="string">&quot;color:MediumSeaGreen;&quot;</span>&gt;</span>Ut wisi enim...<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-56751396fea53dc8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"></p>
-<h2 id="边框颜色"><a href="#边框颜色" class="headerlink" title="边框颜色"></a><font color="green">边框颜色</font></h2><p>这里就使用<code>border</code>property，而它的值包括粗细，填充，颜色，你可以使用自己想要的值。</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">style</span>=<span class="string">&quot;border:2px solid Tomato;&quot;</span>&gt;</span>Hello World<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">style</span>=<span class="string">&quot;border:2px solid DodgerBlue;&quot;</span>&gt;</span>Hello World<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">style</span>=<span class="string">&quot;border:2px solid Violet;&quot;</span>&gt;</span>Hello World<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-24f79cac76a2db2e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"></p>
-<h2 id="颜色值"><a href="#颜色值" class="headerlink" title="颜色值"></a><font color="green">颜色值</font></h2><p>在HTML中，颜色可以用几种类型的值来描述：RGB, HEX, HSL, RGBA 和HSLA。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-14a56383cbb765e9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"></p>
-<h3 id="RGB"><a href="#RGB" class="headerlink" title="RGB"></a>RGB</h3><p><code>rgb(red,green,blue)</code>，每一种参数都是颜色的密度值，范围在0-255之间。例如，rgb(0,0,0)是黑色，rgb(255,255,255)是白色。不同的灰度，是3种颜色相同的情况下的改变。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-cee9ba3646f62c92.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"><br><img src="https://upload-images.jianshu.io/upload_images/3478485-438ed0ed84fb3b54.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
-<h3 id="HEX"><a href="#HEX" class="headerlink" title="HEX"></a>HEX</h3><p>这是用16进制来表示RGB的三种颜色，也是三种值，范围都在00-ff之间。同样灰度也是用相同的三种颜色的值大小，来表示。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-26108c125a656dde.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"></p>
-<h3 id="HSL"><a href="#HSL" class="headerlink" title="HSL"></a>HSL</h3><p>这种颜色的是通过色调，饱和度和亮度，来表示某种颜色。<br><code>hsl(hue, saturation, lightness)</code>。色调的值在0-360之间。0是红色，120是绿色，240是蓝色。饱和度是百分数表示的，0%表示灰色，100%是颜色本身。亮度也是百分数，0%是黑色，50%是适中，100%是白色。灰度是色调和饱和度都为0值，而通过亮度的调节来改变。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-c9d6ff8c82aecb3a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"></p>
-<h3 id="RGBA和HSLA"><a href="#RGBA和HSLA" class="headerlink" title="RGBA和HSLA"></a>RGBA和HSLA</h3><p>这两者都是在RGB和HSL的基础上，增加了第四个参数，透明度（alpha）。透明度的范围在0.0-1.0之间。0.0是全透明，而1.0是不透明。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-4269eabcd987dddb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"></p>
-]]></content>
-      <categories>
-        <category>HTML5入门</category>
-      </categories>
-      <tags>
-        <tag>HTML5</tag>
-        <tag>颜色</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>HTML5（1）——介绍</title>
-    <url>//2018/09/24/HTML5%EF%BC%881%EF%BC%89%E2%80%94%E2%80%94%E4%BB%8B%E7%BB%8D/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![中秋节就是面对电脑](https://upload-images.jianshu.io/upload_images/3478485-befca9c4894b99eb.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-<blockquote>
-<p>我就是用来玩一下，说好得，只是玩一下。</p>
-</blockquote>
-<span id="more"></span>
-
-<p>总是想干点事情，不想这么地浪费时间，学习一下html5语法，还是挺好的。我记得以前别人过节的时候，就会发一个网页过来，你打开就是节日祝福，还有音乐和动画，然后就觉得学计算机的人特别牛逼，现在看来，真得没有那么难，稍微学习一下，你就可以实现这样的效果，并没有想象中那么难。当然如果要深入下去，作为你吃饭的技能，那就不是一个层次，我就用来玩一下，增添一些生活的乐趣。</p>
-<p>有了以下这些基本的内容，你就可以写出一个自己的最简单的网页来了。</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span> <span class="comment">&lt;!--这是用来指定声明这篇文档是HTML5，帮助浏览器正确的显示网页--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span><span class="comment">&lt;!--这是网页根标签，每个网页都有，必不可少--&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span><span class="comment">&lt;!--head里面包含的是元信息，不会显示出来--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">title</span>&gt;</span>生活的质感<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">    </span><br><span class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span><span class="comment">&lt;!--body是网页不可少部分，是用来放可视的网页内容，是会展现出来的--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">h1</span>&gt;</span><span class="comment">&lt;!--h1是用来表示一级标题--&gt;</span></span><br><span class="line">            中秋节快乐</span><br><span class="line">        <span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="comment">&lt;!--p就是段落的意思，用来盛放正文的内容--&gt;</span></span><br><span class="line">            今天是中秋节，也没有回家过节，在宿舍里折腾了很久。</span><br><span class="line">        <span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>HTML5的标签是用&lt;&gt;括起来的。比如<code>&lt;p&gt;...&lt;/p&gt;</code>这样的段落标签。不带斜杠的是起始标签，带斜杆的是结束标签。</p>
-]]></content>
-      <categories>
-        <category>HTML5入门</category>
-      </categories>
-      <tags>
-        <tag>HTML5</tag>
       </tags>
   </entry>
   <entry>
@@ -549,39 +525,6 @@
       </tags>
   </entry>
   <entry>
-    <title>HTML5（7）——段落</title>
-    <url>//2018/10/06/HTML5%EF%BC%887%EF%BC%89%E2%80%94%E2%80%94%E6%AE%B5%E8%90%BD/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![想法很多，已没有经历实现](https://upload-images.jianshu.io/upload_images/3478485-f715b416af9c6294.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-> 现在不得不感叹，很多事情有想法，却找不到人一起去实现。继续学习HTML5，来讲一讲段落。
-
-
-
-<span id="more"></span>
-
-<h2 id="HTML段落"><a href="#HTML段落" class="headerlink" title="HTML段落"></a><font color="green">HTML段落</font></h2><p><code>&lt;p&gt;</code>元素是用来定义段落的，并且是由结束标签的。而且网页在解析时，会自动在段落前和段落后添加一些空格区域。</p>
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line">&lt;<span class="selector-tag">p</span>&gt;This is <span class="selector-tag">a</span> paragraph.&lt;/<span class="selector-tag">p</span>&gt;</span><br><span class="line">&lt;<span class="selector-tag">p</span>&gt;This is another paragraph.&lt;/<span class="selector-tag">p</span>&gt;</span><br></pre></td></tr></table></figure>
-
-<h2 id="HTML段落显示"><a href="#HTML段落显示" class="headerlink" title="HTML段落显示"></a><font color="green">HTML段落显示</font></h2><p>你是没有办法去控制网页到底会怎么样显示，小的屏幕，大的屏幕等情况都会变得不一样。而且你也不能添加空格和换行来改变段落显示，网页会自动移除这些空格和空行，比如：</p>
-<figure class="highlight livecodeserver"><table><tr><td class="code"><pre><span class="line">&lt;p&gt;</span><br><span class="line">This <span class="keyword">paragraph</span></span><br><span class="line"><span class="keyword">contains</span> <span class="keyword">a</span> lot <span class="keyword">of</span> <span class="keyword">lines</span></span><br><span class="line"><span class="keyword">in</span> <span class="keyword">the</span> source code,</span><br><span class="line">but <span class="keyword">the</span> browser </span><br><span class="line">ignores <span class="keyword">it</span>.</span><br><span class="line">&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;p&gt;</span><br><span class="line">This <span class="keyword">paragraph</span></span><br><span class="line"><span class="keyword">contains</span>      <span class="keyword">a</span> lot <span class="keyword">of</span> spaces</span><br><span class="line"><span class="keyword">in</span> <span class="keyword">the</span> source     code,</span><br><span class="line">but <span class="keyword">the</span>    browser </span><br><span class="line">ignores <span class="keyword">it</span>.</span><br><span class="line">&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;p&gt;</span><br><span class="line">The <span class="built_in">number</span> <span class="keyword">of</span> <span class="keyword">lines</span> <span class="keyword">in</span> <span class="keyword">a</span> <span class="keyword">paragraph</span> depends <span class="keyword">on</span> <span class="title">the</span> <span class="title">size</span> <span class="title">of</span> <span class="title">the</span> <span class="title">browser</span> <span class="title">window</span>. <span class="title">If</span> <span class="title">you</span> <span class="title">resize</span> <span class="title">the</span> <span class="title">browser</span> <span class="title">window</span>, <span class="title">the</span> <span class="title">number</span> <span class="title">of</span> <span class="title">lines</span> <span class="title">in</span> <span class="title">this</span> <span class="title">paragraph</span> <span class="title">will</span> <span class="title">change</span>.</span><br><span class="line">&lt;/p&gt;</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-add480d3916a9ffc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="显示结果"></p>
-<h2 id="HTML换行"><a href="#HTML换行" class="headerlink" title="HTML换行"></a><font color="green">HTML换行</font></h2><p>HTML中换行，你需要<code>&lt;br&gt;</code>元素来进行实现。你可以在你想换行的地方添加<code>&lt;br&gt;</code>元素来进行换行。<br><code>&lt;p&gt;This is&lt;br&gt;a paragraph&lt;br&gt;with line breaks.&lt;/p&gt;</code></p>
-<h2 id="诗的显示问题"><a href="#诗的显示问题" class="headerlink" title="诗的显示问题"></a><font color="green">诗的显示问题</font></h2><figure class="highlight applescript"><table><tr><td class="code"><pre><span class="line">&lt;p&gt;In HTML, spaces <span class="keyword">and</span> new lines are ignored:&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;p&gt;</span><br><span class="line"></span><br><span class="line">  My Bonnie lies <span class="keyword">over</span> <span class="keyword">the</span> ocean.</span><br><span class="line"></span><br><span class="line">  My Bonnie lies <span class="keyword">over</span> <span class="keyword">the</span> sea.</span><br><span class="line"></span><br><span class="line">  My Bonnie lies <span class="keyword">over</span> <span class="keyword">the</span> ocean.</span><br><span class="line">  </span><br><span class="line">  Oh, bring <span class="keyword">back</span> <span class="keyword">my</span> Bonnie <span class="keyword">to</span> <span class="keyword">me</span>.</span><br><span class="line"></span><br><span class="line">&lt;/p&gt;</span><br></pre></td></tr></table></figure>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-dc60e763c5feda78.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="单行显示了"></p>
-<p>如果想要正常的显示诗，且能够保存空格，那么我们需要用到<code>&lt;pre&gt;</code>元素，它是用来预格式化文本的，能够保存文本原本的空格和换行且能够使字体宽度固定。</p>
-<figure class="highlight vim"><table><tr><td class="code"><pre><span class="line"><span class="symbol">&lt;p&gt;</span>The <span class="keyword">pre</span> <span class="keyword">tag</span> preserves both spaces <span class="built_in">and</span> <span class="built_in">line</span> <span class="keyword">break</span><span class="variable">s:</span>&lt;/<span class="keyword">p</span>&gt;</span><br><span class="line"></span><br><span class="line"><span class="symbol">&lt;pre&gt;</span></span><br><span class="line">   My Bonnie lies over the ocean.</span><br><span class="line"></span><br><span class="line">   My Bonnie lies over the sea.</span><br><span class="line"></span><br><span class="line">   My Bonnie lies over the ocean.</span><br><span class="line">   </span><br><span class="line">   Oh, bring back my Bonnie <span class="keyword">to</span> <span class="keyword">me</span>.</span><br><span class="line">&lt;/<span class="keyword">pre</span>&gt;</span><br></pre></td></tr></table></figure>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-88bb011547100448.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="正常显示诗"></p>
-]]></content>
-      <categories>
-        <category>HTML5入门</category>
-      </categories>
-      <tags>
-        <tag>HTML5</tag>
-        <tag>段落</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>HTML5（8）——样式</title>
     <url>//2018/10/07/HTML5%EF%BC%888%EF%BC%89%E2%80%94%E2%80%94%E6%A0%B7%E5%BC%8F/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -618,6 +561,39 @@
       <tags>
         <tag>HTML5</tag>
         <tag>样式</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>HTML5（7）——段落</title>
+    <url>//2018/10/06/HTML5%EF%BC%887%EF%BC%89%E2%80%94%E2%80%94%E6%AE%B5%E8%90%BD/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![想法很多，已没有经历实现](https://upload-images.jianshu.io/upload_images/3478485-f715b416af9c6294.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+> 现在不得不感叹，很多事情有想法，却找不到人一起去实现。继续学习HTML5，来讲一讲段落。
+
+
+
+<span id="more"></span>
+
+<h2 id="HTML段落"><a href="#HTML段落" class="headerlink" title="HTML段落"></a><font color="green">HTML段落</font></h2><p><code>&lt;p&gt;</code>元素是用来定义段落的，并且是由结束标签的。而且网页在解析时，会自动在段落前和段落后添加一些空格区域。</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line">&lt;<span class="selector-tag">p</span>&gt;This is <span class="selector-tag">a</span> paragraph.&lt;/<span class="selector-tag">p</span>&gt;</span><br><span class="line">&lt;<span class="selector-tag">p</span>&gt;This is another paragraph.&lt;/<span class="selector-tag">p</span>&gt;</span><br></pre></td></tr></table></figure>
+
+<h2 id="HTML段落显示"><a href="#HTML段落显示" class="headerlink" title="HTML段落显示"></a><font color="green">HTML段落显示</font></h2><p>你是没有办法去控制网页到底会怎么样显示，小的屏幕，大的屏幕等情况都会变得不一样。而且你也不能添加空格和换行来改变段落显示，网页会自动移除这些空格和空行，比如：</p>
+<figure class="highlight livecodeserver"><table><tr><td class="code"><pre><span class="line">&lt;p&gt;</span><br><span class="line">This <span class="keyword">paragraph</span></span><br><span class="line"><span class="keyword">contains</span> <span class="keyword">a</span> lot <span class="keyword">of</span> <span class="keyword">lines</span></span><br><span class="line"><span class="keyword">in</span> <span class="keyword">the</span> source code,</span><br><span class="line">but <span class="keyword">the</span> browser </span><br><span class="line">ignores <span class="keyword">it</span>.</span><br><span class="line">&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;p&gt;</span><br><span class="line">This <span class="keyword">paragraph</span></span><br><span class="line"><span class="keyword">contains</span>      <span class="keyword">a</span> lot <span class="keyword">of</span> spaces</span><br><span class="line"><span class="keyword">in</span> <span class="keyword">the</span> source     code,</span><br><span class="line">but <span class="keyword">the</span>    browser </span><br><span class="line">ignores <span class="keyword">it</span>.</span><br><span class="line">&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;p&gt;</span><br><span class="line">The <span class="built_in">number</span> <span class="keyword">of</span> <span class="keyword">lines</span> <span class="keyword">in</span> <span class="keyword">a</span> <span class="keyword">paragraph</span> depends <span class="keyword">on</span> <span class="title">the</span> <span class="title">size</span> <span class="title">of</span> <span class="title">the</span> <span class="title">browser</span> <span class="title">window</span>. <span class="title">If</span> <span class="title">you</span> <span class="title">resize</span> <span class="title">the</span> <span class="title">browser</span> <span class="title">window</span>, <span class="title">the</span> <span class="title">number</span> <span class="title">of</span> <span class="title">lines</span> <span class="title">in</span> <span class="title">this</span> <span class="title">paragraph</span> <span class="title">will</span> <span class="title">change</span>.</span><br><span class="line">&lt;/p&gt;</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-add480d3916a9ffc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="显示结果"></p>
+<h2 id="HTML换行"><a href="#HTML换行" class="headerlink" title="HTML换行"></a><font color="green">HTML换行</font></h2><p>HTML中换行，你需要<code>&lt;br&gt;</code>元素来进行实现。你可以在你想换行的地方添加<code>&lt;br&gt;</code>元素来进行换行。<br><code>&lt;p&gt;This is&lt;br&gt;a paragraph&lt;br&gt;with line breaks.&lt;/p&gt;</code></p>
+<h2 id="诗的显示问题"><a href="#诗的显示问题" class="headerlink" title="诗的显示问题"></a><font color="green">诗的显示问题</font></h2><figure class="highlight applescript"><table><tr><td class="code"><pre><span class="line">&lt;p&gt;In HTML, spaces <span class="keyword">and</span> new lines are ignored:&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;p&gt;</span><br><span class="line"></span><br><span class="line">  My Bonnie lies <span class="keyword">over</span> <span class="keyword">the</span> ocean.</span><br><span class="line"></span><br><span class="line">  My Bonnie lies <span class="keyword">over</span> <span class="keyword">the</span> sea.</span><br><span class="line"></span><br><span class="line">  My Bonnie lies <span class="keyword">over</span> <span class="keyword">the</span> ocean.</span><br><span class="line">  </span><br><span class="line">  Oh, bring <span class="keyword">back</span> <span class="keyword">my</span> Bonnie <span class="keyword">to</span> <span class="keyword">me</span>.</span><br><span class="line"></span><br><span class="line">&lt;/p&gt;</span><br></pre></td></tr></table></figure>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-dc60e763c5feda78.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="单行显示了"></p>
+<p>如果想要正常的显示诗，且能够保存空格，那么我们需要用到<code>&lt;pre&gt;</code>元素，它是用来预格式化文本的，能够保存文本原本的空格和换行且能够使字体宽度固定。</p>
+<figure class="highlight vim"><table><tr><td class="code"><pre><span class="line"><span class="symbol">&lt;p&gt;</span>The <span class="keyword">pre</span> <span class="keyword">tag</span> preserves both spaces <span class="built_in">and</span> <span class="built_in">line</span> <span class="keyword">break</span><span class="variable">s:</span>&lt;/<span class="keyword">p</span>&gt;</span><br><span class="line"></span><br><span class="line"><span class="symbol">&lt;pre&gt;</span></span><br><span class="line">   My Bonnie lies over the ocean.</span><br><span class="line"></span><br><span class="line">   My Bonnie lies over the sea.</span><br><span class="line"></span><br><span class="line">   My Bonnie lies over the ocean.</span><br><span class="line">   </span><br><span class="line">   Oh, bring back my Bonnie <span class="keyword">to</span> <span class="keyword">me</span>.</span><br><span class="line">&lt;/<span class="keyword">pre</span>&gt;</span><br></pre></td></tr></table></figure>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-88bb011547100448.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="正常显示诗"></p>
+]]></content>
+      <categories>
+        <category>HTML5入门</category>
+      </categories>
+      <tags>
+        <tag>HTML5</tag>
+        <tag>段落</tag>
       </tags>
   </entry>
   <entry>
@@ -879,6 +855,54 @@
       </tags>
   </entry>
   <entry>
+    <title>HTML5（1）——介绍</title>
+    <url>//2018/09/24/HTML5%EF%BC%881%EF%BC%89%E2%80%94%E2%80%94%E4%BB%8B%E7%BB%8D/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![中秋节就是面对电脑](https://upload-images.jianshu.io/upload_images/3478485-befca9c4894b99eb.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+<blockquote>
+<p>我就是用来玩一下，说好得，只是玩一下。</p>
+</blockquote>
+<span id="more"></span>
+
+<p>总是想干点事情，不想这么地浪费时间，学习一下html5语法，还是挺好的。我记得以前别人过节的时候，就会发一个网页过来，你打开就是节日祝福，还有音乐和动画，然后就觉得学计算机的人特别牛逼，现在看来，真得没有那么难，稍微学习一下，你就可以实现这样的效果，并没有想象中那么难。当然如果要深入下去，作为你吃饭的技能，那就不是一个层次，我就用来玩一下，增添一些生活的乐趣。</p>
+<p>有了以下这些基本的内容，你就可以写出一个自己的最简单的网页来了。</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span> <span class="comment">&lt;!--这是用来指定声明这篇文档是HTML5，帮助浏览器正确的显示网页--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span><span class="comment">&lt;!--这是网页根标签，每个网页都有，必不可少--&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span><span class="comment">&lt;!--head里面包含的是元信息，不会显示出来--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">title</span>&gt;</span>生活的质感<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">    </span><br><span class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span><span class="comment">&lt;!--body是网页不可少部分，是用来放可视的网页内容，是会展现出来的--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">h1</span>&gt;</span><span class="comment">&lt;!--h1是用来表示一级标题--&gt;</span></span><br><span class="line">            中秋节快乐</span><br><span class="line">        <span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="comment">&lt;!--p就是段落的意思，用来盛放正文的内容--&gt;</span></span><br><span class="line">            今天是中秋节，也没有回家过节，在宿舍里折腾了很久。</span><br><span class="line">        <span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>HTML5的标签是用&lt;&gt;括起来的。比如<code>&lt;p&gt;...&lt;/p&gt;</code>这样的段落标签。不带斜杠的是起始标签，带斜杆的是结束标签。</p>
+]]></content>
+      <categories>
+        <category>HTML5入门</category>
+      </categories>
+      <tags>
+        <tag>HTML5</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Rstudio服务器使用</title>
+    <url>//2022/08/02/Rstudio%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<blockquote>
+<p>如何使用服务器端Rstudio？</p>
+</blockquote>
+<meta name="referrer" content="no-referrer" />
+
+
+<span id="more"></span>
+
+<h2 id="输入R服务器网址"><a href="#输入R服务器网址" class="headerlink" title="输入R服务器网址"></a><font color=green>输入R服务器网址</font></h2><p>RStudio Server的默认端口是8787，所以我们打开浏览器，输入<code>服务器ip:8787</code>，就可以打开Rstudio。例如在Google浏览器网址栏中输入：192.168.1.130:8787，就会出现账户登录界面。</p>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-05-01-xvJpuN.png" alt="20220501xvJpuN"></p>
+<h2 id="输入Linux用户名和密码登录"><a href="#输入Linux用户名和密码登录" class="headerlink" title="输入Linux用户名和密码登录"></a><font color=green>输入Linux用户名和密码登录</font></h2><p>用户名和密码是创建用户给大家设置过，可以查看<code>/Lab-Shared-Folder/Protocols/Bioinformatics method</code> 路径下的文件《系统进化树构建》，有相应的说明。<br><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-04-19-e50ftc.png" alt="20220419e50ftc"></p>
+<h2 id="正常使用界面"><a href="#正常使用界面" class="headerlink" title="正常使用界面"></a><font color=green>正常使用界面</font></h2><p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-04-19-f40ife.png" alt="2022-04-19-f40ife"></p>
+]]></content>
+      <categories>
+        <category>科研之路</category>
+      </categories>
+      <tags>
+        <tag>R</tag>
+        <tag>教程</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>TBtools中关于染色体定位的问题</title>
     <url>//2018/09/20/TBtools%E4%B8%AD%E5%85%B3%E4%BA%8E%E6%9F%93%E8%89%B2%E4%BD%93%E5%AE%9A%E4%BD%8D%E7%9A%84%E9%97%AE%E9%A2%98/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -999,86 +1023,6 @@
       </tags>
   </entry>
   <entry>
-    <title>基于全基因组的基因家族分析（4）：SlNRAMP家族基因进化树构建</title>
-    <url>//2022/07/31/%E5%9F%BA%E4%BA%8E%E5%85%A8%E5%9F%BA%E5%9B%A0%E7%BB%84%E7%9A%84%E5%9F%BA%E5%9B%A0%E5%AE%B6%E6%97%8F%E5%88%86%E6%9E%90%EF%BC%884%EF%BC%89%EF%BC%9ASlNRAMP%E5%AE%B6%E6%97%8F%E5%9F%BA%E5%9B%A0%E8%BF%9B%E5%8C%96%E6%A0%91%E6%9E%84%E5%BB%BA/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-49635e61c7543d10.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="cherry tomato.jpg"></p>
-<span id="more"></span>
-
-<blockquote>
-<p>继续之前还没有完成的内容。因为最近在学习Y叔的R包–ggtree，所以就顺便拿这个内容来进行展示，作为一个例子来记录。nwk树文件和R代码文件我已经放在github：<a href="https://github.com/Lxmic/ggtree_note">https://github.com/Lxmic/ggtree_note</a></p>
-</blockquote>
-<h2 id="1-ggtree安装"><a href="#1-ggtree安装" class="headerlink" title="1. ggtree安装"></a>1. ggtree安装</h2><p>关于这个包，y叔已经写了相当详细的说明，有一个完整的电子书《<a href="https://yulab-smu.github.io/treedata-book/chapter5.html#visualizing-and-annotating-tree-using-grammar-of-graphics">Data Integration, Manipulation and Visualization of Phylogenetic Trees</a>》。这个包是在<a href="http://bioconductor.org/packages/release/bioc/html/ggtree.html">Bioconductor</a>上面，有非常详细的介绍，可以去查找相关的内容。</p>
-<figure class="highlight cmake"><table><tr><td class="code"><pre><span class="line"><span class="comment">#安装相关的包，包括ggtree以及ggplot2</span></span><br><span class="line"><span class="comment">#对于R版本在3.6及以上的，需要使用BiocManager包来安装bioconductor上的包</span></span><br><span class="line"><span class="keyword">if</span> (!requireNamespace(<span class="string">&quot;BiocManager&quot;</span>, quietly = <span class="keyword">TRUE</span>))</span><br><span class="line">    <span class="keyword">install</span>.packages(<span class="string">&quot;BiocManager&quot;</span>)</span><br><span class="line"></span><br><span class="line">BiocManager::<span class="keyword">install</span>(<span class="string">&quot;ggtree&quot;</span>)</span><br><span class="line"><span class="comment">#ggplot2安装</span></span><br><span class="line"><span class="keyword">install</span>.packages(<span class="string">&quot;ggplot2&quot;</span>)</span><br><span class="line"><span class="comment">#载入两个包</span></span><br><span class="line">library(ggplot2)</span><br><span class="line">library(ggtree)</span><br></pre></td></tr></table></figure>
-<h2 id="2-读取及可视化树结构"><a href="#2-读取及可视化树结构" class="headerlink" title="2. 读取及可视化树结构"></a>2. 读取及可视化树结构</h2><p>关于用什么算法以及什么软件来构建你自己需要的树，完全看个人的需要，y叔在电子文档《<a href="https://yulab-smu.github.io/treedata-book/chapter5.html#visualizing-and-annotating-tree-using-grammar-of-graphics">Data Integration, Manipulation and Visualization of Phylogenetic Trees</a>》中有很详细的介绍各种树以及各种算法，有兴趣了解一下（反正我是看不太懂）。我就用最简单，最常用的方法来获得进化树——MEGA软件，可以输出newick格式的树，非常常用的进化树文件（我们需要保存其bootstrap值以及branch.length值）。</p>
-<figure class="highlight apache"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 读取newick树，在当前工作目录中的nramp.nwk文件，并赋值给tree</span></span><br><span class="line"><span class="attribute">tree</span> &lt;- read.newick(<span class="string">&quot;nramp.nwk&quot;</span>)</span><br><span class="line"><span class="comment"># 可视化树结构，这里用环形树来展示</span></span><br><span class="line"><span class="attribute">p1</span> &lt;- ggtree(tree, layout = <span class="string">&quot;circular&quot;</span>, branch.length = <span class="string">&quot;none&quot;</span>)</span><br><span class="line"><span class="comment"># 将进化树打印出来显示</span></span><br><span class="line"><span class="attribute">print</span>(p<span class="number">1</span>)</span><br><span class="line"><span class="comment"># 如果要将branch.length展示，那么只需要删除branch.length = &quot;none&quot;</span></span><br><span class="line"><span class="attribute">p2</span> &lt;- ggtree(tree, layout=<span class="string">&quot;circular&quot;</span>)</span><br><span class="line"><span class="comment"># 可以看到，目前的进化树还没有tiplab，因此我们需要添加lab，跟ggplot2一样，再添加一个图层，就可以实现。</span></span><br><span class="line"><span class="attribute">p3</span> &lt;- p<span class="number">1</span> + geom_tiplab<span class="number">2</span>(color=<span class="string">&quot;seagreen&quot;</span>, size = <span class="number">3</span>, hjust = -.<span class="number">2</span>)+xlim(NA, <span class="number">22</span>)</span><br><span class="line"><span class="attribute">print</span>(p<span class="number">3</span>)</span><br><span class="line"><span class="comment"># 此外，我们通常需要给树的某个node来添加背景色高亮显示，也只需要通过一个函数添加图层。一般首先我们要了解节点ID，要知道你需要高亮显示的节点。</span></span><br><span class="line"><span class="comment">#显示进化树的节点ID</span></span><br><span class="line"><span class="attribute">p4</span> &lt;- p<span class="number">3</span> + geom_text<span class="number">2</span>(aes(label=node))</span><br><span class="line"><span class="attribute">print</span>(p<span class="number">4</span>)</span><br><span class="line"><span class="comment">#为一部分树添加背景颜色，着重显示</span></span><br><span class="line"><span class="attribute">p5</span> &lt;- p<span class="number">3</span> + geom_hilight(node = <span class="number">33</span>, fill = <span class="string">&quot;red&quot;</span>, alpha = <span class="number">0</span>.<span class="number">6</span>)</span><br><span class="line"><span class="attribute">print</span>(p<span class="number">5</span>)</span><br><span class="line"><span class="comment">#打印所有图片，这里还需要安装一个cowplot包，用来排版的</span></span><br><span class="line"><span class="attribute">install</span>.packages(<span class="string">&quot;cowplot&quot;</span>)</span><br><span class="line"><span class="attribute">plot_grid</span>(p<span class="number">1</span>, p<span class="number">2</span>, p<span class="number">3</span>, p<span class="number">4</span> ,p<span class="number">5</span>, ncol=<span class="number">3</span>, labels=c(<span class="string">&quot;A&quot;</span>,<span class="string">&quot;B&quot;</span>, <span class="string">&quot;C&quot;</span>, <span class="string">&quot;D&quot;</span>, <span class="string">&quot;E&quot;</span>))</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-ff1cf964e96d4376.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="p1,p2,p3,p4 and p5"></p>
-<h2 id="3-进化树修饰"><a href="#3-进化树修饰" class="headerlink" title="3. 进化树修饰"></a>3. 进化树修饰</h2><p>对于iTOLs这个进化树修饰软件，虽然功能也强大，但是我本身用起来还是觉得很费事，而且各种配置文件很多，感觉有点头大，真是伤不起，重复性不高。由于这个原因，我还是决定学习R包-ggtree，今天就进一步来修饰一下进化树，使其变得更加美观一些。用代码来修饰进化树，重复性可想而知，非常节省时间。</p>
-<p>-对一些参数进行说明<br>函数<code>geom_tiplab2()</code>是用来添加taxa的label的，也就是你的基因名。还有一个基本相同的用来给矩形树添加label的<code>geom_tiplab()</code>。这两个函数区别在前者可以根据树来自动调整角度，来达到比较好的可读性。我这里画的圈图，就适合用前者。</p>
-<figure class="highlight nix"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 这个p6跟上面的图C是一样的，就是我改变来它的xlim的范围，为了后面添加strip，需要控制xlim。</span></span><br><span class="line"><span class="comment"># size是字体大小，color是字体颜色，hjust是距离节点的距离。</span></span><br><span class="line">p6 &lt;- ggtree(tree, <span class="attr">layout</span> = <span class="string">&quot;circular&quot;</span>, branch.<span class="attr">length</span> = <span class="string">&quot;none&quot;</span>)</span><br><span class="line">+geom_tiplab2(<span class="attr">color</span> = <span class="string">&quot;seagreen&quot;</span>,  <span class="attr">size=3,</span> <span class="attr">hjust=-.05)</span></span><br><span class="line">+ xlim(NA, <span class="number">20</span>)</span><br><span class="line">print(p6)</span><br><span class="line">p61 &lt;- ggtree(tree, <span class="attr">layout</span> = <span class="string">&quot;circular&quot;</span>, branch.<span class="attr">length</span> = <span class="string">&quot;none&quot;</span>, )+geom_tiplab2(<span class="attr">color</span> = <span class="string">&quot;red&quot;</span>,  <span class="attr">size=2,</span> <span class="attr">hjust=-.1)+</span> xlim(NA, <span class="number">20</span>)</span><br><span class="line">print(p61)</span><br><span class="line">plot_grid(p6, p61, <span class="attr">ncol</span> = <span class="number">2</span>, <span class="attr">labels</span> = c(<span class="string">&quot;F&quot;</span>,<span class="string">&quot;G&quot;</span>))</span><br></pre></td></tr></table></figure>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-ba53538a78b96a2f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="改变颜色和字体大小"></p>
-<ul>
-<li>进化树基本都会聚类成几个分支，对于基因家族，就可以相应的进行亚家族分类，下面就用文献中常见的strip来将进化树进一步分类。在<code>ggtree</code>中对应的函数是<code>geom_strip()</code>，下面我们来看具体的代码以及参数。</li>
-<li><code>geom_strip()</code>函数可以在进化树的外围来添加具有色彩的条带。根据图d中的节点，我们来进行相应的添加。其中的前两个数字就是对应的节点(<code>taxa1</code>和<code>taxa2</code>)，从起始到结束。<code>barsize</code>就是色块的宽度， 以及<code>color</code>就是色块颜色。</li>
-<li><code>offset</code>就是距离节点的位置，这个参数就需要和之前的<code>xlim</code>进行配合，才能够将色块放到合适的位置，不会和  <code>tiplab</code>互相覆盖。这里的<code>label</code>就是色块想块的名字，也就分类名例如Clade I这种。</li>
-<li><code>offset.text</code>这个参数是来调整label的位置的，它的起始位置就是strip开始的，而不是taxa开始的。<code>extend</code>是用来调整色块之间的间隔大小，默认是0；如果是0.5的话，那么正好可以将色块拼接成一个完整的圈。</li>
-<li><code>angle</code>是用来调整<code>label</code>的角度, 默认是0，顺时针就是正的数值。<code>align</code>在这里似乎没有什么作用。</li>
-<li><code>hjust= &quot;center&quot;</code>的作用就是将label放置在strip的中间位置。这么以来，基本所有的问题就解决来，可以直接出比较好看的圈图。<figure class="highlight reasonml"><table><tr><td class="code"><pre><span class="line">p7 &lt;- p6 </span><br><span class="line">+ geom<span class="constructor">_strip(14, 17, <span class="params">barsize</span> = 3, <span class="params">color</span> = <span class="string">&quot;steelblue&quot;</span>, <span class="params">offset</span> = 7, <span class="params">label</span> = <span class="string">&quot;Clade I&quot;</span>, <span class="params">offset</span>.<span class="params">text</span> = 1, <span class="params">angle</span> = 60, <span class="params">fontsize</span> = 4, <span class="params">hjust</span> = <span class="string">&quot;center&quot;</span>, <span class="params">extend</span> = 0.3)</span> </span><br><span class="line">+ geom<span class="constructor">_strip(11, 13, <span class="params">color</span> = <span class="string">&quot;red&quot;</span>, <span class="params">barsize</span> = 3, <span class="params">offset</span> = 7, <span class="params">label</span> = <span class="string">&quot;Clade II&quot;</span>, <span class="params">offset</span>.<span class="params">text</span> = 1, <span class="params">angle</span> = -15, <span class="params">fontsize</span> = 4, <span class="params">hjust</span> = <span class="string">&quot;center&quot;</span>, <span class="params">extend</span> = 0.3)</span> </span><br><span class="line">+ geom<span class="constructor">_strip(6, 9, <span class="params">color</span> = <span class="string">&quot;orange&quot;</span>, <span class="params">barsize</span> = 3, <span class="params">offset</span> = 7, <span class="params">label</span> = <span class="string">&quot;Clade III&quot;</span>, <span class="params">offset</span>.<span class="params">text</span> = 1, <span class="params">angle</span> = 10, <span class="params">fontsize</span> = 4, <span class="params">hjust</span> = <span class="string">&quot;center&quot;</span>, <span class="params">extend</span> = 0.3)</span></span><br><span class="line">print(p7)</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>这里我有一个问题，就是说我还不知道对于里面只有一个基因的node，我该怎么给它添加strip，因为<code>geom_strip()</code>这个函数是需要两个taxa来添加的，只有一个的条件下，我没有办法。而且我尝试过将<code>taxa1 = taxa2</code>，还是没有起作用。我已经在ggtree group中提出来问题，希望能得到解答</p>
-</blockquote>
-</li>
-</ul>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-4cad4bff4349c657.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="圈图最终的结果"></p>
-<h2 id="4-分组给分支上色"><a href="#4-分组给分支上色" class="headerlink" title="4. 分组给分支上色"></a>4. 分组给分支上色</h2><p>在别人的文章中，也经常会看到将tiplabel分为不同的颜色来进行上色，以更好的区分不容的clade。例如这篇jxb关于杨树mate家族基因分析的文章(doi:10.1093/jxb/erx370)，进化树的展示:<br><img src="https://upload-images.jianshu.io/upload_images/3478485-779429a1b1463077.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Genome-wide analysis of MATE transporters and molecular
-characterization of aluminum resistance in Populus"><br>这里我先用比较麻烦的办法来实现它。我们只需要自己构建一个颜色文件，然后强行插入到树文件中并进行可视化就可以完成。</p>
-<ul>
-<li><p>构建一个颜色文件， 只要包含两个参数就行——node和color，和之前的进化树的node 号一一对应起来。这样的格式就可以了。</p>
-<table>
-<thead>
-<tr>
-<th>node</th>
-<th>color</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>1</td>
-<td>orange</td>
-</tr>
-<tr>
-<td>2</td>
-<td>orange</td>
-</tr>
-<tr>
-<td>3</td>
-<td>orange</td>
-</tr>
-</tbody></table>
-</li>
-<li><p>读取这个颜色文件，我习惯用<code>read.csv()</code>来载入外部数据。</p>
-<figure class="highlight haskell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#让进化树着色，变成自己需要的颜色。先根据节点，构建自己的颜色数据框</span></span><br><span class="line"><span class="title">d</span> &lt;- read.csv(<span class="string">&quot;nramp_color.csv&quot;</span>, header = <span class="type">TRUE</span>)</span><br><span class="line"><span class="title">d</span> &lt;- <span class="class"><span class="keyword">data</span>.frame(<span class="title">d</span>)</span></span><br><span class="line"><span class="meta">#使用`%&lt;+%`符号强插入颜色数据到树文件中</span></span><br><span class="line"><span class="title">p8</span> &lt;- p7%&lt;+%d + aes(color = <span class="type">I</span>(color))</span><br></pre></td></tr></table></figure>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-9726eff29f00de4b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="ok, 大功告成"></p>
-</li>
-<li><p>如果tiplab字体颜色要改变成各种分支的颜色，那么在之前的p6代码中，去掉color就可以了或者全部改成黑色。</p>
-<figure class="highlight nix"><table><tr><td class="code"><pre><span class="line"><span class="comment">#变成黑色字体</span></span><br><span class="line">p6 &lt;- ggtree(tree, <span class="attr">layout</span> = <span class="string">&quot;circular&quot;</span>, branch.<span class="attr">length</span> = <span class="string">&quot;none&quot;</span>)+geom_tiplab2(<span class="attr">color</span> = <span class="string">&quot;black&quot;</span>,  <span class="attr">size=3,</span> <span class="attr">hjust=-.05)+</span> xlim(NA, <span class="number">20</span>)</span><br><span class="line"><span class="comment">#变成相应的彩色</span></span><br><span class="line">p6 &lt;- ggtree(tree, <span class="attr">layout</span> = <span class="string">&quot;circular&quot;</span>, branch.<span class="attr">length</span> = <span class="string">&quot;none&quot;</span>)+geom_tiplab2(<span class="attr">size=3,</span> <span class="attr">hjust=-.05)+</span> xlim(NA, <span class="number">20</span>)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-a0e6ef3780614a54.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="黑色字体"></p>
-</li>
-</ul>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-305e609a0fb72bf3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="彩色字体"></p>
-<h2 id="5-总结"><a href="#5-总结" class="headerlink" title="5. 总结"></a>5. 总结</h2><p>虽然Y叔确实写了非常详细的说明书，但是对于新手来说，还是会有一定的入门难度。尤其是有些参数并没有仔细说明用途，点到为止。所以我自己也摸索了好久，还不断在ggtree group这个Y叔创建的问题论坛问问题，来一步步解决。Y叔还是解答的很及时的，经常会马上回答你。希望能够帮助需要的人，同时我也能够不断地继续摸索前行，永无止境。</p>
-<blockquote>
-<p>参考资料：<br>(1) <a href="https://yulab-smu.github.io/treedata-book/chapter4.html#introduction-1">https://yulab-smu.github.io/treedata-book/chapter4.html#introduction-1</a><br>(2) <a href="https://bioconductor.org/packages/release/bioc/manuals/ggtree/man/ggtree.pdf">https://bioconductor.org/packages/release/bioc/manuals/ggtree/man/ggtree.pdf</a><br>(3) <a href="https://github.com/GuangchuangYu/ggtree/issues/52">https://github.com/GuangchuangYu/ggtree/issues/52</a></p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>科研之路</category>
-      </categories>
-      <tags>
-        <tag>gene</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>印度，漂浮的次大陆</title>
     <url>//2018/09/06/%E5%8D%B0%E5%BA%A6%EF%BC%8C%E6%BC%82%E6%B5%AE%E7%9A%84%E6%AC%A1%E5%A4%A7%E9%99%86/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -1178,6 +1122,86 @@ characterization of aluminum resistance in Populus"><br>这里我先用比较麻
       </tags>
   </entry>
   <entry>
+    <title>基于全基因组的基因家族分析（4）：SlNRAMP家族基因进化树构建</title>
+    <url>//2022/07/31/%E5%9F%BA%E4%BA%8E%E5%85%A8%E5%9F%BA%E5%9B%A0%E7%BB%84%E7%9A%84%E5%9F%BA%E5%9B%A0%E5%AE%B6%E6%97%8F%E5%88%86%E6%9E%90%EF%BC%884%EF%BC%89%EF%BC%9ASlNRAMP%E5%AE%B6%E6%97%8F%E5%9F%BA%E5%9B%A0%E8%BF%9B%E5%8C%96%E6%A0%91%E6%9E%84%E5%BB%BA/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-49635e61c7543d10.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="cherry tomato.jpg"></p>
+<span id="more"></span>
+
+<blockquote>
+<p>继续之前还没有完成的内容。因为最近在学习Y叔的R包–ggtree，所以就顺便拿这个内容来进行展示，作为一个例子来记录。nwk树文件和R代码文件我已经放在github：<a href="https://github.com/Lxmic/ggtree_note">https://github.com/Lxmic/ggtree_note</a></p>
+</blockquote>
+<h2 id="1-ggtree安装"><a href="#1-ggtree安装" class="headerlink" title="1. ggtree安装"></a>1. ggtree安装</h2><p>关于这个包，y叔已经写了相当详细的说明，有一个完整的电子书《<a href="https://yulab-smu.github.io/treedata-book/chapter5.html#visualizing-and-annotating-tree-using-grammar-of-graphics">Data Integration, Manipulation and Visualization of Phylogenetic Trees</a>》。这个包是在<a href="http://bioconductor.org/packages/release/bioc/html/ggtree.html">Bioconductor</a>上面，有非常详细的介绍，可以去查找相关的内容。</p>
+<figure class="highlight cmake"><table><tr><td class="code"><pre><span class="line"><span class="comment">#安装相关的包，包括ggtree以及ggplot2</span></span><br><span class="line"><span class="comment">#对于R版本在3.6及以上的，需要使用BiocManager包来安装bioconductor上的包</span></span><br><span class="line"><span class="keyword">if</span> (!requireNamespace(<span class="string">&quot;BiocManager&quot;</span>, quietly = <span class="keyword">TRUE</span>))</span><br><span class="line">    <span class="keyword">install</span>.packages(<span class="string">&quot;BiocManager&quot;</span>)</span><br><span class="line"></span><br><span class="line">BiocManager::<span class="keyword">install</span>(<span class="string">&quot;ggtree&quot;</span>)</span><br><span class="line"><span class="comment">#ggplot2安装</span></span><br><span class="line"><span class="keyword">install</span>.packages(<span class="string">&quot;ggplot2&quot;</span>)</span><br><span class="line"><span class="comment">#载入两个包</span></span><br><span class="line">library(ggplot2)</span><br><span class="line">library(ggtree)</span><br></pre></td></tr></table></figure>
+<h2 id="2-读取及可视化树结构"><a href="#2-读取及可视化树结构" class="headerlink" title="2. 读取及可视化树结构"></a>2. 读取及可视化树结构</h2><p>关于用什么算法以及什么软件来构建你自己需要的树，完全看个人的需要，y叔在电子文档《<a href="https://yulab-smu.github.io/treedata-book/chapter5.html#visualizing-and-annotating-tree-using-grammar-of-graphics">Data Integration, Manipulation and Visualization of Phylogenetic Trees</a>》中有很详细的介绍各种树以及各种算法，有兴趣了解一下（反正我是看不太懂）。我就用最简单，最常用的方法来获得进化树——MEGA软件，可以输出newick格式的树，非常常用的进化树文件（我们需要保存其bootstrap值以及branch.length值）。</p>
+<figure class="highlight apache"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 读取newick树，在当前工作目录中的nramp.nwk文件，并赋值给tree</span></span><br><span class="line"><span class="attribute">tree</span> &lt;- read.newick(<span class="string">&quot;nramp.nwk&quot;</span>)</span><br><span class="line"><span class="comment"># 可视化树结构，这里用环形树来展示</span></span><br><span class="line"><span class="attribute">p1</span> &lt;- ggtree(tree, layout = <span class="string">&quot;circular&quot;</span>, branch.length = <span class="string">&quot;none&quot;</span>)</span><br><span class="line"><span class="comment"># 将进化树打印出来显示</span></span><br><span class="line"><span class="attribute">print</span>(p<span class="number">1</span>)</span><br><span class="line"><span class="comment"># 如果要将branch.length展示，那么只需要删除branch.length = &quot;none&quot;</span></span><br><span class="line"><span class="attribute">p2</span> &lt;- ggtree(tree, layout=<span class="string">&quot;circular&quot;</span>)</span><br><span class="line"><span class="comment"># 可以看到，目前的进化树还没有tiplab，因此我们需要添加lab，跟ggplot2一样，再添加一个图层，就可以实现。</span></span><br><span class="line"><span class="attribute">p3</span> &lt;- p<span class="number">1</span> + geom_tiplab<span class="number">2</span>(color=<span class="string">&quot;seagreen&quot;</span>, size = <span class="number">3</span>, hjust = -.<span class="number">2</span>)+xlim(NA, <span class="number">22</span>)</span><br><span class="line"><span class="attribute">print</span>(p<span class="number">3</span>)</span><br><span class="line"><span class="comment"># 此外，我们通常需要给树的某个node来添加背景色高亮显示，也只需要通过一个函数添加图层。一般首先我们要了解节点ID，要知道你需要高亮显示的节点。</span></span><br><span class="line"><span class="comment">#显示进化树的节点ID</span></span><br><span class="line"><span class="attribute">p4</span> &lt;- p<span class="number">3</span> + geom_text<span class="number">2</span>(aes(label=node))</span><br><span class="line"><span class="attribute">print</span>(p<span class="number">4</span>)</span><br><span class="line"><span class="comment">#为一部分树添加背景颜色，着重显示</span></span><br><span class="line"><span class="attribute">p5</span> &lt;- p<span class="number">3</span> + geom_hilight(node = <span class="number">33</span>, fill = <span class="string">&quot;red&quot;</span>, alpha = <span class="number">0</span>.<span class="number">6</span>)</span><br><span class="line"><span class="attribute">print</span>(p<span class="number">5</span>)</span><br><span class="line"><span class="comment">#打印所有图片，这里还需要安装一个cowplot包，用来排版的</span></span><br><span class="line"><span class="attribute">install</span>.packages(<span class="string">&quot;cowplot&quot;</span>)</span><br><span class="line"><span class="attribute">plot_grid</span>(p<span class="number">1</span>, p<span class="number">2</span>, p<span class="number">3</span>, p<span class="number">4</span> ,p<span class="number">5</span>, ncol=<span class="number">3</span>, labels=c(<span class="string">&quot;A&quot;</span>,<span class="string">&quot;B&quot;</span>, <span class="string">&quot;C&quot;</span>, <span class="string">&quot;D&quot;</span>, <span class="string">&quot;E&quot;</span>))</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-ff1cf964e96d4376.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="p1,p2,p3,p4 and p5"></p>
+<h2 id="3-进化树修饰"><a href="#3-进化树修饰" class="headerlink" title="3. 进化树修饰"></a>3. 进化树修饰</h2><p>对于iTOLs这个进化树修饰软件，虽然功能也强大，但是我本身用起来还是觉得很费事，而且各种配置文件很多，感觉有点头大，真是伤不起，重复性不高。由于这个原因，我还是决定学习R包-ggtree，今天就进一步来修饰一下进化树，使其变得更加美观一些。用代码来修饰进化树，重复性可想而知，非常节省时间。</p>
+<p>-对一些参数进行说明<br>函数<code>geom_tiplab2()</code>是用来添加taxa的label的，也就是你的基因名。还有一个基本相同的用来给矩形树添加label的<code>geom_tiplab()</code>。这两个函数区别在前者可以根据树来自动调整角度，来达到比较好的可读性。我这里画的圈图，就适合用前者。</p>
+<figure class="highlight nix"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 这个p6跟上面的图C是一样的，就是我改变来它的xlim的范围，为了后面添加strip，需要控制xlim。</span></span><br><span class="line"><span class="comment"># size是字体大小，color是字体颜色，hjust是距离节点的距离。</span></span><br><span class="line">p6 &lt;- ggtree(tree, <span class="attr">layout</span> = <span class="string">&quot;circular&quot;</span>, branch.<span class="attr">length</span> = <span class="string">&quot;none&quot;</span>)</span><br><span class="line">+geom_tiplab2(<span class="attr">color</span> = <span class="string">&quot;seagreen&quot;</span>,  <span class="attr">size=3,</span> <span class="attr">hjust=-.05)</span></span><br><span class="line">+ xlim(NA, <span class="number">20</span>)</span><br><span class="line">print(p6)</span><br><span class="line">p61 &lt;- ggtree(tree, <span class="attr">layout</span> = <span class="string">&quot;circular&quot;</span>, branch.<span class="attr">length</span> = <span class="string">&quot;none&quot;</span>, )+geom_tiplab2(<span class="attr">color</span> = <span class="string">&quot;red&quot;</span>,  <span class="attr">size=2,</span> <span class="attr">hjust=-.1)+</span> xlim(NA, <span class="number">20</span>)</span><br><span class="line">print(p61)</span><br><span class="line">plot_grid(p6, p61, <span class="attr">ncol</span> = <span class="number">2</span>, <span class="attr">labels</span> = c(<span class="string">&quot;F&quot;</span>,<span class="string">&quot;G&quot;</span>))</span><br></pre></td></tr></table></figure>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-ba53538a78b96a2f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="改变颜色和字体大小"></p>
+<ul>
+<li>进化树基本都会聚类成几个分支，对于基因家族，就可以相应的进行亚家族分类，下面就用文献中常见的strip来将进化树进一步分类。在<code>ggtree</code>中对应的函数是<code>geom_strip()</code>，下面我们来看具体的代码以及参数。</li>
+<li><code>geom_strip()</code>函数可以在进化树的外围来添加具有色彩的条带。根据图d中的节点，我们来进行相应的添加。其中的前两个数字就是对应的节点(<code>taxa1</code>和<code>taxa2</code>)，从起始到结束。<code>barsize</code>就是色块的宽度， 以及<code>color</code>就是色块颜色。</li>
+<li><code>offset</code>就是距离节点的位置，这个参数就需要和之前的<code>xlim</code>进行配合，才能够将色块放到合适的位置，不会和  <code>tiplab</code>互相覆盖。这里的<code>label</code>就是色块想块的名字，也就分类名例如Clade I这种。</li>
+<li><code>offset.text</code>这个参数是来调整label的位置的，它的起始位置就是strip开始的，而不是taxa开始的。<code>extend</code>是用来调整色块之间的间隔大小，默认是0；如果是0.5的话，那么正好可以将色块拼接成一个完整的圈。</li>
+<li><code>angle</code>是用来调整<code>label</code>的角度, 默认是0，顺时针就是正的数值。<code>align</code>在这里似乎没有什么作用。</li>
+<li><code>hjust= &quot;center&quot;</code>的作用就是将label放置在strip的中间位置。这么以来，基本所有的问题就解决来，可以直接出比较好看的圈图。<figure class="highlight reasonml"><table><tr><td class="code"><pre><span class="line">p7 &lt;- p6 </span><br><span class="line">+ geom<span class="constructor">_strip(14, 17, <span class="params">barsize</span> = 3, <span class="params">color</span> = <span class="string">&quot;steelblue&quot;</span>, <span class="params">offset</span> = 7, <span class="params">label</span> = <span class="string">&quot;Clade I&quot;</span>, <span class="params">offset</span>.<span class="params">text</span> = 1, <span class="params">angle</span> = 60, <span class="params">fontsize</span> = 4, <span class="params">hjust</span> = <span class="string">&quot;center&quot;</span>, <span class="params">extend</span> = 0.3)</span> </span><br><span class="line">+ geom<span class="constructor">_strip(11, 13, <span class="params">color</span> = <span class="string">&quot;red&quot;</span>, <span class="params">barsize</span> = 3, <span class="params">offset</span> = 7, <span class="params">label</span> = <span class="string">&quot;Clade II&quot;</span>, <span class="params">offset</span>.<span class="params">text</span> = 1, <span class="params">angle</span> = -15, <span class="params">fontsize</span> = 4, <span class="params">hjust</span> = <span class="string">&quot;center&quot;</span>, <span class="params">extend</span> = 0.3)</span> </span><br><span class="line">+ geom<span class="constructor">_strip(6, 9, <span class="params">color</span> = <span class="string">&quot;orange&quot;</span>, <span class="params">barsize</span> = 3, <span class="params">offset</span> = 7, <span class="params">label</span> = <span class="string">&quot;Clade III&quot;</span>, <span class="params">offset</span>.<span class="params">text</span> = 1, <span class="params">angle</span> = 10, <span class="params">fontsize</span> = 4, <span class="params">hjust</span> = <span class="string">&quot;center&quot;</span>, <span class="params">extend</span> = 0.3)</span></span><br><span class="line">print(p7)</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>这里我有一个问题，就是说我还不知道对于里面只有一个基因的node，我该怎么给它添加strip，因为<code>geom_strip()</code>这个函数是需要两个taxa来添加的，只有一个的条件下，我没有办法。而且我尝试过将<code>taxa1 = taxa2</code>，还是没有起作用。我已经在ggtree group中提出来问题，希望能得到解答</p>
+</blockquote>
+</li>
+</ul>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-4cad4bff4349c657.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="圈图最终的结果"></p>
+<h2 id="4-分组给分支上色"><a href="#4-分组给分支上色" class="headerlink" title="4. 分组给分支上色"></a>4. 分组给分支上色</h2><p>在别人的文章中，也经常会看到将tiplabel分为不同的颜色来进行上色，以更好的区分不容的clade。例如这篇jxb关于杨树mate家族基因分析的文章(doi:10.1093/jxb/erx370)，进化树的展示:<br><img src="https://upload-images.jianshu.io/upload_images/3478485-779429a1b1463077.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Genome-wide analysis of MATE transporters and molecular
+characterization of aluminum resistance in Populus"><br>这里我先用比较麻烦的办法来实现它。我们只需要自己构建一个颜色文件，然后强行插入到树文件中并进行可视化就可以完成。</p>
+<ul>
+<li><p>构建一个颜色文件， 只要包含两个参数就行——node和color，和之前的进化树的node 号一一对应起来。这样的格式就可以了。</p>
+<table>
+<thead>
+<tr>
+<th>node</th>
+<th>color</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>orange</td>
+</tr>
+<tr>
+<td>2</td>
+<td>orange</td>
+</tr>
+<tr>
+<td>3</td>
+<td>orange</td>
+</tr>
+</tbody></table>
+</li>
+<li><p>读取这个颜色文件，我习惯用<code>read.csv()</code>来载入外部数据。</p>
+<figure class="highlight haskell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#让进化树着色，变成自己需要的颜色。先根据节点，构建自己的颜色数据框</span></span><br><span class="line"><span class="title">d</span> &lt;- read.csv(<span class="string">&quot;nramp_color.csv&quot;</span>, header = <span class="type">TRUE</span>)</span><br><span class="line"><span class="title">d</span> &lt;- <span class="class"><span class="keyword">data</span>.frame(<span class="title">d</span>)</span></span><br><span class="line"><span class="meta">#使用`%&lt;+%`符号强插入颜色数据到树文件中</span></span><br><span class="line"><span class="title">p8</span> &lt;- p7%&lt;+%d + aes(color = <span class="type">I</span>(color))</span><br></pre></td></tr></table></figure>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-9726eff29f00de4b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="ok, 大功告成"></p>
+</li>
+<li><p>如果tiplab字体颜色要改变成各种分支的颜色，那么在之前的p6代码中，去掉color就可以了或者全部改成黑色。</p>
+<figure class="highlight nix"><table><tr><td class="code"><pre><span class="line"><span class="comment">#变成黑色字体</span></span><br><span class="line">p6 &lt;- ggtree(tree, <span class="attr">layout</span> = <span class="string">&quot;circular&quot;</span>, branch.<span class="attr">length</span> = <span class="string">&quot;none&quot;</span>)+geom_tiplab2(<span class="attr">color</span> = <span class="string">&quot;black&quot;</span>,  <span class="attr">size=3,</span> <span class="attr">hjust=-.05)+</span> xlim(NA, <span class="number">20</span>)</span><br><span class="line"><span class="comment">#变成相应的彩色</span></span><br><span class="line">p6 &lt;- ggtree(tree, <span class="attr">layout</span> = <span class="string">&quot;circular&quot;</span>, branch.<span class="attr">length</span> = <span class="string">&quot;none&quot;</span>)+geom_tiplab2(<span class="attr">size=3,</span> <span class="attr">hjust=-.05)+</span> xlim(NA, <span class="number">20</span>)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-a0e6ef3780614a54.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="黑色字体"></p>
+</li>
+</ul>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-305e609a0fb72bf3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="彩色字体"></p>
+<h2 id="5-总结"><a href="#5-总结" class="headerlink" title="5. 总结"></a>5. 总结</h2><p>虽然Y叔确实写了非常详细的说明书，但是对于新手来说，还是会有一定的入门难度。尤其是有些参数并没有仔细说明用途，点到为止。所以我自己也摸索了好久，还不断在ggtree group这个Y叔创建的问题论坛问问题，来一步步解决。Y叔还是解答的很及时的，经常会马上回答你。希望能够帮助需要的人，同时我也能够不断地继续摸索前行，永无止境。</p>
+<blockquote>
+<p>参考资料：<br>(1) <a href="https://yulab-smu.github.io/treedata-book/chapter4.html#introduction-1">https://yulab-smu.github.io/treedata-book/chapter4.html#introduction-1</a><br>(2) <a href="https://bioconductor.org/packages/release/bioc/manuals/ggtree/man/ggtree.pdf">https://bioconductor.org/packages/release/bioc/manuals/ggtree/man/ggtree.pdf</a><br>(3) <a href="https://github.com/GuangchuangYu/ggtree/issues/52">https://github.com/GuangchuangYu/ggtree/issues/52</a></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>科研之路</category>
+      </categories>
+      <tags>
+        <tag>gene</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>如何使用Excel查找重复项</title>
     <url>//2018/09/24/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8Excel%E6%9F%A5%E6%89%BE%E9%87%8D%E5%A4%8D%E9%A1%B9/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -1265,6 +1289,48 @@ characterization of aluminum resistance in Populus"><br>这里我先用比较麻
       </categories>
       <tags>
         <tag>电影</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>杂乱无章</title>
+    <url>//2018/08/28/%E6%9D%82%E4%B9%B1%E6%97%A0%E7%AB%A0/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![拿着相机，一个人旅行](https://upload-images.jianshu.io/upload_images/3478485-14565c6637c4fa19.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+<p>8月27日，星期一，公元2018年。</p>
+<span id="more"></span>
+
+<p>8月27日，星期一，公元2018年。</p>
+<p>干了一天，几乎没有坐下的时候。骑车离开生科院的时候，突然觉得自己就想是一个工人，白天工作，晚上运动健身和自学，想来也是非常的满足。然而，事情永远没有这么简单，真正工作以后，恐怕没有那么悠闲。</p>
+<p>最近已经能够比较好的控制一下自己，不再如此的散漫。在过去的6月份，真是觉得自个儿已经抛弃一部分超我，使得自我更多的释放。满满的都是娱乐活动，吃饭，看电影和旅游，比暑假更加潇洒。我知道，我一直以来就是这么一个人，对于别人，我总想让他们有一些仪式感，自己变得比别人更操心自己，但是前提是我想关心的人。这个是有点还是缺点，我并不能很好的定义对错，只是不该太过火。师姐的毕业典礼，我去拍照；校园风景，我去拍照；小伙伴的毕业旅行，我也一同参加。干了无数能够留下深刻印象的事。</p>
+<p>有目标，才有动力；有计划，才能有满足感；完成计划，才能有幸福感。大部分时候的状态，就是无目标和无计划，生活处在焦虑之中，特别地不安。这种状态的打破，就需要你自身的行动，想到的东西，要出尽快实行；要去解决你害怕去解决的问题；搞定心中的恐惧放空自己的内心，才能最终踏实满足。</p>
+<p>今年也算是旅行过了，南京之行，也非常的开心。但是，你要知道，很多时候内心就会有一种冲动，就想去看看更外面的世界。前两天看到了一条骑行路线，真的太诱人了，完全没法形容我内心的激动，即使不能够前去体验。看看，回想回想之前的经历，也能够让我开心一会儿，那也就够了。岁月慢慢流逝，一天天在变老，尽管思想还没有服气，但是身体很明显的不如从前了。</p>
+<p>我们没法改变，只能磨炼遇事不惊的心态。</p>
+]]></content>
+      <categories>
+        <category>随记</category>
+      </categories>
+      <tags>
+        <tag>旅行</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>植物Cas9靶点设计网站简介</title>
+    <url>//2019/02/05/%E6%A4%8D%E7%89%A9Cas9%E9%9D%B6%E7%82%B9%E8%AE%BE%E8%AE%A1%E7%BD%91%E7%AB%99%E7%AE%80%E4%BB%8B/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![cas9模型](https://upload-images.jianshu.io/upload_images/3478485-e845fed2bd99b07b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+<span id="more"></span>
+
+<p>我在前面的简文中已经基本阐述了Cas9的作用机制，详细内容可以看<a href="https://www.jianshu.com/p/1e7bff7d5830">CRISPR-Cas9系统简介</a>一文。今天，就来讲一讲怎么实际使用这个系统来帮助我们进行功能基因的研究。这个技术一问世，很多大牛就开始使用，植物学领域的应用，使得我们能够更方便的有目的的去编辑我们想要编辑的植物基因组。今天就推荐几个网站，寻找靶点序列的网站。前面我们也提到过，好的靶点的选择，可以减小脱靶率，大大提高我们编辑的效率。能够极大提高我们的实验效率，不然像我们植物学领域的苦逼博士，不得疯掉，一直一直脱靶的话，那么就真的非常的酸爽。</p>
+<h3 id="CRISPR-PLANT"><a href="#CRISPR-PLANT" class="headerlink" title="CRISPR-PLANT"></a><font color = "green">CRISPR-PLANT</font></h3><p>具体网址：<a href="https://www.genome.arizona.edu/crispr/index.html">https://www.genome.arizona.edu/crispr/index.html</a>。 看这个网址，应该是Arizona大学出品的。这是一个专门针对植物CRISPR靶点设计网站，比较专业，较为好用的网站。首页有一张模式图，而且还有对CRISPR-Cas9系统的基本介绍，大概可以了解。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-f2f550500f26be7a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="网站首页"><br>导航栏中有几个标签链接，如果你不知道怎么使用，那么你就可以点击instruction来学习，里面有比较详细的介绍。如果要开始找靶点，那就点击search。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-6181cec9ae7ec031.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="导航栏"><br>进入search主页，就可以看到查找的方式。这里它也建议你先看知道手册，然后在进行设计。查找的输入信息有两种，a.染色体位置信息；b.基因locus，通常情况下我们在查找的时候感觉locus用的比较多，一般你肯定是知道基因的信息去进行search。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-2e0980dc0152cf1e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="search主页"><br>这个网站可以找的物种包括拟南芥、二穗短柄草、大豆、蒺藜苜蓿、水稻、高粱、番茄和玉米；还是挺多的，一般都能符合需求。当然，如果你的物种实在是太过于小众，那么可惜，没法用这个网站进行。那么，下面这个网站就可以一定程度满足你。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-0b1d6da7b6ab97bd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="这里给的物种基因组"></p>
+<h3 id="CRISPRSCAN"><a href="#CRISPRSCAN" class="headerlink" title="CRISPRSCAN"></a><font color="green">CRISPRSCAN</font></h3><p>具体网址：<a href="http://www.crisprscan.org/?page=sequence">http://www.crisprscan.org/?page=sequence</a>。这个网站是都是动物的，没有植物物种的，但是为什么要推荐这个网站呢？因为我们最开始就是使用这个网站进行靶点筛选的，之后在拟南芥和番茄中进行了尝试敲除，结果都能够得到敲除的株系，也是能够使用这个来进行引物的设计。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-ef69894d221d6ddc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="网站首页"><br>这个网站里，有很多动物，果蝇、人类、小鼠和鸡等物种，没有植物的，但是你可以选择No search这个选项，然后将你的序列黏贴进去，之后会出来靶点，但是它的评估只有一个score，没有其他的了。这个网站，现在对我们植物的来说，还是基本不用了，有其他专门的植物的网站。下面这个网站就更好了，非常全面的植物的网站。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-a8e5bf4933bff970.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="这个网站有的一些物种"></p>
+<h3 id="CRISPR-P-2-0"><a href="#CRISPR-P-2-0" class="headerlink" title="CRISPR-P 2.0"></a><font color = "green">CRISPR-P 2.0</font></h3><p>具体网址：<a href="http://crispr.hzau.edu.cn/CRISPR2/">http://crispr.hzau.edu.cn/CRISPR2/</a>。这个网站是华中农业大学大学设计的，做的还是很不错的。用了之后，感觉比前面两个的内容更丰富，而且评估的更全面。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-43966e8205ae6ee8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="网站首页，也很漂亮"><br>点击网站右上角的start design，你就可以开始设计相应的引物。里面的信息更加细化。有pam类型选择，启动子选择，引导序列的长度，物种基因组选择，可以通过locus以及位置信息和序列进行靶基因的选定。它这个网站的物种数据是整合了NCBI数据库，所以基本包括了已经测序完全的植物基因组，解决了物种限制这个问题，普遍性强了。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-6b15fc0bac0d5e23.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="设计页面"><br>我用网站中的例子，来展示一下靶点搜索结果。它可以根据开始的碱基A/G来筛选靶点，也可以通过score、gc含量和位置信息来进行靶点筛选。此外，当你将鼠标移到靶点上，会出现具体信息：显示了位置，打分，序列，切割位点（红色箭头），启动子，以及脱靶位点数量和错位碱基数等，可以说相当丰富。而且，如果某些靶点存在酶切位点，也会同时显示出来。如果不理解这些参数，网站首页的<strong>help</strong>会有详细的解释，包括怎么选择靶点。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-3ce8f6271f54d084.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="靶点"><br><img src="https://upload-images.jianshu.io/upload_images/3478485-c617285e77a1dab2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="靶点信息"><br>这几个CRISPR相关的网站介绍就到这里结束了，具体应用还是需要有实际例子去使用，尝试。<br>今天是大年初一，给大家拜个年，新春快乐，实验顺利，早发paper。</p>
+]]></content>
+      <categories>
+        <category>学习记录</category>
+      </categories>
+      <tags>
+        <tag>Cas9</tag>
       </tags>
   </entry>
   <entry>
@@ -1478,48 +1544,6 @@ characterization of aluminum resistance in Populus"><br>这里我先用比较麻
       </tags>
   </entry>
   <entry>
-    <title>杂乱无章</title>
-    <url>//2018/08/28/%E6%9D%82%E4%B9%B1%E6%97%A0%E7%AB%A0/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![拿着相机，一个人旅行](https://upload-images.jianshu.io/upload_images/3478485-14565c6637c4fa19.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-<p>8月27日，星期一，公元2018年。</p>
-<span id="more"></span>
-
-<p>8月27日，星期一，公元2018年。</p>
-<p>干了一天，几乎没有坐下的时候。骑车离开生科院的时候，突然觉得自己就想是一个工人，白天工作，晚上运动健身和自学，想来也是非常的满足。然而，事情永远没有这么简单，真正工作以后，恐怕没有那么悠闲。</p>
-<p>最近已经能够比较好的控制一下自己，不再如此的散漫。在过去的6月份，真是觉得自个儿已经抛弃一部分超我，使得自我更多的释放。满满的都是娱乐活动，吃饭，看电影和旅游，比暑假更加潇洒。我知道，我一直以来就是这么一个人，对于别人，我总想让他们有一些仪式感，自己变得比别人更操心自己，但是前提是我想关心的人。这个是有点还是缺点，我并不能很好的定义对错，只是不该太过火。师姐的毕业典礼，我去拍照；校园风景，我去拍照；小伙伴的毕业旅行，我也一同参加。干了无数能够留下深刻印象的事。</p>
-<p>有目标，才有动力；有计划，才能有满足感；完成计划，才能有幸福感。大部分时候的状态，就是无目标和无计划，生活处在焦虑之中，特别地不安。这种状态的打破，就需要你自身的行动，想到的东西，要出尽快实行；要去解决你害怕去解决的问题；搞定心中的恐惧放空自己的内心，才能最终踏实满足。</p>
-<p>今年也算是旅行过了，南京之行，也非常的开心。但是，你要知道，很多时候内心就会有一种冲动，就想去看看更外面的世界。前两天看到了一条骑行路线，真的太诱人了，完全没法形容我内心的激动，即使不能够前去体验。看看，回想回想之前的经历，也能够让我开心一会儿，那也就够了。岁月慢慢流逝，一天天在变老，尽管思想还没有服气，但是身体很明显的不如从前了。</p>
-<p>我们没法改变，只能磨炼遇事不惊的心态。</p>
-]]></content>
-      <categories>
-        <category>随记</category>
-      </categories>
-      <tags>
-        <tag>旅行</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>植物Cas9靶点设计网站简介</title>
-    <url>//2019/02/05/%E6%A4%8D%E7%89%A9Cas9%E9%9D%B6%E7%82%B9%E8%AE%BE%E8%AE%A1%E7%BD%91%E7%AB%99%E7%AE%80%E4%BB%8B/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![cas9模型](https://upload-images.jianshu.io/upload_images/3478485-e845fed2bd99b07b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-<span id="more"></span>
-
-<p>我在前面的简文中已经基本阐述了Cas9的作用机制，详细内容可以看<a href="https://www.jianshu.com/p/1e7bff7d5830">CRISPR-Cas9系统简介</a>一文。今天，就来讲一讲怎么实际使用这个系统来帮助我们进行功能基因的研究。这个技术一问世，很多大牛就开始使用，植物学领域的应用，使得我们能够更方便的有目的的去编辑我们想要编辑的植物基因组。今天就推荐几个网站，寻找靶点序列的网站。前面我们也提到过，好的靶点的选择，可以减小脱靶率，大大提高我们编辑的效率。能够极大提高我们的实验效率，不然像我们植物学领域的苦逼博士，不得疯掉，一直一直脱靶的话，那么就真的非常的酸爽。</p>
-<h3 id="CRISPR-PLANT"><a href="#CRISPR-PLANT" class="headerlink" title="CRISPR-PLANT"></a><font color = "green">CRISPR-PLANT</font></h3><p>具体网址：<a href="https://www.genome.arizona.edu/crispr/index.html">https://www.genome.arizona.edu/crispr/index.html</a>。 看这个网址，应该是Arizona大学出品的。这是一个专门针对植物CRISPR靶点设计网站，比较专业，较为好用的网站。首页有一张模式图，而且还有对CRISPR-Cas9系统的基本介绍，大概可以了解。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-f2f550500f26be7a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="网站首页"><br>导航栏中有几个标签链接，如果你不知道怎么使用，那么你就可以点击instruction来学习，里面有比较详细的介绍。如果要开始找靶点，那就点击search。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-6181cec9ae7ec031.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="导航栏"><br>进入search主页，就可以看到查找的方式。这里它也建议你先看知道手册，然后在进行设计。查找的输入信息有两种，a.染色体位置信息；b.基因locus，通常情况下我们在查找的时候感觉locus用的比较多，一般你肯定是知道基因的信息去进行search。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-2e0980dc0152cf1e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="search主页"><br>这个网站可以找的物种包括拟南芥、二穗短柄草、大豆、蒺藜苜蓿、水稻、高粱、番茄和玉米；还是挺多的，一般都能符合需求。当然，如果你的物种实在是太过于小众，那么可惜，没法用这个网站进行。那么，下面这个网站就可以一定程度满足你。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-0b1d6da7b6ab97bd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="这里给的物种基因组"></p>
-<h3 id="CRISPRSCAN"><a href="#CRISPRSCAN" class="headerlink" title="CRISPRSCAN"></a><font color="green">CRISPRSCAN</font></h3><p>具体网址：<a href="http://www.crisprscan.org/?page=sequence">http://www.crisprscan.org/?page=sequence</a>。这个网站是都是动物的，没有植物物种的，但是为什么要推荐这个网站呢？因为我们最开始就是使用这个网站进行靶点筛选的，之后在拟南芥和番茄中进行了尝试敲除，结果都能够得到敲除的株系，也是能够使用这个来进行引物的设计。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-ef69894d221d6ddc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="网站首页"><br>这个网站里，有很多动物，果蝇、人类、小鼠和鸡等物种，没有植物的，但是你可以选择No search这个选项，然后将你的序列黏贴进去，之后会出来靶点，但是它的评估只有一个score，没有其他的了。这个网站，现在对我们植物的来说，还是基本不用了，有其他专门的植物的网站。下面这个网站就更好了，非常全面的植物的网站。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-a8e5bf4933bff970.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="这个网站有的一些物种"></p>
-<h3 id="CRISPR-P-2-0"><a href="#CRISPR-P-2-0" class="headerlink" title="CRISPR-P 2.0"></a><font color = "green">CRISPR-P 2.0</font></h3><p>具体网址：<a href="http://crispr.hzau.edu.cn/CRISPR2/">http://crispr.hzau.edu.cn/CRISPR2/</a>。这个网站是华中农业大学大学设计的，做的还是很不错的。用了之后，感觉比前面两个的内容更丰富，而且评估的更全面。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-43966e8205ae6ee8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="网站首页，也很漂亮"><br>点击网站右上角的start design，你就可以开始设计相应的引物。里面的信息更加细化。有pam类型选择，启动子选择，引导序列的长度，物种基因组选择，可以通过locus以及位置信息和序列进行靶基因的选定。它这个网站的物种数据是整合了NCBI数据库，所以基本包括了已经测序完全的植物基因组，解决了物种限制这个问题，普遍性强了。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-6b15fc0bac0d5e23.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="设计页面"><br>我用网站中的例子，来展示一下靶点搜索结果。它可以根据开始的碱基A/G来筛选靶点，也可以通过score、gc含量和位置信息来进行靶点筛选。此外，当你将鼠标移到靶点上，会出现具体信息：显示了位置，打分，序列，切割位点（红色箭头），启动子，以及脱靶位点数量和错位碱基数等，可以说相当丰富。而且，如果某些靶点存在酶切位点，也会同时显示出来。如果不理解这些参数，网站首页的<strong>help</strong>会有详细的解释，包括怎么选择靶点。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-3ce8f6271f54d084.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="靶点"><br><img src="https://upload-images.jianshu.io/upload_images/3478485-c617285e77a1dab2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="靶点信息"><br>这几个CRISPR相关的网站介绍就到这里结束了，具体应用还是需要有实际例子去使用，尝试。<br>今天是大年初一，给大家拜个年，新春快乐，实验顺利，早发paper。</p>
-]]></content>
-      <categories>
-        <category>学习记录</category>
-      </categories>
-      <tags>
-        <tag>Cas9</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>海南环岛游记</title>
     <url>//2018/08/31/%E6%B5%B7%E5%8D%97%E7%8E%AF%E5%B2%9B%E6%B8%B8%E8%AE%B0/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -1712,6 +1736,27 @@ characterization of aluminum resistance in Populus"><br>这里我先用比较麻
       </tags>
   </entry>
   <entry>
+    <title>碟中谍6: 全面瓦解</title>
+    <url>//2018/09/01/%E7%A2%9F%E4%B8%AD%E8%B0%8D6-%E5%85%A8%E9%9D%A2%E7%93%A6%E8%A7%A3/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![碟中谍6：全面瓦解](https://upload-images.jianshu.io/upload_images/3478485-ba43addff850f0fb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+<p>9月1日，星期六，公元2018年。</p>
+<span id="more"></span>
+
+<p>我从周五看到了周六，从8月看到了9月。因为电影近140分钟，我从10点开始，自然就看到了第二天凌晨。</p>
+<p>故事一开始，就发布一个任务，亨特自然就接受了，关于夺回核武器，防止使徒们（恐怖组织成员）的大规模投弹。接受之后，必然按着故事线走下去。一切都很精彩，法国巴黎和英国伦敦以及克什米尔地区的景观都是相当吸引眼球，很明显的好莱坞大片元素，场面非常宏大，视觉体验非常棒。此外，这么大年纪的阿汤哥，拍这部电影真是拼命。悬崖，直升机，跑酷等等都是很危险的动作，飞车大战，摩托车巴黎飙车，一切都非常刺激，整部影片几乎没有比较安静的场景。一切都快速的进行中，没有一刻停缓，因为要保护世界。</p>
+<p>好莱坞大片，必不可少的情节，那就是拯救地球，拯救全世界。都是机器宏大的目标，放眼全世界，就是救世主。有时候就会让你遐想，会有带入感，让你也感觉自己能拯救世界，也是一种精神上的吸引。情节依旧老套，又是防止大规模杀伤性武器被恐怖组织利用，不惜一切去组织，而且必然每次都是成功，能够拯救世界。</p>
+<p>可以说，碟中谍系列，是很好看的特工电影，看着很刺激，这次第六部的上映，也是让影迷们产生一种情怀，当然为了刺激宏大场面，也是完全可以看得，基本不会让你失望太过。</p>
+]]></content>
+      <categories>
+        <category>影评领域</category>
+      </categories>
+      <tags>
+        <tag>电影</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>疫情记</title>
     <url>//2020/04/12/%E7%96%AB%E6%83%85%E8%AE%B0/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -1736,27 +1781,6 @@ characterization of aluminum resistance in Populus"><br>这里我先用比较麻
       </categories>
       <tags>
         <tag>日记</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>碟中谍6: 全面瓦解</title>
-    <url>//2018/09/01/%E7%A2%9F%E4%B8%AD%E8%B0%8D6-%E5%85%A8%E9%9D%A2%E7%93%A6%E8%A7%A3/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![碟中谍6：全面瓦解](https://upload-images.jianshu.io/upload_images/3478485-ba43addff850f0fb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-<p>9月1日，星期六，公元2018年。</p>
-<span id="more"></span>
-
-<p>我从周五看到了周六，从8月看到了9月。因为电影近140分钟，我从10点开始，自然就看到了第二天凌晨。</p>
-<p>故事一开始，就发布一个任务，亨特自然就接受了，关于夺回核武器，防止使徒们（恐怖组织成员）的大规模投弹。接受之后，必然按着故事线走下去。一切都很精彩，法国巴黎和英国伦敦以及克什米尔地区的景观都是相当吸引眼球，很明显的好莱坞大片元素，场面非常宏大，视觉体验非常棒。此外，这么大年纪的阿汤哥，拍这部电影真是拼命。悬崖，直升机，跑酷等等都是很危险的动作，飞车大战，摩托车巴黎飙车，一切都非常刺激，整部影片几乎没有比较安静的场景。一切都快速的进行中，没有一刻停缓，因为要保护世界。</p>
-<p>好莱坞大片，必不可少的情节，那就是拯救地球，拯救全世界。都是机器宏大的目标，放眼全世界，就是救世主。有时候就会让你遐想，会有带入感，让你也感觉自己能拯救世界，也是一种精神上的吸引。情节依旧老套，又是防止大规模杀伤性武器被恐怖组织利用，不惜一切去组织，而且必然每次都是成功，能够拯救世界。</p>
-<p>可以说，碟中谍系列，是很好看的特工电影，看着很刺激，这次第六部的上映，也是让影迷们产生一种情怀，当然为了刺激宏大场面，也是完全可以看得，基本不会让你失望太过。</p>
-]]></content>
-      <categories>
-        <category>影评领域</category>
-      </categories>
-      <tags>
-        <tag>电影</tag>
       </tags>
   </entry>
   <entry>
@@ -1860,6 +1884,35 @@ characterization of aluminum resistance in Populus"><br>这里我先用比较麻
       </tags>
   </entry>
   <entry>
+    <title>算法与数据结构（1）：概念理解</title>
+    <url>//2018/09/03/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%EF%BC%881%EF%BC%89%EF%BC%9A%E6%A6%82%E5%BF%B5%E7%90%86%E8%A7%A3/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![](https://upload-images.jianshu.io/upload_images/3478485-db8a3a9f4a233e45.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+9月3日，星期日，公元2018年。
+
+<blockquote>
+<p>这个系列的文章，就是学习笔记。昨天开始，简书作者<a href="https://www.jianshu.com/u/44339a8a9afa">程序员联盟</a>又开始更新文章。此次更新专题为：算法和数据结构-初级系列，正好可以学习一下，内容部分可能就是摘录过来的，不是原创，所有版权都是作者<strong>程序员联盟</strong></p>
+</blockquote>
+<span id="more"></span>
+
+<h1 id="1-算法"><a href="#1-算法" class="headerlink" title="1. 算法"></a>1. 算法</h1><p>什么是算法？这个问题其实一直都觉得有些抽象，难以回答。算法其实在生活中也是处处存在，其中作者举煮方便面的例子，来形象生动地说明，很有趣。<br>煮方便面的整个方法流程，就是一种算法。算法如果要精确，可以进一步的解释说明，如何将水倒入锅中，水龙头的使用。这跟计算机中的算法如出一辙，但是现在的算法概念，一般我们就默认为是在计算机领域，因为计算机是最擅长做重复的代码，进行之行这些可重复的工作。</p>
+<blockquote>
+<p>算法：就是一种精确描述。怎样的描述？用什么来描述？<strong>通俗易懂的概念</strong>：算法是用最简单的概念形式对如何解决问题的一种精确描述。</p>
+</blockquote>
+<h1 id="2-数据结构"><a href="#2-数据结构" class="headerlink" title="2. 数据结构"></a>2. 数据结构</h1><p>算法是描述方法，数据结构是描述组织，两者有着密切的联系。数据结构其实就是存储数据的方式，怎样存储数据，对算法来说也是很关键的一步。<br>算法就是为了确定更好地信息处理方式，而数据结构是确定信息存储方式。</p>
+<blockquote>
+<p>这一课就是解决了这两个概念的问题，经过作者这么一解释，非常通俗易懂，基本已经搞明白是怎么回事了。</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>算法与数据结构</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>编程</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>第一个LaTeX文档——Hello world！</title>
     <url>//2018/08/29/%E7%AC%AC%E4%B8%80%E4%B8%AALaTeX%E6%96%87%E6%A1%A3%E2%80%94%E2%80%94Hello-world%EF%BC%81/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -1888,35 +1941,6 @@ characterization of aluminum resistance in Populus"><br>这里我先用比较麻
       </categories>
       <tags>
         <tag>LaTeX</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>算法与数据结构（1）：概念理解</title>
-    <url>//2018/09/03/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%EF%BC%881%EF%BC%89%EF%BC%9A%E6%A6%82%E5%BF%B5%E7%90%86%E8%A7%A3/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![](https://upload-images.jianshu.io/upload_images/3478485-db8a3a9f4a233e45.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-9月3日，星期日，公元2018年。
-
-<blockquote>
-<p>这个系列的文章，就是学习笔记。昨天开始，简书作者<a href="https://www.jianshu.com/u/44339a8a9afa">程序员联盟</a>又开始更新文章。此次更新专题为：算法和数据结构-初级系列，正好可以学习一下，内容部分可能就是摘录过来的，不是原创，所有版权都是作者<strong>程序员联盟</strong></p>
-</blockquote>
-<span id="more"></span>
-
-<h1 id="1-算法"><a href="#1-算法" class="headerlink" title="1. 算法"></a>1. 算法</h1><p>什么是算法？这个问题其实一直都觉得有些抽象，难以回答。算法其实在生活中也是处处存在，其中作者举煮方便面的例子，来形象生动地说明，很有趣。<br>煮方便面的整个方法流程，就是一种算法。算法如果要精确，可以进一步的解释说明，如何将水倒入锅中，水龙头的使用。这跟计算机中的算法如出一辙，但是现在的算法概念，一般我们就默认为是在计算机领域，因为计算机是最擅长做重复的代码，进行之行这些可重复的工作。</p>
-<blockquote>
-<p>算法：就是一种精确描述。怎样的描述？用什么来描述？<strong>通俗易懂的概念</strong>：算法是用最简单的概念形式对如何解决问题的一种精确描述。</p>
-</blockquote>
-<h1 id="2-数据结构"><a href="#2-数据结构" class="headerlink" title="2. 数据结构"></a>2. 数据结构</h1><p>算法是描述方法，数据结构是描述组织，两者有着密切的联系。数据结构其实就是存储数据的方式，怎样存储数据，对算法来说也是很关键的一步。<br>算法就是为了确定更好地信息处理方式，而数据结构是确定信息存储方式。</p>
-<blockquote>
-<p>这一课就是解决了这两个概念的问题，经过作者这么一解释，非常通俗易懂，基本已经搞明白是怎么回事了。</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>算法与数据结构</category>
-      </categories>
-      <tags>
-        <tag>算法</tag>
-        <tag>编程</tag>
       </tags>
   </entry>
   <entry>
