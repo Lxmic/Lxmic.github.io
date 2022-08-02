@@ -879,29 +879,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Rstudio服务器使用</title>
-    <url>//2022/08/02/Rstudio%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%BD%BF%E7%94%A8/</url>
-    <content><![CDATA[<blockquote>
-<p>如何使用Rstudio server版本。</p>
-</blockquote>
-<meta name="referrer" content="no-referrer" />
-
-<span id="more"></span>
-
-<h2 id="输入R服务器网址"><a href="#输入R服务器网址" class="headerlink" title="输入R服务器网址"></a><font color="green">输入R服务器网址</font></h2><p>RStudio Server的默认端口是8787，所以我们打开浏览器，输入<code>服务器ip:8787</code>，就可以打开Rstudio。例如在Google浏览器网址栏中输入：192.168.1.130:8787，就会出现账户登录界面。</p>
-<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-05-01-xvJpuN.png" alt="20220501xvJpuN"></p>
-<h2 id="输入Linux用户名和密码登录"><a href="#输入Linux用户名和密码登录" class="headerlink" title="输入Linux用户名和密码登录"></a><font color="green">输入Linux用户名和密码登录</font></h2><p>用户名和密码是创建用户给大家设置过，可以查看<code>/Lab-Shared-Folder/Protocols/Bioinformatics method</code> 路径下的文件《系统进化树构建》，有相应的说明。 <img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-04-19-e50ftc.png" alt="20220419e50ftc"></p>
-<h2 id="正常使用界面"><a href="#正常使用界面" class="headerlink" title="正常使用界面"></a><font color="green">正常使用界面</font></h2><p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-04-19-f40ife.png" alt="2022-04-19-f40ife"></p>
-]]></content>
-      <categories>
-        <category>科研之路</category>
-      </categories>
-      <tags>
-        <tag>R</tag>
-        <tag>教程</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>TBtools中关于染色体定位的问题</title>
     <url>//2018/09/20/TBtools%E4%B8%AD%E5%85%B3%E4%BA%8E%E6%9F%93%E8%89%B2%E4%BD%93%E5%AE%9A%E4%BD%8D%E7%9A%84%E9%97%AE%E9%A2%98/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
