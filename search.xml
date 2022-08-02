@@ -108,6 +108,44 @@
       </tags>
   </entry>
   <entry>
+    <title>HTML5（10）——引用</title>
+    <url>//2018/10/09/HTML5%EF%BC%8810%EF%BC%89%E2%80%94%E2%80%94%E5%BC%95%E7%94%A8/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![coffee](https://upload-images.jianshu.io/upload_images/3478485-fb61d3d831bf7dd0.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+<blockquote>
+<p>今天突然特别期待明天早上，莫名觉得早上5点特别的美好，起床泡一杯咖啡，写写东西，看看窗外天空一片漆黑，心突然特别得静。<br>上一节学习了HTML的文本格式，今天学习HTML中的引用。</p>
+</blockquote>
+<span id="more"></span>
+
+<h2 id="q元素是用于较短的文本引用"><a href="#q元素是用于较短的文本引用" class="headerlink" title="q元素是用于较短的文本引用"></a><font color="green">q元素是用于较短的文本引用</font></h2><p>一般在HTML中，就使用<code>&lt;q&gt;</code>来进行短引文，它一般是行内引用，浏览器会解析为双引号。</p>
+<figure class="highlight applescript"><table><tr><td class="code"><pre><span class="line">&lt;p&gt;WWF&#x27;s goal <span class="keyword">is</span> <span class="keyword">to</span>: &lt;q&gt;Build a future <span class="keyword">where</span> people live <span class="keyword">in</span></span><br><span class="line"> harmony <span class="keyword">with</span> nature.&lt;/q&gt;&lt;/p&gt;</span><br></pre></td></tr></table></figure>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-b592fbec7d72642a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="双引号引用起来"></p>
+<h2 id="blockquote元素是用来引用长文本"><a href="#blockquote元素是用来引用长文本" class="headerlink" title="blockquote元素是用来引用长文本"></a><font color="green">blockquote元素是用来引用长文本</font></h2><p>HTML中，长文本的引用使用<code>&lt;blockquote&gt;</code>元素来进行引用，是块引用，浏览器会解析为缩进。</p>
+<figure class="highlight apache"><table><tr><td class="code"><pre><span class="line"><span class="section">&lt;p&gt;</span><span class="attribute">Browsers</span> usually indent blockquote elements.&lt;/p&gt;</span><br><span class="line"></span><br><span class="line"><span class="section">&lt;blockquote cite=<span class="string">&quot;http://www.worldwildlife.org/who/index.html&quot;</span>&gt;</span></span><br><span class="line"><span class="attribute">For</span> <span class="number">50</span> years, WWF has been protecting the future of nature.</span><br><span class="line"><span class="attribute">The</span> world&#x27;s leading conservation organization,</span><br><span class="line"><span class="attribute">WWF</span> works in <span class="number">100</span> countries and is supported by</span><br><span class="line"><span class="attribute">1</span>.<span class="number">2</span> million members in the United States and</span><br><span class="line"><span class="attribute">close</span> to <span class="number">5</span> million globally.</span><br><span class="line"><span class="section">&lt;/blockquote&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-7c429ee1741ae084.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="缩进引用"></p>
+<h2 id="HTML缩写"><a href="#HTML缩写" class="headerlink" title="HTML缩写"></a><font color="green">HTML缩写</font></h2><p>在网页中，很多时候我们都需要用到缩写，将一长串的词缩写成大写字母。’<abbr>‘元素就是用来干这样的事情的，将鼠标放在缩写词上，会悬浮出现完整的词。其中<code>title</code>属性是用来放完整的词。</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>The <span class="tag">&lt;<span class="name">abbr</span> <span class="attr">title</span>=<span class="string">&quot;World Health Organization&quot;</span>&gt;</span>WHO<span class="tag">&lt;/<span class="name">abbr</span>&gt;</span> was founded in 1948.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-36a0846e5d3a86fc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"></p>
+<h2 id="联系信息元素引用"><a href="#联系信息元素引用" class="headerlink" title="联系信息元素引用"></a><font color="green">联系信息元素引用</font></h2><p><code>&lt;address&gt;</code>元素是用来引用个人联系方式，地址等联系信息。浏览器解析为斜体。</p>
+<figure class="highlight stata"><table><tr><td class="code"><pre><span class="line">&lt;address&gt;</span><br><span class="line">Written <span class="keyword">by</span> John <span class="keyword">Doe</span>.&lt;<span class="keyword">br</span>&gt; </span><br><span class="line">Visit <span class="keyword">us</span> at:&lt;<span class="keyword">br</span>&gt;</span><br><span class="line">Example.com&lt;<span class="keyword">br</span>&gt;</span><br><span class="line">Box 564, Disneyland&lt;<span class="keyword">br</span>&gt;</span><br><span class="line">USA</span><br><span class="line">&lt;/address&gt;</span><br></pre></td></tr></table></figure>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-10e3c875a56be233.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="联系信息"></p>
+<h2 id="作品名字引用"><a href="#作品名字引用" class="headerlink" title="作品名字引用"></a><font color="green">作品名字引用</font></h2><p>HTML中，<code>&lt;cite&gt;</code>元素就是专门用来引用作品名字，也是解析为斜体。</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="tag">&lt;<span class="name">cite</span>&gt;</span>The Scream<span class="tag">&lt;/<span class="name">cite</span>&gt;</span> by Edvard Munch. Painted in 1893.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-023a2548348b11fc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="斜体"></p>
+<h2 id="bdo元素用来双向覆盖"><a href="#bdo元素用来双向覆盖" class="headerlink" title="bdo元素用来双向覆盖"></a><font color="green">bdo元素用来双向覆盖</font></h2><p>一般<code>&lt;bdo&gt;</code>元素就是用来覆盖当前文本的方向。<code>dir</code>元素是用来指定书写方向的。</p>
+<figure class="highlight vim"><table><tr><td class="code"><pre><span class="line"><span class="symbol">&lt;p&gt;</span>If your browser supports bi-directional override (bdo), the <span class="keyword">next</span> <span class="built_in">line</span> will <span class="keyword">be</span> written from <span class="keyword">right</span> <span class="keyword">to</span> <span class="keyword">left</span> (rtl):&lt;/<span class="keyword">p</span>&gt;</span><br><span class="line"></span><br><span class="line">&lt;bdo dir=<span class="string">&quot;rtl&quot;</span>&gt;This <span class="built_in">line</span> will <span class="keyword">be</span> written from <span class="keyword">right</span> <span class="keyword">to</span> <span class="keyword">left</span>&lt;/bdo&gt;</span><br></pre></td></tr></table></figure>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-65946c58656a9485.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="完全就是从右到左"></p>
+]]></content>
+      <categories>
+        <category>HTML5入门</category>
+      </categories>
+      <tags>
+        <tag>引用</tag>
+        <tag>HTML5</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>GUS染色方法</title>
     <url>//2019/02/05/GUS%E6%9F%93%E8%89%B2%E6%96%B9%E6%B3%95/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -202,44 +240,6 @@
       </tags>
   </entry>
   <entry>
-    <title>HTML5（10）——引用</title>
-    <url>//2018/10/09/HTML5%EF%BC%8810%EF%BC%89%E2%80%94%E2%80%94%E5%BC%95%E7%94%A8/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![coffee](https://upload-images.jianshu.io/upload_images/3478485-fb61d3d831bf7dd0.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-<blockquote>
-<p>今天突然特别期待明天早上，莫名觉得早上5点特别的美好，起床泡一杯咖啡，写写东西，看看窗外天空一片漆黑，心突然特别得静。<br>上一节学习了HTML的文本格式，今天学习HTML中的引用。</p>
-</blockquote>
-<span id="more"></span>
-
-<h2 id="q元素是用于较短的文本引用"><a href="#q元素是用于较短的文本引用" class="headerlink" title="q元素是用于较短的文本引用"></a><font color="green">q元素是用于较短的文本引用</font></h2><p>一般在HTML中，就使用<code>&lt;q&gt;</code>来进行短引文，它一般是行内引用，浏览器会解析为双引号。</p>
-<figure class="highlight applescript"><table><tr><td class="code"><pre><span class="line">&lt;p&gt;WWF&#x27;s goal <span class="keyword">is</span> <span class="keyword">to</span>: &lt;q&gt;Build a future <span class="keyword">where</span> people live <span class="keyword">in</span></span><br><span class="line"> harmony <span class="keyword">with</span> nature.&lt;/q&gt;&lt;/p&gt;</span><br></pre></td></tr></table></figure>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-b592fbec7d72642a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="双引号引用起来"></p>
-<h2 id="blockquote元素是用来引用长文本"><a href="#blockquote元素是用来引用长文本" class="headerlink" title="blockquote元素是用来引用长文本"></a><font color="green">blockquote元素是用来引用长文本</font></h2><p>HTML中，长文本的引用使用<code>&lt;blockquote&gt;</code>元素来进行引用，是块引用，浏览器会解析为缩进。</p>
-<figure class="highlight apache"><table><tr><td class="code"><pre><span class="line"><span class="section">&lt;p&gt;</span><span class="attribute">Browsers</span> usually indent blockquote elements.&lt;/p&gt;</span><br><span class="line"></span><br><span class="line"><span class="section">&lt;blockquote cite=<span class="string">&quot;http://www.worldwildlife.org/who/index.html&quot;</span>&gt;</span></span><br><span class="line"><span class="attribute">For</span> <span class="number">50</span> years, WWF has been protecting the future of nature.</span><br><span class="line"><span class="attribute">The</span> world&#x27;s leading conservation organization,</span><br><span class="line"><span class="attribute">WWF</span> works in <span class="number">100</span> countries and is supported by</span><br><span class="line"><span class="attribute">1</span>.<span class="number">2</span> million members in the United States and</span><br><span class="line"><span class="attribute">close</span> to <span class="number">5</span> million globally.</span><br><span class="line"><span class="section">&lt;/blockquote&gt;</span></span><br></pre></td></tr></table></figure>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-7c429ee1741ae084.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="缩进引用"></p>
-<h2 id="HTML缩写"><a href="#HTML缩写" class="headerlink" title="HTML缩写"></a><font color="green">HTML缩写</font></h2><p>在网页中，很多时候我们都需要用到缩写，将一长串的词缩写成大写字母。’<abbr>‘元素就是用来干这样的事情的，将鼠标放在缩写词上，会悬浮出现完整的词。其中<code>title</code>属性是用来放完整的词。</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>The <span class="tag">&lt;<span class="name">abbr</span> <span class="attr">title</span>=<span class="string">&quot;World Health Organization&quot;</span>&gt;</span>WHO<span class="tag">&lt;/<span class="name">abbr</span>&gt;</span> was founded in 1948.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-36a0846e5d3a86fc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"></p>
-<h2 id="联系信息元素引用"><a href="#联系信息元素引用" class="headerlink" title="联系信息元素引用"></a><font color="green">联系信息元素引用</font></h2><p><code>&lt;address&gt;</code>元素是用来引用个人联系方式，地址等联系信息。浏览器解析为斜体。</p>
-<figure class="highlight stata"><table><tr><td class="code"><pre><span class="line">&lt;address&gt;</span><br><span class="line">Written <span class="keyword">by</span> John <span class="keyword">Doe</span>.&lt;<span class="keyword">br</span>&gt; </span><br><span class="line">Visit <span class="keyword">us</span> at:&lt;<span class="keyword">br</span>&gt;</span><br><span class="line">Example.com&lt;<span class="keyword">br</span>&gt;</span><br><span class="line">Box 564, Disneyland&lt;<span class="keyword">br</span>&gt;</span><br><span class="line">USA</span><br><span class="line">&lt;/address&gt;</span><br></pre></td></tr></table></figure>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-10e3c875a56be233.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="联系信息"></p>
-<h2 id="作品名字引用"><a href="#作品名字引用" class="headerlink" title="作品名字引用"></a><font color="green">作品名字引用</font></h2><p>HTML中，<code>&lt;cite&gt;</code>元素就是专门用来引用作品名字，也是解析为斜体。</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="tag">&lt;<span class="name">cite</span>&gt;</span>The Scream<span class="tag">&lt;/<span class="name">cite</span>&gt;</span> by Edvard Munch. Painted in 1893.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-023a2548348b11fc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="斜体"></p>
-<h2 id="bdo元素用来双向覆盖"><a href="#bdo元素用来双向覆盖" class="headerlink" title="bdo元素用来双向覆盖"></a><font color="green">bdo元素用来双向覆盖</font></h2><p>一般<code>&lt;bdo&gt;</code>元素就是用来覆盖当前文本的方向。<code>dir</code>元素是用来指定书写方向的。</p>
-<figure class="highlight vim"><table><tr><td class="code"><pre><span class="line"><span class="symbol">&lt;p&gt;</span>If your browser supports bi-directional override (bdo), the <span class="keyword">next</span> <span class="built_in">line</span> will <span class="keyword">be</span> written from <span class="keyword">right</span> <span class="keyword">to</span> <span class="keyword">left</span> (rtl):&lt;/<span class="keyword">p</span>&gt;</span><br><span class="line"></span><br><span class="line">&lt;bdo dir=<span class="string">&quot;rtl&quot;</span>&gt;This <span class="built_in">line</span> will <span class="keyword">be</span> written from <span class="keyword">right</span> <span class="keyword">to</span> <span class="keyword">left</span>&lt;/bdo&gt;</span><br></pre></td></tr></table></figure>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-65946c58656a9485.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="完全就是从右到左"></p>
-]]></content>
-      <categories>
-        <category>HTML5入门</category>
-      </categories>
-      <tags>
-        <tag>引用</tag>
-        <tag>HTML5</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>HTML5（11）——注释</title>
     <url>//2018/10/10/HTML5%EF%BC%8811%EF%BC%89%E2%80%94%E2%80%94%E6%B3%A8%E9%87%8A/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -262,42 +262,6 @@
       <tags>
         <tag>HTML5</tag>
         <tag>注释</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>HTML5（12）——颜色</title>
-    <url>//2018/10/13/HTML5%EF%BC%8812%EF%BC%89%E2%80%94%E2%80%94%E9%A2%9C%E8%89%B2/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![整洁的桌面](https://upload-images.jianshu.io/upload_images/3478485-a135213ca8dbdc9a.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-> 前两天算是有一些事情要处理，没有来得及更新学习。今天我们来讲一下HTML中颜色的控制。
-
-
-
-<span id="more"></span>
-
-<h2 id="颜色的名称"><a href="#颜色的名称" class="headerlink" title="颜色的名称"></a><font color="green">颜色的名称</font></h2><p>在HTML中，要使用颜色的话，需要用他们的名称来引用。HTML支持大概140种标准颜色，可以看链接：<a href="https://www.w3schools.com/colors/colors_names.asp">Color Names Supported by All Browsers</a>。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-9aed6c0e3fd1bc35.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="颜色名称"></p>
-<h2 id="网页背景颜色"><a href="#网页背景颜色" class="headerlink" title="网页背景颜色"></a><font color="green">网页背景颜色</font></h2><p>前面我们在<a href="https://www.jianshu.com/p/e228f6dca9d2">HTML5(5)——属性</a>一文中简要提到过style属性，而在<a href="https://www.jianshu.com/p/0fd28725d9fb">HTML5（8）——样式
-</a>一文中详细介绍了<code>style</code>的各个property的作用，这里我们用它来控制网页背景颜色，文本颜色等。语法大概如下：</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">style</span>=<span class="string">&quot;background-color:DodgerBlue;&quot;</span>&gt;</span>Hello World<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">style</span>=<span class="string">&quot;background-color:Tomato;&quot;</span>&gt;</span>Lorem ipsum...<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-4f6115d2a7015ea4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"></p>
-<h2 id="文本颜色"><a href="#文本颜色" class="headerlink" title="文本颜色"></a><font color="green">文本颜色</font></h2><p>同背景颜色一样设置，其中一些不同。style中属性不同，这里就是<code>color</code>属性，值就是颜色名称。</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">style</span>=<span class="string">&quot;color:Tomato;&quot;</span>&gt;</span>Hello World<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">style</span>=<span class="string">&quot;color:DodgerBlue;&quot;</span>&gt;</span>Lorem ipsum...<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">style</span>=<span class="string">&quot;color:MediumSeaGreen;&quot;</span>&gt;</span>Ut wisi enim...<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-56751396fea53dc8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"></p>
-<h2 id="边框颜色"><a href="#边框颜色" class="headerlink" title="边框颜色"></a><font color="green">边框颜色</font></h2><p>这里就使用<code>border</code>property，而它的值包括粗细，填充，颜色，你可以使用自己想要的值。</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">style</span>=<span class="string">&quot;border:2px solid Tomato;&quot;</span>&gt;</span>Hello World<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">style</span>=<span class="string">&quot;border:2px solid DodgerBlue;&quot;</span>&gt;</span>Hello World<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">style</span>=<span class="string">&quot;border:2px solid Violet;&quot;</span>&gt;</span>Hello World<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-24f79cac76a2db2e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"></p>
-<h2 id="颜色值"><a href="#颜色值" class="headerlink" title="颜色值"></a><font color="green">颜色值</font></h2><p>在HTML中，颜色可以用几种类型的值来描述：RGB, HEX, HSL, RGBA 和HSLA。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-14a56383cbb765e9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"></p>
-<h3 id="RGB"><a href="#RGB" class="headerlink" title="RGB"></a>RGB</h3><p><code>rgb(red,green,blue)</code>，每一种参数都是颜色的密度值，范围在0-255之间。例如，rgb(0,0,0)是黑色，rgb(255,255,255)是白色。不同的灰度，是3种颜色相同的情况下的改变。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-cee9ba3646f62c92.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"><br><img src="https://upload-images.jianshu.io/upload_images/3478485-438ed0ed84fb3b54.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
-<h3 id="HEX"><a href="#HEX" class="headerlink" title="HEX"></a>HEX</h3><p>这是用16进制来表示RGB的三种颜色，也是三种值，范围都在00-ff之间。同样灰度也是用相同的三种颜色的值大小，来表示。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-26108c125a656dde.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"></p>
-<h3 id="HSL"><a href="#HSL" class="headerlink" title="HSL"></a>HSL</h3><p>这种颜色的是通过色调，饱和度和亮度，来表示某种颜色。<br><code>hsl(hue, saturation, lightness)</code>。色调的值在0-360之间。0是红色，120是绿色，240是蓝色。饱和度是百分数表示的，0%表示灰色，100%是颜色本身。亮度也是百分数，0%是黑色，50%是适中，100%是白色。灰度是色调和饱和度都为0值，而通过亮度的调节来改变。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-c9d6ff8c82aecb3a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"></p>
-<h3 id="RGBA和HSLA"><a href="#RGBA和HSLA" class="headerlink" title="RGBA和HSLA"></a>RGBA和HSLA</h3><p>这两者都是在RGB和HSL的基础上，增加了第四个参数，透明度（alpha）。透明度的范围在0.0-1.0之间。0.0是全透明，而1.0是不透明。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-4269eabcd987dddb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"></p>
-]]></content>
-      <categories>
-        <category>HTML5入门</category>
-      </categories>
-      <tags>
-        <tag>HTML5</tag>
-        <tag>颜色</tag>
       </tags>
   </entry>
   <entry>
@@ -352,6 +316,42 @@
       <tags>
         <tag>HTML5</tag>
         <tag>CSS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>HTML5（12）——颜色</title>
+    <url>//2018/10/13/HTML5%EF%BC%8812%EF%BC%89%E2%80%94%E2%80%94%E9%A2%9C%E8%89%B2/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![整洁的桌面](https://upload-images.jianshu.io/upload_images/3478485-a135213ca8dbdc9a.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+> 前两天算是有一些事情要处理，没有来得及更新学习。今天我们来讲一下HTML中颜色的控制。
+
+
+
+<span id="more"></span>
+
+<h2 id="颜色的名称"><a href="#颜色的名称" class="headerlink" title="颜色的名称"></a><font color="green">颜色的名称</font></h2><p>在HTML中，要使用颜色的话，需要用他们的名称来引用。HTML支持大概140种标准颜色，可以看链接：<a href="https://www.w3schools.com/colors/colors_names.asp">Color Names Supported by All Browsers</a>。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-9aed6c0e3fd1bc35.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="颜色名称"></p>
+<h2 id="网页背景颜色"><a href="#网页背景颜色" class="headerlink" title="网页背景颜色"></a><font color="green">网页背景颜色</font></h2><p>前面我们在<a href="https://www.jianshu.com/p/e228f6dca9d2">HTML5(5)——属性</a>一文中简要提到过style属性，而在<a href="https://www.jianshu.com/p/0fd28725d9fb">HTML5（8）——样式
+</a>一文中详细介绍了<code>style</code>的各个property的作用，这里我们用它来控制网页背景颜色，文本颜色等。语法大概如下：</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">style</span>=<span class="string">&quot;background-color:DodgerBlue;&quot;</span>&gt;</span>Hello World<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">style</span>=<span class="string">&quot;background-color:Tomato;&quot;</span>&gt;</span>Lorem ipsum...<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-4f6115d2a7015ea4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"></p>
+<h2 id="文本颜色"><a href="#文本颜色" class="headerlink" title="文本颜色"></a><font color="green">文本颜色</font></h2><p>同背景颜色一样设置，其中一些不同。style中属性不同，这里就是<code>color</code>属性，值就是颜色名称。</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">style</span>=<span class="string">&quot;color:Tomato;&quot;</span>&gt;</span>Hello World<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">style</span>=<span class="string">&quot;color:DodgerBlue;&quot;</span>&gt;</span>Lorem ipsum...<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">style</span>=<span class="string">&quot;color:MediumSeaGreen;&quot;</span>&gt;</span>Ut wisi enim...<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-56751396fea53dc8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"></p>
+<h2 id="边框颜色"><a href="#边框颜色" class="headerlink" title="边框颜色"></a><font color="green">边框颜色</font></h2><p>这里就使用<code>border</code>property，而它的值包括粗细，填充，颜色，你可以使用自己想要的值。</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">style</span>=<span class="string">&quot;border:2px solid Tomato;&quot;</span>&gt;</span>Hello World<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">style</span>=<span class="string">&quot;border:2px solid DodgerBlue;&quot;</span>&gt;</span>Hello World<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">style</span>=<span class="string">&quot;border:2px solid Violet;&quot;</span>&gt;</span>Hello World<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-24f79cac76a2db2e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"></p>
+<h2 id="颜色值"><a href="#颜色值" class="headerlink" title="颜色值"></a><font color="green">颜色值</font></h2><p>在HTML中，颜色可以用几种类型的值来描述：RGB, HEX, HSL, RGBA 和HSLA。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-14a56383cbb765e9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"></p>
+<h3 id="RGB"><a href="#RGB" class="headerlink" title="RGB"></a>RGB</h3><p><code>rgb(red,green,blue)</code>，每一种参数都是颜色的密度值，范围在0-255之间。例如，rgb(0,0,0)是黑色，rgb(255,255,255)是白色。不同的灰度，是3种颜色相同的情况下的改变。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-cee9ba3646f62c92.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"><br><img src="https://upload-images.jianshu.io/upload_images/3478485-438ed0ed84fb3b54.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<h3 id="HEX"><a href="#HEX" class="headerlink" title="HEX"></a>HEX</h3><p>这是用16进制来表示RGB的三种颜色，也是三种值，范围都在00-ff之间。同样灰度也是用相同的三种颜色的值大小，来表示。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-26108c125a656dde.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"></p>
+<h3 id="HSL"><a href="#HSL" class="headerlink" title="HSL"></a>HSL</h3><p>这种颜色的是通过色调，饱和度和亮度，来表示某种颜色。<br><code>hsl(hue, saturation, lightness)</code>。色调的值在0-360之间。0是红色，120是绿色，240是蓝色。饱和度是百分数表示的，0%表示灰色，100%是颜色本身。亮度也是百分数，0%是黑色，50%是适中，100%是白色。灰度是色调和饱和度都为0值，而通过亮度的调节来改变。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-c9d6ff8c82aecb3a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"></p>
+<h3 id="RGBA和HSLA"><a href="#RGBA和HSLA" class="headerlink" title="RGBA和HSLA"></a>RGBA和HSLA</h3><p>这两者都是在RGB和HSL的基础上，增加了第四个参数，透明度（alpha）。透明度的范围在0.0-1.0之间。0.0是全透明，而1.0是不透明。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-4269eabcd987dddb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"></p>
+]]></content>
+      <categories>
+        <category>HTML5入门</category>
+      </categories>
+      <tags>
+        <tag>HTML5</tag>
+        <tag>颜色</tag>
       </tags>
   </entry>
   <entry>
@@ -681,6 +681,49 @@
       </tags>
   </entry>
   <entry>
+    <title>LaTeX参考文献</title>
+    <url>//2018/09/15/LaTeX%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![咖啡和书，绝妙的组合](https://upload-images.jianshu.io/upload_images/3478485-e5f3023dabe65d98.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+<blockquote>
+<p>参考文献可以说是写论文时候最头疼的事情，如果你手动一条一条去输入的话，也是可以的，但是毕竟还是累的，效率也不怎么样。当然你也可以用经典的Endnote软件来管理你的文献，自动插入文献，当然也很好了，可是据说在你调整文章顺序时候会变得麻烦。好像natbib还是不错的，可能比较容易修改。</p>
+</blockquote>
+<span id="more"></span>
+
+<h1 id="1-引用方式"><a href="#1-引用方式" class="headerlink" title="1. 引用方式"></a>1. 引用方式</h1><p>这是我自己随便写的一个例子，用来说明一些问题。<br><code>\usepackage[round]&#123;natbib&#125;</code>是要使用的宏包。</p>
+<blockquote>
+<p>round是代表圆括号，还有很多其他的参数，可以去搜索。<br>natbib就是管理文献的包。<br><code>\bibliographystyle&#123;plainnat&#125;</code>这个命令是用来定义文献的格式。<br><code>\bibliography&#123;art&#125;</code>这个命令是选择你文献的所在的文件，bib后缀，但是你可以不写后缀，会自动搜索。<br><code>\cite&#123;&#125;是引用的命令，可以在文中你想引用的地方出现</code></p>
+</blockquote>
+<figure class="highlight dust"><table><tr><td class="code"><pre><span class="line"><span class="xml">\documentclass</span><span class="template-variable">&#123;report&#125;</span><span class="xml"></span></span><br><span class="line"><span class="xml">\usepackage[round]</span><span class="template-variable">&#123;natbib&#125;</span><span class="xml"></span></span><br><span class="line"><span class="xml">\renewcommand</span><span class="template-variable">&#123;\bibname&#125;</span><span class="template-variable">&#123;reference&#125;</span><span class="xml"></span></span><br><span class="line"><span class="xml"></span></span><br><span class="line"><span class="xml">\begin</span><span class="template-variable">&#123;document&#125;</span><span class="xml"></span></span><br><span class="line"><span class="xml">		The results of structural analyses of NAC domains will</span></span><br><span class="line"><span class="xml">	be helpful in further functional analysis of the NAC family.</span></span><br><span class="line"><span class="xml">	Many groups and subgroups consist of NAC domains</span></span><br><span class="line"><span class="xml">	from both O. sativa and A. thaliana \cite</span><span class="template-variable">&#123;2001&#125;</span><span class="xml"></span></span><br><span class="line"><span class="xml">	\bibliographystyle</span><span class="template-variable">&#123;plainnat&#125;</span><span class="xml"></span></span><br><span class="line"><span class="xml">	\bibliography</span><span class="template-variable">&#123;art&#125;</span><span class="xml"></span></span><br><span class="line"><span class="xml">\end</span><span class="template-variable">&#123;document&#125;</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-ac1103f387453aa9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="可以看到引用"></p>
+<ul>
+<li>你可以看到，这个例子我使用文档类型是report，本应该是bibliography（系统默认的），但是因为导言区<code>\renewcommand&#123;\bibname&#125;&#123;reference&#125;</code>这条命令，改变了这个标题。</li>
+</ul>
+<blockquote>
+<p>这里存在一个问题，我是没有解决掉。如果我用biblatex宏包来进行文献的引用，那么当我的文档是report的时候，出现的bibliography我是没有办法使用<code>\bibname</code>命令来修改的，当时就有点崩溃，后来就改了natbib这个来进行。<br>此外，如果你选natbib，那么要在texlive中将bib的编译工具选择为<code>bibtex</code>，而不是其他，否则还是会有问题的。</p>
+</blockquote>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-2e8df5846da5448d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="这里出现的是reference而不是bibliography"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-7c26f7d1dde47e66.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"></p>
+<h1 id="2-如何找到bib文献格式？"><a href="#2-如何找到bib文献格式？" class="headerlink" title="2. 如何找到bib文献格式？"></a>2. 如何找到bib文献格式？</h1><p>那么bib文献的格式到底是怎么样的呢？又怎么得到这些格式呢？<br>格式如下：我们在引用的时候主要是在<code>\cite&#123;&#125;</code>中填写2001这个关键词，这个关键词你可以随便修改，没有问题。</p>
+<figure class="highlight perl"><table><tr><td class="code"><pre><span class="line">@article&#123;<span class="number">2001</span>,</span><br><span class="line">  title=&#123;Mutations in a member of the ADAMTS gene family cause thrombotic thrombocytopenic purpura&#125;,</span><br><span class="line">  author=&#123;Levy, Gallia G <span class="keyword">and</span> Nichols, William C <span class="keyword">and</span> Lian, Eric C <span class="keyword">and</span> Foroud, Tatiana <span class="keyword">and</span> McClintick, Jeanette N <span class="keyword">and</span> McGee, Beth M <span class="keyword">and</span> Yang, Angela Y <span class="keyword">and</span> Siemieniak, David R <span class="keyword">and</span> Stark, Kenneth R <span class="keyword">and</span> Gruppo, Ralph <span class="keyword">and</span> others&#125;,</span><br><span class="line">  journal=<span class="string">&#123;Nature&#125;</span>,</span><br><span class="line">  volume=<span class="string">&#123;413&#125;</span>,</span><br><span class="line">  number=<span class="string">&#123;6855&#125;</span>,</span><br><span class="line">  pages=<span class="string">&#123;488&#125;</span>,</span><br><span class="line">  year=<span class="string">&#123;2001&#125;</span>,</span><br><span class="line">  publisher=&#123;Nature Publishing Group&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>一般使用google学术就可以下载到bib文献格式。如果你没有这个按钮，那么可以在settings中找到。如果不能用Google的同学，那可以找找其他的方法。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-2068d6207c5af1c7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-78681015ee68764b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="选择bibtex就可以，保存，就会出现"></p>
+<h1 id="3-如何将参考文献插入目录"><a href="#3-如何将参考文献插入目录" class="headerlink" title="3. 如何将参考文献插入目录"></a>3. 如何将参考文献插入目录</h1><p>在LaTeX默认环境下，参考文献是不会被<code>\tableofcontents</code>编译到目录中，因此我们还需要添加其他的命令来将参考文献成为独立的一章内容，从而被添加到目录。主要就是添加<code>\clearpage</code>和<code>\addcontentsline&#123;toc&#125;&#123;chapter&#125;&#123;reference&#125;</code></p>
+<blockquote>
+<p>参考：<a href="http://www.voidcn.com/article/p-uqvbmfdg-bok.html">http://www.voidcn.com/article/p-uqvbmfdg-bok.html</a></p>
+</blockquote>
+<figure class="highlight dust"><table><tr><td class="code"><pre><span class="line"><span class="xml">\bibliographystyle</span><span class="template-variable">&#123;plainnat&#125;</span><span class="xml"></span></span><br><span class="line"><span class="xml">\clearpage</span></span><br><span class="line"><span class="xml">\addcontentsline</span><span class="template-variable">&#123;toc&#125;</span><span class="template-variable">&#123;chapter&#125;</span><span class="template-variable">&#123;reference&#125;</span><span class="xml"> </span></span><br><span class="line"><span class="xml">\bibliography</span><span class="template-variable">&#123;ref.bib&#125;</span></span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>LaTeX入门</category>
+      </categories>
+      <tags>
+        <tag>LaTeX</tag>
+        <tag>参考文献</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>LaTeX基本语法</title>
     <url>//2018/09/14/LaTeX%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</url>
     <content><![CDATA[<p>开始进入今天的主题，通过一篇博文来学习一些LaTeX的语法，这才是实践，能够很好的加深自己的记忆。</p>
@@ -759,49 +802,6 @@
       <tags>
         <tag>LaTeX</tag>
         <tag>表格</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>LaTeX参考文献</title>
-    <url>//2018/09/15/LaTeX%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![咖啡和书，绝妙的组合](https://upload-images.jianshu.io/upload_images/3478485-e5f3023dabe65d98.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-<blockquote>
-<p>参考文献可以说是写论文时候最头疼的事情，如果你手动一条一条去输入的话，也是可以的，但是毕竟还是累的，效率也不怎么样。当然你也可以用经典的Endnote软件来管理你的文献，自动插入文献，当然也很好了，可是据说在你调整文章顺序时候会变得麻烦。好像natbib还是不错的，可能比较容易修改。</p>
-</blockquote>
-<span id="more"></span>
-
-<h1 id="1-引用方式"><a href="#1-引用方式" class="headerlink" title="1. 引用方式"></a>1. 引用方式</h1><p>这是我自己随便写的一个例子，用来说明一些问题。<br><code>\usepackage[round]&#123;natbib&#125;</code>是要使用的宏包。</p>
-<blockquote>
-<p>round是代表圆括号，还有很多其他的参数，可以去搜索。<br>natbib就是管理文献的包。<br><code>\bibliographystyle&#123;plainnat&#125;</code>这个命令是用来定义文献的格式。<br><code>\bibliography&#123;art&#125;</code>这个命令是选择你文献的所在的文件，bib后缀，但是你可以不写后缀，会自动搜索。<br><code>\cite&#123;&#125;是引用的命令，可以在文中你想引用的地方出现</code></p>
-</blockquote>
-<figure class="highlight dust"><table><tr><td class="code"><pre><span class="line"><span class="xml">\documentclass</span><span class="template-variable">&#123;report&#125;</span><span class="xml"></span></span><br><span class="line"><span class="xml">\usepackage[round]</span><span class="template-variable">&#123;natbib&#125;</span><span class="xml"></span></span><br><span class="line"><span class="xml">\renewcommand</span><span class="template-variable">&#123;\bibname&#125;</span><span class="template-variable">&#123;reference&#125;</span><span class="xml"></span></span><br><span class="line"><span class="xml"></span></span><br><span class="line"><span class="xml">\begin</span><span class="template-variable">&#123;document&#125;</span><span class="xml"></span></span><br><span class="line"><span class="xml">		The results of structural analyses of NAC domains will</span></span><br><span class="line"><span class="xml">	be helpful in further functional analysis of the NAC family.</span></span><br><span class="line"><span class="xml">	Many groups and subgroups consist of NAC domains</span></span><br><span class="line"><span class="xml">	from both O. sativa and A. thaliana \cite</span><span class="template-variable">&#123;2001&#125;</span><span class="xml"></span></span><br><span class="line"><span class="xml">	\bibliographystyle</span><span class="template-variable">&#123;plainnat&#125;</span><span class="xml"></span></span><br><span class="line"><span class="xml">	\bibliography</span><span class="template-variable">&#123;art&#125;</span><span class="xml"></span></span><br><span class="line"><span class="xml">\end</span><span class="template-variable">&#123;document&#125;</span></span><br></pre></td></tr></table></figure>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-ac1103f387453aa9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="可以看到引用"></p>
-<ul>
-<li>你可以看到，这个例子我使用文档类型是report，本应该是bibliography（系统默认的），但是因为导言区<code>\renewcommand&#123;\bibname&#125;&#123;reference&#125;</code>这条命令，改变了这个标题。</li>
-</ul>
-<blockquote>
-<p>这里存在一个问题，我是没有解决掉。如果我用biblatex宏包来进行文献的引用，那么当我的文档是report的时候，出现的bibliography我是没有办法使用<code>\bibname</code>命令来修改的，当时就有点崩溃，后来就改了natbib这个来进行。<br>此外，如果你选natbib，那么要在texlive中将bib的编译工具选择为<code>bibtex</code>，而不是其他，否则还是会有问题的。</p>
-</blockquote>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-2e8df5846da5448d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="这里出现的是reference而不是bibliography"></p>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-7c26f7d1dde47e66.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"></p>
-<h1 id="2-如何找到bib文献格式？"><a href="#2-如何找到bib文献格式？" class="headerlink" title="2. 如何找到bib文献格式？"></a>2. 如何找到bib文献格式？</h1><p>那么bib文献的格式到底是怎么样的呢？又怎么得到这些格式呢？<br>格式如下：我们在引用的时候主要是在<code>\cite&#123;&#125;</code>中填写2001这个关键词，这个关键词你可以随便修改，没有问题。</p>
-<figure class="highlight perl"><table><tr><td class="code"><pre><span class="line">@article&#123;<span class="number">2001</span>,</span><br><span class="line">  title=&#123;Mutations in a member of the ADAMTS gene family cause thrombotic thrombocytopenic purpura&#125;,</span><br><span class="line">  author=&#123;Levy, Gallia G <span class="keyword">and</span> Nichols, William C <span class="keyword">and</span> Lian, Eric C <span class="keyword">and</span> Foroud, Tatiana <span class="keyword">and</span> McClintick, Jeanette N <span class="keyword">and</span> McGee, Beth M <span class="keyword">and</span> Yang, Angela Y <span class="keyword">and</span> Siemieniak, David R <span class="keyword">and</span> Stark, Kenneth R <span class="keyword">and</span> Gruppo, Ralph <span class="keyword">and</span> others&#125;,</span><br><span class="line">  journal=<span class="string">&#123;Nature&#125;</span>,</span><br><span class="line">  volume=<span class="string">&#123;413&#125;</span>,</span><br><span class="line">  number=<span class="string">&#123;6855&#125;</span>,</span><br><span class="line">  pages=<span class="string">&#123;488&#125;</span>,</span><br><span class="line">  year=<span class="string">&#123;2001&#125;</span>,</span><br><span class="line">  publisher=&#123;Nature Publishing Group&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>一般使用google学术就可以下载到bib文献格式。如果你没有这个按钮，那么可以在settings中找到。如果不能用Google的同学，那可以找找其他的方法。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-2068d6207c5af1c7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"></p>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-78681015ee68764b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="选择bibtex就可以，保存，就会出现"></p>
-<h1 id="3-如何将参考文献插入目录"><a href="#3-如何将参考文献插入目录" class="headerlink" title="3. 如何将参考文献插入目录"></a>3. 如何将参考文献插入目录</h1><p>在LaTeX默认环境下，参考文献是不会被<code>\tableofcontents</code>编译到目录中，因此我们还需要添加其他的命令来将参考文献成为独立的一章内容，从而被添加到目录。主要就是添加<code>\clearpage</code>和<code>\addcontentsline&#123;toc&#125;&#123;chapter&#125;&#123;reference&#125;</code></p>
-<blockquote>
-<p>参考：<a href="http://www.voidcn.com/article/p-uqvbmfdg-bok.html">http://www.voidcn.com/article/p-uqvbmfdg-bok.html</a></p>
-</blockquote>
-<figure class="highlight dust"><table><tr><td class="code"><pre><span class="line"><span class="xml">\bibliographystyle</span><span class="template-variable">&#123;plainnat&#125;</span><span class="xml"></span></span><br><span class="line"><span class="xml">\clearpage</span></span><br><span class="line"><span class="xml">\addcontentsline</span><span class="template-variable">&#123;toc&#125;</span><span class="template-variable">&#123;chapter&#125;</span><span class="template-variable">&#123;reference&#125;</span><span class="xml"> </span></span><br><span class="line"><span class="xml">\bibliography</span><span class="template-variable">&#123;ref.bib&#125;</span></span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>LaTeX入门</category>
-      </categories>
-      <tags>
-        <tag>LaTeX</tag>
-        <tag>参考文献</tag>
       </tags>
   </entry>
   <entry>
@@ -999,54 +999,6 @@
       </tags>
   </entry>
   <entry>
-    <title>印度，漂浮的次大陆</title>
-    <url>//2018/09/06/%E5%8D%B0%E5%BA%A6%EF%BC%8C%E6%BC%82%E6%B5%AE%E7%9A%84%E6%AC%A1%E5%A4%A7%E9%99%86/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![印度，漂浮的次大陆](http://upload-images.jianshu.io/upload_images/3478485-b11c23f0c98ac99f.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-> 俞敏洪老师的推荐，于是就去读了郭建龙一个系列的游记。《穿越百年中东》、《骑车去元朝》、《印度，漂浮的次大陆》和《三千佛塔烟云下》都读了一遍，信息量超级大，不过读起来特别的畅快，特别的流畅。
-> 郭建龙是个文化旅者，总是亲身去体验某个地方的文化，历史，地理，政治，经济和宗教，最后凭借自己的文笔，写出独具特色的游记，我个人非常喜欢，推荐阅读。
-> 内容摘录自郭建龙的《印度，漂浮的次大陆》这本书。
-
-
-
-<span id="more"></span>
-
-<p>哈拉帕（巴基斯坦），洛塔尔（印度）。<br>洛塔尔遗址，手工业和贸易促使其如此的发达。然而，公元前2000年左右，整个印度河文明都衰落了。<br>在欧洲，存在着非洲两次走出的古人类相遇证据。那就是第二次的克罗马农人取代了第一次的尼安德特人，成为现代欧洲人的祖先。那么古印度人的祖先从哪里过来？在比莫贝特卡，发现了穴居文化。</p>
-<p>印度人之前一直以雅利安人的血统引以为豪，认为自己是雅利安人的后裔。但是当考古发现，公元前5000，已经在印度河流域出现了本土的古印度文明，比雅利安人入侵印度次大陆早千年，不得不承认存在高度发达的古印度文明。但印度人和雅利安人有着紧密的联系，<strong>英国人威廉琼斯公爵从语言学上发现，印度的梵语，拉丁语和欧洲的语言有着同一起源，从而也证明了确实雅利安人和印度人有着紧密的联系。</strong>而后来的考古发现也证明，大约在公元前3000年，在中亚大草原、里海附近的雅利安人，分为两支：一支进入欧洲，成为现代欧洲人的祖先；而另一支，经伊朗阿富汗，翻过兴都库什山脉，顺着开伯尔山口进入印度河谷地，最终扩散到整个印度。为什么古老发达的文明无法抵抗雅利安人？因为，在公元前2000左右，古印度文明开始衰落，而此时雅利安人正好在恰当的时机到来，从而入侵整个印度。</p>
-<p><strong>虽然古印度文明消亡了，但是人种并不会就此消失。</strong>在现代的南印度，存在达罗毗荼人，可能与印度河文明的人种一致，且他们拥有自己的语言系统。<strong>现在的印度，分为两种语系，在南方属于达罗毗荼语系，而在北方则是属于梵语。</strong>在印度神奇的是，雅利安人已经入侵印度几千年了，到现在为止，雅利安人和达罗毗荼人还没有完成融合，跟中国社会的情况完全不同。原因：<strong>强大的种姓制度。</strong></p>
-<h2 id="印度教"><a href="#印度教" class="headerlink" title="印度教"></a>印度教</h2><p>雅利安人为了防止自己被当地原始居民同化，从而建立了严格的种姓制度，出现了<strong>四种种姓：婆罗门，刹帝什，吠舍和首陀罗</strong>。分别担任宗教和精神领袖，国王和武士，从事商业，最底层。还有没有种姓的贱民。规定人一出生就确定了种姓，永远也不可能改变，无法进阶到更高的种姓。但是，如果长期下去，最底层的人会越来越多，最终会通过暴力手段推翻这种限制，然而<strong>为什么这种制度能够如此长久的维持？</strong>只能通过宗教信仰手段，将<strong>种姓制度融入到宗教</strong>之中，使其能够自动的被大众接受，这个宗教就是<strong>印度教</strong>。教义强调：人的灵魂是可以轮回的，这一世为人，下一世可能为动物，也可能身为更高种姓的人类，所以给了人们虚假的承诺，使得人们遵从现有的制度而不加以反抗，与中国的儒教相似。</p>
-<p><strong>世界上所有的宗教一般都包括了信仰和伦理两方面，其中信仰是个人化的体验，关系到个人与神之间的沟通，而伦理是一种社会化的体验，主要强调人与人之间的交流。侧重点的不同，宗教分为两大类：基督教和佛教侧重信仰，而印度教和儒教侧重伦理。伊斯兰教处在两者中间。</strong></p>
-<p>在这一时期，印度的神祇也得到了确立，形成了<strong>三大主神：梵天，毗湿奴和湿婆以及无所不包的各路神仙</strong>。其中湿婆是受到最广泛崇拜的主神，同时也是生殖力的代表，于是有了崇拜生殖和崇拜阴茎的传统。湿婆的化身往往是一根石柱，象征着阴茎和生殖力，叫做林伽。在西藏的外喜马拉雅山脉中，有一座形同阴茎的山峰，叫做冈仁波齐，在印度称为凯拉什山，是藏传佛教，苯教和印度教的神山。印度人将前往冈仁波齐看成朝圣的极致。</p>
-<p>同时这一时期，印度史诗也形成。最早的梵语经典<strong>《吠陀经》</strong>成型，<strong>印度的传奇史诗《罗摩衍那》和《摩诃婆罗多》逐渐流传开来。</strong>《罗摩衍那》家喻户晓。</p>
-<h2 id="佛教"><a href="#佛教" class="headerlink" title="佛教"></a>佛教</h2><p><strong>佛陀，或称释迦摩尼，名字叫悉达多乔达摩</strong>。出身在印度十六国时期的迦毗罗卫国的<strong>蓝毗尼</strong>的一棵树下，现在的尼泊尔境内。父亲是迦毗罗卫国的国王净饭王，这个小国依附于大国拘萨罗，是由雅利安人种释迦族建立的，属于刹帝什种姓。母亲摩耶夫人。年轻的悉达多，在王宫中长大，不问世事，整天沉迷爱情俗世，有三位妻子和自己的孩子，在孩子出身的那一年，当悉达多看到世外的人所受的苦难，于是开始思考人生的意义，离开皇宫开始寻找答案。在菩提迦耶的菩提树下，悉达多决定放弃苦修，开始打坐静修。本来他的五位随从认为他已经放弃寻找真理了，于是离开了他。不久，他就彻底领悟，找到了属于自己的<strong>一套理论体系</strong>，<strong>人生的意义是使得自己死后的灵魂得到永恒，也是与印度教类似的轮回机制，但是佛教的是认为轮回本身是一种痛苦，需要跳出轮回，灵魂才能得到永恒。那么如何跳出这个永无止境的轮回呢？</strong>悉达多构想出了<strong>“四谛”</strong>理论体系：<strong>苦谛</strong>，指的人生的一切苦难。<strong>集谛</strong>，贪嗔痴三毒是苦难产生的原因。<strong>灭谛</strong>，消灭苦难就要消灭三毒。<strong>道谛</strong>，修行的行为规范，指八正道，帮助人们消灭三毒的方法，修行得当的人都可以跳出轮回之苦，从而达到活着的意义和死后的永恒。</p>
-<p><strong>四谛</strong>是悉达多理论的核心，因为这个体系<strong>打破了种姓的界限，强调了人生的平等</strong>。任何人要是想跳出轮回，必须要按这种修行方式进行。</p>
-<p>获得顿悟的悉达多没有立即离开，继续思考完善体系，后来来到了一个叫做鹿野苑的地方，收了第一批信徒。这就是之前离开他的五个人，是其父亲在其离开时选派的五位宗室子弟。也就是佛教史上有名的五比丘。也就在此刻开始，佛教的佛、法、僧已经圆满集结，悉达多乔达摩也正式成为佛陀。之后继续传教，走向全国。最后，在晚年，佛陀带了少量弟子来到名叫拘尸那罗的地方，一病不起，不久圆寂与此。而此时的迦毗罗卫国也被拘萨罗消灭，而最后拘萨罗也被摩揭陀国所灭，为印度的统一打下了基础。</p>
-<h2 id="耆那教"><a href="#耆那教" class="headerlink" title="耆那教"></a>耆那教</h2><p>耆那教<strong>人口很少</strong>的宗教，但是在印度却有着及其重大的影响，甚至在<strong>影响力上超过了佛教</strong>。主要有两方面，第一，<strong>更强调苦行</strong>，对于人的要求高，更小众，使得能够接受的它的人很少，但是却是非常的坚定；第二，<strong>没有国际化</strong>。耆那教的创始人，<strong>筏陀摩耶被称为大雄</strong>，他的活动范围与佛陀重叠，也是在摩揭陀国的影响范围内。他强调的是苦行，为了完全达到断绝物欲的地步，甚至拒绝穿衣服，连身上有屎尿都毫不在意。而佛陀是放弃苦修的，过着质朴的生活，不是特意吃苦。</p>
-<p><strong>耆那教和印度教的神庙在外表上有相似之处，但是也有区别</strong>。耆那教的外部花式更加简单，而印度教的华丽高大。内部，耆那教的装饰复杂华丽，奢华无比，而印度教的却是及其简单，最简单的石板搭建的。</p>
-<h2 id="超级大国的更替"><a href="#超级大国的更替" class="headerlink" title="超级大国的更替"></a>超级大国的更替</h2><p>中国对印度的影响在公元前后到达，在这之前，对印度影响至深的是西方的希腊传导过去的事件，<strong>亚历山大的东征</strong>。但在亚历山大东征统治世界之前，是西亚的波斯文明主导全世界的强大政权。</p>
-<p>当西亚的新巴比伦帝国衰亡之后，伊朗境内兴起了一个新的帝国——<strong>波斯的阿契美尼德王朝</strong>，这是后来统治中亚的历代波斯王朝中的第一个。西亚的政治中心也从伊拉克两河流域转移到了伊朗境内。</p>
-<p>公元前7世纪，当时整个波斯在米底人的统治下。阿契美尼德死后，其儿子脱离了米底王国，经历过几代的继承，到了<strong>居鲁士二世</strong>统治时期，消灭了米底人的政权，还将前霸主新巴比伦帝国也消灭了。此后其儿子冈比西斯二世征服了埃及和非洲的大批领土，而其继承者<strong>大流士一世</strong>却改变了征服方向，开始向东方，越过开伯尔山口，进入印度河平原地区。之后又改变方向，又向西，入侵了希腊人的领土，<strong>从此将不起眼的希腊和欧洲带入了世界的舞台</strong>。希腊本来在东方的眼里根本不值得一提，只是生意人，他们航海走向各地，建立殖民地，只是为了做生意而不是扩张领土。<strong>波斯人入侵希腊，使得希腊各个弱小的城邦抱团抵抗，爆发出了强大的力量，使得波斯人战败</strong>。大流士一世之后，儿子薛西斯发动了第二次入侵，希腊人再次胜利，此后波斯就进入了衰落期，而西方兴起了新的霸主希腊。</p>
-<p>但希腊的这种团结不久就分裂，两个最大的城邦<strong>雅典和斯巴达</strong>开始争夺希腊的领导权，最终在波斯人的帮助下，斯巴达打败了雅典。但结果是两败俱伤。</p>
-<p>与此同时，一个希腊人看不起的<strong>希腊北部的马其顿</strong>兴起了，马其顿国王<strong>腓力二世</strong>打败了雅典和科林斯强权，使整个<strong>希腊半岛在历史上第一次统一</strong>。腓力二世的儿子就是著名的<strong>亚历山大大帝</strong>，这时整个希腊已经属于马其顿，他先进军<strong>小亚细亚</strong>，再把<strong>埃及</strong>纳入自己的版图，埃及的古老文明从此消失。接着进军<strong>波斯</strong>，打败波斯王大流士三世，最终波斯王朝覆灭。之后继续挥兵<strong>中亚阿富汗</strong>，塔吉克斯坦直到新疆以西的<strong>河中地区</strong>。突然就做了一个决定，向<strong>印度</strong>进军。<strong>此时的印度，内部也在进行着激烈的整合。摩揭陀国成为胜利者，几乎统一了全国</strong>。摩揭陀共包含了四个朝代，最后的难陀王朝是非常重要的承上启下的朝代，这时的印度的疆域已经有目前的一半大小，囊括整个北印度，和现代孟加拉国和缅甸的一部分。正是在这个朝代，亚历山大挥师进入印度。在印度，面临的是许多具有单独作战实力地区，如同游击战，亚历山大大帝陷入了全面作战的汪洋大海中，加之印度南北跨度几千公里，气候复杂，最后被迫撤退。不久，<strong>33岁的亚历山大大帝在巴比伦得病去世</strong>，留下了许多亚历山大的城市和希腊化的世界，其余化为传说。而这一次入侵对于印度的政治影响，间接促成了本土的伟大帝国的出现——<strong>孔雀帝国，印度第一次统一</strong>。</p>
-<p>亚历山大大帝撤退，使得整个西北印度陷入了权利的真空状态。原有的政治势力被破坏掉了，犍陀罗等国家被征服，另一方面难陀王朝还没有将控制力延伸过去。这时一个名叫<strong>旃陀罗笈多孔雀的人</strong>汇集大军向摩揭陀的难陀王朝进军，这时的难陀王朝也已经腐败无能，也希望新的君王接管权力。大军压境，难陀国王选择退位，避免了一场血腥的战争，孔雀王朝继承了难陀王打下了的江山。旃陀罗笈多孔雀最后在一个山洞里修行，信奉耆那教，最后默默的死去。他的孙子<strong>阿育王</strong>经过继承战，据说杀死了自己的99个亲兄弟，从自己的父亲频头娑罗哪里得到了孔雀王朝的宝座。阿育王前半生在杀戮中度过，而后半生却信奉佛教，在全国建造了数万座佛塔，然而现在剩下的只有<strong>桑吉大塔</strong>和鹿野苑的<strong>答枚克塔</strong>。</p>
-<p><strong>贵霜人</strong>的历史，最早可以从中国的战国时期找到痕迹，在中国西部的甘肃河西走廊一带，有一个半游牧民族在这里生活了很久。从某种程度上来说，<strong>月氏人</strong>是一个过渡民族，恰好夹在了游牧和定居之间，且受到了双方的威胁。其中在南方是定居的<strong>华夏民族</strong>，经过了春秋战国，秦国正在崛起，而在北方则是<strong>游牧民族匈奴</strong>。事实证明，游牧民族的威胁更大。直到秦朝末年，匈奴还比月氏人弱小，作为寄主国，当时匈奴的王位继承人只能以人质身份在月氏人当中生活，最后一位是叫做<strong>冒顿</strong>的匈奴人，没有受到善待，仇视月氏人，最后其逃回自己的部落，成为新的单于，从此以后月氏人进入了噩梦时期，<strong>冒顿挥师南下，屠杀，公元前202年左右，月氏人被迫放弃了肥沃的河西走廊，向西迁移。</strong>公元前177年左右，冒顿再次击败月氏人，被迫再次迁移，一部分南下进入了<strong>青海境内</strong>，被当地人同化；另一部分继续西迁，到达了新疆的<strong>准葛尔盆地</strong>。公元前162年，冒顿的儿子老上，再次打败月氏人，将月氏王的头颅砍下，当了酒器。只好再次西迁到了<strong>新疆的伊犁一带</strong>。这一次的西迁，引起了<strong>连锁反应</strong>，原本在伊犁这一带的<strong>斯基泰人向西南运动</strong>，进入了阿富汗境内。而这时在伊犁的月氏人因为被汉王朝打击的匈奴人的西迁，只好向西方的中亚地区前进，进入了著名<strong>河中地区</strong>，也就是阿姆河和锡尔河中间地带。而在河中地区，遭到了当地人的驱赶，不得不向南，进入了阿富汗伊朗境内，使得在这里的<strong>斯基泰人再次向南移动</strong>。在此之前，阿富汗和伊朗境内居住者安息人和希腊人，亚历山大征服中亚后，希腊人的后裔在这里建立起了大夏王国，在斯基泰人和月氏人的压力下，<strong>巴克特里亚人纷纷南下，进入印度境内，成为了入侵印度的第一波势力</strong>。</p>
-<p>由匈奴人和月氏人搅动的一系列民族迁徙活动，将一波一波的人们赶往了印度次大陆。张骞出使西域本来想联合月氏人给匈奴人来个东西夹击，但是月氏人拒绝了，不想再回到中国，此后月氏人彻底离开了中国的范围。<strong>公元前140年</strong>，在斯基泰人之后，月氏人也南下到了<strong>大夏边境</strong>，此时月氏人已经分成了5个部落，而贵霜就是其中的一个。之后打败了西部的安息国，继续占领大夏东部地区。此时接触到了大夏的希腊化文明，<strong>月氏人开始希腊化，从此变成了定居民族</strong>。并发行自己的货币和开始发展商贸关系。这时也受到了印度佛教的影响，开始将佛教作为他们的宗教。公元前1世纪初，<strong>贵霜部落</strong>打败其余部落，建立了<strong>贵霜帝国</strong>。在印度希腊人、印度斯基泰人、印度安息人之后，印度贵霜帝国正式登场。</p>
-<p><strong>维查耶纳加尔</strong>是印度教最后一个伟大帝国，负有捍卫印度教、抵抗伊斯兰教的重任。毁灭后，伊斯兰教长驱直入，在次大陆占据了主导地位，开始了几百年的伊斯兰政权时期。实际上，<strong>维查耶纳加尔就是为了对抗伊斯兰才出现</strong>。当北印度处于德里苏丹国统治的时候，南印度曾经强大的遮卢迦王国和拉什特拉库塔王国已经消亡。取而代之的四个小王国，分别是雅达瓦、卡卡提亚，潘地亚王国和霍伊萨拉王国。</p>
-<p>阿拉-乌德-丁用一生与南印度各国征战，其中就征服了雅达瓦和霍伊萨拉。前者为穆斯林提供了新的都城，而后者灭亡使得维查耶纳加尔在其土地上成长起来。</p>
-<p>巴马尼苏丹国的出现，这个伊斯兰国家的兴起与德里苏丹穆罕穆德图格鲁克迁都失败有关。比达尔城是该国的首都，与汉皮相比，伊斯兰教有最先进的战争理念，而印度教徒却是将首都看成生活的地方，由此也可以看出，两者在对战是的成败。南印度就在这两个教权国家的残忍战争中被扭曲，直到其中一个国家垮掉。最后，巴马尼苏丹最先垮掉，分为五个小苏丹国，这五个小国又内斗，最后成为三个苏丹国，最后联合起来，打败了维查耶纳加尔国，历史仅留下了汉皮这片废墟。此时，南印度也成了伊斯兰教的天下。这三个苏丹国也进入了黄金时代，而印度教最后的伟大政权也终于轰然倒塌。这时候，同属于伊斯兰教的来自北方的莫卧儿人出现了。</p>
-<p>在<strong>中世纪</strong>，虽然印度的佛教被印度教取代，但仍旧是世界的<strong>佛教中心</strong>，其中最有名的就是那烂陀大学，学术圣殿。但是在<strong>12世纪</strong>时，当古尔人到来，穆罕默德首领下的努力将军库特卜<strong>占领毁灭了那烂陀大学</strong>，<strong>使得佛教从印度消失</strong>。13世纪初，库特卜成立德里苏丹国，在莫卧尔人到来前，控制印度300多年。<strong>德里，现在印度的首都开始登上历史舞台。</strong></p>
-<p><strong>13世纪，成吉思汗带着蒙古人席卷了整个世界</strong>，在中国建立了元朝，在波斯建立了<strong>伊尔汗国</strong>，在俄罗斯人的土地上建立了<strong>金帐汗国</strong>，在如今的新疆西部、中亚建立了<strong>察合台汗国</strong>，在新疆北部和蒙古东部建立了<strong>窝阔台汗国</strong>。这五大汗国占领了当时已知世界的一大半。之后蒙古很快衰败，在<strong>察合台汗国</strong>的土地上，在14世纪后半期突厥人<strong>帖木儿</strong>威慑整个中亚、西亚和中欧，甚至占领了印度的一部分。但是在进攻明朝时，突然途中去世，此后帖木儿帝国分崩离析。<strong>然而此时，中亚出现了一位蒙古人和突厥人的双重后裔，巴布尔</strong>。让他占领印度，并开创了一个伟大的王朝。<br><strong>巴布尔在父系上是帖木儿的直系后裔，从母系来说，是成吉思汗的后裔。</strong>因此，从1483年出生，就带着世界上最有血性的两个人的基因。</p>
-<p>河中地区的城市撒马尔罕是帖木儿的都城，要称霸中亚必须拿下撒马尔罕，但是命中注定不属于巴布尔，一世经过三次进攻，却一次都没有成功，中亚的大门从此关闭。然而，经过分析，印度是个不错的可以暂时栖息之地，前四次进攻印度只是在外围，现在的巴基斯坦境内，没有深入到德里地区，然而第五次，德里苏丹出现内乱，有人请他去去德里，于是决心进军德里。<strong>这次战役的胜利，决定了印度历史的未来300年，建立了一个伟大的帝国。</strong>巴布尔在阿拉格建立了帝国的首都，阿拉格是用艺术和建筑征服印度，其后代也大都继承了祖先的艺术气质，使得<strong>莫卧尔成为艺术世界的巅峰</strong>。此后，巴布尔平定了整个北部地区，不久去世，他的儿子胡马雍继承王位，但此时的帝国还没有稳定，<strong>胡马雍</strong>不善战，被东方孟加拉的将军舍尔汗打败，被赶出了印度，退到了阿富汗。而舍尔汗在位期间，使整个印度政局稳定。死后，胡马雍很快从其后代那里夺回了印度，继承了舍尔汗开创的一系列制度，并重新将首都迁到了德里。之后不小心摔死在图书馆，成为第一个葬在印度土地上的莫卧尔皇帝。</p>
-]]></content>
-      <categories>
-        <category>读书笔记</category>
-      </categories>
-      <tags>
-        <tag>印度</tag>
-        <tag>郭建龙</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>基于全基因组的基因家族分析（4）：SlNRAMP家族基因进化树构建</title>
     <url>//2022/07/31/%E5%9F%BA%E4%BA%8E%E5%85%A8%E5%9F%BA%E5%9B%A0%E7%BB%84%E7%9A%84%E5%9F%BA%E5%9B%A0%E5%AE%B6%E6%97%8F%E5%88%86%E6%9E%90%EF%BC%884%EF%BC%89%EF%BC%9ASlNRAMP%E5%AE%B6%E6%97%8F%E5%9F%BA%E5%9B%A0%E8%BF%9B%E5%8C%96%E6%A0%91%E6%9E%84%E5%BB%BA/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -1124,6 +1076,54 @@ characterization of aluminum resistance in Populus"><br>这里我先用比较麻
       </categories>
       <tags>
         <tag>gene</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>印度，漂浮的次大陆</title>
+    <url>//2018/09/06/%E5%8D%B0%E5%BA%A6%EF%BC%8C%E6%BC%82%E6%B5%AE%E7%9A%84%E6%AC%A1%E5%A4%A7%E9%99%86/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![印度，漂浮的次大陆](http://upload-images.jianshu.io/upload_images/3478485-b11c23f0c98ac99f.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+> 俞敏洪老师的推荐，于是就去读了郭建龙一个系列的游记。《穿越百年中东》、《骑车去元朝》、《印度，漂浮的次大陆》和《三千佛塔烟云下》都读了一遍，信息量超级大，不过读起来特别的畅快，特别的流畅。
+> 郭建龙是个文化旅者，总是亲身去体验某个地方的文化，历史，地理，政治，经济和宗教，最后凭借自己的文笔，写出独具特色的游记，我个人非常喜欢，推荐阅读。
+> 内容摘录自郭建龙的《印度，漂浮的次大陆》这本书。
+
+
+
+<span id="more"></span>
+
+<p>哈拉帕（巴基斯坦），洛塔尔（印度）。<br>洛塔尔遗址，手工业和贸易促使其如此的发达。然而，公元前2000年左右，整个印度河文明都衰落了。<br>在欧洲，存在着非洲两次走出的古人类相遇证据。那就是第二次的克罗马农人取代了第一次的尼安德特人，成为现代欧洲人的祖先。那么古印度人的祖先从哪里过来？在比莫贝特卡，发现了穴居文化。</p>
+<p>印度人之前一直以雅利安人的血统引以为豪，认为自己是雅利安人的后裔。但是当考古发现，公元前5000，已经在印度河流域出现了本土的古印度文明，比雅利安人入侵印度次大陆早千年，不得不承认存在高度发达的古印度文明。但印度人和雅利安人有着紧密的联系，<strong>英国人威廉琼斯公爵从语言学上发现，印度的梵语，拉丁语和欧洲的语言有着同一起源，从而也证明了确实雅利安人和印度人有着紧密的联系。</strong>而后来的考古发现也证明，大约在公元前3000年，在中亚大草原、里海附近的雅利安人，分为两支：一支进入欧洲，成为现代欧洲人的祖先；而另一支，经伊朗阿富汗，翻过兴都库什山脉，顺着开伯尔山口进入印度河谷地，最终扩散到整个印度。为什么古老发达的文明无法抵抗雅利安人？因为，在公元前2000左右，古印度文明开始衰落，而此时雅利安人正好在恰当的时机到来，从而入侵整个印度。</p>
+<p><strong>虽然古印度文明消亡了，但是人种并不会就此消失。</strong>在现代的南印度，存在达罗毗荼人，可能与印度河文明的人种一致，且他们拥有自己的语言系统。<strong>现在的印度，分为两种语系，在南方属于达罗毗荼语系，而在北方则是属于梵语。</strong>在印度神奇的是，雅利安人已经入侵印度几千年了，到现在为止，雅利安人和达罗毗荼人还没有完成融合，跟中国社会的情况完全不同。原因：<strong>强大的种姓制度。</strong></p>
+<h2 id="印度教"><a href="#印度教" class="headerlink" title="印度教"></a>印度教</h2><p>雅利安人为了防止自己被当地原始居民同化，从而建立了严格的种姓制度，出现了<strong>四种种姓：婆罗门，刹帝什，吠舍和首陀罗</strong>。分别担任宗教和精神领袖，国王和武士，从事商业，最底层。还有没有种姓的贱民。规定人一出生就确定了种姓，永远也不可能改变，无法进阶到更高的种姓。但是，如果长期下去，最底层的人会越来越多，最终会通过暴力手段推翻这种限制，然而<strong>为什么这种制度能够如此长久的维持？</strong>只能通过宗教信仰手段，将<strong>种姓制度融入到宗教</strong>之中，使其能够自动的被大众接受，这个宗教就是<strong>印度教</strong>。教义强调：人的灵魂是可以轮回的，这一世为人，下一世可能为动物，也可能身为更高种姓的人类，所以给了人们虚假的承诺，使得人们遵从现有的制度而不加以反抗，与中国的儒教相似。</p>
+<p><strong>世界上所有的宗教一般都包括了信仰和伦理两方面，其中信仰是个人化的体验，关系到个人与神之间的沟通，而伦理是一种社会化的体验，主要强调人与人之间的交流。侧重点的不同，宗教分为两大类：基督教和佛教侧重信仰，而印度教和儒教侧重伦理。伊斯兰教处在两者中间。</strong></p>
+<p>在这一时期，印度的神祇也得到了确立，形成了<strong>三大主神：梵天，毗湿奴和湿婆以及无所不包的各路神仙</strong>。其中湿婆是受到最广泛崇拜的主神，同时也是生殖力的代表，于是有了崇拜生殖和崇拜阴茎的传统。湿婆的化身往往是一根石柱，象征着阴茎和生殖力，叫做林伽。在西藏的外喜马拉雅山脉中，有一座形同阴茎的山峰，叫做冈仁波齐，在印度称为凯拉什山，是藏传佛教，苯教和印度教的神山。印度人将前往冈仁波齐看成朝圣的极致。</p>
+<p>同时这一时期，印度史诗也形成。最早的梵语经典<strong>《吠陀经》</strong>成型，<strong>印度的传奇史诗《罗摩衍那》和《摩诃婆罗多》逐渐流传开来。</strong>《罗摩衍那》家喻户晓。</p>
+<h2 id="佛教"><a href="#佛教" class="headerlink" title="佛教"></a>佛教</h2><p><strong>佛陀，或称释迦摩尼，名字叫悉达多乔达摩</strong>。出身在印度十六国时期的迦毗罗卫国的<strong>蓝毗尼</strong>的一棵树下，现在的尼泊尔境内。父亲是迦毗罗卫国的国王净饭王，这个小国依附于大国拘萨罗，是由雅利安人种释迦族建立的，属于刹帝什种姓。母亲摩耶夫人。年轻的悉达多，在王宫中长大，不问世事，整天沉迷爱情俗世，有三位妻子和自己的孩子，在孩子出身的那一年，当悉达多看到世外的人所受的苦难，于是开始思考人生的意义，离开皇宫开始寻找答案。在菩提迦耶的菩提树下，悉达多决定放弃苦修，开始打坐静修。本来他的五位随从认为他已经放弃寻找真理了，于是离开了他。不久，他就彻底领悟，找到了属于自己的<strong>一套理论体系</strong>，<strong>人生的意义是使得自己死后的灵魂得到永恒，也是与印度教类似的轮回机制，但是佛教的是认为轮回本身是一种痛苦，需要跳出轮回，灵魂才能得到永恒。那么如何跳出这个永无止境的轮回呢？</strong>悉达多构想出了<strong>“四谛”</strong>理论体系：<strong>苦谛</strong>，指的人生的一切苦难。<strong>集谛</strong>，贪嗔痴三毒是苦难产生的原因。<strong>灭谛</strong>，消灭苦难就要消灭三毒。<strong>道谛</strong>，修行的行为规范，指八正道，帮助人们消灭三毒的方法，修行得当的人都可以跳出轮回之苦，从而达到活着的意义和死后的永恒。</p>
+<p><strong>四谛</strong>是悉达多理论的核心，因为这个体系<strong>打破了种姓的界限，强调了人生的平等</strong>。任何人要是想跳出轮回，必须要按这种修行方式进行。</p>
+<p>获得顿悟的悉达多没有立即离开，继续思考完善体系，后来来到了一个叫做鹿野苑的地方，收了第一批信徒。这就是之前离开他的五个人，是其父亲在其离开时选派的五位宗室子弟。也就是佛教史上有名的五比丘。也就在此刻开始，佛教的佛、法、僧已经圆满集结，悉达多乔达摩也正式成为佛陀。之后继续传教，走向全国。最后，在晚年，佛陀带了少量弟子来到名叫拘尸那罗的地方，一病不起，不久圆寂与此。而此时的迦毗罗卫国也被拘萨罗消灭，而最后拘萨罗也被摩揭陀国所灭，为印度的统一打下了基础。</p>
+<h2 id="耆那教"><a href="#耆那教" class="headerlink" title="耆那教"></a>耆那教</h2><p>耆那教<strong>人口很少</strong>的宗教，但是在印度却有着及其重大的影响，甚至在<strong>影响力上超过了佛教</strong>。主要有两方面，第一，<strong>更强调苦行</strong>，对于人的要求高，更小众，使得能够接受的它的人很少，但是却是非常的坚定；第二，<strong>没有国际化</strong>。耆那教的创始人，<strong>筏陀摩耶被称为大雄</strong>，他的活动范围与佛陀重叠，也是在摩揭陀国的影响范围内。他强调的是苦行，为了完全达到断绝物欲的地步，甚至拒绝穿衣服，连身上有屎尿都毫不在意。而佛陀是放弃苦修的，过着质朴的生活，不是特意吃苦。</p>
+<p><strong>耆那教和印度教的神庙在外表上有相似之处，但是也有区别</strong>。耆那教的外部花式更加简单，而印度教的华丽高大。内部，耆那教的装饰复杂华丽，奢华无比，而印度教的却是及其简单，最简单的石板搭建的。</p>
+<h2 id="超级大国的更替"><a href="#超级大国的更替" class="headerlink" title="超级大国的更替"></a>超级大国的更替</h2><p>中国对印度的影响在公元前后到达，在这之前，对印度影响至深的是西方的希腊传导过去的事件，<strong>亚历山大的东征</strong>。但在亚历山大东征统治世界之前，是西亚的波斯文明主导全世界的强大政权。</p>
+<p>当西亚的新巴比伦帝国衰亡之后，伊朗境内兴起了一个新的帝国——<strong>波斯的阿契美尼德王朝</strong>，这是后来统治中亚的历代波斯王朝中的第一个。西亚的政治中心也从伊拉克两河流域转移到了伊朗境内。</p>
+<p>公元前7世纪，当时整个波斯在米底人的统治下。阿契美尼德死后，其儿子脱离了米底王国，经历过几代的继承，到了<strong>居鲁士二世</strong>统治时期，消灭了米底人的政权，还将前霸主新巴比伦帝国也消灭了。此后其儿子冈比西斯二世征服了埃及和非洲的大批领土，而其继承者<strong>大流士一世</strong>却改变了征服方向，开始向东方，越过开伯尔山口，进入印度河平原地区。之后又改变方向，又向西，入侵了希腊人的领土，<strong>从此将不起眼的希腊和欧洲带入了世界的舞台</strong>。希腊本来在东方的眼里根本不值得一提，只是生意人，他们航海走向各地，建立殖民地，只是为了做生意而不是扩张领土。<strong>波斯人入侵希腊，使得希腊各个弱小的城邦抱团抵抗，爆发出了强大的力量，使得波斯人战败</strong>。大流士一世之后，儿子薛西斯发动了第二次入侵，希腊人再次胜利，此后波斯就进入了衰落期，而西方兴起了新的霸主希腊。</p>
+<p>但希腊的这种团结不久就分裂，两个最大的城邦<strong>雅典和斯巴达</strong>开始争夺希腊的领导权，最终在波斯人的帮助下，斯巴达打败了雅典。但结果是两败俱伤。</p>
+<p>与此同时，一个希腊人看不起的<strong>希腊北部的马其顿</strong>兴起了，马其顿国王<strong>腓力二世</strong>打败了雅典和科林斯强权，使整个<strong>希腊半岛在历史上第一次统一</strong>。腓力二世的儿子就是著名的<strong>亚历山大大帝</strong>，这时整个希腊已经属于马其顿，他先进军<strong>小亚细亚</strong>，再把<strong>埃及</strong>纳入自己的版图，埃及的古老文明从此消失。接着进军<strong>波斯</strong>，打败波斯王大流士三世，最终波斯王朝覆灭。之后继续挥兵<strong>中亚阿富汗</strong>，塔吉克斯坦直到新疆以西的<strong>河中地区</strong>。突然就做了一个决定，向<strong>印度</strong>进军。<strong>此时的印度，内部也在进行着激烈的整合。摩揭陀国成为胜利者，几乎统一了全国</strong>。摩揭陀共包含了四个朝代，最后的难陀王朝是非常重要的承上启下的朝代，这时的印度的疆域已经有目前的一半大小，囊括整个北印度，和现代孟加拉国和缅甸的一部分。正是在这个朝代，亚历山大挥师进入印度。在印度，面临的是许多具有单独作战实力地区，如同游击战，亚历山大大帝陷入了全面作战的汪洋大海中，加之印度南北跨度几千公里，气候复杂，最后被迫撤退。不久，<strong>33岁的亚历山大大帝在巴比伦得病去世</strong>，留下了许多亚历山大的城市和希腊化的世界，其余化为传说。而这一次入侵对于印度的政治影响，间接促成了本土的伟大帝国的出现——<strong>孔雀帝国，印度第一次统一</strong>。</p>
+<p>亚历山大大帝撤退，使得整个西北印度陷入了权利的真空状态。原有的政治势力被破坏掉了，犍陀罗等国家被征服，另一方面难陀王朝还没有将控制力延伸过去。这时一个名叫<strong>旃陀罗笈多孔雀的人</strong>汇集大军向摩揭陀的难陀王朝进军，这时的难陀王朝也已经腐败无能，也希望新的君王接管权力。大军压境，难陀国王选择退位，避免了一场血腥的战争，孔雀王朝继承了难陀王打下了的江山。旃陀罗笈多孔雀最后在一个山洞里修行，信奉耆那教，最后默默的死去。他的孙子<strong>阿育王</strong>经过继承战，据说杀死了自己的99个亲兄弟，从自己的父亲频头娑罗哪里得到了孔雀王朝的宝座。阿育王前半生在杀戮中度过，而后半生却信奉佛教，在全国建造了数万座佛塔，然而现在剩下的只有<strong>桑吉大塔</strong>和鹿野苑的<strong>答枚克塔</strong>。</p>
+<p><strong>贵霜人</strong>的历史，最早可以从中国的战国时期找到痕迹，在中国西部的甘肃河西走廊一带，有一个半游牧民族在这里生活了很久。从某种程度上来说，<strong>月氏人</strong>是一个过渡民族，恰好夹在了游牧和定居之间，且受到了双方的威胁。其中在南方是定居的<strong>华夏民族</strong>，经过了春秋战国，秦国正在崛起，而在北方则是<strong>游牧民族匈奴</strong>。事实证明，游牧民族的威胁更大。直到秦朝末年，匈奴还比月氏人弱小，作为寄主国，当时匈奴的王位继承人只能以人质身份在月氏人当中生活，最后一位是叫做<strong>冒顿</strong>的匈奴人，没有受到善待，仇视月氏人，最后其逃回自己的部落，成为新的单于，从此以后月氏人进入了噩梦时期，<strong>冒顿挥师南下，屠杀，公元前202年左右，月氏人被迫放弃了肥沃的河西走廊，向西迁移。</strong>公元前177年左右，冒顿再次击败月氏人，被迫再次迁移，一部分南下进入了<strong>青海境内</strong>，被当地人同化；另一部分继续西迁，到达了新疆的<strong>准葛尔盆地</strong>。公元前162年，冒顿的儿子老上，再次打败月氏人，将月氏王的头颅砍下，当了酒器。只好再次西迁到了<strong>新疆的伊犁一带</strong>。这一次的西迁，引起了<strong>连锁反应</strong>，原本在伊犁这一带的<strong>斯基泰人向西南运动</strong>，进入了阿富汗境内。而这时在伊犁的月氏人因为被汉王朝打击的匈奴人的西迁，只好向西方的中亚地区前进，进入了著名<strong>河中地区</strong>，也就是阿姆河和锡尔河中间地带。而在河中地区，遭到了当地人的驱赶，不得不向南，进入了阿富汗伊朗境内，使得在这里的<strong>斯基泰人再次向南移动</strong>。在此之前，阿富汗和伊朗境内居住者安息人和希腊人，亚历山大征服中亚后，希腊人的后裔在这里建立起了大夏王国，在斯基泰人和月氏人的压力下，<strong>巴克特里亚人纷纷南下，进入印度境内，成为了入侵印度的第一波势力</strong>。</p>
+<p>由匈奴人和月氏人搅动的一系列民族迁徙活动，将一波一波的人们赶往了印度次大陆。张骞出使西域本来想联合月氏人给匈奴人来个东西夹击，但是月氏人拒绝了，不想再回到中国，此后月氏人彻底离开了中国的范围。<strong>公元前140年</strong>，在斯基泰人之后，月氏人也南下到了<strong>大夏边境</strong>，此时月氏人已经分成了5个部落，而贵霜就是其中的一个。之后打败了西部的安息国，继续占领大夏东部地区。此时接触到了大夏的希腊化文明，<strong>月氏人开始希腊化，从此变成了定居民族</strong>。并发行自己的货币和开始发展商贸关系。这时也受到了印度佛教的影响，开始将佛教作为他们的宗教。公元前1世纪初，<strong>贵霜部落</strong>打败其余部落，建立了<strong>贵霜帝国</strong>。在印度希腊人、印度斯基泰人、印度安息人之后，印度贵霜帝国正式登场。</p>
+<p><strong>维查耶纳加尔</strong>是印度教最后一个伟大帝国，负有捍卫印度教、抵抗伊斯兰教的重任。毁灭后，伊斯兰教长驱直入，在次大陆占据了主导地位，开始了几百年的伊斯兰政权时期。实际上，<strong>维查耶纳加尔就是为了对抗伊斯兰才出现</strong>。当北印度处于德里苏丹国统治的时候，南印度曾经强大的遮卢迦王国和拉什特拉库塔王国已经消亡。取而代之的四个小王国，分别是雅达瓦、卡卡提亚，潘地亚王国和霍伊萨拉王国。</p>
+<p>阿拉-乌德-丁用一生与南印度各国征战，其中就征服了雅达瓦和霍伊萨拉。前者为穆斯林提供了新的都城，而后者灭亡使得维查耶纳加尔在其土地上成长起来。</p>
+<p>巴马尼苏丹国的出现，这个伊斯兰国家的兴起与德里苏丹穆罕穆德图格鲁克迁都失败有关。比达尔城是该国的首都，与汉皮相比，伊斯兰教有最先进的战争理念，而印度教徒却是将首都看成生活的地方，由此也可以看出，两者在对战是的成败。南印度就在这两个教权国家的残忍战争中被扭曲，直到其中一个国家垮掉。最后，巴马尼苏丹最先垮掉，分为五个小苏丹国，这五个小国又内斗，最后成为三个苏丹国，最后联合起来，打败了维查耶纳加尔国，历史仅留下了汉皮这片废墟。此时，南印度也成了伊斯兰教的天下。这三个苏丹国也进入了黄金时代，而印度教最后的伟大政权也终于轰然倒塌。这时候，同属于伊斯兰教的来自北方的莫卧儿人出现了。</p>
+<p>在<strong>中世纪</strong>，虽然印度的佛教被印度教取代，但仍旧是世界的<strong>佛教中心</strong>，其中最有名的就是那烂陀大学，学术圣殿。但是在<strong>12世纪</strong>时，当古尔人到来，穆罕默德首领下的努力将军库特卜<strong>占领毁灭了那烂陀大学</strong>，<strong>使得佛教从印度消失</strong>。13世纪初，库特卜成立德里苏丹国，在莫卧尔人到来前，控制印度300多年。<strong>德里，现在印度的首都开始登上历史舞台。</strong></p>
+<p><strong>13世纪，成吉思汗带着蒙古人席卷了整个世界</strong>，在中国建立了元朝，在波斯建立了<strong>伊尔汗国</strong>，在俄罗斯人的土地上建立了<strong>金帐汗国</strong>，在如今的新疆西部、中亚建立了<strong>察合台汗国</strong>，在新疆北部和蒙古东部建立了<strong>窝阔台汗国</strong>。这五大汗国占领了当时已知世界的一大半。之后蒙古很快衰败，在<strong>察合台汗国</strong>的土地上，在14世纪后半期突厥人<strong>帖木儿</strong>威慑整个中亚、西亚和中欧，甚至占领了印度的一部分。但是在进攻明朝时，突然途中去世，此后帖木儿帝国分崩离析。<strong>然而此时，中亚出现了一位蒙古人和突厥人的双重后裔，巴布尔</strong>。让他占领印度，并开创了一个伟大的王朝。<br><strong>巴布尔在父系上是帖木儿的直系后裔，从母系来说，是成吉思汗的后裔。</strong>因此，从1483年出生，就带着世界上最有血性的两个人的基因。</p>
+<p>河中地区的城市撒马尔罕是帖木儿的都城，要称霸中亚必须拿下撒马尔罕，但是命中注定不属于巴布尔，一世经过三次进攻，却一次都没有成功，中亚的大门从此关闭。然而，经过分析，印度是个不错的可以暂时栖息之地，前四次进攻印度只是在外围，现在的巴基斯坦境内，没有深入到德里地区，然而第五次，德里苏丹出现内乱，有人请他去去德里，于是决心进军德里。<strong>这次战役的胜利，决定了印度历史的未来300年，建立了一个伟大的帝国。</strong>巴布尔在阿拉格建立了帝国的首都，阿拉格是用艺术和建筑征服印度，其后代也大都继承了祖先的艺术气质，使得<strong>莫卧尔成为艺术世界的巅峰</strong>。此后，巴布尔平定了整个北部地区，不久去世，他的儿子胡马雍继承王位，但此时的帝国还没有稳定，<strong>胡马雍</strong>不善战，被东方孟加拉的将军舍尔汗打败，被赶出了印度，退到了阿富汗。而舍尔汗在位期间，使整个印度政局稳定。死后，胡马雍很快从其后代那里夺回了印度，继承了舍尔汗开创的一系列制度，并重新将首都迁到了德里。之后不小心摔死在图书馆，成为第一个葬在印度土地上的莫卧尔皇帝。</p>
+]]></content>
+      <categories>
+        <category>读书笔记</category>
+      </categories>
+      <tags>
+        <tag>印度</tag>
+        <tag>郭建龙</tag>
       </tags>
   </entry>
   <entry>
@@ -1265,29 +1265,6 @@ characterization of aluminum resistance in Populus"><br>这里我先用比较麻
       </categories>
       <tags>
         <tag>电影</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>杂乱无章</title>
-    <url>//2018/08/28/%E6%9D%82%E4%B9%B1%E6%97%A0%E7%AB%A0/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![拿着相机，一个人旅行](https://upload-images.jianshu.io/upload_images/3478485-14565c6637c4fa19.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-<p>8月27日，星期一，公元2018年。</p>
-<span id="more"></span>
-
-<p>8月27日，星期一，公元2018年。</p>
-<p>干了一天，几乎没有坐下的时候。骑车离开生科院的时候，突然觉得自己就想是一个工人，白天工作，晚上运动健身和自学，想来也是非常的满足。然而，事情永远没有这么简单，真正工作以后，恐怕没有那么悠闲。</p>
-<p>最近已经能够比较好的控制一下自己，不再如此的散漫。在过去的6月份，真是觉得自个儿已经抛弃一部分超我，使得自我更多的释放。满满的都是娱乐活动，吃饭，看电影和旅游，比暑假更加潇洒。我知道，我一直以来就是这么一个人，对于别人，我总想让他们有一些仪式感，自己变得比别人更操心自己，但是前提是我想关心的人。这个是有点还是缺点，我并不能很好的定义对错，只是不该太过火。师姐的毕业典礼，我去拍照；校园风景，我去拍照；小伙伴的毕业旅行，我也一同参加。干了无数能够留下深刻印象的事。</p>
-<p>有目标，才有动力；有计划，才能有满足感；完成计划，才能有幸福感。大部分时候的状态，就是无目标和无计划，生活处在焦虑之中，特别地不安。这种状态的打破，就需要你自身的行动，想到的东西，要出尽快实行；要去解决你害怕去解决的问题；搞定心中的恐惧放空自己的内心，才能最终踏实满足。</p>
-<p>今年也算是旅行过了，南京之行，也非常的开心。但是，你要知道，很多时候内心就会有一种冲动，就想去看看更外面的世界。前两天看到了一条骑行路线，真的太诱人了，完全没法形容我内心的激动，即使不能够前去体验。看看，回想回想之前的经历，也能够让我开心一会儿，那也就够了。岁月慢慢流逝，一天天在变老，尽管思想还没有服气，但是身体很明显的不如从前了。</p>
-<p>我们没法改变，只能磨炼遇事不惊的心态。</p>
-]]></content>
-      <categories>
-        <category>随记</category>
-      </categories>
-      <tags>
-        <tag>旅行</tag>
       </tags>
   </entry>
   <entry>
@@ -1498,6 +1475,29 @@ characterization of aluminum resistance in Populus"><br>这里我先用比较麻
       <tags>
         <tag>旅行</tag>
         <tag>南京</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>杂乱无章</title>
+    <url>//2018/08/28/%E6%9D%82%E4%B9%B1%E6%97%A0%E7%AB%A0/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![拿着相机，一个人旅行](https://upload-images.jianshu.io/upload_images/3478485-14565c6637c4fa19.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+<p>8月27日，星期一，公元2018年。</p>
+<span id="more"></span>
+
+<p>8月27日，星期一，公元2018年。</p>
+<p>干了一天，几乎没有坐下的时候。骑车离开生科院的时候，突然觉得自己就想是一个工人，白天工作，晚上运动健身和自学，想来也是非常的满足。然而，事情永远没有这么简单，真正工作以后，恐怕没有那么悠闲。</p>
+<p>最近已经能够比较好的控制一下自己，不再如此的散漫。在过去的6月份，真是觉得自个儿已经抛弃一部分超我，使得自我更多的释放。满满的都是娱乐活动，吃饭，看电影和旅游，比暑假更加潇洒。我知道，我一直以来就是这么一个人，对于别人，我总想让他们有一些仪式感，自己变得比别人更操心自己，但是前提是我想关心的人。这个是有点还是缺点，我并不能很好的定义对错，只是不该太过火。师姐的毕业典礼，我去拍照；校园风景，我去拍照；小伙伴的毕业旅行，我也一同参加。干了无数能够留下深刻印象的事。</p>
+<p>有目标，才有动力；有计划，才能有满足感；完成计划，才能有幸福感。大部分时候的状态，就是无目标和无计划，生活处在焦虑之中，特别地不安。这种状态的打破，就需要你自身的行动，想到的东西，要出尽快实行；要去解决你害怕去解决的问题；搞定心中的恐惧放空自己的内心，才能最终踏实满足。</p>
+<p>今年也算是旅行过了，南京之行，也非常的开心。但是，你要知道，很多时候内心就会有一种冲动，就想去看看更外面的世界。前两天看到了一条骑行路线，真的太诱人了，完全没法形容我内心的激动，即使不能够前去体验。看看，回想回想之前的经历，也能够让我开心一会儿，那也就够了。岁月慢慢流逝，一天天在变老，尽管思想还没有服气，但是身体很明显的不如从前了。</p>
+<p>我们没法改变，只能磨炼遇事不惊的心态。</p>
+]]></content>
+      <categories>
+        <category>随记</category>
+      </categories>
+      <tags>
+        <tag>旅行</tag>
       </tags>
   </entry>
   <entry>
@@ -1786,6 +1786,27 @@ characterization of aluminum resistance in Populus"><br>这里我先用比较麻
       </tags>
   </entry>
   <entry>
+    <title>科学与好奇心</title>
+    <url>//2018/08/29/%E7%A7%91%E5%AD%A6%E4%B8%8E%E5%A5%BD%E5%A5%87%E5%BF%83/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![curiosity.png](https://upload-images.jianshu.io/upload_images/3478485-167898110b8d9438.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+<p>那一年，我还是博士二年级，刚开始。然而，时间极速流失，却无能为力。</p>
+<span id="more"></span>
+
+<p>已经开始了我们学校夏季学期的课程，已经博士二年级了，上完了所有的课程，只有剩下这门专业选修课——现代生态学。在上了两节课之后，我感受最深的，或者是学习到的一点，就是为什么我们做科学研究，到底是为了什么而进行？老师给了一个答案——好奇心。我们花了纳税人的钱，为了是满足他们的好奇心。这样的回答，让我感到很新奇，很特殊的一种解答。我从来没有想到过，为了满足好奇心，从而使得这么多人在从事这一个行业。</p>
+<p>好奇心，curiosity，至关重要。想想，我们很多人每天在实验室工作，其实根本没有精神气，像这几天的我，真是一塌糊涂，没有任何精神，一切真的是那样的麻木，味同嚼蜡这个词可以形容大多数时间的我，我想不只是我一个，大多数人都是在这样的层次。有时候就会想，到底是什么促使我们在坚持，使得人类在这样的发展，有这样的发展史。或许就是好奇心吧，因为好奇，所以要去探究，要去探究，就要不断思考，从而不断推进人类认知的发展，不断向前走。</p>
+<p>人太容易变化，很多时候没有一个定数，没有那样的稳定的体系。但是，从大体上来说，纵观一生，或许可以说是比较稳定的，人的性格，人的品质。但从很小的尺度来看，人就是变幻无常的，我们极其容易受到外界坏境的影响，变得焦躁不安。非常的头疼，对我来说，这样的自己让我变得难以接受，无法那样的安静稳定，或者说是专注。分析原因，有一个可能就是好奇心的缺失，没有好奇心，一切都没法集中，没有办法使自己的熵减小，在自然状态下，自然界包括我们人类社会，甚至整个宇宙，都是一个熵增的过程，一定需要外在的能量输入，使其保持一定的熵值，相对变得稳定，而不是那样的混乱焦躁。好奇心，从另一个方面来说，或许就是一种能量，能够维持我们人类的稳定。</p>
+<p>我也发现，这几天的游离状态，好像就是因为没有了好奇心，不管是什么，实验还是其他的知识，都失去了好奇心，使得我的内心一下子熵增了不少，变得无序混沌，乱七八糟，无法收拾。直到某个时刻，我能够找到外界的力量——能够获得对外界某些事物的好奇心，那么我可以说，我又会复活，变得稳定，变成另一个状态。人，说到底也就两种状态，熵减和熵增的状态，而且这两个状态本身是一个动态的变化过程，不是一个固定的状态，始终在变化。而两者之间也在不停的互相转换，这就是客观规律。所以啊，很多时候就要想得开，人的情绪不断变化是非常正常的现象，不要去疑惑，为什么刚才好好地，一下子就变得不一样了呢？</p>
+]]></content>
+      <categories>
+        <category>随记</category>
+      </categories>
+      <tags>
+        <tag>科学</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>科普吗？</title>
     <url>//2018/08/26/%E7%A7%91%E6%99%AE%E5%90%97%EF%BC%9F/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -1836,27 +1857,6 @@ characterization of aluminum resistance in Populus"><br>这里我先用比较麻
       <tags>
         <tag>费曼</tag>
         <tag>诚信</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>科学与好奇心</title>
-    <url>//2018/08/29/%E7%A7%91%E5%AD%A6%E4%B8%8E%E5%A5%BD%E5%A5%87%E5%BF%83/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![curiosity.png](https://upload-images.jianshu.io/upload_images/3478485-167898110b8d9438.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-<p>那一年，我还是博士二年级，刚开始。然而，时间极速流失，却无能为力。</p>
-<span id="more"></span>
-
-<p>已经开始了我们学校夏季学期的课程，已经博士二年级了，上完了所有的课程，只有剩下这门专业选修课——现代生态学。在上了两节课之后，我感受最深的，或者是学习到的一点，就是为什么我们做科学研究，到底是为了什么而进行？老师给了一个答案——好奇心。我们花了纳税人的钱，为了是满足他们的好奇心。这样的回答，让我感到很新奇，很特殊的一种解答。我从来没有想到过，为了满足好奇心，从而使得这么多人在从事这一个行业。</p>
-<p>好奇心，curiosity，至关重要。想想，我们很多人每天在实验室工作，其实根本没有精神气，像这几天的我，真是一塌糊涂，没有任何精神，一切真的是那样的麻木，味同嚼蜡这个词可以形容大多数时间的我，我想不只是我一个，大多数人都是在这样的层次。有时候就会想，到底是什么促使我们在坚持，使得人类在这样的发展，有这样的发展史。或许就是好奇心吧，因为好奇，所以要去探究，要去探究，就要不断思考，从而不断推进人类认知的发展，不断向前走。</p>
-<p>人太容易变化，很多时候没有一个定数，没有那样的稳定的体系。但是，从大体上来说，纵观一生，或许可以说是比较稳定的，人的性格，人的品质。但从很小的尺度来看，人就是变幻无常的，我们极其容易受到外界坏境的影响，变得焦躁不安。非常的头疼，对我来说，这样的自己让我变得难以接受，无法那样的安静稳定，或者说是专注。分析原因，有一个可能就是好奇心的缺失，没有好奇心，一切都没法集中，没有办法使自己的熵减小，在自然状态下，自然界包括我们人类社会，甚至整个宇宙，都是一个熵增的过程，一定需要外在的能量输入，使其保持一定的熵值，相对变得稳定，而不是那样的混乱焦躁。好奇心，从另一个方面来说，或许就是一种能量，能够维持我们人类的稳定。</p>
-<p>我也发现，这几天的游离状态，好像就是因为没有了好奇心，不管是什么，实验还是其他的知识，都失去了好奇心，使得我的内心一下子熵增了不少，变得无序混沌，乱七八糟，无法收拾。直到某个时刻，我能够找到外界的力量——能够获得对外界某些事物的好奇心，那么我可以说，我又会复活，变得稳定，变成另一个状态。人，说到底也就两种状态，熵减和熵增的状态，而且这两个状态本身是一个动态的变化过程，不是一个固定的状态，始终在变化。而两者之间也在不停的互相转换，这就是客观规律。所以啊，很多时候就要想得开，人的情绪不断变化是非常正常的现象，不要去疑惑，为什么刚才好好地，一下子就变得不一样了呢？</p>
-]]></content>
-      <categories>
-        <category>随记</category>
-      </categories>
-      <tags>
-        <tag>科学</tag>
       </tags>
   </entry>
   <entry>
