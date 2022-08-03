@@ -52,3 +52,5 @@ End Sub
 ![2022-08-03-Xnip2022-08-03_13-40-42](https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-08-03-Xnip2022-08-03_13-40-42.jpg)
 
 运行之后，会出现Msgox内容“<font color=chocolate>当前工作簿下的全部工作表已经合并完毕！</font>”
+
+> 参考内容来自知乎@老菜鸟：https://zhuanlan.zhihu.com/p/36003476
