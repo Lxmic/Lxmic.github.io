@@ -2360,4 +2360,31 @@ characterization of aluminum resistance in Populus"><br>这里我先用比较麻
         <tag>西北</tag>
       </tags>
   </entry>
+  <entry>
+    <title>Geneious如何使用本地blast</title>
+    <url>//2022/08/05/Geneious%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8%E6%9C%AC%E5%9C%B0blast/</url>
+    <content><![CDATA[<div class="note primary">
+            <p>Geneious来进行本地blast，便于节省时间</p>
+          </div>
+<meta name="referrer" content="no-referrer" />
+
+
+<span id="more"></span>
+
+<h1 id="安装ncbi-blast本地blast软件"><a href="#安装ncbi-blast本地blast软件" class="headerlink" title="安装ncbi-blast本地blast软件"></a><font color=green>安装ncbi-blast本地blast软件</font></h1><ul>
+<li>按步骤1-2-3打开界面<br><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-08-05-3HpSMr.png" alt="2022-08-05-3HpSMr"><br></li>
+<li>点击OK，然后geneious会自行检测安装ncbi-blast<br><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-08-05-1VlJOD.png" alt="2022-08-05-1VlJOD"></li>
+<li>显示正在安装<br><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-08-05-JzYvPw.png" alt="2022-08-05-JzYvPw"></li>
+</ul>
+<h1 id="本地Blast数据库构建"><a href="#本地Blast数据库构建" class="headerlink" title="本地Blast数据库构建"></a><font color=green>本地Blast数据库构建</font></h1><ul>
+<li>例如可以讲物种基因组或者所有编码蛋白进行格式化，可以用于blast。<br><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-08-05-T5v64m.png" alt="2022-08-05-T5v64m"></li>
+<li>可以选择从已经下载好的数据导入，最后点击OK，就完成本地blast数据库的构建。<br><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-08-05-fcbXgl.png" alt="2022-08-05-fcbXgl"></li>
+</ul>
+<h1 id="选择目标基因进行数据库blast"><a href="#选择目标基因进行数据库blast" class="headerlink" title="选择目标基因进行数据库blast"></a><font color=green>选择目标基因进行数据库blast</font></h1><p>一个物种的基因去比对另一个物种的基因组或者蛋白数据，得到相关的同源蛋白。<br><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-08-05-xh6Dga.png" alt="2022-08-05-xh6Dga"></p>
+<div class="note primary">
+            <p>参考内容：<a href="https://assets.geneious.com/manual/2022.1/index.html">Geneious官方文档</a>。 </p>
+          </div>
+
+]]></content>
+  </entry>
 </search>
