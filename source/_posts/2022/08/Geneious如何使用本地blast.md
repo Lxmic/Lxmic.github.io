@@ -2,7 +2,10 @@
 title: Geneious如何使用本地blast
 date: 2022-08-05 14:18:37
 tags:
-categories:
+- Geneious
+- 小技巧
+- blast
+categories: 科研之路
 ---
 {% note primary %} Geneious来进行本地blast，便于节省时间{% endnote %}
 <meta name="referrer" content="no-referrer" />
