@@ -1,7 +1,7 @@
 ---
 title: {{ title }}
 date: {{ date }}
-type: "picture"
+type: 
 tags:
 categories:
 ---
