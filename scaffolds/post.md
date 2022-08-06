@@ -10,5 +10,3 @@ categories:
 
 
 <!--more-->
-
-{% gp x-x %} {% endgp %}
