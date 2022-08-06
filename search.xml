@@ -1555,25 +1555,6 @@ characterization of aluminum resistance in Populus"><br>这里我先用比较麻
       </tags>
   </entry>
   <entry>
-    <title>植物Cas9靶点设计网站简介</title>
-    <url>//2019/02/05/%E6%A4%8D%E7%89%A9Cas9%E9%9D%B6%E7%82%B9%E8%AE%BE%E8%AE%A1%E7%BD%91%E7%AB%99%E7%AE%80%E4%BB%8B/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![cas9模型](https://upload-images.jianshu.io/upload_images/3478485-e845fed2bd99b07b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-<span id="more"></span>
-
-<p>我在前面的简文中已经基本阐述了Cas9的作用机制，详细内容可以看<a href="https://www.jianshu.com/p/1e7bff7d5830">CRISPR-Cas9系统简介</a>一文。今天，就来讲一讲怎么实际使用这个系统来帮助我们进行功能基因的研究。这个技术一问世，很多大牛就开始使用，植物学领域的应用，使得我们能够更方便的有目的的去编辑我们想要编辑的植物基因组。今天就推荐几个网站，寻找靶点序列的网站。前面我们也提到过，好的靶点的选择，可以减小脱靶率，大大提高我们编辑的效率。能够极大提高我们的实验效率，不然像我们植物学领域的苦逼博士，不得疯掉，一直一直脱靶的话，那么就真的非常的酸爽。</p>
-<h3 id="CRISPR-PLANT"><a href="#CRISPR-PLANT" class="headerlink" title="CRISPR-PLANT"></a><font color = "green">CRISPR-PLANT</font></h3><p>具体网址：<a href="https://www.genome.arizona.edu/crispr/index.html">https://www.genome.arizona.edu/crispr/index.html</a>。 看这个网址，应该是Arizona大学出品的。这是一个专门针对植物CRISPR靶点设计网站，比较专业，较为好用的网站。首页有一张模式图，而且还有对CRISPR-Cas9系统的基本介绍，大概可以了解。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-f2f550500f26be7a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="网站首页"><br>导航栏中有几个标签链接，如果你不知道怎么使用，那么你就可以点击instruction来学习，里面有比较详细的介绍。如果要开始找靶点，那就点击search。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-6181cec9ae7ec031.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="导航栏"><br>进入search主页，就可以看到查找的方式。这里它也建议你先看知道手册，然后在进行设计。查找的输入信息有两种，a.染色体位置信息；b.基因locus，通常情况下我们在查找的时候感觉locus用的比较多，一般你肯定是知道基因的信息去进行search。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-2e0980dc0152cf1e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="search主页"><br>这个网站可以找的物种包括拟南芥、二穗短柄草、大豆、蒺藜苜蓿、水稻、高粱、番茄和玉米；还是挺多的，一般都能符合需求。当然，如果你的物种实在是太过于小众，那么可惜，没法用这个网站进行。那么，下面这个网站就可以一定程度满足你。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-0b1d6da7b6ab97bd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="这里给的物种基因组"></p>
-<h3 id="CRISPRSCAN"><a href="#CRISPRSCAN" class="headerlink" title="CRISPRSCAN"></a><font color="green">CRISPRSCAN</font></h3><p>具体网址：<a href="http://www.crisprscan.org/?page=sequence">http://www.crisprscan.org/?page=sequence</a>。这个网站是都是动物的，没有植物物种的，但是为什么要推荐这个网站呢？因为我们最开始就是使用这个网站进行靶点筛选的，之后在拟南芥和番茄中进行了尝试敲除，结果都能够得到敲除的株系，也是能够使用这个来进行引物的设计。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-ef69894d221d6ddc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="网站首页"><br>这个网站里，有很多动物，果蝇、人类、小鼠和鸡等物种，没有植物的，但是你可以选择No search这个选项，然后将你的序列黏贴进去，之后会出来靶点，但是它的评估只有一个score，没有其他的了。这个网站，现在对我们植物的来说，还是基本不用了，有其他专门的植物的网站。下面这个网站就更好了，非常全面的植物的网站。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-a8e5bf4933bff970.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="这个网站有的一些物种"></p>
-<h3 id="CRISPR-P-2-0"><a href="#CRISPR-P-2-0" class="headerlink" title="CRISPR-P 2.0"></a><font color = "green">CRISPR-P 2.0</font></h3><p>具体网址：<a href="http://crispr.hzau.edu.cn/CRISPR2/">http://crispr.hzau.edu.cn/CRISPR2/</a>。这个网站是华中农业大学大学设计的，做的还是很不错的。用了之后，感觉比前面两个的内容更丰富，而且评估的更全面。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-43966e8205ae6ee8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="网站首页，也很漂亮"><br>点击网站右上角的start design，你就可以开始设计相应的引物。里面的信息更加细化。有pam类型选择，启动子选择，引导序列的长度，物种基因组选择，可以通过locus以及位置信息和序列进行靶基因的选定。它这个网站的物种数据是整合了NCBI数据库，所以基本包括了已经测序完全的植物基因组，解决了物种限制这个问题，普遍性强了。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-6b15fc0bac0d5e23.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="设计页面"><br>我用网站中的例子，来展示一下靶点搜索结果。它可以根据开始的碱基A/G来筛选靶点，也可以通过score、gc含量和位置信息来进行靶点筛选。此外，当你将鼠标移到靶点上，会出现具体信息：显示了位置，打分，序列，切割位点（红色箭头），启动子，以及脱靶位点数量和错位碱基数等，可以说相当丰富。而且，如果某些靶点存在酶切位点，也会同时显示出来。如果不理解这些参数，网站首页的<strong>help</strong>会有详细的解释，包括怎么选择靶点。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-3ce8f6271f54d084.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="靶点"><br><img src="https://upload-images.jianshu.io/upload_images/3478485-c617285e77a1dab2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="靶点信息"><br>这几个CRISPR相关的网站介绍就到这里结束了，具体应用还是需要有实际例子去使用，尝试。<br>今天是大年初一，给大家拜个年，新春快乐，实验顺利，早发paper。</p>
-]]></content>
-      <categories>
-        <category>学习记录</category>
-      </categories>
-      <tags>
-        <tag>Cas9</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>海南环岛游记</title>
     <url>//2018/08/31/%E6%B5%B7%E5%8D%97%E7%8E%AF%E5%B2%9B%E6%B8%B8%E8%AE%B0/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -1742,6 +1723,25 @@ characterization of aluminum resistance in Populus"><br>这里我先用比较麻
       <tags>
         <tag>旅行</tag>
         <tag>海南</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>植物Cas9靶点设计网站简介</title>
+    <url>//2019/02/05/%E6%A4%8D%E7%89%A9Cas9%E9%9D%B6%E7%82%B9%E8%AE%BE%E8%AE%A1%E7%BD%91%E7%AB%99%E7%AE%80%E4%BB%8B/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![cas9模型](https://upload-images.jianshu.io/upload_images/3478485-e845fed2bd99b07b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+<span id="more"></span>
+
+<p>我在前面的简文中已经基本阐述了Cas9的作用机制，详细内容可以看<a href="https://www.jianshu.com/p/1e7bff7d5830">CRISPR-Cas9系统简介</a>一文。今天，就来讲一讲怎么实际使用这个系统来帮助我们进行功能基因的研究。这个技术一问世，很多大牛就开始使用，植物学领域的应用，使得我们能够更方便的有目的的去编辑我们想要编辑的植物基因组。今天就推荐几个网站，寻找靶点序列的网站。前面我们也提到过，好的靶点的选择，可以减小脱靶率，大大提高我们编辑的效率。能够极大提高我们的实验效率，不然像我们植物学领域的苦逼博士，不得疯掉，一直一直脱靶的话，那么就真的非常的酸爽。</p>
+<h3 id="CRISPR-PLANT"><a href="#CRISPR-PLANT" class="headerlink" title="CRISPR-PLANT"></a><font color = "green">CRISPR-PLANT</font></h3><p>具体网址：<a href="https://www.genome.arizona.edu/crispr/index.html">https://www.genome.arizona.edu/crispr/index.html</a>。 看这个网址，应该是Arizona大学出品的。这是一个专门针对植物CRISPR靶点设计网站，比较专业，较为好用的网站。首页有一张模式图，而且还有对CRISPR-Cas9系统的基本介绍，大概可以了解。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-f2f550500f26be7a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="网站首页"><br>导航栏中有几个标签链接，如果你不知道怎么使用，那么你就可以点击instruction来学习，里面有比较详细的介绍。如果要开始找靶点，那就点击search。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-6181cec9ae7ec031.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="导航栏"><br>进入search主页，就可以看到查找的方式。这里它也建议你先看知道手册，然后在进行设计。查找的输入信息有两种，a.染色体位置信息；b.基因locus，通常情况下我们在查找的时候感觉locus用的比较多，一般你肯定是知道基因的信息去进行search。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-2e0980dc0152cf1e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="search主页"><br>这个网站可以找的物种包括拟南芥、二穗短柄草、大豆、蒺藜苜蓿、水稻、高粱、番茄和玉米；还是挺多的，一般都能符合需求。当然，如果你的物种实在是太过于小众，那么可惜，没法用这个网站进行。那么，下面这个网站就可以一定程度满足你。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-0b1d6da7b6ab97bd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="这里给的物种基因组"></p>
+<h3 id="CRISPRSCAN"><a href="#CRISPRSCAN" class="headerlink" title="CRISPRSCAN"></a><font color="green">CRISPRSCAN</font></h3><p>具体网址：<a href="http://www.crisprscan.org/?page=sequence">http://www.crisprscan.org/?page=sequence</a>。这个网站是都是动物的，没有植物物种的，但是为什么要推荐这个网站呢？因为我们最开始就是使用这个网站进行靶点筛选的，之后在拟南芥和番茄中进行了尝试敲除，结果都能够得到敲除的株系，也是能够使用这个来进行引物的设计。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-ef69894d221d6ddc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="网站首页"><br>这个网站里，有很多动物，果蝇、人类、小鼠和鸡等物种，没有植物的，但是你可以选择No search这个选项，然后将你的序列黏贴进去，之后会出来靶点，但是它的评估只有一个score，没有其他的了。这个网站，现在对我们植物的来说，还是基本不用了，有其他专门的植物的网站。下面这个网站就更好了，非常全面的植物的网站。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-a8e5bf4933bff970.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="这个网站有的一些物种"></p>
+<h3 id="CRISPR-P-2-0"><a href="#CRISPR-P-2-0" class="headerlink" title="CRISPR-P 2.0"></a><font color = "green">CRISPR-P 2.0</font></h3><p>具体网址：<a href="http://crispr.hzau.edu.cn/CRISPR2/">http://crispr.hzau.edu.cn/CRISPR2/</a>。这个网站是华中农业大学大学设计的，做的还是很不错的。用了之后，感觉比前面两个的内容更丰富，而且评估的更全面。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-43966e8205ae6ee8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="网站首页，也很漂亮"><br>点击网站右上角的start design，你就可以开始设计相应的引物。里面的信息更加细化。有pam类型选择，启动子选择，引导序列的长度，物种基因组选择，可以通过locus以及位置信息和序列进行靶基因的选定。它这个网站的物种数据是整合了NCBI数据库，所以基本包括了已经测序完全的植物基因组，解决了物种限制这个问题，普遍性强了。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-6b15fc0bac0d5e23.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="设计页面"><br>我用网站中的例子，来展示一下靶点搜索结果。它可以根据开始的碱基A/G来筛选靶点，也可以通过score、gc含量和位置信息来进行靶点筛选。此外，当你将鼠标移到靶点上，会出现具体信息：显示了位置，打分，序列，切割位点（红色箭头），启动子，以及脱靶位点数量和错位碱基数等，可以说相当丰富。而且，如果某些靶点存在酶切位点，也会同时显示出来。如果不理解这些参数，网站首页的<strong>help</strong>会有详细的解释，包括怎么选择靶点。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-3ce8f6271f54d084.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="靶点"><br><img src="https://upload-images.jianshu.io/upload_images/3478485-c617285e77a1dab2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="靶点信息"><br>这几个CRISPR相关的网站介绍就到这里结束了，具体应用还是需要有实际例子去使用，尝试。<br>今天是大年初一，给大家拜个年，新春快乐，实验顺利，早发paper。</p>
+]]></content>
+      <categories>
+        <category>学习记录</category>
+      </categories>
+      <tags>
+        <tag>Cas9</tag>
       </tags>
   </entry>
   <entry>
@@ -1945,35 +1945,6 @@ characterization of aluminum resistance in Populus"><br>这里我先用比较麻
       </tags>
   </entry>
   <entry>
-    <title>算法与数据结构（1）：概念理解</title>
-    <url>//2018/09/03/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%EF%BC%881%EF%BC%89%EF%BC%9A%E6%A6%82%E5%BF%B5%E7%90%86%E8%A7%A3/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![](https://upload-images.jianshu.io/upload_images/3478485-db8a3a9f4a233e45.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-9月3日，星期日，公元2018年。
-
-<blockquote>
-<p>这个系列的文章，就是学习笔记。昨天开始，简书作者<a href="https://www.jianshu.com/u/44339a8a9afa">程序员联盟</a>又开始更新文章。此次更新专题为：算法和数据结构-初级系列，正好可以学习一下，内容部分可能就是摘录过来的，不是原创，所有版权都是作者<strong>程序员联盟</strong></p>
-</blockquote>
-<span id="more"></span>
-
-<h1 id="1-算法"><a href="#1-算法" class="headerlink" title="1. 算法"></a>1. 算法</h1><p>什么是算法？这个问题其实一直都觉得有些抽象，难以回答。算法其实在生活中也是处处存在，其中作者举煮方便面的例子，来形象生动地说明，很有趣。<br>煮方便面的整个方法流程，就是一种算法。算法如果要精确，可以进一步的解释说明，如何将水倒入锅中，水龙头的使用。这跟计算机中的算法如出一辙，但是现在的算法概念，一般我们就默认为是在计算机领域，因为计算机是最擅长做重复的代码，进行之行这些可重复的工作。</p>
-<blockquote>
-<p>算法：就是一种精确描述。怎样的描述？用什么来描述？<strong>通俗易懂的概念</strong>：算法是用最简单的概念形式对如何解决问题的一种精确描述。</p>
-</blockquote>
-<h1 id="2-数据结构"><a href="#2-数据结构" class="headerlink" title="2. 数据结构"></a>2. 数据结构</h1><p>算法是描述方法，数据结构是描述组织，两者有着密切的联系。数据结构其实就是存储数据的方式，怎样存储数据，对算法来说也是很关键的一步。<br>算法就是为了确定更好地信息处理方式，而数据结构是确定信息存储方式。</p>
-<blockquote>
-<p>这一课就是解决了这两个概念的问题，经过作者这么一解释，非常通俗易懂，基本已经搞明白是怎么回事了。</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>算法与数据结构</category>
-      </categories>
-      <tags>
-        <tag>算法</tag>
-        <tag>编程</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>算法与数据结构（2）：算法复杂度</title>
     <url>//2018/09/05/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%EF%BC%882%EF%BC%89%EF%BC%9A%E7%AE%97%E6%B3%95%E5%A4%8D%E6%9D%82%E5%BA%A6/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -2000,6 +1971,35 @@ characterization of aluminum resistance in Populus"><br>这里我先用比较麻
       </categories>
       <tags>
         <tag>复杂度</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>算法与数据结构（1）：概念理解</title>
+    <url>//2018/09/03/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%EF%BC%881%EF%BC%89%EF%BC%9A%E6%A6%82%E5%BF%B5%E7%90%86%E8%A7%A3/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![](https://upload-images.jianshu.io/upload_images/3478485-db8a3a9f4a233e45.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+9月3日，星期日，公元2018年。
+
+<blockquote>
+<p>这个系列的文章，就是学习笔记。昨天开始，简书作者<a href="https://www.jianshu.com/u/44339a8a9afa">程序员联盟</a>又开始更新文章。此次更新专题为：算法和数据结构-初级系列，正好可以学习一下，内容部分可能就是摘录过来的，不是原创，所有版权都是作者<strong>程序员联盟</strong></p>
+</blockquote>
+<span id="more"></span>
+
+<h1 id="1-算法"><a href="#1-算法" class="headerlink" title="1. 算法"></a>1. 算法</h1><p>什么是算法？这个问题其实一直都觉得有些抽象，难以回答。算法其实在生活中也是处处存在，其中作者举煮方便面的例子，来形象生动地说明，很有趣。<br>煮方便面的整个方法流程，就是一种算法。算法如果要精确，可以进一步的解释说明，如何将水倒入锅中，水龙头的使用。这跟计算机中的算法如出一辙，但是现在的算法概念，一般我们就默认为是在计算机领域，因为计算机是最擅长做重复的代码，进行之行这些可重复的工作。</p>
+<blockquote>
+<p>算法：就是一种精确描述。怎样的描述？用什么来描述？<strong>通俗易懂的概念</strong>：算法是用最简单的概念形式对如何解决问题的一种精确描述。</p>
+</blockquote>
+<h1 id="2-数据结构"><a href="#2-数据结构" class="headerlink" title="2. 数据结构"></a>2. 数据结构</h1><p>算法是描述方法，数据结构是描述组织，两者有着密切的联系。数据结构其实就是存储数据的方式，怎样存储数据，对算法来说也是很关键的一步。<br>算法就是为了确定更好地信息处理方式，而数据结构是确定信息存储方式。</p>
+<blockquote>
+<p>这一课就是解决了这两个概念的问题，经过作者这么一解释，非常通俗易懂，基本已经搞明白是怎么回事了。</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>算法与数据结构</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>编程</tag>
       </tags>
   </entry>
   <entry>
