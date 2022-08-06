@@ -11,6 +11,5 @@ type: "picture"
 
 
 <!--more-->
-{% gp 5-3 %}
 
-{% endgp %}
+{% gp 5-3 %} {% endgp %}
