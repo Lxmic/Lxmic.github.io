@@ -1,6 +1,7 @@
 ---
 title: {{ title }}
 date: {{ date }}
+type: "picture"
 tags:
 categories:
 ---
@@ -10,4 +11,4 @@ categories:
 
 <!--more-->
 
-
+{% gp 5-3 %} {% endgp %}
