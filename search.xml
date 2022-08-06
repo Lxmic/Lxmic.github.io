@@ -119,6 +119,25 @@
       </tags>
   </entry>
   <entry>
+    <title>Dropbox离线安装</title>
+    <url>//2018/12/08/Dropbox%E7%A6%BB%E7%BA%BF%E5%AE%89%E8%A3%85/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+
+
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-d5fc4ecb48065677.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<blockquote>
+<p>Dropbox 的安装一直是个问题，下载安装器，你永远没有办法链接网络，可能是电脑没有完全的全局。</p>
+</blockquote>
+<p>今天，因为要配置新的电脑，我就需要安装我的Dropbox。但是依旧是因为没有办法彻底的全局FQ，所以我就想着下载离线包，然后我就就Google，找到了下载离线安装包的办法，你只要在官网下载页面网址的基础上，在后面添加<code>&amp;full=1</code>就可以实现离线安装。<br>离线安装包下载网址：<a href="https://www.dropbox.com/downloading?src=index&full=1" title="shark0017">https://www.dropbox.com/downloading?src=index**&amp;full=1**</a>。已经顺利安装，下面可以愉快的使用了。</p>
+]]></content>
+      <categories>
+        <category>学习记录</category>
+      </categories>
+      <tags>
+        <tag>Dropbox</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>GUS染色方法</title>
     <url>//2019/02/05/GUS%E6%9F%93%E8%89%B2%E6%96%B9%E6%B3%95/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -248,25 +267,6 @@
       <tags>
         <tag>引用</tag>
         <tag>HTML5</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Dropbox离线安装</title>
-    <url>//2018/12/08/Dropbox%E7%A6%BB%E7%BA%BF%E5%AE%89%E8%A3%85/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-
-
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-d5fc4ecb48065677.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
-<blockquote>
-<p>Dropbox 的安装一直是个问题，下载安装器，你永远没有办法链接网络，可能是电脑没有完全的全局。</p>
-</blockquote>
-<p>今天，因为要配置新的电脑，我就需要安装我的Dropbox。但是依旧是因为没有办法彻底的全局FQ，所以我就想着下载离线包，然后我就就Google，找到了下载离线安装包的办法，你只要在官网下载页面网址的基础上，在后面添加<code>&amp;full=1</code>就可以实现离线安装。<br>离线安装包下载网址：<a href="https://www.dropbox.com/downloading?src=index&full=1" title="shark0017">https://www.dropbox.com/downloading?src=index**&amp;full=1**</a>。已经顺利安装，下面可以愉快的使用了。</p>
-]]></content>
-      <categories>
-        <category>学习记录</category>
-      </categories>
-      <tags>
-        <tag>Dropbox</tag>
       </tags>
   </entry>
   <entry>
@@ -579,39 +579,6 @@
       </tags>
   </entry>
   <entry>
-    <title>HTML5（7）——段落</title>
-    <url>//2018/10/06/HTML5%EF%BC%887%EF%BC%89%E2%80%94%E2%80%94%E6%AE%B5%E8%90%BD/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![想法很多，已没有经历实现](https://upload-images.jianshu.io/upload_images/3478485-f715b416af9c6294.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-> 现在不得不感叹，很多事情有想法，却找不到人一起去实现。继续学习HTML5，来讲一讲段落。
-
-
-
-<span id="more"></span>
-
-<h2 id="HTML段落"><a href="#HTML段落" class="headerlink" title="HTML段落"></a><font color="green">HTML段落</font></h2><p><code>&lt;p&gt;</code>元素是用来定义段落的，并且是由结束标签的。而且网页在解析时，会自动在段落前和段落后添加一些空格区域。</p>
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line">&lt;<span class="selector-tag">p</span>&gt;This is <span class="selector-tag">a</span> paragraph.&lt;/<span class="selector-tag">p</span>&gt;</span><br><span class="line">&lt;<span class="selector-tag">p</span>&gt;This is another paragraph.&lt;/<span class="selector-tag">p</span>&gt;</span><br></pre></td></tr></table></figure>
-
-<h2 id="HTML段落显示"><a href="#HTML段落显示" class="headerlink" title="HTML段落显示"></a><font color="green">HTML段落显示</font></h2><p>你是没有办法去控制网页到底会怎么样显示，小的屏幕，大的屏幕等情况都会变得不一样。而且你也不能添加空格和换行来改变段落显示，网页会自动移除这些空格和空行，比如：</p>
-<figure class="highlight livecodeserver"><table><tr><td class="code"><pre><span class="line">&lt;p&gt;</span><br><span class="line">This <span class="keyword">paragraph</span></span><br><span class="line"><span class="keyword">contains</span> <span class="keyword">a</span> lot <span class="keyword">of</span> <span class="keyword">lines</span></span><br><span class="line"><span class="keyword">in</span> <span class="keyword">the</span> source code,</span><br><span class="line">but <span class="keyword">the</span> browser </span><br><span class="line">ignores <span class="keyword">it</span>.</span><br><span class="line">&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;p&gt;</span><br><span class="line">This <span class="keyword">paragraph</span></span><br><span class="line"><span class="keyword">contains</span>      <span class="keyword">a</span> lot <span class="keyword">of</span> spaces</span><br><span class="line"><span class="keyword">in</span> <span class="keyword">the</span> source     code,</span><br><span class="line">but <span class="keyword">the</span>    browser </span><br><span class="line">ignores <span class="keyword">it</span>.</span><br><span class="line">&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;p&gt;</span><br><span class="line">The <span class="built_in">number</span> <span class="keyword">of</span> <span class="keyword">lines</span> <span class="keyword">in</span> <span class="keyword">a</span> <span class="keyword">paragraph</span> depends <span class="keyword">on</span> <span class="title">the</span> <span class="title">size</span> <span class="title">of</span> <span class="title">the</span> <span class="title">browser</span> <span class="title">window</span>. <span class="title">If</span> <span class="title">you</span> <span class="title">resize</span> <span class="title">the</span> <span class="title">browser</span> <span class="title">window</span>, <span class="title">the</span> <span class="title">number</span> <span class="title">of</span> <span class="title">lines</span> <span class="title">in</span> <span class="title">this</span> <span class="title">paragraph</span> <span class="title">will</span> <span class="title">change</span>.</span><br><span class="line">&lt;/p&gt;</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-add480d3916a9ffc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="显示结果"></p>
-<h2 id="HTML换行"><a href="#HTML换行" class="headerlink" title="HTML换行"></a><font color="green">HTML换行</font></h2><p>HTML中换行，你需要<code>&lt;br&gt;</code>元素来进行实现。你可以在你想换行的地方添加<code>&lt;br&gt;</code>元素来进行换行。<br><code>&lt;p&gt;This is&lt;br&gt;a paragraph&lt;br&gt;with line breaks.&lt;/p&gt;</code></p>
-<h2 id="诗的显示问题"><a href="#诗的显示问题" class="headerlink" title="诗的显示问题"></a><font color="green">诗的显示问题</font></h2><figure class="highlight applescript"><table><tr><td class="code"><pre><span class="line">&lt;p&gt;In HTML, spaces <span class="keyword">and</span> new lines are ignored:&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;p&gt;</span><br><span class="line"></span><br><span class="line">  My Bonnie lies <span class="keyword">over</span> <span class="keyword">the</span> ocean.</span><br><span class="line"></span><br><span class="line">  My Bonnie lies <span class="keyword">over</span> <span class="keyword">the</span> sea.</span><br><span class="line"></span><br><span class="line">  My Bonnie lies <span class="keyword">over</span> <span class="keyword">the</span> ocean.</span><br><span class="line">  </span><br><span class="line">  Oh, bring <span class="keyword">back</span> <span class="keyword">my</span> Bonnie <span class="keyword">to</span> <span class="keyword">me</span>.</span><br><span class="line"></span><br><span class="line">&lt;/p&gt;</span><br></pre></td></tr></table></figure>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-dc60e763c5feda78.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="单行显示了"></p>
-<p>如果想要正常的显示诗，且能够保存空格，那么我们需要用到<code>&lt;pre&gt;</code>元素，它是用来预格式化文本的，能够保存文本原本的空格和换行且能够使字体宽度固定。</p>
-<figure class="highlight vim"><table><tr><td class="code"><pre><span class="line"><span class="symbol">&lt;p&gt;</span>The <span class="keyword">pre</span> <span class="keyword">tag</span> preserves both spaces <span class="built_in">and</span> <span class="built_in">line</span> <span class="keyword">break</span><span class="variable">s:</span>&lt;/<span class="keyword">p</span>&gt;</span><br><span class="line"></span><br><span class="line"><span class="symbol">&lt;pre&gt;</span></span><br><span class="line">   My Bonnie lies over the ocean.</span><br><span class="line"></span><br><span class="line">   My Bonnie lies over the sea.</span><br><span class="line"></span><br><span class="line">   My Bonnie lies over the ocean.</span><br><span class="line">   </span><br><span class="line">   Oh, bring back my Bonnie <span class="keyword">to</span> <span class="keyword">me</span>.</span><br><span class="line">&lt;/<span class="keyword">pre</span>&gt;</span><br></pre></td></tr></table></figure>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-88bb011547100448.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="正常显示诗"></p>
-]]></content>
-      <categories>
-        <category>HTML5入门</category>
-      </categories>
-      <tags>
-        <tag>HTML5</tag>
-        <tag>段落</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>HTML5（8）——样式</title>
     <url>//2018/10/07/HTML5%EF%BC%888%EF%BC%89%E2%80%94%E2%80%94%E6%A0%B7%E5%BC%8F/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -835,32 +802,6 @@
       </tags>
   </entry>
   <entry>
-    <title>LaTeX表格溢出问题</title>
-    <url>//2018/09/20/LaTeX%E8%A1%A8%E6%A0%BC%E6%BA%A2%E5%87%BA%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-a4ba2098aa1800cb.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="海，使人放下自己的身段"></p>
-<p>前面的<a href="https://www.jianshu.com/writer#/notebooks/23465256/notes/33812322">LaTeX插入表格</a>一文主要是来说明怎么插入表格，如果没有看过可以跳到前面去看。今天我们来说一下关于表格的一些细节处理问题。</p>
-<span id="more"></span>
-
-<h1 id="1-表格过长的问题"><a href="#1-表格过长的问题" class="headerlink" title="1 表格过长的问题"></a>1 表格过长的问题</h1><p>有时候我们的表格往往会超过一页的长度，这个时候依旧使用<code>\begin&#123;tabular&#125;...\end&#123;tabular&#125;</code>环境的话，那么肯定会导致表格的溢出，完全看不到表格超出的部分。这个时候我们就需要选择其他的宏包，来进行表格环境的设置。一般来说，我们有几种选择，但是共同的一点是，<strong>必须处理在第二页及后面几页的表头和表尾。</strong><code>\endfirsthead、\endhead、\endfoot和\endlastfoot</code>，这些参数分别用来设置第一页表头，后面每一页表头，后面每一页表尾和最后一页表尾。</p>
-<h3 id="1-1-longtable宏包"><a href="#1-1-longtable宏包" class="headerlink" title="1.1 longtable宏包"></a>1.1 longtable宏包</h3><p>在导言区你需要加载宏包<code>\usepackage&#123;longtable&#125;</code>，它的环境和tabular类似，这里不细讲。</p>
-<figure class="highlight livescript"><table><tr><td class="code"><pre><span class="line"><span class="string">\usepackage&#123;longtable&#125;</span></span><br><span class="line"><span class="string">\begin&#123;longtable&#125;&#123;表格格式&#125;</span></span><br><span class="line"><span class="string">\endhead</span></span><br><span class="line"><span class="string">\endfirsthead</span></span><br><span class="line"><span class="string">\endfoot</span></span><br><span class="line"><span class="string">\endlastfoot</span></span><br><span class="line"><span class="string">\end&#123;longtable&#125;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h3 id="1-2-tabu宏包"><a href="#1-2-tabu宏包" class="headerlink" title="1.2 tabu宏包"></a>1.2 tabu宏包</h3><p>首先也是要在导言区导入tabu和longtable宏包，然后使用的环境是，基本上没有什么区别，只是不同宏包的使用。此外还有一个包也可以使用，就是<code>ltxtable</code>宏包，它的特点是将表格独立为一个tex文件，然后要使用的时候就去引用它。</p>
-<figure class="highlight livescript"><table><tr><td class="code"><pre><span class="line"><span class="string">\usepackage&#123;tabu&#125;</span></span><br><span class="line"><span class="string">\usepackage&#123;longtable&#125;</span></span><br><span class="line"><span class="string">\begin&#123;longtabu&#125;&#123;格式&#125;</span></span><br><span class="line"><span class="string">\endhead</span></span><br><span class="line"><span class="string">\endfirsthead</span></span><br><span class="line"><span class="string">\endfoot</span></span><br><span class="line"><span class="string">\endlastfoot</span></span><br><span class="line"><span class="string">\end&#123;longtabu&#125;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h1 id="2-表格过宽的问题"><a href="#2-表格过宽的问题" class="headerlink" title="2 表格过宽的问题"></a>2 表格过宽的问题</h1><p>这个问题就比表格过长棘手一点，你没有现成的宏包可以使用，只能通过一些间接的方式将表格变窄，包括表格字体缩小，表格横放，表格列间距缩小，表格每一列的宽度减少，修改表头的行数，也可以让表格自动换行，来处理一些溢出的情况。貌似到目前为止还没有很好的宏包来解决。<br>我一般使用的是将每一列的宽度减少，进行适合的调整，到达最好的效果，其中可以使用一个强制换行的宏包来处理表头<code>makecell</code>。没一列宽度的调整就是在上面的环境后面的格式中调整，具体也不做展开，之后再写一篇细节问题来说明。</p>
-]]></content>
-      <categories>
-        <category>LaTeX入门</category>
-      </categories>
-      <tags>
-        <tag>LaTeX</tag>
-        <tag>表格</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>LaTeX表格相关宏包（1）——longtable</title>
     <url>//2018/09/24/LaTeX%E8%A1%A8%E6%A0%BC%E7%9B%B8%E5%85%B3%E5%AE%8F%E5%8C%85%EF%BC%881%EF%BC%89%E2%80%94%E2%80%94longtable/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -1053,54 +994,6 @@
       </tags>
   </entry>
   <entry>
-    <title>印度，漂浮的次大陆</title>
-    <url>//2018/09/06/%E5%8D%B0%E5%BA%A6%EF%BC%8C%E6%BC%82%E6%B5%AE%E7%9A%84%E6%AC%A1%E5%A4%A7%E9%99%86/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![印度，漂浮的次大陆](http://upload-images.jianshu.io/upload_images/3478485-b11c23f0c98ac99f.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-> 俞敏洪老师的推荐，于是就去读了郭建龙一个系列的游记。《穿越百年中东》、《骑车去元朝》、《印度，漂浮的次大陆》和《三千佛塔烟云下》都读了一遍，信息量超级大，不过读起来特别的畅快，特别的流畅。
-> 郭建龙是个文化旅者，总是亲身去体验某个地方的文化，历史，地理，政治，经济和宗教，最后凭借自己的文笔，写出独具特色的游记，我个人非常喜欢，推荐阅读。
-> 内容摘录自郭建龙的《印度，漂浮的次大陆》这本书。
-
-
-
-<span id="more"></span>
-
-<p>哈拉帕（巴基斯坦），洛塔尔（印度）。<br>洛塔尔遗址，手工业和贸易促使其如此的发达。然而，公元前2000年左右，整个印度河文明都衰落了。<br>在欧洲，存在着非洲两次走出的古人类相遇证据。那就是第二次的克罗马农人取代了第一次的尼安德特人，成为现代欧洲人的祖先。那么古印度人的祖先从哪里过来？在比莫贝特卡，发现了穴居文化。</p>
-<p>印度人之前一直以雅利安人的血统引以为豪，认为自己是雅利安人的后裔。但是当考古发现，公元前5000，已经在印度河流域出现了本土的古印度文明，比雅利安人入侵印度次大陆早千年，不得不承认存在高度发达的古印度文明。但印度人和雅利安人有着紧密的联系，<strong>英国人威廉琼斯公爵从语言学上发现，印度的梵语，拉丁语和欧洲的语言有着同一起源，从而也证明了确实雅利安人和印度人有着紧密的联系。</strong>而后来的考古发现也证明，大约在公元前3000年，在中亚大草原、里海附近的雅利安人，分为两支：一支进入欧洲，成为现代欧洲人的祖先；而另一支，经伊朗阿富汗，翻过兴都库什山脉，顺着开伯尔山口进入印度河谷地，最终扩散到整个印度。为什么古老发达的文明无法抵抗雅利安人？因为，在公元前2000左右，古印度文明开始衰落，而此时雅利安人正好在恰当的时机到来，从而入侵整个印度。</p>
-<p><strong>虽然古印度文明消亡了，但是人种并不会就此消失。</strong>在现代的南印度，存在达罗毗荼人，可能与印度河文明的人种一致，且他们拥有自己的语言系统。<strong>现在的印度，分为两种语系，在南方属于达罗毗荼语系，而在北方则是属于梵语。</strong>在印度神奇的是，雅利安人已经入侵印度几千年了，到现在为止，雅利安人和达罗毗荼人还没有完成融合，跟中国社会的情况完全不同。原因：<strong>强大的种姓制度。</strong></p>
-<h2 id="印度教"><a href="#印度教" class="headerlink" title="印度教"></a>印度教</h2><p>雅利安人为了防止自己被当地原始居民同化，从而建立了严格的种姓制度，出现了<strong>四种种姓：婆罗门，刹帝什，吠舍和首陀罗</strong>。分别担任宗教和精神领袖，国王和武士，从事商业，最底层。还有没有种姓的贱民。规定人一出生就确定了种姓，永远也不可能改变，无法进阶到更高的种姓。但是，如果长期下去，最底层的人会越来越多，最终会通过暴力手段推翻这种限制，然而<strong>为什么这种制度能够如此长久的维持？</strong>只能通过宗教信仰手段，将<strong>种姓制度融入到宗教</strong>之中，使其能够自动的被大众接受，这个宗教就是<strong>印度教</strong>。教义强调：人的灵魂是可以轮回的，这一世为人，下一世可能为动物，也可能身为更高种姓的人类，所以给了人们虚假的承诺，使得人们遵从现有的制度而不加以反抗，与中国的儒教相似。</p>
-<p><strong>世界上所有的宗教一般都包括了信仰和伦理两方面，其中信仰是个人化的体验，关系到个人与神之间的沟通，而伦理是一种社会化的体验，主要强调人与人之间的交流。侧重点的不同，宗教分为两大类：基督教和佛教侧重信仰，而印度教和儒教侧重伦理。伊斯兰教处在两者中间。</strong></p>
-<p>在这一时期，印度的神祇也得到了确立，形成了<strong>三大主神：梵天，毗湿奴和湿婆以及无所不包的各路神仙</strong>。其中湿婆是受到最广泛崇拜的主神，同时也是生殖力的代表，于是有了崇拜生殖和崇拜阴茎的传统。湿婆的化身往往是一根石柱，象征着阴茎和生殖力，叫做林伽。在西藏的外喜马拉雅山脉中，有一座形同阴茎的山峰，叫做冈仁波齐，在印度称为凯拉什山，是藏传佛教，苯教和印度教的神山。印度人将前往冈仁波齐看成朝圣的极致。</p>
-<p>同时这一时期，印度史诗也形成。最早的梵语经典<strong>《吠陀经》</strong>成型，<strong>印度的传奇史诗《罗摩衍那》和《摩诃婆罗多》逐渐流传开来。</strong>《罗摩衍那》家喻户晓。</p>
-<h2 id="佛教"><a href="#佛教" class="headerlink" title="佛教"></a>佛教</h2><p><strong>佛陀，或称释迦摩尼，名字叫悉达多乔达摩</strong>。出身在印度十六国时期的迦毗罗卫国的<strong>蓝毗尼</strong>的一棵树下，现在的尼泊尔境内。父亲是迦毗罗卫国的国王净饭王，这个小国依附于大国拘萨罗，是由雅利安人种释迦族建立的，属于刹帝什种姓。母亲摩耶夫人。年轻的悉达多，在王宫中长大，不问世事，整天沉迷爱情俗世，有三位妻子和自己的孩子，在孩子出身的那一年，当悉达多看到世外的人所受的苦难，于是开始思考人生的意义，离开皇宫开始寻找答案。在菩提迦耶的菩提树下，悉达多决定放弃苦修，开始打坐静修。本来他的五位随从认为他已经放弃寻找真理了，于是离开了他。不久，他就彻底领悟，找到了属于自己的<strong>一套理论体系</strong>，<strong>人生的意义是使得自己死后的灵魂得到永恒，也是与印度教类似的轮回机制，但是佛教的是认为轮回本身是一种痛苦，需要跳出轮回，灵魂才能得到永恒。那么如何跳出这个永无止境的轮回呢？</strong>悉达多构想出了<strong>“四谛”</strong>理论体系：<strong>苦谛</strong>，指的人生的一切苦难。<strong>集谛</strong>，贪嗔痴三毒是苦难产生的原因。<strong>灭谛</strong>，消灭苦难就要消灭三毒。<strong>道谛</strong>，修行的行为规范，指八正道，帮助人们消灭三毒的方法，修行得当的人都可以跳出轮回之苦，从而达到活着的意义和死后的永恒。</p>
-<p><strong>四谛</strong>是悉达多理论的核心，因为这个体系<strong>打破了种姓的界限，强调了人生的平等</strong>。任何人要是想跳出轮回，必须要按这种修行方式进行。</p>
-<p>获得顿悟的悉达多没有立即离开，继续思考完善体系，后来来到了一个叫做鹿野苑的地方，收了第一批信徒。这就是之前离开他的五个人，是其父亲在其离开时选派的五位宗室子弟。也就是佛教史上有名的五比丘。也就在此刻开始，佛教的佛、法、僧已经圆满集结，悉达多乔达摩也正式成为佛陀。之后继续传教，走向全国。最后，在晚年，佛陀带了少量弟子来到名叫拘尸那罗的地方，一病不起，不久圆寂与此。而此时的迦毗罗卫国也被拘萨罗消灭，而最后拘萨罗也被摩揭陀国所灭，为印度的统一打下了基础。</p>
-<h2 id="耆那教"><a href="#耆那教" class="headerlink" title="耆那教"></a>耆那教</h2><p>耆那教<strong>人口很少</strong>的宗教，但是在印度却有着及其重大的影响，甚至在<strong>影响力上超过了佛教</strong>。主要有两方面，第一，<strong>更强调苦行</strong>，对于人的要求高，更小众，使得能够接受的它的人很少，但是却是非常的坚定；第二，<strong>没有国际化</strong>。耆那教的创始人，<strong>筏陀摩耶被称为大雄</strong>，他的活动范围与佛陀重叠，也是在摩揭陀国的影响范围内。他强调的是苦行，为了完全达到断绝物欲的地步，甚至拒绝穿衣服，连身上有屎尿都毫不在意。而佛陀是放弃苦修的，过着质朴的生活，不是特意吃苦。</p>
-<p><strong>耆那教和印度教的神庙在外表上有相似之处，但是也有区别</strong>。耆那教的外部花式更加简单，而印度教的华丽高大。内部，耆那教的装饰复杂华丽，奢华无比，而印度教的却是及其简单，最简单的石板搭建的。</p>
-<h2 id="超级大国的更替"><a href="#超级大国的更替" class="headerlink" title="超级大国的更替"></a>超级大国的更替</h2><p>中国对印度的影响在公元前后到达，在这之前，对印度影响至深的是西方的希腊传导过去的事件，<strong>亚历山大的东征</strong>。但在亚历山大东征统治世界之前，是西亚的波斯文明主导全世界的强大政权。</p>
-<p>当西亚的新巴比伦帝国衰亡之后，伊朗境内兴起了一个新的帝国——<strong>波斯的阿契美尼德王朝</strong>，这是后来统治中亚的历代波斯王朝中的第一个。西亚的政治中心也从伊拉克两河流域转移到了伊朗境内。</p>
-<p>公元前7世纪，当时整个波斯在米底人的统治下。阿契美尼德死后，其儿子脱离了米底王国，经历过几代的继承，到了<strong>居鲁士二世</strong>统治时期，消灭了米底人的政权，还将前霸主新巴比伦帝国也消灭了。此后其儿子冈比西斯二世征服了埃及和非洲的大批领土，而其继承者<strong>大流士一世</strong>却改变了征服方向，开始向东方，越过开伯尔山口，进入印度河平原地区。之后又改变方向，又向西，入侵了希腊人的领土，<strong>从此将不起眼的希腊和欧洲带入了世界的舞台</strong>。希腊本来在东方的眼里根本不值得一提，只是生意人，他们航海走向各地，建立殖民地，只是为了做生意而不是扩张领土。<strong>波斯人入侵希腊，使得希腊各个弱小的城邦抱团抵抗，爆发出了强大的力量，使得波斯人战败</strong>。大流士一世之后，儿子薛西斯发动了第二次入侵，希腊人再次胜利，此后波斯就进入了衰落期，而西方兴起了新的霸主希腊。</p>
-<p>但希腊的这种团结不久就分裂，两个最大的城邦<strong>雅典和斯巴达</strong>开始争夺希腊的领导权，最终在波斯人的帮助下，斯巴达打败了雅典。但结果是两败俱伤。</p>
-<p>与此同时，一个希腊人看不起的<strong>希腊北部的马其顿</strong>兴起了，马其顿国王<strong>腓力二世</strong>打败了雅典和科林斯强权，使整个<strong>希腊半岛在历史上第一次统一</strong>。腓力二世的儿子就是著名的<strong>亚历山大大帝</strong>，这时整个希腊已经属于马其顿，他先进军<strong>小亚细亚</strong>，再把<strong>埃及</strong>纳入自己的版图，埃及的古老文明从此消失。接着进军<strong>波斯</strong>，打败波斯王大流士三世，最终波斯王朝覆灭。之后继续挥兵<strong>中亚阿富汗</strong>，塔吉克斯坦直到新疆以西的<strong>河中地区</strong>。突然就做了一个决定，向<strong>印度</strong>进军。<strong>此时的印度，内部也在进行着激烈的整合。摩揭陀国成为胜利者，几乎统一了全国</strong>。摩揭陀共包含了四个朝代，最后的难陀王朝是非常重要的承上启下的朝代，这时的印度的疆域已经有目前的一半大小，囊括整个北印度，和现代孟加拉国和缅甸的一部分。正是在这个朝代，亚历山大挥师进入印度。在印度，面临的是许多具有单独作战实力地区，如同游击战，亚历山大大帝陷入了全面作战的汪洋大海中，加之印度南北跨度几千公里，气候复杂，最后被迫撤退。不久，<strong>33岁的亚历山大大帝在巴比伦得病去世</strong>，留下了许多亚历山大的城市和希腊化的世界，其余化为传说。而这一次入侵对于印度的政治影响，间接促成了本土的伟大帝国的出现——<strong>孔雀帝国，印度第一次统一</strong>。</p>
-<p>亚历山大大帝撤退，使得整个西北印度陷入了权利的真空状态。原有的政治势力被破坏掉了，犍陀罗等国家被征服，另一方面难陀王朝还没有将控制力延伸过去。这时一个名叫<strong>旃陀罗笈多孔雀的人</strong>汇集大军向摩揭陀的难陀王朝进军，这时的难陀王朝也已经腐败无能，也希望新的君王接管权力。大军压境，难陀国王选择退位，避免了一场血腥的战争，孔雀王朝继承了难陀王打下了的江山。旃陀罗笈多孔雀最后在一个山洞里修行，信奉耆那教，最后默默的死去。他的孙子<strong>阿育王</strong>经过继承战，据说杀死了自己的99个亲兄弟，从自己的父亲频头娑罗哪里得到了孔雀王朝的宝座。阿育王前半生在杀戮中度过，而后半生却信奉佛教，在全国建造了数万座佛塔，然而现在剩下的只有<strong>桑吉大塔</strong>和鹿野苑的<strong>答枚克塔</strong>。</p>
-<p><strong>贵霜人</strong>的历史，最早可以从中国的战国时期找到痕迹，在中国西部的甘肃河西走廊一带，有一个半游牧民族在这里生活了很久。从某种程度上来说，<strong>月氏人</strong>是一个过渡民族，恰好夹在了游牧和定居之间，且受到了双方的威胁。其中在南方是定居的<strong>华夏民族</strong>，经过了春秋战国，秦国正在崛起，而在北方则是<strong>游牧民族匈奴</strong>。事实证明，游牧民族的威胁更大。直到秦朝末年，匈奴还比月氏人弱小，作为寄主国，当时匈奴的王位继承人只能以人质身份在月氏人当中生活，最后一位是叫做<strong>冒顿</strong>的匈奴人，没有受到善待，仇视月氏人，最后其逃回自己的部落，成为新的单于，从此以后月氏人进入了噩梦时期，<strong>冒顿挥师南下，屠杀，公元前202年左右，月氏人被迫放弃了肥沃的河西走廊，向西迁移。</strong>公元前177年左右，冒顿再次击败月氏人，被迫再次迁移，一部分南下进入了<strong>青海境内</strong>，被当地人同化；另一部分继续西迁，到达了新疆的<strong>准葛尔盆地</strong>。公元前162年，冒顿的儿子老上，再次打败月氏人，将月氏王的头颅砍下，当了酒器。只好再次西迁到了<strong>新疆的伊犁一带</strong>。这一次的西迁，引起了<strong>连锁反应</strong>，原本在伊犁这一带的<strong>斯基泰人向西南运动</strong>，进入了阿富汗境内。而这时在伊犁的月氏人因为被汉王朝打击的匈奴人的西迁，只好向西方的中亚地区前进，进入了著名<strong>河中地区</strong>，也就是阿姆河和锡尔河中间地带。而在河中地区，遭到了当地人的驱赶，不得不向南，进入了阿富汗伊朗境内，使得在这里的<strong>斯基泰人再次向南移动</strong>。在此之前，阿富汗和伊朗境内居住者安息人和希腊人，亚历山大征服中亚后，希腊人的后裔在这里建立起了大夏王国，在斯基泰人和月氏人的压力下，<strong>巴克特里亚人纷纷南下，进入印度境内，成为了入侵印度的第一波势力</strong>。</p>
-<p>由匈奴人和月氏人搅动的一系列民族迁徙活动，将一波一波的人们赶往了印度次大陆。张骞出使西域本来想联合月氏人给匈奴人来个东西夹击，但是月氏人拒绝了，不想再回到中国，此后月氏人彻底离开了中国的范围。<strong>公元前140年</strong>，在斯基泰人之后，月氏人也南下到了<strong>大夏边境</strong>，此时月氏人已经分成了5个部落，而贵霜就是其中的一个。之后打败了西部的安息国，继续占领大夏东部地区。此时接触到了大夏的希腊化文明，<strong>月氏人开始希腊化，从此变成了定居民族</strong>。并发行自己的货币和开始发展商贸关系。这时也受到了印度佛教的影响，开始将佛教作为他们的宗教。公元前1世纪初，<strong>贵霜部落</strong>打败其余部落，建立了<strong>贵霜帝国</strong>。在印度希腊人、印度斯基泰人、印度安息人之后，印度贵霜帝国正式登场。</p>
-<p><strong>维查耶纳加尔</strong>是印度教最后一个伟大帝国，负有捍卫印度教、抵抗伊斯兰教的重任。毁灭后，伊斯兰教长驱直入，在次大陆占据了主导地位，开始了几百年的伊斯兰政权时期。实际上，<strong>维查耶纳加尔就是为了对抗伊斯兰才出现</strong>。当北印度处于德里苏丹国统治的时候，南印度曾经强大的遮卢迦王国和拉什特拉库塔王国已经消亡。取而代之的四个小王国，分别是雅达瓦、卡卡提亚，潘地亚王国和霍伊萨拉王国。</p>
-<p>阿拉-乌德-丁用一生与南印度各国征战，其中就征服了雅达瓦和霍伊萨拉。前者为穆斯林提供了新的都城，而后者灭亡使得维查耶纳加尔在其土地上成长起来。</p>
-<p>巴马尼苏丹国的出现，这个伊斯兰国家的兴起与德里苏丹穆罕穆德图格鲁克迁都失败有关。比达尔城是该国的首都，与汉皮相比，伊斯兰教有最先进的战争理念，而印度教徒却是将首都看成生活的地方，由此也可以看出，两者在对战是的成败。南印度就在这两个教权国家的残忍战争中被扭曲，直到其中一个国家垮掉。最后，巴马尼苏丹最先垮掉，分为五个小苏丹国，这五个小国又内斗，最后成为三个苏丹国，最后联合起来，打败了维查耶纳加尔国，历史仅留下了汉皮这片废墟。此时，南印度也成了伊斯兰教的天下。这三个苏丹国也进入了黄金时代，而印度教最后的伟大政权也终于轰然倒塌。这时候，同属于伊斯兰教的来自北方的莫卧儿人出现了。</p>
-<p>在<strong>中世纪</strong>，虽然印度的佛教被印度教取代，但仍旧是世界的<strong>佛教中心</strong>，其中最有名的就是那烂陀大学，学术圣殿。但是在<strong>12世纪</strong>时，当古尔人到来，穆罕默德首领下的努力将军库特卜<strong>占领毁灭了那烂陀大学</strong>，<strong>使得佛教从印度消失</strong>。13世纪初，库特卜成立德里苏丹国，在莫卧尔人到来前，控制印度300多年。<strong>德里，现在印度的首都开始登上历史舞台。</strong></p>
-<p><strong>13世纪，成吉思汗带着蒙古人席卷了整个世界</strong>，在中国建立了元朝，在波斯建立了<strong>伊尔汗国</strong>，在俄罗斯人的土地上建立了<strong>金帐汗国</strong>，在如今的新疆西部、中亚建立了<strong>察合台汗国</strong>，在新疆北部和蒙古东部建立了<strong>窝阔台汗国</strong>。这五大汗国占领了当时已知世界的一大半。之后蒙古很快衰败，在<strong>察合台汗国</strong>的土地上，在14世纪后半期突厥人<strong>帖木儿</strong>威慑整个中亚、西亚和中欧，甚至占领了印度的一部分。但是在进攻明朝时，突然途中去世，此后帖木儿帝国分崩离析。<strong>然而此时，中亚出现了一位蒙古人和突厥人的双重后裔，巴布尔</strong>。让他占领印度，并开创了一个伟大的王朝。<br><strong>巴布尔在父系上是帖木儿的直系后裔，从母系来说，是成吉思汗的后裔。</strong>因此，从1483年出生，就带着世界上最有血性的两个人的基因。</p>
-<p>河中地区的城市撒马尔罕是帖木儿的都城，要称霸中亚必须拿下撒马尔罕，但是命中注定不属于巴布尔，一世经过三次进攻，却一次都没有成功，中亚的大门从此关闭。然而，经过分析，印度是个不错的可以暂时栖息之地，前四次进攻印度只是在外围，现在的巴基斯坦境内，没有深入到德里地区，然而第五次，德里苏丹出现内乱，有人请他去去德里，于是决心进军德里。<strong>这次战役的胜利，决定了印度历史的未来300年，建立了一个伟大的帝国。</strong>巴布尔在阿拉格建立了帝国的首都，阿拉格是用艺术和建筑征服印度，其后代也大都继承了祖先的艺术气质，使得<strong>莫卧尔成为艺术世界的巅峰</strong>。此后，巴布尔平定了整个北部地区，不久去世，他的儿子胡马雍继承王位，但此时的帝国还没有稳定，<strong>胡马雍</strong>不善战，被东方孟加拉的将军舍尔汗打败，被赶出了印度，退到了阿富汗。而舍尔汗在位期间，使整个印度政局稳定。死后，胡马雍很快从其后代那里夺回了印度，继承了舍尔汗开创的一系列制度，并重新将首都迁到了德里。之后不小心摔死在图书馆，成为第一个葬在印度土地上的莫卧尔皇帝。</p>
-]]></content>
-      <categories>
-        <category>读书笔记</category>
-      </categories>
-      <tags>
-        <tag>印度</tag>
-        <tag>郭建龙</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>基于全基因组的基因家族分析（4）：SlNRAMP家族基因进化树构建</title>
     <url>//2022/07/31/%E5%9F%BA%E4%BA%8E%E5%85%A8%E5%9F%BA%E5%9B%A0%E7%BB%84%E7%9A%84%E5%9F%BA%E5%9B%A0%E5%AE%B6%E6%97%8F%E5%88%86%E6%9E%90%EF%BC%884%EF%BC%89%EF%BC%9ASlNRAMP%E5%AE%B6%E6%97%8F%E5%9F%BA%E5%9B%A0%E8%BF%9B%E5%8C%96%E6%A0%91%E6%9E%84%E5%BB%BA/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -1178,6 +1071,54 @@ characterization of aluminum resistance in Populus"><br>这里我先用比较麻
       </categories>
       <tags>
         <tag>gene</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>印度，漂浮的次大陆</title>
+    <url>//2018/09/06/%E5%8D%B0%E5%BA%A6%EF%BC%8C%E6%BC%82%E6%B5%AE%E7%9A%84%E6%AC%A1%E5%A4%A7%E9%99%86/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![印度，漂浮的次大陆](http://upload-images.jianshu.io/upload_images/3478485-b11c23f0c98ac99f.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+> 俞敏洪老师的推荐，于是就去读了郭建龙一个系列的游记。《穿越百年中东》、《骑车去元朝》、《印度，漂浮的次大陆》和《三千佛塔烟云下》都读了一遍，信息量超级大，不过读起来特别的畅快，特别的流畅。
+> 郭建龙是个文化旅者，总是亲身去体验某个地方的文化，历史，地理，政治，经济和宗教，最后凭借自己的文笔，写出独具特色的游记，我个人非常喜欢，推荐阅读。
+> 内容摘录自郭建龙的《印度，漂浮的次大陆》这本书。
+
+
+
+<span id="more"></span>
+
+<p>哈拉帕（巴基斯坦），洛塔尔（印度）。<br>洛塔尔遗址，手工业和贸易促使其如此的发达。然而，公元前2000年左右，整个印度河文明都衰落了。<br>在欧洲，存在着非洲两次走出的古人类相遇证据。那就是第二次的克罗马农人取代了第一次的尼安德特人，成为现代欧洲人的祖先。那么古印度人的祖先从哪里过来？在比莫贝特卡，发现了穴居文化。</p>
+<p>印度人之前一直以雅利安人的血统引以为豪，认为自己是雅利安人的后裔。但是当考古发现，公元前5000，已经在印度河流域出现了本土的古印度文明，比雅利安人入侵印度次大陆早千年，不得不承认存在高度发达的古印度文明。但印度人和雅利安人有着紧密的联系，<strong>英国人威廉琼斯公爵从语言学上发现，印度的梵语，拉丁语和欧洲的语言有着同一起源，从而也证明了确实雅利安人和印度人有着紧密的联系。</strong>而后来的考古发现也证明，大约在公元前3000年，在中亚大草原、里海附近的雅利安人，分为两支：一支进入欧洲，成为现代欧洲人的祖先；而另一支，经伊朗阿富汗，翻过兴都库什山脉，顺着开伯尔山口进入印度河谷地，最终扩散到整个印度。为什么古老发达的文明无法抵抗雅利安人？因为，在公元前2000左右，古印度文明开始衰落，而此时雅利安人正好在恰当的时机到来，从而入侵整个印度。</p>
+<p><strong>虽然古印度文明消亡了，但是人种并不会就此消失。</strong>在现代的南印度，存在达罗毗荼人，可能与印度河文明的人种一致，且他们拥有自己的语言系统。<strong>现在的印度，分为两种语系，在南方属于达罗毗荼语系，而在北方则是属于梵语。</strong>在印度神奇的是，雅利安人已经入侵印度几千年了，到现在为止，雅利安人和达罗毗荼人还没有完成融合，跟中国社会的情况完全不同。原因：<strong>强大的种姓制度。</strong></p>
+<h2 id="印度教"><a href="#印度教" class="headerlink" title="印度教"></a>印度教</h2><p>雅利安人为了防止自己被当地原始居民同化，从而建立了严格的种姓制度，出现了<strong>四种种姓：婆罗门，刹帝什，吠舍和首陀罗</strong>。分别担任宗教和精神领袖，国王和武士，从事商业，最底层。还有没有种姓的贱民。规定人一出生就确定了种姓，永远也不可能改变，无法进阶到更高的种姓。但是，如果长期下去，最底层的人会越来越多，最终会通过暴力手段推翻这种限制，然而<strong>为什么这种制度能够如此长久的维持？</strong>只能通过宗教信仰手段，将<strong>种姓制度融入到宗教</strong>之中，使其能够自动的被大众接受，这个宗教就是<strong>印度教</strong>。教义强调：人的灵魂是可以轮回的，这一世为人，下一世可能为动物，也可能身为更高种姓的人类，所以给了人们虚假的承诺，使得人们遵从现有的制度而不加以反抗，与中国的儒教相似。</p>
+<p><strong>世界上所有的宗教一般都包括了信仰和伦理两方面，其中信仰是个人化的体验，关系到个人与神之间的沟通，而伦理是一种社会化的体验，主要强调人与人之间的交流。侧重点的不同，宗教分为两大类：基督教和佛教侧重信仰，而印度教和儒教侧重伦理。伊斯兰教处在两者中间。</strong></p>
+<p>在这一时期，印度的神祇也得到了确立，形成了<strong>三大主神：梵天，毗湿奴和湿婆以及无所不包的各路神仙</strong>。其中湿婆是受到最广泛崇拜的主神，同时也是生殖力的代表，于是有了崇拜生殖和崇拜阴茎的传统。湿婆的化身往往是一根石柱，象征着阴茎和生殖力，叫做林伽。在西藏的外喜马拉雅山脉中，有一座形同阴茎的山峰，叫做冈仁波齐，在印度称为凯拉什山，是藏传佛教，苯教和印度教的神山。印度人将前往冈仁波齐看成朝圣的极致。</p>
+<p>同时这一时期，印度史诗也形成。最早的梵语经典<strong>《吠陀经》</strong>成型，<strong>印度的传奇史诗《罗摩衍那》和《摩诃婆罗多》逐渐流传开来。</strong>《罗摩衍那》家喻户晓。</p>
+<h2 id="佛教"><a href="#佛教" class="headerlink" title="佛教"></a>佛教</h2><p><strong>佛陀，或称释迦摩尼，名字叫悉达多乔达摩</strong>。出身在印度十六国时期的迦毗罗卫国的<strong>蓝毗尼</strong>的一棵树下，现在的尼泊尔境内。父亲是迦毗罗卫国的国王净饭王，这个小国依附于大国拘萨罗，是由雅利安人种释迦族建立的，属于刹帝什种姓。母亲摩耶夫人。年轻的悉达多，在王宫中长大，不问世事，整天沉迷爱情俗世，有三位妻子和自己的孩子，在孩子出身的那一年，当悉达多看到世外的人所受的苦难，于是开始思考人生的意义，离开皇宫开始寻找答案。在菩提迦耶的菩提树下，悉达多决定放弃苦修，开始打坐静修。本来他的五位随从认为他已经放弃寻找真理了，于是离开了他。不久，他就彻底领悟，找到了属于自己的<strong>一套理论体系</strong>，<strong>人生的意义是使得自己死后的灵魂得到永恒，也是与印度教类似的轮回机制，但是佛教的是认为轮回本身是一种痛苦，需要跳出轮回，灵魂才能得到永恒。那么如何跳出这个永无止境的轮回呢？</strong>悉达多构想出了<strong>“四谛”</strong>理论体系：<strong>苦谛</strong>，指的人生的一切苦难。<strong>集谛</strong>，贪嗔痴三毒是苦难产生的原因。<strong>灭谛</strong>，消灭苦难就要消灭三毒。<strong>道谛</strong>，修行的行为规范，指八正道，帮助人们消灭三毒的方法，修行得当的人都可以跳出轮回之苦，从而达到活着的意义和死后的永恒。</p>
+<p><strong>四谛</strong>是悉达多理论的核心，因为这个体系<strong>打破了种姓的界限，强调了人生的平等</strong>。任何人要是想跳出轮回，必须要按这种修行方式进行。</p>
+<p>获得顿悟的悉达多没有立即离开，继续思考完善体系，后来来到了一个叫做鹿野苑的地方，收了第一批信徒。这就是之前离开他的五个人，是其父亲在其离开时选派的五位宗室子弟。也就是佛教史上有名的五比丘。也就在此刻开始，佛教的佛、法、僧已经圆满集结，悉达多乔达摩也正式成为佛陀。之后继续传教，走向全国。最后，在晚年，佛陀带了少量弟子来到名叫拘尸那罗的地方，一病不起，不久圆寂与此。而此时的迦毗罗卫国也被拘萨罗消灭，而最后拘萨罗也被摩揭陀国所灭，为印度的统一打下了基础。</p>
+<h2 id="耆那教"><a href="#耆那教" class="headerlink" title="耆那教"></a>耆那教</h2><p>耆那教<strong>人口很少</strong>的宗教，但是在印度却有着及其重大的影响，甚至在<strong>影响力上超过了佛教</strong>。主要有两方面，第一，<strong>更强调苦行</strong>，对于人的要求高，更小众，使得能够接受的它的人很少，但是却是非常的坚定；第二，<strong>没有国际化</strong>。耆那教的创始人，<strong>筏陀摩耶被称为大雄</strong>，他的活动范围与佛陀重叠，也是在摩揭陀国的影响范围内。他强调的是苦行，为了完全达到断绝物欲的地步，甚至拒绝穿衣服，连身上有屎尿都毫不在意。而佛陀是放弃苦修的，过着质朴的生活，不是特意吃苦。</p>
+<p><strong>耆那教和印度教的神庙在外表上有相似之处，但是也有区别</strong>。耆那教的外部花式更加简单，而印度教的华丽高大。内部，耆那教的装饰复杂华丽，奢华无比，而印度教的却是及其简单，最简单的石板搭建的。</p>
+<h2 id="超级大国的更替"><a href="#超级大国的更替" class="headerlink" title="超级大国的更替"></a>超级大国的更替</h2><p>中国对印度的影响在公元前后到达，在这之前，对印度影响至深的是西方的希腊传导过去的事件，<strong>亚历山大的东征</strong>。但在亚历山大东征统治世界之前，是西亚的波斯文明主导全世界的强大政权。</p>
+<p>当西亚的新巴比伦帝国衰亡之后，伊朗境内兴起了一个新的帝国——<strong>波斯的阿契美尼德王朝</strong>，这是后来统治中亚的历代波斯王朝中的第一个。西亚的政治中心也从伊拉克两河流域转移到了伊朗境内。</p>
+<p>公元前7世纪，当时整个波斯在米底人的统治下。阿契美尼德死后，其儿子脱离了米底王国，经历过几代的继承，到了<strong>居鲁士二世</strong>统治时期，消灭了米底人的政权，还将前霸主新巴比伦帝国也消灭了。此后其儿子冈比西斯二世征服了埃及和非洲的大批领土，而其继承者<strong>大流士一世</strong>却改变了征服方向，开始向东方，越过开伯尔山口，进入印度河平原地区。之后又改变方向，又向西，入侵了希腊人的领土，<strong>从此将不起眼的希腊和欧洲带入了世界的舞台</strong>。希腊本来在东方的眼里根本不值得一提，只是生意人，他们航海走向各地，建立殖民地，只是为了做生意而不是扩张领土。<strong>波斯人入侵希腊，使得希腊各个弱小的城邦抱团抵抗，爆发出了强大的力量，使得波斯人战败</strong>。大流士一世之后，儿子薛西斯发动了第二次入侵，希腊人再次胜利，此后波斯就进入了衰落期，而西方兴起了新的霸主希腊。</p>
+<p>但希腊的这种团结不久就分裂，两个最大的城邦<strong>雅典和斯巴达</strong>开始争夺希腊的领导权，最终在波斯人的帮助下，斯巴达打败了雅典。但结果是两败俱伤。</p>
+<p>与此同时，一个希腊人看不起的<strong>希腊北部的马其顿</strong>兴起了，马其顿国王<strong>腓力二世</strong>打败了雅典和科林斯强权，使整个<strong>希腊半岛在历史上第一次统一</strong>。腓力二世的儿子就是著名的<strong>亚历山大大帝</strong>，这时整个希腊已经属于马其顿，他先进军<strong>小亚细亚</strong>，再把<strong>埃及</strong>纳入自己的版图，埃及的古老文明从此消失。接着进军<strong>波斯</strong>，打败波斯王大流士三世，最终波斯王朝覆灭。之后继续挥兵<strong>中亚阿富汗</strong>，塔吉克斯坦直到新疆以西的<strong>河中地区</strong>。突然就做了一个决定，向<strong>印度</strong>进军。<strong>此时的印度，内部也在进行着激烈的整合。摩揭陀国成为胜利者，几乎统一了全国</strong>。摩揭陀共包含了四个朝代，最后的难陀王朝是非常重要的承上启下的朝代，这时的印度的疆域已经有目前的一半大小，囊括整个北印度，和现代孟加拉国和缅甸的一部分。正是在这个朝代，亚历山大挥师进入印度。在印度，面临的是许多具有单独作战实力地区，如同游击战，亚历山大大帝陷入了全面作战的汪洋大海中，加之印度南北跨度几千公里，气候复杂，最后被迫撤退。不久，<strong>33岁的亚历山大大帝在巴比伦得病去世</strong>，留下了许多亚历山大的城市和希腊化的世界，其余化为传说。而这一次入侵对于印度的政治影响，间接促成了本土的伟大帝国的出现——<strong>孔雀帝国，印度第一次统一</strong>。</p>
+<p>亚历山大大帝撤退，使得整个西北印度陷入了权利的真空状态。原有的政治势力被破坏掉了，犍陀罗等国家被征服，另一方面难陀王朝还没有将控制力延伸过去。这时一个名叫<strong>旃陀罗笈多孔雀的人</strong>汇集大军向摩揭陀的难陀王朝进军，这时的难陀王朝也已经腐败无能，也希望新的君王接管权力。大军压境，难陀国王选择退位，避免了一场血腥的战争，孔雀王朝继承了难陀王打下了的江山。旃陀罗笈多孔雀最后在一个山洞里修行，信奉耆那教，最后默默的死去。他的孙子<strong>阿育王</strong>经过继承战，据说杀死了自己的99个亲兄弟，从自己的父亲频头娑罗哪里得到了孔雀王朝的宝座。阿育王前半生在杀戮中度过，而后半生却信奉佛教，在全国建造了数万座佛塔，然而现在剩下的只有<strong>桑吉大塔</strong>和鹿野苑的<strong>答枚克塔</strong>。</p>
+<p><strong>贵霜人</strong>的历史，最早可以从中国的战国时期找到痕迹，在中国西部的甘肃河西走廊一带，有一个半游牧民族在这里生活了很久。从某种程度上来说，<strong>月氏人</strong>是一个过渡民族，恰好夹在了游牧和定居之间，且受到了双方的威胁。其中在南方是定居的<strong>华夏民族</strong>，经过了春秋战国，秦国正在崛起，而在北方则是<strong>游牧民族匈奴</strong>。事实证明，游牧民族的威胁更大。直到秦朝末年，匈奴还比月氏人弱小，作为寄主国，当时匈奴的王位继承人只能以人质身份在月氏人当中生活，最后一位是叫做<strong>冒顿</strong>的匈奴人，没有受到善待，仇视月氏人，最后其逃回自己的部落，成为新的单于，从此以后月氏人进入了噩梦时期，<strong>冒顿挥师南下，屠杀，公元前202年左右，月氏人被迫放弃了肥沃的河西走廊，向西迁移。</strong>公元前177年左右，冒顿再次击败月氏人，被迫再次迁移，一部分南下进入了<strong>青海境内</strong>，被当地人同化；另一部分继续西迁，到达了新疆的<strong>准葛尔盆地</strong>。公元前162年，冒顿的儿子老上，再次打败月氏人，将月氏王的头颅砍下，当了酒器。只好再次西迁到了<strong>新疆的伊犁一带</strong>。这一次的西迁，引起了<strong>连锁反应</strong>，原本在伊犁这一带的<strong>斯基泰人向西南运动</strong>，进入了阿富汗境内。而这时在伊犁的月氏人因为被汉王朝打击的匈奴人的西迁，只好向西方的中亚地区前进，进入了著名<strong>河中地区</strong>，也就是阿姆河和锡尔河中间地带。而在河中地区，遭到了当地人的驱赶，不得不向南，进入了阿富汗伊朗境内，使得在这里的<strong>斯基泰人再次向南移动</strong>。在此之前，阿富汗和伊朗境内居住者安息人和希腊人，亚历山大征服中亚后，希腊人的后裔在这里建立起了大夏王国，在斯基泰人和月氏人的压力下，<strong>巴克特里亚人纷纷南下，进入印度境内，成为了入侵印度的第一波势力</strong>。</p>
+<p>由匈奴人和月氏人搅动的一系列民族迁徙活动，将一波一波的人们赶往了印度次大陆。张骞出使西域本来想联合月氏人给匈奴人来个东西夹击，但是月氏人拒绝了，不想再回到中国，此后月氏人彻底离开了中国的范围。<strong>公元前140年</strong>，在斯基泰人之后，月氏人也南下到了<strong>大夏边境</strong>，此时月氏人已经分成了5个部落，而贵霜就是其中的一个。之后打败了西部的安息国，继续占领大夏东部地区。此时接触到了大夏的希腊化文明，<strong>月氏人开始希腊化，从此变成了定居民族</strong>。并发行自己的货币和开始发展商贸关系。这时也受到了印度佛教的影响，开始将佛教作为他们的宗教。公元前1世纪初，<strong>贵霜部落</strong>打败其余部落，建立了<strong>贵霜帝国</strong>。在印度希腊人、印度斯基泰人、印度安息人之后，印度贵霜帝国正式登场。</p>
+<p><strong>维查耶纳加尔</strong>是印度教最后一个伟大帝国，负有捍卫印度教、抵抗伊斯兰教的重任。毁灭后，伊斯兰教长驱直入，在次大陆占据了主导地位，开始了几百年的伊斯兰政权时期。实际上，<strong>维查耶纳加尔就是为了对抗伊斯兰才出现</strong>。当北印度处于德里苏丹国统治的时候，南印度曾经强大的遮卢迦王国和拉什特拉库塔王国已经消亡。取而代之的四个小王国，分别是雅达瓦、卡卡提亚，潘地亚王国和霍伊萨拉王国。</p>
+<p>阿拉-乌德-丁用一生与南印度各国征战，其中就征服了雅达瓦和霍伊萨拉。前者为穆斯林提供了新的都城，而后者灭亡使得维查耶纳加尔在其土地上成长起来。</p>
+<p>巴马尼苏丹国的出现，这个伊斯兰国家的兴起与德里苏丹穆罕穆德图格鲁克迁都失败有关。比达尔城是该国的首都，与汉皮相比，伊斯兰教有最先进的战争理念，而印度教徒却是将首都看成生活的地方，由此也可以看出，两者在对战是的成败。南印度就在这两个教权国家的残忍战争中被扭曲，直到其中一个国家垮掉。最后，巴马尼苏丹最先垮掉，分为五个小苏丹国，这五个小国又内斗，最后成为三个苏丹国，最后联合起来，打败了维查耶纳加尔国，历史仅留下了汉皮这片废墟。此时，南印度也成了伊斯兰教的天下。这三个苏丹国也进入了黄金时代，而印度教最后的伟大政权也终于轰然倒塌。这时候，同属于伊斯兰教的来自北方的莫卧儿人出现了。</p>
+<p>在<strong>中世纪</strong>，虽然印度的佛教被印度教取代，但仍旧是世界的<strong>佛教中心</strong>，其中最有名的就是那烂陀大学，学术圣殿。但是在<strong>12世纪</strong>时，当古尔人到来，穆罕默德首领下的努力将军库特卜<strong>占领毁灭了那烂陀大学</strong>，<strong>使得佛教从印度消失</strong>。13世纪初，库特卜成立德里苏丹国，在莫卧尔人到来前，控制印度300多年。<strong>德里，现在印度的首都开始登上历史舞台。</strong></p>
+<p><strong>13世纪，成吉思汗带着蒙古人席卷了整个世界</strong>，在中国建立了元朝，在波斯建立了<strong>伊尔汗国</strong>，在俄罗斯人的土地上建立了<strong>金帐汗国</strong>，在如今的新疆西部、中亚建立了<strong>察合台汗国</strong>，在新疆北部和蒙古东部建立了<strong>窝阔台汗国</strong>。这五大汗国占领了当时已知世界的一大半。之后蒙古很快衰败，在<strong>察合台汗国</strong>的土地上，在14世纪后半期突厥人<strong>帖木儿</strong>威慑整个中亚、西亚和中欧，甚至占领了印度的一部分。但是在进攻明朝时，突然途中去世，此后帖木儿帝国分崩离析。<strong>然而此时，中亚出现了一位蒙古人和突厥人的双重后裔，巴布尔</strong>。让他占领印度，并开创了一个伟大的王朝。<br><strong>巴布尔在父系上是帖木儿的直系后裔，从母系来说，是成吉思汗的后裔。</strong>因此，从1483年出生，就带着世界上最有血性的两个人的基因。</p>
+<p>河中地区的城市撒马尔罕是帖木儿的都城，要称霸中亚必须拿下撒马尔罕，但是命中注定不属于巴布尔，一世经过三次进攻，却一次都没有成功，中亚的大门从此关闭。然而，经过分析，印度是个不错的可以暂时栖息之地，前四次进攻印度只是在外围，现在的巴基斯坦境内，没有深入到德里地区，然而第五次，德里苏丹出现内乱，有人请他去去德里，于是决心进军德里。<strong>这次战役的胜利，决定了印度历史的未来300年，建立了一个伟大的帝国。</strong>巴布尔在阿拉格建立了帝国的首都，阿拉格是用艺术和建筑征服印度，其后代也大都继承了祖先的艺术气质，使得<strong>莫卧尔成为艺术世界的巅峰</strong>。此后，巴布尔平定了整个北部地区，不久去世，他的儿子胡马雍继承王位，但此时的帝国还没有稳定，<strong>胡马雍</strong>不善战，被东方孟加拉的将军舍尔汗打败，被赶出了印度，退到了阿富汗。而舍尔汗在位期间，使整个印度政局稳定。死后，胡马雍很快从其后代那里夺回了印度，继承了舍尔汗开创的一系列制度，并重新将首都迁到了德里。之后不小心摔死在图书馆，成为第一个葬在印度土地上的莫卧尔皇帝。</p>
+]]></content>
+      <categories>
+        <category>读书笔记</category>
+      </categories>
+      <tags>
+        <tag>印度</tag>
+        <tag>郭建龙</tag>
       </tags>
   </entry>
   <entry>
@@ -1319,6 +1260,48 @@ characterization of aluminum resistance in Populus"><br>这里我先用比较麻
       </categories>
       <tags>
         <tag>电影</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>杂乱无章</title>
+    <url>//2018/08/28/%E6%9D%82%E4%B9%B1%E6%97%A0%E7%AB%A0/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![拿着相机，一个人旅行](https://upload-images.jianshu.io/upload_images/3478485-14565c6637c4fa19.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+<p>8月27日，星期一，公元2018年。</p>
+<span id="more"></span>
+
+<p>8月27日，星期一，公元2018年。</p>
+<p>干了一天，几乎没有坐下的时候。骑车离开生科院的时候，突然觉得自己就想是一个工人，白天工作，晚上运动健身和自学，想来也是非常的满足。然而，事情永远没有这么简单，真正工作以后，恐怕没有那么悠闲。</p>
+<p>最近已经能够比较好的控制一下自己，不再如此的散漫。在过去的6月份，真是觉得自个儿已经抛弃一部分超我，使得自我更多的释放。满满的都是娱乐活动，吃饭，看电影和旅游，比暑假更加潇洒。我知道，我一直以来就是这么一个人，对于别人，我总想让他们有一些仪式感，自己变得比别人更操心自己，但是前提是我想关心的人。这个是有点还是缺点，我并不能很好的定义对错，只是不该太过火。师姐的毕业典礼，我去拍照；校园风景，我去拍照；小伙伴的毕业旅行，我也一同参加。干了无数能够留下深刻印象的事。</p>
+<p>有目标，才有动力；有计划，才能有满足感；完成计划，才能有幸福感。大部分时候的状态，就是无目标和无计划，生活处在焦虑之中，特别地不安。这种状态的打破，就需要你自身的行动，想到的东西，要出尽快实行；要去解决你害怕去解决的问题；搞定心中的恐惧放空自己的内心，才能最终踏实满足。</p>
+<p>今年也算是旅行过了，南京之行，也非常的开心。但是，你要知道，很多时候内心就会有一种冲动，就想去看看更外面的世界。前两天看到了一条骑行路线，真的太诱人了，完全没法形容我内心的激动，即使不能够前去体验。看看，回想回想之前的经历，也能够让我开心一会儿，那也就够了。岁月慢慢流逝，一天天在变老，尽管思想还没有服气，但是身体很明显的不如从前了。</p>
+<p>我们没法改变，只能磨炼遇事不惊的心态。</p>
+]]></content>
+      <categories>
+        <category>随记</category>
+      </categories>
+      <tags>
+        <tag>旅行</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>植物Cas9靶点设计网站简介</title>
+    <url>//2019/02/05/%E6%A4%8D%E7%89%A9Cas9%E9%9D%B6%E7%82%B9%E8%AE%BE%E8%AE%A1%E7%BD%91%E7%AB%99%E7%AE%80%E4%BB%8B/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![cas9模型](https://upload-images.jianshu.io/upload_images/3478485-e845fed2bd99b07b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+<span id="more"></span>
+
+<p>我在前面的简文中已经基本阐述了Cas9的作用机制，详细内容可以看<a href="https://www.jianshu.com/p/1e7bff7d5830">CRISPR-Cas9系统简介</a>一文。今天，就来讲一讲怎么实际使用这个系统来帮助我们进行功能基因的研究。这个技术一问世，很多大牛就开始使用，植物学领域的应用，使得我们能够更方便的有目的的去编辑我们想要编辑的植物基因组。今天就推荐几个网站，寻找靶点序列的网站。前面我们也提到过，好的靶点的选择，可以减小脱靶率，大大提高我们编辑的效率。能够极大提高我们的实验效率，不然像我们植物学领域的苦逼博士，不得疯掉，一直一直脱靶的话，那么就真的非常的酸爽。</p>
+<h3 id="CRISPR-PLANT"><a href="#CRISPR-PLANT" class="headerlink" title="CRISPR-PLANT"></a><font color = "green">CRISPR-PLANT</font></h3><p>具体网址：<a href="https://www.genome.arizona.edu/crispr/index.html">https://www.genome.arizona.edu/crispr/index.html</a>。 看这个网址，应该是Arizona大学出品的。这是一个专门针对植物CRISPR靶点设计网站，比较专业，较为好用的网站。首页有一张模式图，而且还有对CRISPR-Cas9系统的基本介绍，大概可以了解。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-f2f550500f26be7a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="网站首页"><br>导航栏中有几个标签链接，如果你不知道怎么使用，那么你就可以点击instruction来学习，里面有比较详细的介绍。如果要开始找靶点，那就点击search。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-6181cec9ae7ec031.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="导航栏"><br>进入search主页，就可以看到查找的方式。这里它也建议你先看知道手册，然后在进行设计。查找的输入信息有两种，a.染色体位置信息；b.基因locus，通常情况下我们在查找的时候感觉locus用的比较多，一般你肯定是知道基因的信息去进行search。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-2e0980dc0152cf1e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="search主页"><br>这个网站可以找的物种包括拟南芥、二穗短柄草、大豆、蒺藜苜蓿、水稻、高粱、番茄和玉米；还是挺多的，一般都能符合需求。当然，如果你的物种实在是太过于小众，那么可惜，没法用这个网站进行。那么，下面这个网站就可以一定程度满足你。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-0b1d6da7b6ab97bd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="这里给的物种基因组"></p>
+<h3 id="CRISPRSCAN"><a href="#CRISPRSCAN" class="headerlink" title="CRISPRSCAN"></a><font color="green">CRISPRSCAN</font></h3><p>具体网址：<a href="http://www.crisprscan.org/?page=sequence">http://www.crisprscan.org/?page=sequence</a>。这个网站是都是动物的，没有植物物种的，但是为什么要推荐这个网站呢？因为我们最开始就是使用这个网站进行靶点筛选的，之后在拟南芥和番茄中进行了尝试敲除，结果都能够得到敲除的株系，也是能够使用这个来进行引物的设计。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-ef69894d221d6ddc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="网站首页"><br>这个网站里，有很多动物，果蝇、人类、小鼠和鸡等物种，没有植物的，但是你可以选择No search这个选项，然后将你的序列黏贴进去，之后会出来靶点，但是它的评估只有一个score，没有其他的了。这个网站，现在对我们植物的来说，还是基本不用了，有其他专门的植物的网站。下面这个网站就更好了，非常全面的植物的网站。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-a8e5bf4933bff970.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="这个网站有的一些物种"></p>
+<h3 id="CRISPR-P-2-0"><a href="#CRISPR-P-2-0" class="headerlink" title="CRISPR-P 2.0"></a><font color = "green">CRISPR-P 2.0</font></h3><p>具体网址：<a href="http://crispr.hzau.edu.cn/CRISPR2/">http://crispr.hzau.edu.cn/CRISPR2/</a>。这个网站是华中农业大学大学设计的，做的还是很不错的。用了之后，感觉比前面两个的内容更丰富，而且评估的更全面。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-43966e8205ae6ee8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="网站首页，也很漂亮"><br>点击网站右上角的start design，你就可以开始设计相应的引物。里面的信息更加细化。有pam类型选择，启动子选择，引导序列的长度，物种基因组选择，可以通过locus以及位置信息和序列进行靶基因的选定。它这个网站的物种数据是整合了NCBI数据库，所以基本包括了已经测序完全的植物基因组，解决了物种限制这个问题，普遍性强了。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-6b15fc0bac0d5e23.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="设计页面"><br>我用网站中的例子，来展示一下靶点搜索结果。它可以根据开始的碱基A/G来筛选靶点，也可以通过score、gc含量和位置信息来进行靶点筛选。此外，当你将鼠标移到靶点上，会出现具体信息：显示了位置，打分，序列，切割位点（红色箭头），启动子，以及脱靶位点数量和错位碱基数等，可以说相当丰富。而且，如果某些靶点存在酶切位点，也会同时显示出来。如果不理解这些参数，网站首页的<strong>help</strong>会有详细的解释，包括怎么选择靶点。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-3ce8f6271f54d084.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="靶点"><br><img src="https://upload-images.jianshu.io/upload_images/3478485-c617285e77a1dab2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="靶点信息"><br>这几个CRISPR相关的网站介绍就到这里结束了，具体应用还是需要有实际例子去使用，尝试。<br>今天是大年初一，给大家拜个年，新春快乐，实验顺利，早发paper。</p>
+]]></content>
+      <categories>
+        <category>学习记录</category>
+      </categories>
+      <tags>
+        <tag>Cas9</tag>
       </tags>
   </entry>
   <entry>
@@ -1532,45 +1515,51 @@ characterization of aluminum resistance in Populus"><br>这里我先用比较麻
       </tags>
   </entry>
   <entry>
-    <title>杂乱无章</title>
-    <url>//2018/08/28/%E6%9D%82%E4%B9%B1%E6%97%A0%E7%AB%A0/</url>
+    <title>狼伴归途</title>
+    <url>//2018/09/13/%E7%8B%BC%E4%BC%B4%E5%BD%92%E9%80%94/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![拿着相机，一个人旅行](https://upload-images.jianshu.io/upload_images/3478485-14565c6637c4fa19.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![狼伴归途](https://upload-images.jianshu.io/upload_images/3478485-71c67307e95546df.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+9月9日，星期六，公元2018年
 
-<p>8月27日，星期一，公元2018年。</p>
 <span id="more"></span>
 
-<p>8月27日，星期一，公元2018年。</p>
-<p>干了一天，几乎没有坐下的时候。骑车离开生科院的时候，突然觉得自己就想是一个工人，白天工作，晚上运动健身和自学，想来也是非常的满足。然而，事情永远没有这么简单，真正工作以后，恐怕没有那么悠闲。</p>
-<p>最近已经能够比较好的控制一下自己，不再如此的散漫。在过去的6月份，真是觉得自个儿已经抛弃一部分超我，使得自我更多的释放。满满的都是娱乐活动，吃饭，看电影和旅游，比暑假更加潇洒。我知道，我一直以来就是这么一个人，对于别人，我总想让他们有一些仪式感，自己变得比别人更操心自己，但是前提是我想关心的人。这个是有点还是缺点，我并不能很好的定义对错，只是不该太过火。师姐的毕业典礼，我去拍照；校园风景，我去拍照；小伙伴的毕业旅行，我也一同参加。干了无数能够留下深刻印象的事。</p>
-<p>有目标，才有动力；有计划，才能有满足感；完成计划，才能有幸福感。大部分时候的状态，就是无目标和无计划，生活处在焦虑之中，特别地不安。这种状态的打破，就需要你自身的行动，想到的东西，要出尽快实行；要去解决你害怕去解决的问题；搞定心中的恐惧放空自己的内心，才能最终踏实满足。</p>
-<p>今年也算是旅行过了，南京之行，也非常的开心。但是，你要知道，很多时候内心就会有一种冲动，就想去看看更外面的世界。前两天看到了一条骑行路线，真的太诱人了，完全没法形容我内心的激动，即使不能够前去体验。看看，回想回想之前的经历，也能够让我开心一会儿，那也就够了。岁月慢慢流逝，一天天在变老，尽管思想还没有服气，但是身体很明显的不如从前了。</p>
-<p>我们没法改变，只能磨炼遇事不惊的心态。</p>
+<p>狼伴归途，最精彩的就是宏大的史前场景再现，让人看了非常的享受，被其所征服。故事的情节还是比较的简单，年轻的孩子在失去父母呵护之后，通过自己的和狼的努力，经历千辛万苦最后回到了父母的怀抱。狼和孩子一起，最终平安到家，并为部落带来了狼这种动物，我想之后就是被驯化成狗。<br>觉得还是可以去看一下，电影场景很唯美。</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-1847b7b43f7ef666.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="wolf2.jpg"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-7acc324003fe7eeb.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="wolf3.jpg"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-05dda12e9ab338f8.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="wolf4.jpg"></p>
 ]]></content>
       <categories>
-        <category>随记</category>
+        <category>影评领域</category>
       </categories>
       <tags>
-        <tag>旅行</tag>
+        <tag>电影</tag>
       </tags>
   </entry>
   <entry>
-    <title>植物Cas9靶点设计网站简介</title>
-    <url>//2019/02/05/%E6%A4%8D%E7%89%A9Cas9%E9%9D%B6%E7%82%B9%E8%AE%BE%E8%AE%A1%E7%BD%91%E7%AB%99%E7%AE%80%E4%BB%8B/</url>
+    <title>疫情记</title>
+    <url>//2020/04/12/%E7%96%AB%E6%83%85%E8%AE%B0/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![cas9模型](https://upload-images.jianshu.io/upload_images/3478485-e845fed2bd99b07b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/Image/20200412232125.png"></p>
 <span id="more"></span>
 
-<p>我在前面的简文中已经基本阐述了Cas9的作用机制，详细内容可以看<a href="https://www.jianshu.com/p/1e7bff7d5830">CRISPR-Cas9系统简介</a>一文。今天，就来讲一讲怎么实际使用这个系统来帮助我们进行功能基因的研究。这个技术一问世，很多大牛就开始使用，植物学领域的应用，使得我们能够更方便的有目的的去编辑我们想要编辑的植物基因组。今天就推荐几个网站，寻找靶点序列的网站。前面我们也提到过，好的靶点的选择，可以减小脱靶率，大大提高我们编辑的效率。能够极大提高我们的实验效率，不然像我们植物学领域的苦逼博士，不得疯掉，一直一直脱靶的话，那么就真的非常的酸爽。</p>
-<h3 id="CRISPR-PLANT"><a href="#CRISPR-PLANT" class="headerlink" title="CRISPR-PLANT"></a><font color = "green">CRISPR-PLANT</font></h3><p>具体网址：<a href="https://www.genome.arizona.edu/crispr/index.html">https://www.genome.arizona.edu/crispr/index.html</a>。 看这个网址，应该是Arizona大学出品的。这是一个专门针对植物CRISPR靶点设计网站，比较专业，较为好用的网站。首页有一张模式图，而且还有对CRISPR-Cas9系统的基本介绍，大概可以了解。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-f2f550500f26be7a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="网站首页"><br>导航栏中有几个标签链接，如果你不知道怎么使用，那么你就可以点击instruction来学习，里面有比较详细的介绍。如果要开始找靶点，那就点击search。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-6181cec9ae7ec031.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="导航栏"><br>进入search主页，就可以看到查找的方式。这里它也建议你先看知道手册，然后在进行设计。查找的输入信息有两种，a.染色体位置信息；b.基因locus，通常情况下我们在查找的时候感觉locus用的比较多，一般你肯定是知道基因的信息去进行search。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-2e0980dc0152cf1e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="search主页"><br>这个网站可以找的物种包括拟南芥、二穗短柄草、大豆、蒺藜苜蓿、水稻、高粱、番茄和玉米；还是挺多的，一般都能符合需求。当然，如果你的物种实在是太过于小众，那么可惜，没法用这个网站进行。那么，下面这个网站就可以一定程度满足你。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-0b1d6da7b6ab97bd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="这里给的物种基因组"></p>
-<h3 id="CRISPRSCAN"><a href="#CRISPRSCAN" class="headerlink" title="CRISPRSCAN"></a><font color="green">CRISPRSCAN</font></h3><p>具体网址：<a href="http://www.crisprscan.org/?page=sequence">http://www.crisprscan.org/?page=sequence</a>。这个网站是都是动物的，没有植物物种的，但是为什么要推荐这个网站呢？因为我们最开始就是使用这个网站进行靶点筛选的，之后在拟南芥和番茄中进行了尝试敲除，结果都能够得到敲除的株系，也是能够使用这个来进行引物的设计。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-ef69894d221d6ddc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="网站首页"><br>这个网站里，有很多动物，果蝇、人类、小鼠和鸡等物种，没有植物的，但是你可以选择No search这个选项，然后将你的序列黏贴进去，之后会出来靶点，但是它的评估只有一个score，没有其他的了。这个网站，现在对我们植物的来说，还是基本不用了，有其他专门的植物的网站。下面这个网站就更好了，非常全面的植物的网站。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-a8e5bf4933bff970.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="这个网站有的一些物种"></p>
-<h3 id="CRISPR-P-2-0"><a href="#CRISPR-P-2-0" class="headerlink" title="CRISPR-P 2.0"></a><font color = "green">CRISPR-P 2.0</font></h3><p>具体网址：<a href="http://crispr.hzau.edu.cn/CRISPR2/">http://crispr.hzau.edu.cn/CRISPR2/</a>。这个网站是华中农业大学大学设计的，做的还是很不错的。用了之后，感觉比前面两个的内容更丰富，而且评估的更全面。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-43966e8205ae6ee8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="网站首页，也很漂亮"><br>点击网站右上角的start design，你就可以开始设计相应的引物。里面的信息更加细化。有pam类型选择，启动子选择，引导序列的长度，物种基因组选择，可以通过locus以及位置信息和序列进行靶基因的选定。它这个网站的物种数据是整合了NCBI数据库，所以基本包括了已经测序完全的植物基因组，解决了物种限制这个问题，普遍性强了。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-6b15fc0bac0d5e23.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="设计页面"><br>我用网站中的例子，来展示一下靶点搜索结果。它可以根据开始的碱基A/G来筛选靶点，也可以通过score、gc含量和位置信息来进行靶点筛选。此外，当你将鼠标移到靶点上，会出现具体信息：显示了位置，打分，序列，切割位点（红色箭头），启动子，以及脱靶位点数量和错位碱基数等，可以说相当丰富。而且，如果某些靶点存在酶切位点，也会同时显示出来。如果不理解这些参数，网站首页的<strong>help</strong>会有详细的解释，包括怎么选择靶点。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-3ce8f6271f54d084.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="靶点"><br><img src="https://upload-images.jianshu.io/upload_images/3478485-c617285e77a1dab2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="靶点信息"><br>这几个CRISPR相关的网站介绍就到这里结束了，具体应用还是需要有实际例子去使用，尝试。<br>今天是大年初一，给大家拜个年，新春快乐，实验顺利，早发paper。</p>
+<p>2020年1月19日回家到现在会学校，时间差不多过去了3个月。似乎从来没有在家里休息过那么长时间，细细回想起来，也没有做什么事情。最主要的就是以下几件事情：</p>
+<h3 id="读书"><a href="#读书" class="headerlink" title="读书"></a><font color="green">读书</font></h3><p>感觉自己从来没有连续读那么多的书，当然数量仅仅和我自己比较，有两三年加起来都没有这个寒假期间读的多。就这一点而言，我觉得很满足很充实，读书的时候其实很享受，会有一种与周围环境脱离的感受，到了另一个境界。我的书单：<a href="https://post.smzdm.com/p/aeke0x4k/">好书一起分享。</a></p>
+<p>突然让我意识到，自己是否已经舍弃这个习惯很久。我打算重新拾起这件事，哪怕晚上睡觉前只用5分钟的时间来阅读，也是很美好。另外一个习惯——买书，我也打算有规律的去执行，每个月花100块钱，买3-4本书，那么一年下来也有50本左右的新书加入我的书库。积少成多，水滴石穿，<strong>持续坚持积累</strong>觉不可小觑。</p>
+<h3 id="Python"><a href="#Python" class="headerlink" title="Python"></a><font color="green">Python</font></h3><p>Python这件事，出于偶然。帮<strong>大牛</strong>抢口罩，只抢到了一次，后面怎么也抢不到。朋友圈看到师弟使用Python写了web自动化程序，让电脑自动帮你点击按钮，抢购口罩。我使用他的程序成功抢到了，从此我觉得应该学习Python。</p>
+<p>我一直觉得未来社会，必须要有编程思维。我不是想通过这个方向来找工作，我想使用程序语言，来帮助我去完成大量重复性任务，为我的科研奠定基础。一直以来，我都难以有规则的完整的学习一门语言，从Linux的shell，到Perl语言，再到R语言，然后C语言，最后就是现在的Python。我内心渴望能够学习至少一门语言，能够帮助我解决科研问题。然而从来都是<strong>入门到放弃</strong>。</p>
+<p>这一次，我真的下定决心开始了Python的学习。我买了课程，从头至尾一步一步走，不断地前进。目前课程仍在更新中，我也每周在学习，<strong>继续积累</strong>。同时还有另外一个目的，我想给<strong>大牛</strong>写一个游戏，她说是她的新年愿望。</p>
+<h3 id="写作记录"><a href="#写作记录" class="headerlink" title="写作记录"></a><font color="green">写作记录</font></h3><p>寒假，我也重新拾起了一个好习惯——写作记录。在<strong>什么值得买</strong>写自己的心得，在简书记录学习心得，在百度经验与<strong>何大牛</strong>一起经营记录遇到的问题。写作这件事，我确实中断了很久，这次是<strong>何大牛</strong>的参与，让我重新也拾起来，总感觉两个人比一个人更能干，更有动力，更开心。</p>
+<h3 id="做家常菜"><a href="#做家常菜" class="headerlink" title="做家常菜"></a><font color="green">做家常菜</font></h3><p>大学，假期时间长，每次总是会学习做菜，其实也不算学习，只是凭感觉完成任务。爸妈比较忙，我大多数时候需要准备午餐和晚餐。这个假期，我感觉自己<strong>厨艺</strong>进步非常大，我做的菜明显感觉提升了档次，难道是我的学习能力提高了。</p>
+<p>其实都是相同的方法，我们需要去学习别人的经验，去模仿别人，从而快速让我们自己成长起来。一开始做菜，拍照分享给<strong>何大牛</strong>，都不夸我一下，还说我不务正业，还是有点难受。后期，开始了完全相反的状态，我不做了，她反而持续不断搞花样（<strong>雪花酥，海底捞，雪媚娘，电饭锅蛋糕，干锅包菜，煎猪蹄，做清明饺</strong>）。偶尔还会知道我，让我做这个，这个怎么做，妥妥的导师模样。</p>
+<h3 id="视频剪辑"><a href="#视频剪辑" class="headerlink" title="视频剪辑"></a><font color="green">视频剪辑</font></h3><p>2019年末，买了八爪鱼，我突然开始了视频拍摄。最开始的还是拍<strong>何大牛</strong>，她做<u>蛋白实验</u>，后面还有<u>剪番茄子叶</u>，后来就变成了我们日常生活记录——<strong>吃饭，玩耍，浇水和犯傻行为</strong>。</p>
+<p>回家后，开始学习编辑视频，将之前的所有视频几乎整理，同时也清理手机存储。我慢慢地会<strong>用iMovie，用screenflow，和final cut Pro</strong>做简单的视频剪辑。这些工具是越用月熟练，但我的电脑确实内存不太够，在导出视频的时候，风扇疯狂地转。</p>
 ]]></content>
       <categories>
-        <category>学习记录</category>
+        <category>人生小结</category>
       </categories>
       <tags>
-        <tag>Cas9</tag>
+        <tag>日记</tag>
       </tags>
   </entry>
   <entry>
@@ -1742,54 +1731,6 @@ characterization of aluminum resistance in Populus"><br>这里我先用比较麻
       <tags>
         <tag>旅行</tag>
         <tag>海南</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>狼伴归途</title>
-    <url>//2018/09/13/%E7%8B%BC%E4%BC%B4%E5%BD%92%E9%80%94/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![狼伴归途](https://upload-images.jianshu.io/upload_images/3478485-71c67307e95546df.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-9月9日，星期六，公元2018年
-
-<span id="more"></span>
-
-<p>狼伴归途，最精彩的就是宏大的史前场景再现，让人看了非常的享受，被其所征服。故事的情节还是比较的简单，年轻的孩子在失去父母呵护之后，通过自己的和狼的努力，经历千辛万苦最后回到了父母的怀抱。狼和孩子一起，最终平安到家，并为部落带来了狼这种动物，我想之后就是被驯化成狗。<br>觉得还是可以去看一下，电影场景很唯美。</p>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-1847b7b43f7ef666.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="wolf2.jpg"></p>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-7acc324003fe7eeb.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="wolf3.jpg"></p>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-05dda12e9ab338f8.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="wolf4.jpg"></p>
-]]></content>
-      <categories>
-        <category>影评领域</category>
-      </categories>
-      <tags>
-        <tag>电影</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>疫情记</title>
-    <url>//2020/04/12/%E7%96%AB%E6%83%85%E8%AE%B0/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-
-<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/Image/20200412232125.png"></p>
-<span id="more"></span>
-
-<p>2020年1月19日回家到现在会学校，时间差不多过去了3个月。似乎从来没有在家里休息过那么长时间，细细回想起来，也没有做什么事情。最主要的就是以下几件事情：</p>
-<h3 id="读书"><a href="#读书" class="headerlink" title="读书"></a><font color="green">读书</font></h3><p>感觉自己从来没有连续读那么多的书，当然数量仅仅和我自己比较，有两三年加起来都没有这个寒假期间读的多。就这一点而言，我觉得很满足很充实，读书的时候其实很享受，会有一种与周围环境脱离的感受，到了另一个境界。我的书单：<a href="https://post.smzdm.com/p/aeke0x4k/">好书一起分享。</a></p>
-<p>突然让我意识到，自己是否已经舍弃这个习惯很久。我打算重新拾起这件事，哪怕晚上睡觉前只用5分钟的时间来阅读，也是很美好。另外一个习惯——买书，我也打算有规律的去执行，每个月花100块钱，买3-4本书，那么一年下来也有50本左右的新书加入我的书库。积少成多，水滴石穿，<strong>持续坚持积累</strong>觉不可小觑。</p>
-<h3 id="Python"><a href="#Python" class="headerlink" title="Python"></a><font color="green">Python</font></h3><p>Python这件事，出于偶然。帮<strong>大牛</strong>抢口罩，只抢到了一次，后面怎么也抢不到。朋友圈看到师弟使用Python写了web自动化程序，让电脑自动帮你点击按钮，抢购口罩。我使用他的程序成功抢到了，从此我觉得应该学习Python。</p>
-<p>我一直觉得未来社会，必须要有编程思维。我不是想通过这个方向来找工作，我想使用程序语言，来帮助我去完成大量重复性任务，为我的科研奠定基础。一直以来，我都难以有规则的完整的学习一门语言，从Linux的shell，到Perl语言，再到R语言，然后C语言，最后就是现在的Python。我内心渴望能够学习至少一门语言，能够帮助我解决科研问题。然而从来都是<strong>入门到放弃</strong>。</p>
-<p>这一次，我真的下定决心开始了Python的学习。我买了课程，从头至尾一步一步走，不断地前进。目前课程仍在更新中，我也每周在学习，<strong>继续积累</strong>。同时还有另外一个目的，我想给<strong>大牛</strong>写一个游戏，她说是她的新年愿望。</p>
-<h3 id="写作记录"><a href="#写作记录" class="headerlink" title="写作记录"></a><font color="green">写作记录</font></h3><p>寒假，我也重新拾起了一个好习惯——写作记录。在<strong>什么值得买</strong>写自己的心得，在简书记录学习心得，在百度经验与<strong>何大牛</strong>一起经营记录遇到的问题。写作这件事，我确实中断了很久，这次是<strong>何大牛</strong>的参与，让我重新也拾起来，总感觉两个人比一个人更能干，更有动力，更开心。</p>
-<h3 id="做家常菜"><a href="#做家常菜" class="headerlink" title="做家常菜"></a><font color="green">做家常菜</font></h3><p>大学，假期时间长，每次总是会学习做菜，其实也不算学习，只是凭感觉完成任务。爸妈比较忙，我大多数时候需要准备午餐和晚餐。这个假期，我感觉自己<strong>厨艺</strong>进步非常大，我做的菜明显感觉提升了档次，难道是我的学习能力提高了。</p>
-<p>其实都是相同的方法，我们需要去学习别人的经验，去模仿别人，从而快速让我们自己成长起来。一开始做菜，拍照分享给<strong>何大牛</strong>，都不夸我一下，还说我不务正业，还是有点难受。后期，开始了完全相反的状态，我不做了，她反而持续不断搞花样（<strong>雪花酥，海底捞，雪媚娘，电饭锅蛋糕，干锅包菜，煎猪蹄，做清明饺</strong>）。偶尔还会知道我，让我做这个，这个怎么做，妥妥的导师模样。</p>
-<h3 id="视频剪辑"><a href="#视频剪辑" class="headerlink" title="视频剪辑"></a><font color="green">视频剪辑</font></h3><p>2019年末，买了八爪鱼，我突然开始了视频拍摄。最开始的还是拍<strong>何大牛</strong>，她做<u>蛋白实验</u>，后面还有<u>剪番茄子叶</u>，后来就变成了我们日常生活记录——<strong>吃饭，玩耍，浇水和犯傻行为</strong>。</p>
-<p>回家后，开始学习编辑视频，将之前的所有视频几乎整理，同时也清理手机存储。我慢慢地会<strong>用iMovie，用screenflow，和final cut Pro</strong>做简单的视频剪辑。这些工具是越用月熟练，但我的电脑确实内存不太够，在导出视频的时候，风扇疯狂地转。</p>
-]]></content>
-      <categories>
-        <category>人生小结</category>
-      </categories>
-      <tags>
-        <tag>日记</tag>
       </tags>
   </entry>
   <entry>
@@ -2154,6 +2095,41 @@ characterization of aluminum resistance in Populus"><br>这里我先用比较麻
       </tags>
   </entry>
   <entry>
+    <title>Geneious如何使用本地blast</title>
+    <url>//2022/08/05/Geneious%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8%E6%9C%AC%E5%9C%B0blast/</url>
+    <content><![CDATA[<div class="note primary">
+            <p>Geneious来进行本地blast，便于节省时间</p>
+          </div>
+<meta name="referrer" content="no-referrer" />
+
+
+<span id="more"></span>
+
+<h1 id="安装ncbi-blast本地blast软件"><a href="#安装ncbi-blast本地blast软件" class="headerlink" title="安装ncbi-blast本地blast软件"></a><font color=green>安装ncbi-blast本地blast软件</font></h1><ul>
+<li>按步骤1-2-3打开界面<br><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-08-05-3HpSMr.png" alt="2022-08-05-3HpSMr"><br></li>
+<li>点击OK，然后geneious会自行检测安装ncbi-blast<br><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-08-05-1VlJOD.png" alt="2022-08-05-1VlJOD"></li>
+<li>显示正在安装<br><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-08-05-JzYvPw.png" alt="2022-08-05-JzYvPw"></li>
+</ul>
+<h1 id="本地Blast数据库构建"><a href="#本地Blast数据库构建" class="headerlink" title="本地Blast数据库构建"></a><font color=green>本地Blast数据库构建</font></h1><ul>
+<li>例如可以讲物种基因组或者所有编码蛋白进行格式化，可以用于blast。<br><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-08-05-T5v64m.png" alt="2022-08-05-T5v64m"></li>
+<li>可以选择从已经下载好的数据导入，最后点击OK，就完成本地blast数据库的构建。<br><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-08-05-fcbXgl.png" alt="2022-08-05-fcbXgl"></li>
+</ul>
+<h1 id="选择目标基因进行数据库blast"><a href="#选择目标基因进行数据库blast" class="headerlink" title="选择目标基因进行数据库blast"></a><font color=green>选择目标基因进行数据库blast</font></h1><p>一个物种的基因去比对另一个物种的基因组或者蛋白数据，得到相关的同源蛋白。<br><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-08-05-xh6Dga.png" alt="2022-08-05-xh6Dga"></p>
+<div class="note primary">
+            <p>参考内容：<a href="https://assets.geneious.com/manual/2022.1/index.html">Geneious官方文档</a>。 </p>
+          </div>
+
+]]></content>
+      <categories>
+        <category>科研之路</category>
+      </categories>
+      <tags>
+        <tag>小技巧</tag>
+        <tag>Geneious</tag>
+        <tag>blast</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>西北之行</title>
     <url>//2018/08/31/%E8%A5%BF%E5%8C%97%E4%B9%8B%E8%A1%8C/</url>
     <content><![CDATA[<h1 id="启程"><a href="#启程" class="headerlink" title="启程"></a>启程</h1><p>2016年8月份，G20学校放假，准备去祖国的大西北看看。画面很多，充满所有的时间，期间也经历了一辈子也就一次的事情，那一刻实在是难以平复。下面就用图片来述说整个旅行的过程，文笔只能这样了。</p>
@@ -2361,38 +2337,62 @@ characterization of aluminum resistance in Populus"><br>这里我先用比较麻
       </tags>
   </entry>
   <entry>
-    <title>Geneious如何使用本地blast</title>
-    <url>//2022/08/05/Geneious%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8%E6%9C%AC%E5%9C%B0blast/</url>
-    <content><![CDATA[<div class="note primary">
-            <p>Geneious来进行本地blast，便于节省时间</p>
-          </div>
-<meta name="referrer" content="no-referrer" />
+    <title>HTML5（7）——段落</title>
+    <url>//2018/10/06/HTML5%EF%BC%887%EF%BC%89%E2%80%94%E2%80%94%E6%AE%B5%E8%90%BD/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![想法很多，已没有经历实现](https://upload-images.jianshu.io/upload_images/3478485-f715b416af9c6294.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+> 现在不得不感叹，很多事情有想法，却找不到人一起去实现。继续学习HTML5，来讲一讲段落。
+
 
 
 <span id="more"></span>
 
-<h1 id="安装ncbi-blast本地blast软件"><a href="#安装ncbi-blast本地blast软件" class="headerlink" title="安装ncbi-blast本地blast软件"></a><font color=green>安装ncbi-blast本地blast软件</font></h1><ul>
-<li>按步骤1-2-3打开界面<br><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-08-05-3HpSMr.png" alt="2022-08-05-3HpSMr"><br></li>
-<li>点击OK，然后geneious会自行检测安装ncbi-blast<br><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-08-05-1VlJOD.png" alt="2022-08-05-1VlJOD"></li>
-<li>显示正在安装<br><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-08-05-JzYvPw.png" alt="2022-08-05-JzYvPw"></li>
-</ul>
-<h1 id="本地Blast数据库构建"><a href="#本地Blast数据库构建" class="headerlink" title="本地Blast数据库构建"></a><font color=green>本地Blast数据库构建</font></h1><ul>
-<li>例如可以讲物种基因组或者所有编码蛋白进行格式化，可以用于blast。<br><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-08-05-T5v64m.png" alt="2022-08-05-T5v64m"></li>
-<li>可以选择从已经下载好的数据导入，最后点击OK，就完成本地blast数据库的构建。<br><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-08-05-fcbXgl.png" alt="2022-08-05-fcbXgl"></li>
-</ul>
-<h1 id="选择目标基因进行数据库blast"><a href="#选择目标基因进行数据库blast" class="headerlink" title="选择目标基因进行数据库blast"></a><font color=green>选择目标基因进行数据库blast</font></h1><p>一个物种的基因去比对另一个物种的基因组或者蛋白数据，得到相关的同源蛋白。<br><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-08-05-xh6Dga.png" alt="2022-08-05-xh6Dga"></p>
-<div class="note primary">
-            <p>参考内容：<a href="https://assets.geneious.com/manual/2022.1/index.html">Geneious官方文档</a>。 </p>
-          </div>
+<h2 id="HTML段落"><a href="#HTML段落" class="headerlink" title="HTML段落"></a><font color="green">HTML段落</font></h2><p><code>&lt;p&gt;</code>元素是用来定义段落的，并且是由结束标签的。而且网页在解析时，会自动在段落前和段落后添加一些空格区域。</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line">&lt;<span class="selector-tag">p</span>&gt;This is <span class="selector-tag">a</span> paragraph.&lt;/<span class="selector-tag">p</span>&gt;</span><br><span class="line">&lt;<span class="selector-tag">p</span>&gt;This is another paragraph.&lt;/<span class="selector-tag">p</span>&gt;</span><br></pre></td></tr></table></figure>
 
+<h2 id="HTML段落显示"><a href="#HTML段落显示" class="headerlink" title="HTML段落显示"></a><font color="green">HTML段落显示</font></h2><p>你是没有办法去控制网页到底会怎么样显示，小的屏幕，大的屏幕等情况都会变得不一样。而且你也不能添加空格和换行来改变段落显示，网页会自动移除这些空格和空行，比如：</p>
+<figure class="highlight livecodeserver"><table><tr><td class="code"><pre><span class="line">&lt;p&gt;</span><br><span class="line">This <span class="keyword">paragraph</span></span><br><span class="line"><span class="keyword">contains</span> <span class="keyword">a</span> lot <span class="keyword">of</span> <span class="keyword">lines</span></span><br><span class="line"><span class="keyword">in</span> <span class="keyword">the</span> source code,</span><br><span class="line">but <span class="keyword">the</span> browser </span><br><span class="line">ignores <span class="keyword">it</span>.</span><br><span class="line">&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;p&gt;</span><br><span class="line">This <span class="keyword">paragraph</span></span><br><span class="line"><span class="keyword">contains</span>      <span class="keyword">a</span> lot <span class="keyword">of</span> spaces</span><br><span class="line"><span class="keyword">in</span> <span class="keyword">the</span> source     code,</span><br><span class="line">but <span class="keyword">the</span>    browser </span><br><span class="line">ignores <span class="keyword">it</span>.</span><br><span class="line">&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;p&gt;</span><br><span class="line">The <span class="built_in">number</span> <span class="keyword">of</span> <span class="keyword">lines</span> <span class="keyword">in</span> <span class="keyword">a</span> <span class="keyword">paragraph</span> depends <span class="keyword">on</span> <span class="title">the</span> <span class="title">size</span> <span class="title">of</span> <span class="title">the</span> <span class="title">browser</span> <span class="title">window</span>. <span class="title">If</span> <span class="title">you</span> <span class="title">resize</span> <span class="title">the</span> <span class="title">browser</span> <span class="title">window</span>, <span class="title">the</span> <span class="title">number</span> <span class="title">of</span> <span class="title">lines</span> <span class="title">in</span> <span class="title">this</span> <span class="title">paragraph</span> <span class="title">will</span> <span class="title">change</span>.</span><br><span class="line">&lt;/p&gt;</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-add480d3916a9ffc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="显示结果"></p>
+<h2 id="HTML换行"><a href="#HTML换行" class="headerlink" title="HTML换行"></a><font color="green">HTML换行</font></h2><p>HTML中换行，你需要<code>&lt;br&gt;</code>元素来进行实现。你可以在你想换行的地方添加<code>&lt;br&gt;</code>元素来进行换行。<br><code>&lt;p&gt;This is&lt;br&gt;a paragraph&lt;br&gt;with line breaks.&lt;/p&gt;</code></p>
+<h2 id="诗的显示问题"><a href="#诗的显示问题" class="headerlink" title="诗的显示问题"></a><font color="green">诗的显示问题</font></h2><figure class="highlight applescript"><table><tr><td class="code"><pre><span class="line">&lt;p&gt;In HTML, spaces <span class="keyword">and</span> new lines are ignored:&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;p&gt;</span><br><span class="line"></span><br><span class="line">  My Bonnie lies <span class="keyword">over</span> <span class="keyword">the</span> ocean.</span><br><span class="line"></span><br><span class="line">  My Bonnie lies <span class="keyword">over</span> <span class="keyword">the</span> sea.</span><br><span class="line"></span><br><span class="line">  My Bonnie lies <span class="keyword">over</span> <span class="keyword">the</span> ocean.</span><br><span class="line">  </span><br><span class="line">  Oh, bring <span class="keyword">back</span> <span class="keyword">my</span> Bonnie <span class="keyword">to</span> <span class="keyword">me</span>.</span><br><span class="line"></span><br><span class="line">&lt;/p&gt;</span><br></pre></td></tr></table></figure>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-dc60e763c5feda78.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="单行显示了"></p>
+<p>如果想要正常的显示诗，且能够保存空格，那么我们需要用到<code>&lt;pre&gt;</code>元素，它是用来预格式化文本的，能够保存文本原本的空格和换行且能够使字体宽度固定。</p>
+<figure class="highlight vim"><table><tr><td class="code"><pre><span class="line"><span class="symbol">&lt;p&gt;</span>The <span class="keyword">pre</span> <span class="keyword">tag</span> preserves both spaces <span class="built_in">and</span> <span class="built_in">line</span> <span class="keyword">break</span><span class="variable">s:</span>&lt;/<span class="keyword">p</span>&gt;</span><br><span class="line"></span><br><span class="line"><span class="symbol">&lt;pre&gt;</span></span><br><span class="line">   My Bonnie lies over the ocean.</span><br><span class="line"></span><br><span class="line">   My Bonnie lies over the sea.</span><br><span class="line"></span><br><span class="line">   My Bonnie lies over the ocean.</span><br><span class="line">   </span><br><span class="line">   Oh, bring back my Bonnie <span class="keyword">to</span> <span class="keyword">me</span>.</span><br><span class="line">&lt;/<span class="keyword">pre</span>&gt;</span><br></pre></td></tr></table></figure>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-88bb011547100448.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="正常显示诗"></p>
 ]]></content>
       <categories>
-        <category>科研之路</category>
+        <category>HTML5入门</category>
       </categories>
       <tags>
-        <tag>小技巧</tag>
-        <tag>Geneious</tag>
-        <tag>blast</tag>
+        <tag>HTML5</tag>
+        <tag>段落</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>LaTeX表格溢出问题</title>
+    <url>//2018/09/20/LaTeX%E8%A1%A8%E6%A0%BC%E6%BA%A2%E5%87%BA%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-a4ba2098aa1800cb.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="海，使人放下自己的身段"></p>
+<p>前面的<a href="https://www.jianshu.com/writer#/notebooks/23465256/notes/33812322">LaTeX插入表格</a>一文主要是来说明怎么插入表格，如果没有看过可以跳到前面去看。今天我们来说一下关于表格的一些细节处理问题。</p>
+<span id="more"></span>
+
+<h1 id="1-表格过长的问题"><a href="#1-表格过长的问题" class="headerlink" title="1 表格过长的问题"></a>1 表格过长的问题</h1><p>有时候我们的表格往往会超过一页的长度，这个时候依旧使用<code>\begin&#123;tabular&#125;...\end&#123;tabular&#125;</code>环境的话，那么肯定会导致表格的溢出，完全看不到表格超出的部分。这个时候我们就需要选择其他的宏包，来进行表格环境的设置。一般来说，我们有几种选择，但是共同的一点是，<strong>必须处理在第二页及后面几页的表头和表尾。</strong><code>\endfirsthead、\endhead、\endfoot和\endlastfoot</code>，这些参数分别用来设置第一页表头，后面每一页表头，后面每一页表尾和最后一页表尾。</p>
+<h3 id="1-1-longtable宏包"><a href="#1-1-longtable宏包" class="headerlink" title="1.1 longtable宏包"></a>1.1 longtable宏包</h3><p>在导言区你需要加载宏包<code>\usepackage&#123;longtable&#125;</code>，它的环境和tabular类似，这里不细讲。</p>
+<figure class="highlight livescript"><table><tr><td class="code"><pre><span class="line"><span class="string">\usepackage&#123;longtable&#125;</span></span><br><span class="line"><span class="string">\begin&#123;longtable&#125;&#123;表格格式&#125;</span></span><br><span class="line"><span class="string">\endhead</span></span><br><span class="line"><span class="string">\endfirsthead</span></span><br><span class="line"><span class="string">\endfoot</span></span><br><span class="line"><span class="string">\endlastfoot</span></span><br><span class="line"><span class="string">\end&#123;longtable&#125;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="1-2-tabu宏包"><a href="#1-2-tabu宏包" class="headerlink" title="1.2 tabu宏包"></a>1.2 tabu宏包</h3><p>首先也是要在导言区导入tabu和longtable宏包，然后使用的环境是，基本上没有什么区别，只是不同宏包的使用。此外还有一个包也可以使用，就是<code>ltxtable</code>宏包，它的特点是将表格独立为一个tex文件，然后要使用的时候就去引用它。</p>
+<figure class="highlight livescript"><table><tr><td class="code"><pre><span class="line"><span class="string">\usepackage&#123;tabu&#125;</span></span><br><span class="line"><span class="string">\usepackage&#123;longtable&#125;</span></span><br><span class="line"><span class="string">\begin&#123;longtabu&#125;&#123;格式&#125;</span></span><br><span class="line"><span class="string">\endhead</span></span><br><span class="line"><span class="string">\endfirsthead</span></span><br><span class="line"><span class="string">\endfoot</span></span><br><span class="line"><span class="string">\endlastfoot</span></span><br><span class="line"><span class="string">\end&#123;longtabu&#125;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h1 id="2-表格过宽的问题"><a href="#2-表格过宽的问题" class="headerlink" title="2 表格过宽的问题"></a>2 表格过宽的问题</h1><p>这个问题就比表格过长棘手一点，你没有现成的宏包可以使用，只能通过一些间接的方式将表格变窄，包括表格字体缩小，表格横放，表格列间距缩小，表格每一列的宽度减少，修改表头的行数，也可以让表格自动换行，来处理一些溢出的情况。貌似到目前为止还没有很好的宏包来解决。<br>我一般使用的是将每一列的宽度减少，进行适合的调整，到达最好的效果，其中可以使用一个强制换行的宏包来处理表头<code>makecell</code>。没一列宽度的调整就是在上面的环境后面的格式中调整，具体也不做展开，之后再写一篇细节问题来说明。</p>
+]]></content>
+      <categories>
+        <category>LaTeX入门</category>
+      </categories>
+      <tags>
+        <tag>LaTeX</tag>
+        <tag>表格</tag>
       </tags>
   </entry>
 </search>
