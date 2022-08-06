@@ -7,8 +7,8 @@ tags:
 - blast
 categories: 科研之路
 ---
-{% note primary %} Geneious来进行本地blast，便于节省时间{% endnote %}
 <meta name="referrer" content="no-referrer" />
+{% note primary %} Geneious来进行本地blast，便于节省时间{% endnote %}
 
 
 <!--more-->

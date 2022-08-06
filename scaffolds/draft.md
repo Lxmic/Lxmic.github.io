@@ -6,9 +6,8 @@ categories:
 type: "picture"
 ---
 
-{% note primary %} {% endnote %}
 <meta name="referrer" content="no-referrer" />
-
+{% note primary %} {% endnote %}
 
 <!--more-->
 
