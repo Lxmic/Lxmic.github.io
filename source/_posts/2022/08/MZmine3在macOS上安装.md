@@ -34,4 +34,4 @@ sudo xattr -cr MZmine.app
 # <font color=green>Run MZmine3</font>
 ![2022-08-08-LH2zcO](https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-08-08-LH2zcO.png)
 
-{% note info %} 在此后更新软件的时候，也需要同样的操作，获得macOS信任 {% endnote %}
+{% note info %} 在此后更新软件的时候，也需要同样的操作，获得macOS信任! {% endnote %}
