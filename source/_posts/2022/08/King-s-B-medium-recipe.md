@@ -38,7 +38,7 @@ H~2~O   **1 L**
 Peptone     **20 g**
 Glycerol       **10 mL**
 K~2~HPO~4~  **1.5 g**
-MgSO～4～•7H~2~O  **1.5 g**
+MgSO~4~•7H~2~O  **1.5 g**
 Agar **15 g**
 KOH adjust the pH to 7.2
 
