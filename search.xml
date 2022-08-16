@@ -85,6 +85,24 @@
       </tags>
   </entry>
   <entry>
+    <title>Dropbox离线安装</title>
+    <url>//2018/12/08/Dropbox%E7%A6%BB%E7%BA%BF%E5%AE%89%E8%A3%85/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-d5fc4ecb48065677.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png" /></p>
+<blockquote>
+<p>Dropbox 的安装一直是个问题，下载安装器，你永远没有办法链接网络，可能是电脑没有完全的全局。</p>
+</blockquote>
+<p>今天，因为要配置新的电脑，我就需要安装我的Dropbox。但是依旧是因为没有办法彻底的全局FQ，所以我就想着下载离线包，然后我就就Google，找到了下载离线安装包的办法，你只要在官网下载页面网址的基础上，在后面添加<code>&amp;full=1</code>就可以实现离线安装。<br />
+离线安装包下载网址：<a href="https://www.dropbox.com/downloading?src=index&amp;full=1" title="shark0017">https://www.dropbox.com/downloading?src=index**&amp;full=1**</a>。已经顺利安装，下面可以愉快的使用了。</p>
+]]></content>
+      <categories>
+        <category>学习记录</category>
+      </categories>
+      <tags>
+        <tag>Dropbox</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>DJY-遇见盖北</title>
     <url>//2018/08/18/DJY-%E9%81%87%E8%A7%81%E7%9B%96%E5%8C%97/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -113,24 +131,6 @@
       </categories>
       <tags>
         <tag>葡萄</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Dropbox离线安装</title>
-    <url>//2018/12/08/Dropbox%E7%A6%BB%E7%BA%BF%E5%AE%89%E8%A3%85/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-d5fc4ecb48065677.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png" /></p>
-<blockquote>
-<p>Dropbox 的安装一直是个问题，下载安装器，你永远没有办法链接网络，可能是电脑没有完全的全局。</p>
-</blockquote>
-<p>今天，因为要配置新的电脑，我就需要安装我的Dropbox。但是依旧是因为没有办法彻底的全局FQ，所以我就想着下载离线包，然后我就就Google，找到了下载离线安装包的办法，你只要在官网下载页面网址的基础上，在后面添加<code>&amp;full=1</code>就可以实现离线安装。<br />
-离线安装包下载网址：<a href="https://www.dropbox.com/downloading?src=index&amp;full=1" title="shark0017">https://www.dropbox.com/downloading?src=index**&amp;full=1**</a>。已经顺利安装，下面可以愉快的使用了。</p>
-]]></content>
-      <categories>
-        <category>学习记录</category>
-      </categories>
-      <tags>
-        <tag>Dropbox</tag>
       </tags>
   </entry>
   <entry>
@@ -349,6 +349,27 @@
       </tags>
   </entry>
   <entry>
+    <title>HTML5（1）——介绍</title>
+    <url>//2018/09/24/HTML5%EF%BC%881%EF%BC%89%E2%80%94%E2%80%94%E4%BB%8B%E7%BB%8D/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![中秋节就是面对电脑](https://upload-images.jianshu.io/upload_images/3478485-befca9c4894b99eb.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+<blockquote>
+<p>我就是用来玩一下，说好得，只是玩一下。</p>
+</blockquote>
+<span id="more"></span>
+<p>总是想干点事情，不想这么地浪费时间，学习一下html5语法，还是挺好的。我记得以前别人过节的时候，就会发一个网页过来，你打开就是节日祝福，还有音乐和动画，然后就觉得学计算机的人特别牛逼，现在看来，真得没有那么难，稍微学习一下，你就可以实现这样的效果，并没有想象中那么难。当然如果要深入下去，作为你吃饭的技能，那就不是一个层次，我就用来玩一下，增添一些生活的乐趣。</p>
+<p>有了以下这些基本的内容，你就可以写出一个自己的最简单的网页来了。</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span> <span class="comment">&lt;!--这是用来指定声明这篇文档是HTML5，帮助浏览器正确的显示网页--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span><span class="comment">&lt;!--这是网页根标签，每个网页都有，必不可少--&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span><span class="comment">&lt;!--head里面包含的是元信息，不会显示出来--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">title</span>&gt;</span>生活的质感<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">    </span><br><span class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span><span class="comment">&lt;!--body是网页不可少部分，是用来放可视的网页内容，是会展现出来的--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">h1</span>&gt;</span><span class="comment">&lt;!--h1是用来表示一级标题--&gt;</span></span><br><span class="line">            中秋节快乐</span><br><span class="line">        <span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="comment">&lt;!--p就是段落的意思，用来盛放正文的内容--&gt;</span></span><br><span class="line">            今天是中秋节，也没有回家过节，在宿舍里折腾了很久。</span><br><span class="line">        <span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>HTML5的标签是用&lt;&gt;括起来的。比如<code>&lt;p&gt;...&lt;/p&gt;</code>这样的段落标签。不带斜杠的是起始标签，带斜杆的是结束标签。</p>
+]]></content>
+      <categories>
+        <category>HTML5入门</category>
+      </categories>
+      <tags>
+        <tag>HTML5</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>HTML5（13）——CSS</title>
     <url>//2018/10/15/HTML5%EF%BC%8813%EF%BC%89%E2%80%94%E2%80%94CSS/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -399,27 +420,6 @@ CSS添加到HTML的方式有三种：</p>
       <tags>
         <tag>HTML5</tag>
         <tag>CSS</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>HTML5（1）——介绍</title>
-    <url>//2018/09/24/HTML5%EF%BC%881%EF%BC%89%E2%80%94%E2%80%94%E4%BB%8B%E7%BB%8D/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![中秋节就是面对电脑](https://upload-images.jianshu.io/upload_images/3478485-befca9c4894b99eb.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-<blockquote>
-<p>我就是用来玩一下，说好得，只是玩一下。</p>
-</blockquote>
-<span id="more"></span>
-<p>总是想干点事情，不想这么地浪费时间，学习一下html5语法，还是挺好的。我记得以前别人过节的时候，就会发一个网页过来，你打开就是节日祝福，还有音乐和动画，然后就觉得学计算机的人特别牛逼，现在看来，真得没有那么难，稍微学习一下，你就可以实现这样的效果，并没有想象中那么难。当然如果要深入下去，作为你吃饭的技能，那就不是一个层次，我就用来玩一下，增添一些生活的乐趣。</p>
-<p>有了以下这些基本的内容，你就可以写出一个自己的最简单的网页来了。</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span> <span class="comment">&lt;!--这是用来指定声明这篇文档是HTML5，帮助浏览器正确的显示网页--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span><span class="comment">&lt;!--这是网页根标签，每个网页都有，必不可少--&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span><span class="comment">&lt;!--head里面包含的是元信息，不会显示出来--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">title</span>&gt;</span>生活的质感<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">    </span><br><span class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span><span class="comment">&lt;!--body是网页不可少部分，是用来放可视的网页内容，是会展现出来的--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">h1</span>&gt;</span><span class="comment">&lt;!--h1是用来表示一级标题--&gt;</span></span><br><span class="line">            中秋节快乐</span><br><span class="line">        <span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="comment">&lt;!--p就是段落的意思，用来盛放正文的内容--&gt;</span></span><br><span class="line">            今天是中秋节，也没有回家过节，在宿舍里折腾了很久。</span><br><span class="line">        <span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>HTML5的标签是用&lt;&gt;括起来的。比如<code>&lt;p&gt;...&lt;/p&gt;</code>这样的段落标签。不带斜杠的是起始标签，带斜杆的是结束标签。</p>
-]]></content>
-      <categories>
-        <category>HTML5入门</category>
-      </categories>
-      <tags>
-        <tag>HTML5</tag>
       </tags>
   </entry>
   <entry>
@@ -1294,31 +1294,6 @@ float——确定图片是否为浮动，而不是在一个固定的地方。</p
       </tags>
   </entry>
   <entry>
-    <title>如何使用Excel查找重复项</title>
-    <url>//2018/09/24/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8Excel%E6%9F%A5%E6%89%BE%E9%87%8D%E5%A4%8D%E9%A1%B9/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![flying](https://upload-images.jianshu.io/upload_images/3478485-3028f91254eb81be.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-<blockquote>
-<p>折腾过后，剩下的只有笔记。我们需要找到相同的东西，来获得共性，才能得以下一步的发展。</p>
-</blockquote>
-<span id="more"></span>
-<p>在处理转录组数据的时候，对于生信的小白，也不经常敲代码，很多时候还是利用一些比较熟悉的工具省事。当然，我的内心是无比希望能够使用编程来解决这些问题，可是很无奈。<br />
-今天，我在处理转录组数据，我希望从好几万个基因中找到我感兴趣的那些基因，我想搜索一下转录组中的数据并拿到他。<br />
-我用的方法是通过vlookup函数来进行查找，公式就是：VLOOKUP(B1,A:A,1,0)。这个公式的意思是，你想找到在B列中与A列中相同的值，并且可以在另外一行显示B列中相同值得为之。</p>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-75012f75ac9aa958.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="可以看到，在C列中，我们找到了重复值，且跟B列中的位置对应。" /></p>
-<blockquote>
-<p>参考资料：<a href="http://blog.51cto.com/xueli/920592">http://blog.51cto.com/xueli/920592</a></p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>学习记录</category>
-      </categories>
-      <tags>
-        <tag>Excel</tag>
-        <tag>重复项</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>大悦城小聚</title>
     <url>//2018/09/29/%E5%A4%A7%E6%82%A6%E5%9F%8E%E5%B0%8F%E8%81%9A/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -1368,6 +1343,31 @@ float——确定图片是否为浮动，而不是在一个固定的地方。</p
       </tags>
   </entry>
   <entry>
+    <title>如何使用Excel查找重复项</title>
+    <url>//2018/09/24/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8Excel%E6%9F%A5%E6%89%BE%E9%87%8D%E5%A4%8D%E9%A1%B9/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![flying](https://upload-images.jianshu.io/upload_images/3478485-3028f91254eb81be.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+<blockquote>
+<p>折腾过后，剩下的只有笔记。我们需要找到相同的东西，来获得共性，才能得以下一步的发展。</p>
+</blockquote>
+<span id="more"></span>
+<p>在处理转录组数据的时候，对于生信的小白，也不经常敲代码，很多时候还是利用一些比较熟悉的工具省事。当然，我的内心是无比希望能够使用编程来解决这些问题，可是很无奈。<br />
+今天，我在处理转录组数据，我希望从好几万个基因中找到我感兴趣的那些基因，我想搜索一下转录组中的数据并拿到他。<br />
+我用的方法是通过vlookup函数来进行查找，公式就是：VLOOKUP(B1,A:A,1,0)。这个公式的意思是，你想找到在B列中与A列中相同的值，并且可以在另外一行显示B列中相同值得为之。</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-75012f75ac9aa958.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="可以看到，在C列中，我们找到了重复值，且跟B列中的位置对应。" /></p>
+<blockquote>
+<p>参考资料：<a href="http://blog.51cto.com/xueli/920592">http://blog.51cto.com/xueli/920592</a></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>学习记录</category>
+      </categories>
+      <tags>
+        <tag>Excel</tag>
+        <tag>重复项</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>如何学习一门新技能？</title>
     <url>//2018/08/25/%E5%A6%82%E4%BD%95%E5%AD%A6%E4%B9%A0%E4%B8%80%E9%97%A8%E6%96%B0%E6%8A%80%E8%83%BD%EF%BC%9F/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -1403,6 +1403,29 @@ float——确定图片是否为浮动，而不是在一个固定的地方。</p
       </categories>
       <tags>
         <tag>技能</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>徒手攀岩</title>
+    <url>//2019/09/06/%E5%BE%92%E6%89%8B%E6%94%80%E5%B2%A9/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-07b4b1add5c215b1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png" /></p>
+<blockquote>
+<p>真的让人窒息，巨兽裂缝，始终受到局部挤压，痛苦。</p>
+</blockquote>
+<span id="more"></span>
+<p>今天我其实一直在犹豫要去看哪一部电影——《徒手攀岩》和《宝莱坞机器人2.0》，原因是我之前已经在网上看过一点徒手攀岩，对于纪录片我基本没有太大的热情去看，好像也没有什么耐心看。宝莱坞机器人看了预告，就觉得有点没啥意思，就是有点无脑砸特效的电影，有点打破了我对印度电影的印象。最终，还是选择了前者，而且为了视觉效果，还选择了IMAX。</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-27cf0e28cb3668ec.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png" /></p>
+<p>总的感觉就是刺激，从准备到练习，接着尝试，失败后再次尝试，最终成功无保护徒手攀岩成功。最后在自由的无人为干扰的条件下，完成了8年来Alex一直想要征服的Yosemite酋长岩。有好几个绝险的地方，根本没有办法看，连摄影师都没有办法注视着镜头，屏幕面前的我也是，几乎就不敢看屏幕了。还好我提醒自己，这是纪录片，基本是成功了，才敢勉强的注视着镜头。但是我的身体依旧没有控制住，我双手紧握拳头，手心冒着汗，应该是吓得出了汗，整个手都是湿的。这种情况下，你的身体是没有办法欺骗的，作出了遇见危险时该做出的反应。真的太刺激了，完全不输给那些科幻大片，难怪会获得奥斯卡最佳纪录片。</p>
+<p>对于像Alex这样的极度冒险者，真的无比敬佩。永远不会满足，一个一个的征服。即使看到很多圈子里优秀徒手攀岩者的跌落身亡，自己依然能够克服恐惧，敢于面对死亡。绝对不能出错，必须做到极致完美，才能够活着见到家人朋友。突然想想，这个世界真的太奇妙了，太多奇特的人和奇特的事。</p>
+<p>能够深度专注自己喜欢做的事，而这件事也能够养活自己，这对于每个人来说，都是非常渴望的事情。只有及其少数的人才能够找到这样的事情吧，或许是因为我们不够优秀，做得不够突出，做得不够极致，做得不够专注，因而我们才没有办法找到这样一件事。很多时候，我们只能取其一而不能两者兼得，这是大多数人的常态。我也没有能够找到这么一件事，至少现在没有，但我依旧希望能够在不久的未来找到这么一件值得我一辈子去付出，而且还感到开心的事。</p>
+<p>希望吧，总是不想那么普通。</p>
+]]></content>
+      <categories>
+        <category>影评领域</category>
+      </categories>
+      <tags>
+        <tag>电影</tag>
       </tags>
   </entry>
   <entry>
@@ -1617,29 +1640,6 @@ float——确定图片是否为浮动，而不是在一个固定的地方。</p
       <tags>
         <tag>旅行</tag>
         <tag>南京</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>徒手攀岩</title>
-    <url>//2019/09/06/%E5%BE%92%E6%89%8B%E6%94%80%E5%B2%A9/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-07b4b1add5c215b1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png" /></p>
-<blockquote>
-<p>真的让人窒息，巨兽裂缝，始终受到局部挤压，痛苦。</p>
-</blockquote>
-<span id="more"></span>
-<p>今天我其实一直在犹豫要去看哪一部电影——《徒手攀岩》和《宝莱坞机器人2.0》，原因是我之前已经在网上看过一点徒手攀岩，对于纪录片我基本没有太大的热情去看，好像也没有什么耐心看。宝莱坞机器人看了预告，就觉得有点没啥意思，就是有点无脑砸特效的电影，有点打破了我对印度电影的印象。最终，还是选择了前者，而且为了视觉效果，还选择了IMAX。</p>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-27cf0e28cb3668ec.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png" /></p>
-<p>总的感觉就是刺激，从准备到练习，接着尝试，失败后再次尝试，最终成功无保护徒手攀岩成功。最后在自由的无人为干扰的条件下，完成了8年来Alex一直想要征服的Yosemite酋长岩。有好几个绝险的地方，根本没有办法看，连摄影师都没有办法注视着镜头，屏幕面前的我也是，几乎就不敢看屏幕了。还好我提醒自己，这是纪录片，基本是成功了，才敢勉强的注视着镜头。但是我的身体依旧没有控制住，我双手紧握拳头，手心冒着汗，应该是吓得出了汗，整个手都是湿的。这种情况下，你的身体是没有办法欺骗的，作出了遇见危险时该做出的反应。真的太刺激了，完全不输给那些科幻大片，难怪会获得奥斯卡最佳纪录片。</p>
-<p>对于像Alex这样的极度冒险者，真的无比敬佩。永远不会满足，一个一个的征服。即使看到很多圈子里优秀徒手攀岩者的跌落身亡，自己依然能够克服恐惧，敢于面对死亡。绝对不能出错，必须做到极致完美，才能够活着见到家人朋友。突然想想，这个世界真的太奇妙了，太多奇特的人和奇特的事。</p>
-<p>能够深度专注自己喜欢做的事，而这件事也能够养活自己，这对于每个人来说，都是非常渴望的事情。只有及其少数的人才能够找到这样的事情吧，或许是因为我们不够优秀，做得不够突出，做得不够极致，做得不够专注，因而我们才没有办法找到这样一件事。很多时候，我们只能取其一而不能两者兼得，这是大多数人的常态。我也没有能够找到这么一件事，至少现在没有，但我依旧希望能够在不久的未来找到这么一件值得我一辈子去付出，而且还感到开心的事。</p>
-<p>希望吧，总是不想那么普通。</p>
-]]></content>
-      <categories>
-        <category>影评领域</category>
-      </categories>
-      <tags>
-        <tag>电影</tag>
       </tags>
   </entry>
   <entry>
@@ -2116,30 +2116,6 @@ float——确定图片是否为浮动，而不是在一个固定的地方。</p
       </tags>
   </entry>
   <entry>
-    <title>算法与数据结构（2）：算法复杂度</title>
-    <url>//2018/09/05/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%EF%BC%882%EF%BC%89%EF%BC%9A%E7%AE%97%E6%B3%95%E5%A4%8D%E6%9D%82%E5%BA%A6/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![复杂](https://upload-images.jianshu.io/upload_images/3478485-2198e399288f19f7.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-<p>9月5日，星期三，公元2018年。</p>
-<blockquote>
-<p>简书作者<a href="https://www.jianshu.com/u/44339a8a9afa">程序员联盟</a>：目前正在更新这个系列的教程，我是学习记录者，并非原创，此后<strong>算法与数据结构</strong>系列都是记录笔记，不再进一步说明。</p>
-</blockquote>
-<span id="more"></span>
-<p>这片是关于引出算法复杂度，用了小鸭子的故事。</p>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-f667aaa8497301ce.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="小鸭子" /></p>
-<center>小鸭子</center>
-故事是这样的：
-<p>有个农夫，每年带着小鸭子们去旅行，目的是为了让小鸭子们都得到放松清净的机会。旅行就是将他们放到池塘里，而且每个池塘要保证一样多的鸭子，才能够同样的清净，不会有不公平的情况出现。因此，农夫采取的方法是：将小鸭子一只一只的带到池塘边，让他们自己选择要去的池塘，最后在池塘和卡车之见跑了NxN个来回。而第二年，农夫发现不太好，于是就重新换了方法，依次带出N只鸭子，将其放在一个池塘，如此下去，直到每个池塘也是同样多的鸭子，这样只需要N个来回。这样一算，发现第二种方法能够更节省时间更轻松，而且还达到了同样的效果，新的方法胜利。</p>
-<p>农夫的放鸭子的方法，就可以看成一种算法，用来对放置鸭子进行了精确的描述。很显然第二种算法更好，时间节省，力气节省，还能达到同样的结果。在计算机术语中，人们用复杂度（complexity）这个词来量化算法的性能。</p>
-]]></content>
-      <categories>
-        <category>算法与数据结构</category>
-      </categories>
-      <tags>
-        <tag>复杂度</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>算法与数据结构（1）：概念理解</title>
     <url>//2018/09/03/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%EF%BC%881%EF%BC%89%EF%BC%9A%E6%A6%82%E5%BF%B5%E7%90%86%E8%A7%A3/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -2168,6 +2144,30 @@ float——确定图片是否为浮动，而不是在一个固定的地方。</p
       <tags>
         <tag>算法</tag>
         <tag>编程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>算法与数据结构（2）：算法复杂度</title>
+    <url>//2018/09/05/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%EF%BC%882%EF%BC%89%EF%BC%9A%E7%AE%97%E6%B3%95%E5%A4%8D%E6%9D%82%E5%BA%A6/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![复杂](https://upload-images.jianshu.io/upload_images/3478485-2198e399288f19f7.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+<p>9月5日，星期三，公元2018年。</p>
+<blockquote>
+<p>简书作者<a href="https://www.jianshu.com/u/44339a8a9afa">程序员联盟</a>：目前正在更新这个系列的教程，我是学习记录者，并非原创，此后<strong>算法与数据结构</strong>系列都是记录笔记，不再进一步说明。</p>
+</blockquote>
+<span id="more"></span>
+<p>这片是关于引出算法复杂度，用了小鸭子的故事。</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-f667aaa8497301ce.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="小鸭子" /></p>
+<center>小鸭子</center>
+故事是这样的：
+<p>有个农夫，每年带着小鸭子们去旅行，目的是为了让小鸭子们都得到放松清净的机会。旅行就是将他们放到池塘里，而且每个池塘要保证一样多的鸭子，才能够同样的清净，不会有不公平的情况出现。因此，农夫采取的方法是：将小鸭子一只一只的带到池塘边，让他们自己选择要去的池塘，最后在池塘和卡车之见跑了NxN个来回。而第二年，农夫发现不太好，于是就重新换了方法，依次带出N只鸭子，将其放在一个池塘，如此下去，直到每个池塘也是同样多的鸭子，这样只需要N个来回。这样一算，发现第二种方法能够更节省时间更轻松，而且还达到了同样的效果，新的方法胜利。</p>
+<p>农夫的放鸭子的方法，就可以看成一种算法，用来对放置鸭子进行了精确的描述。很显然第二种算法更好，时间节省，力气节省，还能达到同样的结果。在计算机术语中，人们用复杂度（complexity）这个词来量化算法的性能。</p>
+]]></content>
+      <categories>
+        <category>算法与数据结构</category>
+      </categories>
+      <tags>
+        <tag>复杂度</tag>
       </tags>
   </entry>
   <entry>
@@ -2758,7 +2758,7 @@ float——确定图片是否为浮动，而不是在一个固定的地方。</p
 Peptone     <strong>20 g</strong><br />
 Glycerol       <strong>10 mL</strong><br />
 K<sub>2</sub>HPO<sub>4</sub>  <strong>1.5 g</strong><br />
-MgSO～4～•7H<sub>2</sub>O  <strong>1.5 g</strong><br />
+MgSO<sub>4</sub>•7H<sub>2</sub>O  <strong>1.5 g</strong><br />
 Agar <strong>15 g</strong><br />
 KOH adjust the pH to 7.2</p>
 <p>Autoclave for 20 min at 121°C</p>
