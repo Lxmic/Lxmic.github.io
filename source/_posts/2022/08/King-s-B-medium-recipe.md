@@ -21,15 +21,15 @@ Proteose peptone **10 g**
 
 Anhydrous K<sub>2</sub>HPO<sub>4</sub> **1.5 g**
 
-Glycerol **15 g** 
+Glycerol **10 mL** 
 
-MgSO<sub>4</sub> (1 M; sterile) **5 ml**
+MgSO~4~ (1 M; sterile) **5 ml**
 
 [Agar (solid medium) **15 g**]
 
 Rifampicin is added at **50 mg/L**
 
-Add H<sub>2</sub>O to first three ingredients to bring volume to 1 L. Adjust the pH to 7.0-7.2 with HCl. Autoclave and then add 5 mL of sterile 1 M MgSO<sub>4</sub>.
+Add H~2~O to first three ingredients to bring volume to 1 L. Adjust the pH to 7.0-7.2 with HCl. Autoclave and then add 5 mL of sterile 1 M MgSO<sub>4</sub>.
 
 {% note warning %}If MgSO<sub>4</sub> is added before autoclaving, the medium becomes cloudy{% endnote %}
 
