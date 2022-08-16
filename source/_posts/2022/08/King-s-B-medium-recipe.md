@@ -51,5 +51,6 @@ Autoclave for 20 min at 121°C
 4. Whalen MC, Innes RW, Bent AF, and Staskawicz BJ. (1991). Identification of Pseudomonas syringae pathogens of Arabidopsis and a bacterial locus determining avirulence on both Arabidopsis and soybean. The Plant Cell 3: 49–59.
 5. Scalschi L, Camañes G, Llorens E, Fernández-Crespo E, López MM, García-Agustín P, and Vicedo B. (2014). Resistance inducers modulate *Pseudomonas syringae* pv. *tomato* strain DC3000 response in tomato plants. PLoS ONE 9: e106429.
 6. 张倩, 鲍依群, 谭小云. (2015). 拟南芥果胶甲酯化酶基因PME17在抵御丁香假单胞杆菌番茄致病变种DC3000株中的功能. 植物生理学报 51: 1061–1066.
+7. [KB培养基配方 \- 生物科学 \- 小木虫论坛\-学术科研互动平台](http://muchong.com/t-365059-1)
 
 
