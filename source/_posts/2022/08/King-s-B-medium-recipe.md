@@ -31,7 +31,7 @@ Rifampicin is added at **50 mg/L**
 
 Add H~2~O to first three ingredients to bring volume to 1 L. Adjust the pH to 7.0-7.2 with HCl. Autoclave and then add 5 mL of sterile 1 M MgSO<sub>4</sub>.
 
-{% note warning %}If MgSO<sub>4</sub> is added before autoclaving, the medium becomes cloudy{% endnote %}
+{% note warning %}If MgSO<sub>4</sub> is added before autoclaving, the medium becomes cloudy.{% endnote %}
 
 ## <font color=green>Reference</font>
 1. King’s B medium (2009). Cold Spring Harbor Protocols 2009: pdb.rec11326.
