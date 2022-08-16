@@ -11,7 +11,7 @@ categories: 科研之路
 ---
 
 <meta name="referrer" content="no-referrer" />
-{% note primary %}  King's B medium for *Pseudomonas syringae* pathovar *tomato* (* Pst*) strain, DC3000 culture{% endnote %}
+{% note primary %}  King's B medium for *Pseudomonas syringae* pathovar *tomato* (*Pst*) strain, DC3000 culture.{% endnote %}
 
 <!--more-->
 
@@ -19,19 +19,19 @@ categories: 科研之路
 
 Proteose peptone **10 g**
 
-Anhydrous K~2~HPO~4~ **1.5 g**
+Anhydrous K<sub>2</sub>HPO<sub>4</sub> **1.5 g**
 
 Glycerol **15 g** 
 
-MgSO~4~ (1 M; sterile) **5 ml**
+MgSO<sub>4</sub> (1 M; sterile) **5 ml**
 
 [Agar (solid medium) **15 g**]
 
 Rifampicin is added at **50 mg/L**
 
-Add H~2~O to first three ingredients to bring volume to 1 L. Adjust the pH to 7.0-7.2 with HCl. Autoclave and then add 5 mL of sterile 1 M MgSO~4~.
+Add H<sub>2</sub>O to first three ingredients to bring volume to 1 L. Adjust the pH to 7.0-7.2 with HCl. Autoclave and then add 5 mL of sterile 1 M MgSO<sub>4</sub>.
 
-{% note warning %}If MgSO~4~ is added before autoclaving, the medium becomes cloudy{% endnote %}
+{% note warning %}If MgSO<sub>4</sub> is added before autoclaving, the medium becomes cloudy{% endnote %}
 
 ## <font color=green>Reference</font>
 1. King’s B medium (2009). Cold Spring Harbor Protocols 2009: pdb.rec11326.
