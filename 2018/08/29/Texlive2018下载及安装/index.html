@@ -20,14 +20,13 @@
     var CONFIG = {"hostname":"othlis.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":false,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"gitalk","storage":true,"lazyload":false,"nav":{"disqus":{"text":"Load Disqus","order":-1},"gitalk":{"order":-2}},"activeClass":"gitalk"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="说起来也是奇怪，人真的是太健忘了， 重装电脑系统之后，我忘记了怎么装texlive，所以再次安装的时候又花了不少时间，这次一定要把过程记录下来。">
+  <meta name="description" content="![writing.jpg](https:&#x2F;&#x2F;upload-images.jianshu.io&#x2F;upload_images&#x2F;3478485-ab97152f66f7fb0d.jpg?imageMogr2&#x2F;auto-orient&#x2F;strip%7CimageView2&#x2F;2&#x2F;w&#x2F;1240)  说起来也是奇怪，人真的是太健忘了， 重装电脑系统之后，我忘记了怎么装texlive，所以再次安装的时候又花了不">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Texlive2018下载及安装">
 <meta property="og:url" content="https://othlis.com/2018/08/29/Texlive2018%E4%B8%8B%E8%BD%BD%E5%8F%8A%E5%AE%89%E8%A3%85/index.html">
 <meta property="og:site_name" content="Lxmic Blog">
-<meta property="og:description" content="说起来也是奇怪，人真的是太健忘了， 重装电脑系统之后，我忘记了怎么装texlive，所以再次安装的时候又花了不少时间，这次一定要把过程记录下来。">
+<meta property="og:description" content="![writing.jpg](https:&#x2F;&#x2F;upload-images.jianshu.io&#x2F;upload_images&#x2F;3478485-ab97152f66f7fb0d.jpg?imageMogr2&#x2F;auto-orient&#x2F;strip%7CimageView2&#x2F;2&#x2F;w&#x2F;1240)  说起来也是奇怪，人真的是太健忘了， 重装电脑系统之后，我忘记了怎么装texlive，所以再次安装的时候又花了不">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-ab97152f66f7fb0d.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-47506750e5a1238e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-eb6c4bb8821711e8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-9189a69cea6fcbad.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
@@ -48,7 +47,7 @@
 <meta property="article:tag" content="LaTeX">
 <meta property="article:tag" content="排版">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://upload-images.jianshu.io/upload_images/3478485-ab97152f66f7fb0d.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta name="twitter:image" content="https://upload-images.jianshu.io/upload_images/3478485-47506750e5a1238e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 
 <link rel="canonical" href="https://othlis.com/2018/08/29/Texlive2018%E4%B8%8B%E8%BD%BD%E5%8F%8A%E5%AE%89%E8%A3%85/">
 
@@ -267,7 +266,7 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>387</span>
+              <span>529</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -286,32 +285,39 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p><meta name="referrer" content="no-referrer" /><br><img src="https://upload-images.jianshu.io/upload_images/3478485-ab97152f66f7fb0d.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="writing.jpg"></p>
+        <meta name="referrer" content="no-referrer" />
+![writing.jpg](https://upload-images.jianshu.io/upload_images/3478485-ab97152f66f7fb0d.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 <blockquote>
 <p>说起来也是奇怪，人真的是太健忘了， 重装电脑系统之后，我忘记了怎么装texlive，所以再次安装的时候又花了不少时间，这次一定要把过程记录下来。</p>
 </blockquote>
 <span id="more"></span>
-<h1 id="1-下载及安装texlive2018"><a href="#1-下载及安装texlive2018" class="headerlink" title="1. 下载及安装texlive2018"></a>1. 下载及安装texlive2018</h1><p>网站：<a target="_blank" rel="noopener" href="https://www.tug.org/texlive/">https://www.tug.org/texlive/</a>。过程如下，全部图片及图注：</p>
-<h4 id="1-1-下载过程"><a href="#1-1-下载过程" class="headerlink" title="1.1 下载过程"></a>1.1 下载过程</h4><p><img src="https://upload-images.jianshu.io/upload_images/3478485-47506750e5a1238e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="1"></p>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-eb6c4bb8821711e8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="2"></p>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-9189a69cea6fcbad.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="3"></p>
+<h1 id="1-下载及安装texlive2018"><a class="markdownIt-Anchor" href="#1-下载及安装texlive2018"></a> 1. 下载及安装texlive2018</h1>
+<p>网站：<a target="_blank" rel="noopener" href="https://www.tug.org/texlive/">https://www.tug.org/texlive/</a>。过程如下，全部图片及图注：</p>
+<h4 id="11-下载过程"><a class="markdownIt-Anchor" href="#11-下载过程"></a> 1.1 下载过程</h4>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-47506750e5a1238e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="1" /></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-eb6c4bb8821711e8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="2" /></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-9189a69cea6fcbad.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="3" /></p>
 <ul>
-<li>下载的文件很大，但是我速度大概1.6M/s左右，相当快，然后解压ISO文件，开始安装。<br><img src="https://upload-images.jianshu.io/upload_images/3478485-9004747e9f1e230a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="4. 这里的镜像会变化，有时候是清华源或者其他源"></li>
+<li>下载的文件很大，但是我速度大概1.6M/s左右，相当快，然后解压ISO文件，开始安装。<br />
+<img src="https://upload-images.jianshu.io/upload_images/3478485-9004747e9f1e230a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="4. 这里的镜像会变化，有时候是清华源或者其他源" /></li>
 </ul>
-<h4 id="1-2-安装过程"><a href="#1-2-安装过程" class="headerlink" title="1.2 安装过程"></a>1.2 安装过程</h4><p><img src="https://upload-images.jianshu.io/upload_images/3478485-0f251696a6532aca.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="双击"></p>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-bd8769d0e5897504.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="如果开着杀毒软件，会跳出这样的提示，你就暂时关掉360就好了，然后点continue"></p>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-67d465f89fe93d45.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="安装界面，根据电脑性能，需要的时间不同，我安装了大约15分钟左右"></p>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-52cd968b1be775c9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="安装完成，会出现这样的欢迎界面"></p>
+<h4 id="12-安装过程"><a class="markdownIt-Anchor" href="#12-安装过程"></a> 1.2 安装过程</h4>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-0f251696a6532aca.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="双击" /></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-bd8769d0e5897504.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="如果开着杀毒软件，会跳出这样的提示，你就暂时关掉360就好了，然后点continue" /></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-67d465f89fe93d45.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="安装界面，根据电脑性能，需要的时间不同，我安装了大约15分钟左右" /></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-52cd968b1be775c9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="安装完成，会出现这样的欢迎界面" /></p>
 <ul>
 <li>但是到这里还没有结束，一般来说，本身自带的编辑器不会那么好用，我们还需要下载像Rstudio一样的界面友好的IDE集成开发环境，而相对应的就是Texstudio。</li>
 </ul>
-<h1 id="2-Texstudio下载及安装"><a href="#2-Texstudio下载及安装" class="headerlink" title="2. Texstudio下载及安装"></a>2. Texstudio下载及安装</h1><p>网站：<a target="_blank" rel="noopener" href="http://texstudio.sourceforge.net/">http://texstudio.sourceforge.net/</a>，这个安装就非常快了。</p>
-<h4 id="2-1-下载"><a href="#2-1-下载" class="headerlink" title="2.1 下载"></a>2.1 下载</h4><p><img src="https://upload-images.jianshu.io/upload_images/3478485-879317ee657dbb82.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="网站首页"></p>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-5da948e9b1230335.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="点击下载"></p>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-2d418be0e03628fe.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="选择你自己的平台，我的是Windows7，就选第一个，Linux也是比较容易安装的，我自己之前是安装过Linux版本的"></p>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-0d73ed7d18d94810.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="完成之后，在开始菜单可以看到这两个编辑器，我们分别看一下他们的交互界面"></p>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-052a7ae1ef659e14.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="自带编辑器界面"></p>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-c931d713c15242ff.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="texstudio界面"></p>
+<h1 id="2-texstudio下载及安装"><a class="markdownIt-Anchor" href="#2-texstudio下载及安装"></a> 2. Texstudio下载及安装</h1>
+<p>网站：<a target="_blank" rel="noopener" href="http://texstudio.sourceforge.net/">http://texstudio.sourceforge.net/</a>，这个安装就非常快了。</p>
+<h4 id="21-下载"><a class="markdownIt-Anchor" href="#21-下载"></a> 2.1 下载</h4>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-879317ee657dbb82.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="网站首页" /></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-5da948e9b1230335.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="点击下载" /></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-2d418be0e03628fe.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="选择你自己的平台，我的是Windows7，就选第一个，Linux也是比较容易安装的，我自己之前是安装过Linux版本的" /></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-0d73ed7d18d94810.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="完成之后，在开始菜单可以看到这两个编辑器，我们分别看一下他们的交互界面" /></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-052a7ae1ef659e14.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="自带编辑器界面" /></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-c931d713c15242ff.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="texstudio界面" /></p>
 <ul>
 <li>安装基本结束，下面就可以开始学习LaTeX，可以时间又是少之又少，每次都是半途而废，太可惜了。</li>
 </ul>
@@ -417,7 +423,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1-%E4%B8%8B%E8%BD%BD%E5%8F%8A%E5%AE%89%E8%A3%85texlive2018"><span class="nav-number">1.</span> <span class="nav-text">1. 下载及安装texlive2018</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-1-%E4%B8%8B%E8%BD%BD%E8%BF%87%E7%A8%8B"><span class="nav-number">1.0.0.1.</span> <span class="nav-text">1.1 下载过程</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-2-%E5%AE%89%E8%A3%85%E8%BF%87%E7%A8%8B"><span class="nav-number">1.0.0.2.</span> <span class="nav-text">1.2 安装过程</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-Texstudio%E4%B8%8B%E8%BD%BD%E5%8F%8A%E5%AE%89%E8%A3%85"><span class="nav-number">2.</span> <span class="nav-text">2. Texstudio下载及安装</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#2-1-%E4%B8%8B%E8%BD%BD"><span class="nav-number">2.0.0.1.</span> <span class="nav-text">2.1 下载</span></a></li></ol></li></ol></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1-%E4%B8%8B%E8%BD%BD%E5%8F%8A%E5%AE%89%E8%A3%85texlive2018"><span class="nav-number">1.</span> <span class="nav-text"> 1. 下载及安装texlive2018</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#11-%E4%B8%8B%E8%BD%BD%E8%BF%87%E7%A8%8B"><span class="nav-number">1.0.0.1.</span> <span class="nav-text"> 1.1 下载过程</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#12-%E5%AE%89%E8%A3%85%E8%BF%87%E7%A8%8B"><span class="nav-number">1.0.0.2.</span> <span class="nav-text"> 1.2 安装过程</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-texstudio%E4%B8%8B%E8%BD%BD%E5%8F%8A%E5%AE%89%E8%A3%85"><span class="nav-number">2.</span> <span class="nav-text"> 2. Texstudio下载及安装</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#21-%E4%B8%8B%E8%BD%BD"><span class="nav-number">2.0.0.1.</span> <span class="nav-text"> 2.1 下载</span></a></li></ol></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -497,13 +503,13 @@
       <i class="fa fa-area-chart"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">80k</span>
+    <span title="站点总字数">86k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">2:26</span>
+    <span title="站点阅读时长">2:37</span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
   </div>

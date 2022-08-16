@@ -20,20 +20,18 @@
     var CONFIG = {"hostname":"othlis.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":false,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"gitalk","storage":true,"lazyload":false,"nav":{"disqus":{"text":"Load Disqus","order":-1},"gitalk":{"order":-2}},"activeClass":"gitalk"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="种种原因，没有及时学习算法和数据结构这块内容。今天继续这块内容的学习，来理解算法的复杂度。我是根据程序员联盟进行学习记录的。">
+  <meta name="description" content="![ART.jpeg](https:&#x2F;&#x2F;upload-images.jianshu.io&#x2F;upload_images&#x2F;3478485-a478ee5c310cda89.jpeg?imageMogr2&#x2F;auto-orient&#x2F;strip%7CimageView2&#x2F;2&#x2F;w&#x2F;1240) &gt;种种原因，没有及时学习算法和数据结构这块内容。今天继续这块内容的学习，来理解算法的复杂度。我是根据[程序员联盟](">
 <meta property="og:type" content="article">
 <meta property="og:title" content="算法与数据结构（3）：算法复杂度说明（上）">
 <meta property="og:url" content="https://othlis.com/2018/10/10/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%EF%BC%883%EF%BC%89%EF%BC%9A%E7%AE%97%E6%B3%95%E5%A4%8D%E6%9D%82%E5%BA%A6%E8%AF%B4%E6%98%8E%EF%BC%88%E4%B8%8A%EF%BC%89/index.html">
 <meta property="og:site_name" content="Lxmic Blog">
-<meta property="og:description" content="种种原因，没有及时学习算法和数据结构这块内容。今天继续这块内容的学习，来理解算法的复杂度。我是根据程序员联盟进行学习记录的。">
+<meta property="og:description" content="![ART.jpeg](https:&#x2F;&#x2F;upload-images.jianshu.io&#x2F;upload_images&#x2F;3478485-a478ee5c310cda89.jpeg?imageMogr2&#x2F;auto-orient&#x2F;strip%7CimageView2&#x2F;2&#x2F;w&#x2F;1240) &gt;种种原因，没有及时学习算法和数据结构这块内容。今天继续这块内容的学习，来理解算法的复杂度。我是根据[程序员联盟](">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-a478ee5c310cda89.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="article:published_time" content="2018-10-10T00:54:16.000Z">
 <meta property="article:modified_time" content="2022-07-31T14:04:20.834Z">
 <meta property="article:author" content="Jin JF">
 <meta property="article:tag" content="复杂度">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://upload-images.jianshu.io/upload_images/3478485-a478ee5c310cda89.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 
 <link rel="canonical" href="https://othlis.com/2018/10/10/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%EF%BC%883%EF%BC%89%EF%BC%9A%E7%AE%97%E6%B3%95%E5%A4%8D%E6%9D%82%E5%BA%A6%E8%AF%B4%E6%98%8E%EF%BC%88%E4%B8%8A%EF%BC%89/">
 
@@ -252,7 +250,7 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>1.5k</span>
+              <span>1.6k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -271,26 +269,33 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p><meta name="referrer" content="no-referrer" /><br><img src="https://upload-images.jianshu.io/upload_images/3478485-a478ee5c310cda89.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="ART.jpeg"></p>
-<blockquote>
-<p>种种原因，没有及时学习算法和数据结构这块内容。今天继续这块内容的学习，来理解算法的复杂度。我是根据<a target="_blank" rel="noopener" href="https://www.jianshu.com/p/14982c42b2d8">程序员联盟</a>进行学习记录的。</p>
-</blockquote>
+        <meta name="referrer" content="no-referrer" />
+![ART.jpeg](https://upload-images.jianshu.io/upload_images/3478485-a478ee5c310cda89.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+>种种原因，没有及时学习算法和数据结构这块内容。今天继续这块内容的学习，来理解算法的复杂度。我是根据[程序员联盟](https://www.jianshu.com/p/14982c42b2d8)进行学习记录的。
 <span id="more"></span>
-<h1 id="算法正确性"><a href="#算法正确性" class="headerlink" title="算法正确性"></a><font color="green">算法正确性</font></h1><p>我们在前面的文章中已经知道，算法只是对解决问题的步骤的一种精确描述，通常不依赖于程序员所使用的编程语言。</p>
+<h1 id="font-colorgreen算法正确性font"><a class="markdownIt-Anchor" href="#font-colorgreen算法正确性font"></a> <font color="green">算法正确性</font></h1>
+<p>我们在前面的文章中已经知道，算法只是对解决问题的步骤的一种精确描述，通常不依赖于程序员所使用的编程语言。</p>
 <p>在<a target="_blank" rel="noopener" href="https://www.jianshu.com/p/8efb49cb0194">算法与数据结构（1）：概念理解</a>中，曾提到了煮方便面食谱，可以看成是一个算法。而这份食谱适合各个国家的人，不管使用什么语言（中文，英文，西班牙语或者罗马语等），都不会影响人们的使用。</p>
 <p>但是最关键的一点是，这份食谱必须是正确的，就像算法一样，首先要正确，能够达到预期的结果并且能够解决你想要解决的问题。所以在使用一种算法之前，我们必须要去验证这个算法是否正确。在算法正确之后，我们就可以使用编程语言去实现它。</p>
-<h1 id="算法复杂度"><a href="#算法复杂度" class="headerlink" title="算法复杂度"></a><font color="green">算法复杂度</font></h1><p>算法正确之后，我们往往喜欢效率更高，速度更快的算法。因此我们要进一步的评估，就像煮方便面，我们需要更方便更高效的食谱，能够节约我们的时间。</p>
+<h1 id="font-colorgreen算法复杂度font"><a class="markdownIt-Anchor" href="#font-colorgreen算法复杂度font"></a> <font color="green">算法复杂度</font></h1>
+<p>算法正确之后，我们往往喜欢效率更高，速度更快的算法。因此我们要进一步的评估，就像煮方便面，我们需要更方便更高效的食谱，能够节约我们的时间。</p>
 <p>要去评估算法的快慢，我们很多情况不可能实际去操作，因为有太多的因素需要控制。如果你想在电脑上进行评估，那么如果电脑的配置不一样呢，你的结果就没有价值。如果有些涉及到大型仪器运行的，难道你每次都要去操作这些机器来评估你的算法吗？很明显，这些都不是特别的靠谱，也不太现实。</p>
 <p>因为种种的现实限制，计算机科学家就发明了算法复杂度这个概念。复杂度——Complexity，复杂，这里我们不是要强调算法的复杂，而是指出算法的效率，前面已经提到过。所以，算法复杂度，并不是来描述算法的复杂，而是用来描述算法的效率，是两回事。你会发现，有些算法理解起来很难，很复杂，但是复杂度却很低。</p>
 <blockquote>
-<p>如果要用一句话来简单说明算法复杂度，那可以是：<br>“如果给实现了这个算法的程序一个大小为 N 的输入，那么这个程序将执行的操作的数目的数量级是 N 的一个怎么样的函数（f(N)）呢？”——引用自程序员联盟的文章</p>
+<p>如果要用一句话来简单说明算法复杂度，那可以是：<br />
+“如果给实现了这个算法的程序一个大小为 N 的输入，那么这个程序将执行的操作的数目的数量级是 N 的一个怎么样的函数（f(N)）呢？”——引用自程序员联盟的文章</p>
 </blockquote>
 <p><strong>要更简单的来理解算法复杂度，那就可以量化成（函数）初始条件与算法执行时间之间的关系。</strong></p>
 <p>这里已经开始涉及到一些数学的概念。前面提到的操作，其实就是每一个步骤，比如煮方便面就包含很多个步骤，就是很多个Operation。那么我们到底要选出哪几个操作来进行度量，这个就需要具体问题具体考虑。比如在小鸭子那个例子中，你主要的时间就是花费在来回的路程上，其他都是基本不怎么耗费时间，也就是做这个时间可以作为用来度量算法复杂度。同样地，我们在煮方便面的时候，肯定也有几个步骤是比较耗费时间的，就可以选择这几部进行度量。</p>
-<h1 id="“渐进“度量"><a href="#“渐进“度量" class="headerlink" title="“渐进“度量"></a><font color="green">“渐进“度量</font></h1><blockquote>
+<h1 id="font-colorgreen渐进度量font"><a class="markdownIt-Anchor" href="#font-colorgreen渐进度量font"></a> <font color="green">“渐进“度量</font></h1>
+<blockquote>
 <p>复杂度是算法的渐近行为的度量。看到这样概念理解，我也是有点懵圈。</p>
 </blockquote>
-<p>当我们的输入（前面提到过）变得非常大，会有两种我们需要忽略：<br>一方面，有些时间是固定的，是常量，我们就不去考虑这些时间的比较。比如在小鸭子那个例子中，农夫打开车门的时间是固定不变的。<br>另一方面，常数乘法因子，比如N和2N我们就忽略2这个常数因子。我们看两种算法：<br><code>做N次（操作A）</code>和<code>做N次（操作B 然后操作C）</code><br>前一种算法是N次，而后一种算法是2N次。但是你没有办法去比较时间，这个取决去操作A，B，C各自需要的时间。因此，这些不一定对算法效率有影响的常数乘法因子不在复杂度的度量中考虑。</p>
+<p>当我们的输入（前面提到过）变得非常大，会有两种我们需要忽略：<br />
+一方面，有些时间是固定的，是常量，我们就不去考虑这些时间的比较。比如在小鸭子那个例子中，农夫打开车门的时间是固定不变的。<br />
+另一方面，常数乘法因子，比如N和2N我们就忽略2这个常数因子。我们看两种算法：<br />
+<code>做N次（操作A）</code>和<code>做N次（操作B 然后操作C）</code><br />
+前一种算法是N次，而后一种算法是2N次。但是你没有办法去比较时间，这个取决去操作A，B，C各自需要的时间。因此，这些不一定对算法效率有影响的常数乘法因子不在复杂度的度量中考虑。</p>
 <p>当然，有时候这样的忽略也不一定正确，比如有时候常数因子可能起到非常重要的作用。比如农夫完全没有办法打开门，那么就需要花费太多时间在开门上。但是，在大多数情况下，算法复杂度是算法性能的可靠指标。尤其是在输入非常大的时候，性能差距就会越来越明显。</p>
 <p>算法真得还是有点难以理解，需要不断地去重复理解这个概念。</p>
 
@@ -394,7 +399,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AE%97%E6%B3%95%E6%AD%A3%E7%A1%AE%E6%80%A7"><span class="nav-number">1.</span> <span class="nav-text">算法正确性</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AE%97%E6%B3%95%E5%A4%8D%E6%9D%82%E5%BA%A6"><span class="nav-number">2.</span> <span class="nav-text">算法复杂度</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E2%80%9C%E6%B8%90%E8%BF%9B%E2%80%9C%E5%BA%A6%E9%87%8F"><span class="nav-number">3.</span> <span class="nav-text">“渐进“度量</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#font-colorgreen%E7%AE%97%E6%B3%95%E6%AD%A3%E7%A1%AE%E6%80%A7font"><span class="nav-number">1.</span> <span class="nav-text"> 算法正确性</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#font-colorgreen%E7%AE%97%E6%B3%95%E5%A4%8D%E6%9D%82%E5%BA%A6font"><span class="nav-number">2.</span> <span class="nav-text"> 算法复杂度</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#font-colorgreen%E6%B8%90%E8%BF%9B%E5%BA%A6%E9%87%8Ffont"><span class="nav-number">3.</span> <span class="nav-text"> “渐进“度量</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -474,13 +479,13 @@
       <i class="fa fa-area-chart"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">80k</span>
+    <span title="站点总字数">86k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">2:26</span>
+    <span title="站点阅读时长">2:37</span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
   </div>
