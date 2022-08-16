@@ -2742,10 +2742,10 @@ float——确定图片是否为浮动，而不是在一个固定的地方。</p
             <p>King’s B medium for <em>Pseudomonas syringae</em> pathovar <em>tomato</em> (<em>Pst</em>) strain, DC3000 culture.</p>
           </div>
 <span id="more"></span>
-<h2 id="font-colorgreenrecipefont"><a class="markdownIt-Anchor" href="#font-colorgreenrecipefont"></a> <font color=green>Recipe</font></h2>
+<h1 id="font-colorgreencsh-recipefont"><a class="markdownIt-Anchor" href="#font-colorgreencsh-recipefont"></a> <font color=green>CSH Recipe</font></h1>
 <p>Proteose peptone <strong>10 g</strong></p>
 <p>Anhydrous K<sub>2</sub>HPO<sub>4</sub> <strong>1.5 g</strong></p>
-<p>Glycerol <strong>10 mL</strong></p>
+<p>Glycerol <strong>15 g</strong></p>
 <p>MgSO<sub>4</sub> (1 M; sterile) <strong>5 ml</strong></p>
 <p>[Agar (solid medium) <strong>15 g</strong>]</p>
 <p>Rifampicin is added at <strong>50 mg/L</strong></p>
@@ -2753,7 +2753,16 @@ float——确定图片是否为浮动，而不是在一个固定的地方。</p
 <div class="note warning">
             <p>If MgSO<sub>4</sub> is added before autoclaving, the medium becomes cloudy.</p>
           </div>
-<h2 id="font-colorgreenreferencefont"><a class="markdownIt-Anchor" href="#font-colorgreenreferencefont"></a> <font color=green>Reference</font></h2>
+<h1 id="font-colorgreenanother-recipefont"><a class="markdownIt-Anchor" href="#font-colorgreenanother-recipefont"></a> <font color=green>Another recipe</font></h1>
+<p>H<sub>2</sub>O   <strong>1 L</strong><br />
+Peptone     <strong>20 g</strong><br />
+Glycerol       <strong>10 mL</strong><br />
+K<sub>2</sub>HPO<sub>4</sub>  <strong>1.5 g</strong><br />
+MgSO～4～•7H<sub>2</sub>O  <strong>1.5 g</strong><br />
+Agar <strong>15 g</strong><br />
+KOH adjust the pH to 7.2</p>
+<p>Autoclave for 20 min at 121°C</p>
+<h1 id="font-colorgreenreferencefont"><a class="markdownIt-Anchor" href="#font-colorgreenreferencefont"></a> <font color=green>Reference</font></h1>
 <ol>
 <li>King’s B medium (2009). Cold Spring Harbor Protocols 2009: pdb.rec11326.</li>
 <li>Xin XF and He SY. (2013). <em>Pseudomonas syringae</em> pv. <em>tomato</em> DC3000: a model pathogen for probing disease susceptibility and hormone signaling in plants. Annual Review of Phytopathology 51: 473–498.</li>
@@ -2761,6 +2770,7 @@ float——确定图片是否为浮动，而不是在一个固定的地方。</p
 <li>Whalen MC, Innes RW, Bent AF, and Staskawicz BJ. (1991). Identification of Pseudomonas syringae pathogens of Arabidopsis and a bacterial locus determining avirulence on both Arabidopsis and soybean. The Plant Cell 3: 49–59.</li>
 <li>Scalschi L, Camañes G, Llorens E, Fernández-Crespo E, López MM, García-Agustín P, and Vicedo B. (2014). Resistance inducers modulate <em>Pseudomonas syringae</em> pv. <em>tomato</em> strain DC3000 response in tomato plants. PLoS ONE 9: e106429.</li>
 <li>张倩, 鲍依群, 谭小云. (2015). 拟南芥果胶甲酯化酶基因PME17在抵御丁香假单胞杆菌番茄致病变种DC3000株中的功能. 植物生理学报 51: 1061–1066.</li>
+<li><a href="http://muchong.com/t-365059-1">KB培养基配方 - 生物科学 - 小木虫论坛-学术科研互动平台</a></li>
 </ol>
 ]]></content>
       <categories>
