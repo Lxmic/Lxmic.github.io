@@ -20,12 +20,12 @@
     var CONFIG = {"hostname":"othlis.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":false,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"gitalk","storage":true,"lazyload":false,"nav":{"disqus":{"text":"Load Disqus","order":-1},"gitalk":{"order":-2}},"activeClass":"gitalk"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="&gt; 在处理Excel数据的时候，需要合并一个表中多个sheets，又不想一个个复制粘贴，于是就搜索到了VB代码，稍加修改，可以灵活使用！">
+  <meta name="description" content="在处理Excel数据的时候，需要合并一个表中多个sheets，又不想一个个复制粘贴，于是就搜索到了VB代码，稍加修改，可以灵活使用！">
 <meta property="og:type" content="article">
 <meta property="og:title" content="如何快速合并excel中多个sheets">
 <meta property="og:url" content="https://othlis.com/2022/08/03/20220803-%E5%A6%82%E4%BD%95%E5%BF%AB%E9%80%9F%E5%90%88%E5%B9%B6excel%E4%B8%AD%E5%A4%9A%E4%B8%AAsheets/index.html">
 <meta property="og:site_name" content="Lxmic Blog">
-<meta property="og:description" content="&gt; 在处理Excel数据的时候，需要合并一个表中多个sheets，又不想一个个复制粘贴，于是就搜索到了VB代码，稍加修改，可以灵活使用！">
+<meta property="og:description" content="在处理Excel数据的时候，需要合并一个表中多个sheets，又不想一个个复制粘贴，于是就搜索到了VB代码，稍加修改，可以灵活使用！">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-08-03-Xnip2022-08-03_13-24-49.jpg">
 <meta property="og:image" content="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-08-03-Xnip2022-08-03_13-30-20.jpg">
@@ -256,7 +256,7 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>738</span>
+              <span>737</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -275,17 +275,14 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <meta name="referrer" content="no-referrer" />
-> 在处理Excel数据的时候，需要合并一个表中多个sheets，又不想一个个复制粘贴，于是就搜索到了VB代码，稍加修改，可以灵活使用！
-
-
+        <p><meta name="referrer" content="no-referrer" /></p>
+<blockquote>
+<p>在处理Excel数据的时候，需要合并一个表中多个sheets，又不想一个个复制粘贴，于是就搜索到了VB代码，稍加修改，可以灵活使用！</p>
+</blockquote>
 <span id="more"></span>
-
 <h2 id="新建汇总表，并右键“查看代码”"><a href="#新建汇总表，并右键“查看代码”" class="headerlink" title="新建汇总表，并右键“查看代码”"></a><font color=green>新建汇总表，并右键“查看代码”</font></h2><p>在现有的sheets后面新建一个汇总sheet，然后右键汇总sheet标签，“==查看代码==”。<br><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-08-03-Xnip2022-08-03_13-24-49.jpg" alt="2022-08-03-Xnip2022-08-03_13-24-49"></p>
 <p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-08-03-Xnip2022-08-03_13-30-20.jpg" alt="2022-08-03-Xnip2022-08-03_13-30-20"></p>
-<h2 id="粘贴代码至空白处"><a href="#粘贴代码至空白处" class="headerlink" title="粘贴代码至空白处"></a><font color= green>粘贴代码至空白处</font></h2><p>代码如下，可以直接复制黏贴至空白处。有多少sheets它都会一次性进行合并，几乎感觉不到有延迟。如果你想合并前几个，1-3sheets，那么你只需要将<code>For j = 1 To Sheets.Count</code>==改为==<code>For j = 1 To 3</code>，这个代码其实就是一个for循坏。</p>
-<figure class="highlight mathematica"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">Sub</span> 合并当前工作簿下的所有工作表<span class="punctuation">(</span><span class="punctuation">)</span></span><br><span class="line"></span><br><span class="line"><span class="variable">Application</span><span class="operator">.</span><span class="variable">ScreenUpdating</span> <span class="operator">=</span> <span class="built_in">False</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">For</span> <span class="variable">j</span> <span class="operator">=</span> <span class="number">1</span> <span class="variable">To</span> <span class="variable">Sheets</span><span class="operator">.</span><span class="built_in">Count</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">If</span> <span class="variable">Sheets</span><span class="punctuation">(</span><span class="variable">j</span><span class="punctuation">)</span><span class="operator">.</span><span class="variable">Name</span> <span class="operator">&lt;&gt;</span> <span class="variable">ActiveSheet</span><span class="operator">.</span><span class="variable">Name</span> <span class="variable">Then</span></span><br><span class="line"></span><br><span class="line"><span class="variable">X</span> <span class="operator">=</span> <span class="built_in">Range</span><span class="punctuation">(</span><span class="string">&quot;A65536&quot;</span><span class="punctuation">)</span><span class="operator">.</span><span class="built_in">End</span><span class="punctuation">(</span><span class="variable">xlUp</span><span class="punctuation">)</span><span class="operator">.</span><span class="built_in">Row</span> <span class="operator">+</span> <span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="variable">Sheets</span><span class="punctuation">(</span><span class="variable">j</span><span class="punctuation">)</span><span class="operator">.</span><span class="variable">UsedRange</span><span class="operator">.</span><span class="variable">Copy</span> <span class="built_in">Cells</span><span class="punctuation">(</span><span class="variable">X</span><span class="operator">,</span> <span class="number">1</span><span class="punctuation">)</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">End</span> <span class="built_in">If</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">Next</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">Range</span><span class="punctuation">(</span><span class="string">&quot;B1&quot;</span><span class="punctuation">)</span><span class="operator">.</span><span class="built_in">Select</span></span><br><span class="line"></span><br><span class="line"><span class="variable">Application</span><span class="operator">.</span><span class="variable">ScreenUpdating</span> <span class="operator">=</span> <span class="built_in">True</span></span><br><span class="line"></span><br><span class="line"><span class="variable">MsgBox</span> <span class="string">&quot;当前工作簿下的全部工作表已经合并完毕！&quot;</span><span class="operator">,</span> <span class="variable">vbInformation</span><span class="operator">,</span> <span class="string">&quot;提示&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">End</span> <span class="variable">Sub</span></span><br></pre></td></tr></table></figure>
-<p>粘贴后的效果<br><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-08-03-Xnip2022-08-03_13-38-09.jpg" alt="2022-08-03-Xnip2022-08-03_13-38-09"></p>
+<h2 id="粘贴代码至空白处"><a href="#粘贴代码至空白处" class="headerlink" title="粘贴代码至空白处"></a><font color= green>粘贴代码至空白处</font></h2><p>代码如下，可以直接复制黏贴至空白处。有多少sheets它都会一次性进行合并，几乎感觉不到有延迟。如果你想合并前几个，1-3sheets，那么你只需要将<code>For j = 1 To Sheets.Count</code>==改为==<code>For j = 1 To 3</code>，这个代码其实就是一个for循坏。<br><figure class="highlight mathematica"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">Sub</span> 合并当前工作簿下的所有工作表<span class="punctuation">(</span><span class="punctuation">)</span></span><br><span class="line"></span><br><span class="line"><span class="variable">Application</span><span class="operator">.</span><span class="variable">ScreenUpdating</span> <span class="operator">=</span> <span class="built_in">False</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">For</span> <span class="variable">j</span> <span class="operator">=</span> <span class="number">1</span> <span class="variable">To</span> <span class="variable">Sheets</span><span class="operator">.</span><span class="built_in">Count</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">If</span> <span class="variable">Sheets</span><span class="punctuation">(</span><span class="variable">j</span><span class="punctuation">)</span><span class="operator">.</span><span class="variable">Name</span> <span class="operator">&lt;&gt;</span> <span class="variable">ActiveSheet</span><span class="operator">.</span><span class="variable">Name</span> <span class="variable">Then</span></span><br><span class="line"></span><br><span class="line"><span class="variable">X</span> <span class="operator">=</span> <span class="built_in">Range</span><span class="punctuation">(</span><span class="string">&quot;A65536&quot;</span><span class="punctuation">)</span><span class="operator">.</span><span class="built_in">End</span><span class="punctuation">(</span><span class="variable">xlUp</span><span class="punctuation">)</span><span class="operator">.</span><span class="built_in">Row</span> <span class="operator">+</span> <span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="variable">Sheets</span><span class="punctuation">(</span><span class="variable">j</span><span class="punctuation">)</span><span class="operator">.</span><span class="variable">UsedRange</span><span class="operator">.</span><span class="variable">Copy</span> <span class="built_in">Cells</span><span class="punctuation">(</span><span class="variable">X</span><span class="operator">,</span> <span class="number">1</span><span class="punctuation">)</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">End</span> <span class="built_in">If</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">Next</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">Range</span><span class="punctuation">(</span><span class="string">&quot;B1&quot;</span><span class="punctuation">)</span><span class="operator">.</span><span class="built_in">Select</span></span><br><span class="line"></span><br><span class="line"><span class="variable">Application</span><span class="operator">.</span><span class="variable">ScreenUpdating</span> <span class="operator">=</span> <span class="built_in">True</span></span><br><span class="line"></span><br><span class="line"><span class="variable">MsgBox</span> <span class="string">&quot;当前工作簿下的全部工作表已经合并完毕！&quot;</span><span class="operator">,</span> <span class="variable">vbInformation</span><span class="operator">,</span> <span class="string">&quot;提示&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">End</span> <span class="variable">Sub</span></span><br></pre></td></tr></table></figure><br>粘贴后的效果<br><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-08-03-Xnip2022-08-03_13-38-09.jpg" alt="2022-08-03-Xnip2022-08-03_13-38-09"></p>
 <h2 id="点击运行，即可完成合并"><a href="#点击运行，即可完成合并" class="headerlink" title="点击运行，即可完成合并"></a><font color= green>点击运行，即可完成合并</font></h2><p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-08-03-Xnip2022-08-03_13-40-42.jpg" alt="2022-08-03-Xnip2022-08-03_13-40-42"></p>
 <p>运行之后，会出现Msgox内容“<font color=chocolate>当前工作簿下的全部工作表已经合并完毕！</font>”</p>
 <blockquote>
@@ -409,7 +406,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">59</span>
+          <span class="site-state-item-count">60</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -422,7 +419,7 @@
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">59</span>
+        <span class="site-state-item-count">63</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -473,13 +470,13 @@
       <i class="fa fa-area-chart"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">85k</span>
+    <span title="站点总字数">80k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">2:34</span>
+    <span title="站点阅读时长">2:26</span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
   </div>

@@ -277,14 +277,9 @@
 <p><img src="https://upload-images.jianshu.io/upload_images/3478485-a4ba2098aa1800cb.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="海，使人放下自己的身段"></p>
 <p>前面的<a target="_blank" rel="noopener" href="https://www.jianshu.com/writer#/notebooks/23465256/notes/33812322">LaTeX插入表格</a>一文主要是来说明怎么插入表格，如果没有看过可以跳到前面去看。今天我们来说一下关于表格的一些细节处理问题。</p>
 <span id="more"></span>
-
 <h1 id="1-表格过长的问题"><a href="#1-表格过长的问题" class="headerlink" title="1 表格过长的问题"></a>1 表格过长的问题</h1><p>有时候我们的表格往往会超过一页的长度，这个时候依旧使用<code>\begin&#123;tabular&#125;...\end&#123;tabular&#125;</code>环境的话，那么肯定会导致表格的溢出，完全看不到表格超出的部分。这个时候我们就需要选择其他的宏包，来进行表格环境的设置。一般来说，我们有几种选择，但是共同的一点是，<strong>必须处理在第二页及后面几页的表头和表尾。</strong><code>\endfirsthead、\endhead、\endfoot和\endlastfoot</code>，这些参数分别用来设置第一页表头，后面每一页表头，后面每一页表尾和最后一页表尾。</p>
-<h3 id="1-1-longtable宏包"><a href="#1-1-longtable宏包" class="headerlink" title="1.1 longtable宏包"></a>1.1 longtable宏包</h3><p>在导言区你需要加载宏包<code>\usepackage&#123;longtable&#125;</code>，它的环境和tabular类似，这里不细讲。</p>
-<figure class="highlight livescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">\usepackage&#123;longtable&#125;</span></span><br><span class="line"><span class="string">\begin&#123;longtable&#125;&#123;表格格式&#125;</span></span><br><span class="line"><span class="string">\endhead</span></span><br><span class="line"><span class="string">\endfirsthead</span></span><br><span class="line"><span class="string">\endfoot</span></span><br><span class="line"><span class="string">\endlastfoot</span></span><br><span class="line"><span class="string">\end&#123;longtable&#125;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h3 id="1-2-tabu宏包"><a href="#1-2-tabu宏包" class="headerlink" title="1.2 tabu宏包"></a>1.2 tabu宏包</h3><p>首先也是要在导言区导入tabu和longtable宏包，然后使用的环境是，基本上没有什么区别，只是不同宏包的使用。此外还有一个包也可以使用，就是<code>ltxtable</code>宏包，它的特点是将表格独立为一个tex文件，然后要使用的时候就去引用它。</p>
-<figure class="highlight livescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">\usepackage&#123;tabu&#125;</span></span><br><span class="line"><span class="string">\usepackage&#123;longtable&#125;</span></span><br><span class="line"><span class="string">\begin&#123;longtabu&#125;&#123;格式&#125;</span></span><br><span class="line"><span class="string">\endhead</span></span><br><span class="line"><span class="string">\endfirsthead</span></span><br><span class="line"><span class="string">\endfoot</span></span><br><span class="line"><span class="string">\endlastfoot</span></span><br><span class="line"><span class="string">\end&#123;longtabu&#125;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
+<h3 id="1-1-longtable宏包"><a href="#1-1-longtable宏包" class="headerlink" title="1.1 longtable宏包"></a>1.1 longtable宏包</h3><p>在导言区你需要加载宏包<code>\usepackage&#123;longtable&#125;</code>，它的环境和tabular类似，这里不细讲。<br><figure class="highlight livescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">\usepackage&#123;longtable&#125;</span></span><br><span class="line"><span class="string">\begin&#123;longtable&#125;&#123;表格格式&#125;</span></span><br><span class="line"><span class="string">\endhead</span></span><br><span class="line"><span class="string">\endfirsthead</span></span><br><span class="line"><span class="string">\endfoot</span></span><br><span class="line"><span class="string">\endlastfoot</span></span><br><span class="line"><span class="string">\end&#123;longtable&#125;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure></p>
+<h3 id="1-2-tabu宏包"><a href="#1-2-tabu宏包" class="headerlink" title="1.2 tabu宏包"></a>1.2 tabu宏包</h3><p>首先也是要在导言区导入tabu和longtable宏包，然后使用的环境是，基本上没有什么区别，只是不同宏包的使用。此外还有一个包也可以使用，就是<code>ltxtable</code>宏包，它的特点是将表格独立为一个tex文件，然后要使用的时候就去引用它。<br><figure class="highlight livescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">\usepackage&#123;tabu&#125;</span></span><br><span class="line"><span class="string">\usepackage&#123;longtable&#125;</span></span><br><span class="line"><span class="string">\begin&#123;longtabu&#125;&#123;格式&#125;</span></span><br><span class="line"><span class="string">\endhead</span></span><br><span class="line"><span class="string">\endfirsthead</span></span><br><span class="line"><span class="string">\endfoot</span></span><br><span class="line"><span class="string">\endlastfoot</span></span><br><span class="line"><span class="string">\end&#123;longtabu&#125;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure></p>
 <h1 id="2-表格过宽的问题"><a href="#2-表格过宽的问题" class="headerlink" title="2 表格过宽的问题"></a>2 表格过宽的问题</h1><p>这个问题就比表格过长棘手一点，你没有现成的宏包可以使用，只能通过一些间接的方式将表格变窄，包括表格字体缩小，表格横放，表格列间距缩小，表格每一列的宽度减少，修改表头的行数，也可以让表格自动换行，来处理一些溢出的情况。貌似到目前为止还没有很好的宏包来解决。<br>我一般使用的是将每一列的宽度减少，进行适合的调整，到达最好的效果，其中可以使用一个强制换行的宏包来处理表头<code>makecell</code>。没一列宽度的调整就是在上面的环境后面的格式中调整，具体也不做展开，之后再写一篇细节问题来说明。</p>
 
     </div>
@@ -404,7 +399,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">59</span>
+          <span class="site-state-item-count">60</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -417,7 +412,7 @@
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">59</span>
+        <span class="site-state-item-count">63</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -468,13 +463,13 @@
       <i class="fa fa-area-chart"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">85k</span>
+    <span title="站点总字数">80k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">2:34</span>
+    <span title="站点阅读时长">2:26</span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
   </div>

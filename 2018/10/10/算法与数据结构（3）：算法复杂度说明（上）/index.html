@@ -20,18 +20,20 @@
     var CONFIG = {"hostname":"othlis.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":false,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"gitalk","storage":true,"lazyload":false,"nav":{"disqus":{"text":"Load Disqus","order":-1},"gitalk":{"order":-2}},"activeClass":"gitalk"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="![ART.jpeg](https:&#x2F;&#x2F;upload-images.jianshu.io&#x2F;upload_images&#x2F;3478485-a478ee5c310cda89.jpeg?imageMogr2&#x2F;auto-orient&#x2F;strip%7CimageView2&#x2F;2&#x2F;w&#x2F;1240) &gt;种种原因，没有及时学习算法和数据结构这块内容。今天继续这块内容的学习，来理解算法的复杂度。我是根据[程序员联盟](">
+  <meta name="description" content="种种原因，没有及时学习算法和数据结构这块内容。今天继续这块内容的学习，来理解算法的复杂度。我是根据程序员联盟进行学习记录的。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="算法与数据结构（3）：算法复杂度说明（上）">
 <meta property="og:url" content="https://othlis.com/2018/10/10/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%EF%BC%883%EF%BC%89%EF%BC%9A%E7%AE%97%E6%B3%95%E5%A4%8D%E6%9D%82%E5%BA%A6%E8%AF%B4%E6%98%8E%EF%BC%88%E4%B8%8A%EF%BC%89/index.html">
 <meta property="og:site_name" content="Lxmic Blog">
-<meta property="og:description" content="![ART.jpeg](https:&#x2F;&#x2F;upload-images.jianshu.io&#x2F;upload_images&#x2F;3478485-a478ee5c310cda89.jpeg?imageMogr2&#x2F;auto-orient&#x2F;strip%7CimageView2&#x2F;2&#x2F;w&#x2F;1240) &gt;种种原因，没有及时学习算法和数据结构这块内容。今天继续这块内容的学习，来理解算法的复杂度。我是根据[程序员联盟](">
+<meta property="og:description" content="种种原因，没有及时学习算法和数据结构这块内容。今天继续这块内容的学习，来理解算法的复杂度。我是根据程序员联盟进行学习记录的。">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3478485-a478ee5c310cda89.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="article:published_time" content="2018-10-10T00:54:16.000Z">
 <meta property="article:modified_time" content="2022-07-31T14:04:20.834Z">
 <meta property="article:author" content="Jin JF">
 <meta property="article:tag" content="复杂度">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://upload-images.jianshu.io/upload_images/3478485-a478ee5c310cda89.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 
 <link rel="canonical" href="https://othlis.com/2018/10/10/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%EF%BC%883%EF%BC%89%EF%BC%9A%E7%AE%97%E6%B3%95%E5%A4%8D%E6%9D%82%E5%BA%A6%E8%AF%B4%E6%98%8E%EF%BC%88%E4%B8%8A%EF%BC%89/">
 
@@ -250,7 +252,7 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>1.6k</span>
+              <span>1.5k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -269,14 +271,11 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <meta name="referrer" content="no-referrer" />
-![ART.jpeg](https://upload-images.jianshu.io/upload_images/3478485-a478ee5c310cda89.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
->种种原因，没有及时学习算法和数据结构这块内容。今天继续这块内容的学习，来理解算法的复杂度。我是根据[程序员联盟](https://www.jianshu.com/p/14982c42b2d8)进行学习记录的。
-
-
-
+        <p><meta name="referrer" content="no-referrer" /><br><img src="https://upload-images.jianshu.io/upload_images/3478485-a478ee5c310cda89.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="ART.jpeg"></p>
+<blockquote>
+<p>种种原因，没有及时学习算法和数据结构这块内容。今天继续这块内容的学习，来理解算法的复杂度。我是根据<a target="_blank" rel="noopener" href="https://www.jianshu.com/p/14982c42b2d8">程序员联盟</a>进行学习记录的。</p>
+</blockquote>
 <span id="more"></span>
-
 <h1 id="算法正确性"><a href="#算法正确性" class="headerlink" title="算法正确性"></a><font color="green">算法正确性</font></h1><p>我们在前面的文章中已经知道，算法只是对解决问题的步骤的一种精确描述，通常不依赖于程序员所使用的编程语言。</p>
 <p>在<a target="_blank" rel="noopener" href="https://www.jianshu.com/p/8efb49cb0194">算法与数据结构（1）：概念理解</a>中，曾提到了煮方便面食谱，可以看成是一个算法。而这份食谱适合各个国家的人，不管使用什么语言（中文，英文，西班牙语或者罗马语等），都不会影响人们的使用。</p>
 <p>但是最关键的一点是，这份食谱必须是正确的，就像算法一样，首先要正确，能够达到预期的结果并且能够解决你想要解决的问题。所以在使用一种算法之前，我们必须要去验证这个算法是否正确。在算法正确之后，我们就可以使用编程语言去实现它。</p>
@@ -411,7 +410,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">59</span>
+          <span class="site-state-item-count">60</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -424,7 +423,7 @@
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">59</span>
+        <span class="site-state-item-count">63</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -475,13 +474,13 @@
       <i class="fa fa-area-chart"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">85k</span>
+    <span title="站点总字数">80k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">2:34</span>
+    <span title="站点阅读时长">2:26</span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
   </div>
