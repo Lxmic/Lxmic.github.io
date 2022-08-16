@@ -1224,7 +1224,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #53b3ff;
+  background: #ff4a47;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -1605,16 +1605,6 @@ pre .javascript .function {
 }
 .use-motion .collection-header {
   opacity: 0;
-}
-.post-body p a {
-  color: #067e9d;
-  border-bottom: none;
-  border-bottom: 1px solid #067e9d;
-}
-.post-body p a:hover {
-  color: #fc6423;
-  border-bottom: none;
-  border-bottom: 1px solid #fc6423;
 }
 .posts-collapse {
   margin-left: 35px;
@@ -2032,6 +2022,16 @@ pre .javascript .function {
   list-style: none;
   margin: 2em 0 0;
   padding: 0.5em 1em;
+}
+.post-body a {
+  color: #067e9d;
+  border-bottom: none;
+  border-bottom: 1px solid #067e9d;
+}
+.post-body a:hover {
+  color: #fc6423;
+  border-bottom: none;
+  border-bottom: 1px solid #fc6423;
 }
 .category-all-page .category-all-title {
   text-align: center;
@@ -2613,16 +2613,6 @@ ul.breadcrumb li + li:last-child {
 }
 .links-of-blogroll-item {
   padding: 0;
-}
-.post-body p a {
-  color: #067e9d;
-  border-bottom: none;
-  border-bottom: 1px solid #067e9d;
-}
-.post-body p a:hover {
-  color: #fc6423;
-  border-bottom: none;
-  border-bottom: 1px solid #fc6423;
 }
 /* webkit, opera, IE9 */
 ::selection {
