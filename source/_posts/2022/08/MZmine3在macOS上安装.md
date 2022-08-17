@@ -10,7 +10,7 @@ categories: 科研之路
 ---
 
 <meta name="referrer" content="no-referrer" />
-{% note primary %} MZmine3是处理MS数据的软件，且是一款开源软件.在macOS上安装会有小问题，特此记录！{% endnote %}
+{% note primary %} MZmine3是处理MS数据的软件，且是一款开源软件。在macOS上安装会有小问题，特此记录！{% endnote %}
 
 <!--more-->
 
