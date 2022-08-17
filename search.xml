@@ -21,38 +21,6 @@
       </tags>
   </entry>
   <entry>
-    <title>如何快速合并excel中多个sheets</title>
-    <url>//2022/08/03/20220803-%E5%A6%82%E4%BD%95%E5%BF%AB%E9%80%9F%E5%90%88%E5%B9%B6excel%E4%B8%AD%E5%A4%9A%E4%B8%AAsheets/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-<span id="more"></span>
-<blockquote>
-<p>在处理Excel数据的时候，需要合并一个表中多个sheets，又不想一个个复制粘贴，于是就搜索到了VB代码，稍加修改，可以灵活使用！</p>
-</blockquote>
-<h2 id="font-colorgreen新建汇总表并右键查看代码font"><a class="markdownIt-Anchor" href="#font-colorgreen新建汇总表并右键查看代码font"></a> <font color=green>新建汇总表，并右键“查看代码”</font></h2>
-<p>在现有的sheets后面新建一个汇总sheet，然后右键汇总sheet标签，“<mark>查看代码</mark>”。<br />
-<img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-08-03-Xnip2022-08-03_13-24-49.jpg" alt="2022-08-03-Xnip2022-08-03_13-24-49" /></p>
-<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-08-03-Xnip2022-08-03_13-30-20.jpg" alt="2022-08-03-Xnip2022-08-03_13-30-20" /></p>
-<h2 id="font-color-green粘贴代码至空白处font"><a class="markdownIt-Anchor" href="#font-color-green粘贴代码至空白处font"></a> <font color= green>粘贴代码至空白处</font></h2>
-<p>代码如下，可以直接复制黏贴至空白处。有多少sheets它都会一次性进行合并，几乎感觉不到有延迟。如果你想合并前几个，1-3sheets，那么你只需要将<code>For j = 1 To Sheets.Count</code><mark>改为</mark><code>For j = 1 To 3</code>，这个代码其实就是一个for循坏。</p>
-<figure class="highlight mathematica"><table><tr><td class="code"><pre><span class="line"><span class="variable">Sub</span> 合并当前工作簿下的所有工作表<span class="punctuation">(</span><span class="punctuation">)</span></span><br><span class="line"></span><br><span class="line"><span class="variable">Application</span><span class="operator">.</span><span class="variable">ScreenUpdating</span> <span class="operator">=</span> <span class="built_in">False</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">For</span> <span class="variable">j</span> <span class="operator">=</span> <span class="number">1</span> <span class="variable">To</span> <span class="variable">Sheets</span><span class="operator">.</span><span class="built_in">Count</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">If</span> <span class="variable">Sheets</span><span class="punctuation">(</span><span class="variable">j</span><span class="punctuation">)</span><span class="operator">.</span><span class="variable">Name</span> <span class="operator">&lt;&gt;</span> <span class="variable">ActiveSheet</span><span class="operator">.</span><span class="variable">Name</span> <span class="variable">Then</span></span><br><span class="line"></span><br><span class="line"><span class="variable">X</span> <span class="operator">=</span> <span class="built_in">Range</span><span class="punctuation">(</span><span class="string">&quot;A65536&quot;</span><span class="punctuation">)</span><span class="operator">.</span><span class="built_in">End</span><span class="punctuation">(</span><span class="variable">xlUp</span><span class="punctuation">)</span><span class="operator">.</span><span class="built_in">Row</span> <span class="operator">+</span> <span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="variable">Sheets</span><span class="punctuation">(</span><span class="variable">j</span><span class="punctuation">)</span><span class="operator">.</span><span class="variable">UsedRange</span><span class="operator">.</span><span class="variable">Copy</span> <span class="built_in">Cells</span><span class="punctuation">(</span><span class="variable">X</span><span class="operator">,</span> <span class="number">1</span><span class="punctuation">)</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">End</span> <span class="built_in">If</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">Next</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">Range</span><span class="punctuation">(</span><span class="string">&quot;B1&quot;</span><span class="punctuation">)</span><span class="operator">.</span><span class="built_in">Select</span></span><br><span class="line"></span><br><span class="line"><span class="variable">Application</span><span class="operator">.</span><span class="variable">ScreenUpdating</span> <span class="operator">=</span> <span class="built_in">True</span></span><br><span class="line"></span><br><span class="line"><span class="variable">MsgBox</span> <span class="string">&quot;当前工作簿下的全部工作表已经合并完毕！&quot;</span><span class="operator">,</span> <span class="variable">vbInformation</span><span class="operator">,</span> <span class="string">&quot;提示&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">End</span> <span class="variable">Sub</span></span><br></pre></td></tr></table></figure>
-<p>粘贴后的效果<br />
-<img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-08-03-Xnip2022-08-03_13-38-09.jpg" alt="2022-08-03-Xnip2022-08-03_13-38-09" /></p>
-<h2 id="font-color-green点击运行即可完成合并font"><a class="markdownIt-Anchor" href="#font-color-green点击运行即可完成合并font"></a> <font color= green>点击运行，即可完成合并</font></h2>
-<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-08-03-Xnip2022-08-03_13-40-42.jpg" alt="2022-08-03-Xnip2022-08-03_13-40-42" /></p>
-<p>运行之后，会出现Msgox内容“<font color=chocolate>当前工作簿下的全部工作表已经合并完毕！</font>”</p>
-<blockquote>
-<p>参考内容来自知乎@老菜鸟：<a href="https://zhuanlan.zhihu.com/p/36003476">https://zhuanlan.zhihu.com/p/36003476</a></p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>学习记录</category>
-      </categories>
-      <tags>
-        <tag>小技巧</tag>
-        <tag>Excel</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>CRISPR-Cas9系统简介</title>
     <url>//2018/12/30/CRISPR-Cas9%E7%B3%BB%E7%BB%9F%E7%AE%80%E4%BB%8B/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -87,29 +55,52 @@
       </tags>
   </entry>
   <entry>
-    <title>DJY-遇见盖北</title>
-    <url>//2018/08/18/DJY-%E9%81%87%E8%A7%81%E7%9B%96%E5%8C%97/</url>
+    <title>如何快速合并excel中多个sheets</title>
+    <url>//2022/08/03/20220803-%E5%A6%82%E4%BD%95%E5%BF%AB%E9%80%9F%E5%90%88%E5%B9%B6excel%E4%B8%AD%E5%A4%9A%E4%B8%AAsheets/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![葡萄](https://upload-images.jianshu.io/upload_images/3478485-e6a857885484a2b7.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 <span id="more"></span>
 <blockquote>
-<p><strong>那天遇见，就是缘分；擦肩而过，依旧遗憾。</strong></p>
+<p>在处理Excel数据的时候，需要合并一个表中多个sheets，又不想一个个复制粘贴，于是就搜索到了VB代码，稍加修改，可以灵活使用！</p>
 </blockquote>
-<p>8月13日，星期日，公元2018年，在测序公司的积极准备下，我们早上8.00在学校南门口上大巴，出发去葡萄基地摘葡萄。自从师姐和哥们几个毕业，我貌似只剩一个人，我自己上车，坐了一个靠窗的位置，留下了走道的位置，眼睛一直注视着车窗外，看着迟来的同学们，一个一个陆续上车。</p>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-e6a857885484a2b7.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="葡萄" /></p>
-<p>突然一个姑娘坐了下来，占据了空位，我被挤在了窗边。从没有认为会发生什么交集，甚至也不会开口说话，我这个人天生的对陌生人非常冷漠，绝不会积极热情去打开话匣子。就这样，车开动了，这时候我已经在车上坐等了半个小时了，加上昨天没有睡几个小时，整个人完全是没有精神活力，完全萎靡。拿出耳机，插上手机，点开Apple Music，开始播放自己的歌单，闭眼靠窗养精蓄锐，等待采摘葡萄的那一刻。</p>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-b9e81d6de8f5cc18.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="" /></p>
-<p>突然，身边的人抬起手臂，伸到窗边划开窗帘，貌似遮挡了大部分的视线。但是，只划开了一些，还是遮住，我下意识的将整个窗帘都拨开了。依旧继续我的音乐享受，眯着眼休息，这个时候依旧很累，不怎么想动，没有任何语言交流，屏障厚厚的挡在位置中间。过去2个小时，到了上虞市，实验室伙伴问我家在哪，时候快到葡萄基地了。可能是离家很近了，到了家乡，这时候我开始有些缓过神来，身边的人也问了起来，是快要到了吗？我清醒过来了，特别激动的描述着这些地区的一些情况，葡萄基地的一些状况，包括自己小时候的关于葡萄的经历也都一股脑儿的诉说出来，我有些意识到，是不是说的有些多了。从这里开始，屏障开始有些裂开，甚至产生了一些洞，能够交流一些家乡相关的，满足她的好奇心。</p>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-407c147d07beb9c1.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="" /></p>
-<p>车继续开着，开始出现葡萄园，慢慢地能够互相对视着说话。跟一般的陌生人一样，需要从最外围的信息，最可以找到共同点的信息开始进行交流，从而来慢慢地拉近距离。同是生命科学领域的我们，最大的共同点，就是实验室。哪个学院，哪个实验室，导师是谁，几年级，专业方向等一系列的最优共同点的问题开始被提出，依次回答，互相提问。问完答完，又是一段沉默，继续寻找共同点。奇怪的是，丝毫没有感到什么不适，非常的和谐，很聊得来，她说话也很放得开，没有什么拘束，很爽快。</p>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-91efc97893b8dee6.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="" /></p>
-<p>到达终点，下车进入葡萄基地。我一个人也不怎么想吃葡萄，也没有什么新鲜感，不像他们从没有见过的同学那样激动。我带了单反，想拍一些关于葡萄的照片，我一个人拿着单反，进入葡萄园地，一只手拿着葡萄箱，单只手进行拍照（很可惜现在拿不到照片，无法分享）。我这个人有时候就是蠢，就是后知后觉，事后诸葛亮。后面回想起来，她提过跟着我一起剪葡萄，我比较熟悉品种，那些好吃，我却完全忘记这回事，自己一个人傻子一样的在那拍照。不知道这是不是一种病，或许是因为碰到了，完全不太会动脑子了。我发现了，跟一个完全的陌生人相处，我几乎不太可能会给别人留下特别好的印象，总是显得特别笨，太实在了。下车之后，再没有说话，我似乎很害怕，各自找到实验室的小伙伴吃饭。</p>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-55b8bd8c365b8c02.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="" /></p>
-<p>没想过，回去的路依旧坐在同样的位置。这次的顺序换了，我是后上车的人，她依旧一个人坐着，我跟她一样很自然的就坐在了旁边的空位置，我发现她已经戴上了耳机，再也没有跟我说话，很沉默的3个小时旅途。时间还比来时延长了，高速发生了车祸，近道限制车高，只能换其他的道路，一折腾之后，时间就没了。沉默一路，只有中途询问到了那个位置，再无其他话语，只能偶尔往窗外看一眼，能够瞥到带着耳机睡觉的她。</p>
-<p>很长一段时间，互相清醒的两个人不说一句话，瞬间没有了共同的话题，就难以继续维持交流，我也不是善于交流的人。知道进入杭州市区，眼看着快要到学校了，这时候真的要憋死我了，她一直带着耳机，我也不好打扰她，一直等着她将耳机摘下的那一刻，互相加个微信。终于摘下耳机的那一刻，她开口询问了我的名字，我就顺便加个微信，这个时候算是真的认识一下，不再是过路人，只是记得各自的名字。如果下车前没有知道各自的名字，那么虽然在一个学校，依旧是个路人，或许再也不会有联系。当然，即使知道了名字，也依旧会成为路人，只是可能性稍微小了一些。但是，我知道，如果不这么做，我必然会后悔遗憾。很难得，遇到聊得还可以的人，要珍惜，绝对不能错过。</p>
-<p>虽然之后还是路人，但是我没有遗憾，不会责怪下车之前的自己。知道与不知道，有时候就是天与地的差别，我遇到过同样的事情，再也不会犯同样的傻。葡萄，我完全没有想到会遇到不一样的你，早上的疲倦全部消除，而且还给了我不一样的心情，让我又相信了你的美好。</p>
-<p><strong>遇见，也是一种遗憾。</strong></p>
+<h2 id="font-colorgreen新建汇总表并右键查看代码font"><a class="markdownIt-Anchor" href="#font-colorgreen新建汇总表并右键查看代码font"></a> <font color=green>新建汇总表，并右键“查看代码”</font></h2>
+<p>在现有的sheets后面新建一个汇总sheet，然后右键汇总sheet标签，“<mark>查看代码</mark>”。<br />
+<img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-08-03-Xnip2022-08-03_13-24-49.jpg" alt="2022-08-03-Xnip2022-08-03_13-24-49" /></p>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-08-03-Xnip2022-08-03_13-30-20.jpg" alt="2022-08-03-Xnip2022-08-03_13-30-20" /></p>
+<h2 id="font-color-green粘贴代码至空白处font"><a class="markdownIt-Anchor" href="#font-color-green粘贴代码至空白处font"></a> <font color= green>粘贴代码至空白处</font></h2>
+<p>代码如下，可以直接复制黏贴至空白处。有多少sheets它都会一次性进行合并，几乎感觉不到有延迟。如果你想合并前几个，1-3sheets，那么你只需要将<code>For j = 1 To Sheets.Count</code><mark>改为</mark><code>For j = 1 To 3</code>，这个代码其实就是一个for循坏。</p>
+<figure class="highlight mathematica"><table><tr><td class="code"><pre><span class="line"><span class="variable">Sub</span> 合并当前工作簿下的所有工作表<span class="punctuation">(</span><span class="punctuation">)</span></span><br><span class="line"></span><br><span class="line"><span class="variable">Application</span><span class="operator">.</span><span class="variable">ScreenUpdating</span> <span class="operator">=</span> <span class="built_in">False</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">For</span> <span class="variable">j</span> <span class="operator">=</span> <span class="number">1</span> <span class="variable">To</span> <span class="variable">Sheets</span><span class="operator">.</span><span class="built_in">Count</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">If</span> <span class="variable">Sheets</span><span class="punctuation">(</span><span class="variable">j</span><span class="punctuation">)</span><span class="operator">.</span><span class="variable">Name</span> <span class="operator">&lt;&gt;</span> <span class="variable">ActiveSheet</span><span class="operator">.</span><span class="variable">Name</span> <span class="variable">Then</span></span><br><span class="line"></span><br><span class="line"><span class="variable">X</span> <span class="operator">=</span> <span class="built_in">Range</span><span class="punctuation">(</span><span class="string">&quot;A65536&quot;</span><span class="punctuation">)</span><span class="operator">.</span><span class="built_in">End</span><span class="punctuation">(</span><span class="variable">xlUp</span><span class="punctuation">)</span><span class="operator">.</span><span class="built_in">Row</span> <span class="operator">+</span> <span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="variable">Sheets</span><span class="punctuation">(</span><span class="variable">j</span><span class="punctuation">)</span><span class="operator">.</span><span class="variable">UsedRange</span><span class="operator">.</span><span class="variable">Copy</span> <span class="built_in">Cells</span><span class="punctuation">(</span><span class="variable">X</span><span class="operator">,</span> <span class="number">1</span><span class="punctuation">)</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">End</span> <span class="built_in">If</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">Next</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">Range</span><span class="punctuation">(</span><span class="string">&quot;B1&quot;</span><span class="punctuation">)</span><span class="operator">.</span><span class="built_in">Select</span></span><br><span class="line"></span><br><span class="line"><span class="variable">Application</span><span class="operator">.</span><span class="variable">ScreenUpdating</span> <span class="operator">=</span> <span class="built_in">True</span></span><br><span class="line"></span><br><span class="line"><span class="variable">MsgBox</span> <span class="string">&quot;当前工作簿下的全部工作表已经合并完毕！&quot;</span><span class="operator">,</span> <span class="variable">vbInformation</span><span class="operator">,</span> <span class="string">&quot;提示&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">End</span> <span class="variable">Sub</span></span><br></pre></td></tr></table></figure>
+<p>粘贴后的效果<br />
+<img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-08-03-Xnip2022-08-03_13-38-09.jpg" alt="2022-08-03-Xnip2022-08-03_13-38-09" /></p>
+<h2 id="font-color-green点击运行即可完成合并font"><a class="markdownIt-Anchor" href="#font-color-green点击运行即可完成合并font"></a> <font color= green>点击运行，即可完成合并</font></h2>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-08-03-Xnip2022-08-03_13-40-42.jpg" alt="2022-08-03-Xnip2022-08-03_13-40-42" /></p>
+<p>运行之后，会出现Msgox内容“<font color=chocolate>当前工作簿下的全部工作表已经合并完毕！</font>”</p>
+<blockquote>
+<p>参考内容来自知乎@老菜鸟：<a href="https://zhuanlan.zhihu.com/p/36003476">https://zhuanlan.zhihu.com/p/36003476</a></p>
+</blockquote>
 ]]></content>
+      <categories>
+        <category>学习记录</category>
+      </categories>
+      <tags>
+        <tag>小技巧</tag>
+        <tag>Excel</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>遇见盖北</title>
+    <url>//2018/08/18/DJY-%E9%81%87%E8%A7%81%E7%9B%96%E5%8C%97/</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="6d2b3c3274c674be2fe2f66b09119d846e5274c91e194657620f3f2bf5490962">fab9d256849e1f395be3eb4519c2eff3d3b03ace11341b92640032fdc4566263b68961c401e082efb1490fe4bd1fc8dcca6015d610be43f1c40075b5121de83af6e8cf895d9fe2c8fdc5410a0ba96f244b7a5eadcaa5db4e798617b51549cd1536f8ac0ba60c69dc1aa0b96994a8efa4604fa51d3059bc30e25d5748f00d5692b9b47bcb704a6ded011ad877492bcc62ca140094087599398fca9893cbd6323ded078cc500a3b13ffb0f5b3e7e79b43edae9d9978e6dd71ee57e88c47c9142e9cdc5175febd8e2af40abaa36006e4ca9222fe0cbc40846371accf4418f1f2d600921462a63d0d04147865f470ea6213f925a86bdf9e44661a85a0df4554cb9df981b738a80357045546fb083a6cfe15990c9214ed6bc0e1d8bbe0cd85bdfff3a622a9b65dc75aec06b78bf0c6ba2b3022e418303abe09dca0f38903a04c8e1f7427ae3d18552f1642cbc62ba2ee9402eedc247b9826ad315575d501347c64056589afcb19476bce123a8bf836eb760f7ee5302d5520e4c294ddd2c3f7fafca149241caf33485a454e758b4acf56d2cec83ff1352d31cccc4e4a9de51c3921ab56eaacc612989698a44ddb28d6a463c75aec613c2f56149870ac45879fad4ef4f258ec86f7dc0a9499c835f46ae18938019cbd3f5c5d7227834fa0835a118c255be87bb88f875721652d458bd72ae6a3ce9409a2f9fc8d5ef68054c02c76694e88361ce7de4399a597d7002b507ccd33655c5f859a268bd5850f74add71767f57362d9b3ce5e9c6a80443e5bdcef62c11b3aeab70493d9c4aa3e9abf3b4cc87723bafd739247c2b30a4a8cdb7f584c5bc762054f7c7650babde9b7b91e9bdb88631e70e262149e0eccd9f7462aaeb3c5af8e0b5add05b7083459519e1ebab8124cd4392ded1335a5638b48673165b22dea3c349f24db84ffacc78738bd63b1a16cf5d3a7e18a99288143aa846f519e611041cae46766fd3b07a991e85574c21a0f26aa4f921428fc79b74cdfe3011d3900a99b5305ee1d7bbfacc2a123975a98e4c21f018c85c59dde958b5fc1ae161b63527166bae73ada661c4414fc7fa150803019c68fb94c9afdb915b89f14436548de9cdbae6b132af0e982e5880550c97998887192471ff42d498bc699c42806d744555bf91d40601472d24bbcc979c308e93de4943922587affc36ece7331a5a9d64c155c99b995452d1a783e65725fd1e9ec14520f593dc6ad39f14b7bb53b3b0f1188ad517751a43fed077523e2a694702b510b35fb3d0aec76a67826f8afb31ab28673c9ac9f3a0de9c683facb00a5d1b2dba37fc9d6b3ebadc286f1d9586c73eef22a235b3d44cabde550559622efb77ab99afae73123d234ab285c8a7d91386386e3c293deefba373345df12724af75c1bd26a9f0fbfa7eb02a3674e26c136c8ad811b22d75334e6413feb50eabdc4535e6dbebdc107676336d3bbc077261d4e59de6ac90d5ad951d6332d98de93b459da4e82a0fe13df44f06dfa644b0ad8dbd4a26583b5982b48ae78f10f774fd2a615e578b268c8f1ebfdca7e451407ae3d8dd7e066c50091c627b3eb5a1869a6bd49d173abf98f0e84bc106741d56b4ef75d9bc18b854f9adf6801db28381d908fdaedc09764a0260e2ff1f5a54e12592be2d128490427bb9741165307befd217da20b809f1e48b8d72d1eaac8faaed27a169a92c9edb31e337dfbb58497dc409f56435486bb451599c5485a9060a345ff04c4a3e86c14b6f4e9111dfb32bd6706ffdb7e87ad3363479fd26c07fecd39a5b2bc67dd53a33417a96f8984583b5f886b4a6d6e615b84caa7edb06b771cd22d137bc99974779c90fb45fcc0f7033a53f4cb2006af0e231aaa93d293f83f324a9cb2b3ea8ddb23683035fa35e1195755be97d7a734919580fc9855031d3bfe3211d4013ca569e6fa032bb4bfd6e37c07405fcd6a71976831973b5d6855c4c2edd9d6864a72dc1d90b786918e0e348a8ef348ca687b8a2e1b4eaebb2e2af761f37710ca9c16fe42c01ea53626bea980f088e66b28bd58ed59f6dbb05ae6b674c4074d5ad9c07886ca15e7c53fd168267a6cca4d0ebc7bbb2c6260df243596ebe9d24285b2d848b34428a848d987ab83f3b37eed7bfbc727df0978abd156fa67e7c8e8685c917cd9c743800966086b3a46ee6a8a2f193eff6f29dfca82513c319e25f2d6404449c202dda314c08552697969b5250f66db01094d304151ee48a3518dff77beb45437c2b9fbd552bc0127fefd7bc823135175924794063ef6cdabf3b9199611cfc02f138da79c2ad861bfcc0457c1bac9e34c4973a7c8ad3951830834ede76ed9a6bc93506ba5f65aa4e8f21c3842fe2338104a534c20f1f4410901d943a7ab8ef766f54f88f47fb3ff752d161c6dee3e502498c924888fefcaa576487ec99507ba1accd356d55fcee49920f1cb4bb453d54e015f9bf1d3043a047f5c4e247b4a65f470c8b02ce434cd9159341339d4f7326ae12979dd5a840df499a989ddc9039ff1c9c216671dce6e5033188e64beb6bf2f208418e683bc2bb37d9f02b8b6ce58ee69813dbc591b0ccc1b8f4c734d48bf38d4e6ee266dfaca8bc651379d8ecf4d03b2d34118963fd3347e7abf8b3e70339a9d14e07f0a762c1869572d1186ed645093a790df97a5c079f131899ab9791acfda7bf52b8c44d04882e154947fdb308309dcd4462374e81eb28e3798378ebb17dec017a88febca18783847c14629ffcde9887bdb52000b89db396f4acd6692de9d6ff028a26d93f13890926ef4406ec92d2448435e2f000ff025e69b19817548501d21aaa56c57036950895556c7d714779aef614c04be8b9cc13aa4414f007e5a1847f93c82f51d7f507ab60937cbaa41b9509766813af281ffbdce8d2ee0783cb1bc3b51bd742f410f2e3f97f9339ae7ee2132cd6e3fe0bd3096ac636edf9db18724d8f64cc8e008e2022a24367494b120d09dca1c381a79eef1ee677dcd56d2b6d1e14ee91b4dfd6e13531a17682de09b74752214694dcefb758bdadbc5fbbb6d37477c22599b5ded31723ff2e9d41447dadbfd59b112505166e86d2f64d25d1f267567f694decbd442ba9b105b12ecb6f043e0733d056675116d69c8ba88fbec6998d8ebcbee81b8f7fb1ea42bcfa01c1df02a106c14d41606a9ce68d90f3ce92858be2ba9086563efa0a2a83db4ed951526f588fa244cc3d1ff2a60f7f6776da3e9f0c4dc1dd806a6f146feba9ba6cfb66129ca9abee05f5b1a92cdcc99fe469de5c78f963e5e5b43370f88562730bac8899da8a800c14cdb8fcdeffd6abc1683d598b52707969e49216e064db9543facf253ee4a6d4d18f9eb95dcabd86397d52196474ed436307fa1d800cbae9a503f735ad19fc607c1db5a47ad5ed9061eb8cd1f80605e5612d5eff7abfb155668b095dfb19bdabd0c258f881d655d2f67cc784914e8491f3a3cc8270ff9e9d935b25351e37f5ff315b2eb10f7678458a09e3b290153b1c4fb3ce6356ecb35aa888dc485ae0256f60f7eb8aea736dc2f0e7ddc04483980b364f33accb23431ecae523cbde6e0de5467bf9c4df05931660b69fd5b273db6fb642f8b87a448be9311b7db3c7ffee9cf5f95ca8e58c28ba61a48b1c4348ba70c4d447ebf8d3e75b5d7948adf476713f30777415ef43d0228a0aaea1f0512ce473f154607a91ac72104f5fa89f952668b7eb07795e2b6941e0c24df64474843032eb3ae72385e2ea39854a9daa2361a20fd6864d2213967e29e0c800a1df2a242a8449d578a45f2cf13228cc2750c80d074182c1b4316225825bf713d2da088d225580caed985fe0df51f3d08544bcc6c0eeff50917f2988e6df2d2cfe6808ebdff3d632f386475ecf16ebe05c2cb2ad2fce3762bb58000b68c661b37a8816fca0f6a2d962fa1299c2ad3d0c1fef3146f65f990fbde85ea3e686ad78b0cd70f0b08345ba2db71fdc4c29878b786d21b3128bead65bfd9748ea133edd4d0bb55aed8d2c39b44b38259dbfec66660320cea3903585e68e1955b655f7764e21cc82dcacbfe46dc97acb75ffa322c04be17f86b9171cf690b2523996c076903567f49228f2205d0e72fdf271d447dbe2b9b11e13d19020898a8049a0ce04a396800c030a1c6466a91c0981c031a3153c286570b7ff42f9ab53903ddad7017a4df48fecd6f5babe70fd6a97d4dbbe1ae5b1de0d52fd3a075aece8d9835836521eb4b485fec78ccd3b987c39649ec93f96c0a7d51bba914d3f2bebe6f46979383bec4aebd5bc0f426d50618cca2589c16d74162e06a8500cf5b307f20b3bb30b8aa49057f82550c1c63699d4e16500caed422ec34af5483210c30bffdaac47b4433f4101efdfc67255c69696026d0c8b613238840632e59f2d22b889705d2975d0fecfe8d50422235119855efd9515d0271033f99a577f8aca4d307eb8b5898a0ccfbffbbaca90e44cd38d716607476db6eac37b50a69cd1b9bda2e68d5f717ee6ca1527b372c7817608002125c3885d7c985808d411d5a11b1f14134886828a4da286de0ec06cf45eced1f4f3c39285b7939732a28963e982b5424a0e5bb9e73d4ec7faf2a04f18c43f3f32bd5a1f575c8ccfd64c9953d115b02bae634b1caacee95fd8e356561a5891b6daa87f6e3af8d189612d46cc8edea2a8b281eb2395195fb68df763747958aa04f2ee0723ba26305de5997a784476017277f76d409adb53f51b71f1178716b548c333342cb03d2ad387680881c167712678f82efaa3d50d4297ac67c8969247e2e23f4af291df249960c2d3f91ebd5aff527d0c3031c862d92940f223e0f47c80e49522d331b0a8723c741592355cedbed5f1918fe8fa69deae30d174652229f93751e7c90098bc6c10cd0839106168af955c76395e3056fe2c5e4fafe07c2a0ee44cc9b719f1a496134655e98ff2257febad141845ae9f566b6f1b930a8df1d10638bbe46c1dbce60e8060423c63e370b4a8fd11fa31823d446ea07b54a54afa28550f45762b4b52f1bacc7a660b833315fc6f9e465a37d593b475f22f5f7c4775fb9dddf1ca37e9cb4b7553fb706c65cf839b585bd8650773063369d09fbd695baf42ce67977d0fc93ee682bdf4485334e529dbb06205db5c03768a7a745e621069e9f4316b4d72ec589a490391c8b5ed90300dddb15d2f7b199cbc3167ecf5b37bb8f8fa3df0cc7cd03b7d0a65624cab11cb4cdce8ca40ec8c83dc7ee9ce2f2fd1a3e7f6321cce0bc4e31d7b0159ac2d05b2f6f330ea5722216436b44abc817d673b96601593e3c341376cbf39c3c77023ed4077e7ccd466f474c2117d20d55e0453ad4b93c222a7888a2e31963cf8831c6718dff24ba08d00835c0c4c2deabc1b87a362ad17ad017310eea12190a5cf1c8efbca75e3d60b543893855af3818824d3e714e816cb71e37d8cf321c6ae5a7031a729cda0c27e2546c343f25cc7fd5ce7bf2d05718dd0e06f47bc955ccc75c0636d993b704f951c21062b2cb5b1f51ddf20e293c50153d6a5d9a5710acdbec069c5049d93dc9e22cb8108b8f41519e1e3383c12c59e1a730238d33383c9b9643374252b39e2ce3502a37ab21e013423f3c1b688edf84f7eac3998716e409b7f052252dfb90ee74f25b98fda36d5d604389ce4bb0cc9fa829ead46047d7f9fe8b84f8a15e9e62a492785dc4d84396e04e847fedbab23daaadce6eaa266675bab01e9901f5fbf6b10056675626b3be8dd7068962537a4fc5f9104936802f687b7e21e02df1a504a5cbdae0aabadaa15e16cd494fe7ee2c45ef3bcd73999bee6998e4a1cfdba9030c52287f99bcc55843ad8615ccb8590c435518b437383c21fef1d3a26420372a01ea87a58c1db2657cad33778846acd7344821d3df39890ff09ffea518495b787c359f73c455439a805cecd6301cca405ba927d2b6a34df825435f058886f8ceb3884002a3b27bd35702467d0c7fd8ccc438cb48e6a73867b1883df406ae9ce675e9c1efea60ab490ea6a6f08aa3629268b57cd4418adce239bcef3c17a7c2ed90c98ebe052c47a43fc1bdf3e57acc359a3d3bbf80abc19d811e2619e11ac1dd556a7095decac75fb58b424f6ed6f24ae9e9e34735358039be5b7652d36d346d0819223cf8549b889c4978aee95df25c0d2bf9cf1403bc4e106061158b8364e8b6fec418db23404c360b752ba7250033b6ed89537542c70e3db89d6b934791c68420a51475b052a2a3d8d368eea8621ed4a34d059d828c66f3fdeb6a575b2d3c3e1240226554cad9a5c341d49668d5ce66c51827f4cafffc89a75237841aa8f11e421b6cc382556f11d59b98c27281e3b0ff524a937a130ee7d5e9400b071c047664a61fa1dacd71c48f1c0926978811d2b8fac487f028427f66bbd05bfb6054bb3e8db1f58bbd36f9e9ffb1d02637f0c262d1dbe80bfc402f5bb8e24ee5a03b8bc6cddc3b1c62242cc39b28db73efc9104f468e5ee6ff3c345c70bbd69ce8f3d7d77906a4c66b2e013472a221531b8c63d2badffd1e75b18a4220895efa460318cbfed2413e0d8c451053e7fa8345504305ef52707c52e9c8a0c92e3969bd41ac4de9a44ac0df6e41b38e4fd5e2082d1d6677d6753eab3b9295be27c4cad0d1085198278ebe196ae6defa11987f21de7ed34478bc6cd071ec68c98299895225b4840ea009ea7ba13a20c37990bdb442ae3b7c5b82ebba429ec18c2e4d09d3da6c1fd01d1d1800f8e8ff1d448de0b812c1d114b0be9abbd1401340caf4a98acffc48bd2f366768144d21ad180c414d2d38904565b1a4dc07de056c76157002c7b6d6b11849790c8ab35f552d8fd2c34cf82996b88d53a12e899d3be00bc7879dfef2647d1a8ec12f1bd7341199f9aaf5146a659763dab29d40f4324f58dccca4a1b97de73a166c2c5cf31d83e42e9e3149cd12576f1eeca03cf734358c1c1a1f1cd09d1aaf223e696a5a2515ea544631975171434e80e955e25a5a1922adaf82ffd799a30820c137696a979432de6176577fb606ef2040e5f3eca3b77e4717cee63ca30c1c6d8dc30de02a9c7fb49af0de8b8a83a3a17b24a7e38180a7990e7e8767f81d1dbb0019d26aaeea41b5673c4aebbcfa5ddd302b1de7c60009d18996fe201fc68f354a1658ca2b50fd2e2d369b31d67f319b71fa3c4d7c6e732921354876e16f6b702773027bf579538f48e68af57807aab3eb4d1918bd25f45dcf356b2ea8ac880535f39249a38320a8e8295e0a35753c10464ccac0ea8be5791efb70854319d74c792f12233262b37c8a102f00dfc4229682216cdce686df059befe17b7bb1a0331d963d109f8fceee9797d5797c33147ff787488754fd9931969333e53b65426bce44dc03012c41d416d298656b8a57d990f7b5868b1e0f16768e3238dd3a8c86f41dfb1e2eb62a3beffa0499fea311d992dea8a066d04649d9e7ac9652a134e05ebe4c79baf33d27ced7988a30c9b25f49518f9c5d81d43d1c5cf2784eeca1d2fe380110fa586a5a88ac6efbd479ccfe5faaf27b7ce6f2f24d7a4e380d190b9ae7e9859f66f0e9819e8014d6a4515c782436a7a80314d4c7d65e20eff15d2e6226d3372396d5dfd516c383d435283e7b7ff580b40d1fa666cab2aa89776b205dc18c05b7a024c3e0828fe6b4b78033578e339aae687223acc3e826fb2c42c8b47c31f8d01621ebf9e320cf294b8c20fc6742f02c83018c3ea36b7b89b537e97aae51a4994867d95e6b1a8fd656e6c0a9e36b1f9860a8313b149ac15f36969fb7bf191e17cb5dbdc90cc06e64823343f38aad6d185a1601e4d779b3b4b08faacd7d85772c6165d0d24e8c4b213624c2d0d73b17717b57ba7b1c9b123e5be0b919dfcc93c85b6adc656d36581f200383e426b15e9ff1674cd269521e00188765e36ec421b8a1bbbe202556ebf7f8d2168b744518e2ffd83391404ff872bd990a624c1a19aa27cea8b8f413577c2f4736995aa74240cc6403c06affb87ef5549ded5ca0816fdcb5dda835f30e93d63958b22a290f420cdc6ab913777639ecdf2d3efb94bc9f7d9da1276299a1346b12c2e4656671123eb557606e927307d505a229979c62c7e6c75824af03634cdaac87a95490d462b942a1c5cc7750d125f6c8b1da390bcd0d8cfe6a95635079176d5ee096763b2ee91dbadde0e6a29e59d93fcf1a7333e8815c1021ded0833ab8af1a4d4c3d0b3fd04fd73819c9de722d8e231b1d97b03886cdf3187e0381fd472b335aeb50914e4a2c2c9ab1d3fef44ac899831e43aa856e87d0ef03b27966e55abc0f6d5b4da9b0c5b9557e11af63ff1a23de73b6fcafbe524144dff82315d336a56b9f85b52712006d79098d8130289546c0adf8790b8c127a284f69515c3fdfff16ada83652a01dc69aa2e19e87a31a178ba72de66922bb5817cc46afb0f4528e2d9bbf698ae512e171bc3c19441cf9c00c1ab26237f058fb5de843007ed7b5a7deacc63cf2860257d3deca21decd4cb26c0248330e47463d0aad60e1d057008190daa6c975a87a65cfa2ec7ed1632abe3b51ce837680fb5e5b8b77a25a5d768b368839d8f1717c1e02fa26b8e02bf46665f415e1a594d202000768d6c4cc03c0f68658ce5bb0db349770edfef259415a0d5db48af7b9630ccf7a3384b21a56cea63f544021f935b13b5ffd72744468938632f3558d5d23197cb2925dc7af4311e0239da2e97dc48385d66e4a14ca916ba73b6f8d0dd9b7f4692dca9b29c6a991d208c9e951a1c1a912d47e153c96f20d467d337a3f3f6cc57c4b18a85ff26f76d691eb905cf306f4f8840bf7b8b2b3701bc5d3d08bc9e2cfe69e51ae9572745644ee02a53ba20fcf7b0be7b6b046347bf8ea5e96d805e97e97d64c20801539a109978606436f8fc0008334733dd9ca9fe52983a2098c6c47f8ef57ab11483874579158f6784d57e436debc58356d14900414aae418b7cfe24475620bfef0ebed10262906a782cf0d40e4c4b9fbb8f15285cb357ad520486e07158056c022f77a2cfca902acf8757c43f8ad040ef53b4c514d94d23774afaf1a42381b42ab44c1b4ce1d65ba00952695dc222ec2b8b6c124c10627ddffd62db9dc7c217665d70f62a92b6d59996117075a1d0d171c2ae05fcebd273adbd68d817890f3a0009a05c962631cd8c1914dfd42ce3b8cd34250669d6e78851f322918618d976cac063d52a44a21763db89fc5ea208a45a9d533da79b8d59c7a1001c673e31b01e2c89c5c32c142990dfae6bb0e41ac38f1fc5f596401e7a9b6b0365e2c4b0fc2c64ed870d9f07e669c3db86467f0ab5f0cedd6e53b59a37817a6f08d602f6e31b837fbd4f70e83de8f9a1de</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
       <categories>
         <category>随记</category>
       </categories>
@@ -302,55 +293,6 @@
       </tags>
   </entry>
   <entry>
-    <title>HTML5（12）——颜色</title>
-    <url>//2018/10/13/HTML5%EF%BC%8812%EF%BC%89%E2%80%94%E2%80%94%E9%A2%9C%E8%89%B2/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![整洁的桌面](https://upload-images.jianshu.io/upload_images/3478485-a135213ca8dbdc9a.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-> 前两天算是有一些事情要处理，没有来得及更新学习。今天我们来讲一下HTML中颜色的控制。
-<span id="more"></span>
-<h2 id="font-colorgreen颜色的名称font"><a class="markdownIt-Anchor" href="#font-colorgreen颜色的名称font"></a> <font color="green">颜色的名称</font></h2>
-<p>在HTML中，要使用颜色的话，需要用他们的名称来引用。HTML支持大概140种标准颜色，可以看链接：<a href="https://www.w3schools.com/colors/colors_names.asp">Color Names Supported by All Browsers</a>。<br />
-<img src="https://upload-images.jianshu.io/upload_images/3478485-9aed6c0e3fd1bc35.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="颜色名称" /></p>
-<h2 id="font-colorgreen网页背景颜色font"><a class="markdownIt-Anchor" href="#font-colorgreen网页背景颜色font"></a> <font color="green">网页背景颜色</font></h2>
-<p>前面我们在<a href="https://www.jianshu.com/p/e228f6dca9d2">HTML5(5)——属性</a>一文中简要提到过style属性，而在<a href="https://www.jianshu.com/p/0fd28725d9fb">HTML5（8）——样式<br />
-</a>一文中详细介绍了<code>style</code>的各个property的作用，这里我们用它来控制网页背景颜色，文本颜色等。语法大概如下：</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">style</span>=<span class="string">&quot;background-color:DodgerBlue;&quot;</span>&gt;</span>Hello World<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">style</span>=<span class="string">&quot;background-color:Tomato;&quot;</span>&gt;</span>Lorem ipsum...<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-4f6115d2a7015ea4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="" /></p>
-<h2 id="font-colorgreen文本颜色font"><a class="markdownIt-Anchor" href="#font-colorgreen文本颜色font"></a> <font color="green">文本颜色</font></h2>
-<p>同背景颜色一样设置，其中一些不同。style中属性不同，这里就是<code>color</code>属性，值就是颜色名称。</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">style</span>=<span class="string">&quot;color:Tomato;&quot;</span>&gt;</span>Hello World<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">style</span>=<span class="string">&quot;color:DodgerBlue;&quot;</span>&gt;</span>Lorem ipsum...<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">style</span>=<span class="string">&quot;color:MediumSeaGreen;&quot;</span>&gt;</span>Ut wisi enim...<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-56751396fea53dc8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="" /></p>
-<h2 id="font-colorgreen边框颜色font"><a class="markdownIt-Anchor" href="#font-colorgreen边框颜色font"></a> <font color="green">边框颜色</font></h2>
-<p>这里就使用<code>border</code>property，而它的值包括粗细，填充，颜色，你可以使用自己想要的值。</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">style</span>=<span class="string">&quot;border:2px solid Tomato;&quot;</span>&gt;</span>Hello World<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">style</span>=<span class="string">&quot;border:2px solid DodgerBlue;&quot;</span>&gt;</span>Hello World<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">style</span>=<span class="string">&quot;border:2px solid Violet;&quot;</span>&gt;</span>Hello World<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-24f79cac76a2db2e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="" /></p>
-<h2 id="font-colorgreen颜色值font"><a class="markdownIt-Anchor" href="#font-colorgreen颜色值font"></a> <font color="green">颜色值</font></h2>
-<p>在HTML中，颜色可以用几种类型的值来描述：RGB, HEX, HSL, RGBA 和HSLA。<br />
-<img src="https://upload-images.jianshu.io/upload_images/3478485-14a56383cbb765e9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="" /></p>
-<h3 id="rgb"><a class="markdownIt-Anchor" href="#rgb"></a> RGB</h3>
-<p><code>rgb(red,green,blue)</code>，每一种参数都是颜色的密度值，范围在0-255之间。例如，rgb(0,0,0)是黑色，rgb(255,255,255)是白色。不同的灰度，是3种颜色相同的情况下的改变。<br />
-<img src="https://upload-images.jianshu.io/upload_images/3478485-cee9ba3646f62c92.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="" /><br />
-<img src="https://upload-images.jianshu.io/upload_images/3478485-438ed0ed84fb3b54.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png" /></p>
-<h3 id="hex"><a class="markdownIt-Anchor" href="#hex"></a> HEX</h3>
-<p>这是用16进制来表示RGB的三种颜色，也是三种值，范围都在00-ff之间。同样灰度也是用相同的三种颜色的值大小，来表示。<br />
-<img src="https://upload-images.jianshu.io/upload_images/3478485-26108c125a656dde.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="" /></p>
-<h3 id="hsl"><a class="markdownIt-Anchor" href="#hsl"></a> HSL</h3>
-<p>这种颜色的是通过色调，饱和度和亮度，来表示某种颜色。<br />
-<code>hsl(hue, saturation, lightness)</code>。色调的值在0-360之间。0是红色，120是绿色，240是蓝色。饱和度是百分数表示的，0%表示灰色，100%是颜色本身。亮度也是百分数，0%是黑色，50%是适中，100%是白色。灰度是色调和饱和度都为0值，而通过亮度的调节来改变。<br />
-<img src="https://upload-images.jianshu.io/upload_images/3478485-c9d6ff8c82aecb3a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="" /></p>
-<h3 id="rgba和hsla"><a class="markdownIt-Anchor" href="#rgba和hsla"></a> RGBA和HSLA</h3>
-<p>这两者都是在RGB和HSL的基础上，增加了第四个参数，透明度（alpha）。透明度的范围在0.0-1.0之间。0.0是全透明，而1.0是不透明。<br />
-<img src="https://upload-images.jianshu.io/upload_images/3478485-4269eabcd987dddb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="" /></p>
-]]></content>
-      <categories>
-        <category>HTML5入门</category>
-      </categories>
-      <tags>
-        <tag>HTML5</tag>
-        <tag>颜色</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>HTML5（13）——CSS</title>
     <url>//2018/10/15/HTML5%EF%BC%8813%EF%BC%89%E2%80%94%E2%80%94CSS/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -503,35 +445,6 @@ CSS添加到HTML的方式有三种：</p>
       </tags>
   </entry>
   <entry>
-    <title>HTML5（4）——元素</title>
-    <url>//2018/10/02/HTML5%EF%BC%884%EF%BC%89%E2%80%94%E2%80%94%E5%85%83%E7%B4%A0/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![巨石阵，有朝一日能够去世界各地游玩](https://upload-images.jianshu.io/upload_images/3478485-d53a5e7f7a0f8675.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-<blockquote>
-<p>国庆第二天，毕业师姐过来那毕业证书，需要聚一波。今天继续学习HTML相关知识。上次学了最基本的知识，关于一些常见的HTML标签。今天是要讲HTML元素，标签包含的内容。</p>
-</blockquote>
-<span id="more"></span>
-<h2 id="font-colorgreen网页元素font"><a class="markdownIt-Anchor" href="#font-colorgreen网页元素font"></a> <font color="green">网页元素</font></h2>
-<p>HTML网页元素，通常是由起始标签和结束标签以及在两者之间插入的内容。<code>&lt;tagname&gt;内容&lt;/tagname&gt;</code><br />
-所有的网页元素，都是从开始标签到结束标签。<code>&lt;p&gt;my director&lt;/p&gt;</code><br />
-可以分为有内容和无内容。而空内容的元素是没有结束标签的，只有起始标签。如<code>&lt;br&gt;</code></p>
-<h2 id="font-colorgreen巢式网页元素font"><a class="markdownIt-Anchor" href="#font-colorgreen巢式网页元素font"></a> <font color="green">巢式网页元素</font></h2>
-<p>所谓巢式（nested），就是说可以在网页元素之中，插入其他的元素，元素嵌套元素。一个网页文件，必定是由巢式元素，下面的例子中，包含了4个网页元素。</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>My First Heading<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>My first paragraph.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<h2 id="font-colorgreen空网页元素font"><a class="markdownIt-Anchor" href="#font-colorgreen空网页元素font"></a> <font color="green">空网页元素</font></h2>
-<p>没有内容的网页元素就是空元素，<code>&lt;br&gt;</code>定义的是换行符，没有结束元素。当然，HTML也是可以关闭空元素的，形式就是在开始标签后面加斜杠<code>&lt;br /&gt;</code>。当然，也可以不关闭，但是如果是严格的来说，关闭空元素是肯定没有问题的，而且如果想被XML解析器解析，那么就必须关上空元素。</p>
-<h2 id="font-colorgreen标签小写字母font"><a class="markdownIt-Anchor" href="#font-colorgreen标签小写字母font"></a> <font color="green">标签小写字母</font></h2>
-<p>HTML是字母识别的，大写小写字母是存在差别的，标签一定要使用小写字母来写。虽然HTML5中，没有要求小写字母标签，但是最好就是小写，跟严格的XHTML是必须要小写才能编译。</p>
-]]></content>
-      <categories>
-        <category>HTML5入门</category>
-      </categories>
-      <tags>
-        <tag>HTML5</tag>
-        <tag>元素</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>HTML5（5）——属性</title>
     <url>//2018/10/06/HTML5%EF%BC%885%EF%BC%89%E2%80%94%E2%80%94%E5%B1%9E%E6%80%A7/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -610,38 +523,6 @@ CSS添加到HTML的方式有三种：</p>
       </tags>
   </entry>
   <entry>
-    <title>HTML5（7）——段落</title>
-    <url>//2018/10/06/HTML5%EF%BC%887%EF%BC%89%E2%80%94%E2%80%94%E6%AE%B5%E8%90%BD/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![想法很多，已没有经历实现](https://upload-images.jianshu.io/upload_images/3478485-f715b416af9c6294.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-> 现在不得不感叹，很多事情有想法，却找不到人一起去实现。继续学习HTML5，来讲一讲段落。
-<span id="more"></span>
-<h2 id="font-colorgreenhtml段落font"><a class="markdownIt-Anchor" href="#font-colorgreenhtml段落font"></a> <font color="green">HTML段落</font></h2>
-<p><code>&lt;p&gt;</code>元素是用来定义段落的，并且是由结束标签的。而且网页在解析时，会自动在段落前和段落后添加一些空格区域。</p>
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line">&lt;<span class="selector-tag">p</span>&gt;This is <span class="selector-tag">a</span> paragraph.&lt;/<span class="selector-tag">p</span>&gt;</span><br><span class="line">&lt;<span class="selector-tag">p</span>&gt;This is another paragraph.&lt;/<span class="selector-tag">p</span>&gt;</span><br></pre></td></tr></table></figure>
-<h2 id="font-colorgreenhtml段落显示font"><a class="markdownIt-Anchor" href="#font-colorgreenhtml段落显示font"></a> <font color="green">HTML段落显示</font></h2>
-<p>你是没有办法去控制网页到底会怎么样显示，小的屏幕，大的屏幕等情况都会变得不一样。而且你也不能添加空格和换行来改变段落显示，网页会自动移除这些空格和空行，比如：</p>
-<figure class="highlight livecodeserver"><table><tr><td class="code"><pre><span class="line">&lt;p&gt;</span><br><span class="line">This <span class="keyword">paragraph</span></span><br><span class="line"><span class="keyword">contains</span> <span class="keyword">a</span> lot <span class="keyword">of</span> <span class="keyword">lines</span></span><br><span class="line"><span class="keyword">in</span> <span class="keyword">the</span> source code,</span><br><span class="line">but <span class="keyword">the</span> browser </span><br><span class="line">ignores <span class="keyword">it</span>.</span><br><span class="line">&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;p&gt;</span><br><span class="line">This <span class="keyword">paragraph</span></span><br><span class="line"><span class="keyword">contains</span>      <span class="keyword">a</span> lot <span class="keyword">of</span> spaces</span><br><span class="line"><span class="keyword">in</span> <span class="keyword">the</span> source     code,</span><br><span class="line">but <span class="keyword">the</span>    browser </span><br><span class="line">ignores <span class="keyword">it</span>.</span><br><span class="line">&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;p&gt;</span><br><span class="line">The <span class="built_in">number</span> <span class="keyword">of</span> <span class="keyword">lines</span> <span class="keyword">in</span> <span class="keyword">a</span> <span class="keyword">paragraph</span> depends <span class="keyword">on</span> <span class="title">the</span> <span class="title">size</span> <span class="title">of</span> <span class="title">the</span> <span class="title">browser</span> <span class="title">window</span>. <span class="title">If</span> <span class="title">you</span> <span class="title">resize</span> <span class="title">the</span> <span class="title">browser</span> <span class="title">window</span>, <span class="title">the</span> <span class="title">number</span> <span class="title">of</span> <span class="title">lines</span> <span class="title">in</span> <span class="title">this</span> <span class="title">paragraph</span> <span class="title">will</span> <span class="title">change</span>.</span><br><span class="line">&lt;/p&gt;</span><br></pre></td></tr></table></figure>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-add480d3916a9ffc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="显示结果" /></p>
-<h2 id="font-colorgreenhtml换行font"><a class="markdownIt-Anchor" href="#font-colorgreenhtml换行font"></a> <font color="green">HTML换行</font></h2>
-<p>HTML中换行，你需要<code>&lt;br&gt;</code>元素来进行实现。你可以在你想换行的地方添加<code>&lt;br&gt;</code>元素来进行换行。<br />
-<code>&lt;p&gt;This is&lt;br&gt;a paragraph&lt;br&gt;with line breaks.&lt;/p&gt;</code></p>
-<h2 id="font-colorgreen诗的显示问题font"><a class="markdownIt-Anchor" href="#font-colorgreen诗的显示问题font"></a> <font color="green">诗的显示问题</font></h2>
-<figure class="highlight applescript"><table><tr><td class="code"><pre><span class="line">&lt;p&gt;In HTML, spaces <span class="keyword">and</span> new lines are ignored:&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;p&gt;</span><br><span class="line"></span><br><span class="line">  My Bonnie lies <span class="keyword">over</span> <span class="keyword">the</span> ocean.</span><br><span class="line"></span><br><span class="line">  My Bonnie lies <span class="keyword">over</span> <span class="keyword">the</span> sea.</span><br><span class="line"></span><br><span class="line">  My Bonnie lies <span class="keyword">over</span> <span class="keyword">the</span> ocean.</span><br><span class="line">  </span><br><span class="line">  Oh, bring <span class="keyword">back</span> <span class="keyword">my</span> Bonnie <span class="keyword">to</span> <span class="keyword">me</span>.</span><br><span class="line"></span><br><span class="line">&lt;/p&gt;</span><br></pre></td></tr></table></figure>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-dc60e763c5feda78.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="单行显示了" /></p>
-<p>如果想要正常的显示诗，且能够保存空格，那么我们需要用到<code>&lt;pre&gt;</code>元素，它是用来预格式化文本的，能够保存文本原本的空格和换行且能够使字体宽度固定。</p>
-<figure class="highlight vim"><table><tr><td class="code"><pre><span class="line"><span class="symbol">&lt;p&gt;</span>The <span class="keyword">pre</span> <span class="keyword">tag</span> preserves both spaces <span class="built_in">and</span> <span class="built_in">line</span> <span class="keyword">break</span><span class="variable">s:</span>&lt;/<span class="keyword">p</span>&gt;</span><br><span class="line"></span><br><span class="line"><span class="symbol">&lt;pre&gt;</span></span><br><span class="line">   My Bonnie lies over the ocean.</span><br><span class="line"></span><br><span class="line">   My Bonnie lies over the sea.</span><br><span class="line"></span><br><span class="line">   My Bonnie lies over the ocean.</span><br><span class="line">   </span><br><span class="line">   Oh, bring back my Bonnie <span class="keyword">to</span> <span class="keyword">me</span>.</span><br><span class="line">&lt;/<span class="keyword">pre</span>&gt;</span><br></pre></td></tr></table></figure>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-88bb011547100448.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="正常显示诗" /></p>
-]]></content>
-      <categories>
-        <category>HTML5入门</category>
-      </categories>
-      <tags>
-        <tag>HTML5</tag>
-        <tag>段落</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>HTML5（8）——样式</title>
     <url>//2018/10/07/HTML5%EF%BC%888%EF%BC%89%E2%80%94%E2%80%94%E6%A0%B7%E5%BC%8F/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -685,6 +566,38 @@ CSS添加到HTML的方式有三种：</p>
       <tags>
         <tag>HTML5</tag>
         <tag>样式</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>HTML5（7）——段落</title>
+    <url>//2018/10/06/HTML5%EF%BC%887%EF%BC%89%E2%80%94%E2%80%94%E6%AE%B5%E8%90%BD/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![想法很多，已没有经历实现](https://upload-images.jianshu.io/upload_images/3478485-f715b416af9c6294.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+> 现在不得不感叹，很多事情有想法，却找不到人一起去实现。继续学习HTML5，来讲一讲段落。
+<span id="more"></span>
+<h2 id="font-colorgreenhtml段落font"><a class="markdownIt-Anchor" href="#font-colorgreenhtml段落font"></a> <font color="green">HTML段落</font></h2>
+<p><code>&lt;p&gt;</code>元素是用来定义段落的，并且是由结束标签的。而且网页在解析时，会自动在段落前和段落后添加一些空格区域。</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line">&lt;<span class="selector-tag">p</span>&gt;This is <span class="selector-tag">a</span> paragraph.&lt;/<span class="selector-tag">p</span>&gt;</span><br><span class="line">&lt;<span class="selector-tag">p</span>&gt;This is another paragraph.&lt;/<span class="selector-tag">p</span>&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="font-colorgreenhtml段落显示font"><a class="markdownIt-Anchor" href="#font-colorgreenhtml段落显示font"></a> <font color="green">HTML段落显示</font></h2>
+<p>你是没有办法去控制网页到底会怎么样显示，小的屏幕，大的屏幕等情况都会变得不一样。而且你也不能添加空格和换行来改变段落显示，网页会自动移除这些空格和空行，比如：</p>
+<figure class="highlight livecodeserver"><table><tr><td class="code"><pre><span class="line">&lt;p&gt;</span><br><span class="line">This <span class="keyword">paragraph</span></span><br><span class="line"><span class="keyword">contains</span> <span class="keyword">a</span> lot <span class="keyword">of</span> <span class="keyword">lines</span></span><br><span class="line"><span class="keyword">in</span> <span class="keyword">the</span> source code,</span><br><span class="line">but <span class="keyword">the</span> browser </span><br><span class="line">ignores <span class="keyword">it</span>.</span><br><span class="line">&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;p&gt;</span><br><span class="line">This <span class="keyword">paragraph</span></span><br><span class="line"><span class="keyword">contains</span>      <span class="keyword">a</span> lot <span class="keyword">of</span> spaces</span><br><span class="line"><span class="keyword">in</span> <span class="keyword">the</span> source     code,</span><br><span class="line">but <span class="keyword">the</span>    browser </span><br><span class="line">ignores <span class="keyword">it</span>.</span><br><span class="line">&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;p&gt;</span><br><span class="line">The <span class="built_in">number</span> <span class="keyword">of</span> <span class="keyword">lines</span> <span class="keyword">in</span> <span class="keyword">a</span> <span class="keyword">paragraph</span> depends <span class="keyword">on</span> <span class="title">the</span> <span class="title">size</span> <span class="title">of</span> <span class="title">the</span> <span class="title">browser</span> <span class="title">window</span>. <span class="title">If</span> <span class="title">you</span> <span class="title">resize</span> <span class="title">the</span> <span class="title">browser</span> <span class="title">window</span>, <span class="title">the</span> <span class="title">number</span> <span class="title">of</span> <span class="title">lines</span> <span class="title">in</span> <span class="title">this</span> <span class="title">paragraph</span> <span class="title">will</span> <span class="title">change</span>.</span><br><span class="line">&lt;/p&gt;</span><br></pre></td></tr></table></figure>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-add480d3916a9ffc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="显示结果" /></p>
+<h2 id="font-colorgreenhtml换行font"><a class="markdownIt-Anchor" href="#font-colorgreenhtml换行font"></a> <font color="green">HTML换行</font></h2>
+<p>HTML中换行，你需要<code>&lt;br&gt;</code>元素来进行实现。你可以在你想换行的地方添加<code>&lt;br&gt;</code>元素来进行换行。<br />
+<code>&lt;p&gt;This is&lt;br&gt;a paragraph&lt;br&gt;with line breaks.&lt;/p&gt;</code></p>
+<h2 id="font-colorgreen诗的显示问题font"><a class="markdownIt-Anchor" href="#font-colorgreen诗的显示问题font"></a> <font color="green">诗的显示问题</font></h2>
+<figure class="highlight applescript"><table><tr><td class="code"><pre><span class="line">&lt;p&gt;In HTML, spaces <span class="keyword">and</span> new lines are ignored:&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;p&gt;</span><br><span class="line"></span><br><span class="line">  My Bonnie lies <span class="keyword">over</span> <span class="keyword">the</span> ocean.</span><br><span class="line"></span><br><span class="line">  My Bonnie lies <span class="keyword">over</span> <span class="keyword">the</span> sea.</span><br><span class="line"></span><br><span class="line">  My Bonnie lies <span class="keyword">over</span> <span class="keyword">the</span> ocean.</span><br><span class="line">  </span><br><span class="line">  Oh, bring <span class="keyword">back</span> <span class="keyword">my</span> Bonnie <span class="keyword">to</span> <span class="keyword">me</span>.</span><br><span class="line"></span><br><span class="line">&lt;/p&gt;</span><br></pre></td></tr></table></figure>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-dc60e763c5feda78.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="单行显示了" /></p>
+<p>如果想要正常的显示诗，且能够保存空格，那么我们需要用到<code>&lt;pre&gt;</code>元素，它是用来预格式化文本的，能够保存文本原本的空格和换行且能够使字体宽度固定。</p>
+<figure class="highlight vim"><table><tr><td class="code"><pre><span class="line"><span class="symbol">&lt;p&gt;</span>The <span class="keyword">pre</span> <span class="keyword">tag</span> preserves both spaces <span class="built_in">and</span> <span class="built_in">line</span> <span class="keyword">break</span><span class="variable">s:</span>&lt;/<span class="keyword">p</span>&gt;</span><br><span class="line"></span><br><span class="line"><span class="symbol">&lt;pre&gt;</span></span><br><span class="line">   My Bonnie lies over the ocean.</span><br><span class="line"></span><br><span class="line">   My Bonnie lies over the sea.</span><br><span class="line"></span><br><span class="line">   My Bonnie lies over the ocean.</span><br><span class="line">   </span><br><span class="line">   Oh, bring back my Bonnie <span class="keyword">to</span> <span class="keyword">me</span>.</span><br><span class="line">&lt;/<span class="keyword">pre</span>&gt;</span><br></pre></td></tr></table></figure>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-88bb011547100448.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="正常显示诗" /></p>
+]]></content>
+      <categories>
+        <category>HTML5入门</category>
+      </categories>
+      <tags>
+        <tag>HTML5</tag>
+        <tag>段落</tag>
       </tags>
   </entry>
   <entry>
@@ -1003,6 +916,31 @@ float——确定图片是否为浮动，而不是在一个固定的地方。</p
       </tags>
   </entry>
   <entry>
+    <title>Rstudio服务器使用</title>
+    <url>//2022/08/02/Rstudio%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+<blockquote>
+<p>如何使用服务器端Rstudio？</p>
+</blockquote>
+<span id="more"></span>
+<h2 id="font-colorgreen输入r服务器网址font"><a class="markdownIt-Anchor" href="#font-colorgreen输入r服务器网址font"></a> <font color=green>输入R服务器网址</font></h2>
+<p>RStudio Server的默认端口是8787，所以我们打开浏览器，输入<code>服务器ip:8787</code>，就可以打开Rstudio。例如在Google浏览器网址栏中输入：192.168.1.130:8787，就会出现账户登录界面。</p>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-05-01-xvJpuN.png" alt="20220501xvJpuN" /></p>
+<h2 id="font-colorgreen输入linux用户名和密码登录font"><a class="markdownIt-Anchor" href="#font-colorgreen输入linux用户名和密码登录font"></a> <font color=green>输入Linux用户名和密码登录</font></h2>
+<p>用户名和密码是创建用户给大家设置过，可以查看<code>/Lab-Shared-Folder/Protocols/Bioinformatics method</code> 路径下的文件《系统进化树构建》，有相应的说明。<br />
+<img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-04-19-e50ftc.png" alt="20220419e50ftc" /></p>
+<h2 id="font-colorgreen正常使用界面font"><a class="markdownIt-Anchor" href="#font-colorgreen正常使用界面font"></a> <font color=green>正常使用界面</font></h2>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-04-19-f40ife.png" alt="2022-04-19-f40ife" /></p>
+]]></content>
+      <categories>
+        <category>科研之路</category>
+      </categories>
+      <tags>
+        <tag>R</tag>
+        <tag>教程</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>TBtools中关于染色体定位的问题</title>
     <url>//2018/09/20/TBtools%E4%B8%AD%E5%85%B3%E4%BA%8E%E6%9F%93%E8%89%B2%E4%BD%93%E5%AE%9A%E4%BD%8D%E7%9A%84%E9%97%AE%E9%A2%98/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -1127,54 +1065,32 @@ float——确定图片是否为浮动，而不是在一个固定的地方。</p
       </tags>
   </entry>
   <entry>
-    <title>印度，漂浮的次大陆</title>
-    <url>//2018/09/06/%E5%8D%B0%E5%BA%A6%EF%BC%8C%E6%BC%82%E6%B5%AE%E7%9A%84%E6%AC%A1%E5%A4%A7%E9%99%86/</url>
+    <title>HTML5（4）——元素</title>
+    <url>//2018/10/02/HTML5%EF%BC%884%EF%BC%89%E2%80%94%E2%80%94%E5%85%83%E7%B4%A0/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![印度，漂浮的次大陆](http://upload-images.jianshu.io/upload_images/3478485-b11c23f0c98ac99f.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-> 俞敏洪老师的推荐，于是就去读了郭建龙一个系列的游记。《穿越百年中东》、《骑车去元朝》、《印度，漂浮的次大陆》和《三千佛塔烟云下》都读了一遍，信息量超级大，不过读起来特别的畅快，特别的流畅。
-> 郭建龙是个文化旅者，总是亲身去体验某个地方的文化，历史，地理，政治，经济和宗教，最后凭借自己的文笔，写出独具特色的游记，我个人非常喜欢，推荐阅读。
-> 内容摘录自郭建龙的《印度，漂浮的次大陆》这本书。
+![巨石阵，有朝一日能够去世界各地游玩](https://upload-images.jianshu.io/upload_images/3478485-d53a5e7f7a0f8675.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+<blockquote>
+<p>国庆第二天，毕业师姐过来那毕业证书，需要聚一波。今天继续学习HTML相关知识。上次学了最基本的知识，关于一些常见的HTML标签。今天是要讲HTML元素，标签包含的内容。</p>
+</blockquote>
 <span id="more"></span>
-<p>哈拉帕（巴基斯坦），洛塔尔（印度）。<br />
-洛塔尔遗址，手工业和贸易促使其如此的发达。然而，公元前2000年左右，整个印度河文明都衰落了。<br />
-在欧洲，存在着非洲两次走出的古人类相遇证据。那就是第二次的克罗马农人取代了第一次的尼安德特人，成为现代欧洲人的祖先。那么古印度人的祖先从哪里过来？在比莫贝特卡，发现了穴居文化。</p>
-<p>印度人之前一直以雅利安人的血统引以为豪，认为自己是雅利安人的后裔。但是当考古发现，公元前5000，已经在印度河流域出现了本土的古印度文明，比雅利安人入侵印度次大陆早千年，不得不承认存在高度发达的古印度文明。但印度人和雅利安人有着紧密的联系，**英国人威廉琼斯公爵从语言学上发现，印度的梵语，拉丁语和欧洲的语言有着同一起源，从而也证明了确实雅利安人和印度人有着紧密的联系。**而后来的考古发现也证明，大约在公元前3000年，在中亚大草原、里海附近的雅利安人，分为两支：一支进入欧洲，成为现代欧洲人的祖先；而另一支，经伊朗阿富汗，翻过兴都库什山脉，顺着开伯尔山口进入印度河谷地，最终扩散到整个印度。为什么古老发达的文明无法抵抗雅利安人？因为，在公元前2000左右，古印度文明开始衰落，而此时雅利安人正好在恰当的时机到来，从而入侵整个印度。</p>
-<p>**虽然古印度文明消亡了，但是人种并不会就此消失。**在现代的南印度，存在达罗毗荼人，可能与印度河文明的人种一致，且他们拥有自己的语言系统。**现在的印度，分为两种语系，在南方属于达罗毗荼语系，而在北方则是属于梵语。**在印度神奇的是，雅利安人已经入侵印度几千年了，到现在为止，雅利安人和达罗毗荼人还没有完成融合，跟中国社会的情况完全不同。原因：<strong>强大的种姓制度。</strong></p>
-<h2 id="印度教"><a class="markdownIt-Anchor" href="#印度教"></a> 印度教</h2>
-<p>雅利安人为了防止自己被当地原始居民同化，从而建立了严格的种姓制度，出现了<strong>四种种姓：婆罗门，刹帝什，吠舍和首陀罗</strong>。分别担任宗教和精神领袖，国王和武士，从事商业，最底层。还有没有种姓的贱民。规定人一出生就确定了种姓，永远也不可能改变，无法进阶到更高的种姓。但是，如果长期下去，最底层的人会越来越多，最终会通过暴力手段推翻这种限制，然而<strong>为什么这种制度能够如此长久的维持？<strong>只能通过宗教信仰手段，将</strong>种姓制度融入到宗教</strong>之中，使其能够自动的被大众接受，这个宗教就是<strong>印度教</strong>。教义强调：人的灵魂是可以轮回的，这一世为人，下一世可能为动物，也可能身为更高种姓的人类，所以给了人们虚假的承诺，使得人们遵从现有的制度而不加以反抗，与中国的儒教相似。</p>
-<p><strong>世界上所有的宗教一般都包括了信仰和伦理两方面，其中信仰是个人化的体验，关系到个人与神之间的沟通，而伦理是一种社会化的体验，主要强调人与人之间的交流。侧重点的不同，宗教分为两大类：基督教和佛教侧重信仰，而印度教和儒教侧重伦理。伊斯兰教处在两者中间。</strong></p>
-<p>在这一时期，印度的神祇也得到了确立，形成了<strong>三大主神：梵天，毗湿奴和湿婆以及无所不包的各路神仙</strong>。其中湿婆是受到最广泛崇拜的主神，同时也是生殖力的代表，于是有了崇拜生殖和崇拜阴茎的传统。湿婆的化身往往是一根石柱，象征着阴茎和生殖力，叫做林伽。在西藏的外喜马拉雅山脉中，有一座形同阴茎的山峰，叫做冈仁波齐，在印度称为凯拉什山，是藏传佛教，苯教和印度教的神山。印度人将前往冈仁波齐看成朝圣的极致。</p>
-<p>同时这一时期，印度史诗也形成。最早的梵语经典**《吠陀经》**成型，<strong>印度的传奇史诗《罗摩衍那》和《摩诃婆罗多》逐渐流传开来。</strong>《罗摩衍那》家喻户晓。</p>
-<h2 id="佛教"><a class="markdownIt-Anchor" href="#佛教"></a> 佛教</h2>
-<p><strong>佛陀，或称释迦摩尼，名字叫悉达多乔达摩</strong>。出身在印度十六国时期的迦毗罗卫国的<strong>蓝毗尼</strong>的一棵树下，现在的尼泊尔境内。父亲是迦毗罗卫国的国王净饭王，这个小国依附于大国拘萨罗，是由雅利安人种释迦族建立的，属于刹帝什种姓。母亲摩耶夫人。年轻的悉达多，在王宫中长大，不问世事，整天沉迷爱情俗世，有三位妻子和自己的孩子，在孩子出身的那一年，当悉达多看到世外的人所受的苦难，于是开始思考人生的意义，离开皇宫开始寻找答案。在菩提迦耶的菩提树下，悉达多决定放弃苦修，开始打坐静修。本来他的五位随从认为他已经放弃寻找真理了，于是离开了他。不久，他就彻底领悟，找到了属于自己的<strong>一套理论体系</strong>，**人生的意义是使得自己死后的灵魂得到永恒，也是与印度教类似的轮回机制，但是佛教的是认为轮回本身是一种痛苦，需要跳出轮回，灵魂才能得到永恒。那么如何跳出这个永无止境的轮回呢？<strong>悉达多构想出了</strong>“四谛”**理论体系：<strong>苦谛</strong>，指的人生的一切苦难。<strong>集谛</strong>，贪嗔痴三毒是苦难产生的原因。<strong>灭谛</strong>，消灭苦难就要消灭三毒。<strong>道谛</strong>，修行的行为规范，指八正道，帮助人们消灭三毒的方法，修行得当的人都可以跳出轮回之苦，从而达到活着的意义和死后的永恒。</p>
-<p><strong>四谛</strong>是悉达多理论的核心，因为这个体系<strong>打破了种姓的界限，强调了人生的平等</strong>。任何人要是想跳出轮回，必须要按这种修行方式进行。</p>
-<p>获得顿悟的悉达多没有立即离开，继续思考完善体系，后来来到了一个叫做鹿野苑的地方，收了第一批信徒。这就是之前离开他的五个人，是其父亲在其离开时选派的五位宗室子弟。也就是佛教史上有名的五比丘。也就在此刻开始，佛教的佛、法、僧已经圆满集结，悉达多乔达摩也正式成为佛陀。之后继续传教，走向全国。最后，在晚年，佛陀带了少量弟子来到名叫拘尸那罗的地方，一病不起，不久圆寂与此。而此时的迦毗罗卫国也被拘萨罗消灭，而最后拘萨罗也被摩揭陀国所灭，为印度的统一打下了基础。</p>
-<h2 id="耆那教"><a class="markdownIt-Anchor" href="#耆那教"></a> 耆那教</h2>
-<p>耆那教<strong>人口很少</strong>的宗教，但是在印度却有着及其重大的影响，甚至在<strong>影响力上超过了佛教</strong>。主要有两方面，第一，<strong>更强调苦行</strong>，对于人的要求高，更小众，使得能够接受的它的人很少，但是却是非常的坚定；第二，<strong>没有国际化</strong>。耆那教的创始人，<strong>筏陀摩耶被称为大雄</strong>，他的活动范围与佛陀重叠，也是在摩揭陀国的影响范围内。他强调的是苦行，为了完全达到断绝物欲的地步，甚至拒绝穿衣服，连身上有屎尿都毫不在意。而佛陀是放弃苦修的，过着质朴的生活，不是特意吃苦。</p>
-<p><strong>耆那教和印度教的神庙在外表上有相似之处，但是也有区别</strong>。耆那教的外部花式更加简单，而印度教的华丽高大。内部，耆那教的装饰复杂华丽，奢华无比，而印度教的却是及其简单，最简单的石板搭建的。</p>
-<h2 id="超级大国的更替"><a class="markdownIt-Anchor" href="#超级大国的更替"></a> 超级大国的更替</h2>
-<p>中国对印度的影响在公元前后到达，在这之前，对印度影响至深的是西方的希腊传导过去的事件，<strong>亚历山大的东征</strong>。但在亚历山大东征统治世界之前，是西亚的波斯文明主导全世界的强大政权。</p>
-<p>当西亚的新巴比伦帝国衰亡之后，伊朗境内兴起了一个新的帝国——<strong>波斯的阿契美尼德王朝</strong>，这是后来统治中亚的历代波斯王朝中的第一个。西亚的政治中心也从伊拉克两河流域转移到了伊朗境内。</p>
-<p>公元前7世纪，当时整个波斯在米底人的统治下。阿契美尼德死后，其儿子脱离了米底王国，经历过几代的继承，到了<strong>居鲁士二世</strong>统治时期，消灭了米底人的政权，还将前霸主新巴比伦帝国也消灭了。此后其儿子冈比西斯二世征服了埃及和非洲的大批领土，而其继承者<strong>大流士一世</strong>却改变了征服方向，开始向东方，越过开伯尔山口，进入印度河平原地区。之后又改变方向，又向西，入侵了希腊人的领土，<strong>从此将不起眼的希腊和欧洲带入了世界的舞台</strong>。希腊本来在东方的眼里根本不值得一提，只是生意人，他们航海走向各地，建立殖民地，只是为了做生意而不是扩张领土。<strong>波斯人入侵希腊，使得希腊各个弱小的城邦抱团抵抗，爆发出了强大的力量，使得波斯人战败</strong>。大流士一世之后，儿子薛西斯发动了第二次入侵，希腊人再次胜利，此后波斯就进入了衰落期，而西方兴起了新的霸主希腊。</p>
-<p>但希腊的这种团结不久就分裂，两个最大的城邦<strong>雅典和斯巴达</strong>开始争夺希腊的领导权，最终在波斯人的帮助下，斯巴达打败了雅典。但结果是两败俱伤。</p>
-<p>与此同时，一个希腊人看不起的<strong>希腊北部的马其顿</strong>兴起了，马其顿国王<strong>腓力二世</strong>打败了雅典和科林斯强权，使整个<strong>希腊半岛在历史上第一次统一</strong>。腓力二世的儿子就是著名的<strong>亚历山大大帝</strong>，这时整个希腊已经属于马其顿，他先进军<strong>小亚细亚</strong>，再把<strong>埃及</strong>纳入自己的版图，埃及的古老文明从此消失。接着进军<strong>波斯</strong>，打败波斯王大流士三世，最终波斯王朝覆灭。之后继续挥兵<strong>中亚阿富汗</strong>，塔吉克斯坦直到新疆以西的<strong>河中地区</strong>。突然就做了一个决定，向<strong>印度</strong>进军。<strong>此时的印度，内部也在进行着激烈的整合。摩揭陀国成为胜利者，几乎统一了全国</strong>。摩揭陀共包含了四个朝代，最后的难陀王朝是非常重要的承上启下的朝代，这时的印度的疆域已经有目前的一半大小，囊括整个北印度，和现代孟加拉国和缅甸的一部分。正是在这个朝代，亚历山大挥师进入印度。在印度，面临的是许多具有单独作战实力地区，如同游击战，亚历山大大帝陷入了全面作战的汪洋大海中，加之印度南北跨度几千公里，气候复杂，最后被迫撤退。不久，<strong>33岁的亚历山大大帝在巴比伦得病去世</strong>，留下了许多亚历山大的城市和希腊化的世界，其余化为传说。而这一次入侵对于印度的政治影响，间接促成了本土的伟大帝国的出现——<strong>孔雀帝国，印度第一次统一</strong>。</p>
-<p>亚历山大大帝撤退，使得整个西北印度陷入了权利的真空状态。原有的政治势力被破坏掉了，犍陀罗等国家被征服，另一方面难陀王朝还没有将控制力延伸过去。这时一个名叫<strong>旃陀罗笈多孔雀的人</strong>汇集大军向摩揭陀的难陀王朝进军，这时的难陀王朝也已经腐败无能，也希望新的君王接管权力。大军压境，难陀国王选择退位，避免了一场血腥的战争，孔雀王朝继承了难陀王打下了的江山。旃陀罗笈多孔雀最后在一个山洞里修行，信奉耆那教，最后默默的死去。他的孙子<strong>阿育王</strong>经过继承战，据说杀死了自己的99个亲兄弟，从自己的父亲频头娑罗哪里得到了孔雀王朝的宝座。阿育王前半生在杀戮中度过，而后半生却信奉佛教，在全国建造了数万座佛塔，然而现在剩下的只有<strong>桑吉大塔</strong>和鹿野苑的<strong>答枚克塔</strong>。</p>
-<p><strong>贵霜人</strong>的历史，最早可以从中国的战国时期找到痕迹，在中国西部的甘肃河西走廊一带，有一个半游牧民族在这里生活了很久。从某种程度上来说，<strong>月氏人</strong>是一个过渡民族，恰好夹在了游牧和定居之间，且受到了双方的威胁。其中在南方是定居的<strong>华夏民族</strong>，经过了春秋战国，秦国正在崛起，而在北方则是<strong>游牧民族匈奴</strong>。事实证明，游牧民族的威胁更大。直到秦朝末年，匈奴还比月氏人弱小，作为寄主国，当时匈奴的王位继承人只能以人质身份在月氏人当中生活，最后一位是叫做<strong>冒顿</strong>的匈奴人，没有受到善待，仇视月氏人，最后其逃回自己的部落，成为新的单于，从此以后月氏人进入了噩梦时期，<strong>冒顿挥师南下，屠杀，公元前202年左右，月氏人被迫放弃了肥沃的河西走廊，向西迁移。<strong>公元前177年左右，冒顿再次击败月氏人，被迫再次迁移，一部分南下进入了</strong>青海境内</strong>，被当地人同化；另一部分继续西迁，到达了新疆的<strong>准葛尔盆地</strong>。公元前162年，冒顿的儿子老上，再次打败月氏人，将月氏王的头颅砍下，当了酒器。只好再次西迁到了<strong>新疆的伊犁一带</strong>。这一次的西迁，引起了<strong>连锁反应</strong>，原本在伊犁这一带的<strong>斯基泰人向西南运动</strong>，进入了阿富汗境内。而这时在伊犁的月氏人因为被汉王朝打击的匈奴人的西迁，只好向西方的中亚地区前进，进入了著名<strong>河中地区</strong>，也就是阿姆河和锡尔河中间地带。而在河中地区，遭到了当地人的驱赶，不得不向南，进入了阿富汗伊朗境内，使得在这里的<strong>斯基泰人再次向南移动</strong>。在此之前，阿富汗和伊朗境内居住者安息人和希腊人，亚历山大征服中亚后，希腊人的后裔在这里建立起了大夏王国，在斯基泰人和月氏人的压力下，<strong>巴克特里亚人纷纷南下，进入印度境内，成为了入侵印度的第一波势力</strong>。</p>
-<p>由匈奴人和月氏人搅动的一系列民族迁徙活动，将一波一波的人们赶往了印度次大陆。张骞出使西域本来想联合月氏人给匈奴人来个东西夹击，但是月氏人拒绝了，不想再回到中国，此后月氏人彻底离开了中国的范围。<strong>公元前140年</strong>，在斯基泰人之后，月氏人也南下到了<strong>大夏边境</strong>，此时月氏人已经分成了5个部落，而贵霜就是其中的一个。之后打败了西部的安息国，继续占领大夏东部地区。此时接触到了大夏的希腊化文明，<strong>月氏人开始希腊化，从此变成了定居民族</strong>。并发行自己的货币和开始发展商贸关系。这时也受到了印度佛教的影响，开始将佛教作为他们的宗教。公元前1世纪初，<strong>贵霜部落</strong>打败其余部落，建立了<strong>贵霜帝国</strong>。在印度希腊人、印度斯基泰人、印度安息人之后，印度贵霜帝国正式登场。</p>
-<p><strong>维查耶纳加尔</strong>是印度教最后一个伟大帝国，负有捍卫印度教、抵抗伊斯兰教的重任。毁灭后，伊斯兰教长驱直入，在次大陆占据了主导地位，开始了几百年的伊斯兰政权时期。实际上，<strong>维查耶纳加尔就是为了对抗伊斯兰才出现</strong>。当北印度处于德里苏丹国统治的时候，南印度曾经强大的遮卢迦王国和拉什特拉库塔王国已经消亡。取而代之的四个小王国，分别是雅达瓦、卡卡提亚，潘地亚王国和霍伊萨拉王国。</p>
-<p>阿拉-乌德-丁用一生与南印度各国征战，其中就征服了雅达瓦和霍伊萨拉。前者为穆斯林提供了新的都城，而后者灭亡使得维查耶纳加尔在其土地上成长起来。</p>
-<p>巴马尼苏丹国的出现，这个伊斯兰国家的兴起与德里苏丹穆罕穆德图格鲁克迁都失败有关。比达尔城是该国的首都，与汉皮相比，伊斯兰教有最先进的战争理念，而印度教徒却是将首都看成生活的地方，由此也可以看出，两者在对战是的成败。南印度就在这两个教权国家的残忍战争中被扭曲，直到其中一个国家垮掉。最后，巴马尼苏丹最先垮掉，分为五个小苏丹国，这五个小国又内斗，最后成为三个苏丹国，最后联合起来，打败了维查耶纳加尔国，历史仅留下了汉皮这片废墟。此时，南印度也成了伊斯兰教的天下。这三个苏丹国也进入了黄金时代，而印度教最后的伟大政权也终于轰然倒塌。这时候，同属于伊斯兰教的来自北方的莫卧儿人出现了。</p>
-<p>在<strong>中世纪</strong>，虽然印度的佛教被印度教取代，但仍旧是世界的<strong>佛教中心</strong>，其中最有名的就是那烂陀大学，学术圣殿。但是在<strong>12世纪</strong>时，当古尔人到来，穆罕默德首领下的努力将军库特卜<strong>占领毁灭了那烂陀大学</strong>，<strong>使得佛教从印度消失</strong>。13世纪初，库特卜成立德里苏丹国，在莫卧尔人到来前，控制印度300多年。<strong>德里，现在印度的首都开始登上历史舞台。</strong></p>
-<p><strong>13世纪，成吉思汗带着蒙古人席卷了整个世界</strong>，在中国建立了元朝，在波斯建立了<strong>伊尔汗国</strong>，在俄罗斯人的土地上建立了<strong>金帐汗国</strong>，在如今的新疆西部、中亚建立了<strong>察合台汗国</strong>，在新疆北部和蒙古东部建立了<strong>窝阔台汗国</strong>。这五大汗国占领了当时已知世界的一大半。之后蒙古很快衰败，在<strong>察合台汗国</strong>的土地上，在14世纪后半期突厥人<strong>帖木儿</strong>威慑整个中亚、西亚和中欧，甚至占领了印度的一部分。但是在进攻明朝时，突然途中去世，此后帖木儿帝国分崩离析。<strong>然而此时，中亚出现了一位蒙古人和突厥人的双重后裔，巴布尔</strong>。让他占领印度，并开创了一个伟大的王朝。<br />
-**巴布尔在父系上是帖木儿的直系后裔，从母系来说，是成吉思汗的后裔。**因此，从1483年出生，就带着世界上最有血性的两个人的基因。</p>
-<p>河中地区的城市撒马尔罕是帖木儿的都城，要称霸中亚必须拿下撒马尔罕，但是命中注定不属于巴布尔，一世经过三次进攻，却一次都没有成功，中亚的大门从此关闭。然而，经过分析，印度是个不错的可以暂时栖息之地，前四次进攻印度只是在外围，现在的巴基斯坦境内，没有深入到德里地区，然而第五次，德里苏丹出现内乱，有人请他去去德里，于是决心进军德里。<strong>这次战役的胜利，决定了印度历史的未来300年，建立了一个伟大的帝国。<strong>巴布尔在阿拉格建立了帝国的首都，阿拉格是用艺术和建筑征服印度，其后代也大都继承了祖先的艺术气质，使得</strong>莫卧尔成为艺术世界的巅峰</strong>。此后，巴布尔平定了整个北部地区，不久去世，他的儿子胡马雍继承王位，但此时的帝国还没有稳定，<strong>胡马雍</strong>不善战，被东方孟加拉的将军舍尔汗打败，被赶出了印度，退到了阿富汗。而舍尔汗在位期间，使整个印度政局稳定。死后，胡马雍很快从其后代那里夺回了印度，继承了舍尔汗开创的一系列制度，并重新将首都迁到了德里。之后不小心摔死在图书馆，成为第一个葬在印度土地上的莫卧尔皇帝。</p>
+<h2 id="font-colorgreen网页元素font"><a class="markdownIt-Anchor" href="#font-colorgreen网页元素font"></a> <font color="green">网页元素</font></h2>
+<p>HTML网页元素，通常是由起始标签和结束标签以及在两者之间插入的内容。<code>&lt;tagname&gt;内容&lt;/tagname&gt;</code><br />
+所有的网页元素，都是从开始标签到结束标签。<code>&lt;p&gt;my director&lt;/p&gt;</code><br />
+可以分为有内容和无内容。而空内容的元素是没有结束标签的，只有起始标签。如<code>&lt;br&gt;</code></p>
+<h2 id="font-colorgreen巢式网页元素font"><a class="markdownIt-Anchor" href="#font-colorgreen巢式网页元素font"></a> <font color="green">巢式网页元素</font></h2>
+<p>所谓巢式（nested），就是说可以在网页元素之中，插入其他的元素，元素嵌套元素。一个网页文件，必定是由巢式元素，下面的例子中，包含了4个网页元素。</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>My First Heading<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>My first paragraph.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h2 id="font-colorgreen空网页元素font"><a class="markdownIt-Anchor" href="#font-colorgreen空网页元素font"></a> <font color="green">空网页元素</font></h2>
+<p>没有内容的网页元素就是空元素，<code>&lt;br&gt;</code>定义的是换行符，没有结束元素。当然，HTML也是可以关闭空元素的，形式就是在开始标签后面加斜杠<code>&lt;br /&gt;</code>。当然，也可以不关闭，但是如果是严格的来说，关闭空元素是肯定没有问题的，而且如果想被XML解析器解析，那么就必须关上空元素。</p>
+<h2 id="font-colorgreen标签小写字母font"><a class="markdownIt-Anchor" href="#font-colorgreen标签小写字母font"></a> <font color="green">标签小写字母</font></h2>
+<p>HTML是字母识别的，大写小写字母是存在差别的，标签一定要使用小写字母来写。虽然HTML5中，没有要求小写字母标签，但是最好就是小写，跟严格的XHTML是必须要小写才能编译。</p>
 ]]></content>
       <categories>
-        <category>读书笔记</category>
+        <category>HTML5入门</category>
       </categories>
       <tags>
-        <tag>印度</tag>
-        <tag>郭建龙</tag>
+        <tag>HTML5</tag>
+        <tag>元素</tag>
       </tags>
   </entry>
   <entry>
@@ -1271,52 +1187,52 @@ float——确定图片是否为浮动，而不是在一个固定的地方。</p
       </tags>
   </entry>
   <entry>
-    <title>大悦城小聚</title>
-    <url>//2018/09/29/%E5%A4%A7%E6%82%A6%E5%9F%8E%E5%B0%8F%E8%81%9A/</url>
+    <title>HTML5（12）——颜色</title>
+    <url>//2018/10/13/HTML5%EF%BC%8812%EF%BC%89%E2%80%94%E2%80%94%E9%A2%9C%E8%89%B2/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![虽然没有我们的照片，但是有这个意思](https://upload-images.jianshu.io/upload_images/3478485-ccf80350d2a43ed6.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-<blockquote>
-<p>星期一就接到了大学室友“大叔”的诚挚邀请，请我吃饭。好不犹豫的答应之后，一直等待着。</p>
-</blockquote>
+![整洁的桌面](https://upload-images.jianshu.io/upload_images/3478485-a135213ca8dbdc9a.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+> 前两天算是有一些事情要处理，没有来得及更新学习。今天我们来讲一下HTML中颜色的控制。
 <span id="more"></span>
-<p>礼拜三，本来已经提前说了，最后有点情况，还是没有去。然后就是礼拜五，晚上六点在新开的大悦城吃饭，天泰泰国菜，貌似是一家网红店，味道确实很不错，尤其是咖喱牛肉，辣辣的感觉出现在入口一段时间之后，很是享受。此外，还有泰式奶茶，味道特别浓厚且独特，很是喜欢。这家店确实可以，比我想象中精致一些，人均价位100多，偶尔享受一下这样的食物，心情都会变好很多。</p>
-<ul>
-<li>土豆咖喱炖牛肉</li>
-</ul>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-464c0f630b16116c.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="土豆咖喱炖牛肉" /></p>
-<ul>
-<li>泰式传统虾饼，真是满满的都是虾肉，特别鲜</li>
-</ul>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-75a90853bc691151.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="泰式传统虾饼，真是满满的都是虾肉，特别鲜" /></p>
-<ul>
-<li>菠萝炒饭，一般是必点的泰国菜</li>
-</ul>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-a08a47b3e9d958d2.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="菠萝炒饭，一般是必点的泰国菜" /></p>
-<ul>
-<li>炒粉，很劲道，味道很棒，配着旁边的酱料</li>
-</ul>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-b8314beafe3e997f.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="炒粉，很劲道，味道很棒，配着旁边的酱料" /></p>
-<ul>
-<li>椰蓉布丁，口感非常好，椰香特别浓厚，下面是一层晶莹透明的西米</li>
-</ul>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-8d9391ea6f0ef287.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="椰蓉布丁，口感非常好，椰香特别浓厚，下面是一层晶莹透明的西米" /></p>
-<ul>
-<li>这就是我喝的奶茶了，看起来就非常的高端大气，确实味道也特别的棒</li>
-</ul>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-d6b3972175e63e1d.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="这就是我喝的奶茶了，看起来就非常的高端大气，确实味道也特别的棒" /></p>
-<p>吃完这些菜，并没有很好的满足我们的欲望，果断又去吃了一家烤鱼，叫江边城外。不过说真的，还是有点饱了，不过有特别想尝试，结果味道很是不错，而且还是两种口味，一半一半，双拼烤鱼。</p>
-<ul>
-<li>烤鱼，一半酱香一半蒜香</li>
-</ul>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-990751167b0d3e42.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="烤鱼，一半酱香一半蒜香" /></p>
-<p>吃完，也就结束了。喜欢这样的感觉，偶尔有空且机会正好，一定要想到好友，一起吃个饭，闲聊几句，很是舒心，没有太过多余的想法，放下很多事情。骑自行车回去学校，没有再逛，下次再约。</p>
+<h2 id="font-colorgreen颜色的名称font"><a class="markdownIt-Anchor" href="#font-colorgreen颜色的名称font"></a> <font color="green">颜色的名称</font></h2>
+<p>在HTML中，要使用颜色的话，需要用他们的名称来引用。HTML支持大概140种标准颜色，可以看链接：<a href="https://www.w3schools.com/colors/colors_names.asp">Color Names Supported by All Browsers</a>。<br />
+<img src="https://upload-images.jianshu.io/upload_images/3478485-9aed6c0e3fd1bc35.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="颜色名称" /></p>
+<h2 id="font-colorgreen网页背景颜色font"><a class="markdownIt-Anchor" href="#font-colorgreen网页背景颜色font"></a> <font color="green">网页背景颜色</font></h2>
+<p>前面我们在<a href="https://www.jianshu.com/p/e228f6dca9d2">HTML5(5)——属性</a>一文中简要提到过style属性，而在<a href="https://www.jianshu.com/p/0fd28725d9fb">HTML5（8）——样式<br />
+</a>一文中详细介绍了<code>style</code>的各个property的作用，这里我们用它来控制网页背景颜色，文本颜色等。语法大概如下：</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">style</span>=<span class="string">&quot;background-color:DodgerBlue;&quot;</span>&gt;</span>Hello World<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">style</span>=<span class="string">&quot;background-color:Tomato;&quot;</span>&gt;</span>Lorem ipsum...<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-4f6115d2a7015ea4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="" /></p>
+<h2 id="font-colorgreen文本颜色font"><a class="markdownIt-Anchor" href="#font-colorgreen文本颜色font"></a> <font color="green">文本颜色</font></h2>
+<p>同背景颜色一样设置，其中一些不同。style中属性不同，这里就是<code>color</code>属性，值就是颜色名称。</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">style</span>=<span class="string">&quot;color:Tomato;&quot;</span>&gt;</span>Hello World<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">style</span>=<span class="string">&quot;color:DodgerBlue;&quot;</span>&gt;</span>Lorem ipsum...<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">style</span>=<span class="string">&quot;color:MediumSeaGreen;&quot;</span>&gt;</span>Ut wisi enim...<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-56751396fea53dc8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="" /></p>
+<h2 id="font-colorgreen边框颜色font"><a class="markdownIt-Anchor" href="#font-colorgreen边框颜色font"></a> <font color="green">边框颜色</font></h2>
+<p>这里就使用<code>border</code>property，而它的值包括粗细，填充，颜色，你可以使用自己想要的值。</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">style</span>=<span class="string">&quot;border:2px solid Tomato;&quot;</span>&gt;</span>Hello World<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">style</span>=<span class="string">&quot;border:2px solid DodgerBlue;&quot;</span>&gt;</span>Hello World<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">style</span>=<span class="string">&quot;border:2px solid Violet;&quot;</span>&gt;</span>Hello World<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-24f79cac76a2db2e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="" /></p>
+<h2 id="font-colorgreen颜色值font"><a class="markdownIt-Anchor" href="#font-colorgreen颜色值font"></a> <font color="green">颜色值</font></h2>
+<p>在HTML中，颜色可以用几种类型的值来描述：RGB, HEX, HSL, RGBA 和HSLA。<br />
+<img src="https://upload-images.jianshu.io/upload_images/3478485-14a56383cbb765e9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="" /></p>
+<h3 id="rgb"><a class="markdownIt-Anchor" href="#rgb"></a> RGB</h3>
+<p><code>rgb(red,green,blue)</code>，每一种参数都是颜色的密度值，范围在0-255之间。例如，rgb(0,0,0)是黑色，rgb(255,255,255)是白色。不同的灰度，是3种颜色相同的情况下的改变。<br />
+<img src="https://upload-images.jianshu.io/upload_images/3478485-cee9ba3646f62c92.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="" /><br />
+<img src="https://upload-images.jianshu.io/upload_images/3478485-438ed0ed84fb3b54.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png" /></p>
+<h3 id="hex"><a class="markdownIt-Anchor" href="#hex"></a> HEX</h3>
+<p>这是用16进制来表示RGB的三种颜色，也是三种值，范围都在00-ff之间。同样灰度也是用相同的三种颜色的值大小，来表示。<br />
+<img src="https://upload-images.jianshu.io/upload_images/3478485-26108c125a656dde.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="" /></p>
+<h3 id="hsl"><a class="markdownIt-Anchor" href="#hsl"></a> HSL</h3>
+<p>这种颜色的是通过色调，饱和度和亮度，来表示某种颜色。<br />
+<code>hsl(hue, saturation, lightness)</code>。色调的值在0-360之间。0是红色，120是绿色，240是蓝色。饱和度是百分数表示的，0%表示灰色，100%是颜色本身。亮度也是百分数，0%是黑色，50%是适中，100%是白色。灰度是色调和饱和度都为0值，而通过亮度的调节来改变。<br />
+<img src="https://upload-images.jianshu.io/upload_images/3478485-c9d6ff8c82aecb3a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="" /></p>
+<h3 id="rgba和hsla"><a class="markdownIt-Anchor" href="#rgba和hsla"></a> RGBA和HSLA</h3>
+<p>这两者都是在RGB和HSL的基础上，增加了第四个参数，透明度（alpha）。透明度的范围在0.0-1.0之间。0.0是全透明，而1.0是不透明。<br />
+<img src="https://upload-images.jianshu.io/upload_images/3478485-4269eabcd987dddb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="" /></p>
 ]]></content>
       <categories>
-        <category>随记</category>
+        <category>HTML5入门</category>
       </categories>
       <tags>
-        <tag>泰国菜</tag>
-        <tag>大学</tag>
+        <tag>HTML5</tag>
+        <tag>颜色</tag>
       </tags>
   </entry>
   <entry>
@@ -1700,6 +1616,222 @@ float——确定图片是否为浮动，而不是在一个固定的地方。</p
       </tags>
   </entry>
   <entry>
+    <title>海南环岛游记</title>
+    <url>//2018/08/31/%E6%B5%B7%E5%8D%97%E7%8E%AF%E5%B2%9B%E6%B8%B8%E8%AE%B0/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-08-17-uAE5cz.jpg" alt="2022-08-17-uAE5cz" /></p>
+<blockquote>
+<p>想了很久需要做的事情，就是想把自己在路上的一切记录下来，写成游记的类型。这一篇，就是开始，一切在路上的开始。时隔一年半了，手机里的照片一直还在，没有删除，每一次的浏览，都会激起那时的回忆，想想就觉得很美好。总有一天，希望走遍这个世界。</p>
+</blockquote>
+<span id="more"></span>
+<h1 id="缘由"><a class="markdownIt-Anchor" href="#缘由"></a> 缘由</h1>
+<p>想去外面独自走走，这个想法，来自我的初中同学<strong>老牛</strong>。比我多读了一年的书，我在大三的时候，她大二，开始了她的计划。不知道哪里来的勇气，开始一个人的穷游之旅。或许因为是音乐学院的学生，可能比我们一般人更为理想一些。钱，始终是限制条件，没有经济收入的学生，只能通过兼职这个行为来获得微小的收入，又一个优势显现出来，音乐生兼职收入比较高。这些条件，可能推动了之后的行为。<br />
+我，作为初中的前后桌，不错的关系，她想到了邀请我参加，一起旅行，而我最大的限制或许是钱，但是更大的限制或许是自己对前途的担忧，她屡次邀请而我屡次拒绝，我没法放弃手头的工作。就这样，我就错过了，错过了提早去外面看看的可能。但是，我始终没有放弃过这个想法，每当朋友圈看到她的沿途纪事所经历的一切，我就无比的羡慕。除了我之外，我经常跟同学将老牛的经历，搞得好几个同学都想一起去，那时候的我始终没有计划，没有勇气走出那一步。250算是其中一个，特别想去外面玩，最后在大学期间，始终没有一起出去玩一趟自由行，也算是一种遗憾。<br />
+2015年的寒假，我已经完成了那时候的任务，或者是人生的一个小目标，考上了理想中的研究生。而老牛走遍了祖国的各个地方之后，最终一个愿望还没有实现，就是想去海南骑行，因为以前走过的路上，很多骑行的人，产生的一种强烈的欲望，希望能够体验一下。而我，在这一年的寒假，也有时间了，放弃了在家过春节，而是选择了远方。再次的邀请，我也终于答应，于是购买一张机票，开始了我的首次遥远的旅途……</p>
+<h2 id="第一天在路上"><a class="markdownIt-Anchor" href="#第一天在路上"></a> 第一天——在路上</h2>
+<p>这一天是2016年2月4号，从余姚北站到温州南站，从温州南站到龙湾飞机场，第一次坐飞机，心情还是有些激动。当天晚上7点多，我们来到广州白云机场，走出机场，我们坐上大巴车，来到汽车站，买了当天晚上10点多去湛江的长途汽车。一路上特别的累，压根儿就没有睡好，终于天亮了，我们到达湛江，最后来到了海安新港，海南是一个岛屿，必须要轮渡，才能够到达海口。长途汽车都是通过轮船过渡到海口。<br />
+<img src="//upload-images.jianshu.io/upload_images/3478485-933c2cab5ec194c4.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-f4b5f22806972fa7.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-aa6fafd428986372.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-3065a4024303b00c.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-0b0bb162366082c9.jpg" alt="" /><br />
+<img src="//upload-images.jianshu.io/upload_images/3478485-14d63a7417486b3e.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-22dbb99e4294374c.jpg" alt="" /></p>
+<h1 id="第二天一半在路上一半在吃"><a class="markdownIt-Anchor" href="#第二天一半在路上一半在吃"></a> 第二天——一半在路上一半在吃</h1>
+<p>我们坐了通宵的长途汽车，为了赶路，我们必须要牺牲一些东西，睡眠没有了很好的保障，但是终归是到了渡口，马上就要进入海南海口。又激动了一段时间，轮渡的时间大概是一个半小时。到了海口，我们还得做公交，到达最终的目的地，517驿站。晚上四五点，我们终于是到达了，没有什么特殊的情况出现，房间是提前订好的，也不贵，大概50块钱一个晚上，能够接受。<br />
+收拾好行李，安顿好一切，我们决定去海口骑楼小吃街逛一逛，吃点东西，休息一下，感受一下。吃完决定也就一般，我们就在外面走了走，看了看海口的夜晚景色。<br />
+<img src="//upload-images.jianshu.io/upload_images/3478485-2ceff751da47f0b9.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-f456b4e0d13985b1.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-4a8b0458c4585f21.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-0e5661224ba4a00a.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-718b7a2e2b439ba1.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-fbf791081651dd5a.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-2bfca9fb7bf304a5.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-ccd92a5660f86324.jpg" alt="" /><br />
+<img src="//upload-images.jianshu.io/upload_images/3478485-aae2f13afdbebd1f.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-1d8f161551485d7e.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-f5eb088d5e8b99cc.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-e368bc288e81fe48.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-471c10b8030c1116.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-3027a42cc61d29fc.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-fa64a5e71e9c9254.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-8836901ec20c9048.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-3394cdedac800643.jpg" alt="" /><br />
+<img src="//upload-images.jianshu.io/upload_images/3478485-68c2158fec900dca.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-f583064a51b03e16.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-6e7b4a58dd456ea0.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-39b66b03ad3fc360.jpg" alt="" /></p>
+<h1 id="第三天海口一日游"><a class="markdownIt-Anchor" href="#第三天海口一日游"></a> 第三天——海口一日游</h1>
+<p>今天是2月6号大年28，我们决定不在海口过年了，打算今天玩一天，明天开始正式骑行，开始我们的环岛之旅。这一天，或许是我们这几天最轻松自在，最无忧无虑的一天。正好老牛的朋友正好是海口人，于是，我们就在这位老司机的带领下，玩边了海口，吃了很多好吃的，享受了从未享受到的海口风光。<br />
+这一次的遗憾，就是没有了解一些海口及海南的历史，缺少了重要的一块内容，没有很好的领略这一座城市。<br />
+吃玩海口一天，准备明天的出发，我们也计划了一下我们的骑行计划。<br />
+<img src="//upload-images.jianshu.io/upload_images/3478485-e113ecd98d184831.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-f137df22d9bfc06c.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-a03110c7c6c31044.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-fdc2ecf964458ee5.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-b40fb40307bea61e.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-22e7ea491c5b13c9.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-25169b31ae53bf74.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-b8e88f2f87805c15.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-e6995c71ddd8ab45.jpg" alt="" /><br />
+<img src="//upload-images.jianshu.io/upload_images/3478485-8240317f8797c9e1.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-deace0eceba740c8.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-fef76741ee41323d.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-19e2b5aff5a0be15.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-0cb45b2ac11476b2.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-b21ed4d7efa4920e.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-bade99c3fd51e08f.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-4d01361af2ff5646.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-0a203c1f64dea459.jpg" alt="" /><br />
+<img src="//upload-images.jianshu.io/upload_images/3478485-10fb4d55d0c38e23.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-9d1af7c41eb9267d.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-b81bc345e25911b2.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-1f7b72cb456fea18.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-8921d1a97293de54.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-6abdc547c1026738.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-9fae154c549e16af.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-c6d09e5e4501c39a.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-22d1d765c28d1e33.jpg" alt="" /><br />
+<img src="//upload-images.jianshu.io/upload_images/3478485-f4dea965ffc09528.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-db271afb3e61bd6c.jpg" alt="" /><br />
+<img src="//upload-images.jianshu.io/upload_images/3478485-9b447b7bf1777bee.jpg" alt="" /></p>
+<h1 id="第四天骑行第一站文昌"><a class="markdownIt-Anchor" href="#第四天骑行第一站文昌"></a> 第四天——骑行第一站，文昌</h1>
+<p>今天已经是大年30了，我们决定启程，开始我们的旅途，在517，我们结伴了两个小伙伴，两个人都是已经工作了的，有一个已经骑行了好多地方，全国好多个地方都去了，那时候真的是非常的佩服，非常的向往那一种自在的旅行。在路上，我们又遇到了一群退休的大爷大妈，结果居然神奇的一起结伴而行，人多有人多的好处，人少有人少的好处，我们一路上都遇到了。由于是第一天，我们都没有提前预定好文昌的517房子，搞得最后天黑了都没有找到住所，幸好后来联系到了，主在航天旅馆商务宾馆。因为今天是除夕，我们本来打算在517做饭，吃个年夜饭，在来的路上，已经买好了好多食材，其实也很惨，因为除夕，菜市场都没有什么卖家了，只剩了一个卖蔬菜的大妈，我们于是就买了番茄，白菜，土豆等等。还好最后航天商务宾馆的老板也比较体贴，给我们提供了一个厨房，及其简易的厨具，于是，我们就自己动手，准备做一顿大餐，确实也是不错，吃的很饱，而且连第二天的早饭也一起弄好了。这个除夕是一辈子都忘不了的除夕，一辈子也仅此一次，很珍贵。<br />
+<img src="//upload-images.jianshu.io/upload_images/3478485-b447f0f32f949683.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-3eeebb35eac1b18a.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-f921ff58ce8e592a.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-00e2f9a3dc256252.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-ce8e2965ef4ce6b0.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-d68ca0d3fb24876b.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-6bcd3d8796d39db9.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-6ef154927011b53b.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-faff18049a3f0cee.jpg" alt="" /></p>
+<h1 id="第五天骑行第二站博鳌"><a class="markdownIt-Anchor" href="#第五天骑行第二站博鳌"></a> 第五天——骑行第二站，博鳌</h1>
+<p>今天大年初一，我们出发到往第二站，博鳌。就是开博鳌亚洲论坛的那个地方，会址也在那个地方，可以去看一眼，最后因为需要门票，我们就放弃了。早上起来，收拾完成，准备出发。屁股真的是痛的不行，昨天第一天，完全没有适应，真的超级酸，不过骑着骑着，也还好，大家都坚持下来了。这一次，我们聪明了，我们是提前预定好了博鳌517的房间，能够有房子住，这是最重要的，傍晚，我们准时到达了博鳌。途中，我们好像特意弥补了昨天的不足，去了东郊椰林，因为路线的缘故，我们去这里后，必须选择轮渡，才能够节省时间，准时到达博鳌。载着自行车，我们也坐了一会儿船，感觉很棒。东郊椰林不好找，我们问了好多当地人，最后好不容易找到，集体拍了照片，能够看到比较开阔的海。之后，海出了一点意外，我们的一个小伙伴摔了一跤，手破了，脚也磨破了皮，但还是坚持了，坚持到了最后。<br />
+这一天，我们一起吃了一家东北菜，还可以，也遇到了好多骑行的人，打算第二天早上看日出。</p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-be8805d83dcdd47e.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-59564aebf88aa2eb.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-0dc786d3ae2baeb7.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-de5b5c9d63667dc1.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-367dd2b3b8e05a43.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-8312389b23a365a5.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-088f5d85651b06b0.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-a18c909f5b4fab71.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-a96a7955d8a02513.jpg" alt="" /><br />
+<img src="//upload-images.jianshu.io/upload_images/3478485-fc42027411d20c87.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-e42b880cf21615a7.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-2714ac24c53d7dcf.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-5238f72de458bf24.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-637d2a29154c22e1.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-5482e66344923334.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-e13c82be26119cf3.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-1bd16c1ff33a6937.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-22d8d6c95ba45d8a.jpg" alt="" /><br />
+<img src="//upload-images.jianshu.io/upload_images/3478485-d0b6025bcbdf08bb.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-508f1ef834bea998.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-bb9b648eadd2a638.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-4e33a88e8d04e261.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-279ffa436b51ab31.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-2360bfe2cfb66182.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-9fc427143d41905e.jpg" alt="" /></p>
+<h1 id="第六天骑行第三站兴隆"><a class="markdownIt-Anchor" href="#第六天骑行第三站兴隆"></a> 第六天——骑行第三站，兴隆</h1>
+<p>早上天黑着就起来了，听说这里可以看到日出，总是如此，想看肯定看不到，我是从来没有看到从海平面升起的太阳——简称日出。只好赤脚在沙滩上玩了一会儿，沙滩上鞋子，再一次我又写下了250，不知道从什么时候开始，很多时候都会想起250这个字符，因为包涵的太多过去吧。博鳌镇还挺好，我们能够吃一顿正常的早饭，不久开始了旅途，兴隆站。这里忘记说一件事情，昨天晚上因为住的地方没有热水，那些叔叔阿姨们就一直嚷嚷不停，真的是忍受不住了——这就是人多的坏处。又加上我们的行程从这里开始发生了分歧，所以大家就开始走散，各自开始各自的路。我们四个人，当然是要一起走的，虽然那时候我还有好多想法，但是被迫只能打消念头。<br />
+虽然我们目的地不一样，但是行走的路程还是很相似的，在路上我们又碰到了小强和另外一个哥们儿，或许是因为渴了，看到路边的椰子树不是很高，我们就想着尝一尝这路边的椰子，看看有啥不一样的地方。小强身手非常敏捷，一会儿就马上树，在那用刀割椰子，最后通过大伙儿的努力，最终搞到了两个吧，隔开放汁。除夕夜那天剩下的一次性杯子在此刻发挥了最后的功能，我们用来盛椰汁，两个椰子，最后倒了好多杯，每个人都能够喝到。<br />
+由于路上的再次偶遇，叔叔阿姨们又和我们走到了一起，最终又变回了一个大团体，集体到了兴隆。路上风景甚是美妙，有牛在路上，天很蓝，视野很开阔。这是第三天了，我们的身体确实很累了，听说兴隆是有温泉的，我们就想着找一个温泉宾馆，结果还是老老实实的选了普通的宾馆住下了，因为叔叔阿姨的缘故，我们也没有去兴隆的517住宿，他们年级确实也大了，有些东西确实也经受不起了。也能够理解吧，不过那个时候可不是这样的想法，就是觉得他们太麻烦了，出来旅游还挑这挑那的，真的特别烦，在这一刻，我是真的不想和他们一起了。晚饭还是一起吃的，一家大排档，人一多，到底吃什么东西就很难下定论了，要讨论好久，而我早已经饿的不行了。大排档，点了没几个菜，觉得很贵，饭貌似也没有吃饱，真的那时候特别的心灰意冷，什么心情都没有了。晚上吃完饭，我们几个人就走回去了，好像还打包了什么东西回去吃的，不过根本吃不了了，结果好像被扔掉了。</p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-390e35b8d105577e.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-555245b7d9834ab9.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-5b7d8b7c4bd000f3.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-be501fe6fbf48e19.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-2a1e5cd48670a003.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-0fd86412141b7c25.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-478ae713f9067066.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-203194ff2a3aae8c.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-64cc303a3e007e39.jpg" alt="" /><br />
+<img src="//upload-images.jianshu.io/upload_images/3478485-a9ed3ef54036111c.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-65f28d96537aeb97.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-42e61d295abbaff6.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-7db32a7eba12543b.jpg" alt="" /></p>
+<h1 id="第七天骑行第四站陵水"><a class="markdownIt-Anchor" href="#第七天骑行第四站陵水"></a> 第七天——骑行第四站，陵水</h1>
+<p>最后一段路很长，我们还需要分为两天来骑，最后可以到达三亚。我们一群人还是在一起的，早上也一起出发，在酒店门口又拍了一张照片。早饭，在酒店旁吃的，这顿早饭印象深刻。兴隆生产咖啡，当地人在早上也常常喝咖啡，也离不开咖啡，我倒是没有喝，毕竟还是喝不惯，我要了一杯豆浆和油条。在这里，我发现了一样奇怪的东西，当地人就着咖啡吃，可以在嘴里不停的嚼，嚼多了，牙齿会变黄，和吸烟就差不多的功效——新鲜的槟榔。有些人就只是喝咖啡和吃槟榔，一边聊天一遍喝咖啡嚼槟榔，这断早餐时光特别的惬意，很享受。在吃完离开的那一会儿，我也想试一试，于是花了5块钱，买了4颗，可是好像直到骑行结束，我都没有吃，因为实在是味道太大，真的吃不了这个东西啊。<br />
+这一天真的是充满了变数，有事不容易的一天，不知道谁带的路，我们被带偏了，远离了国道，进入了小乡村，不过确实，我们也见到了不一样的风景。天都已经黑了，我们的实物都吃完了，水也差不多没有了，也没有地方住，那一天真的很害怕，产生了恐惧。虽然途中遇到了好心人，想要收留我们，可是人实在是太多了，没有办法，只能放弃（这又体现出来，人太多可能也是一种麻烦）。在我们夜行不一会儿，路边的保安大叔突然喊住了我们，说你们是不是在找住的地方，我知道离这儿不远就到国道了，那里有旅馆的，不过过去的路是小路，碎石路，很难骑，晚上有点危险，那时候根本顾不了那么多了，找个地方安顿下来才是王道，我们恳请保安大叔开着摩托车为我们带路，最后大叔答应了，遇到好心人了，不然真的不知道那天晚上会发生什么事情，之后的日程可能也要改变了。<br />
+到了国道边，找到了几家旅馆和吃饭的地方，先订下了睡觉的地方然后再找吃的，沿途遇到的宾馆都比较破旧，但是能够睡觉也已经不错了，价格也不贵，将就一万就可以了。<br />
+有好多旅馆也批发水果，结果我们买了一个菠萝蜜，30块钱左右，反正不知道比江浙地区便宜多少了，我们觉得特别划算。晚上，我们分开在不同的饭店吃饭，我们是找到了一家很不错的店，量很足，饭管饱，比昨天在兴隆吃的大排档好很多很多了，这大概是我们这一路上最满意的一顿饭，我们四人都称赞不已。</p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-bfcebc1ff48cb058.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-2ed65edddb208453.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-a85573093f06c8eb.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-f2faade41df15cfa.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-7236a21ff4b06aba.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-3e92bfeb7823e53f.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-842f12d291486ede.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-a6400ec38c096917.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-d0d55a64fcb997fb.jpg" alt="" /><br />
+<img src="//upload-images.jianshu.io/upload_images/3478485-66483d3754ecff0a.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-0a781c852473f42a.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-23704e5aaf4f4ba1.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-6bf7f80898ce0731.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-d5bd927b62e21248.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-2cdee52a0275c6d5.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-b6923082e78ef81c.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-931b89602b7caf55.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-60cab54e4839dd35.jpg" alt="" /><br />
+<img src="//upload-images.jianshu.io/upload_images/3478485-fecce8670c55c645.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-b21bf081cfe265f8.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-2447358f33a13407.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-c40211259b07123d.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-4b67adfcf9b2404f.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-fc5d9f73f676049c.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-842dc0c0384e9f89.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-350530219afae84f.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-e46647d350609750.jpg" alt="" /><br />
+<img src="//upload-images.jianshu.io/upload_images/3478485-da1ab82f25a38291.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-4952e4170766824a.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-12b0e1a460e2d89e.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-894e648c3b315ee7.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-89c6bd66b2dab6b0.jpg" alt="" /><br />
+<img src="//upload-images.jianshu.io/upload_images/3478485-7366dc2f0d2bf1c5.jpg" alt="" /><br />
+<img src="//upload-images.jianshu.io/upload_images/3478485-7113178e9245b97f.jpg" alt="" /><br />
+<img src="//upload-images.jianshu.io/upload_images/3478485-6928ed830be7c9c4.jpg" alt="" /></p>
+<h1 id="第八天终点站三亚"><a class="markdownIt-Anchor" href="#第八天终点站三亚"></a> 第八天——终点站，三亚</h1>
+<p>这一天，我们终于要结束了，结束我们的环岛骑行，大概400公里的路程，也是我们骑行的第五天了，平均每天80公里左右，对于我们这些从未锻炼过的人来说，真的有点不可思议，不论怎样，我们坚持下来了，我们完成了海南岛的东海岸的骑行，虽然有些地方我们没有去，比如说神舟，还是很满足。最后一段路，我们的小伙伴突然身体也不太好，貌似中暑，差点要中途放弃，坐动车回家了，不过后来在大叔们的帮助了，还是克服了，还是坚持了下来。夕阳西下，在海南的国道上骑行，周围都是水果地，有菠萝，木瓜，菠萝蜜，有榴莲，这些热带水果始终陪伴我们前行，那种感觉妙不可言，只有亲自体验，才能够真正的体会到。<br />
+这一天早上，我们实在是起不来了，睡到大概9点左右，阿姨叔叔们先出发了，我们睡饱了再说，我们带上菠萝蜜继续前行，吃了沙县，吃完早饭来俩瓣菠萝蜜，真的是不一样的早餐，神奇的搭配，很快菠萝蜜直接被干完了，很快，不过真的是很好吃。这一路上，没有什么变数，我们在我的带领下终于到了三亚517。青旅果然住宿的条件不好，除了海口的517以及文昌的517（我们没有预约到房间的那一次），其余的驿站好像条件真的不是特别好，三亚的517也算是比较靠市中心的，那天下午，我们终于到了，还车，收拾行李，晚上出去吃一顿，逛一下，买点吃的，打打扑克牌，这天晚上过的还不错。骑行终于结束，然而马上我们又要开始新的旅途，回家之旅。</p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-8fac3db2ccc66dd6.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-d7153206d540b70c.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-5ac2c09921a7ad17.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-6aa4bd40cca7d96d.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-7e6f8eeed8b67c5a.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-4ec9fafc20f16350.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-60b9d3721b4a33fa.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-7d07e9fbec16b5d2.jpg" alt="" /><br />
+<img src="//upload-images.jianshu.io/upload_images/3478485-803616a01bf0a5a6.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-bd08a326df92949b.jpg" alt="" /><br />
+<img src="//upload-images.jianshu.io/upload_images/3478485-1e07a5d835613dfb.jpg" alt="" /></p>
+<h1 id="第九天归途海口"><a class="markdownIt-Anchor" href="#第九天归途海口"></a> 第九天——归途，海口</h1>
+<p>结束骑行，我们在三亚也没有多待一会儿，发现三亚没有还有那样的舒服，静谧。三亚显得很浮躁，很杂乱。我更喜欢海口，气候舒适，环境优雅，人也不错。第二天，我们就买了动车票，从三亚到海口东的动车，晚上的末班车，最后我们抵达了海口，大晚上的。快要离开了，我们就在海口准备买点海南的特产，邮寄回学校，于是第二个清晨，我们购买了很多物资，发往江浙地区。之后我们依旧选择轮渡，毅然离开了海口，前往广东海安。到达广东，我们真的是差点被卖掉的感觉，一路上好像都是黑车，超载的特别严重，而且还没有地方坐，司机特别凶，感觉你不老实一点，就要打你，半路我们还被放下了，坐了另一辆车，最后的最后，我们终于从广东的最最西边，到达了比较文明的城市，珠海市。从来没有来过这里，这一次也是因为老牛的同学在这里工作，所以我们就顺道过来看一下，还在她朋友的房子里住了下来，他朋友去了朋友的地方住。很小的房间，我们四个人挤一挤总算是住下了。晚上他朋友还好好的款待了我们，吃了大肉火锅，很是不错。之后我们在珠海逛了一个早上，吃了广东比较正宗的早茶，一家比较有名的早茶店，大概花了400多，我们5个人，着实有点小贵，不过味道真的不错呢。珠海与澳门交界，跨国一个门，我们就能够到了，可是我们恰恰没有护照，没有准备，结果真的有点遗憾，只能隔着门，远远望着澳门。当天下午，我们坐了城轨，返回广州，因为飞机比较晚，所以我们还在广州玩了一会儿，逛了小吃街，看了<strong>小蛮腰</strong>，之后坐飞机返回温州龙湾国际机场，打的去了动车站，就此所有的行程结束。</p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-fbf410ea3dea3561.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-0e27cb5eab0bcbde.jpg" alt="" /><br />
+<img src="//upload-images.jianshu.io/upload_images/3478485-16c7aebe438c08a3.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-615c3dd8e93970f8.jpg" alt="" /><br />
+<img src="//upload-images.jianshu.io/upload_images/3478485-9b49d92c66de6c37.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-b8555fdeffc3a7c1.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-bccb6224620a61c0.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-cf059d808c31c935.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-68cc6e0e60a4ab44.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-04345119ff0a4818.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-0ff054a2d2794aee.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-0c1d9005ac609367.jpg" alt="" /></p>
+<p><img src="//upload-images.jianshu.io/upload_images/3478485-eb4f1d0a3a2646e4.jpg" alt="" /></p>
+<h1 id="后记"><a class="markdownIt-Anchor" href="#后记"></a> 后记</h1>
+<p>第一次这样疯狂的玩，这样没有顾虑的玩，走出了第一步，打开了新的一扇门，于是有了不一样的期待，希望走遍祖国的各个角落，欣赏丰富多彩的风景。慢慢的打算，虽然在做科研的自己时间很是有限，然而一切都不是什么问题，总是能够找到机会。重要的是，要保持这样的心态，永远希望在路上的心态，永远年轻，喜欢折腾，喜欢旅行。下一次，我们大西北再见。</p>
+]]></content>
+      <categories>
+        <category>在路上的日子</category>
+      </categories>
+      <tags>
+        <tag>旅行</tag>
+        <tag>海南</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>疫情记</title>
     <url>//2020/04/12/%E7%96%AB%E6%83%85%E8%AE%B0/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -1908,30 +2040,6 @@ float——确定图片是否为浮动，而不是在一个固定的地方。</p
       </tags>
   </entry>
   <entry>
-    <title>算法与数据结构（2）：算法复杂度</title>
-    <url>//2018/09/05/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%EF%BC%882%EF%BC%89%EF%BC%9A%E7%AE%97%E6%B3%95%E5%A4%8D%E6%9D%82%E5%BA%A6/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![复杂](https://upload-images.jianshu.io/upload_images/3478485-2198e399288f19f7.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-<p>9月5日，星期三，公元2018年。</p>
-<blockquote>
-<p>简书作者<a href="https://www.jianshu.com/u/44339a8a9afa">程序员联盟</a>：目前正在更新这个系列的教程，我是学习记录者，并非原创，此后<strong>算法与数据结构</strong>系列都是记录笔记，不再进一步说明。</p>
-</blockquote>
-<span id="more"></span>
-<p>这片是关于引出算法复杂度，用了小鸭子的故事。</p>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-f667aaa8497301ce.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="小鸭子" /></p>
-<center>小鸭子</center>
-故事是这样的：
-<p>有个农夫，每年带着小鸭子们去旅行，目的是为了让小鸭子们都得到放松清净的机会。旅行就是将他们放到池塘里，而且每个池塘要保证一样多的鸭子，才能够同样的清净，不会有不公平的情况出现。因此，农夫采取的方法是：将小鸭子一只一只的带到池塘边，让他们自己选择要去的池塘，最后在池塘和卡车之见跑了NxN个来回。而第二年，农夫发现不太好，于是就重新换了方法，依次带出N只鸭子，将其放在一个池塘，如此下去，直到每个池塘也是同样多的鸭子，这样只需要N个来回。这样一算，发现第二种方法能够更节省时间更轻松，而且还达到了同样的效果，新的方法胜利。</p>
-<p>农夫的放鸭子的方法，就可以看成一种算法，用来对放置鸭子进行了精确的描述。很显然第二种算法更好，时间节省，力气节省，还能达到同样的结果。在计算机术语中，人们用复杂度（complexity）这个词来量化算法的性能。</p>
-]]></content>
-      <categories>
-        <category>算法与数据结构</category>
-      </categories>
-      <tags>
-        <tag>复杂度</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>算法与数据结构（3）：算法复杂度说明（上）</title>
     <url>//2018/10/10/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%EF%BC%883%EF%BC%89%EF%BC%9A%E7%AE%97%E6%B3%95%E5%A4%8D%E6%9D%82%E5%BA%A6%E8%AF%B4%E6%98%8E%EF%BC%88%E4%B8%8A%EF%BC%89/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -1963,6 +2071,30 @@ float——确定图片是否为浮动，而不是在一个固定的地方。</p
 前一种算法是N次，而后一种算法是2N次。但是你没有办法去比较时间，这个取决去操作A，B，C各自需要的时间。因此，这些不一定对算法效率有影响的常数乘法因子不在复杂度的度量中考虑。</p>
 <p>当然，有时候这样的忽略也不一定正确，比如有时候常数因子可能起到非常重要的作用。比如农夫完全没有办法打开门，那么就需要花费太多时间在开门上。但是，在大多数情况下，算法复杂度是算法性能的可靠指标。尤其是在输入非常大的时候，性能差距就会越来越明显。</p>
 <p>算法真得还是有点难以理解，需要不断地去重复理解这个概念。</p>
+]]></content>
+      <categories>
+        <category>算法与数据结构</category>
+      </categories>
+      <tags>
+        <tag>复杂度</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>算法与数据结构（2）：算法复杂度</title>
+    <url>//2018/09/05/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%EF%BC%882%EF%BC%89%EF%BC%9A%E7%AE%97%E6%B3%95%E5%A4%8D%E6%9D%82%E5%BA%A6/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![复杂](https://upload-images.jianshu.io/upload_images/3478485-2198e399288f19f7.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+<p>9月5日，星期三，公元2018年。</p>
+<blockquote>
+<p>简书作者<a href="https://www.jianshu.com/u/44339a8a9afa">程序员联盟</a>：目前正在更新这个系列的教程，我是学习记录者，并非原创，此后<strong>算法与数据结构</strong>系列都是记录笔记，不再进一步说明。</p>
+</blockquote>
+<span id="more"></span>
+<p>这片是关于引出算法复杂度，用了小鸭子的故事。</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-f667aaa8497301ce.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="小鸭子" /></p>
+<center>小鸭子</center>
+故事是这样的：
+<p>有个农夫，每年带着小鸭子们去旅行，目的是为了让小鸭子们都得到放松清净的机会。旅行就是将他们放到池塘里，而且每个池塘要保证一样多的鸭子，才能够同样的清净，不会有不公平的情况出现。因此，农夫采取的方法是：将小鸭子一只一只的带到池塘边，让他们自己选择要去的池塘，最后在池塘和卡车之见跑了NxN个来回。而第二年，农夫发现不太好，于是就重新换了方法，依次带出N只鸭子，将其放在一个池塘，如此下去，直到每个池塘也是同样多的鸭子，这样只需要N个来回。这样一算，发现第二种方法能够更节省时间更轻松，而且还达到了同样的效果，新的方法胜利。</p>
+<p>农夫的放鸭子的方法，就可以看成一种算法，用来对放置鸭子进行了精确的描述。很显然第二种算法更好，时间节省，力气节省，还能达到同样的结果。在计算机术语中，人们用复杂度（complexity）这个词来量化算法的性能。</p>
 ]]></content>
       <categories>
         <category>算法与数据结构</category>
@@ -2079,47 +2211,6 @@ float——确定图片是否为浮动，而不是在一个固定的地方。</p
       </categories>
       <tags>
         <tag>电影</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Geneious如何使用本地blast</title>
-    <url>//2022/08/05/Geneious%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8%E6%9C%AC%E5%9C%B0blast/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-<div class="note primary">
-            <p>Geneious来进行本地blast，便于节省时间</p>
-          </div>
-<span id="more"></span>
-<h1 id="font-colorgreen安装ncbi-blast本地blast软件font"><a class="markdownIt-Anchor" href="#font-colorgreen安装ncbi-blast本地blast软件font"></a> <font color=green>安装ncbi-blast本地blast软件</font></h1>
-<ul>
-<li>按步骤1-2-3打开界面<br />
-<img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-08-05-3HpSMr.png" alt="2022-08-05-3HpSMr" /><br />
-<br></li>
-<li>点击OK，然后geneious会自行检测安装ncbi-blast<br />
-<img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-08-05-1VlJOD.png" alt="2022-08-05-1VlJOD" /></li>
-<li>显示正在安装<br />
-<img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-08-05-JzYvPw.png" alt="2022-08-05-JzYvPw" /></li>
-</ul>
-<h1 id="font-colorgreen本地blast数据库构建font"><a class="markdownIt-Anchor" href="#font-colorgreen本地blast数据库构建font"></a> <font color=green>本地Blast数据库构建</font></h1>
-<ul>
-<li>例如可以讲物种基因组或者所有编码蛋白进行格式化，可以用于blast。<br />
-<img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-08-05-T5v64m.png" alt="2022-08-05-T5v64m" /></li>
-<li>可以选择从已经下载好的数据导入，最后点击OK，就完成本地blast数据库的构建。<br />
-<img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-08-05-fcbXgl.png" alt="2022-08-05-fcbXgl" /></li>
-</ul>
-<h1 id="font-colorgreen选择目标基因进行数据库blastfont"><a class="markdownIt-Anchor" href="#font-colorgreen选择目标基因进行数据库blastfont"></a> <font color=green>选择目标基因进行数据库blast</font></h1>
-<p>一个物种的基因去比对另一个物种的基因组或者蛋白数据，得到相关的同源蛋白。<br />
-<img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-08-05-xh6Dga.png" alt="2022-08-05-xh6Dga" /></p>
-<div class="note primary">
-            <p>参考内容：<a href="https://assets.geneious.com/manual/2022.1/index.html">Geneious官方文档</a>。</p>
-          </div>
-]]></content>
-      <categories>
-        <category>科研之路</category>
-      </categories>
-      <tags>
-        <tag>小技巧</tag>
-        <tag>Geneious</tag>
-        <tag>blast</tag>
       </tags>
   </entry>
   <entry>
@@ -2496,6 +2587,147 @@ float——确定图片是否为浮动，而不是在一个固定的地方。</p
       </tags>
   </entry>
   <entry>
+    <title>大悦城小聚</title>
+    <url>//2018/09/29/%E5%A4%A7%E6%82%A6%E5%9F%8E%E5%B0%8F%E8%81%9A/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![虽然没有我们的照片，但是有这个意思](https://upload-images.jianshu.io/upload_images/3478485-ccf80350d2a43ed6.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+<blockquote>
+<p>星期一就接到了大学室友“大叔”的诚挚邀请，请我吃饭。好不犹豫的答应之后，一直等待着。</p>
+</blockquote>
+<span id="more"></span>
+<p>礼拜三，本来已经提前说了，最后有点情况，还是没有去。然后就是礼拜五，晚上六点在新开的大悦城吃饭，天泰泰国菜，貌似是一家网红店，味道确实很不错，尤其是咖喱牛肉，辣辣的感觉出现在入口一段时间之后，很是享受。此外，还有泰式奶茶，味道特别浓厚且独特，很是喜欢。这家店确实可以，比我想象中精致一些，人均价位100多，偶尔享受一下这样的食物，心情都会变好很多。</p>
+<ul>
+<li>土豆咖喱炖牛肉</li>
+</ul>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-464c0f630b16116c.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="土豆咖喱炖牛肉" /></p>
+<ul>
+<li>泰式传统虾饼，真是满满的都是虾肉，特别鲜</li>
+</ul>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-75a90853bc691151.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="泰式传统虾饼，真是满满的都是虾肉，特别鲜" /></p>
+<ul>
+<li>菠萝炒饭，一般是必点的泰国菜</li>
+</ul>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-a08a47b3e9d958d2.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="菠萝炒饭，一般是必点的泰国菜" /></p>
+<ul>
+<li>炒粉，很劲道，味道很棒，配着旁边的酱料</li>
+</ul>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-b8314beafe3e997f.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="炒粉，很劲道，味道很棒，配着旁边的酱料" /></p>
+<ul>
+<li>椰蓉布丁，口感非常好，椰香特别浓厚，下面是一层晶莹透明的西米</li>
+</ul>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-8d9391ea6f0ef287.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="椰蓉布丁，口感非常好，椰香特别浓厚，下面是一层晶莹透明的西米" /></p>
+<ul>
+<li>这就是我喝的奶茶了，看起来就非常的高端大气，确实味道也特别的棒</li>
+</ul>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-d6b3972175e63e1d.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="这就是我喝的奶茶了，看起来就非常的高端大气，确实味道也特别的棒" /></p>
+<p>吃完这些菜，并没有很好的满足我们的欲望，果断又去吃了一家烤鱼，叫江边城外。不过说真的，还是有点饱了，不过有特别想尝试，结果味道很是不错，而且还是两种口味，一半一半，双拼烤鱼。</p>
+<ul>
+<li>烤鱼，一半酱香一半蒜香</li>
+</ul>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-990751167b0d3e42.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="烤鱼，一半酱香一半蒜香" /></p>
+<p>吃完，也就结束了。喜欢这样的感觉，偶尔有空且机会正好，一定要想到好友，一起吃个饭，闲聊几句，很是舒心，没有太过多余的想法，放下很多事情。骑自行车回去学校，没有再逛，下次再约。</p>
+]]></content>
+      <categories>
+        <category>随记</category>
+      </categories>
+      <tags>
+        <tag>泰国菜</tag>
+        <tag>大学</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>印度，漂浮的次大陆</title>
+    <url>//2018/09/06/%E5%8D%B0%E5%BA%A6%EF%BC%8C%E6%BC%82%E6%B5%AE%E7%9A%84%E6%AC%A1%E5%A4%A7%E9%99%86/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![印度，漂浮的次大陆](http://upload-images.jianshu.io/upload_images/3478485-b11c23f0c98ac99f.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+> 俞敏洪老师的推荐，于是就去读了郭建龙一个系列的游记。《穿越百年中东》、《骑车去元朝》、《印度，漂浮的次大陆》和《三千佛塔烟云下》都读了一遍，信息量超级大，不过读起来特别的畅快，特别的流畅。
+> 郭建龙是个文化旅者，总是亲身去体验某个地方的文化，历史，地理，政治，经济和宗教，最后凭借自己的文笔，写出独具特色的游记，我个人非常喜欢，推荐阅读。
+> 内容摘录自郭建龙的《印度，漂浮的次大陆》这本书。
+<span id="more"></span>
+<p>哈拉帕（巴基斯坦），洛塔尔（印度）。<br />
+洛塔尔遗址，手工业和贸易促使其如此的发达。然而，公元前2000年左右，整个印度河文明都衰落了。<br />
+在欧洲，存在着非洲两次走出的古人类相遇证据。那就是第二次的克罗马农人取代了第一次的尼安德特人，成为现代欧洲人的祖先。那么古印度人的祖先从哪里过来？在比莫贝特卡，发现了穴居文化。</p>
+<p>印度人之前一直以雅利安人的血统引以为豪，认为自己是雅利安人的后裔。但是当考古发现，公元前5000，已经在印度河流域出现了本土的古印度文明，比雅利安人入侵印度次大陆早千年，不得不承认存在高度发达的古印度文明。但印度人和雅利安人有着紧密的联系，**英国人威廉琼斯公爵从语言学上发现，印度的梵语，拉丁语和欧洲的语言有着同一起源，从而也证明了确实雅利安人和印度人有着紧密的联系。**而后来的考古发现也证明，大约在公元前3000年，在中亚大草原、里海附近的雅利安人，分为两支：一支进入欧洲，成为现代欧洲人的祖先；而另一支，经伊朗阿富汗，翻过兴都库什山脉，顺着开伯尔山口进入印度河谷地，最终扩散到整个印度。为什么古老发达的文明无法抵抗雅利安人？因为，在公元前2000左右，古印度文明开始衰落，而此时雅利安人正好在恰当的时机到来，从而入侵整个印度。</p>
+<p>**虽然古印度文明消亡了，但是人种并不会就此消失。**在现代的南印度，存在达罗毗荼人，可能与印度河文明的人种一致，且他们拥有自己的语言系统。**现在的印度，分为两种语系，在南方属于达罗毗荼语系，而在北方则是属于梵语。**在印度神奇的是，雅利安人已经入侵印度几千年了，到现在为止，雅利安人和达罗毗荼人还没有完成融合，跟中国社会的情况完全不同。原因：<strong>强大的种姓制度。</strong></p>
+<h2 id="印度教"><a class="markdownIt-Anchor" href="#印度教"></a> 印度教</h2>
+<p>雅利安人为了防止自己被当地原始居民同化，从而建立了严格的种姓制度，出现了<strong>四种种姓：婆罗门，刹帝什，吠舍和首陀罗</strong>。分别担任宗教和精神领袖，国王和武士，从事商业，最底层。还有没有种姓的贱民。规定人一出生就确定了种姓，永远也不可能改变，无法进阶到更高的种姓。但是，如果长期下去，最底层的人会越来越多，最终会通过暴力手段推翻这种限制，然而<strong>为什么这种制度能够如此长久的维持？<strong>只能通过宗教信仰手段，将</strong>种姓制度融入到宗教</strong>之中，使其能够自动的被大众接受，这个宗教就是<strong>印度教</strong>。教义强调：人的灵魂是可以轮回的，这一世为人，下一世可能为动物，也可能身为更高种姓的人类，所以给了人们虚假的承诺，使得人们遵从现有的制度而不加以反抗，与中国的儒教相似。</p>
+<p><strong>世界上所有的宗教一般都包括了信仰和伦理两方面，其中信仰是个人化的体验，关系到个人与神之间的沟通，而伦理是一种社会化的体验，主要强调人与人之间的交流。侧重点的不同，宗教分为两大类：基督教和佛教侧重信仰，而印度教和儒教侧重伦理。伊斯兰教处在两者中间。</strong></p>
+<p>在这一时期，印度的神祇也得到了确立，形成了<strong>三大主神：梵天，毗湿奴和湿婆以及无所不包的各路神仙</strong>。其中湿婆是受到最广泛崇拜的主神，同时也是生殖力的代表，于是有了崇拜生殖和崇拜阴茎的传统。湿婆的化身往往是一根石柱，象征着阴茎和生殖力，叫做林伽。在西藏的外喜马拉雅山脉中，有一座形同阴茎的山峰，叫做冈仁波齐，在印度称为凯拉什山，是藏传佛教，苯教和印度教的神山。印度人将前往冈仁波齐看成朝圣的极致。</p>
+<p>同时这一时期，印度史诗也形成。最早的梵语经典**《吠陀经》**成型，<strong>印度的传奇史诗《罗摩衍那》和《摩诃婆罗多》逐渐流传开来。</strong>《罗摩衍那》家喻户晓。</p>
+<h2 id="佛教"><a class="markdownIt-Anchor" href="#佛教"></a> 佛教</h2>
+<p><strong>佛陀，或称释迦摩尼，名字叫悉达多乔达摩</strong>。出身在印度十六国时期的迦毗罗卫国的<strong>蓝毗尼</strong>的一棵树下，现在的尼泊尔境内。父亲是迦毗罗卫国的国王净饭王，这个小国依附于大国拘萨罗，是由雅利安人种释迦族建立的，属于刹帝什种姓。母亲摩耶夫人。年轻的悉达多，在王宫中长大，不问世事，整天沉迷爱情俗世，有三位妻子和自己的孩子，在孩子出身的那一年，当悉达多看到世外的人所受的苦难，于是开始思考人生的意义，离开皇宫开始寻找答案。在菩提迦耶的菩提树下，悉达多决定放弃苦修，开始打坐静修。本来他的五位随从认为他已经放弃寻找真理了，于是离开了他。不久，他就彻底领悟，找到了属于自己的<strong>一套理论体系</strong>，**人生的意义是使得自己死后的灵魂得到永恒，也是与印度教类似的轮回机制，但是佛教的是认为轮回本身是一种痛苦，需要跳出轮回，灵魂才能得到永恒。那么如何跳出这个永无止境的轮回呢？<strong>悉达多构想出了</strong>“四谛”**理论体系：<strong>苦谛</strong>，指的人生的一切苦难。<strong>集谛</strong>，贪嗔痴三毒是苦难产生的原因。<strong>灭谛</strong>，消灭苦难就要消灭三毒。<strong>道谛</strong>，修行的行为规范，指八正道，帮助人们消灭三毒的方法，修行得当的人都可以跳出轮回之苦，从而达到活着的意义和死后的永恒。</p>
+<p><strong>四谛</strong>是悉达多理论的核心，因为这个体系<strong>打破了种姓的界限，强调了人生的平等</strong>。任何人要是想跳出轮回，必须要按这种修行方式进行。</p>
+<p>获得顿悟的悉达多没有立即离开，继续思考完善体系，后来来到了一个叫做鹿野苑的地方，收了第一批信徒。这就是之前离开他的五个人，是其父亲在其离开时选派的五位宗室子弟。也就是佛教史上有名的五比丘。也就在此刻开始，佛教的佛、法、僧已经圆满集结，悉达多乔达摩也正式成为佛陀。之后继续传教，走向全国。最后，在晚年，佛陀带了少量弟子来到名叫拘尸那罗的地方，一病不起，不久圆寂与此。而此时的迦毗罗卫国也被拘萨罗消灭，而最后拘萨罗也被摩揭陀国所灭，为印度的统一打下了基础。</p>
+<h2 id="耆那教"><a class="markdownIt-Anchor" href="#耆那教"></a> 耆那教</h2>
+<p>耆那教<strong>人口很少</strong>的宗教，但是在印度却有着及其重大的影响，甚至在<strong>影响力上超过了佛教</strong>。主要有两方面，第一，<strong>更强调苦行</strong>，对于人的要求高，更小众，使得能够接受的它的人很少，但是却是非常的坚定；第二，<strong>没有国际化</strong>。耆那教的创始人，<strong>筏陀摩耶被称为大雄</strong>，他的活动范围与佛陀重叠，也是在摩揭陀国的影响范围内。他强调的是苦行，为了完全达到断绝物欲的地步，甚至拒绝穿衣服，连身上有屎尿都毫不在意。而佛陀是放弃苦修的，过着质朴的生活，不是特意吃苦。</p>
+<p><strong>耆那教和印度教的神庙在外表上有相似之处，但是也有区别</strong>。耆那教的外部花式更加简单，而印度教的华丽高大。内部，耆那教的装饰复杂华丽，奢华无比，而印度教的却是及其简单，最简单的石板搭建的。</p>
+<h2 id="超级大国的更替"><a class="markdownIt-Anchor" href="#超级大国的更替"></a> 超级大国的更替</h2>
+<p>中国对印度的影响在公元前后到达，在这之前，对印度影响至深的是西方的希腊传导过去的事件，<strong>亚历山大的东征</strong>。但在亚历山大东征统治世界之前，是西亚的波斯文明主导全世界的强大政权。</p>
+<p>当西亚的新巴比伦帝国衰亡之后，伊朗境内兴起了一个新的帝国——<strong>波斯的阿契美尼德王朝</strong>，这是后来统治中亚的历代波斯王朝中的第一个。西亚的政治中心也从伊拉克两河流域转移到了伊朗境内。</p>
+<p>公元前7世纪，当时整个波斯在米底人的统治下。阿契美尼德死后，其儿子脱离了米底王国，经历过几代的继承，到了<strong>居鲁士二世</strong>统治时期，消灭了米底人的政权，还将前霸主新巴比伦帝国也消灭了。此后其儿子冈比西斯二世征服了埃及和非洲的大批领土，而其继承者<strong>大流士一世</strong>却改变了征服方向，开始向东方，越过开伯尔山口，进入印度河平原地区。之后又改变方向，又向西，入侵了希腊人的领土，<strong>从此将不起眼的希腊和欧洲带入了世界的舞台</strong>。希腊本来在东方的眼里根本不值得一提，只是生意人，他们航海走向各地，建立殖民地，只是为了做生意而不是扩张领土。<strong>波斯人入侵希腊，使得希腊各个弱小的城邦抱团抵抗，爆发出了强大的力量，使得波斯人战败</strong>。大流士一世之后，儿子薛西斯发动了第二次入侵，希腊人再次胜利，此后波斯就进入了衰落期，而西方兴起了新的霸主希腊。</p>
+<p>但希腊的这种团结不久就分裂，两个最大的城邦<strong>雅典和斯巴达</strong>开始争夺希腊的领导权，最终在波斯人的帮助下，斯巴达打败了雅典。但结果是两败俱伤。</p>
+<p>与此同时，一个希腊人看不起的<strong>希腊北部的马其顿</strong>兴起了，马其顿国王<strong>腓力二世</strong>打败了雅典和科林斯强权，使整个<strong>希腊半岛在历史上第一次统一</strong>。腓力二世的儿子就是著名的<strong>亚历山大大帝</strong>，这时整个希腊已经属于马其顿，他先进军<strong>小亚细亚</strong>，再把<strong>埃及</strong>纳入自己的版图，埃及的古老文明从此消失。接着进军<strong>波斯</strong>，打败波斯王大流士三世，最终波斯王朝覆灭。之后继续挥兵<strong>中亚阿富汗</strong>，塔吉克斯坦直到新疆以西的<strong>河中地区</strong>。突然就做了一个决定，向<strong>印度</strong>进军。<strong>此时的印度，内部也在进行着激烈的整合。摩揭陀国成为胜利者，几乎统一了全国</strong>。摩揭陀共包含了四个朝代，最后的难陀王朝是非常重要的承上启下的朝代，这时的印度的疆域已经有目前的一半大小，囊括整个北印度，和现代孟加拉国和缅甸的一部分。正是在这个朝代，亚历山大挥师进入印度。在印度，面临的是许多具有单独作战实力地区，如同游击战，亚历山大大帝陷入了全面作战的汪洋大海中，加之印度南北跨度几千公里，气候复杂，最后被迫撤退。不久，<strong>33岁的亚历山大大帝在巴比伦得病去世</strong>，留下了许多亚历山大的城市和希腊化的世界，其余化为传说。而这一次入侵对于印度的政治影响，间接促成了本土的伟大帝国的出现——<strong>孔雀帝国，印度第一次统一</strong>。</p>
+<p>亚历山大大帝撤退，使得整个西北印度陷入了权利的真空状态。原有的政治势力被破坏掉了，犍陀罗等国家被征服，另一方面难陀王朝还没有将控制力延伸过去。这时一个名叫<strong>旃陀罗笈多孔雀的人</strong>汇集大军向摩揭陀的难陀王朝进军，这时的难陀王朝也已经腐败无能，也希望新的君王接管权力。大军压境，难陀国王选择退位，避免了一场血腥的战争，孔雀王朝继承了难陀王打下了的江山。旃陀罗笈多孔雀最后在一个山洞里修行，信奉耆那教，最后默默的死去。他的孙子<strong>阿育王</strong>经过继承战，据说杀死了自己的99个亲兄弟，从自己的父亲频头娑罗哪里得到了孔雀王朝的宝座。阿育王前半生在杀戮中度过，而后半生却信奉佛教，在全国建造了数万座佛塔，然而现在剩下的只有<strong>桑吉大塔</strong>和鹿野苑的<strong>答枚克塔</strong>。</p>
+<p><strong>贵霜人</strong>的历史，最早可以从中国的战国时期找到痕迹，在中国西部的甘肃河西走廊一带，有一个半游牧民族在这里生活了很久。从某种程度上来说，<strong>月氏人</strong>是一个过渡民族，恰好夹在了游牧和定居之间，且受到了双方的威胁。其中在南方是定居的<strong>华夏民族</strong>，经过了春秋战国，秦国正在崛起，而在北方则是<strong>游牧民族匈奴</strong>。事实证明，游牧民族的威胁更大。直到秦朝末年，匈奴还比月氏人弱小，作为寄主国，当时匈奴的王位继承人只能以人质身份在月氏人当中生活，最后一位是叫做<strong>冒顿</strong>的匈奴人，没有受到善待，仇视月氏人，最后其逃回自己的部落，成为新的单于，从此以后月氏人进入了噩梦时期，<strong>冒顿挥师南下，屠杀，公元前202年左右，月氏人被迫放弃了肥沃的河西走廊，向西迁移。<strong>公元前177年左右，冒顿再次击败月氏人，被迫再次迁移，一部分南下进入了</strong>青海境内</strong>，被当地人同化；另一部分继续西迁，到达了新疆的<strong>准葛尔盆地</strong>。公元前162年，冒顿的儿子老上，再次打败月氏人，将月氏王的头颅砍下，当了酒器。只好再次西迁到了<strong>新疆的伊犁一带</strong>。这一次的西迁，引起了<strong>连锁反应</strong>，原本在伊犁这一带的<strong>斯基泰人向西南运动</strong>，进入了阿富汗境内。而这时在伊犁的月氏人因为被汉王朝打击的匈奴人的西迁，只好向西方的中亚地区前进，进入了著名<strong>河中地区</strong>，也就是阿姆河和锡尔河中间地带。而在河中地区，遭到了当地人的驱赶，不得不向南，进入了阿富汗伊朗境内，使得在这里的<strong>斯基泰人再次向南移动</strong>。在此之前，阿富汗和伊朗境内居住者安息人和希腊人，亚历山大征服中亚后，希腊人的后裔在这里建立起了大夏王国，在斯基泰人和月氏人的压力下，<strong>巴克特里亚人纷纷南下，进入印度境内，成为了入侵印度的第一波势力</strong>。</p>
+<p>由匈奴人和月氏人搅动的一系列民族迁徙活动，将一波一波的人们赶往了印度次大陆。张骞出使西域本来想联合月氏人给匈奴人来个东西夹击，但是月氏人拒绝了，不想再回到中国，此后月氏人彻底离开了中国的范围。<strong>公元前140年</strong>，在斯基泰人之后，月氏人也南下到了<strong>大夏边境</strong>，此时月氏人已经分成了5个部落，而贵霜就是其中的一个。之后打败了西部的安息国，继续占领大夏东部地区。此时接触到了大夏的希腊化文明，<strong>月氏人开始希腊化，从此变成了定居民族</strong>。并发行自己的货币和开始发展商贸关系。这时也受到了印度佛教的影响，开始将佛教作为他们的宗教。公元前1世纪初，<strong>贵霜部落</strong>打败其余部落，建立了<strong>贵霜帝国</strong>。在印度希腊人、印度斯基泰人、印度安息人之后，印度贵霜帝国正式登场。</p>
+<p><strong>维查耶纳加尔</strong>是印度教最后一个伟大帝国，负有捍卫印度教、抵抗伊斯兰教的重任。毁灭后，伊斯兰教长驱直入，在次大陆占据了主导地位，开始了几百年的伊斯兰政权时期。实际上，<strong>维查耶纳加尔就是为了对抗伊斯兰才出现</strong>。当北印度处于德里苏丹国统治的时候，南印度曾经强大的遮卢迦王国和拉什特拉库塔王国已经消亡。取而代之的四个小王国，分别是雅达瓦、卡卡提亚，潘地亚王国和霍伊萨拉王国。</p>
+<p>阿拉-乌德-丁用一生与南印度各国征战，其中就征服了雅达瓦和霍伊萨拉。前者为穆斯林提供了新的都城，而后者灭亡使得维查耶纳加尔在其土地上成长起来。</p>
+<p>巴马尼苏丹国的出现，这个伊斯兰国家的兴起与德里苏丹穆罕穆德图格鲁克迁都失败有关。比达尔城是该国的首都，与汉皮相比，伊斯兰教有最先进的战争理念，而印度教徒却是将首都看成生活的地方，由此也可以看出，两者在对战是的成败。南印度就在这两个教权国家的残忍战争中被扭曲，直到其中一个国家垮掉。最后，巴马尼苏丹最先垮掉，分为五个小苏丹国，这五个小国又内斗，最后成为三个苏丹国，最后联合起来，打败了维查耶纳加尔国，历史仅留下了汉皮这片废墟。此时，南印度也成了伊斯兰教的天下。这三个苏丹国也进入了黄金时代，而印度教最后的伟大政权也终于轰然倒塌。这时候，同属于伊斯兰教的来自北方的莫卧儿人出现了。</p>
+<p>在<strong>中世纪</strong>，虽然印度的佛教被印度教取代，但仍旧是世界的<strong>佛教中心</strong>，其中最有名的就是那烂陀大学，学术圣殿。但是在<strong>12世纪</strong>时，当古尔人到来，穆罕默德首领下的努力将军库特卜<strong>占领毁灭了那烂陀大学</strong>，<strong>使得佛教从印度消失</strong>。13世纪初，库特卜成立德里苏丹国，在莫卧尔人到来前，控制印度300多年。<strong>德里，现在印度的首都开始登上历史舞台。</strong></p>
+<p><strong>13世纪，成吉思汗带着蒙古人席卷了整个世界</strong>，在中国建立了元朝，在波斯建立了<strong>伊尔汗国</strong>，在俄罗斯人的土地上建立了<strong>金帐汗国</strong>，在如今的新疆西部、中亚建立了<strong>察合台汗国</strong>，在新疆北部和蒙古东部建立了<strong>窝阔台汗国</strong>。这五大汗国占领了当时已知世界的一大半。之后蒙古很快衰败，在<strong>察合台汗国</strong>的土地上，在14世纪后半期突厥人<strong>帖木儿</strong>威慑整个中亚、西亚和中欧，甚至占领了印度的一部分。但是在进攻明朝时，突然途中去世，此后帖木儿帝国分崩离析。<strong>然而此时，中亚出现了一位蒙古人和突厥人的双重后裔，巴布尔</strong>。让他占领印度，并开创了一个伟大的王朝。<br />
+**巴布尔在父系上是帖木儿的直系后裔，从母系来说，是成吉思汗的后裔。**因此，从1483年出生，就带着世界上最有血性的两个人的基因。</p>
+<p>河中地区的城市撒马尔罕是帖木儿的都城，要称霸中亚必须拿下撒马尔罕，但是命中注定不属于巴布尔，一世经过三次进攻，却一次都没有成功，中亚的大门从此关闭。然而，经过分析，印度是个不错的可以暂时栖息之地，前四次进攻印度只是在外围，现在的巴基斯坦境内，没有深入到德里地区，然而第五次，德里苏丹出现内乱，有人请他去去德里，于是决心进军德里。<strong>这次战役的胜利，决定了印度历史的未来300年，建立了一个伟大的帝国。<strong>巴布尔在阿拉格建立了帝国的首都，阿拉格是用艺术和建筑征服印度，其后代也大都继承了祖先的艺术气质，使得</strong>莫卧尔成为艺术世界的巅峰</strong>。此后，巴布尔平定了整个北部地区，不久去世，他的儿子胡马雍继承王位，但此时的帝国还没有稳定，<strong>胡马雍</strong>不善战，被东方孟加拉的将军舍尔汗打败，被赶出了印度，退到了阿富汗。而舍尔汗在位期间，使整个印度政局稳定。死后，胡马雍很快从其后代那里夺回了印度，继承了舍尔汗开创的一系列制度，并重新将首都迁到了德里。之后不小心摔死在图书馆，成为第一个葬在印度土地上的莫卧尔皇帝。</p>
+]]></content>
+      <categories>
+        <category>读书笔记</category>
+      </categories>
+      <tags>
+        <tag>印度</tag>
+        <tag>郭建龙</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Geneious如何使用本地blast</title>
+    <url>//2022/08/05/Geneious%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8%E6%9C%AC%E5%9C%B0blast/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+<div class="note primary">
+            <p>Geneious来进行本地blast，便于节省时间</p>
+          </div>
+<span id="more"></span>
+<h1 id="font-colorgreen安装ncbi-blast本地blast软件font"><a class="markdownIt-Anchor" href="#font-colorgreen安装ncbi-blast本地blast软件font"></a> <font color=green>安装ncbi-blast本地blast软件</font></h1>
+<ul>
+<li>按步骤1-2-3打开界面<br />
+<img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-08-05-3HpSMr.png" alt="2022-08-05-3HpSMr" /><br />
+<br></li>
+<li>点击OK，然后geneious会自行检测安装ncbi-blast<br />
+<img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-08-05-1VlJOD.png" alt="2022-08-05-1VlJOD" /></li>
+<li>显示正在安装<br />
+<img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-08-05-JzYvPw.png" alt="2022-08-05-JzYvPw" /></li>
+</ul>
+<h1 id="font-colorgreen本地blast数据库构建font"><a class="markdownIt-Anchor" href="#font-colorgreen本地blast数据库构建font"></a> <font color=green>本地Blast数据库构建</font></h1>
+<ul>
+<li>例如可以讲物种基因组或者所有编码蛋白进行格式化，可以用于blast。<br />
+<img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-08-05-T5v64m.png" alt="2022-08-05-T5v64m" /></li>
+<li>可以选择从已经下载好的数据导入，最后点击OK，就完成本地blast数据库的构建。<br />
+<img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-08-05-fcbXgl.png" alt="2022-08-05-fcbXgl" /></li>
+</ul>
+<h1 id="font-colorgreen选择目标基因进行数据库blastfont"><a class="markdownIt-Anchor" href="#font-colorgreen选择目标基因进行数据库blastfont"></a> <font color=green>选择目标基因进行数据库blast</font></h1>
+<p>一个物种的基因去比对另一个物种的基因组或者蛋白数据，得到相关的同源蛋白。<br />
+<img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-08-05-xh6Dga.png" alt="2022-08-05-xh6Dga" /></p>
+<div class="note primary">
+            <p>参考内容：<a href="https://assets.geneious.com/manual/2022.1/index.html">Geneious官方文档</a>。</p>
+          </div>
+]]></content>
+      <categories>
+        <category>科研之路</category>
+      </categories>
+      <tags>
+        <tag>小技巧</tag>
+        <tag>Geneious</tag>
+        <tag>blast</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>King&#39;s B medium recipe</title>
     <url>//2022/08/16/King-s-B-medium-recipe/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -2575,247 +2807,6 @@ KOH adjust the pH to 7.2</p>
         <tag>小技巧</tag>
         <tag>MZmine3</tag>
         <tag>质谱(MS)</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Rstudio服务器使用</title>
-    <url>//2022/08/02/Rstudio%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%BD%BF%E7%94%A8/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-<blockquote>
-<p>如何使用服务器端Rstudio？</p>
-</blockquote>
-<span id="more"></span>
-<h2 id="font-colorgreen输入r服务器网址font"><a class="markdownIt-Anchor" href="#font-colorgreen输入r服务器网址font"></a> <font color=green>输入R服务器网址</font></h2>
-<p>RStudio Server的默认端口是8787，所以我们打开浏览器，输入<code>服务器ip:8787</code>，就可以打开Rstudio。例如在Google浏览器网址栏中输入：192.168.1.130:8787，就会出现账户登录界面。</p>
-<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-05-01-xvJpuN.png" alt="20220501xvJpuN" /></p>
-<h2 id="font-colorgreen输入linux用户名和密码登录font"><a class="markdownIt-Anchor" href="#font-colorgreen输入linux用户名和密码登录font"></a> <font color=green>输入Linux用户名和密码登录</font></h2>
-<p>用户名和密码是创建用户给大家设置过，可以查看<code>/Lab-Shared-Folder/Protocols/Bioinformatics method</code> 路径下的文件《系统进化树构建》，有相应的说明。<br />
-<img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-04-19-e50ftc.png" alt="20220419e50ftc" /></p>
-<h2 id="font-colorgreen正常使用界面font"><a class="markdownIt-Anchor" href="#font-colorgreen正常使用界面font"></a> <font color=green>正常使用界面</font></h2>
-<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-04-19-f40ife.png" alt="2022-04-19-f40ife" /></p>
-]]></content>
-      <categories>
-        <category>科研之路</category>
-      </categories>
-      <tags>
-        <tag>R</tag>
-        <tag>教程</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>海南环岛游记</title>
-    <url>//2018/08/31/%E6%B5%B7%E5%8D%97%E7%8E%AF%E5%B2%9B%E6%B8%B8%E8%AE%B0/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![travel world.jpeg](https://upload-images.jianshu.io/upload_images/3478485-f3fc300e6094dcfd.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-<blockquote>
-<p>想了很久需要做的事情，就是想把自己在路上的一切记录下来，写成游记的类型。这一篇，就是开始，一切在路上的开始。时隔一年半了，手机里的照片一直还在，没有删除，每一次的浏览，都会激起那时的回忆，想想就觉得很美好。总有一天，希望走遍这个世界。</p>
-</blockquote>
-<span id="more"></span>
-<h1 id="缘由"><a class="markdownIt-Anchor" href="#缘由"></a> 缘由</h1>
-<p>想去外面独自走走，这个想法，来自我的初中同学<strong>老牛</strong>。比我多读了一年的书，我在大三的时候，她大二，开始了她的计划。不知道哪里来的勇气，开始一个人的穷游之旅。或许因为是音乐学院的学生，可能比我们一般人更为理想一些。钱，始终是限制条件，没有经济收入的学生，只能通过兼职这个行为来获得微小的收入，又一个优势显现出来，音乐生兼职收入比较高。这些条件，可能推动了之后的行为。<br />
-我，作为初中的前后桌，不错的关系，她想到了邀请我参加，一起旅行，而我最大的限制或许是钱，但是更大的限制或许是自己对前途的担忧，她屡次邀请而我屡次拒绝，我没法放弃手头的工作。就这样，我就错过了，错过了提早去外面看看的可能。但是，我始终没有放弃过这个想法，每当朋友圈看到她的沿途纪事所经历的一切，我就无比的羡慕。除了我之外，我经常跟同学将老牛的经历，搞得好几个同学都想一起去，那时候的我始终没有计划，没有勇气走出那一步。250算是其中一个，特别想去外面玩，最后在大学期间，始终没有一起出去玩一趟自由行，也算是一种遗憾。<br />
-2015年的寒假，我已经完成了那时候的任务，或者是人生的一个小目标，考上了理想中的研究生。而老牛走遍了祖国的各个地方之后，最终一个愿望还没有实现，就是想去海南骑行，因为以前走过的路上，很多骑行的人，产生的一种强烈的欲望，希望能够体验一下。而我，在这一年的寒假，也有时间了，放弃了在家过春节，而是选择了远方。再次的邀请，我也终于答应，于是购买一张机票，开始了我的首次遥远的旅途……</p>
-<h2 id="第一天在路上"><a class="markdownIt-Anchor" href="#第一天在路上"></a> 第一天——在路上</h2>
-<p>这一天是2016年2月4号，从余姚北站到温州南站，从温州南站到龙湾飞机场，第一次坐飞机，心情还是有些激动。当天晚上7点多，我们来到广州白云机场，走出机场，我们坐上大巴车，来到汽车站，买了当天晚上10点多去湛江的长途汽车。一路上特别的累，压根儿就没有睡好，终于天亮了，我们到达湛江，最后来到了海安新港，海南是一个岛屿，必须要轮渡，才能够到达海口。长途汽车都是通过轮船过渡到海口。<br />
-<img src="//upload-images.jianshu.io/upload_images/3478485-933c2cab5ec194c4.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-f4b5f22806972fa7.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-aa6fafd428986372.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-3065a4024303b00c.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-0b0bb162366082c9.jpg" alt="" /><br />
-<img src="//upload-images.jianshu.io/upload_images/3478485-14d63a7417486b3e.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-22dbb99e4294374c.jpg" alt="" /></p>
-<h1 id="第二天一半在路上一半在吃"><a class="markdownIt-Anchor" href="#第二天一半在路上一半在吃"></a> 第二天——一半在路上一半在吃</h1>
-<p>我们坐了通宵的长途汽车，为了赶路，我们必须要牺牲一些东西，睡眠没有了很好的保障，但是终归是到了渡口，马上就要进入海南海口。又激动了一段时间，轮渡的时间大概是一个半小时。到了海口，我们还得做公交，到达最终的目的地，517驿站。晚上四五点，我们终于是到达了，没有什么特殊的情况出现，房间是提前订好的，也不贵，大概50块钱一个晚上，能够接受。<br />
-收拾好行李，安顿好一切，我们决定去海口骑楼小吃街逛一逛，吃点东西，休息一下，感受一下。吃完决定也就一般，我们就在外面走了走，看了看海口的夜晚景色。<br />
-<img src="//upload-images.jianshu.io/upload_images/3478485-2ceff751da47f0b9.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-f456b4e0d13985b1.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-4a8b0458c4585f21.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-0e5661224ba4a00a.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-718b7a2e2b439ba1.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-fbf791081651dd5a.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-2bfca9fb7bf304a5.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-ccd92a5660f86324.jpg" alt="" /><br />
-<img src="//upload-images.jianshu.io/upload_images/3478485-aae2f13afdbebd1f.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-1d8f161551485d7e.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-f5eb088d5e8b99cc.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-e368bc288e81fe48.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-471c10b8030c1116.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-3027a42cc61d29fc.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-fa64a5e71e9c9254.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-8836901ec20c9048.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-3394cdedac800643.jpg" alt="" /><br />
-<img src="//upload-images.jianshu.io/upload_images/3478485-68c2158fec900dca.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-f583064a51b03e16.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-6e7b4a58dd456ea0.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-39b66b03ad3fc360.jpg" alt="" /></p>
-<h1 id="第三天海口一日游"><a class="markdownIt-Anchor" href="#第三天海口一日游"></a> 第三天——海口一日游</h1>
-<p>今天是2月6号大年28，我们决定不在海口过年了，打算今天玩一天，明天开始正式骑行，开始我们的环岛之旅。这一天，或许是我们这几天最轻松自在，最无忧无虑的一天。正好老牛的朋友正好是海口人，于是，我们就在这位老司机的带领下，玩边了海口，吃了很多好吃的，享受了从未享受到的海口风光。<br />
-这一次的遗憾，就是没有了解一些海口及海南的历史，缺少了重要的一块内容，没有很好的领略这一座城市。<br />
-吃玩海口一天，准备明天的出发，我们也计划了一下我们的骑行计划。<br />
-<img src="//upload-images.jianshu.io/upload_images/3478485-e113ecd98d184831.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-f137df22d9bfc06c.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-a03110c7c6c31044.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-fdc2ecf964458ee5.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-b40fb40307bea61e.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-22e7ea491c5b13c9.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-25169b31ae53bf74.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-b8e88f2f87805c15.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-e6995c71ddd8ab45.jpg" alt="" /><br />
-<img src="//upload-images.jianshu.io/upload_images/3478485-8240317f8797c9e1.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-deace0eceba740c8.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-fef76741ee41323d.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-19e2b5aff5a0be15.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-0cb45b2ac11476b2.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-b21ed4d7efa4920e.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-bade99c3fd51e08f.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-4d01361af2ff5646.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-0a203c1f64dea459.jpg" alt="" /><br />
-<img src="//upload-images.jianshu.io/upload_images/3478485-10fb4d55d0c38e23.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-9d1af7c41eb9267d.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-b81bc345e25911b2.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-1f7b72cb456fea18.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-8921d1a97293de54.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-6abdc547c1026738.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-9fae154c549e16af.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-c6d09e5e4501c39a.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-22d1d765c28d1e33.jpg" alt="" /><br />
-<img src="//upload-images.jianshu.io/upload_images/3478485-f4dea965ffc09528.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-db271afb3e61bd6c.jpg" alt="" /><br />
-<img src="//upload-images.jianshu.io/upload_images/3478485-9b447b7bf1777bee.jpg" alt="" /></p>
-<h1 id="第四天骑行第一站文昌"><a class="markdownIt-Anchor" href="#第四天骑行第一站文昌"></a> 第四天——骑行第一站，文昌</h1>
-<p>今天已经是大年30了，我们决定启程，开始我们的旅途，在517，我们结伴了两个小伙伴，两个人都是已经工作了的，有一个已经骑行了好多地方，全国好多个地方都去了，那时候真的是非常的佩服，非常的向往那一种自在的旅行。在路上，我们又遇到了一群退休的大爷大妈，结果居然神奇的一起结伴而行，人多有人多的好处，人少有人少的好处，我们一路上都遇到了。由于是第一天，我们都没有提前预定好文昌的517房子，搞得最后天黑了都没有找到住所，幸好后来联系到了，主在航天旅馆商务宾馆。因为今天是除夕，我们本来打算在517做饭，吃个年夜饭，在来的路上，已经买好了好多食材，其实也很惨，因为除夕，菜市场都没有什么卖家了，只剩了一个卖蔬菜的大妈，我们于是就买了番茄，白菜，土豆等等。还好最后航天商务宾馆的老板也比较体贴，给我们提供了一个厨房，及其简易的厨具，于是，我们就自己动手，准备做一顿大餐，确实也是不错，吃的很饱，而且连第二天的早饭也一起弄好了。这个除夕是一辈子都忘不了的除夕，一辈子也仅此一次，很珍贵。<br />
-<img src="//upload-images.jianshu.io/upload_images/3478485-b447f0f32f949683.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-3eeebb35eac1b18a.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-f921ff58ce8e592a.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-00e2f9a3dc256252.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-ce8e2965ef4ce6b0.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-d68ca0d3fb24876b.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-6bcd3d8796d39db9.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-6ef154927011b53b.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-faff18049a3f0cee.jpg" alt="" /></p>
-<h1 id="第五天骑行第二站博鳌"><a class="markdownIt-Anchor" href="#第五天骑行第二站博鳌"></a> 第五天——骑行第二站，博鳌</h1>
-<p>今天大年初一，我们出发到往第二站，博鳌。就是开博鳌亚洲论坛的那个地方，会址也在那个地方，可以去看一眼，最后因为需要门票，我们就放弃了。早上起来，收拾完成，准备出发。屁股真的是痛的不行，昨天第一天，完全没有适应，真的超级酸，不过骑着骑着，也还好，大家都坚持下来了。这一次，我们聪明了，我们是提前预定好了博鳌517的房间，能够有房子住，这是最重要的，傍晚，我们准时到达了博鳌。途中，我们好像特意弥补了昨天的不足，去了东郊椰林，因为路线的缘故，我们去这里后，必须选择轮渡，才能够节省时间，准时到达博鳌。载着自行车，我们也坐了一会儿船，感觉很棒。东郊椰林不好找，我们问了好多当地人，最后好不容易找到，集体拍了照片，能够看到比较开阔的海。之后，海出了一点意外，我们的一个小伙伴摔了一跤，手破了，脚也磨破了皮，但还是坚持了，坚持到了最后。<br />
-这一天，我们一起吃了一家东北菜，还可以，也遇到了好多骑行的人，打算第二天早上看日出。</p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-be8805d83dcdd47e.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-59564aebf88aa2eb.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-0dc786d3ae2baeb7.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-de5b5c9d63667dc1.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-367dd2b3b8e05a43.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-8312389b23a365a5.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-088f5d85651b06b0.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-a18c909f5b4fab71.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-a96a7955d8a02513.jpg" alt="" /><br />
-<img src="//upload-images.jianshu.io/upload_images/3478485-fc42027411d20c87.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-e42b880cf21615a7.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-2714ac24c53d7dcf.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-5238f72de458bf24.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-637d2a29154c22e1.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-5482e66344923334.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-e13c82be26119cf3.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-1bd16c1ff33a6937.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-22d8d6c95ba45d8a.jpg" alt="" /><br />
-<img src="//upload-images.jianshu.io/upload_images/3478485-d0b6025bcbdf08bb.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-508f1ef834bea998.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-bb9b648eadd2a638.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-4e33a88e8d04e261.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-279ffa436b51ab31.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-2360bfe2cfb66182.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-9fc427143d41905e.jpg" alt="" /></p>
-<h1 id="第六天骑行第三站兴隆"><a class="markdownIt-Anchor" href="#第六天骑行第三站兴隆"></a> 第六天——骑行第三站，兴隆</h1>
-<p>早上天黑着就起来了，听说这里可以看到日出，总是如此，想看肯定看不到，我是从来没有看到从海平面升起的太阳——简称日出。只好赤脚在沙滩上玩了一会儿，沙滩上鞋子，再一次我又写下了250，不知道从什么时候开始，很多时候都会想起250这个字符，因为包涵的太多过去吧。博鳌镇还挺好，我们能够吃一顿正常的早饭，不久开始了旅途，兴隆站。这里忘记说一件事情，昨天晚上因为住的地方没有热水，那些叔叔阿姨们就一直嚷嚷不停，真的是忍受不住了——这就是人多的坏处。又加上我们的行程从这里开始发生了分歧，所以大家就开始走散，各自开始各自的路。我们四个人，当然是要一起走的，虽然那时候我还有好多想法，但是被迫只能打消念头。<br />
-虽然我们目的地不一样，但是行走的路程还是很相似的，在路上我们又碰到了小强和另外一个哥们儿，或许是因为渴了，看到路边的椰子树不是很高，我们就想着尝一尝这路边的椰子，看看有啥不一样的地方。小强身手非常敏捷，一会儿就马上树，在那用刀割椰子，最后通过大伙儿的努力，最终搞到了两个吧，隔开放汁。除夕夜那天剩下的一次性杯子在此刻发挥了最后的功能，我们用来盛椰汁，两个椰子，最后倒了好多杯，每个人都能够喝到。<br />
-由于路上的再次偶遇，叔叔阿姨们又和我们走到了一起，最终又变回了一个大团体，集体到了兴隆。路上风景甚是美妙，有牛在路上，天很蓝，视野很开阔。这是第三天了，我们的身体确实很累了，听说兴隆是有温泉的，我们就想着找一个温泉宾馆，结果还是老老实实的选了普通的宾馆住下了，因为叔叔阿姨的缘故，我们也没有去兴隆的517住宿，他们年级确实也大了，有些东西确实也经受不起了。也能够理解吧，不过那个时候可不是这样的想法，就是觉得他们太麻烦了，出来旅游还挑这挑那的，真的特别烦，在这一刻，我是真的不想和他们一起了。晚饭还是一起吃的，一家大排档，人一多，到底吃什么东西就很难下定论了，要讨论好久，而我早已经饿的不行了。大排档，点了没几个菜，觉得很贵，饭貌似也没有吃饱，真的那时候特别的心灰意冷，什么心情都没有了。晚上吃完饭，我们几个人就走回去了，好像还打包了什么东西回去吃的，不过根本吃不了了，结果好像被扔掉了。</p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-390e35b8d105577e.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-555245b7d9834ab9.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-5b7d8b7c4bd000f3.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-be501fe6fbf48e19.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-2a1e5cd48670a003.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-0fd86412141b7c25.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-478ae713f9067066.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-203194ff2a3aae8c.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-64cc303a3e007e39.jpg" alt="" /><br />
-<img src="//upload-images.jianshu.io/upload_images/3478485-a9ed3ef54036111c.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-65f28d96537aeb97.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-42e61d295abbaff6.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-7db32a7eba12543b.jpg" alt="" /></p>
-<h1 id="第七天骑行第四站陵水"><a class="markdownIt-Anchor" href="#第七天骑行第四站陵水"></a> 第七天——骑行第四站，陵水</h1>
-<p>最后一段路很长，我们还需要分为两天来骑，最后可以到达三亚。我们一群人还是在一起的，早上也一起出发，在酒店门口又拍了一张照片。早饭，在酒店旁吃的，这顿早饭印象深刻。兴隆生产咖啡，当地人在早上也常常喝咖啡，也离不开咖啡，我倒是没有喝，毕竟还是喝不惯，我要了一杯豆浆和油条。在这里，我发现了一样奇怪的东西，当地人就着咖啡吃，可以在嘴里不停的嚼，嚼多了，牙齿会变黄，和吸烟就差不多的功效——新鲜的槟榔。有些人就只是喝咖啡和吃槟榔，一边聊天一遍喝咖啡嚼槟榔，这断早餐时光特别的惬意，很享受。在吃完离开的那一会儿，我也想试一试，于是花了5块钱，买了4颗，可是好像直到骑行结束，我都没有吃，因为实在是味道太大，真的吃不了这个东西啊。<br />
-这一天真的是充满了变数，有事不容易的一天，不知道谁带的路，我们被带偏了，远离了国道，进入了小乡村，不过确实，我们也见到了不一样的风景。天都已经黑了，我们的实物都吃完了，水也差不多没有了，也没有地方住，那一天真的很害怕，产生了恐惧。虽然途中遇到了好心人，想要收留我们，可是人实在是太多了，没有办法，只能放弃（这又体现出来，人太多可能也是一种麻烦）。在我们夜行不一会儿，路边的保安大叔突然喊住了我们，说你们是不是在找住的地方，我知道离这儿不远就到国道了，那里有旅馆的，不过过去的路是小路，碎石路，很难骑，晚上有点危险，那时候根本顾不了那么多了，找个地方安顿下来才是王道，我们恳请保安大叔开着摩托车为我们带路，最后大叔答应了，遇到好心人了，不然真的不知道那天晚上会发生什么事情，之后的日程可能也要改变了。<br />
-到了国道边，找到了几家旅馆和吃饭的地方，先订下了睡觉的地方然后再找吃的，沿途遇到的宾馆都比较破旧，但是能够睡觉也已经不错了，价格也不贵，将就一万就可以了。<br />
-有好多旅馆也批发水果，结果我们买了一个菠萝蜜，30块钱左右，反正不知道比江浙地区便宜多少了，我们觉得特别划算。晚上，我们分开在不同的饭店吃饭，我们是找到了一家很不错的店，量很足，饭管饱，比昨天在兴隆吃的大排档好很多很多了，这大概是我们这一路上最满意的一顿饭，我们四人都称赞不已。</p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-bfcebc1ff48cb058.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-2ed65edddb208453.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-a85573093f06c8eb.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-f2faade41df15cfa.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-7236a21ff4b06aba.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-3e92bfeb7823e53f.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-842f12d291486ede.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-a6400ec38c096917.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-d0d55a64fcb997fb.jpg" alt="" /><br />
-<img src="//upload-images.jianshu.io/upload_images/3478485-66483d3754ecff0a.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-0a781c852473f42a.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-23704e5aaf4f4ba1.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-6bf7f80898ce0731.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-d5bd927b62e21248.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-2cdee52a0275c6d5.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-b6923082e78ef81c.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-931b89602b7caf55.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-60cab54e4839dd35.jpg" alt="" /><br />
-<img src="//upload-images.jianshu.io/upload_images/3478485-fecce8670c55c645.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-b21bf081cfe265f8.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-2447358f33a13407.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-c40211259b07123d.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-4b67adfcf9b2404f.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-fc5d9f73f676049c.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-842dc0c0384e9f89.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-350530219afae84f.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-e46647d350609750.jpg" alt="" /><br />
-<img src="//upload-images.jianshu.io/upload_images/3478485-da1ab82f25a38291.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-4952e4170766824a.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-12b0e1a460e2d89e.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-894e648c3b315ee7.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-89c6bd66b2dab6b0.jpg" alt="" /><br />
-<img src="//upload-images.jianshu.io/upload_images/3478485-7366dc2f0d2bf1c5.jpg" alt="" /><br />
-<img src="//upload-images.jianshu.io/upload_images/3478485-7113178e9245b97f.jpg" alt="" /><br />
-<img src="//upload-images.jianshu.io/upload_images/3478485-6928ed830be7c9c4.jpg" alt="" /></p>
-<h1 id="第八天终点站三亚"><a class="markdownIt-Anchor" href="#第八天终点站三亚"></a> 第八天——终点站，三亚</h1>
-<p>这一天，我们终于要结束了，结束我们的环岛骑行，大概400公里的路程，也是我们骑行的第五天了，平均每天80公里左右，对于我们这些从未锻炼过的人来说，真的有点不可思议，不论怎样，我们坚持下来了，我们完成了海南岛的东海岸的骑行，虽然有些地方我们没有去，比如说神舟，还是很满足。最后一段路，我们的小伙伴突然身体也不太好，貌似中暑，差点要中途放弃，坐动车回家了，不过后来在大叔们的帮助了，还是克服了，还是坚持了下来。夕阳西下，在海南的国道上骑行，周围都是水果地，有菠萝，木瓜，菠萝蜜，有榴莲，这些热带水果始终陪伴我们前行，那种感觉妙不可言，只有亲自体验，才能够真正的体会到。<br />
-这一天早上，我们实在是起不来了，睡到大概9点左右，阿姨叔叔们先出发了，我们睡饱了再说，我们带上菠萝蜜继续前行，吃了沙县，吃完早饭来俩瓣菠萝蜜，真的是不一样的早餐，神奇的搭配，很快菠萝蜜直接被干完了，很快，不过真的是很好吃。这一路上，没有什么变数，我们在我的带领下终于到了三亚517。青旅果然住宿的条件不好，除了海口的517以及文昌的517（我们没有预约到房间的那一次），其余的驿站好像条件真的不是特别好，三亚的517也算是比较靠市中心的，那天下午，我们终于到了，还车，收拾行李，晚上出去吃一顿，逛一下，买点吃的，打打扑克牌，这天晚上过的还不错。骑行终于结束，然而马上我们又要开始新的旅途，回家之旅。</p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-8fac3db2ccc66dd6.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-d7153206d540b70c.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-5ac2c09921a7ad17.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-6aa4bd40cca7d96d.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-7e6f8eeed8b67c5a.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-4ec9fafc20f16350.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-60b9d3721b4a33fa.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-7d07e9fbec16b5d2.jpg" alt="" /><br />
-<img src="//upload-images.jianshu.io/upload_images/3478485-803616a01bf0a5a6.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-bd08a326df92949b.jpg" alt="" /><br />
-<img src="//upload-images.jianshu.io/upload_images/3478485-1e07a5d835613dfb.jpg" alt="" /></p>
-<h1 id="第九天归途海口"><a class="markdownIt-Anchor" href="#第九天归途海口"></a> 第九天——归途，海口</h1>
-<p>结束骑行，我们在三亚也没有多待一会儿，发现三亚没有还有那样的舒服，静谧。三亚显得很浮躁，很杂乱。我更喜欢海口，气候舒适，环境优雅，人也不错。第二天，我们就买了动车票，从三亚到海口东的动车，晚上的末班车，最后我们抵达了海口，大晚上的。快要离开了，我们就在海口准备买点海南的特产，邮寄回学校，于是第二个清晨，我们购买了很多物资，发往江浙地区。之后我们依旧选择轮渡，毅然离开了海口，前往广东海安。到达广东，我们真的是差点被卖掉的感觉，一路上好像都是黑车，超载的特别严重，而且还没有地方坐，司机特别凶，感觉你不老实一点，就要打你，半路我们还被放下了，坐了另一辆车，最后的最后，我们终于从广东的最最西边，到达了比较文明的城市，珠海市。从来没有来过这里，这一次也是因为老牛的同学在这里工作，所以我们就顺道过来看一下，还在她朋友的房子里住了下来，他朋友去了朋友的地方住。很小的房间，我们四个人挤一挤总算是住下了。晚上他朋友还好好的款待了我们，吃了大肉火锅，很是不错。之后我们在珠海逛了一个早上，吃了广东比较正宗的早茶，一家比较有名的早茶店，大概花了400多，我们5个人，着实有点小贵，不过味道真的不错呢。珠海与澳门交界，跨国一个门，我们就能够到了，可是我们恰恰没有护照，没有准备，结果真的有点遗憾，只能隔着门，远远望着澳门。当天下午，我们坐了城轨，返回广州，因为飞机比较晚，所以我们还在广州玩了一会儿，逛了小吃街，看了<strong>小蛮腰</strong>，之后坐飞机返回温州龙湾国际机场，打的去了动车站，就此所有的行程结束。</p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-fbf410ea3dea3561.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-0e27cb5eab0bcbde.jpg" alt="" /><br />
-<img src="//upload-images.jianshu.io/upload_images/3478485-16c7aebe438c08a3.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-615c3dd8e93970f8.jpg" alt="" /><br />
-<img src="//upload-images.jianshu.io/upload_images/3478485-9b49d92c66de6c37.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-b8555fdeffc3a7c1.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-bccb6224620a61c0.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-cf059d808c31c935.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-68cc6e0e60a4ab44.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-04345119ff0a4818.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-0ff054a2d2794aee.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-0c1d9005ac609367.jpg" alt="" /></p>
-<p><img src="//upload-images.jianshu.io/upload_images/3478485-eb4f1d0a3a2646e4.jpg" alt="" /></p>
-<h1 id="后记"><a class="markdownIt-Anchor" href="#后记"></a> 后记</h1>
-<p>第一次这样疯狂的玩，这样没有顾虑的玩，走出了第一步，打开了新的一扇门，于是有了不一样的期待，希望走遍祖国的各个角落，欣赏丰富多彩的风景。慢慢的打算，虽然在做科研的自己时间很是有限，然而一切都不是什么问题，总是能够找到机会。重要的是，要保持这样的心态，永远希望在路上的心态，永远年轻，喜欢折腾，喜欢旅行。下一次，我们大西北再见。</p>
-]]></content>
-      <categories>
-        <category>在路上的日子</category>
-      </categories>
-      <tags>
-        <tag>旅行</tag>
-        <tag>海南</tag>
       </tags>
   </entry>
 </search>
