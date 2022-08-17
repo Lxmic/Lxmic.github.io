@@ -1,6 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>如何快速合并excel中多个sheets</title>
+    <url>//2022/08/03/20220803-%E5%A6%82%E4%BD%95%E5%BF%AB%E9%80%9F%E5%90%88%E5%B9%B6excel%E4%B8%AD%E5%A4%9A%E4%B8%AAsheets/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+<span id="more"></span>
+<blockquote>
+<p>在处理Excel数据的时候，需要合并一个表中多个sheets，又不想一个个复制粘贴，于是就搜索到了VB代码，稍加修改，可以灵活使用！</p>
+</blockquote>
+<h2 id="font-colorgreen新建汇总表并右键查看代码font"><a class="markdownIt-Anchor" href="#font-colorgreen新建汇总表并右键查看代码font"></a> <font color=green>新建汇总表，并右键“查看代码”</font></h2>
+<p>在现有的sheets后面新建一个汇总sheet，然后右键汇总sheet标签，“<mark>查看代码</mark>”。<br />
+<img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-08-03-Xnip2022-08-03_13-24-49.jpg" alt="2022-08-03-Xnip2022-08-03_13-24-49" /></p>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-08-03-Xnip2022-08-03_13-30-20.jpg" alt="2022-08-03-Xnip2022-08-03_13-30-20" /></p>
+<h2 id="font-color-green粘贴代码至空白处font"><a class="markdownIt-Anchor" href="#font-color-green粘贴代码至空白处font"></a> <font color= green>粘贴代码至空白处</font></h2>
+<p>代码如下，可以直接复制黏贴至空白处。有多少sheets它都会一次性进行合并，几乎感觉不到有延迟。如果你想合并前几个，1-3sheets，那么你只需要将<code>For j = 1 To Sheets.Count</code><mark>改为</mark><code>For j = 1 To 3</code>，这个代码其实就是一个for循坏。</p>
+<figure class="highlight mathematica"><table><tr><td class="code"><pre><span class="line"><span class="variable">Sub</span> 合并当前工作簿下的所有工作表<span class="punctuation">(</span><span class="punctuation">)</span></span><br><span class="line"></span><br><span class="line"><span class="variable">Application</span><span class="operator">.</span><span class="variable">ScreenUpdating</span> <span class="operator">=</span> <span class="built_in">False</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">For</span> <span class="variable">j</span> <span class="operator">=</span> <span class="number">1</span> <span class="variable">To</span> <span class="variable">Sheets</span><span class="operator">.</span><span class="built_in">Count</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">If</span> <span class="variable">Sheets</span><span class="punctuation">(</span><span class="variable">j</span><span class="punctuation">)</span><span class="operator">.</span><span class="variable">Name</span> <span class="operator">&lt;&gt;</span> <span class="variable">ActiveSheet</span><span class="operator">.</span><span class="variable">Name</span> <span class="variable">Then</span></span><br><span class="line"></span><br><span class="line"><span class="variable">X</span> <span class="operator">=</span> <span class="built_in">Range</span><span class="punctuation">(</span><span class="string">&quot;A65536&quot;</span><span class="punctuation">)</span><span class="operator">.</span><span class="built_in">End</span><span class="punctuation">(</span><span class="variable">xlUp</span><span class="punctuation">)</span><span class="operator">.</span><span class="built_in">Row</span> <span class="operator">+</span> <span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="variable">Sheets</span><span class="punctuation">(</span><span class="variable">j</span><span class="punctuation">)</span><span class="operator">.</span><span class="variable">UsedRange</span><span class="operator">.</span><span class="variable">Copy</span> <span class="built_in">Cells</span><span class="punctuation">(</span><span class="variable">X</span><span class="operator">,</span> <span class="number">1</span><span class="punctuation">)</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">End</span> <span class="built_in">If</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">Next</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">Range</span><span class="punctuation">(</span><span class="string">&quot;B1&quot;</span><span class="punctuation">)</span><span class="operator">.</span><span class="built_in">Select</span></span><br><span class="line"></span><br><span class="line"><span class="variable">Application</span><span class="operator">.</span><span class="variable">ScreenUpdating</span> <span class="operator">=</span> <span class="built_in">True</span></span><br><span class="line"></span><br><span class="line"><span class="variable">MsgBox</span> <span class="string">&quot;当前工作簿下的全部工作表已经合并完毕！&quot;</span><span class="operator">,</span> <span class="variable">vbInformation</span><span class="operator">,</span> <span class="string">&quot;提示&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">End</span> <span class="variable">Sub</span></span><br></pre></td></tr></table></figure>
+<p>粘贴后的效果<br />
+<img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-08-03-Xnip2022-08-03_13-38-09.jpg" alt="2022-08-03-Xnip2022-08-03_13-38-09" /></p>
+<h2 id="font-color-green点击运行即可完成合并font"><a class="markdownIt-Anchor" href="#font-color-green点击运行即可完成合并font"></a> <font color= green>点击运行，即可完成合并</font></h2>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-08-03-Xnip2022-08-03_13-40-42.jpg" alt="2022-08-03-Xnip2022-08-03_13-40-42" /></p>
+<p>运行之后，会出现Msgox内容“<font color=chocolate>当前工作簿下的全部工作表已经合并完毕！</font>”</p>
+<blockquote>
+<p>参考内容来自知乎@老菜鸟：<a href="https://zhuanlan.zhihu.com/p/36003476">https://zhuanlan.zhihu.com/p/36003476</a></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>学习记录</category>
+      </categories>
+      <tags>
+        <tag>小技巧</tag>
+        <tag>Excel</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>2018年8月-小结</title>
     <url>//2018/09/02/2018%E5%B9%B48%E6%9C%88-%E5%B0%8F%E7%BB%93/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -52,38 +84,6 @@
       </categories>
       <tags>
         <tag>Cas9</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>如何快速合并excel中多个sheets</title>
-    <url>//2022/08/03/20220803-%E5%A6%82%E4%BD%95%E5%BF%AB%E9%80%9F%E5%90%88%E5%B9%B6excel%E4%B8%AD%E5%A4%9A%E4%B8%AAsheets/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-<span id="more"></span>
-<blockquote>
-<p>在处理Excel数据的时候，需要合并一个表中多个sheets，又不想一个个复制粘贴，于是就搜索到了VB代码，稍加修改，可以灵活使用！</p>
-</blockquote>
-<h2 id="font-colorgreen新建汇总表并右键查看代码font"><a class="markdownIt-Anchor" href="#font-colorgreen新建汇总表并右键查看代码font"></a> <font color=green>新建汇总表，并右键“查看代码”</font></h2>
-<p>在现有的sheets后面新建一个汇总sheet，然后右键汇总sheet标签，“<mark>查看代码</mark>”。<br />
-<img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-08-03-Xnip2022-08-03_13-24-49.jpg" alt="2022-08-03-Xnip2022-08-03_13-24-49" /></p>
-<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-08-03-Xnip2022-08-03_13-30-20.jpg" alt="2022-08-03-Xnip2022-08-03_13-30-20" /></p>
-<h2 id="font-color-green粘贴代码至空白处font"><a class="markdownIt-Anchor" href="#font-color-green粘贴代码至空白处font"></a> <font color= green>粘贴代码至空白处</font></h2>
-<p>代码如下，可以直接复制黏贴至空白处。有多少sheets它都会一次性进行合并，几乎感觉不到有延迟。如果你想合并前几个，1-3sheets，那么你只需要将<code>For j = 1 To Sheets.Count</code><mark>改为</mark><code>For j = 1 To 3</code>，这个代码其实就是一个for循坏。</p>
-<figure class="highlight mathematica"><table><tr><td class="code"><pre><span class="line"><span class="variable">Sub</span> 合并当前工作簿下的所有工作表<span class="punctuation">(</span><span class="punctuation">)</span></span><br><span class="line"></span><br><span class="line"><span class="variable">Application</span><span class="operator">.</span><span class="variable">ScreenUpdating</span> <span class="operator">=</span> <span class="built_in">False</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">For</span> <span class="variable">j</span> <span class="operator">=</span> <span class="number">1</span> <span class="variable">To</span> <span class="variable">Sheets</span><span class="operator">.</span><span class="built_in">Count</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">If</span> <span class="variable">Sheets</span><span class="punctuation">(</span><span class="variable">j</span><span class="punctuation">)</span><span class="operator">.</span><span class="variable">Name</span> <span class="operator">&lt;&gt;</span> <span class="variable">ActiveSheet</span><span class="operator">.</span><span class="variable">Name</span> <span class="variable">Then</span></span><br><span class="line"></span><br><span class="line"><span class="variable">X</span> <span class="operator">=</span> <span class="built_in">Range</span><span class="punctuation">(</span><span class="string">&quot;A65536&quot;</span><span class="punctuation">)</span><span class="operator">.</span><span class="built_in">End</span><span class="punctuation">(</span><span class="variable">xlUp</span><span class="punctuation">)</span><span class="operator">.</span><span class="built_in">Row</span> <span class="operator">+</span> <span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="variable">Sheets</span><span class="punctuation">(</span><span class="variable">j</span><span class="punctuation">)</span><span class="operator">.</span><span class="variable">UsedRange</span><span class="operator">.</span><span class="variable">Copy</span> <span class="built_in">Cells</span><span class="punctuation">(</span><span class="variable">X</span><span class="operator">,</span> <span class="number">1</span><span class="punctuation">)</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">End</span> <span class="built_in">If</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">Next</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">Range</span><span class="punctuation">(</span><span class="string">&quot;B1&quot;</span><span class="punctuation">)</span><span class="operator">.</span><span class="built_in">Select</span></span><br><span class="line"></span><br><span class="line"><span class="variable">Application</span><span class="operator">.</span><span class="variable">ScreenUpdating</span> <span class="operator">=</span> <span class="built_in">True</span></span><br><span class="line"></span><br><span class="line"><span class="variable">MsgBox</span> <span class="string">&quot;当前工作簿下的全部工作表已经合并完毕！&quot;</span><span class="operator">,</span> <span class="variable">vbInformation</span><span class="operator">,</span> <span class="string">&quot;提示&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">End</span> <span class="variable">Sub</span></span><br></pre></td></tr></table></figure>
-<p>粘贴后的效果<br />
-<img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-08-03-Xnip2022-08-03_13-38-09.jpg" alt="2022-08-03-Xnip2022-08-03_13-38-09" /></p>
-<h2 id="font-color-green点击运行即可完成合并font"><a class="markdownIt-Anchor" href="#font-color-green点击运行即可完成合并font"></a> <font color= green>点击运行，即可完成合并</font></h2>
-<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-08-03-Xnip2022-08-03_13-40-42.jpg" alt="2022-08-03-Xnip2022-08-03_13-40-42" /></p>
-<p>运行之后，会出现Msgox内容“<font color=chocolate>当前工作簿下的全部工作表已经合并完毕！</font>”</p>
-<blockquote>
-<p>参考内容来自知乎@老菜鸟：<a href="https://zhuanlan.zhihu.com/p/36003476">https://zhuanlan.zhihu.com/p/36003476</a></p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>学习记录</category>
-      </categories>
-      <tags>
-        <tag>小技巧</tag>
-        <tag>Excel</tag>
       </tags>
   </entry>
   <entry>
@@ -293,6 +293,55 @@
       </tags>
   </entry>
   <entry>
+    <title>HTML5（12）——颜色</title>
+    <url>//2018/10/13/HTML5%EF%BC%8812%EF%BC%89%E2%80%94%E2%80%94%E9%A2%9C%E8%89%B2/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![整洁的桌面](https://upload-images.jianshu.io/upload_images/3478485-a135213ca8dbdc9a.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+> 前两天算是有一些事情要处理，没有来得及更新学习。今天我们来讲一下HTML中颜色的控制。
+<span id="more"></span>
+<h2 id="font-colorgreen颜色的名称font"><a class="markdownIt-Anchor" href="#font-colorgreen颜色的名称font"></a> <font color="green">颜色的名称</font></h2>
+<p>在HTML中，要使用颜色的话，需要用他们的名称来引用。HTML支持大概140种标准颜色，可以看链接：<a href="https://www.w3schools.com/colors/colors_names.asp">Color Names Supported by All Browsers</a>。<br />
+<img src="https://upload-images.jianshu.io/upload_images/3478485-9aed6c0e3fd1bc35.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="颜色名称" /></p>
+<h2 id="font-colorgreen网页背景颜色font"><a class="markdownIt-Anchor" href="#font-colorgreen网页背景颜色font"></a> <font color="green">网页背景颜色</font></h2>
+<p>前面我们在<a href="https://www.jianshu.com/p/e228f6dca9d2">HTML5(5)——属性</a>一文中简要提到过style属性，而在<a href="https://www.jianshu.com/p/0fd28725d9fb">HTML5（8）——样式<br />
+</a>一文中详细介绍了<code>style</code>的各个property的作用，这里我们用它来控制网页背景颜色，文本颜色等。语法大概如下：</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">style</span>=<span class="string">&quot;background-color:DodgerBlue;&quot;</span>&gt;</span>Hello World<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">style</span>=<span class="string">&quot;background-color:Tomato;&quot;</span>&gt;</span>Lorem ipsum...<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-4f6115d2a7015ea4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="" /></p>
+<h2 id="font-colorgreen文本颜色font"><a class="markdownIt-Anchor" href="#font-colorgreen文本颜色font"></a> <font color="green">文本颜色</font></h2>
+<p>同背景颜色一样设置，其中一些不同。style中属性不同，这里就是<code>color</code>属性，值就是颜色名称。</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">style</span>=<span class="string">&quot;color:Tomato;&quot;</span>&gt;</span>Hello World<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">style</span>=<span class="string">&quot;color:DodgerBlue;&quot;</span>&gt;</span>Lorem ipsum...<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">style</span>=<span class="string">&quot;color:MediumSeaGreen;&quot;</span>&gt;</span>Ut wisi enim...<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-56751396fea53dc8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="" /></p>
+<h2 id="font-colorgreen边框颜色font"><a class="markdownIt-Anchor" href="#font-colorgreen边框颜色font"></a> <font color="green">边框颜色</font></h2>
+<p>这里就使用<code>border</code>property，而它的值包括粗细，填充，颜色，你可以使用自己想要的值。</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">style</span>=<span class="string">&quot;border:2px solid Tomato;&quot;</span>&gt;</span>Hello World<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">style</span>=<span class="string">&quot;border:2px solid DodgerBlue;&quot;</span>&gt;</span>Hello World<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">style</span>=<span class="string">&quot;border:2px solid Violet;&quot;</span>&gt;</span>Hello World<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-24f79cac76a2db2e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="" /></p>
+<h2 id="font-colorgreen颜色值font"><a class="markdownIt-Anchor" href="#font-colorgreen颜色值font"></a> <font color="green">颜色值</font></h2>
+<p>在HTML中，颜色可以用几种类型的值来描述：RGB, HEX, HSL, RGBA 和HSLA。<br />
+<img src="https://upload-images.jianshu.io/upload_images/3478485-14a56383cbb765e9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="" /></p>
+<h3 id="rgb"><a class="markdownIt-Anchor" href="#rgb"></a> RGB</h3>
+<p><code>rgb(red,green,blue)</code>，每一种参数都是颜色的密度值，范围在0-255之间。例如，rgb(0,0,0)是黑色，rgb(255,255,255)是白色。不同的灰度，是3种颜色相同的情况下的改变。<br />
+<img src="https://upload-images.jianshu.io/upload_images/3478485-cee9ba3646f62c92.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="" /><br />
+<img src="https://upload-images.jianshu.io/upload_images/3478485-438ed0ed84fb3b54.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png" /></p>
+<h3 id="hex"><a class="markdownIt-Anchor" href="#hex"></a> HEX</h3>
+<p>这是用16进制来表示RGB的三种颜色，也是三种值，范围都在00-ff之间。同样灰度也是用相同的三种颜色的值大小，来表示。<br />
+<img src="https://upload-images.jianshu.io/upload_images/3478485-26108c125a656dde.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="" /></p>
+<h3 id="hsl"><a class="markdownIt-Anchor" href="#hsl"></a> HSL</h3>
+<p>这种颜色的是通过色调，饱和度和亮度，来表示某种颜色。<br />
+<code>hsl(hue, saturation, lightness)</code>。色调的值在0-360之间。0是红色，120是绿色，240是蓝色。饱和度是百分数表示的，0%表示灰色，100%是颜色本身。亮度也是百分数，0%是黑色，50%是适中，100%是白色。灰度是色调和饱和度都为0值，而通过亮度的调节来改变。<br />
+<img src="https://upload-images.jianshu.io/upload_images/3478485-c9d6ff8c82aecb3a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="" /></p>
+<h3 id="rgba和hsla"><a class="markdownIt-Anchor" href="#rgba和hsla"></a> RGBA和HSLA</h3>
+<p>这两者都是在RGB和HSL的基础上，增加了第四个参数，透明度（alpha）。透明度的范围在0.0-1.0之间。0.0是全透明，而1.0是不透明。<br />
+<img src="https://upload-images.jianshu.io/upload_images/3478485-4269eabcd987dddb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="" /></p>
+]]></content>
+      <categories>
+        <category>HTML5入门</category>
+      </categories>
+      <tags>
+        <tag>HTML5</tag>
+        <tag>颜色</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>HTML5（13）——CSS</title>
     <url>//2018/10/15/HTML5%EF%BC%8813%EF%BC%89%E2%80%94%E2%80%94CSS/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -445,6 +494,35 @@ CSS添加到HTML的方式有三种：</p>
       </tags>
   </entry>
   <entry>
+    <title>HTML5（4）——元素</title>
+    <url>//2018/10/02/HTML5%EF%BC%884%EF%BC%89%E2%80%94%E2%80%94%E5%85%83%E7%B4%A0/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![巨石阵，有朝一日能够去世界各地游玩](https://upload-images.jianshu.io/upload_images/3478485-d53a5e7f7a0f8675.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+<blockquote>
+<p>国庆第二天，毕业师姐过来那毕业证书，需要聚一波。今天继续学习HTML相关知识。上次学了最基本的知识，关于一些常见的HTML标签。今天是要讲HTML元素，标签包含的内容。</p>
+</blockquote>
+<span id="more"></span>
+<h2 id="font-colorgreen网页元素font"><a class="markdownIt-Anchor" href="#font-colorgreen网页元素font"></a> <font color="green">网页元素</font></h2>
+<p>HTML网页元素，通常是由起始标签和结束标签以及在两者之间插入的内容。<code>&lt;tagname&gt;内容&lt;/tagname&gt;</code><br />
+所有的网页元素，都是从开始标签到结束标签。<code>&lt;p&gt;my director&lt;/p&gt;</code><br />
+可以分为有内容和无内容。而空内容的元素是没有结束标签的，只有起始标签。如<code>&lt;br&gt;</code></p>
+<h2 id="font-colorgreen巢式网页元素font"><a class="markdownIt-Anchor" href="#font-colorgreen巢式网页元素font"></a> <font color="green">巢式网页元素</font></h2>
+<p>所谓巢式（nested），就是说可以在网页元素之中，插入其他的元素，元素嵌套元素。一个网页文件，必定是由巢式元素，下面的例子中，包含了4个网页元素。</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>My First Heading<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>My first paragraph.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h2 id="font-colorgreen空网页元素font"><a class="markdownIt-Anchor" href="#font-colorgreen空网页元素font"></a> <font color="green">空网页元素</font></h2>
+<p>没有内容的网页元素就是空元素，<code>&lt;br&gt;</code>定义的是换行符，没有结束元素。当然，HTML也是可以关闭空元素的，形式就是在开始标签后面加斜杠<code>&lt;br /&gt;</code>。当然，也可以不关闭，但是如果是严格的来说，关闭空元素是肯定没有问题的，而且如果想被XML解析器解析，那么就必须关上空元素。</p>
+<h2 id="font-colorgreen标签小写字母font"><a class="markdownIt-Anchor" href="#font-colorgreen标签小写字母font"></a> <font color="green">标签小写字母</font></h2>
+<p>HTML是字母识别的，大写小写字母是存在差别的，标签一定要使用小写字母来写。虽然HTML5中，没有要求小写字母标签，但是最好就是小写，跟严格的XHTML是必须要小写才能编译。</p>
+]]></content>
+      <categories>
+        <category>HTML5入门</category>
+      </categories>
+      <tags>
+        <tag>HTML5</tag>
+        <tag>元素</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>HTML5（5）——属性</title>
     <url>//2018/10/06/HTML5%EF%BC%885%EF%BC%89%E2%80%94%E2%80%94%E5%B1%9E%E6%80%A7/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -523,6 +601,38 @@ CSS添加到HTML的方式有三种：</p>
       </tags>
   </entry>
   <entry>
+    <title>HTML5（7）——段落</title>
+    <url>//2018/10/06/HTML5%EF%BC%887%EF%BC%89%E2%80%94%E2%80%94%E6%AE%B5%E8%90%BD/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![想法很多，已没有经历实现](https://upload-images.jianshu.io/upload_images/3478485-f715b416af9c6294.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+> 现在不得不感叹，很多事情有想法，却找不到人一起去实现。继续学习HTML5，来讲一讲段落。
+<span id="more"></span>
+<h2 id="font-colorgreenhtml段落font"><a class="markdownIt-Anchor" href="#font-colorgreenhtml段落font"></a> <font color="green">HTML段落</font></h2>
+<p><code>&lt;p&gt;</code>元素是用来定义段落的，并且是由结束标签的。而且网页在解析时，会自动在段落前和段落后添加一些空格区域。</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line">&lt;<span class="selector-tag">p</span>&gt;This is <span class="selector-tag">a</span> paragraph.&lt;/<span class="selector-tag">p</span>&gt;</span><br><span class="line">&lt;<span class="selector-tag">p</span>&gt;This is another paragraph.&lt;/<span class="selector-tag">p</span>&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="font-colorgreenhtml段落显示font"><a class="markdownIt-Anchor" href="#font-colorgreenhtml段落显示font"></a> <font color="green">HTML段落显示</font></h2>
+<p>你是没有办法去控制网页到底会怎么样显示，小的屏幕，大的屏幕等情况都会变得不一样。而且你也不能添加空格和换行来改变段落显示，网页会自动移除这些空格和空行，比如：</p>
+<figure class="highlight livecodeserver"><table><tr><td class="code"><pre><span class="line">&lt;p&gt;</span><br><span class="line">This <span class="keyword">paragraph</span></span><br><span class="line"><span class="keyword">contains</span> <span class="keyword">a</span> lot <span class="keyword">of</span> <span class="keyword">lines</span></span><br><span class="line"><span class="keyword">in</span> <span class="keyword">the</span> source code,</span><br><span class="line">but <span class="keyword">the</span> browser </span><br><span class="line">ignores <span class="keyword">it</span>.</span><br><span class="line">&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;p&gt;</span><br><span class="line">This <span class="keyword">paragraph</span></span><br><span class="line"><span class="keyword">contains</span>      <span class="keyword">a</span> lot <span class="keyword">of</span> spaces</span><br><span class="line"><span class="keyword">in</span> <span class="keyword">the</span> source     code,</span><br><span class="line">but <span class="keyword">the</span>    browser </span><br><span class="line">ignores <span class="keyword">it</span>.</span><br><span class="line">&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;p&gt;</span><br><span class="line">The <span class="built_in">number</span> <span class="keyword">of</span> <span class="keyword">lines</span> <span class="keyword">in</span> <span class="keyword">a</span> <span class="keyword">paragraph</span> depends <span class="keyword">on</span> <span class="title">the</span> <span class="title">size</span> <span class="title">of</span> <span class="title">the</span> <span class="title">browser</span> <span class="title">window</span>. <span class="title">If</span> <span class="title">you</span> <span class="title">resize</span> <span class="title">the</span> <span class="title">browser</span> <span class="title">window</span>, <span class="title">the</span> <span class="title">number</span> <span class="title">of</span> <span class="title">lines</span> <span class="title">in</span> <span class="title">this</span> <span class="title">paragraph</span> <span class="title">will</span> <span class="title">change</span>.</span><br><span class="line">&lt;/p&gt;</span><br></pre></td></tr></table></figure>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-add480d3916a9ffc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="显示结果" /></p>
+<h2 id="font-colorgreenhtml换行font"><a class="markdownIt-Anchor" href="#font-colorgreenhtml换行font"></a> <font color="green">HTML换行</font></h2>
+<p>HTML中换行，你需要<code>&lt;br&gt;</code>元素来进行实现。你可以在你想换行的地方添加<code>&lt;br&gt;</code>元素来进行换行。<br />
+<code>&lt;p&gt;This is&lt;br&gt;a paragraph&lt;br&gt;with line breaks.&lt;/p&gt;</code></p>
+<h2 id="font-colorgreen诗的显示问题font"><a class="markdownIt-Anchor" href="#font-colorgreen诗的显示问题font"></a> <font color="green">诗的显示问题</font></h2>
+<figure class="highlight applescript"><table><tr><td class="code"><pre><span class="line">&lt;p&gt;In HTML, spaces <span class="keyword">and</span> new lines are ignored:&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;p&gt;</span><br><span class="line"></span><br><span class="line">  My Bonnie lies <span class="keyword">over</span> <span class="keyword">the</span> ocean.</span><br><span class="line"></span><br><span class="line">  My Bonnie lies <span class="keyword">over</span> <span class="keyword">the</span> sea.</span><br><span class="line"></span><br><span class="line">  My Bonnie lies <span class="keyword">over</span> <span class="keyword">the</span> ocean.</span><br><span class="line">  </span><br><span class="line">  Oh, bring <span class="keyword">back</span> <span class="keyword">my</span> Bonnie <span class="keyword">to</span> <span class="keyword">me</span>.</span><br><span class="line"></span><br><span class="line">&lt;/p&gt;</span><br></pre></td></tr></table></figure>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-dc60e763c5feda78.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="单行显示了" /></p>
+<p>如果想要正常的显示诗，且能够保存空格，那么我们需要用到<code>&lt;pre&gt;</code>元素，它是用来预格式化文本的，能够保存文本原本的空格和换行且能够使字体宽度固定。</p>
+<figure class="highlight vim"><table><tr><td class="code"><pre><span class="line"><span class="symbol">&lt;p&gt;</span>The <span class="keyword">pre</span> <span class="keyword">tag</span> preserves both spaces <span class="built_in">and</span> <span class="built_in">line</span> <span class="keyword">break</span><span class="variable">s:</span>&lt;/<span class="keyword">p</span>&gt;</span><br><span class="line"></span><br><span class="line"><span class="symbol">&lt;pre&gt;</span></span><br><span class="line">   My Bonnie lies over the ocean.</span><br><span class="line"></span><br><span class="line">   My Bonnie lies over the sea.</span><br><span class="line"></span><br><span class="line">   My Bonnie lies over the ocean.</span><br><span class="line">   </span><br><span class="line">   Oh, bring back my Bonnie <span class="keyword">to</span> <span class="keyword">me</span>.</span><br><span class="line">&lt;/<span class="keyword">pre</span>&gt;</span><br></pre></td></tr></table></figure>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-88bb011547100448.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="正常显示诗" /></p>
+]]></content>
+      <categories>
+        <category>HTML5入门</category>
+      </categories>
+      <tags>
+        <tag>HTML5</tag>
+        <tag>段落</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>HTML5（8）——样式</title>
     <url>//2018/10/07/HTML5%EF%BC%888%EF%BC%89%E2%80%94%E2%80%94%E6%A0%B7%E5%BC%8F/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -566,38 +676,6 @@ CSS添加到HTML的方式有三种：</p>
       <tags>
         <tag>HTML5</tag>
         <tag>样式</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>HTML5（7）——段落</title>
-    <url>//2018/10/06/HTML5%EF%BC%887%EF%BC%89%E2%80%94%E2%80%94%E6%AE%B5%E8%90%BD/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![想法很多，已没有经历实现](https://upload-images.jianshu.io/upload_images/3478485-f715b416af9c6294.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-> 现在不得不感叹，很多事情有想法，却找不到人一起去实现。继续学习HTML5，来讲一讲段落。
-<span id="more"></span>
-<h2 id="font-colorgreenhtml段落font"><a class="markdownIt-Anchor" href="#font-colorgreenhtml段落font"></a> <font color="green">HTML段落</font></h2>
-<p><code>&lt;p&gt;</code>元素是用来定义段落的，并且是由结束标签的。而且网页在解析时，会自动在段落前和段落后添加一些空格区域。</p>
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line">&lt;<span class="selector-tag">p</span>&gt;This is <span class="selector-tag">a</span> paragraph.&lt;/<span class="selector-tag">p</span>&gt;</span><br><span class="line">&lt;<span class="selector-tag">p</span>&gt;This is another paragraph.&lt;/<span class="selector-tag">p</span>&gt;</span><br></pre></td></tr></table></figure>
-<h2 id="font-colorgreenhtml段落显示font"><a class="markdownIt-Anchor" href="#font-colorgreenhtml段落显示font"></a> <font color="green">HTML段落显示</font></h2>
-<p>你是没有办法去控制网页到底会怎么样显示，小的屏幕，大的屏幕等情况都会变得不一样。而且你也不能添加空格和换行来改变段落显示，网页会自动移除这些空格和空行，比如：</p>
-<figure class="highlight livecodeserver"><table><tr><td class="code"><pre><span class="line">&lt;p&gt;</span><br><span class="line">This <span class="keyword">paragraph</span></span><br><span class="line"><span class="keyword">contains</span> <span class="keyword">a</span> lot <span class="keyword">of</span> <span class="keyword">lines</span></span><br><span class="line"><span class="keyword">in</span> <span class="keyword">the</span> source code,</span><br><span class="line">but <span class="keyword">the</span> browser </span><br><span class="line">ignores <span class="keyword">it</span>.</span><br><span class="line">&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;p&gt;</span><br><span class="line">This <span class="keyword">paragraph</span></span><br><span class="line"><span class="keyword">contains</span>      <span class="keyword">a</span> lot <span class="keyword">of</span> spaces</span><br><span class="line"><span class="keyword">in</span> <span class="keyword">the</span> source     code,</span><br><span class="line">but <span class="keyword">the</span>    browser </span><br><span class="line">ignores <span class="keyword">it</span>.</span><br><span class="line">&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;p&gt;</span><br><span class="line">The <span class="built_in">number</span> <span class="keyword">of</span> <span class="keyword">lines</span> <span class="keyword">in</span> <span class="keyword">a</span> <span class="keyword">paragraph</span> depends <span class="keyword">on</span> <span class="title">the</span> <span class="title">size</span> <span class="title">of</span> <span class="title">the</span> <span class="title">browser</span> <span class="title">window</span>. <span class="title">If</span> <span class="title">you</span> <span class="title">resize</span> <span class="title">the</span> <span class="title">browser</span> <span class="title">window</span>, <span class="title">the</span> <span class="title">number</span> <span class="title">of</span> <span class="title">lines</span> <span class="title">in</span> <span class="title">this</span> <span class="title">paragraph</span> <span class="title">will</span> <span class="title">change</span>.</span><br><span class="line">&lt;/p&gt;</span><br></pre></td></tr></table></figure>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-add480d3916a9ffc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="显示结果" /></p>
-<h2 id="font-colorgreenhtml换行font"><a class="markdownIt-Anchor" href="#font-colorgreenhtml换行font"></a> <font color="green">HTML换行</font></h2>
-<p>HTML中换行，你需要<code>&lt;br&gt;</code>元素来进行实现。你可以在你想换行的地方添加<code>&lt;br&gt;</code>元素来进行换行。<br />
-<code>&lt;p&gt;This is&lt;br&gt;a paragraph&lt;br&gt;with line breaks.&lt;/p&gt;</code></p>
-<h2 id="font-colorgreen诗的显示问题font"><a class="markdownIt-Anchor" href="#font-colorgreen诗的显示问题font"></a> <font color="green">诗的显示问题</font></h2>
-<figure class="highlight applescript"><table><tr><td class="code"><pre><span class="line">&lt;p&gt;In HTML, spaces <span class="keyword">and</span> new lines are ignored:&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;p&gt;</span><br><span class="line"></span><br><span class="line">  My Bonnie lies <span class="keyword">over</span> <span class="keyword">the</span> ocean.</span><br><span class="line"></span><br><span class="line">  My Bonnie lies <span class="keyword">over</span> <span class="keyword">the</span> sea.</span><br><span class="line"></span><br><span class="line">  My Bonnie lies <span class="keyword">over</span> <span class="keyword">the</span> ocean.</span><br><span class="line">  </span><br><span class="line">  Oh, bring <span class="keyword">back</span> <span class="keyword">my</span> Bonnie <span class="keyword">to</span> <span class="keyword">me</span>.</span><br><span class="line"></span><br><span class="line">&lt;/p&gt;</span><br></pre></td></tr></table></figure>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-dc60e763c5feda78.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="单行显示了" /></p>
-<p>如果想要正常的显示诗，且能够保存空格，那么我们需要用到<code>&lt;pre&gt;</code>元素，它是用来预格式化文本的，能够保存文本原本的空格和换行且能够使字体宽度固定。</p>
-<figure class="highlight vim"><table><tr><td class="code"><pre><span class="line"><span class="symbol">&lt;p&gt;</span>The <span class="keyword">pre</span> <span class="keyword">tag</span> preserves both spaces <span class="built_in">and</span> <span class="built_in">line</span> <span class="keyword">break</span><span class="variable">s:</span>&lt;/<span class="keyword">p</span>&gt;</span><br><span class="line"></span><br><span class="line"><span class="symbol">&lt;pre&gt;</span></span><br><span class="line">   My Bonnie lies over the ocean.</span><br><span class="line"></span><br><span class="line">   My Bonnie lies over the sea.</span><br><span class="line"></span><br><span class="line">   My Bonnie lies over the ocean.</span><br><span class="line">   </span><br><span class="line">   Oh, bring back my Bonnie <span class="keyword">to</span> <span class="keyword">me</span>.</span><br><span class="line">&lt;/<span class="keyword">pre</span>&gt;</span><br></pre></td></tr></table></figure>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-88bb011547100448.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="正常显示诗" /></p>
-]]></content>
-      <categories>
-        <category>HTML5入门</category>
-      </categories>
-      <tags>
-        <tag>HTML5</tag>
-        <tag>段落</tag>
       </tags>
   </entry>
   <entry>
@@ -860,6 +938,26 @@ float——确定图片是否为浮动，而不是在一个固定的地方。</p
       </tags>
   </entry>
   <entry>
+    <title>Love</title>
+    <url>//2018/08/29/Love/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![love.jpeg](https://upload-images.jianshu.io/upload_images/3478485-7d3fb1e8df7d27b8.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+<p>那是发生在寒假某一天，突然想你。</p>
+<span id="more"></span>
+<p>2017年，已经完完整整的成为过去。有些东西永远留在心中，有些东西被遗忘，有些东西已经失去，有些人也离开。发生过的所有事，大概一定会留下痕迹吧。已经开启2018年的笔记本，所有已经发生过的痕迹，已经被记录在人生笔记本上的某一页，有些痕迹不及时查看，很快就会被翻页过去，永远地被遗忘。</p>
+<p>前两天，刚回家不久，开始组织高中同学会，发现没有什么人可以相聚，结果只有两个人有空，有时间能够相聚。聊着聊着总是会扯到找对象这件事，像我们这个年级的人，也差不多进入房子、车子和妹子的氛围中，无法逃脱。即使不想那么累，也不得不那么累。找对象，是经常被谈起的话题。每个人都有自己对爱情的独到见解。土豪同志说自己应该工作地点问题，和谈了3年左右的大学学妹分手了，现实很残酷，工作不在同一个地方，最后的结局基本就是分开。现在已经不想在校园里那样纯粹地去谈一场恋爱，首先考虑地往往就是工作地点，以及物质基础，周围越来越多的案例发生，历历在目。自己也变得越来越现实，爱情离我们越来越遥远，我真地没法理解。即使特别想要一份纯粹一些的爱情，但是仔细想想也是，你凭什么让一个人和你在一起吃苦，人生本来就短暂，不能好好地享受生活，还要跟着你吃苦，真得太艰难了。我永远处于这种矛盾之中，好像这个问题永远无解，没有办法找到最优的解，我已经苦苦寻求好久好久，依旧在黑暗中摸索。</p>
+<p>现在处于漂浮不定的状态，就是一种没法给人<strong>安全感</strong>的状态。没有办法去给别人任何关于未来的承诺，承担不了的责任，不要去硬抗，会累垮。我妈好像也不怎么着急，我也没有那么心急，有些东西该来的时候肯定还是会来的。<strong>遇见的时间不对，只能继续前行，希望在对的时空遇到对的人</strong>。注定一辈子活在不确定性当中，我貌似已经失去了对我自己生命的把控，决定权已经被剥夺。</p>
+<p>现在，我只选择好好地爱我的父母，考虑父母今后的日子。时间越来越少，现在的自己也有一点点的小小的能力让他们过得稍微好一点。对于父母，我好像不用在意承诺，父母是最伟大的存在，不用给出什么承诺，我也不怕，就想着尽早地尽孝，好好孝顺他们。越早越好，能孝顺多少是多少，不用考虑太多。现在看来，自己真的还有好多人情，好多爱需要反馈。长这么大，接受了多少人的爱，才有了今天的我，亲戚的爱，周围邻居的爱，同学的爱，老师的爱以及父母的爱。自己现在还没有什么能力去反馈给他们，让他们知道他们的付出我都是记在心里的，在我的<strong>生命笔记本</strong>中都好好地记录着，谁对我好我都清楚。现在或多或少，都该开始反馈了，或者通俗的报答感恩。</p>
+<p>2018年，开始回看<strong>生命笔记本</strong>，找出那些爱的痕迹，尽可能多地想到这些人，要放在心上。要重新对生活充满激情，热爱生活，才能更好地执行这件事。希望我能更久地陪在你们身边，让我有机会更对地给予你们<strong>爱的反馈。</strong></p>
+]]></content>
+      <categories>
+        <category>随记</category>
+      </categories>
+      <tags>
+        <tag>爱</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>LaTeX表格相关宏包（1）——longtable</title>
     <url>//2018/09/24/LaTeX%E8%A1%A8%E6%A0%BC%E7%9B%B8%E5%85%B3%E5%AE%8F%E5%8C%85%EF%BC%881%EF%BC%89%E2%80%94%E2%80%94longtable/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -893,51 +991,6 @@ float——确定图片是否为浮动，而不是在一个固定的地方。</p
       <tags>
         <tag>LaTeX</tag>
         <tag>longtable</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Love</title>
-    <url>//2018/08/29/Love/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![love.jpeg](https://upload-images.jianshu.io/upload_images/3478485-7d3fb1e8df7d27b8.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-<p>那是发生在寒假某一天，突然想你。</p>
-<span id="more"></span>
-<p>2017年，已经完完整整的成为过去。有些东西永远留在心中，有些东西被遗忘，有些东西已经失去，有些人也离开。发生过的所有事，大概一定会留下痕迹吧。已经开启2018年的笔记本，所有已经发生过的痕迹，已经被记录在人生笔记本上的某一页，有些痕迹不及时查看，很快就会被翻页过去，永远地被遗忘。</p>
-<p>前两天，刚回家不久，开始组织高中同学会，发现没有什么人可以相聚，结果只有两个人有空，有时间能够相聚。聊着聊着总是会扯到找对象这件事，像我们这个年级的人，也差不多进入房子、车子和妹子的氛围中，无法逃脱。即使不想那么累，也不得不那么累。找对象，是经常被谈起的话题。每个人都有自己对爱情的独到见解。土豪同志说自己应该工作地点问题，和谈了3年左右的大学学妹分手了，现实很残酷，工作不在同一个地方，最后的结局基本就是分开。现在已经不想在校园里那样纯粹地去谈一场恋爱，首先考虑地往往就是工作地点，以及物质基础，周围越来越多的案例发生，历历在目。自己也变得越来越现实，爱情离我们越来越遥远，我真地没法理解。即使特别想要一份纯粹一些的爱情，但是仔细想想也是，你凭什么让一个人和你在一起吃苦，人生本来就短暂，不能好好地享受生活，还要跟着你吃苦，真得太艰难了。我永远处于这种矛盾之中，好像这个问题永远无解，没有办法找到最优的解，我已经苦苦寻求好久好久，依旧在黑暗中摸索。</p>
-<p>现在处于漂浮不定的状态，就是一种没法给人<strong>安全感</strong>的状态。没有办法去给别人任何关于未来的承诺，承担不了的责任，不要去硬抗，会累垮。我妈好像也不怎么着急，我也没有那么心急，有些东西该来的时候肯定还是会来的。<strong>遇见的时间不对，只能继续前行，希望在对的时空遇到对的人</strong>。注定一辈子活在不确定性当中，我貌似已经失去了对我自己生命的把控，决定权已经被剥夺。</p>
-<p>现在，我只选择好好地爱我的父母，考虑父母今后的日子。时间越来越少，现在的自己也有一点点的小小的能力让他们过得稍微好一点。对于父母，我好像不用在意承诺，父母是最伟大的存在，不用给出什么承诺，我也不怕，就想着尽早地尽孝，好好孝顺他们。越早越好，能孝顺多少是多少，不用考虑太多。现在看来，自己真的还有好多人情，好多爱需要反馈。长这么大，接受了多少人的爱，才有了今天的我，亲戚的爱，周围邻居的爱，同学的爱，老师的爱以及父母的爱。自己现在还没有什么能力去反馈给他们，让他们知道他们的付出我都是记在心里的，在我的<strong>生命笔记本</strong>中都好好地记录着，谁对我好我都清楚。现在或多或少，都该开始反馈了，或者通俗的报答感恩。</p>
-<p>2018年，开始回看<strong>生命笔记本</strong>，找出那些爱的痕迹，尽可能多地想到这些人，要放在心上。要重新对生活充满激情，热爱生活，才能更好地执行这件事。希望我能更久地陪在你们身边，让我有机会更对地给予你们<strong>爱的反馈。</strong></p>
-]]></content>
-      <categories>
-        <category>随记</category>
-      </categories>
-      <tags>
-        <tag>爱</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Rstudio服务器使用</title>
-    <url>//2022/08/02/Rstudio%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%BD%BF%E7%94%A8/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-<blockquote>
-<p>如何使用服务器端Rstudio？</p>
-</blockquote>
-<span id="more"></span>
-<h2 id="font-colorgreen输入r服务器网址font"><a class="markdownIt-Anchor" href="#font-colorgreen输入r服务器网址font"></a> <font color=green>输入R服务器网址</font></h2>
-<p>RStudio Server的默认端口是8787，所以我们打开浏览器，输入<code>服务器ip:8787</code>，就可以打开Rstudio。例如在Google浏览器网址栏中输入：192.168.1.130:8787，就会出现账户登录界面。</p>
-<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-05-01-xvJpuN.png" alt="20220501xvJpuN" /></p>
-<h2 id="font-colorgreen输入linux用户名和密码登录font"><a class="markdownIt-Anchor" href="#font-colorgreen输入linux用户名和密码登录font"></a> <font color=green>输入Linux用户名和密码登录</font></h2>
-<p>用户名和密码是创建用户给大家设置过，可以查看<code>/Lab-Shared-Folder/Protocols/Bioinformatics method</code> 路径下的文件《系统进化树构建》，有相应的说明。<br />
-<img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-04-19-e50ftc.png" alt="20220419e50ftc" /></p>
-<h2 id="font-colorgreen正常使用界面font"><a class="markdownIt-Anchor" href="#font-colorgreen正常使用界面font"></a> <font color=green>正常使用界面</font></h2>
-<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-04-19-f40ife.png" alt="2022-04-19-f40ife" /></p>
-]]></content>
-      <categories>
-        <category>科研之路</category>
-      </categories>
-      <tags>
-        <tag>R</tag>
-        <tag>教程</tag>
       </tags>
   </entry>
   <entry>
@@ -1065,32 +1118,54 @@ float——确定图片是否为浮动，而不是在一个固定的地方。</p
       </tags>
   </entry>
   <entry>
-    <title>HTML5（4）——元素</title>
-    <url>//2018/10/02/HTML5%EF%BC%884%EF%BC%89%E2%80%94%E2%80%94%E5%85%83%E7%B4%A0/</url>
+    <title>印度，漂浮的次大陆</title>
+    <url>//2018/09/06/%E5%8D%B0%E5%BA%A6%EF%BC%8C%E6%BC%82%E6%B5%AE%E7%9A%84%E6%AC%A1%E5%A4%A7%E9%99%86/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![巨石阵，有朝一日能够去世界各地游玩](https://upload-images.jianshu.io/upload_images/3478485-d53a5e7f7a0f8675.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-<blockquote>
-<p>国庆第二天，毕业师姐过来那毕业证书，需要聚一波。今天继续学习HTML相关知识。上次学了最基本的知识，关于一些常见的HTML标签。今天是要讲HTML元素，标签包含的内容。</p>
-</blockquote>
+![印度，漂浮的次大陆](http://upload-images.jianshu.io/upload_images/3478485-b11c23f0c98ac99f.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+> 俞敏洪老师的推荐，于是就去读了郭建龙一个系列的游记。《穿越百年中东》、《骑车去元朝》、《印度，漂浮的次大陆》和《三千佛塔烟云下》都读了一遍，信息量超级大，不过读起来特别的畅快，特别的流畅。
+> 郭建龙是个文化旅者，总是亲身去体验某个地方的文化，历史，地理，政治，经济和宗教，最后凭借自己的文笔，写出独具特色的游记，我个人非常喜欢，推荐阅读。
+> 内容摘录自郭建龙的《印度，漂浮的次大陆》这本书。
 <span id="more"></span>
-<h2 id="font-colorgreen网页元素font"><a class="markdownIt-Anchor" href="#font-colorgreen网页元素font"></a> <font color="green">网页元素</font></h2>
-<p>HTML网页元素，通常是由起始标签和结束标签以及在两者之间插入的内容。<code>&lt;tagname&gt;内容&lt;/tagname&gt;</code><br />
-所有的网页元素，都是从开始标签到结束标签。<code>&lt;p&gt;my director&lt;/p&gt;</code><br />
-可以分为有内容和无内容。而空内容的元素是没有结束标签的，只有起始标签。如<code>&lt;br&gt;</code></p>
-<h2 id="font-colorgreen巢式网页元素font"><a class="markdownIt-Anchor" href="#font-colorgreen巢式网页元素font"></a> <font color="green">巢式网页元素</font></h2>
-<p>所谓巢式（nested），就是说可以在网页元素之中，插入其他的元素，元素嵌套元素。一个网页文件，必定是由巢式元素，下面的例子中，包含了4个网页元素。</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>My First Heading<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>My first paragraph.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<h2 id="font-colorgreen空网页元素font"><a class="markdownIt-Anchor" href="#font-colorgreen空网页元素font"></a> <font color="green">空网页元素</font></h2>
-<p>没有内容的网页元素就是空元素，<code>&lt;br&gt;</code>定义的是换行符，没有结束元素。当然，HTML也是可以关闭空元素的，形式就是在开始标签后面加斜杠<code>&lt;br /&gt;</code>。当然，也可以不关闭，但是如果是严格的来说，关闭空元素是肯定没有问题的，而且如果想被XML解析器解析，那么就必须关上空元素。</p>
-<h2 id="font-colorgreen标签小写字母font"><a class="markdownIt-Anchor" href="#font-colorgreen标签小写字母font"></a> <font color="green">标签小写字母</font></h2>
-<p>HTML是字母识别的，大写小写字母是存在差别的，标签一定要使用小写字母来写。虽然HTML5中，没有要求小写字母标签，但是最好就是小写，跟严格的XHTML是必须要小写才能编译。</p>
+<p>哈拉帕（巴基斯坦），洛塔尔（印度）。<br />
+洛塔尔遗址，手工业和贸易促使其如此的发达。然而，公元前2000年左右，整个印度河文明都衰落了。<br />
+在欧洲，存在着非洲两次走出的古人类相遇证据。那就是第二次的克罗马农人取代了第一次的尼安德特人，成为现代欧洲人的祖先。那么古印度人的祖先从哪里过来？在比莫贝特卡，发现了穴居文化。</p>
+<p>印度人之前一直以雅利安人的血统引以为豪，认为自己是雅利安人的后裔。但是当考古发现，公元前5000，已经在印度河流域出现了本土的古印度文明，比雅利安人入侵印度次大陆早千年，不得不承认存在高度发达的古印度文明。但印度人和雅利安人有着紧密的联系，**英国人威廉琼斯公爵从语言学上发现，印度的梵语，拉丁语和欧洲的语言有着同一起源，从而也证明了确实雅利安人和印度人有着紧密的联系。**而后来的考古发现也证明，大约在公元前3000年，在中亚大草原、里海附近的雅利安人，分为两支：一支进入欧洲，成为现代欧洲人的祖先；而另一支，经伊朗阿富汗，翻过兴都库什山脉，顺着开伯尔山口进入印度河谷地，最终扩散到整个印度。为什么古老发达的文明无法抵抗雅利安人？因为，在公元前2000左右，古印度文明开始衰落，而此时雅利安人正好在恰当的时机到来，从而入侵整个印度。</p>
+<p>**虽然古印度文明消亡了，但是人种并不会就此消失。**在现代的南印度，存在达罗毗荼人，可能与印度河文明的人种一致，且他们拥有自己的语言系统。**现在的印度，分为两种语系，在南方属于达罗毗荼语系，而在北方则是属于梵语。**在印度神奇的是，雅利安人已经入侵印度几千年了，到现在为止，雅利安人和达罗毗荼人还没有完成融合，跟中国社会的情况完全不同。原因：<strong>强大的种姓制度。</strong></p>
+<h2 id="印度教"><a class="markdownIt-Anchor" href="#印度教"></a> 印度教</h2>
+<p>雅利安人为了防止自己被当地原始居民同化，从而建立了严格的种姓制度，出现了<strong>四种种姓：婆罗门，刹帝什，吠舍和首陀罗</strong>。分别担任宗教和精神领袖，国王和武士，从事商业，最底层。还有没有种姓的贱民。规定人一出生就确定了种姓，永远也不可能改变，无法进阶到更高的种姓。但是，如果长期下去，最底层的人会越来越多，最终会通过暴力手段推翻这种限制，然而<strong>为什么这种制度能够如此长久的维持？<strong>只能通过宗教信仰手段，将</strong>种姓制度融入到宗教</strong>之中，使其能够自动的被大众接受，这个宗教就是<strong>印度教</strong>。教义强调：人的灵魂是可以轮回的，这一世为人，下一世可能为动物，也可能身为更高种姓的人类，所以给了人们虚假的承诺，使得人们遵从现有的制度而不加以反抗，与中国的儒教相似。</p>
+<p><strong>世界上所有的宗教一般都包括了信仰和伦理两方面，其中信仰是个人化的体验，关系到个人与神之间的沟通，而伦理是一种社会化的体验，主要强调人与人之间的交流。侧重点的不同，宗教分为两大类：基督教和佛教侧重信仰，而印度教和儒教侧重伦理。伊斯兰教处在两者中间。</strong></p>
+<p>在这一时期，印度的神祇也得到了确立，形成了<strong>三大主神：梵天，毗湿奴和湿婆以及无所不包的各路神仙</strong>。其中湿婆是受到最广泛崇拜的主神，同时也是生殖力的代表，于是有了崇拜生殖和崇拜阴茎的传统。湿婆的化身往往是一根石柱，象征着阴茎和生殖力，叫做林伽。在西藏的外喜马拉雅山脉中，有一座形同阴茎的山峰，叫做冈仁波齐，在印度称为凯拉什山，是藏传佛教，苯教和印度教的神山。印度人将前往冈仁波齐看成朝圣的极致。</p>
+<p>同时这一时期，印度史诗也形成。最早的梵语经典**《吠陀经》**成型，<strong>印度的传奇史诗《罗摩衍那》和《摩诃婆罗多》逐渐流传开来。</strong>《罗摩衍那》家喻户晓。</p>
+<h2 id="佛教"><a class="markdownIt-Anchor" href="#佛教"></a> 佛教</h2>
+<p><strong>佛陀，或称释迦摩尼，名字叫悉达多乔达摩</strong>。出身在印度十六国时期的迦毗罗卫国的<strong>蓝毗尼</strong>的一棵树下，现在的尼泊尔境内。父亲是迦毗罗卫国的国王净饭王，这个小国依附于大国拘萨罗，是由雅利安人种释迦族建立的，属于刹帝什种姓。母亲摩耶夫人。年轻的悉达多，在王宫中长大，不问世事，整天沉迷爱情俗世，有三位妻子和自己的孩子，在孩子出身的那一年，当悉达多看到世外的人所受的苦难，于是开始思考人生的意义，离开皇宫开始寻找答案。在菩提迦耶的菩提树下，悉达多决定放弃苦修，开始打坐静修。本来他的五位随从认为他已经放弃寻找真理了，于是离开了他。不久，他就彻底领悟，找到了属于自己的<strong>一套理论体系</strong>，**人生的意义是使得自己死后的灵魂得到永恒，也是与印度教类似的轮回机制，但是佛教的是认为轮回本身是一种痛苦，需要跳出轮回，灵魂才能得到永恒。那么如何跳出这个永无止境的轮回呢？<strong>悉达多构想出了</strong>“四谛”**理论体系：<strong>苦谛</strong>，指的人生的一切苦难。<strong>集谛</strong>，贪嗔痴三毒是苦难产生的原因。<strong>灭谛</strong>，消灭苦难就要消灭三毒。<strong>道谛</strong>，修行的行为规范，指八正道，帮助人们消灭三毒的方法，修行得当的人都可以跳出轮回之苦，从而达到活着的意义和死后的永恒。</p>
+<p><strong>四谛</strong>是悉达多理论的核心，因为这个体系<strong>打破了种姓的界限，强调了人生的平等</strong>。任何人要是想跳出轮回，必须要按这种修行方式进行。</p>
+<p>获得顿悟的悉达多没有立即离开，继续思考完善体系，后来来到了一个叫做鹿野苑的地方，收了第一批信徒。这就是之前离开他的五个人，是其父亲在其离开时选派的五位宗室子弟。也就是佛教史上有名的五比丘。也就在此刻开始，佛教的佛、法、僧已经圆满集结，悉达多乔达摩也正式成为佛陀。之后继续传教，走向全国。最后，在晚年，佛陀带了少量弟子来到名叫拘尸那罗的地方，一病不起，不久圆寂与此。而此时的迦毗罗卫国也被拘萨罗消灭，而最后拘萨罗也被摩揭陀国所灭，为印度的统一打下了基础。</p>
+<h2 id="耆那教"><a class="markdownIt-Anchor" href="#耆那教"></a> 耆那教</h2>
+<p>耆那教<strong>人口很少</strong>的宗教，但是在印度却有着及其重大的影响，甚至在<strong>影响力上超过了佛教</strong>。主要有两方面，第一，<strong>更强调苦行</strong>，对于人的要求高，更小众，使得能够接受的它的人很少，但是却是非常的坚定；第二，<strong>没有国际化</strong>。耆那教的创始人，<strong>筏陀摩耶被称为大雄</strong>，他的活动范围与佛陀重叠，也是在摩揭陀国的影响范围内。他强调的是苦行，为了完全达到断绝物欲的地步，甚至拒绝穿衣服，连身上有屎尿都毫不在意。而佛陀是放弃苦修的，过着质朴的生活，不是特意吃苦。</p>
+<p><strong>耆那教和印度教的神庙在外表上有相似之处，但是也有区别</strong>。耆那教的外部花式更加简单，而印度教的华丽高大。内部，耆那教的装饰复杂华丽，奢华无比，而印度教的却是及其简单，最简单的石板搭建的。</p>
+<h2 id="超级大国的更替"><a class="markdownIt-Anchor" href="#超级大国的更替"></a> 超级大国的更替</h2>
+<p>中国对印度的影响在公元前后到达，在这之前，对印度影响至深的是西方的希腊传导过去的事件，<strong>亚历山大的东征</strong>。但在亚历山大东征统治世界之前，是西亚的波斯文明主导全世界的强大政权。</p>
+<p>当西亚的新巴比伦帝国衰亡之后，伊朗境内兴起了一个新的帝国——<strong>波斯的阿契美尼德王朝</strong>，这是后来统治中亚的历代波斯王朝中的第一个。西亚的政治中心也从伊拉克两河流域转移到了伊朗境内。</p>
+<p>公元前7世纪，当时整个波斯在米底人的统治下。阿契美尼德死后，其儿子脱离了米底王国，经历过几代的继承，到了<strong>居鲁士二世</strong>统治时期，消灭了米底人的政权，还将前霸主新巴比伦帝国也消灭了。此后其儿子冈比西斯二世征服了埃及和非洲的大批领土，而其继承者<strong>大流士一世</strong>却改变了征服方向，开始向东方，越过开伯尔山口，进入印度河平原地区。之后又改变方向，又向西，入侵了希腊人的领土，<strong>从此将不起眼的希腊和欧洲带入了世界的舞台</strong>。希腊本来在东方的眼里根本不值得一提，只是生意人，他们航海走向各地，建立殖民地，只是为了做生意而不是扩张领土。<strong>波斯人入侵希腊，使得希腊各个弱小的城邦抱团抵抗，爆发出了强大的力量，使得波斯人战败</strong>。大流士一世之后，儿子薛西斯发动了第二次入侵，希腊人再次胜利，此后波斯就进入了衰落期，而西方兴起了新的霸主希腊。</p>
+<p>但希腊的这种团结不久就分裂，两个最大的城邦<strong>雅典和斯巴达</strong>开始争夺希腊的领导权，最终在波斯人的帮助下，斯巴达打败了雅典。但结果是两败俱伤。</p>
+<p>与此同时，一个希腊人看不起的<strong>希腊北部的马其顿</strong>兴起了，马其顿国王<strong>腓力二世</strong>打败了雅典和科林斯强权，使整个<strong>希腊半岛在历史上第一次统一</strong>。腓力二世的儿子就是著名的<strong>亚历山大大帝</strong>，这时整个希腊已经属于马其顿，他先进军<strong>小亚细亚</strong>，再把<strong>埃及</strong>纳入自己的版图，埃及的古老文明从此消失。接着进军<strong>波斯</strong>，打败波斯王大流士三世，最终波斯王朝覆灭。之后继续挥兵<strong>中亚阿富汗</strong>，塔吉克斯坦直到新疆以西的<strong>河中地区</strong>。突然就做了一个决定，向<strong>印度</strong>进军。<strong>此时的印度，内部也在进行着激烈的整合。摩揭陀国成为胜利者，几乎统一了全国</strong>。摩揭陀共包含了四个朝代，最后的难陀王朝是非常重要的承上启下的朝代，这时的印度的疆域已经有目前的一半大小，囊括整个北印度，和现代孟加拉国和缅甸的一部分。正是在这个朝代，亚历山大挥师进入印度。在印度，面临的是许多具有单独作战实力地区，如同游击战，亚历山大大帝陷入了全面作战的汪洋大海中，加之印度南北跨度几千公里，气候复杂，最后被迫撤退。不久，<strong>33岁的亚历山大大帝在巴比伦得病去世</strong>，留下了许多亚历山大的城市和希腊化的世界，其余化为传说。而这一次入侵对于印度的政治影响，间接促成了本土的伟大帝国的出现——<strong>孔雀帝国，印度第一次统一</strong>。</p>
+<p>亚历山大大帝撤退，使得整个西北印度陷入了权利的真空状态。原有的政治势力被破坏掉了，犍陀罗等国家被征服，另一方面难陀王朝还没有将控制力延伸过去。这时一个名叫<strong>旃陀罗笈多孔雀的人</strong>汇集大军向摩揭陀的难陀王朝进军，这时的难陀王朝也已经腐败无能，也希望新的君王接管权力。大军压境，难陀国王选择退位，避免了一场血腥的战争，孔雀王朝继承了难陀王打下了的江山。旃陀罗笈多孔雀最后在一个山洞里修行，信奉耆那教，最后默默的死去。他的孙子<strong>阿育王</strong>经过继承战，据说杀死了自己的99个亲兄弟，从自己的父亲频头娑罗哪里得到了孔雀王朝的宝座。阿育王前半生在杀戮中度过，而后半生却信奉佛教，在全国建造了数万座佛塔，然而现在剩下的只有<strong>桑吉大塔</strong>和鹿野苑的<strong>答枚克塔</strong>。</p>
+<p><strong>贵霜人</strong>的历史，最早可以从中国的战国时期找到痕迹，在中国西部的甘肃河西走廊一带，有一个半游牧民族在这里生活了很久。从某种程度上来说，<strong>月氏人</strong>是一个过渡民族，恰好夹在了游牧和定居之间，且受到了双方的威胁。其中在南方是定居的<strong>华夏民族</strong>，经过了春秋战国，秦国正在崛起，而在北方则是<strong>游牧民族匈奴</strong>。事实证明，游牧民族的威胁更大。直到秦朝末年，匈奴还比月氏人弱小，作为寄主国，当时匈奴的王位继承人只能以人质身份在月氏人当中生活，最后一位是叫做<strong>冒顿</strong>的匈奴人，没有受到善待，仇视月氏人，最后其逃回自己的部落，成为新的单于，从此以后月氏人进入了噩梦时期，<strong>冒顿挥师南下，屠杀，公元前202年左右，月氏人被迫放弃了肥沃的河西走廊，向西迁移。<strong>公元前177年左右，冒顿再次击败月氏人，被迫再次迁移，一部分南下进入了</strong>青海境内</strong>，被当地人同化；另一部分继续西迁，到达了新疆的<strong>准葛尔盆地</strong>。公元前162年，冒顿的儿子老上，再次打败月氏人，将月氏王的头颅砍下，当了酒器。只好再次西迁到了<strong>新疆的伊犁一带</strong>。这一次的西迁，引起了<strong>连锁反应</strong>，原本在伊犁这一带的<strong>斯基泰人向西南运动</strong>，进入了阿富汗境内。而这时在伊犁的月氏人因为被汉王朝打击的匈奴人的西迁，只好向西方的中亚地区前进，进入了著名<strong>河中地区</strong>，也就是阿姆河和锡尔河中间地带。而在河中地区，遭到了当地人的驱赶，不得不向南，进入了阿富汗伊朗境内，使得在这里的<strong>斯基泰人再次向南移动</strong>。在此之前，阿富汗和伊朗境内居住者安息人和希腊人，亚历山大征服中亚后，希腊人的后裔在这里建立起了大夏王国，在斯基泰人和月氏人的压力下，<strong>巴克特里亚人纷纷南下，进入印度境内，成为了入侵印度的第一波势力</strong>。</p>
+<p>由匈奴人和月氏人搅动的一系列民族迁徙活动，将一波一波的人们赶往了印度次大陆。张骞出使西域本来想联合月氏人给匈奴人来个东西夹击，但是月氏人拒绝了，不想再回到中国，此后月氏人彻底离开了中国的范围。<strong>公元前140年</strong>，在斯基泰人之后，月氏人也南下到了<strong>大夏边境</strong>，此时月氏人已经分成了5个部落，而贵霜就是其中的一个。之后打败了西部的安息国，继续占领大夏东部地区。此时接触到了大夏的希腊化文明，<strong>月氏人开始希腊化，从此变成了定居民族</strong>。并发行自己的货币和开始发展商贸关系。这时也受到了印度佛教的影响，开始将佛教作为他们的宗教。公元前1世纪初，<strong>贵霜部落</strong>打败其余部落，建立了<strong>贵霜帝国</strong>。在印度希腊人、印度斯基泰人、印度安息人之后，印度贵霜帝国正式登场。</p>
+<p><strong>维查耶纳加尔</strong>是印度教最后一个伟大帝国，负有捍卫印度教、抵抗伊斯兰教的重任。毁灭后，伊斯兰教长驱直入，在次大陆占据了主导地位，开始了几百年的伊斯兰政权时期。实际上，<strong>维查耶纳加尔就是为了对抗伊斯兰才出现</strong>。当北印度处于德里苏丹国统治的时候，南印度曾经强大的遮卢迦王国和拉什特拉库塔王国已经消亡。取而代之的四个小王国，分别是雅达瓦、卡卡提亚，潘地亚王国和霍伊萨拉王国。</p>
+<p>阿拉-乌德-丁用一生与南印度各国征战，其中就征服了雅达瓦和霍伊萨拉。前者为穆斯林提供了新的都城，而后者灭亡使得维查耶纳加尔在其土地上成长起来。</p>
+<p>巴马尼苏丹国的出现，这个伊斯兰国家的兴起与德里苏丹穆罕穆德图格鲁克迁都失败有关。比达尔城是该国的首都，与汉皮相比，伊斯兰教有最先进的战争理念，而印度教徒却是将首都看成生活的地方，由此也可以看出，两者在对战是的成败。南印度就在这两个教权国家的残忍战争中被扭曲，直到其中一个国家垮掉。最后，巴马尼苏丹最先垮掉，分为五个小苏丹国，这五个小国又内斗，最后成为三个苏丹国，最后联合起来，打败了维查耶纳加尔国，历史仅留下了汉皮这片废墟。此时，南印度也成了伊斯兰教的天下。这三个苏丹国也进入了黄金时代，而印度教最后的伟大政权也终于轰然倒塌。这时候，同属于伊斯兰教的来自北方的莫卧儿人出现了。</p>
+<p>在<strong>中世纪</strong>，虽然印度的佛教被印度教取代，但仍旧是世界的<strong>佛教中心</strong>，其中最有名的就是那烂陀大学，学术圣殿。但是在<strong>12世纪</strong>时，当古尔人到来，穆罕默德首领下的努力将军库特卜<strong>占领毁灭了那烂陀大学</strong>，<strong>使得佛教从印度消失</strong>。13世纪初，库特卜成立德里苏丹国，在莫卧尔人到来前，控制印度300多年。<strong>德里，现在印度的首都开始登上历史舞台。</strong></p>
+<p><strong>13世纪，成吉思汗带着蒙古人席卷了整个世界</strong>，在中国建立了元朝，在波斯建立了<strong>伊尔汗国</strong>，在俄罗斯人的土地上建立了<strong>金帐汗国</strong>，在如今的新疆西部、中亚建立了<strong>察合台汗国</strong>，在新疆北部和蒙古东部建立了<strong>窝阔台汗国</strong>。这五大汗国占领了当时已知世界的一大半。之后蒙古很快衰败，在<strong>察合台汗国</strong>的土地上，在14世纪后半期突厥人<strong>帖木儿</strong>威慑整个中亚、西亚和中欧，甚至占领了印度的一部分。但是在进攻明朝时，突然途中去世，此后帖木儿帝国分崩离析。<strong>然而此时，中亚出现了一位蒙古人和突厥人的双重后裔，巴布尔</strong>。让他占领印度，并开创了一个伟大的王朝。<br />
+**巴布尔在父系上是帖木儿的直系后裔，从母系来说，是成吉思汗的后裔。**因此，从1483年出生，就带着世界上最有血性的两个人的基因。</p>
+<p>河中地区的城市撒马尔罕是帖木儿的都城，要称霸中亚必须拿下撒马尔罕，但是命中注定不属于巴布尔，一世经过三次进攻，却一次都没有成功，中亚的大门从此关闭。然而，经过分析，印度是个不错的可以暂时栖息之地，前四次进攻印度只是在外围，现在的巴基斯坦境内，没有深入到德里地区，然而第五次，德里苏丹出现内乱，有人请他去去德里，于是决心进军德里。<strong>这次战役的胜利，决定了印度历史的未来300年，建立了一个伟大的帝国。<strong>巴布尔在阿拉格建立了帝国的首都，阿拉格是用艺术和建筑征服印度，其后代也大都继承了祖先的艺术气质，使得</strong>莫卧尔成为艺术世界的巅峰</strong>。此后，巴布尔平定了整个北部地区，不久去世，他的儿子胡马雍继承王位，但此时的帝国还没有稳定，<strong>胡马雍</strong>不善战，被东方孟加拉的将军舍尔汗打败，被赶出了印度，退到了阿富汗。而舍尔汗在位期间，使整个印度政局稳定。死后，胡马雍很快从其后代那里夺回了印度，继承了舍尔汗开创的一系列制度，并重新将首都迁到了德里。之后不小心摔死在图书馆，成为第一个葬在印度土地上的莫卧尔皇帝。</p>
 ]]></content>
       <categories>
-        <category>HTML5入门</category>
+        <category>读书笔记</category>
       </categories>
       <tags>
-        <tag>HTML5</tag>
-        <tag>元素</tag>
+        <tag>印度</tag>
+        <tag>郭建龙</tag>
       </tags>
   </entry>
   <entry>
@@ -1187,52 +1262,52 @@ float——确定图片是否为浮动，而不是在一个固定的地方。</p
       </tags>
   </entry>
   <entry>
-    <title>HTML5（12）——颜色</title>
-    <url>//2018/10/13/HTML5%EF%BC%8812%EF%BC%89%E2%80%94%E2%80%94%E9%A2%9C%E8%89%B2/</url>
+    <title>大悦城小聚</title>
+    <url>//2018/09/29/%E5%A4%A7%E6%82%A6%E5%9F%8E%E5%B0%8F%E8%81%9A/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![整洁的桌面](https://upload-images.jianshu.io/upload_images/3478485-a135213ca8dbdc9a.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-> 前两天算是有一些事情要处理，没有来得及更新学习。今天我们来讲一下HTML中颜色的控制。
+![虽然没有我们的照片，但是有这个意思](https://upload-images.jianshu.io/upload_images/3478485-ccf80350d2a43ed6.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+<blockquote>
+<p>星期一就接到了大学室友“大叔”的诚挚邀请，请我吃饭。好不犹豫的答应之后，一直等待着。</p>
+</blockquote>
 <span id="more"></span>
-<h2 id="font-colorgreen颜色的名称font"><a class="markdownIt-Anchor" href="#font-colorgreen颜色的名称font"></a> <font color="green">颜色的名称</font></h2>
-<p>在HTML中，要使用颜色的话，需要用他们的名称来引用。HTML支持大概140种标准颜色，可以看链接：<a href="https://www.w3schools.com/colors/colors_names.asp">Color Names Supported by All Browsers</a>。<br />
-<img src="https://upload-images.jianshu.io/upload_images/3478485-9aed6c0e3fd1bc35.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="颜色名称" /></p>
-<h2 id="font-colorgreen网页背景颜色font"><a class="markdownIt-Anchor" href="#font-colorgreen网页背景颜色font"></a> <font color="green">网页背景颜色</font></h2>
-<p>前面我们在<a href="https://www.jianshu.com/p/e228f6dca9d2">HTML5(5)——属性</a>一文中简要提到过style属性，而在<a href="https://www.jianshu.com/p/0fd28725d9fb">HTML5（8）——样式<br />
-</a>一文中详细介绍了<code>style</code>的各个property的作用，这里我们用它来控制网页背景颜色，文本颜色等。语法大概如下：</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">style</span>=<span class="string">&quot;background-color:DodgerBlue;&quot;</span>&gt;</span>Hello World<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">style</span>=<span class="string">&quot;background-color:Tomato;&quot;</span>&gt;</span>Lorem ipsum...<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-4f6115d2a7015ea4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="" /></p>
-<h2 id="font-colorgreen文本颜色font"><a class="markdownIt-Anchor" href="#font-colorgreen文本颜色font"></a> <font color="green">文本颜色</font></h2>
-<p>同背景颜色一样设置，其中一些不同。style中属性不同，这里就是<code>color</code>属性，值就是颜色名称。</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">style</span>=<span class="string">&quot;color:Tomato;&quot;</span>&gt;</span>Hello World<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">style</span>=<span class="string">&quot;color:DodgerBlue;&quot;</span>&gt;</span>Lorem ipsum...<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">style</span>=<span class="string">&quot;color:MediumSeaGreen;&quot;</span>&gt;</span>Ut wisi enim...<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-56751396fea53dc8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="" /></p>
-<h2 id="font-colorgreen边框颜色font"><a class="markdownIt-Anchor" href="#font-colorgreen边框颜色font"></a> <font color="green">边框颜色</font></h2>
-<p>这里就使用<code>border</code>property，而它的值包括粗细，填充，颜色，你可以使用自己想要的值。</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">style</span>=<span class="string">&quot;border:2px solid Tomato;&quot;</span>&gt;</span>Hello World<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">style</span>=<span class="string">&quot;border:2px solid DodgerBlue;&quot;</span>&gt;</span>Hello World<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">style</span>=<span class="string">&quot;border:2px solid Violet;&quot;</span>&gt;</span>Hello World<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-24f79cac76a2db2e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="" /></p>
-<h2 id="font-colorgreen颜色值font"><a class="markdownIt-Anchor" href="#font-colorgreen颜色值font"></a> <font color="green">颜色值</font></h2>
-<p>在HTML中，颜色可以用几种类型的值来描述：RGB, HEX, HSL, RGBA 和HSLA。<br />
-<img src="https://upload-images.jianshu.io/upload_images/3478485-14a56383cbb765e9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="" /></p>
-<h3 id="rgb"><a class="markdownIt-Anchor" href="#rgb"></a> RGB</h3>
-<p><code>rgb(red,green,blue)</code>，每一种参数都是颜色的密度值，范围在0-255之间。例如，rgb(0,0,0)是黑色，rgb(255,255,255)是白色。不同的灰度，是3种颜色相同的情况下的改变。<br />
-<img src="https://upload-images.jianshu.io/upload_images/3478485-cee9ba3646f62c92.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="" /><br />
-<img src="https://upload-images.jianshu.io/upload_images/3478485-438ed0ed84fb3b54.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png" /></p>
-<h3 id="hex"><a class="markdownIt-Anchor" href="#hex"></a> HEX</h3>
-<p>这是用16进制来表示RGB的三种颜色，也是三种值，范围都在00-ff之间。同样灰度也是用相同的三种颜色的值大小，来表示。<br />
-<img src="https://upload-images.jianshu.io/upload_images/3478485-26108c125a656dde.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="" /></p>
-<h3 id="hsl"><a class="markdownIt-Anchor" href="#hsl"></a> HSL</h3>
-<p>这种颜色的是通过色调，饱和度和亮度，来表示某种颜色。<br />
-<code>hsl(hue, saturation, lightness)</code>。色调的值在0-360之间。0是红色，120是绿色，240是蓝色。饱和度是百分数表示的，0%表示灰色，100%是颜色本身。亮度也是百分数，0%是黑色，50%是适中，100%是白色。灰度是色调和饱和度都为0值，而通过亮度的调节来改变。<br />
-<img src="https://upload-images.jianshu.io/upload_images/3478485-c9d6ff8c82aecb3a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="" /></p>
-<h3 id="rgba和hsla"><a class="markdownIt-Anchor" href="#rgba和hsla"></a> RGBA和HSLA</h3>
-<p>这两者都是在RGB和HSL的基础上，增加了第四个参数，透明度（alpha）。透明度的范围在0.0-1.0之间。0.0是全透明，而1.0是不透明。<br />
-<img src="https://upload-images.jianshu.io/upload_images/3478485-4269eabcd987dddb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="" /></p>
+<p>礼拜三，本来已经提前说了，最后有点情况，还是没有去。然后就是礼拜五，晚上六点在新开的大悦城吃饭，天泰泰国菜，貌似是一家网红店，味道确实很不错，尤其是咖喱牛肉，辣辣的感觉出现在入口一段时间之后，很是享受。此外，还有泰式奶茶，味道特别浓厚且独特，很是喜欢。这家店确实可以，比我想象中精致一些，人均价位100多，偶尔享受一下这样的食物，心情都会变好很多。</p>
+<ul>
+<li>土豆咖喱炖牛肉</li>
+</ul>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-464c0f630b16116c.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="土豆咖喱炖牛肉" /></p>
+<ul>
+<li>泰式传统虾饼，真是满满的都是虾肉，特别鲜</li>
+</ul>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-75a90853bc691151.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="泰式传统虾饼，真是满满的都是虾肉，特别鲜" /></p>
+<ul>
+<li>菠萝炒饭，一般是必点的泰国菜</li>
+</ul>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-a08a47b3e9d958d2.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="菠萝炒饭，一般是必点的泰国菜" /></p>
+<ul>
+<li>炒粉，很劲道，味道很棒，配着旁边的酱料</li>
+</ul>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-b8314beafe3e997f.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="炒粉，很劲道，味道很棒，配着旁边的酱料" /></p>
+<ul>
+<li>椰蓉布丁，口感非常好，椰香特别浓厚，下面是一层晶莹透明的西米</li>
+</ul>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-8d9391ea6f0ef287.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="椰蓉布丁，口感非常好，椰香特别浓厚，下面是一层晶莹透明的西米" /></p>
+<ul>
+<li>这就是我喝的奶茶了，看起来就非常的高端大气，确实味道也特别的棒</li>
+</ul>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-d6b3972175e63e1d.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="这就是我喝的奶茶了，看起来就非常的高端大气，确实味道也特别的棒" /></p>
+<p>吃完这些菜，并没有很好的满足我们的欲望，果断又去吃了一家烤鱼，叫江边城外。不过说真的，还是有点饱了，不过有特别想尝试，结果味道很是不错，而且还是两种口味，一半一半，双拼烤鱼。</p>
+<ul>
+<li>烤鱼，一半酱香一半蒜香</li>
+</ul>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-990751167b0d3e42.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="烤鱼，一半酱香一半蒜香" /></p>
+<p>吃完，也就结束了。喜欢这样的感觉，偶尔有空且机会正好，一定要想到好友，一起吃个饭，闲聊几句，很是舒心，没有太过多余的想法，放下很多事情。骑自行车回去学校，没有再逛，下次再约。</p>
 ]]></content>
       <categories>
-        <category>HTML5入门</category>
+        <category>随记</category>
       </categories>
       <tags>
-        <tag>HTML5</tag>
-        <tag>颜色</tag>
+        <tag>泰国菜</tag>
+        <tag>大学</tag>
       </tags>
   </entry>
   <entry>
@@ -1596,26 +1671,6 @@ float——确定图片是否为浮动，而不是在一个固定的地方。</p
       </tags>
   </entry>
   <entry>
-    <title>狼伴归途</title>
-    <url>//2018/09/13/%E7%8B%BC%E4%BC%B4%E5%BD%92%E9%80%94/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![狼伴归途](https://upload-images.jianshu.io/upload_images/3478485-71c67307e95546df.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-9月9日，星期六，公元2018年
-<span id="more"></span>
-<p>狼伴归途，最精彩的就是宏大的史前场景再现，让人看了非常的享受，被其所征服。故事的情节还是比较的简单，年轻的孩子在失去父母呵护之后，通过自己的和狼的努力，经历千辛万苦最后回到了父母的怀抱。狼和孩子一起，最终平安到家，并为部落带来了狼这种动物，我想之后就是被驯化成狗。<br />
-觉得还是可以去看一下，电影场景很唯美。</p>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-1847b7b43f7ef666.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="wolf2.jpg" /></p>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-7acc324003fe7eeb.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="wolf3.jpg" /></p>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-05dda12e9ab338f8.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="wolf4.jpg" /></p>
-]]></content>
-      <categories>
-        <category>影评领域</category>
-      </categories>
-      <tags>
-        <tag>电影</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>海南环岛游记</title>
     <url>//2018/08/31/%E6%B5%B7%E5%8D%97%E7%8E%AF%E5%B2%9B%E6%B8%B8%E8%AE%B0/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -1832,6 +1887,26 @@ float——确定图片是否为浮动，而不是在一个固定的地方。</p
       </tags>
   </entry>
   <entry>
+    <title>狼伴归途</title>
+    <url>//2018/09/13/%E7%8B%BC%E4%BC%B4%E5%BD%92%E9%80%94/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![狼伴归途](https://upload-images.jianshu.io/upload_images/3478485-71c67307e95546df.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+9月9日，星期六，公元2018年
+<span id="more"></span>
+<p>狼伴归途，最精彩的就是宏大的史前场景再现，让人看了非常的享受，被其所征服。故事的情节还是比较的简单，年轻的孩子在失去父母呵护之后，通过自己的和狼的努力，经历千辛万苦最后回到了父母的怀抱。狼和孩子一起，最终平安到家，并为部落带来了狼这种动物，我想之后就是被驯化成狗。<br />
+觉得还是可以去看一下，电影场景很唯美。</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-1847b7b43f7ef666.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="wolf2.jpg" /></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-7acc324003fe7eeb.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="wolf3.jpg" /></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-05dda12e9ab338f8.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="wolf4.jpg" /></p>
+]]></content>
+      <categories>
+        <category>影评领域</category>
+      </categories>
+      <tags>
+        <tag>电影</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>疫情记</title>
     <url>//2020/04/12/%E7%96%AB%E6%83%85%E8%AE%B0/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -1878,32 +1953,6 @@ float——确定图片是否为浮动，而不是在一个固定的地方。</p
       </categories>
       <tags>
         <tag>电影</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>离家回归</title>
-    <url>//2018/08/23/%E7%A6%BB%E5%AE%B6%E5%9B%9E%E5%BD%92/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![railway，图片来自于pexels网站](https://upload-images.jianshu.io/upload_images/3478485-7fdc279179af9b76.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-<span id="more"></span>
-<blockquote>
-<p><strong>离开，亦是回归。</strong></p>
-</blockquote>
-<p>8月22日，星期三，公元2018年。<br />
-在12306官网上，已订购了今天下午的车票。像往日一样，心中突然生出无尽的焦虑，极其不安定。离开家（现在我将它定义为：父母开的只为你一人服务的旅馆），意味着回归，回到每天充满焦虑的生活。2015年毕业之后，似乎再也没有安稳的日子，总要去面对去担当，去谋划。我不知道自己时候是否已然锻炼成一名合格的人生蓝图设计师，我设计的很抽象，就来我自己也看不出，领悟不出其中的意义。<br />
-时间是下午3点，高铁站的KFC，看着价格，心里突然犹豫不定。买，觉得太贵；不买，半途饿惨。已经体验过无数次半途饿个半死，似乎没有得到教训，不清楚人生的错一犯再犯，从不反思，是从什么时候开始。买了一个汉堡和一对鸡翅，离开车20分钟，吃得很快，味道很咸，没有想象中的美味。<br />
-动车缓缓的驶入，又缓缓的驶出站台。我也跟它很像，从来都是在家这个站台驶入驶出，不是我的终点站，而我又找不到我的终点站，一直在人生这条轨道上永远跑着。路过太多，错过太多；遇到太多，又错过太多。拿出佛洛姆的《爱的艺术》，再一次开启。我发誓，我已经看过很多遍，请不要怀疑我。但是很遗憾，每次看过都会忘得七七八八，而再次开启，又觉得能够记起一切。</p>
-<blockquote>
-<p><strong>爱，是一门艺术。要求我们必须努力发展自己的全部人格，从而来达到创造倾向性。</strong></p>
-</blockquote>
-<p>这句话中的关键词：<strong>全部人格和创造倾向性</strong>，我至今还是没有办法理解。半个小时，一眨眼就过去，留在了轨道上。广播已经开始响起；“前方到站，杭州站，请旅客整理好自己的行李，准备下车”。我只需将书塞入包中，起身就可以离开，丝毫没有留恋。<br />
-几年里的终点到了，几年后是否改变，我没法笃定地给出答案，未来可以见分晓。</p>
-]]></content>
-      <categories>
-        <category>随记</category>
-      </categories>
-      <tags>
-        <tag>家</tag>
       </tags>
   </entry>
   <entry>
@@ -2040,6 +2089,30 @@ float——确定图片是否为浮动，而不是在一个固定的地方。</p
       </tags>
   </entry>
   <entry>
+    <title>算法与数据结构（2）：算法复杂度</title>
+    <url>//2018/09/05/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%EF%BC%882%EF%BC%89%EF%BC%9A%E7%AE%97%E6%B3%95%E5%A4%8D%E6%9D%82%E5%BA%A6/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![复杂](https://upload-images.jianshu.io/upload_images/3478485-2198e399288f19f7.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+<p>9月5日，星期三，公元2018年。</p>
+<blockquote>
+<p>简书作者<a href="https://www.jianshu.com/u/44339a8a9afa">程序员联盟</a>：目前正在更新这个系列的教程，我是学习记录者，并非原创，此后<strong>算法与数据结构</strong>系列都是记录笔记，不再进一步说明。</p>
+</blockquote>
+<span id="more"></span>
+<p>这片是关于引出算法复杂度，用了小鸭子的故事。</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-f667aaa8497301ce.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="小鸭子" /></p>
+<center>小鸭子</center>
+故事是这样的：
+<p>有个农夫，每年带着小鸭子们去旅行，目的是为了让小鸭子们都得到放松清净的机会。旅行就是将他们放到池塘里，而且每个池塘要保证一样多的鸭子，才能够同样的清净，不会有不公平的情况出现。因此，农夫采取的方法是：将小鸭子一只一只的带到池塘边，让他们自己选择要去的池塘，最后在池塘和卡车之见跑了NxN个来回。而第二年，农夫发现不太好，于是就重新换了方法，依次带出N只鸭子，将其放在一个池塘，如此下去，直到每个池塘也是同样多的鸭子，这样只需要N个来回。这样一算，发现第二种方法能够更节省时间更轻松，而且还达到了同样的效果，新的方法胜利。</p>
+<p>农夫的放鸭子的方法，就可以看成一种算法，用来对放置鸭子进行了精确的描述。很显然第二种算法更好，时间节省，力气节省，还能达到同样的结果。在计算机术语中，人们用复杂度（complexity）这个词来量化算法的性能。</p>
+]]></content>
+      <categories>
+        <category>算法与数据结构</category>
+      </categories>
+      <tags>
+        <tag>复杂度</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>算法与数据结构（3）：算法复杂度说明（上）</title>
     <url>//2018/10/10/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%EF%BC%883%EF%BC%89%EF%BC%9A%E7%AE%97%E6%B3%95%E5%A4%8D%E6%9D%82%E5%BA%A6%E8%AF%B4%E6%98%8E%EF%BC%88%E4%B8%8A%EF%BC%89/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -2071,30 +2144,6 @@ float——确定图片是否为浮动，而不是在一个固定的地方。</p
 前一种算法是N次，而后一种算法是2N次。但是你没有办法去比较时间，这个取决去操作A，B，C各自需要的时间。因此，这些不一定对算法效率有影响的常数乘法因子不在复杂度的度量中考虑。</p>
 <p>当然，有时候这样的忽略也不一定正确，比如有时候常数因子可能起到非常重要的作用。比如农夫完全没有办法打开门，那么就需要花费太多时间在开门上。但是，在大多数情况下，算法复杂度是算法性能的可靠指标。尤其是在输入非常大的时候，性能差距就会越来越明显。</p>
 <p>算法真得还是有点难以理解，需要不断地去重复理解这个概念。</p>
-]]></content>
-      <categories>
-        <category>算法与数据结构</category>
-      </categories>
-      <tags>
-        <tag>复杂度</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>算法与数据结构（2）：算法复杂度</title>
-    <url>//2018/09/05/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%EF%BC%882%EF%BC%89%EF%BC%9A%E7%AE%97%E6%B3%95%E5%A4%8D%E6%9D%82%E5%BA%A6/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![复杂](https://upload-images.jianshu.io/upload_images/3478485-2198e399288f19f7.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-<p>9月5日，星期三，公元2018年。</p>
-<blockquote>
-<p>简书作者<a href="https://www.jianshu.com/u/44339a8a9afa">程序员联盟</a>：目前正在更新这个系列的教程，我是学习记录者，并非原创，此后<strong>算法与数据结构</strong>系列都是记录笔记，不再进一步说明。</p>
-</blockquote>
-<span id="more"></span>
-<p>这片是关于引出算法复杂度，用了小鸭子的故事。</p>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-f667aaa8497301ce.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="小鸭子" /></p>
-<center>小鸭子</center>
-故事是这样的：
-<p>有个农夫，每年带着小鸭子们去旅行，目的是为了让小鸭子们都得到放松清净的机会。旅行就是将他们放到池塘里，而且每个池塘要保证一样多的鸭子，才能够同样的清净，不会有不公平的情况出现。因此，农夫采取的方法是：将小鸭子一只一只的带到池塘边，让他们自己选择要去的池塘，最后在池塘和卡车之见跑了NxN个来回。而第二年，农夫发现不太好，于是就重新换了方法，依次带出N只鸭子，将其放在一个池塘，如此下去，直到每个池塘也是同样多的鸭子，这样只需要N个来回。这样一算，发现第二种方法能够更节省时间更轻松，而且还达到了同样的效果，新的方法胜利。</p>
-<p>农夫的放鸭子的方法，就可以看成一种算法，用来对放置鸭子进行了精确的描述。很显然第二种算法更好，时间节省，力气节省，还能达到同样的结果。在计算机术语中，人们用复杂度（complexity）这个词来量化算法的性能。</p>
 ]]></content>
       <categories>
         <category>算法与数据结构</category>
@@ -2587,103 +2636,54 @@ float——确定图片是否为浮动，而不是在一个固定的地方。</p
       </tags>
   </entry>
   <entry>
-    <title>大悦城小聚</title>
-    <url>//2018/09/29/%E5%A4%A7%E6%82%A6%E5%9F%8E%E5%B0%8F%E8%81%9A/</url>
+    <title>Rstudio服务器使用</title>
+    <url>//2022/08/02/Rstudio%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%BD%BF%E7%94%A8/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![虽然没有我们的照片，但是有这个意思](https://upload-images.jianshu.io/upload_images/3478485-ccf80350d2a43ed6.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 <blockquote>
-<p>星期一就接到了大学室友“大叔”的诚挚邀请，请我吃饭。好不犹豫的答应之后，一直等待着。</p>
+<p>如何使用服务器端Rstudio？</p>
 </blockquote>
 <span id="more"></span>
-<p>礼拜三，本来已经提前说了，最后有点情况，还是没有去。然后就是礼拜五，晚上六点在新开的大悦城吃饭，天泰泰国菜，貌似是一家网红店，味道确实很不错，尤其是咖喱牛肉，辣辣的感觉出现在入口一段时间之后，很是享受。此外，还有泰式奶茶，味道特别浓厚且独特，很是喜欢。这家店确实可以，比我想象中精致一些，人均价位100多，偶尔享受一下这样的食物，心情都会变好很多。</p>
-<ul>
-<li>土豆咖喱炖牛肉</li>
-</ul>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-464c0f630b16116c.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="土豆咖喱炖牛肉" /></p>
-<ul>
-<li>泰式传统虾饼，真是满满的都是虾肉，特别鲜</li>
-</ul>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-75a90853bc691151.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="泰式传统虾饼，真是满满的都是虾肉，特别鲜" /></p>
-<ul>
-<li>菠萝炒饭，一般是必点的泰国菜</li>
-</ul>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-a08a47b3e9d958d2.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="菠萝炒饭，一般是必点的泰国菜" /></p>
-<ul>
-<li>炒粉，很劲道，味道很棒，配着旁边的酱料</li>
-</ul>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-b8314beafe3e997f.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="炒粉，很劲道，味道很棒，配着旁边的酱料" /></p>
-<ul>
-<li>椰蓉布丁，口感非常好，椰香特别浓厚，下面是一层晶莹透明的西米</li>
-</ul>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-8d9391ea6f0ef287.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="椰蓉布丁，口感非常好，椰香特别浓厚，下面是一层晶莹透明的西米" /></p>
-<ul>
-<li>这就是我喝的奶茶了，看起来就非常的高端大气，确实味道也特别的棒</li>
-</ul>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-d6b3972175e63e1d.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="这就是我喝的奶茶了，看起来就非常的高端大气，确实味道也特别的棒" /></p>
-<p>吃完这些菜，并没有很好的满足我们的欲望，果断又去吃了一家烤鱼，叫江边城外。不过说真的，还是有点饱了，不过有特别想尝试，结果味道很是不错，而且还是两种口味，一半一半，双拼烤鱼。</p>
-<ul>
-<li>烤鱼，一半酱香一半蒜香</li>
-</ul>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-990751167b0d3e42.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="烤鱼，一半酱香一半蒜香" /></p>
-<p>吃完，也就结束了。喜欢这样的感觉，偶尔有空且机会正好，一定要想到好友，一起吃个饭，闲聊几句，很是舒心，没有太过多余的想法，放下很多事情。骑自行车回去学校，没有再逛，下次再约。</p>
+<h2 id="font-colorgreen输入r服务器网址font"><a class="markdownIt-Anchor" href="#font-colorgreen输入r服务器网址font"></a> <font color=green>输入R服务器网址</font></h2>
+<p>RStudio Server的默认端口是8787，所以我们打开浏览器，输入<code>服务器ip:8787</code>，就可以打开Rstudio。例如在Google浏览器网址栏中输入：192.168.1.130:8787，就会出现账户登录界面。</p>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-05-01-xvJpuN.png" alt="20220501xvJpuN" /></p>
+<h2 id="font-colorgreen输入linux用户名和密码登录font"><a class="markdownIt-Anchor" href="#font-colorgreen输入linux用户名和密码登录font"></a> <font color=green>输入Linux用户名和密码登录</font></h2>
+<p>用户名和密码是创建用户给大家设置过，可以查看<code>/Lab-Shared-Folder/Protocols/Bioinformatics method</code> 路径下的文件《系统进化树构建》，有相应的说明。<br />
+<img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-04-19-e50ftc.png" alt="20220419e50ftc" /></p>
+<h2 id="font-colorgreen正常使用界面font"><a class="markdownIt-Anchor" href="#font-colorgreen正常使用界面font"></a> <font color=green>正常使用界面</font></h2>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-04-19-f40ife.png" alt="2022-04-19-f40ife" /></p>
+]]></content>
+      <categories>
+        <category>科研之路</category>
+      </categories>
+      <tags>
+        <tag>R</tag>
+        <tag>教程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>离家回归</title>
+    <url>//2018/08/23/%E7%A6%BB%E5%AE%B6%E5%9B%9E%E5%BD%92/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![railway，图片来自于pexels网站](https://upload-images.jianshu.io/upload_images/3478485-7fdc279179af9b76.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+<span id="more"></span>
+<blockquote>
+<p><strong>离开，亦是回归。</strong></p>
+</blockquote>
+<p>8月22日，星期三，公元2018年。<br />
+在12306官网上，已订购了今天下午的车票。像往日一样，心中突然生出无尽的焦虑，极其不安定。离开家（现在我将它定义为：父母开的只为你一人服务的旅馆），意味着回归，回到每天充满焦虑的生活。2015年毕业之后，似乎再也没有安稳的日子，总要去面对去担当，去谋划。我不知道自己时候是否已然锻炼成一名合格的人生蓝图设计师，我设计的很抽象，就来我自己也看不出，领悟不出其中的意义。<br />
+时间是下午3点，高铁站的KFC，看着价格，心里突然犹豫不定。买，觉得太贵；不买，半途饿惨。已经体验过无数次半途饿个半死，似乎没有得到教训，不清楚人生的错一犯再犯，从不反思，是从什么时候开始。买了一个汉堡和一对鸡翅，离开车20分钟，吃得很快，味道很咸，没有想象中的美味。<br />
+动车缓缓的驶入，又缓缓的驶出站台。我也跟它很像，从来都是在家这个站台驶入驶出，不是我的终点站，而我又找不到我的终点站，一直在人生这条轨道上永远跑着。路过太多，错过太多；遇到太多，又错过太多。拿出佛洛姆的《爱的艺术》，再一次开启。我发誓，我已经看过很多遍，请不要怀疑我。但是很遗憾，每次看过都会忘得七七八八，而再次开启，又觉得能够记起一切。</p>
+<blockquote>
+<p><strong>爱，是一门艺术。要求我们必须努力发展自己的全部人格，从而来达到创造倾向性。</strong></p>
+</blockquote>
+<p>这句话中的关键词：<strong>全部人格和创造倾向性</strong>，我至今还是没有办法理解。半个小时，一眨眼就过去，留在了轨道上。广播已经开始响起；“前方到站，杭州站，请旅客整理好自己的行李，准备下车”。我只需将书塞入包中，起身就可以离开，丝毫没有留恋。<br />
+几年里的终点到了，几年后是否改变，我没法笃定地给出答案，未来可以见分晓。</p>
 ]]></content>
       <categories>
         <category>随记</category>
       </categories>
       <tags>
-        <tag>泰国菜</tag>
-        <tag>大学</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>印度，漂浮的次大陆</title>
-    <url>//2018/09/06/%E5%8D%B0%E5%BA%A6%EF%BC%8C%E6%BC%82%E6%B5%AE%E7%9A%84%E6%AC%A1%E5%A4%A7%E9%99%86/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![印度，漂浮的次大陆](http://upload-images.jianshu.io/upload_images/3478485-b11c23f0c98ac99f.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-> 俞敏洪老师的推荐，于是就去读了郭建龙一个系列的游记。《穿越百年中东》、《骑车去元朝》、《印度，漂浮的次大陆》和《三千佛塔烟云下》都读了一遍，信息量超级大，不过读起来特别的畅快，特别的流畅。
-> 郭建龙是个文化旅者，总是亲身去体验某个地方的文化，历史，地理，政治，经济和宗教，最后凭借自己的文笔，写出独具特色的游记，我个人非常喜欢，推荐阅读。
-> 内容摘录自郭建龙的《印度，漂浮的次大陆》这本书。
-<span id="more"></span>
-<p>哈拉帕（巴基斯坦），洛塔尔（印度）。<br />
-洛塔尔遗址，手工业和贸易促使其如此的发达。然而，公元前2000年左右，整个印度河文明都衰落了。<br />
-在欧洲，存在着非洲两次走出的古人类相遇证据。那就是第二次的克罗马农人取代了第一次的尼安德特人，成为现代欧洲人的祖先。那么古印度人的祖先从哪里过来？在比莫贝特卡，发现了穴居文化。</p>
-<p>印度人之前一直以雅利安人的血统引以为豪，认为自己是雅利安人的后裔。但是当考古发现，公元前5000，已经在印度河流域出现了本土的古印度文明，比雅利安人入侵印度次大陆早千年，不得不承认存在高度发达的古印度文明。但印度人和雅利安人有着紧密的联系，**英国人威廉琼斯公爵从语言学上发现，印度的梵语，拉丁语和欧洲的语言有着同一起源，从而也证明了确实雅利安人和印度人有着紧密的联系。**而后来的考古发现也证明，大约在公元前3000年，在中亚大草原、里海附近的雅利安人，分为两支：一支进入欧洲，成为现代欧洲人的祖先；而另一支，经伊朗阿富汗，翻过兴都库什山脉，顺着开伯尔山口进入印度河谷地，最终扩散到整个印度。为什么古老发达的文明无法抵抗雅利安人？因为，在公元前2000左右，古印度文明开始衰落，而此时雅利安人正好在恰当的时机到来，从而入侵整个印度。</p>
-<p>**虽然古印度文明消亡了，但是人种并不会就此消失。**在现代的南印度，存在达罗毗荼人，可能与印度河文明的人种一致，且他们拥有自己的语言系统。**现在的印度，分为两种语系，在南方属于达罗毗荼语系，而在北方则是属于梵语。**在印度神奇的是，雅利安人已经入侵印度几千年了，到现在为止，雅利安人和达罗毗荼人还没有完成融合，跟中国社会的情况完全不同。原因：<strong>强大的种姓制度。</strong></p>
-<h2 id="印度教"><a class="markdownIt-Anchor" href="#印度教"></a> 印度教</h2>
-<p>雅利安人为了防止自己被当地原始居民同化，从而建立了严格的种姓制度，出现了<strong>四种种姓：婆罗门，刹帝什，吠舍和首陀罗</strong>。分别担任宗教和精神领袖，国王和武士，从事商业，最底层。还有没有种姓的贱民。规定人一出生就确定了种姓，永远也不可能改变，无法进阶到更高的种姓。但是，如果长期下去，最底层的人会越来越多，最终会通过暴力手段推翻这种限制，然而<strong>为什么这种制度能够如此长久的维持？<strong>只能通过宗教信仰手段，将</strong>种姓制度融入到宗教</strong>之中，使其能够自动的被大众接受，这个宗教就是<strong>印度教</strong>。教义强调：人的灵魂是可以轮回的，这一世为人，下一世可能为动物，也可能身为更高种姓的人类，所以给了人们虚假的承诺，使得人们遵从现有的制度而不加以反抗，与中国的儒教相似。</p>
-<p><strong>世界上所有的宗教一般都包括了信仰和伦理两方面，其中信仰是个人化的体验，关系到个人与神之间的沟通，而伦理是一种社会化的体验，主要强调人与人之间的交流。侧重点的不同，宗教分为两大类：基督教和佛教侧重信仰，而印度教和儒教侧重伦理。伊斯兰教处在两者中间。</strong></p>
-<p>在这一时期，印度的神祇也得到了确立，形成了<strong>三大主神：梵天，毗湿奴和湿婆以及无所不包的各路神仙</strong>。其中湿婆是受到最广泛崇拜的主神，同时也是生殖力的代表，于是有了崇拜生殖和崇拜阴茎的传统。湿婆的化身往往是一根石柱，象征着阴茎和生殖力，叫做林伽。在西藏的外喜马拉雅山脉中，有一座形同阴茎的山峰，叫做冈仁波齐，在印度称为凯拉什山，是藏传佛教，苯教和印度教的神山。印度人将前往冈仁波齐看成朝圣的极致。</p>
-<p>同时这一时期，印度史诗也形成。最早的梵语经典**《吠陀经》**成型，<strong>印度的传奇史诗《罗摩衍那》和《摩诃婆罗多》逐渐流传开来。</strong>《罗摩衍那》家喻户晓。</p>
-<h2 id="佛教"><a class="markdownIt-Anchor" href="#佛教"></a> 佛教</h2>
-<p><strong>佛陀，或称释迦摩尼，名字叫悉达多乔达摩</strong>。出身在印度十六国时期的迦毗罗卫国的<strong>蓝毗尼</strong>的一棵树下，现在的尼泊尔境内。父亲是迦毗罗卫国的国王净饭王，这个小国依附于大国拘萨罗，是由雅利安人种释迦族建立的，属于刹帝什种姓。母亲摩耶夫人。年轻的悉达多，在王宫中长大，不问世事，整天沉迷爱情俗世，有三位妻子和自己的孩子，在孩子出身的那一年，当悉达多看到世外的人所受的苦难，于是开始思考人生的意义，离开皇宫开始寻找答案。在菩提迦耶的菩提树下，悉达多决定放弃苦修，开始打坐静修。本来他的五位随从认为他已经放弃寻找真理了，于是离开了他。不久，他就彻底领悟，找到了属于自己的<strong>一套理论体系</strong>，**人生的意义是使得自己死后的灵魂得到永恒，也是与印度教类似的轮回机制，但是佛教的是认为轮回本身是一种痛苦，需要跳出轮回，灵魂才能得到永恒。那么如何跳出这个永无止境的轮回呢？<strong>悉达多构想出了</strong>“四谛”**理论体系：<strong>苦谛</strong>，指的人生的一切苦难。<strong>集谛</strong>，贪嗔痴三毒是苦难产生的原因。<strong>灭谛</strong>，消灭苦难就要消灭三毒。<strong>道谛</strong>，修行的行为规范，指八正道，帮助人们消灭三毒的方法，修行得当的人都可以跳出轮回之苦，从而达到活着的意义和死后的永恒。</p>
-<p><strong>四谛</strong>是悉达多理论的核心，因为这个体系<strong>打破了种姓的界限，强调了人生的平等</strong>。任何人要是想跳出轮回，必须要按这种修行方式进行。</p>
-<p>获得顿悟的悉达多没有立即离开，继续思考完善体系，后来来到了一个叫做鹿野苑的地方，收了第一批信徒。这就是之前离开他的五个人，是其父亲在其离开时选派的五位宗室子弟。也就是佛教史上有名的五比丘。也就在此刻开始，佛教的佛、法、僧已经圆满集结，悉达多乔达摩也正式成为佛陀。之后继续传教，走向全国。最后，在晚年，佛陀带了少量弟子来到名叫拘尸那罗的地方，一病不起，不久圆寂与此。而此时的迦毗罗卫国也被拘萨罗消灭，而最后拘萨罗也被摩揭陀国所灭，为印度的统一打下了基础。</p>
-<h2 id="耆那教"><a class="markdownIt-Anchor" href="#耆那教"></a> 耆那教</h2>
-<p>耆那教<strong>人口很少</strong>的宗教，但是在印度却有着及其重大的影响，甚至在<strong>影响力上超过了佛教</strong>。主要有两方面，第一，<strong>更强调苦行</strong>，对于人的要求高，更小众，使得能够接受的它的人很少，但是却是非常的坚定；第二，<strong>没有国际化</strong>。耆那教的创始人，<strong>筏陀摩耶被称为大雄</strong>，他的活动范围与佛陀重叠，也是在摩揭陀国的影响范围内。他强调的是苦行，为了完全达到断绝物欲的地步，甚至拒绝穿衣服，连身上有屎尿都毫不在意。而佛陀是放弃苦修的，过着质朴的生活，不是特意吃苦。</p>
-<p><strong>耆那教和印度教的神庙在外表上有相似之处，但是也有区别</strong>。耆那教的外部花式更加简单，而印度教的华丽高大。内部，耆那教的装饰复杂华丽，奢华无比，而印度教的却是及其简单，最简单的石板搭建的。</p>
-<h2 id="超级大国的更替"><a class="markdownIt-Anchor" href="#超级大国的更替"></a> 超级大国的更替</h2>
-<p>中国对印度的影响在公元前后到达，在这之前，对印度影响至深的是西方的希腊传导过去的事件，<strong>亚历山大的东征</strong>。但在亚历山大东征统治世界之前，是西亚的波斯文明主导全世界的强大政权。</p>
-<p>当西亚的新巴比伦帝国衰亡之后，伊朗境内兴起了一个新的帝国——<strong>波斯的阿契美尼德王朝</strong>，这是后来统治中亚的历代波斯王朝中的第一个。西亚的政治中心也从伊拉克两河流域转移到了伊朗境内。</p>
-<p>公元前7世纪，当时整个波斯在米底人的统治下。阿契美尼德死后，其儿子脱离了米底王国，经历过几代的继承，到了<strong>居鲁士二世</strong>统治时期，消灭了米底人的政权，还将前霸主新巴比伦帝国也消灭了。此后其儿子冈比西斯二世征服了埃及和非洲的大批领土，而其继承者<strong>大流士一世</strong>却改变了征服方向，开始向东方，越过开伯尔山口，进入印度河平原地区。之后又改变方向，又向西，入侵了希腊人的领土，<strong>从此将不起眼的希腊和欧洲带入了世界的舞台</strong>。希腊本来在东方的眼里根本不值得一提，只是生意人，他们航海走向各地，建立殖民地，只是为了做生意而不是扩张领土。<strong>波斯人入侵希腊，使得希腊各个弱小的城邦抱团抵抗，爆发出了强大的力量，使得波斯人战败</strong>。大流士一世之后，儿子薛西斯发动了第二次入侵，希腊人再次胜利，此后波斯就进入了衰落期，而西方兴起了新的霸主希腊。</p>
-<p>但希腊的这种团结不久就分裂，两个最大的城邦<strong>雅典和斯巴达</strong>开始争夺希腊的领导权，最终在波斯人的帮助下，斯巴达打败了雅典。但结果是两败俱伤。</p>
-<p>与此同时，一个希腊人看不起的<strong>希腊北部的马其顿</strong>兴起了，马其顿国王<strong>腓力二世</strong>打败了雅典和科林斯强权，使整个<strong>希腊半岛在历史上第一次统一</strong>。腓力二世的儿子就是著名的<strong>亚历山大大帝</strong>，这时整个希腊已经属于马其顿，他先进军<strong>小亚细亚</strong>，再把<strong>埃及</strong>纳入自己的版图，埃及的古老文明从此消失。接着进军<strong>波斯</strong>，打败波斯王大流士三世，最终波斯王朝覆灭。之后继续挥兵<strong>中亚阿富汗</strong>，塔吉克斯坦直到新疆以西的<strong>河中地区</strong>。突然就做了一个决定，向<strong>印度</strong>进军。<strong>此时的印度，内部也在进行着激烈的整合。摩揭陀国成为胜利者，几乎统一了全国</strong>。摩揭陀共包含了四个朝代，最后的难陀王朝是非常重要的承上启下的朝代，这时的印度的疆域已经有目前的一半大小，囊括整个北印度，和现代孟加拉国和缅甸的一部分。正是在这个朝代，亚历山大挥师进入印度。在印度，面临的是许多具有单独作战实力地区，如同游击战，亚历山大大帝陷入了全面作战的汪洋大海中，加之印度南北跨度几千公里，气候复杂，最后被迫撤退。不久，<strong>33岁的亚历山大大帝在巴比伦得病去世</strong>，留下了许多亚历山大的城市和希腊化的世界，其余化为传说。而这一次入侵对于印度的政治影响，间接促成了本土的伟大帝国的出现——<strong>孔雀帝国，印度第一次统一</strong>。</p>
-<p>亚历山大大帝撤退，使得整个西北印度陷入了权利的真空状态。原有的政治势力被破坏掉了，犍陀罗等国家被征服，另一方面难陀王朝还没有将控制力延伸过去。这时一个名叫<strong>旃陀罗笈多孔雀的人</strong>汇集大军向摩揭陀的难陀王朝进军，这时的难陀王朝也已经腐败无能，也希望新的君王接管权力。大军压境，难陀国王选择退位，避免了一场血腥的战争，孔雀王朝继承了难陀王打下了的江山。旃陀罗笈多孔雀最后在一个山洞里修行，信奉耆那教，最后默默的死去。他的孙子<strong>阿育王</strong>经过继承战，据说杀死了自己的99个亲兄弟，从自己的父亲频头娑罗哪里得到了孔雀王朝的宝座。阿育王前半生在杀戮中度过，而后半生却信奉佛教，在全国建造了数万座佛塔，然而现在剩下的只有<strong>桑吉大塔</strong>和鹿野苑的<strong>答枚克塔</strong>。</p>
-<p><strong>贵霜人</strong>的历史，最早可以从中国的战国时期找到痕迹，在中国西部的甘肃河西走廊一带，有一个半游牧民族在这里生活了很久。从某种程度上来说，<strong>月氏人</strong>是一个过渡民族，恰好夹在了游牧和定居之间，且受到了双方的威胁。其中在南方是定居的<strong>华夏民族</strong>，经过了春秋战国，秦国正在崛起，而在北方则是<strong>游牧民族匈奴</strong>。事实证明，游牧民族的威胁更大。直到秦朝末年，匈奴还比月氏人弱小，作为寄主国，当时匈奴的王位继承人只能以人质身份在月氏人当中生活，最后一位是叫做<strong>冒顿</strong>的匈奴人，没有受到善待，仇视月氏人，最后其逃回自己的部落，成为新的单于，从此以后月氏人进入了噩梦时期，<strong>冒顿挥师南下，屠杀，公元前202年左右，月氏人被迫放弃了肥沃的河西走廊，向西迁移。<strong>公元前177年左右，冒顿再次击败月氏人，被迫再次迁移，一部分南下进入了</strong>青海境内</strong>，被当地人同化；另一部分继续西迁，到达了新疆的<strong>准葛尔盆地</strong>。公元前162年，冒顿的儿子老上，再次打败月氏人，将月氏王的头颅砍下，当了酒器。只好再次西迁到了<strong>新疆的伊犁一带</strong>。这一次的西迁，引起了<strong>连锁反应</strong>，原本在伊犁这一带的<strong>斯基泰人向西南运动</strong>，进入了阿富汗境内。而这时在伊犁的月氏人因为被汉王朝打击的匈奴人的西迁，只好向西方的中亚地区前进，进入了著名<strong>河中地区</strong>，也就是阿姆河和锡尔河中间地带。而在河中地区，遭到了当地人的驱赶，不得不向南，进入了阿富汗伊朗境内，使得在这里的<strong>斯基泰人再次向南移动</strong>。在此之前，阿富汗和伊朗境内居住者安息人和希腊人，亚历山大征服中亚后，希腊人的后裔在这里建立起了大夏王国，在斯基泰人和月氏人的压力下，<strong>巴克特里亚人纷纷南下，进入印度境内，成为了入侵印度的第一波势力</strong>。</p>
-<p>由匈奴人和月氏人搅动的一系列民族迁徙活动，将一波一波的人们赶往了印度次大陆。张骞出使西域本来想联合月氏人给匈奴人来个东西夹击，但是月氏人拒绝了，不想再回到中国，此后月氏人彻底离开了中国的范围。<strong>公元前140年</strong>，在斯基泰人之后，月氏人也南下到了<strong>大夏边境</strong>，此时月氏人已经分成了5个部落，而贵霜就是其中的一个。之后打败了西部的安息国，继续占领大夏东部地区。此时接触到了大夏的希腊化文明，<strong>月氏人开始希腊化，从此变成了定居民族</strong>。并发行自己的货币和开始发展商贸关系。这时也受到了印度佛教的影响，开始将佛教作为他们的宗教。公元前1世纪初，<strong>贵霜部落</strong>打败其余部落，建立了<strong>贵霜帝国</strong>。在印度希腊人、印度斯基泰人、印度安息人之后，印度贵霜帝国正式登场。</p>
-<p><strong>维查耶纳加尔</strong>是印度教最后一个伟大帝国，负有捍卫印度教、抵抗伊斯兰教的重任。毁灭后，伊斯兰教长驱直入，在次大陆占据了主导地位，开始了几百年的伊斯兰政权时期。实际上，<strong>维查耶纳加尔就是为了对抗伊斯兰才出现</strong>。当北印度处于德里苏丹国统治的时候，南印度曾经强大的遮卢迦王国和拉什特拉库塔王国已经消亡。取而代之的四个小王国，分别是雅达瓦、卡卡提亚，潘地亚王国和霍伊萨拉王国。</p>
-<p>阿拉-乌德-丁用一生与南印度各国征战，其中就征服了雅达瓦和霍伊萨拉。前者为穆斯林提供了新的都城，而后者灭亡使得维查耶纳加尔在其土地上成长起来。</p>
-<p>巴马尼苏丹国的出现，这个伊斯兰国家的兴起与德里苏丹穆罕穆德图格鲁克迁都失败有关。比达尔城是该国的首都，与汉皮相比，伊斯兰教有最先进的战争理念，而印度教徒却是将首都看成生活的地方，由此也可以看出，两者在对战是的成败。南印度就在这两个教权国家的残忍战争中被扭曲，直到其中一个国家垮掉。最后，巴马尼苏丹最先垮掉，分为五个小苏丹国，这五个小国又内斗，最后成为三个苏丹国，最后联合起来，打败了维查耶纳加尔国，历史仅留下了汉皮这片废墟。此时，南印度也成了伊斯兰教的天下。这三个苏丹国也进入了黄金时代，而印度教最后的伟大政权也终于轰然倒塌。这时候，同属于伊斯兰教的来自北方的莫卧儿人出现了。</p>
-<p>在<strong>中世纪</strong>，虽然印度的佛教被印度教取代，但仍旧是世界的<strong>佛教中心</strong>，其中最有名的就是那烂陀大学，学术圣殿。但是在<strong>12世纪</strong>时，当古尔人到来，穆罕默德首领下的努力将军库特卜<strong>占领毁灭了那烂陀大学</strong>，<strong>使得佛教从印度消失</strong>。13世纪初，库特卜成立德里苏丹国，在莫卧尔人到来前，控制印度300多年。<strong>德里，现在印度的首都开始登上历史舞台。</strong></p>
-<p><strong>13世纪，成吉思汗带着蒙古人席卷了整个世界</strong>，在中国建立了元朝，在波斯建立了<strong>伊尔汗国</strong>，在俄罗斯人的土地上建立了<strong>金帐汗国</strong>，在如今的新疆西部、中亚建立了<strong>察合台汗国</strong>，在新疆北部和蒙古东部建立了<strong>窝阔台汗国</strong>。这五大汗国占领了当时已知世界的一大半。之后蒙古很快衰败，在<strong>察合台汗国</strong>的土地上，在14世纪后半期突厥人<strong>帖木儿</strong>威慑整个中亚、西亚和中欧，甚至占领了印度的一部分。但是在进攻明朝时，突然途中去世，此后帖木儿帝国分崩离析。<strong>然而此时，中亚出现了一位蒙古人和突厥人的双重后裔，巴布尔</strong>。让他占领印度，并开创了一个伟大的王朝。<br />
-**巴布尔在父系上是帖木儿的直系后裔，从母系来说，是成吉思汗的后裔。**因此，从1483年出生，就带着世界上最有血性的两个人的基因。</p>
-<p>河中地区的城市撒马尔罕是帖木儿的都城，要称霸中亚必须拿下撒马尔罕，但是命中注定不属于巴布尔，一世经过三次进攻，却一次都没有成功，中亚的大门从此关闭。然而，经过分析，印度是个不错的可以暂时栖息之地，前四次进攻印度只是在外围，现在的巴基斯坦境内，没有深入到德里地区，然而第五次，德里苏丹出现内乱，有人请他去去德里，于是决心进军德里。<strong>这次战役的胜利，决定了印度历史的未来300年，建立了一个伟大的帝国。<strong>巴布尔在阿拉格建立了帝国的首都，阿拉格是用艺术和建筑征服印度，其后代也大都继承了祖先的艺术气质，使得</strong>莫卧尔成为艺术世界的巅峰</strong>。此后，巴布尔平定了整个北部地区，不久去世，他的儿子胡马雍继承王位，但此时的帝国还没有稳定，<strong>胡马雍</strong>不善战，被东方孟加拉的将军舍尔汗打败，被赶出了印度，退到了阿富汗。而舍尔汗在位期间，使整个印度政局稳定。死后，胡马雍很快从其后代那里夺回了印度，继承了舍尔汗开创的一系列制度，并重新将首都迁到了德里。之后不小心摔死在图书馆，成为第一个葬在印度土地上的莫卧尔皇帝。</p>
-]]></content>
-      <categories>
-        <category>读书笔记</category>
-      </categories>
-      <tags>
-        <tag>印度</tag>
-        <tag>郭建龙</tag>
+        <tag>家</tag>
       </tags>
   </entry>
   <entry>
