@@ -1224,7 +1224,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #45ffff;
+  background: #2d138e;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2625,13 +2625,13 @@ ul.breadcrumb li + li:last-child {
   background: #fc6423;
 }
 .headband {
-  height: 3px;
+  height: 1px;
   background: rgba(0,0,0,0.702);
 }
 .site-meta {
-  padding: 20px 0;
+  padding: 26px 0;
   color: #fff;
-  background: #3c3732;
+  background: #100f0f;
 }
 .site-title {
   display: inline-block;
@@ -2664,4 +2664,15 @@ ul.breadcrumb li + li:last-child {
   color: #fc6423;
   border-bottom: none;
   border-bottom: 1px solid #fc6423;
+}
+body {
+  background: url("/images/backstar.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 50% 50%;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
 }
