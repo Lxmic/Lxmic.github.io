@@ -570,37 +570,6 @@ CSS添加到HTML的方式有三种：</p>
       </tags>
   </entry>
   <entry>
-    <title>HTML5（6）——标题</title>
-    <url>//2018/10/06/HTML5%EF%BC%886%EF%BC%89%E2%80%94%E2%80%94%E6%A0%87%E9%A2%98/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![场景似曾相识](https://upload-images.jianshu.io/upload_images/3478485-81d5de5d560b5248.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-> 还有几个小时就要离开家了，每次都在离开的时候，才会变得清醒一些。上次一节是讲属性，今天我们来学习标题相关的内容。
-<span id="more"></span>
-<h2 id="font-colorgreenhtml标题font"><a class="markdownIt-Anchor" href="#font-colorgreenhtml标题font"></a> <font color="green">HTML标题</font></h2>
-<p>通常最多只有6级标题，一般情况我想都用不了这么多层次。</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>Heading 1<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h2</span>&gt;</span>Heading 2<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h3</span>&gt;</span>Heading 3<span class="tag">&lt;/<span class="name">h3</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h4</span>&gt;</span>Heading 4<span class="tag">&lt;/<span class="name">h4</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h5</span>&gt;</span>Heading 5<span class="tag">&lt;/<span class="name">h5</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h6</span>&gt;</span>Heading 6<span class="tag">&lt;/<span class="name">h6</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-a26bca45dcd4823b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="一般六级标题" /></p>
-<h2 id="font-colorgreen标题很重要font"><a class="markdownIt-Anchor" href="#font-colorgreen标题很重要font"></a> <font color="green">标题很重要</font></h2>
-<p>搜索引擎利用标题来建立网页结构和内容的索引。标题应该一级一级的利用，而且标题只能用于标题，而不能使用在让字体变大的情况下。</p>
-<h2 id="font-colorgreen标题字体大小font"><a class="markdownIt-Anchor" href="#font-colorgreen标题字体大小font"></a> <font color="green">标题字体大小</font></h2>
-<p>一般标题字体大小是网页默认的，而我们可以通过利用style属性，和CSS中font-size属性，来定制标题的大小，如</p>
-<p><code>&lt;h1 style=&quot;font-size:60px;&quot;&gt;Heading 1&lt;/h1&gt;</code></p>
-<h2 id="font-colorgreenhtml水平分割线font"><a class="markdownIt-Anchor" href="#font-colorgreenhtml水平分割线font"></a> <font color="green">HTML水平分割线</font></h2>
-<p><code>&lt;hr&gt;</code>标签是水平分割线，用来将网页按主题分块，经常用来隔开不同的内容。</p>
-<figure class="highlight apache"><table><tr><td class="code"><pre><span class="line"><span class="section">&lt;h1&gt;</span><span class="attribute">This</span> is heading <span class="number">1</span>&lt;/h<span class="number">1</span>&gt;</span><br><span class="line"><span class="section">&lt;p&gt;</span><span class="attribute">This</span> is some text.&lt;/p&gt;</span><br><span class="line"><span class="section">&lt;hr&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="section">&lt;h2&gt;</span><span class="attribute">This</span> is heading <span class="number">2</span>&lt;/h<span class="number">2</span>&gt;</span><br><span class="line"><span class="section">&lt;p&gt;</span><span class="attribute">This</span> is some other text.&lt;/p&gt;</span><br><span class="line"><span class="section">&lt;hr&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="section">&lt;h2&gt;</span><span class="attribute">This</span> is heading <span class="number">2</span>&lt;/h<span class="number">2</span>&gt;</span><br><span class="line"><span class="section">&lt;p&gt;</span><span class="attribute">This</span> is some other text.&lt;/p&gt;</span><br></pre></td></tr></table></figure>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-bd54e705f512b60a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="水平线" /></p>
-<h2 id="font-colorgreenhtmlhead元素font"><a class="markdownIt-Anchor" href="#font-colorgreenhtmlhead元素font"></a> <font color="green">HTML<code>&lt;head&gt;</code>元素</font></h2>
-<p><code>&lt;head&gt;</code>元素和标题没有什么关系。它是网页源数据的容器，是放在<code>&lt;html&gt;</code>和<code>&lt;body&gt;</code>标签之间。</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">title</span>&gt;</span>My First HTML<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;UTF-8&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>HTML5入门</category>
-      </categories>
-      <tags>
-        <tag>HTML5</tag>
-        <tag>标题</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>HTML5（7）——段落</title>
     <url>//2018/10/06/HTML5%EF%BC%887%EF%BC%89%E2%80%94%E2%80%94%E6%AE%B5%E8%90%BD/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -630,6 +599,37 @@ CSS添加到HTML的方式有三种：</p>
       <tags>
         <tag>HTML5</tag>
         <tag>段落</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>HTML5（6）——标题</title>
+    <url>//2018/10/06/HTML5%EF%BC%886%EF%BC%89%E2%80%94%E2%80%94%E6%A0%87%E9%A2%98/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![场景似曾相识](https://upload-images.jianshu.io/upload_images/3478485-81d5de5d560b5248.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+> 还有几个小时就要离开家了，每次都在离开的时候，才会变得清醒一些。上次一节是讲属性，今天我们来学习标题相关的内容。
+<span id="more"></span>
+<h2 id="font-colorgreenhtml标题font"><a class="markdownIt-Anchor" href="#font-colorgreenhtml标题font"></a> <font color="green">HTML标题</font></h2>
+<p>通常最多只有6级标题，一般情况我想都用不了这么多层次。</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>Heading 1<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h2</span>&gt;</span>Heading 2<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h3</span>&gt;</span>Heading 3<span class="tag">&lt;/<span class="name">h3</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h4</span>&gt;</span>Heading 4<span class="tag">&lt;/<span class="name">h4</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h5</span>&gt;</span>Heading 5<span class="tag">&lt;/<span class="name">h5</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h6</span>&gt;</span>Heading 6<span class="tag">&lt;/<span class="name">h6</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-a26bca45dcd4823b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="一般六级标题" /></p>
+<h2 id="font-colorgreen标题很重要font"><a class="markdownIt-Anchor" href="#font-colorgreen标题很重要font"></a> <font color="green">标题很重要</font></h2>
+<p>搜索引擎利用标题来建立网页结构和内容的索引。标题应该一级一级的利用，而且标题只能用于标题，而不能使用在让字体变大的情况下。</p>
+<h2 id="font-colorgreen标题字体大小font"><a class="markdownIt-Anchor" href="#font-colorgreen标题字体大小font"></a> <font color="green">标题字体大小</font></h2>
+<p>一般标题字体大小是网页默认的，而我们可以通过利用style属性，和CSS中font-size属性，来定制标题的大小，如</p>
+<p><code>&lt;h1 style=&quot;font-size:60px;&quot;&gt;Heading 1&lt;/h1&gt;</code></p>
+<h2 id="font-colorgreenhtml水平分割线font"><a class="markdownIt-Anchor" href="#font-colorgreenhtml水平分割线font"></a> <font color="green">HTML水平分割线</font></h2>
+<p><code>&lt;hr&gt;</code>标签是水平分割线，用来将网页按主题分块，经常用来隔开不同的内容。</p>
+<figure class="highlight apache"><table><tr><td class="code"><pre><span class="line"><span class="section">&lt;h1&gt;</span><span class="attribute">This</span> is heading <span class="number">1</span>&lt;/h<span class="number">1</span>&gt;</span><br><span class="line"><span class="section">&lt;p&gt;</span><span class="attribute">This</span> is some text.&lt;/p&gt;</span><br><span class="line"><span class="section">&lt;hr&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="section">&lt;h2&gt;</span><span class="attribute">This</span> is heading <span class="number">2</span>&lt;/h<span class="number">2</span>&gt;</span><br><span class="line"><span class="section">&lt;p&gt;</span><span class="attribute">This</span> is some other text.&lt;/p&gt;</span><br><span class="line"><span class="section">&lt;hr&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="section">&lt;h2&gt;</span><span class="attribute">This</span> is heading <span class="number">2</span>&lt;/h<span class="number">2</span>&gt;</span><br><span class="line"><span class="section">&lt;p&gt;</span><span class="attribute">This</span> is some other text.&lt;/p&gt;</span><br></pre></td></tr></table></figure>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-bd54e705f512b60a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="水平线" /></p>
+<h2 id="font-colorgreenhtmlhead元素font"><a class="markdownIt-Anchor" href="#font-colorgreenhtmlhead元素font"></a> <font color="green">HTML<code>&lt;head&gt;</code>元素</font></h2>
+<p><code>&lt;head&gt;</code>元素和标题没有什么关系。它是网页源数据的容器，是放在<code>&lt;html&gt;</code>和<code>&lt;body&gt;</code>标签之间。</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">title</span>&gt;</span>My First HTML<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;UTF-8&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>HTML5入门</category>
+      </categories>
+      <tags>
+        <tag>HTML5</tag>
+        <tag>标题</tag>
       </tags>
   </entry>
   <entry>
@@ -1932,6 +1932,25 @@ float——确定图片是否为浮动，而不是在一个固定的地方。</p
       </tags>
   </entry>
   <entry>
+    <title>碟中谍6: 全面瓦解</title>
+    <url>//2018/09/01/%E7%A2%9F%E4%B8%AD%E8%B0%8D6-%E5%85%A8%E9%9D%A2%E7%93%A6%E8%A7%A3/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![碟中谍6：全面瓦解](https://upload-images.jianshu.io/upload_images/3478485-ba43addff850f0fb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+<p>9月1日，星期六，公元2018年。</p>
+<span id="more"></span>
+<p>我从周五看到了周六，从8月看到了9月。因为电影近140分钟，我从10点开始，自然就看到了第二天凌晨。</p>
+<p>故事一开始，就发布一个任务，亨特自然就接受了，关于夺回核武器，防止使徒们（恐怖组织成员）的大规模投弹。接受之后，必然按着故事线走下去。一切都很精彩，法国巴黎和英国伦敦以及克什米尔地区的景观都是相当吸引眼球，很明显的好莱坞大片元素，场面非常宏大，视觉体验非常棒。此外，这么大年纪的阿汤哥，拍这部电影真是拼命。悬崖，直升机，跑酷等等都是很危险的动作，飞车大战，摩托车巴黎飙车，一切都非常刺激，整部影片几乎没有比较安静的场景。一切都快速的进行中，没有一刻停缓，因为要保护世界。</p>
+<p>好莱坞大片，必不可少的情节，那就是拯救地球，拯救全世界。都是机器宏大的目标，放眼全世界，就是救世主。有时候就会让你遐想，会有带入感，让你也感觉自己能拯救世界，也是一种精神上的吸引。情节依旧老套，又是防止大规模杀伤性武器被恐怖组织利用，不惜一切去组织，而且必然每次都是成功，能够拯救世界。</p>
+<p>可以说，碟中谍系列，是很好看的特工电影，看着很刺激，这次第六部的上映，也是让影迷们产生一种情怀，当然为了刺激宏大场面，也是完全可以看得，基本不会让你失望太过。</p>
+]]></content>
+      <categories>
+        <category>影评领域</category>
+      </categories>
+      <tags>
+        <tag>电影</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>疫情记</title>
     <url>//2020/04/12/%E7%96%AB%E6%83%85%E8%AE%B0/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -1959,25 +1978,6 @@ float——确定图片是否为浮动，而不是在一个固定的地方。</p
       </categories>
       <tags>
         <tag>日记</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>碟中谍6: 全面瓦解</title>
-    <url>//2018/09/01/%E7%A2%9F%E4%B8%AD%E8%B0%8D6-%E5%85%A8%E9%9D%A2%E7%93%A6%E8%A7%A3/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![碟中谍6：全面瓦解](https://upload-images.jianshu.io/upload_images/3478485-ba43addff850f0fb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-<p>9月1日，星期六，公元2018年。</p>
-<span id="more"></span>
-<p>我从周五看到了周六，从8月看到了9月。因为电影近140分钟，我从10点开始，自然就看到了第二天凌晨。</p>
-<p>故事一开始，就发布一个任务，亨特自然就接受了，关于夺回核武器，防止使徒们（恐怖组织成员）的大规模投弹。接受之后，必然按着故事线走下去。一切都很精彩，法国巴黎和英国伦敦以及克什米尔地区的景观都是相当吸引眼球，很明显的好莱坞大片元素，场面非常宏大，视觉体验非常棒。此外，这么大年纪的阿汤哥，拍这部电影真是拼命。悬崖，直升机，跑酷等等都是很危险的动作，飞车大战，摩托车巴黎飙车，一切都非常刺激，整部影片几乎没有比较安静的场景。一切都快速的进行中，没有一刻停缓，因为要保护世界。</p>
-<p>好莱坞大片，必不可少的情节，那就是拯救地球，拯救全世界。都是机器宏大的目标，放眼全世界，就是救世主。有时候就会让你遐想，会有带入感，让你也感觉自己能拯救世界，也是一种精神上的吸引。情节依旧老套，又是防止大规模杀伤性武器被恐怖组织利用，不惜一切去组织，而且必然每次都是成功，能够拯救世界。</p>
-<p>可以说，碟中谍系列，是很好看的特工电影，看着很刺激，这次第六部的上映，也是让影迷们产生一种情怀，当然为了刺激宏大场面，也是完全可以看得，基本不会让你失望太过。</p>
-]]></content>
-      <categories>
-        <category>影评领域</category>
-      </categories>
-      <tags>
-        <tag>电影</tag>
       </tags>
   </entry>
   <entry>
@@ -2831,17 +2831,17 @@ KOH adjust the pH to 7.2</p>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
 <p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-08-18-BWKvDe.png" alt="2022-08-18-BWKvDe" /></p>
 <div class="note primary">
-            <p>石蜡切片是常用观察组织结构的方法，它的厚度在微米µM级别，属于半薄切片的范畴</p>
+            <p>石蜡切片是常用观察组织结构的方法，它的厚度在微米µM级别，属于半薄切片的范畴。</p>
           </div>
 <span id="more"></span>
 <h2 id="font-colorgreen一-固定font"><a class="markdownIt-Anchor" href="#font-colorgreen一-固定font"></a> <font color=green>一、固定</font></h2>
-<p>取新鲜的植株材料，用 ddH2O 清洗干净，放入FAA 固定液(100 mlFAA：5 ml福尔马林(5%)+5 ml冰醋酸(5%)+90 ml 70%或者50%的ethanol溶液(63%或45%)，固定过夜(8 h以上)。若样品漂浮在固定液表面，则抽真空，每次10 min，反复3~4 次，直至材料沉没在固定液中。抽真空后更换一次新鮮的固定液。</p>
+<p>取新鲜的植株材料，用 ddH2O 清洗干净，放入FAA 固定液(100 mlFAA：5 ml福尔马林(5%)+5 ml冰醋酸(5%)+90 ml 70%或者50%的ethanol溶液(63%或45%)，固定过夜(<font color=purple>8 h</font>以上)。若样品漂浮在固定液表面，则抽真空，每次10 min，反复3~4 次，直至材料沉没在固定液中。抽真空后更换一次新鮮的固定液。</p>
 <h2 id="font-colorgreen二-脱水font"><a class="markdownIt-Anchor" href="#font-colorgreen二-脱水font"></a> <font color=green>二、脱水</font></h2>
-<p>用 70%的乙醇溶液将固定好的植物材料清洗3-4次，除去残留在組织内的固定液及其结晶沉淀。为避免材料的急剧收缩，按以下顺序对材料进行乙醇浓度梯度逐级脱水：70%——85%——95%——100%——100%，每步至少 1h。</p>
+<p>用 70%的乙醇溶液将固定好的植物材料清洗3-4次，除去残留在組织内的固定液及其结晶沉淀。为避免材料的急剧收缩，按以下顺序对材料进行乙醇浓度梯度逐级脱水：70%——85%——95%——100%——100%，每步至少<font color=red>1 h</font>。</p>
 <h2 id="font-colorgreen三-透明化font"><a class="markdownIt-Anchor" href="#font-colorgreen三-透明化font"></a> <font color=green>三、透明化</font></h2>
-<p>以二甲苯作为透明剂，替换出植物组织体内的乙醇。按以下顺序对材料进行逐级透明化：无水乙醇/二甲苯(1:1)——二甲苯——二甲苯，每步至少1.5 h，可根据组织大小适当延长透明时间，直至组织完全透明。</p>
+<p>以二甲苯作为透明剂，替换出植物组织体内的乙醇。按以下顺序对材料进行逐级透明化：无水乙醇/二甲苯(1:1)——二甲苯——二甲苯，每步至少<font color=plum>1.5 h</font>，可根据组织大小适当延长透明时间，直至组织完全透明。</p>
 <h2 id="font-colorgreen四-浸蜡font"><a class="markdownIt-Anchor" href="#font-colorgreen四-浸蜡font"></a> <font color=green>四、浸蜡</font></h2>
-<p>用石蜡取代透明剂 ，使石蜡浸入植物组织内。按以下顺序对材料进行浸蜡：二甲苯/石蜡(1:1)——石蜡——石蜡，其中二甲苯/石蜡(1:1)一步可过夜(8 h以上)，每次纯石蜡浸渍至少3 h。</p>
+<p>用石蜡取代透明剂 ，使石蜡浸入植物组织内。按以下顺序对材料进行浸蜡：二甲苯/石蜡(1:1)——石蜡——石蜡，其中二甲苯/石蜡(1:1)一步可过夜(<font color=yellowgreen>8 h</font>以上)，每次纯石蜡浸渍至少<font color=brown>3 h</font>。</p>
 <h2 id="font-colorgreen五-包埋font"><a class="markdownIt-Anchor" href="#font-colorgreen五-包埋font"></a> <font color=green>五、包埋</font></h2>
 <p>将已融化的纯石蜡倾倒入准备好的锡纸模具中，用加热过的镊子将材料放入模具中，使其完全浸没于石蜡中，冷却后，放入4°C冰箱中备用。</p>
 <h2 id="font-colorgreen六-切片-展片font"><a class="markdownIt-Anchor" href="#font-colorgreen六-切片-展片font"></a> <font color=green>六、切片、展片</font></h2>
@@ -2854,13 +2854,13 @@ KOH adjust the pH to 7.2</p>
 <ol start="2">
 <li>将ddH2O滴加在涂有多聚赖氨酸的载玻片上，把蜡带的反面漂浮其上并放在烫板上展片(展片机提前设置为42°C) 。待蜡带完全展开后，吸去多余的水，在烫板上干燥过夜。</li>
 </ol>
-<p>##<font color=green> 七、染色</font></p>
+<h2 id="font-colorgreen-七-染色font"><a class="markdownIt-Anchor" href="#font-colorgreen-七-染色font"></a> <font color=green> 七、染色</font></h2>
 <ol>
 <li><font color=purple>除蜡：</font>二甲苯（15 min）——二甲苯（15 min）——二甲苯：乙醇（1:1，10 min）——100% ethanol（5 min）——100% ethanol（5 min）——95% ethanol（5 min）——85% ethanol（5 min）——70% ethanol（5 min）——50% ethanol （5 min）——ddH2O（5 min）。<br />
 <img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-08-18-NFZ3NQ.png" alt="2022-08-18-NFZ3NQ" /></li>
 </ol>
 <div class="note warning">
-            <p>脱蜡务必使用专用的染缸，防止二甲苯和塑料反应，使载玻片和器皿紧紧粘在一起，导致无法正常在显微镜观察</p>
+            <p>脱蜡务必使用专用的染缸，防止二甲苯和塑料反应，使载玻片和器皿紧紧粘在一起，导致无法正常在显微镜观察。</p>
           </div>
 <ol start="2">
 <li><font color=purple>苏丹红IV配置。</font>母液stock solution: <font color=orange>0.1% w/v in isopropyl alcohol（0.03 g苏丹红IV + 30 ml异丙醇 ）；按母液/H2O（3:2，即30 ml stock solution + 20 ml ddH2O</font>）的方式将其稀释为工作液。充分混匀后，室温静置30 min，然后注射器过滤去除沉淀。</li>
