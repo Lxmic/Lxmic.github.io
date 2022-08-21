@@ -53,6 +53,40 @@
       </tags>
   </entry>
   <entry>
+    <title>CRISPR-Cas9系统简介</title>
+    <url>//2018/12/30/CRISPR-Cas9%E7%B3%BB%E7%BB%9F%E7%AE%80%E4%BB%8B/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-0bf1101b1c467285.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="图片来源：https://www.mygenefood.com/crispr-cas9-introduction-genome-editing/" /></p>
+<p>Clustered regularly interspaced short palindromic repeats（CRISPR）——规律成簇的间隔短回文重复和CRISPR-associated protein 9（Cas9），共同组成了一套系统，是细菌用来防御噬菌体DNA注入和质粒转移的天然防御系统。但现在被人类所重新利用，构建了很强的RNA引导的DNA靶向平台——主要用来基因组编辑、转录扰乱、表观遗传调控等。</p>
+<span id="more"></span>
+<h3 id="font-colorgreen细菌抵抗噬菌体入侵font"><a class="markdownIt-Anchor" href="#font-colorgreen细菌抵抗噬菌体入侵font"></a> <font color="green">细菌抵抗噬菌体入侵</font></h3>
+<p>图中是细菌天然免疫系统。我们可以看到，CRISPR locus是由几个原件构成。一开始是个反向转录的RNA，是特异的非编码RNA，可以和重复序列部分互补（trancrRNA，橙色矩形），后面是各种cas基因（箭头表示），接着是CRISPR排列（棕色的菱形是重复序列，彩色的是间隔）。而这些间隔序列是细菌从噬菌体DNA中获得的遗传原件：当噬菌体感染细菌，细菌激活相关的cas基因——Cas1，Cas2,和Csn2，将其中新的间隔序列整合到自身的CRISPR arry中。一旦获得以后，新的spacer就会出现在pre-crRNA中，此时tracrRNA与不同的SPACER互补，在RNaseIII的作用下，产生crRNA，进一步在其他未知的核酸酶的作用，剪切crRNA的5’端，使得引导序列长为20nt。如果噬菌体注入DNA，那么这个免疫系统将被激活，来干扰噬菌体DNA。<br />
+<img src="https://upload-images.jianshu.io/upload_images/3478485-4c5c2be28472800d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="防御过程" /></p>
+<h3 id="font-colorgreen剪切与修复font"><a class="markdownIt-Anchor" href="#font-colorgreen剪切与修复font"></a> <font color="green">剪切与修复</font></h3>
+<p>我们目前主要使用II型CRISPR系统，它和他的区别在于，只是需要一个DNA内切酶Cas9来对与sgRNA20个互补碱基的带有PAM结构的DNA进行剪切。剪切后是DNA产生平末端的DSB（双链断裂），然后在进行非同源的末端连接过程中，容易随机插入或者删除或者替换。或者进行高保真的同源定向修复，修复DNA。<br />
+<img src="https://upload-images.jianshu.io/upload_images/3478485-be11ad0e6a3c0c5e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Type II Cas9" /><br />
+<img src="https://upload-images.jianshu.io/upload_images/3478485-827d8dc582062b62.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Cas9剪切及突变产生" /></p>
+<h3 id="font-colorgreencas9蛋白构象重组font"><a class="markdownIt-Anchor" href="#font-colorgreencas9蛋白构象重组font"></a> <font color="green">Cas9蛋白构象重组</font></h3>
+<p>这里的例子是化脓链球菌的SpyCas9，是一个含有1368个氨基酸的多结构和多功能的DNA核酸内切酶。它的切割位点在PAM上游的第三个碱基，通过HNH（sgRAN互补的目标序列）和RuvC核酸酶结构域（非目标序列）。要识别特定序列并进行剪切，sgRNA与Cas9组合成一个复合体，其中sgRNAy与Cas9结合起着关键的作用，能够使得Cas9构象重构，变得具有活性。crRNA前20碱基使得Cas9具有靶序列特异性，tracrRNA来招募Cas9蛋白。在这个系统中，有一个所谓的种子序列，20碱基spacer的3’端10-12个核苷酸。<strong>在种子序列的错配以及本身同源性都会严重影响系统特异性和脱靶效率。</strong>*<br />
+<img src="https://upload-images.jianshu.io/upload_images/3478485-082186ee503a2b4a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="sgNRA" /></p>
+<h3 id="font-colorgreen目标dna搜索与识别font"><a class="markdownIt-Anchor" href="#font-colorgreen目标dna搜索与识别font"></a> <font color="green">目标DNA搜索与识别</font></h3>
+<p><strong>PAM序列非常的关键</strong>，能够起到识别自身和外来的序列。有实验表明，如果PAM进行但突变，那么就能够让噬菌体入侵宿主。在sgRNA互补之前，首先是寻找PAM序列，如果没有合适的PAM，那么通过蛋白三维结构的坍塌，会离开DNA，直到找到合适的PAM。一旦找到PAM，Cas9就使DNA局部解链，RNA进入，与DNA互补，形成RNA-DNA结构。<strong>sg种子区域序列与靶DNA的完美互补是很重要的。</strong></p>
+<h3 id="font-colorgreencrisprcas9介导的dna靶定于剪切模型font"><a class="markdownIt-Anchor" href="#font-colorgreencrisprcas9介导的dna靶定于剪切模型font"></a> <font color="green">CRISPR–Cas9介导的DNA靶定于剪切模型</font></h3>
+<p>首先，guide RNA的结合，使得Cas9从一个未激活的构象变成具有DNA识别能力的构象。RNA种子序列先形成A型构象，为了目标结合和链入侵，PAM识别位点预先形成用来PAM识别。然后，Cas9结合到PAM序列，使得酶能够去识别附近的潜在的DNA靶序列。一旦Cas9在PAM附近找到了潜在的靶序列，会开始解双螺旋并继续检查剩余的靶序列。磷酸锁环稳定解旋的目标DNA，且第一个碱基开始翻转向上，与guide RNA碱基配对。而Cas9继续与非靶链上的翻转碱基作用，促进双螺旋解开。接着，碱基配对伴随着Cas9构象改变，促进种子序列前面的guide RNA从限制中释放出来，也形成配对，这个过程促使Cas9构象持续变化，直到到达有活性的状态。最终，guide RNA与目标DNA完全互补使得HNH具有稳定的，具有活性的构象，来剪切目标链DNA。与此同时，引起更大的构象变化，使得非目标链DNA进入RuvC催化中心被剪切，这种转态下，Cas9中牢牢结合在靶点序列上，直到其他的细胞因子过来替代它。<br />
+<img src="https://upload-images.jianshu.io/upload_images/3478485-4db71b549d557ab4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="剪切示意图" /></p>
+<p>读了这篇review，进行一定程度的总结，有些地方还是有些不太清楚。</p>
+<blockquote>
+<p>Fuguo Jiang and Jennifer A. Doudna, CRISPR–Cas9 Structures and Mechanisms, Annual Review of Biophysics 2017 46:1, 505-529</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>学习记录</category>
+      </categories>
+      <tags>
+        <tag>Cas9</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>遇见盖北</title>
     <url>//2018/08/18/DJY-%E9%81%87%E8%A7%81%E7%9B%96%E5%8C%97/</url>
     <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
@@ -90,40 +124,6 @@
       </categories>
       <tags>
         <tag>Dropbox</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>CRISPR-Cas9系统简介</title>
-    <url>//2018/12/30/CRISPR-Cas9%E7%B3%BB%E7%BB%9F%E7%AE%80%E4%BB%8B/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-0bf1101b1c467285.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="图片来源：https://www.mygenefood.com/crispr-cas9-introduction-genome-editing/" /></p>
-<p>Clustered regularly interspaced short palindromic repeats（CRISPR）——规律成簇的间隔短回文重复和CRISPR-associated protein 9（Cas9），共同组成了一套系统，是细菌用来防御噬菌体DNA注入和质粒转移的天然防御系统。但现在被人类所重新利用，构建了很强的RNA引导的DNA靶向平台——主要用来基因组编辑、转录扰乱、表观遗传调控等。</p>
-<span id="more"></span>
-<h3 id="font-colorgreen细菌抵抗噬菌体入侵font"><a class="markdownIt-Anchor" href="#font-colorgreen细菌抵抗噬菌体入侵font"></a> <font color="green">细菌抵抗噬菌体入侵</font></h3>
-<p>图中是细菌天然免疫系统。我们可以看到，CRISPR locus是由几个原件构成。一开始是个反向转录的RNA，是特异的非编码RNA，可以和重复序列部分互补（trancrRNA，橙色矩形），后面是各种cas基因（箭头表示），接着是CRISPR排列（棕色的菱形是重复序列，彩色的是间隔）。而这些间隔序列是细菌从噬菌体DNA中获得的遗传原件：当噬菌体感染细菌，细菌激活相关的cas基因——Cas1，Cas2,和Csn2，将其中新的间隔序列整合到自身的CRISPR arry中。一旦获得以后，新的spacer就会出现在pre-crRNA中，此时tracrRNA与不同的SPACER互补，在RNaseIII的作用下，产生crRNA，进一步在其他未知的核酸酶的作用，剪切crRNA的5’端，使得引导序列长为20nt。如果噬菌体注入DNA，那么这个免疫系统将被激活，来干扰噬菌体DNA。<br />
-<img src="https://upload-images.jianshu.io/upload_images/3478485-4c5c2be28472800d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="防御过程" /></p>
-<h3 id="font-colorgreen剪切与修复font"><a class="markdownIt-Anchor" href="#font-colorgreen剪切与修复font"></a> <font color="green">剪切与修复</font></h3>
-<p>我们目前主要使用II型CRISPR系统，它和他的区别在于，只是需要一个DNA内切酶Cas9来对与sgRNA20个互补碱基的带有PAM结构的DNA进行剪切。剪切后是DNA产生平末端的DSB（双链断裂），然后在进行非同源的末端连接过程中，容易随机插入或者删除或者替换。或者进行高保真的同源定向修复，修复DNA。<br />
-<img src="https://upload-images.jianshu.io/upload_images/3478485-be11ad0e6a3c0c5e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Type II Cas9" /><br />
-<img src="https://upload-images.jianshu.io/upload_images/3478485-827d8dc582062b62.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Cas9剪切及突变产生" /></p>
-<h3 id="font-colorgreencas9蛋白构象重组font"><a class="markdownIt-Anchor" href="#font-colorgreencas9蛋白构象重组font"></a> <font color="green">Cas9蛋白构象重组</font></h3>
-<p>这里的例子是化脓链球菌的SpyCas9，是一个含有1368个氨基酸的多结构和多功能的DNA核酸内切酶。它的切割位点在PAM上游的第三个碱基，通过HNH（sgRAN互补的目标序列）和RuvC核酸酶结构域（非目标序列）。要识别特定序列并进行剪切，sgRNA与Cas9组合成一个复合体，其中sgRNAy与Cas9结合起着关键的作用，能够使得Cas9构象重构，变得具有活性。crRNA前20碱基使得Cas9具有靶序列特异性，tracrRNA来招募Cas9蛋白。在这个系统中，有一个所谓的种子序列，20碱基spacer的3’端10-12个核苷酸。<strong>在种子序列的错配以及本身同源性都会严重影响系统特异性和脱靶效率。</strong>*<br />
-<img src="https://upload-images.jianshu.io/upload_images/3478485-082186ee503a2b4a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="sgNRA" /></p>
-<h3 id="font-colorgreen目标dna搜索与识别font"><a class="markdownIt-Anchor" href="#font-colorgreen目标dna搜索与识别font"></a> <font color="green">目标DNA搜索与识别</font></h3>
-<p><strong>PAM序列非常的关键</strong>，能够起到识别自身和外来的序列。有实验表明，如果PAM进行但突变，那么就能够让噬菌体入侵宿主。在sgRNA互补之前，首先是寻找PAM序列，如果没有合适的PAM，那么通过蛋白三维结构的坍塌，会离开DNA，直到找到合适的PAM。一旦找到PAM，Cas9就使DNA局部解链，RNA进入，与DNA互补，形成RNA-DNA结构。<strong>sg种子区域序列与靶DNA的完美互补是很重要的。</strong></p>
-<h3 id="font-colorgreencrisprcas9介导的dna靶定于剪切模型font"><a class="markdownIt-Anchor" href="#font-colorgreencrisprcas9介导的dna靶定于剪切模型font"></a> <font color="green">CRISPR–Cas9介导的DNA靶定于剪切模型</font></h3>
-<p>首先，guide RNA的结合，使得Cas9从一个未激活的构象变成具有DNA识别能力的构象。RNA种子序列先形成A型构象，为了目标结合和链入侵，PAM识别位点预先形成用来PAM识别。然后，Cas9结合到PAM序列，使得酶能够去识别附近的潜在的DNA靶序列。一旦Cas9在PAM附近找到了潜在的靶序列，会开始解双螺旋并继续检查剩余的靶序列。磷酸锁环稳定解旋的目标DNA，且第一个碱基开始翻转向上，与guide RNA碱基配对。而Cas9继续与非靶链上的翻转碱基作用，促进双螺旋解开。接着，碱基配对伴随着Cas9构象改变，促进种子序列前面的guide RNA从限制中释放出来，也形成配对，这个过程促使Cas9构象持续变化，直到到达有活性的状态。最终，guide RNA与目标DNA完全互补使得HNH具有稳定的，具有活性的构象，来剪切目标链DNA。与此同时，引起更大的构象变化，使得非目标链DNA进入RuvC催化中心被剪切，这种转态下，Cas9中牢牢结合在靶点序列上，直到其他的细胞因子过来替代它。<br />
-<img src="https://upload-images.jianshu.io/upload_images/3478485-4db71b549d557ab4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="剪切示意图" /></p>
-<p>读了这篇review，进行一定程度的总结，有些地方还是有些不太清楚。</p>
-<blockquote>
-<p>Fuguo Jiang and Jennifer A. Doudna, CRISPR–Cas9 Structures and Mechanisms, Annual Review of Biophysics 2017 46:1, 505-529</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>学习记录</category>
-      </categories>
-      <tags>
-        <tag>Cas9</tag>
       </tags>
   </entry>
   <entry>
@@ -395,6 +395,27 @@ CSS添加到HTML的方式有三种：</p>
       </tags>
   </entry>
   <entry>
+    <title>HTML5（1）——介绍</title>
+    <url>//2018/09/24/HTML5%EF%BC%881%EF%BC%89%E2%80%94%E2%80%94%E4%BB%8B%E7%BB%8D/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![中秋节就是面对电脑](https://upload-images.jianshu.io/upload_images/3478485-befca9c4894b99eb.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+<blockquote>
+<p>我就是用来玩一下，说好得，只是玩一下。</p>
+</blockquote>
+<span id="more"></span>
+<p>总是想干点事情，不想这么地浪费时间，学习一下html5语法，还是挺好的。我记得以前别人过节的时候，就会发一个网页过来，你打开就是节日祝福，还有音乐和动画，然后就觉得学计算机的人特别牛逼，现在看来，真得没有那么难，稍微学习一下，你就可以实现这样的效果，并没有想象中那么难。当然如果要深入下去，作为你吃饭的技能，那就不是一个层次，我就用来玩一下，增添一些生活的乐趣。</p>
+<p>有了以下这些基本的内容，你就可以写出一个自己的最简单的网页来了。</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span> <span class="comment">&lt;!--这是用来指定声明这篇文档是HTML5，帮助浏览器正确的显示网页--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span><span class="comment">&lt;!--这是网页根标签，每个网页都有，必不可少--&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span><span class="comment">&lt;!--head里面包含的是元信息，不会显示出来--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">title</span>&gt;</span>生活的质感<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">    </span><br><span class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span><span class="comment">&lt;!--body是网页不可少部分，是用来放可视的网页内容，是会展现出来的--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">h1</span>&gt;</span><span class="comment">&lt;!--h1是用来表示一级标题--&gt;</span></span><br><span class="line">            中秋节快乐</span><br><span class="line">        <span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="comment">&lt;!--p就是段落的意思，用来盛放正文的内容--&gt;</span></span><br><span class="line">            今天是中秋节，也没有回家过节，在宿舍里折腾了很久。</span><br><span class="line">        <span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>HTML5的标签是用&lt;&gt;括起来的。比如<code>&lt;p&gt;...&lt;/p&gt;</code>这样的段落标签。不带斜杠的是起始标签，带斜杆的是结束标签。</p>
+]]></content>
+      <categories>
+        <category>HTML5入门</category>
+      </categories>
+      <tags>
+        <tag>HTML5</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>HTML5（2）——编辑器</title>
     <url>//2018/09/30/HTML5%EF%BC%882%EF%BC%89%E2%80%94%E2%80%94%E7%BC%96%E8%BE%91%E5%99%A8/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -418,27 +439,6 @@ CSS添加到HTML的方式有三种：</p>
 <img src="https://upload-images.jianshu.io/upload_images/3478485-654fe29edc44f95e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="" /></li>
 </ul>
 <p>最后，希望你们有好的编辑器可以推荐给我。</p>
-]]></content>
-      <categories>
-        <category>HTML5入门</category>
-      </categories>
-      <tags>
-        <tag>HTML5</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>HTML5（1）——介绍</title>
-    <url>//2018/09/24/HTML5%EF%BC%881%EF%BC%89%E2%80%94%E2%80%94%E4%BB%8B%E7%BB%8D/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![中秋节就是面对电脑](https://upload-images.jianshu.io/upload_images/3478485-befca9c4894b99eb.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-<blockquote>
-<p>我就是用来玩一下，说好得，只是玩一下。</p>
-</blockquote>
-<span id="more"></span>
-<p>总是想干点事情，不想这么地浪费时间，学习一下html5语法，还是挺好的。我记得以前别人过节的时候，就会发一个网页过来，你打开就是节日祝福，还有音乐和动画，然后就觉得学计算机的人特别牛逼，现在看来，真得没有那么难，稍微学习一下，你就可以实现这样的效果，并没有想象中那么难。当然如果要深入下去，作为你吃饭的技能，那就不是一个层次，我就用来玩一下，增添一些生活的乐趣。</p>
-<p>有了以下这些基本的内容，你就可以写出一个自己的最简单的网页来了。</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span> <span class="comment">&lt;!--这是用来指定声明这篇文档是HTML5，帮助浏览器正确的显示网页--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span><span class="comment">&lt;!--这是网页根标签，每个网页都有，必不可少--&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span><span class="comment">&lt;!--head里面包含的是元信息，不会显示出来--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">title</span>&gt;</span>生活的质感<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">    </span><br><span class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span><span class="comment">&lt;!--body是网页不可少部分，是用来放可视的网页内容，是会展现出来的--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">h1</span>&gt;</span><span class="comment">&lt;!--h1是用来表示一级标题--&gt;</span></span><br><span class="line">            中秋节快乐</span><br><span class="line">        <span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="comment">&lt;!--p就是段落的意思，用来盛放正文的内容--&gt;</span></span><br><span class="line">            今天是中秋节，也没有回家过节，在宿舍里折腾了很久。</span><br><span class="line">        <span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>HTML5的标签是用&lt;&gt;括起来的。比如<code>&lt;p&gt;...&lt;/p&gt;</code>这样的段落标签。不带斜杠的是起始标签，带斜杆的是结束标签。</p>
 ]]></content>
       <categories>
         <category>HTML5入门</category>
@@ -1019,6 +1019,28 @@ float——确定图片是否为浮动，而不是在一个固定的地方。</p
       </tags>
   </entry>
   <entry>
+    <title>TBtools中关于染色体定位的问题</title>
+    <url>//2018/09/20/TBtools%E4%B8%AD%E5%85%B3%E4%BA%8E%E6%9F%93%E8%89%B2%E4%BD%93%E5%AE%9A%E4%BD%8D%E7%9A%84%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![coffee-hand](https://upload-images.jianshu.io/upload_images/3478485-7bf2e57593f9e24b.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+> 我说明一下，很多时候我只是喜欢放图，不一定和内容有关联，只是喜欢。
+<span id="more"></span>
+<p>我们在进行染色体绘制的时候，会出现问题，比如没法出图。今天我就遇到了这样一个问题，最后我检查了一下，发现就是我自己在重新命名这个文件中，没有按照规定的格式来进行，导致没有办法出现图。我现在用的是下图中蓝色第一个框：gene location from gff/gtf，因为圈图现在版本的TBtools还没有办法基因坐标重叠的问题。</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-52240843d34844ea.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="两个主要的工具" /></p>
+<p>点击就会出现下面的输入界面，你只要把相关的文件拖入其中，点击start，就会出来图。然后，我今天在最后面一个文件，input gene renaming file。我出现了两次错误，第一次是没有注意到需要用tab键来分开名字，第二次是出现了一行空行，两者都导致我没有得到图片。<br />
+<img src="https://upload-images.jianshu.io/upload_images/3478485-941aad648bddba1d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="输入界面" /></p>
+<p>后面进行修正，图就出来了，然后在进行染色体位置的调整，相关细节在AI中进行调整，包括字体的大小，线的颜色和位置，以及图像的颜色，调整到你自己满意的程度就好了。</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-0f1ab14348ba9f95.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="我稍微修整后的图" /></p>
+]]></content>
+      <categories>
+        <category>TBtools使用</category>
+      </categories>
+      <tags>
+        <tag>染色体定位</tag>
+        <tag>TBtools</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Texlive2018下载及安装</title>
     <url>//2018/08/29/Texlive2018%E4%B8%8B%E8%BD%BD%E5%8F%8A%E5%AE%89%E8%A3%85/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -1067,28 +1089,6 @@ float——确定图片是否为浮动，而不是在一个固定的地方。</p
       </tags>
   </entry>
   <entry>
-    <title>TBtools中关于染色体定位的问题</title>
-    <url>//2018/09/20/TBtools%E4%B8%AD%E5%85%B3%E4%BA%8E%E6%9F%93%E8%89%B2%E4%BD%93%E5%AE%9A%E4%BD%8D%E7%9A%84%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![coffee-hand](https://upload-images.jianshu.io/upload_images/3478485-7bf2e57593f9e24b.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-> 我说明一下，很多时候我只是喜欢放图，不一定和内容有关联，只是喜欢。
-<span id="more"></span>
-<p>我们在进行染色体绘制的时候，会出现问题，比如没法出图。今天我就遇到了这样一个问题，最后我检查了一下，发现就是我自己在重新命名这个文件中，没有按照规定的格式来进行，导致没有办法出现图。我现在用的是下图中蓝色第一个框：gene location from gff/gtf，因为圈图现在版本的TBtools还没有办法基因坐标重叠的问题。</p>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-52240843d34844ea.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="两个主要的工具" /></p>
-<p>点击就会出现下面的输入界面，你只要把相关的文件拖入其中，点击start，就会出来图。然后，我今天在最后面一个文件，input gene renaming file。我出现了两次错误，第一次是没有注意到需要用tab键来分开名字，第二次是出现了一行空行，两者都导致我没有得到图片。<br />
-<img src="https://upload-images.jianshu.io/upload_images/3478485-941aad648bddba1d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="输入界面" /></p>
-<p>后面进行修正，图就出来了，然后在进行染色体位置的调整，相关细节在AI中进行调整，包括字体的大小，线的颜色和位置，以及图像的颜色，调整到你自己满意的程度就好了。</p>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-0f1ab14348ba9f95.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="我稍微修整后的图" /></p>
-]]></content>
-      <categories>
-        <category>TBtools使用</category>
-      </categories>
-      <tags>
-        <tag>染色体定位</tag>
-        <tag>TBtools</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>传奇的诞生</title>
     <url>//2018/09/11/%E4%BC%A0%E5%A5%87%E7%9A%84%E8%AF%9E%E7%94%9F/</url>
     <content><![CDATA[<p>在看这部电影之前，我一直都不知道还有这样一个传奇的存在，对于足球，我个人没有特别大的兴趣爱好，因此我都不太了解足球这方面的巨星和故事。但是，看着题目，你能够想象到这可能是一个激励的故事，又是一碗鸡汤，我决定去喝了它。</p>
@@ -1102,6 +1102,44 @@ float——确定图片是否为浮动，而不是在一个固定的地方。</p
       </categories>
       <tags>
         <tag>电影</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>使用氮气瓶</title>
+    <url>//2022/01/07/%E4%BD%BF%E7%94%A8%E6%B0%AE%E6%B0%94%E7%93%B6/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+<span id="more"></span>
+<h2 id="1-基本构造"><a class="markdownIt-Anchor" href="#1-基本构造"></a> 1. 基本构造</h2>
+<p>关闭状态下，减压阀的仪表读数均为0，<strong>钢瓶顶部阀门</strong>是拧紧转态（<strong>顺时针拧紧关闭，逆时针打开</strong>），<strong>减压阀黑色阀门</strong>是松开状态（<strong>顺时针方向拧紧，表示打开；逆时针松开阀门，表示关闭</strong>），⚠️注意: 两个阀门开关方向是相反的，一定要注意！！！</p>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-01-06-%E5%9B%BE%E7%89%87%E6%9D%A5%E8%87%AA%20%E6%B0%AE%E6%B0%94%E7%BD%90%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95%EF%BC%8C%E7%AC%AC%201%20%E9%A1%B5.png" alt="2022-01-06-图片来自氮气罐使用方法，第1页" /></p>
+<h2 id="2-如何打开"><a class="markdownIt-Anchor" href="#2-如何打开"></a> 2. 如何打开？</h2>
+<ul>
+<li>首先，逆时针方向拧开钢瓶顶部阀门，此时钢瓶气压表就会产生气压读数。</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-01-06-%E5%9B%BE%E7%89%87%E6%9D%A5%E8%87%AA%20%E6%B0%AE%E6%B0%94%E7%BD%90%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95%EF%BC%8C%E7%AC%AC%202%20%E9%A1%B5.png" alt="2022-01-06-图片来自氮气罐使用方法，第2页" /></p>
+<ul>
+<li>然后，顺时针逐渐拧紧黑色大阀门，直到有一定阻力，同时检测氮吹仪是否有气体产生，直到手能感受到氮吹仪出来的气体（⚠️注意：尽管有气体产生，但因管道气压过低，气压表读数基本看不到变化）。</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-01-06-%E5%9B%BE%E7%89%87%E6%9D%A5%E8%87%AA%20%E6%B0%AE%E6%B0%94%E7%BD%90%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95%EF%BC%8C%E7%AC%AC%202%20.png" alt="2022-01-06-图片来自氮气罐使用方法，第2" /></p>
+<h2 id="3-如何关闭装置"><a class="markdownIt-Anchor" href="#3-如何关闭装置"></a> 3. 如何关闭装置</h2>
+<ul>
+<li>首先，顺时针拧紧钢瓶顶部的阀门，此时钢瓶气压表因气体残余，还会有读数。</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-01-06-%E5%9B%BE%E7%89%87%E6%9D%A5%E8%87%AA%20%E6%B0%AE%E6%B0%94%E7%BD%90%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95%EF%BC%8C%E7%AC%AC%203%20%E9%A1%B5.png" alt="2022-01-06-图片来自氮气罐使用方法，第3页" /></p>
+<ul>
+<li>其次，逐渐顺时针拧紧减压阀黑色大阀门，开放管道释放剩余气体，会听到一声气体释放的声音，此时，钢瓶气压表读数为零。</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-01-06-%E5%9B%BE%E7%89%87%E6%9D%A5%E8%87%AA%20%E6%B0%AE%E6%B0%94%E7%BD%90%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95%EF%BC%8C%E7%AC%AC%20.png" alt="2022-01-06-图片来自氮气罐使用方法，第" /></p>
+<ul>
+<li>最后，逆时针松开减压阀黑色大阀门，使其处于松开状态（<strong>关闭状态</strong>），至此所有阀门关闭。</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-01-06-%E5%9B%BE%E7%89%87%E6%9D%A5%E8%87%AA%20%E6%B0%AE%E6%B0%94%E7%BD%90%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95%EF%BC%8C%E7%AC%AC%204%20%E9%A1%B5.png" alt="2022-01-06-图片来自氮气罐使用方法，第4页" /></p>
+]]></content>
+      <categories>
+        <category>科研之路</category>
+      </categories>
+      <tags>
+        <tag>实验</tag>
       </tags>
   </entry>
   <entry>
@@ -1153,44 +1191,6 @@ float——确定图片是否为浮动，而不是在一个固定的地方。</p
       <tags>
         <tag>印度</tag>
         <tag>郭建龙</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>使用氮气瓶</title>
-    <url>//2022/01/07/%E4%BD%BF%E7%94%A8%E6%B0%AE%E6%B0%94%E7%93%B6/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-<span id="more"></span>
-<h2 id="1-基本构造"><a class="markdownIt-Anchor" href="#1-基本构造"></a> 1. 基本构造</h2>
-<p>关闭状态下，减压阀的仪表读数均为0，<strong>钢瓶顶部阀门</strong>是拧紧转态（<strong>顺时针拧紧关闭，逆时针打开</strong>），<strong>减压阀黑色阀门</strong>是松开状态（<strong>顺时针方向拧紧，表示打开；逆时针松开阀门，表示关闭</strong>），⚠️注意: 两个阀门开关方向是相反的，一定要注意！！！</p>
-<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-01-06-%E5%9B%BE%E7%89%87%E6%9D%A5%E8%87%AA%20%E6%B0%AE%E6%B0%94%E7%BD%90%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95%EF%BC%8C%E7%AC%AC%201%20%E9%A1%B5.png" alt="2022-01-06-图片来自氮气罐使用方法，第1页" /></p>
-<h2 id="2-如何打开"><a class="markdownIt-Anchor" href="#2-如何打开"></a> 2. 如何打开？</h2>
-<ul>
-<li>首先，逆时针方向拧开钢瓶顶部阀门，此时钢瓶气压表就会产生气压读数。</li>
-</ul>
-<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-01-06-%E5%9B%BE%E7%89%87%E6%9D%A5%E8%87%AA%20%E6%B0%AE%E6%B0%94%E7%BD%90%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95%EF%BC%8C%E7%AC%AC%202%20%E9%A1%B5.png" alt="2022-01-06-图片来自氮气罐使用方法，第2页" /></p>
-<ul>
-<li>然后，顺时针逐渐拧紧黑色大阀门，直到有一定阻力，同时检测氮吹仪是否有气体产生，直到手能感受到氮吹仪出来的气体（⚠️注意：尽管有气体产生，但因管道气压过低，气压表读数基本看不到变化）。</li>
-</ul>
-<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-01-06-%E5%9B%BE%E7%89%87%E6%9D%A5%E8%87%AA%20%E6%B0%AE%E6%B0%94%E7%BD%90%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95%EF%BC%8C%E7%AC%AC%202%20.png" alt="2022-01-06-图片来自氮气罐使用方法，第2" /></p>
-<h2 id="3-如何关闭装置"><a class="markdownIt-Anchor" href="#3-如何关闭装置"></a> 3. 如何关闭装置</h2>
-<ul>
-<li>首先，顺时针拧紧钢瓶顶部的阀门，此时钢瓶气压表因气体残余，还会有读数。</li>
-</ul>
-<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-01-06-%E5%9B%BE%E7%89%87%E6%9D%A5%E8%87%AA%20%E6%B0%AE%E6%B0%94%E7%BD%90%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95%EF%BC%8C%E7%AC%AC%203%20%E9%A1%B5.png" alt="2022-01-06-图片来自氮气罐使用方法，第3页" /></p>
-<ul>
-<li>其次，逐渐顺时针拧紧减压阀黑色大阀门，开放管道释放剩余气体，会听到一声气体释放的声音，此时，钢瓶气压表读数为零。</li>
-</ul>
-<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-01-06-%E5%9B%BE%E7%89%87%E6%9D%A5%E8%87%AA%20%E6%B0%AE%E6%B0%94%E7%BD%90%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95%EF%BC%8C%E7%AC%AC%20.png" alt="2022-01-06-图片来自氮气罐使用方法，第" /></p>
-<ul>
-<li>最后，逆时针松开减压阀黑色大阀门，使其处于松开状态（<strong>关闭状态</strong>），至此所有阀门关闭。</li>
-</ul>
-<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-01-06-%E5%9B%BE%E7%89%87%E6%9D%A5%E8%87%AA%20%E6%B0%AE%E6%B0%94%E7%BD%90%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95%EF%BC%8C%E7%AC%AC%204%20%E9%A1%B5.png" alt="2022-01-06-图片来自氮气罐使用方法，第4页" /></p>
-]]></content>
-      <categories>
-        <category>科研之路</category>
-      </categories>
-      <tags>
-        <tag>实验</tag>
       </tags>
   </entry>
   <entry>
@@ -1336,6 +1336,31 @@ float——确定图片是否为浮动，而不是在一个固定的地方。</p
       </tags>
   </entry>
   <entry>
+    <title>如何使用Excel查找重复项</title>
+    <url>//2018/09/24/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8Excel%E6%9F%A5%E6%89%BE%E9%87%8D%E5%A4%8D%E9%A1%B9/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![flying](https://upload-images.jianshu.io/upload_images/3478485-3028f91254eb81be.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+<blockquote>
+<p>折腾过后，剩下的只有笔记。我们需要找到相同的东西，来获得共性，才能得以下一步的发展。</p>
+</blockquote>
+<span id="more"></span>
+<p>在处理转录组数据的时候，对于生信的小白，也不经常敲代码，很多时候还是利用一些比较熟悉的工具省事。当然，我的内心是无比希望能够使用编程来解决这些问题，可是很无奈。<br />
+今天，我在处理转录组数据，我希望从好几万个基因中找到我感兴趣的那些基因，我想搜索一下转录组中的数据并拿到他。<br />
+我用的方法是通过vlookup函数来进行查找，公式就是：VLOOKUP(B1,A:A,1,0)。这个公式的意思是，你想找到在B列中与A列中相同的值，并且可以在另外一行显示B列中相同值得为之。</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-75012f75ac9aa958.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="可以看到，在C列中，我们找到了重复值，且跟B列中的位置对应。" /></p>
+<blockquote>
+<p>参考资料：<a href="http://blog.51cto.com/xueli/920592">http://blog.51cto.com/xueli/920592</a></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>学习记录</category>
+      </categories>
+      <tags>
+        <tag>Excel</tag>
+        <tag>重复项</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>如何学习一门新技能？</title>
     <url>//2018/08/25/%E5%A6%82%E4%BD%95%E5%AD%A6%E4%B9%A0%E4%B8%80%E9%97%A8%E6%96%B0%E6%8A%80%E8%83%BD%EF%BC%9F/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -1374,31 +1399,6 @@ float——确定图片是否为浮动，而不是在一个固定的地方。</p
       </tags>
   </entry>
   <entry>
-    <title>如何使用Excel查找重复项</title>
-    <url>//2018/09/24/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8Excel%E6%9F%A5%E6%89%BE%E9%87%8D%E5%A4%8D%E9%A1%B9/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![flying](https://upload-images.jianshu.io/upload_images/3478485-3028f91254eb81be.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-<blockquote>
-<p>折腾过后，剩下的只有笔记。我们需要找到相同的东西，来获得共性，才能得以下一步的发展。</p>
-</blockquote>
-<span id="more"></span>
-<p>在处理转录组数据的时候，对于生信的小白，也不经常敲代码，很多时候还是利用一些比较熟悉的工具省事。当然，我的内心是无比希望能够使用编程来解决这些问题，可是很无奈。<br />
-今天，我在处理转录组数据，我希望从好几万个基因中找到我感兴趣的那些基因，我想搜索一下转录组中的数据并拿到他。<br />
-我用的方法是通过vlookup函数来进行查找，公式就是：VLOOKUP(B1,A:A,1,0)。这个公式的意思是，你想找到在B列中与A列中相同的值，并且可以在另外一行显示B列中相同值得为之。</p>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-75012f75ac9aa958.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="可以看到，在C列中，我们找到了重复值，且跟B列中的位置对应。" /></p>
-<blockquote>
-<p>参考资料：<a href="http://blog.51cto.com/xueli/920592">http://blog.51cto.com/xueli/920592</a></p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>学习记录</category>
-      </categories>
-      <tags>
-        <tag>Excel</tag>
-        <tag>重复项</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>徒手攀岩</title>
     <url>//2019/09/06/%E5%BE%92%E6%89%8B%E6%94%80%E5%B2%A9/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -1419,27 +1419,6 @@ float——确定图片是否为浮动，而不是在一个固定的地方。</p
       </categories>
       <tags>
         <tag>电影</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>杂乱无章</title>
-    <url>//2018/08/28/%E6%9D%82%E4%B9%B1%E6%97%A0%E7%AB%A0/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![拿着相机，一个人旅行](https://upload-images.jianshu.io/upload_images/3478485-14565c6637c4fa19.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-<p>8月27日，星期一，公元2018年。</p>
-<span id="more"></span>
-<p>8月27日，星期一，公元2018年。</p>
-<p>干了一天，几乎没有坐下的时候。骑车离开生科院的时候，突然觉得自己就想是一个工人，白天工作，晚上运动健身和自学，想来也是非常的满足。然而，事情永远没有这么简单，真正工作以后，恐怕没有那么悠闲。</p>
-<p>最近已经能够比较好的控制一下自己，不再如此的散漫。在过去的6月份，真是觉得自个儿已经抛弃一部分超我，使得自我更多的释放。满满的都是娱乐活动，吃饭，看电影和旅游，比暑假更加潇洒。我知道，我一直以来就是这么一个人，对于别人，我总想让他们有一些仪式感，自己变得比别人更操心自己，但是前提是我想关心的人。这个是有点还是缺点，我并不能很好的定义对错，只是不该太过火。师姐的毕业典礼，我去拍照；校园风景，我去拍照；小伙伴的毕业旅行，我也一同参加。干了无数能够留下深刻印象的事。</p>
-<p>有目标，才有动力；有计划，才能有满足感；完成计划，才能有幸福感。大部分时候的状态，就是无目标和无计划，生活处在焦虑之中，特别地不安。这种状态的打破，就需要你自身的行动，想到的东西，要出尽快实行；要去解决你害怕去解决的问题；搞定心中的恐惧放空自己的内心，才能最终踏实满足。</p>
-<p>今年也算是旅行过了，南京之行，也非常的开心。但是，你要知道，很多时候内心就会有一种冲动，就想去看看更外面的世界。前两天看到了一条骑行路线，真的太诱人了，完全没法形容我内心的激动，即使不能够前去体验。看看，回想回想之前的经历，也能够让我开心一会儿，那也就够了。岁月慢慢流逝，一天天在变老，尽管思想还没有服气，但是身体很明显的不如从前了。</p>
-<p>我们没法改变，只能磨炼遇事不惊的心态。</p>
-]]></content>
-      <categories>
-        <category>随记</category>
-      </categories>
-      <tags>
-        <tag>旅行</tag>
       </tags>
   </entry>
   <entry>
@@ -1654,6 +1633,27 @@ float——确定图片是否为浮动，而不是在一个固定的地方。</p
       <tags>
         <tag>旅行</tag>
         <tag>南京</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>杂乱无章</title>
+    <url>//2018/08/28/%E6%9D%82%E4%B9%B1%E6%97%A0%E7%AB%A0/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![拿着相机，一个人旅行](https://upload-images.jianshu.io/upload_images/3478485-14565c6637c4fa19.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+<p>8月27日，星期一，公元2018年。</p>
+<span id="more"></span>
+<p>8月27日，星期一，公元2018年。</p>
+<p>干了一天，几乎没有坐下的时候。骑车离开生科院的时候，突然觉得自己就想是一个工人，白天工作，晚上运动健身和自学，想来也是非常的满足。然而，事情永远没有这么简单，真正工作以后，恐怕没有那么悠闲。</p>
+<p>最近已经能够比较好的控制一下自己，不再如此的散漫。在过去的6月份，真是觉得自个儿已经抛弃一部分超我，使得自我更多的释放。满满的都是娱乐活动，吃饭，看电影和旅游，比暑假更加潇洒。我知道，我一直以来就是这么一个人，对于别人，我总想让他们有一些仪式感，自己变得比别人更操心自己，但是前提是我想关心的人。这个是有点还是缺点，我并不能很好的定义对错，只是不该太过火。师姐的毕业典礼，我去拍照；校园风景，我去拍照；小伙伴的毕业旅行，我也一同参加。干了无数能够留下深刻印象的事。</p>
+<p>有目标，才有动力；有计划，才能有满足感；完成计划，才能有幸福感。大部分时候的状态，就是无目标和无计划，生活处在焦虑之中，特别地不安。这种状态的打破，就需要你自身的行动，想到的东西，要出尽快实行；要去解决你害怕去解决的问题；搞定心中的恐惧放空自己的内心，才能最终踏实满足。</p>
+<p>今年也算是旅行过了，南京之行，也非常的开心。但是，你要知道，很多时候内心就会有一种冲动，就想去看看更外面的世界。前两天看到了一条骑行路线，真的太诱人了，完全没法形容我内心的激动，即使不能够前去体验。看看，回想回想之前的经历，也能够让我开心一会儿，那也就够了。岁月慢慢流逝，一天天在变老，尽管思想还没有服气，但是身体很明显的不如从前了。</p>
+<p>我们没法改变，只能磨炼遇事不惊的心态。</p>
+]]></content>
+      <categories>
+        <category>随记</category>
+      </categories>
+      <tags>
+        <tag>旅行</tag>
       </tags>
   </entry>
   <entry>
@@ -2807,6 +2807,44 @@ KOH adjust the pH to 7.2</p>
         <tag>小技巧</tag>
         <tag>MZmine3</tag>
         <tag>质谱(MS)</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Mac键盘输入符号合集</title>
+    <url>//2022/08/21/Mac%E9%94%AE%E7%9B%98%E8%BE%93%E5%85%A5%E7%AC%A6%E5%8F%B7%E5%90%88%E9%9B%86/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+<div class="note primary">
+            <p>特殊符号输入，一直困扰我！要么老是忘记组合键，要么完全不知道，经常束手无策。</p>
+          </div>
+<p>今天以博文的形式将其记录下来，一来方便自己，二来方便他人！很多特殊符号在MacOS上输入还是比较方便的，用快捷键都可以搞定。</p>
+<span id="more"></span>
+<h1 id="font-colorgreen虚拟键盘输入font"><a class="markdownIt-Anchor" href="#font-colorgreen虚拟键盘输入font"></a> <font color=green>虚拟键盘输入</font></h1>
+<h2 id="正常键盘"><a class="markdownIt-Anchor" href="#正常键盘"></a> 正常键盘</h2>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-08-21-hjGHjo.png" alt="2022-08-21-hjGHjo" /></p>
+<h2 id="虚拟键盘按住option"><a class="markdownIt-Anchor" href="#虚拟键盘按住option"></a> 虚拟键盘按住option</h2>
+<p>会出现各种符号，基本上可以满足需要！<br />
+<img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-08-21-GsQHcM.png" alt="2022-08-21-GsQHcM" /></p>
+<h1 id="font-colorgreen常用符号快捷键font"><a class="markdownIt-Anchor" href="#font-colorgreen常用符号快捷键font"></a> <font color=green>常用符号快捷键</font></h1>
+<p>英文输入法状态下，我个人常用的几个符号</p>
+<ul>
+<li>无穷∞： option + 5</li>
+<li>微µ： option + m</li>
+<li>摄氏度°C： shift + option + 8，再输入大写的C</li>
+<li>delta ∆： option + j</li>
+<li>±： shift + option + =</li>
+<li>≥： option +  &gt;</li>
+<li>≥： option +  &lt;</li>
+</ul>
+<div class="note info">
+            <p>option条件下，有些按键出现两个符号，例如右上角<code>=/+</code>这个按键出现≠和±两符号，其中右下角≠：option + <code>+/=</code>，而左上角±，则shift + option + <code>+/=</code> ，这是一个规律，其他按键都适合。</p>
+          </div>
+]]></content>
+      <categories>
+        <category>学习记录</category>
+      </categories>
+      <tags>
+        <tag>小技巧</tag>
+        <tag>MacOS</tag>
       </tags>
   </entry>
   <entry>
