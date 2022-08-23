@@ -53,40 +53,6 @@
       </tags>
   </entry>
   <entry>
-    <title>CRISPR-Cas9系统简介</title>
-    <url>//2018/12/30/CRISPR-Cas9%E7%B3%BB%E7%BB%9F%E7%AE%80%E4%BB%8B/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-0bf1101b1c467285.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="图片来源：https://www.mygenefood.com/crispr-cas9-introduction-genome-editing/" /></p>
-<p>Clustered regularly interspaced short palindromic repeats（CRISPR）——规律成簇的间隔短回文重复和CRISPR-associated protein 9（Cas9），共同组成了一套系统，是细菌用来防御噬菌体DNA注入和质粒转移的天然防御系统。但现在被人类所重新利用，构建了很强的RNA引导的DNA靶向平台——主要用来基因组编辑、转录扰乱、表观遗传调控等。</p>
-<span id="more"></span>
-<h3 id="font-colorgreen细菌抵抗噬菌体入侵font"><a class="markdownIt-Anchor" href="#font-colorgreen细菌抵抗噬菌体入侵font"></a> <font color="green">细菌抵抗噬菌体入侵</font></h3>
-<p>图中是细菌天然免疫系统。我们可以看到，CRISPR locus是由几个原件构成。一开始是个反向转录的RNA，是特异的非编码RNA，可以和重复序列部分互补（trancrRNA，橙色矩形），后面是各种cas基因（箭头表示），接着是CRISPR排列（棕色的菱形是重复序列，彩色的是间隔）。而这些间隔序列是细菌从噬菌体DNA中获得的遗传原件：当噬菌体感染细菌，细菌激活相关的cas基因——Cas1，Cas2,和Csn2，将其中新的间隔序列整合到自身的CRISPR arry中。一旦获得以后，新的spacer就会出现在pre-crRNA中，此时tracrRNA与不同的SPACER互补，在RNaseIII的作用下，产生crRNA，进一步在其他未知的核酸酶的作用，剪切crRNA的5’端，使得引导序列长为20nt。如果噬菌体注入DNA，那么这个免疫系统将被激活，来干扰噬菌体DNA。<br />
-<img src="https://upload-images.jianshu.io/upload_images/3478485-4c5c2be28472800d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="防御过程" /></p>
-<h3 id="font-colorgreen剪切与修复font"><a class="markdownIt-Anchor" href="#font-colorgreen剪切与修复font"></a> <font color="green">剪切与修复</font></h3>
-<p>我们目前主要使用II型CRISPR系统，它和他的区别在于，只是需要一个DNA内切酶Cas9来对与sgRNA20个互补碱基的带有PAM结构的DNA进行剪切。剪切后是DNA产生平末端的DSB（双链断裂），然后在进行非同源的末端连接过程中，容易随机插入或者删除或者替换。或者进行高保真的同源定向修复，修复DNA。<br />
-<img src="https://upload-images.jianshu.io/upload_images/3478485-be11ad0e6a3c0c5e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Type II Cas9" /><br />
-<img src="https://upload-images.jianshu.io/upload_images/3478485-827d8dc582062b62.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Cas9剪切及突变产生" /></p>
-<h3 id="font-colorgreencas9蛋白构象重组font"><a class="markdownIt-Anchor" href="#font-colorgreencas9蛋白构象重组font"></a> <font color="green">Cas9蛋白构象重组</font></h3>
-<p>这里的例子是化脓链球菌的SpyCas9，是一个含有1368个氨基酸的多结构和多功能的DNA核酸内切酶。它的切割位点在PAM上游的第三个碱基，通过HNH（sgRAN互补的目标序列）和RuvC核酸酶结构域（非目标序列）。要识别特定序列并进行剪切，sgRNA与Cas9组合成一个复合体，其中sgRNAy与Cas9结合起着关键的作用，能够使得Cas9构象重构，变得具有活性。crRNA前20碱基使得Cas9具有靶序列特异性，tracrRNA来招募Cas9蛋白。在这个系统中，有一个所谓的种子序列，20碱基spacer的3’端10-12个核苷酸。<strong>在种子序列的错配以及本身同源性都会严重影响系统特异性和脱靶效率。</strong>*<br />
-<img src="https://upload-images.jianshu.io/upload_images/3478485-082186ee503a2b4a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="sgNRA" /></p>
-<h3 id="font-colorgreen目标dna搜索与识别font"><a class="markdownIt-Anchor" href="#font-colorgreen目标dna搜索与识别font"></a> <font color="green">目标DNA搜索与识别</font></h3>
-<p><strong>PAM序列非常的关键</strong>，能够起到识别自身和外来的序列。有实验表明，如果PAM进行但突变，那么就能够让噬菌体入侵宿主。在sgRNA互补之前，首先是寻找PAM序列，如果没有合适的PAM，那么通过蛋白三维结构的坍塌，会离开DNA，直到找到合适的PAM。一旦找到PAM，Cas9就使DNA局部解链，RNA进入，与DNA互补，形成RNA-DNA结构。<strong>sg种子区域序列与靶DNA的完美互补是很重要的。</strong></p>
-<h3 id="font-colorgreencrisprcas9介导的dna靶定于剪切模型font"><a class="markdownIt-Anchor" href="#font-colorgreencrisprcas9介导的dna靶定于剪切模型font"></a> <font color="green">CRISPR–Cas9介导的DNA靶定于剪切模型</font></h3>
-<p>首先，guide RNA的结合，使得Cas9从一个未激活的构象变成具有DNA识别能力的构象。RNA种子序列先形成A型构象，为了目标结合和链入侵，PAM识别位点预先形成用来PAM识别。然后，Cas9结合到PAM序列，使得酶能够去识别附近的潜在的DNA靶序列。一旦Cas9在PAM附近找到了潜在的靶序列，会开始解双螺旋并继续检查剩余的靶序列。磷酸锁环稳定解旋的目标DNA，且第一个碱基开始翻转向上，与guide RNA碱基配对。而Cas9继续与非靶链上的翻转碱基作用，促进双螺旋解开。接着，碱基配对伴随着Cas9构象改变，促进种子序列前面的guide RNA从限制中释放出来，也形成配对，这个过程促使Cas9构象持续变化，直到到达有活性的状态。最终，guide RNA与目标DNA完全互补使得HNH具有稳定的，具有活性的构象，来剪切目标链DNA。与此同时，引起更大的构象变化，使得非目标链DNA进入RuvC催化中心被剪切，这种转态下，Cas9中牢牢结合在靶点序列上，直到其他的细胞因子过来替代它。<br />
-<img src="https://upload-images.jianshu.io/upload_images/3478485-4db71b549d557ab4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="剪切示意图" /></p>
-<p>读了这篇review，进行一定程度的总结，有些地方还是有些不太清楚。</p>
-<blockquote>
-<p>Fuguo Jiang and Jennifer A. Doudna, CRISPR–Cas9 Structures and Mechanisms, Annual Review of Biophysics 2017 46:1, 505-529</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>学习记录</category>
-      </categories>
-      <tags>
-        <tag>Cas9</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>遇见盖北</title>
     <url>//2018/08/18/DJY-%E9%81%87%E8%A7%81%E7%9B%96%E5%8C%97/</url>
     <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
@@ -494,35 +460,6 @@ CSS添加到HTML的方式有三种：</p>
       </tags>
   </entry>
   <entry>
-    <title>HTML5（4）——元素</title>
-    <url>//2018/10/02/HTML5%EF%BC%884%EF%BC%89%E2%80%94%E2%80%94%E5%85%83%E7%B4%A0/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![巨石阵，有朝一日能够去世界各地游玩](https://upload-images.jianshu.io/upload_images/3478485-d53a5e7f7a0f8675.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-<blockquote>
-<p>国庆第二天，毕业师姐过来那毕业证书，需要聚一波。今天继续学习HTML相关知识。上次学了最基本的知识，关于一些常见的HTML标签。今天是要讲HTML元素，标签包含的内容。</p>
-</blockquote>
-<span id="more"></span>
-<h2 id="font-colorgreen网页元素font"><a class="markdownIt-Anchor" href="#font-colorgreen网页元素font"></a> <font color="green">网页元素</font></h2>
-<p>HTML网页元素，通常是由起始标签和结束标签以及在两者之间插入的内容。<code>&lt;tagname&gt;内容&lt;/tagname&gt;</code><br />
-所有的网页元素，都是从开始标签到结束标签。<code>&lt;p&gt;my director&lt;/p&gt;</code><br />
-可以分为有内容和无内容。而空内容的元素是没有结束标签的，只有起始标签。如<code>&lt;br&gt;</code></p>
-<h2 id="font-colorgreen巢式网页元素font"><a class="markdownIt-Anchor" href="#font-colorgreen巢式网页元素font"></a> <font color="green">巢式网页元素</font></h2>
-<p>所谓巢式（nested），就是说可以在网页元素之中，插入其他的元素，元素嵌套元素。一个网页文件，必定是由巢式元素，下面的例子中，包含了4个网页元素。</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>My First Heading<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>My first paragraph.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<h2 id="font-colorgreen空网页元素font"><a class="markdownIt-Anchor" href="#font-colorgreen空网页元素font"></a> <font color="green">空网页元素</font></h2>
-<p>没有内容的网页元素就是空元素，<code>&lt;br&gt;</code>定义的是换行符，没有结束元素。当然，HTML也是可以关闭空元素的，形式就是在开始标签后面加斜杠<code>&lt;br /&gt;</code>。当然，也可以不关闭，但是如果是严格的来说，关闭空元素是肯定没有问题的，而且如果想被XML解析器解析，那么就必须关上空元素。</p>
-<h2 id="font-colorgreen标签小写字母font"><a class="markdownIt-Anchor" href="#font-colorgreen标签小写字母font"></a> <font color="green">标签小写字母</font></h2>
-<p>HTML是字母识别的，大写小写字母是存在差别的，标签一定要使用小写字母来写。虽然HTML5中，没有要求小写字母标签，但是最好就是小写，跟严格的XHTML是必须要小写才能编译。</p>
-]]></content>
-      <categories>
-        <category>HTML5入门</category>
-      </categories>
-      <tags>
-        <tag>HTML5</tag>
-        <tag>元素</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>HTML5（5）——属性</title>
     <url>//2018/10/06/HTML5%EF%BC%885%EF%BC%89%E2%80%94%E2%80%94%E5%B1%9E%E6%80%A7/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -874,6 +811,33 @@ float——确定图片是否为浮动，而不是在一个固定的地方。</p
       </tags>
   </entry>
   <entry>
+    <title>LaTeX表格溢出问题</title>
+    <url>//2018/09/20/LaTeX%E8%A1%A8%E6%A0%BC%E6%BA%A2%E5%87%BA%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-a4ba2098aa1800cb.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="海，使人放下自己的身段" /></p>
+<p>前面的<a href="https://www.jianshu.com/writer#/notebooks/23465256/notes/33812322">LaTeX插入表格</a>一文主要是来说明怎么插入表格，如果没有看过可以跳到前面去看。今天我们来说一下关于表格的一些细节处理问题。</p>
+<span id="more"></span>
+<h1 id="1-表格过长的问题"><a class="markdownIt-Anchor" href="#1-表格过长的问题"></a> 1 表格过长的问题</h1>
+<p>有时候我们的表格往往会超过一页的长度，这个时候依旧使用<code>\begin&#123;tabular&#125;...\end&#123;tabular&#125;</code>环境的话，那么肯定会导致表格的溢出，完全看不到表格超出的部分。这个时候我们就需要选择其他的宏包，来进行表格环境的设置。一般来说，我们有几种选择，但是共同的一点是，<strong>必须处理在第二页及后面几页的表头和表尾。</strong><code>\endfirsthead、\endhead、\endfoot和\endlastfoot</code>，这些参数分别用来设置第一页表头，后面每一页表头，后面每一页表尾和最后一页表尾。</p>
+<h3 id="11-longtable宏包"><a class="markdownIt-Anchor" href="#11-longtable宏包"></a> 1.1 longtable宏包</h3>
+<p>在导言区你需要加载宏包<code>\usepackage&#123;longtable&#125;</code>，它的环境和tabular类似，这里不细讲。</p>
+<figure class="highlight livescript"><table><tr><td class="code"><pre><span class="line"><span class="string">\usepackage&#123;longtable&#125;</span></span><br><span class="line"><span class="string">\begin&#123;longtable&#125;&#123;表格格式&#125;</span></span><br><span class="line"><span class="string">\endhead</span></span><br><span class="line"><span class="string">\endfirsthead</span></span><br><span class="line"><span class="string">\endfoot</span></span><br><span class="line"><span class="string">\endlastfoot</span></span><br><span class="line"><span class="string">\end&#123;longtable&#125;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h3 id="12-tabu宏包"><a class="markdownIt-Anchor" href="#12-tabu宏包"></a> 1.2 tabu宏包</h3>
+<p>首先也是要在导言区导入tabu和longtable宏包，然后使用的环境是，基本上没有什么区别，只是不同宏包的使用。此外还有一个包也可以使用，就是<code>ltxtable</code>宏包，它的特点是将表格独立为一个tex文件，然后要使用的时候就去引用它。</p>
+<figure class="highlight livescript"><table><tr><td class="code"><pre><span class="line"><span class="string">\usepackage&#123;tabu&#125;</span></span><br><span class="line"><span class="string">\usepackage&#123;longtable&#125;</span></span><br><span class="line"><span class="string">\begin&#123;longtabu&#125;&#123;格式&#125;</span></span><br><span class="line"><span class="string">\endhead</span></span><br><span class="line"><span class="string">\endfirsthead</span></span><br><span class="line"><span class="string">\endfoot</span></span><br><span class="line"><span class="string">\endlastfoot</span></span><br><span class="line"><span class="string">\end&#123;longtabu&#125;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h1 id="2-表格过宽的问题"><a class="markdownIt-Anchor" href="#2-表格过宽的问题"></a> 2 表格过宽的问题</h1>
+<p>这个问题就比表格过长棘手一点，你没有现成的宏包可以使用，只能通过一些间接的方式将表格变窄，包括表格字体缩小，表格横放，表格列间距缩小，表格每一列的宽度减少，修改表头的行数，也可以让表格自动换行，来处理一些溢出的情况。貌似到目前为止还没有很好的宏包来解决。<br />
+我一般使用的是将每一列的宽度减少，进行适合的调整，到达最好的效果，其中可以使用一个强制换行的宏包来处理表头<code>makecell</code>。没一列宽度的调整就是在上面的环境后面的格式中调整，具体也不做展开，之后再写一篇细节问题来说明。</p>
+]]></content>
+      <categories>
+        <category>LaTeX入门</category>
+      </categories>
+      <tags>
+        <tag>LaTeX</tag>
+        <tag>表格</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>LaTeX插入表格</title>
     <url>//2018/09/15/LaTeX%E6%8F%92%E5%85%A5%E8%A1%A8%E6%A0%BC/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -901,33 +865,6 @@ float——确定图片是否为浮动，而不是在一个固定的地方。</p
 <p><code>makecell</code>中有一个专门的用来处理表头的命令<code>thead[可以选对齐方式]&#123;列名称&#125;</code>。比如文中所示，<code>thead[l]&#123;Gene\\name&#125;</code>就是将gene和name换行显示，l表示左对齐。可以发现，这种方法没有出现字间距变大的情况，比第一种要好。</p>
 <figure class="highlight taggerscript"><table><tr><td class="code"><pre><span class="line"><span class="symbol">\b</span>egin&#123;table&#125;[]</span><br><span class="line">    <span class="symbol">\c</span>aption&#123;basic structure&#125;</span><br><span class="line">    <span class="symbol">\v</span>space&#123;20pt&#125;</span><br><span class="line">	<span class="symbol">\c</span>entering</span><br><span class="line">	<span class="symbol">\b</span>egin&#123;tabular&#125;&#123;lllll&#125;</span><br><span class="line">		<span class="symbol">\h</span>line</span><br><span class="line">		<span class="symbol">\t</span>head[l]&#123;Gene<span class="symbol">\\</span>name&#125; &amp; <span class="symbol">\t</span>head[l]&#123;Gene accession<span class="symbol">\\</span>No. &#125;&amp; <span class="symbol">\t</span>head[l]&#123;CDS length<span class="symbol">\\</span>(bp)&#125; &amp; <span class="symbol">\t</span>head[l]&#123;Protein size<span class="symbol">\\</span>(aa)&#125; &amp; <span class="symbol">\t</span>head[l]&#123;Protein MW<span class="symbol">\\</span>(kDa)&#125; <span class="symbol">\\</span></span><br><span class="line">		<span class="symbol">\h</span>line</span><br><span class="line">		001  &amp; 01g009860.2   &amp; 819             &amp; 272               &amp; 31.34            <span class="symbol">\\</span></span><br><span class="line">		002  &amp; 01g021730.2   &amp; 798             &amp; 265               &amp; 30.37            <span class="symbol">\\</span></span><br><span class="line">		003  &amp; 01g094490.2   &amp; 630             &amp; 209               &amp; 24.58            <span class="symbol">\\</span></span><br><span class="line">		004  &amp; 01g102740.2   &amp; 1242            &amp; 413               &amp; 46.94            <span class="symbol">\\</span></span><br><span class="line">		005  &amp; 01g104900.2   &amp; 597             &amp; 198               &amp; 22.85            <span class="symbol">\\</span></span><br><span class="line">		006  &amp; 02g036430.1   &amp; 1698            &amp; 565               &amp; 64.88            <span class="symbol">\\</span></span><br><span class="line">		007  &amp; 02g061780.2   &amp; 735             &amp; 244               &amp; 28.23            <span class="symbol">\\</span></span><br><span class="line">		008  &amp; 02g061870.1   &amp; 660             &amp; 219               &amp; 25.21            <span class="symbol">\\</span></span><br><span class="line">		009  &amp; 02g061900.1   &amp; 915             &amp; 304               &amp; 34.61            <span class="symbol">\\</span></span><br><span class="line">		010  &amp; 02g061910.1   &amp; 795             &amp; 264               &amp; 29.92 <span class="symbol">\\</span>    </span><br><span class="line">		<span class="symbol">\h</span>line       </span><br><span class="line">	<span class="symbol">\e</span>nd&#123;tabular&#125;</span><br><span class="line">	<span class="symbol">\l</span>abel&#123;bs&#125;</span><br><span class="line"><span class="symbol">\e</span>nd&#123;table&#125;</span><br></pre></td></tr></table></figure>
 <p><img src="https://upload-images.jianshu.io/upload_images/3478485-dd6fe8edb6086b60.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="编译后的效果" /></p>
-]]></content>
-      <categories>
-        <category>LaTeX入门</category>
-      </categories>
-      <tags>
-        <tag>LaTeX</tag>
-        <tag>表格</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>LaTeX表格溢出问题</title>
-    <url>//2018/09/20/LaTeX%E8%A1%A8%E6%A0%BC%E6%BA%A2%E5%87%BA%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-a4ba2098aa1800cb.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="海，使人放下自己的身段" /></p>
-<p>前面的<a href="https://www.jianshu.com/writer#/notebooks/23465256/notes/33812322">LaTeX插入表格</a>一文主要是来说明怎么插入表格，如果没有看过可以跳到前面去看。今天我们来说一下关于表格的一些细节处理问题。</p>
-<span id="more"></span>
-<h1 id="1-表格过长的问题"><a class="markdownIt-Anchor" href="#1-表格过长的问题"></a> 1 表格过长的问题</h1>
-<p>有时候我们的表格往往会超过一页的长度，这个时候依旧使用<code>\begin&#123;tabular&#125;...\end&#123;tabular&#125;</code>环境的话，那么肯定会导致表格的溢出，完全看不到表格超出的部分。这个时候我们就需要选择其他的宏包，来进行表格环境的设置。一般来说，我们有几种选择，但是共同的一点是，<strong>必须处理在第二页及后面几页的表头和表尾。</strong><code>\endfirsthead、\endhead、\endfoot和\endlastfoot</code>，这些参数分别用来设置第一页表头，后面每一页表头，后面每一页表尾和最后一页表尾。</p>
-<h3 id="11-longtable宏包"><a class="markdownIt-Anchor" href="#11-longtable宏包"></a> 1.1 longtable宏包</h3>
-<p>在导言区你需要加载宏包<code>\usepackage&#123;longtable&#125;</code>，它的环境和tabular类似，这里不细讲。</p>
-<figure class="highlight livescript"><table><tr><td class="code"><pre><span class="line"><span class="string">\usepackage&#123;longtable&#125;</span></span><br><span class="line"><span class="string">\begin&#123;longtable&#125;&#123;表格格式&#125;</span></span><br><span class="line"><span class="string">\endhead</span></span><br><span class="line"><span class="string">\endfirsthead</span></span><br><span class="line"><span class="string">\endfoot</span></span><br><span class="line"><span class="string">\endlastfoot</span></span><br><span class="line"><span class="string">\end&#123;longtable&#125;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h3 id="12-tabu宏包"><a class="markdownIt-Anchor" href="#12-tabu宏包"></a> 1.2 tabu宏包</h3>
-<p>首先也是要在导言区导入tabu和longtable宏包，然后使用的环境是，基本上没有什么区别，只是不同宏包的使用。此外还有一个包也可以使用，就是<code>ltxtable</code>宏包，它的特点是将表格独立为一个tex文件，然后要使用的时候就去引用它。</p>
-<figure class="highlight livescript"><table><tr><td class="code"><pre><span class="line"><span class="string">\usepackage&#123;tabu&#125;</span></span><br><span class="line"><span class="string">\usepackage&#123;longtable&#125;</span></span><br><span class="line"><span class="string">\begin&#123;longtabu&#125;&#123;格式&#125;</span></span><br><span class="line"><span class="string">\endhead</span></span><br><span class="line"><span class="string">\endfirsthead</span></span><br><span class="line"><span class="string">\endfoot</span></span><br><span class="line"><span class="string">\endlastfoot</span></span><br><span class="line"><span class="string">\end&#123;longtabu&#125;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h1 id="2-表格过宽的问题"><a class="markdownIt-Anchor" href="#2-表格过宽的问题"></a> 2 表格过宽的问题</h1>
-<p>这个问题就比表格过长棘手一点，你没有现成的宏包可以使用，只能通过一些间接的方式将表格变窄，包括表格字体缩小，表格横放，表格列间距缩小，表格每一列的宽度减少，修改表头的行数，也可以让表格自动换行，来处理一些溢出的情况。貌似到目前为止还没有很好的宏包来解决。<br />
-我一般使用的是将每一列的宽度减少，进行适合的调整，到达最好的效果，其中可以使用一个强制换行的宏包来处理表头<code>makecell</code>。没一列宽度的调整就是在上面的环境后面的格式中调整，具体也不做展开，之后再写一篇细节问题来说明。</p>
 ]]></content>
       <categories>
         <category>LaTeX入门</category>
@@ -1194,6 +1131,55 @@ float——确定图片是否为浮动，而不是在一个固定的地方。</p
       </tags>
   </entry>
   <entry>
+    <title>大悦城小聚</title>
+    <url>//2018/09/29/%E5%A4%A7%E6%82%A6%E5%9F%8E%E5%B0%8F%E8%81%9A/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![虽然没有我们的照片，但是有这个意思](https://upload-images.jianshu.io/upload_images/3478485-ccf80350d2a43ed6.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+<blockquote>
+<p>星期一就接到了大学室友“大叔”的诚挚邀请，请我吃饭。好不犹豫的答应之后，一直等待着。</p>
+</blockquote>
+<span id="more"></span>
+<p>礼拜三，本来已经提前说了，最后有点情况，还是没有去。然后就是礼拜五，晚上六点在新开的大悦城吃饭，天泰泰国菜，貌似是一家网红店，味道确实很不错，尤其是咖喱牛肉，辣辣的感觉出现在入口一段时间之后，很是享受。此外，还有泰式奶茶，味道特别浓厚且独特，很是喜欢。这家店确实可以，比我想象中精致一些，人均价位100多，偶尔享受一下这样的食物，心情都会变好很多。</p>
+<ul>
+<li>土豆咖喱炖牛肉</li>
+</ul>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-464c0f630b16116c.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="土豆咖喱炖牛肉" /></p>
+<ul>
+<li>泰式传统虾饼，真是满满的都是虾肉，特别鲜</li>
+</ul>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-75a90853bc691151.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="泰式传统虾饼，真是满满的都是虾肉，特别鲜" /></p>
+<ul>
+<li>菠萝炒饭，一般是必点的泰国菜</li>
+</ul>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-a08a47b3e9d958d2.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="菠萝炒饭，一般是必点的泰国菜" /></p>
+<ul>
+<li>炒粉，很劲道，味道很棒，配着旁边的酱料</li>
+</ul>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-b8314beafe3e997f.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="炒粉，很劲道，味道很棒，配着旁边的酱料" /></p>
+<ul>
+<li>椰蓉布丁，口感非常好，椰香特别浓厚，下面是一层晶莹透明的西米</li>
+</ul>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-8d9391ea6f0ef287.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="椰蓉布丁，口感非常好，椰香特别浓厚，下面是一层晶莹透明的西米" /></p>
+<ul>
+<li>这就是我喝的奶茶了，看起来就非常的高端大气，确实味道也特别的棒</li>
+</ul>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-d6b3972175e63e1d.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="这就是我喝的奶茶了，看起来就非常的高端大气，确实味道也特别的棒" /></p>
+<p>吃完这些菜，并没有很好的满足我们的欲望，果断又去吃了一家烤鱼，叫江边城外。不过说真的，还是有点饱了，不过有特别想尝试，结果味道很是不错，而且还是两种口味，一半一半，双拼烤鱼。</p>
+<ul>
+<li>烤鱼，一半酱香一半蒜香</li>
+</ul>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-990751167b0d3e42.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="烤鱼，一半酱香一半蒜香" /></p>
+<p>吃完，也就结束了。喜欢这样的感觉，偶尔有空且机会正好，一定要想到好友，一起吃个饭，闲聊几句，很是舒心，没有太过多余的想法，放下很多事情。骑自行车回去学校，没有再逛，下次再约。</p>
+]]></content>
+      <categories>
+        <category>随记</category>
+      </categories>
+      <tags>
+        <tag>泰国菜</tag>
+        <tag>大学</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>基于全基因组的基因家族分析（4）：SlNRAMP家族基因进化树构建</title>
     <url>//2022/07/31/%E5%9F%BA%E4%BA%8E%E5%85%A8%E5%9F%BA%E5%9B%A0%E7%BB%84%E7%9A%84%E5%9F%BA%E5%9B%A0%E5%AE%B6%E6%97%8F%E5%88%86%E6%9E%90%EF%BC%884%EF%BC%89%EF%BC%9ASlNRAMP%E5%AE%B6%E6%97%8F%E5%9F%BA%E5%9B%A0%E8%BF%9B%E5%8C%96%E6%A0%91%E6%9E%84%E5%BB%BA/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -1287,80 +1273,6 @@ float——确定图片是否为浮动，而不是在一个固定的地方。</p
       </tags>
   </entry>
   <entry>
-    <title>大悦城小聚</title>
-    <url>//2018/09/29/%E5%A4%A7%E6%82%A6%E5%9F%8E%E5%B0%8F%E8%81%9A/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![虽然没有我们的照片，但是有这个意思](https://upload-images.jianshu.io/upload_images/3478485-ccf80350d2a43ed6.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-<blockquote>
-<p>星期一就接到了大学室友“大叔”的诚挚邀请，请我吃饭。好不犹豫的答应之后，一直等待着。</p>
-</blockquote>
-<span id="more"></span>
-<p>礼拜三，本来已经提前说了，最后有点情况，还是没有去。然后就是礼拜五，晚上六点在新开的大悦城吃饭，天泰泰国菜，貌似是一家网红店，味道确实很不错，尤其是咖喱牛肉，辣辣的感觉出现在入口一段时间之后，很是享受。此外，还有泰式奶茶，味道特别浓厚且独特，很是喜欢。这家店确实可以，比我想象中精致一些，人均价位100多，偶尔享受一下这样的食物，心情都会变好很多。</p>
-<ul>
-<li>土豆咖喱炖牛肉</li>
-</ul>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-464c0f630b16116c.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="土豆咖喱炖牛肉" /></p>
-<ul>
-<li>泰式传统虾饼，真是满满的都是虾肉，特别鲜</li>
-</ul>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-75a90853bc691151.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="泰式传统虾饼，真是满满的都是虾肉，特别鲜" /></p>
-<ul>
-<li>菠萝炒饭，一般是必点的泰国菜</li>
-</ul>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-a08a47b3e9d958d2.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="菠萝炒饭，一般是必点的泰国菜" /></p>
-<ul>
-<li>炒粉，很劲道，味道很棒，配着旁边的酱料</li>
-</ul>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-b8314beafe3e997f.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="炒粉，很劲道，味道很棒，配着旁边的酱料" /></p>
-<ul>
-<li>椰蓉布丁，口感非常好，椰香特别浓厚，下面是一层晶莹透明的西米</li>
-</ul>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-8d9391ea6f0ef287.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="椰蓉布丁，口感非常好，椰香特别浓厚，下面是一层晶莹透明的西米" /></p>
-<ul>
-<li>这就是我喝的奶茶了，看起来就非常的高端大气，确实味道也特别的棒</li>
-</ul>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-d6b3972175e63e1d.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="这就是我喝的奶茶了，看起来就非常的高端大气，确实味道也特别的棒" /></p>
-<p>吃完这些菜，并没有很好的满足我们的欲望，果断又去吃了一家烤鱼，叫江边城外。不过说真的，还是有点饱了，不过有特别想尝试，结果味道很是不错，而且还是两种口味，一半一半，双拼烤鱼。</p>
-<ul>
-<li>烤鱼，一半酱香一半蒜香</li>
-</ul>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-990751167b0d3e42.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="烤鱼，一半酱香一半蒜香" /></p>
-<p>吃完，也就结束了。喜欢这样的感觉，偶尔有空且机会正好，一定要想到好友，一起吃个饭，闲聊几句，很是舒心，没有太过多余的想法，放下很多事情。骑自行车回去学校，没有再逛，下次再约。</p>
-]]></content>
-      <categories>
-        <category>随记</category>
-      </categories>
-      <tags>
-        <tag>泰国菜</tag>
-        <tag>大学</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>如何使用Excel查找重复项</title>
-    <url>//2018/09/24/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8Excel%E6%9F%A5%E6%89%BE%E9%87%8D%E5%A4%8D%E9%A1%B9/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![flying](https://upload-images.jianshu.io/upload_images/3478485-3028f91254eb81be.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-<blockquote>
-<p>折腾过后，剩下的只有笔记。我们需要找到相同的东西，来获得共性，才能得以下一步的发展。</p>
-</blockquote>
-<span id="more"></span>
-<p>在处理转录组数据的时候，对于生信的小白，也不经常敲代码，很多时候还是利用一些比较熟悉的工具省事。当然，我的内心是无比希望能够使用编程来解决这些问题，可是很无奈。<br />
-今天，我在处理转录组数据，我希望从好几万个基因中找到我感兴趣的那些基因，我想搜索一下转录组中的数据并拿到他。<br />
-我用的方法是通过vlookup函数来进行查找，公式就是：VLOOKUP(B1,A:A,1,0)。这个公式的意思是，你想找到在B列中与A列中相同的值，并且可以在另外一行显示B列中相同值得为之。</p>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-75012f75ac9aa958.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="可以看到，在C列中，我们找到了重复值，且跟B列中的位置对应。" /></p>
-<blockquote>
-<p>参考资料：<a href="http://blog.51cto.com/xueli/920592">http://blog.51cto.com/xueli/920592</a></p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>学习记录</category>
-      </categories>
-      <tags>
-        <tag>Excel</tag>
-        <tag>重复项</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>如何学习一门新技能？</title>
     <url>//2018/08/25/%E5%A6%82%E4%BD%95%E5%AD%A6%E4%B9%A0%E4%B8%80%E9%97%A8%E6%96%B0%E6%8A%80%E8%83%BD%EF%BC%9F/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -1396,6 +1308,31 @@ float——确定图片是否为浮动，而不是在一个固定的地方。</p
       </categories>
       <tags>
         <tag>技能</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>如何使用Excel查找重复项</title>
+    <url>//2018/09/24/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8Excel%E6%9F%A5%E6%89%BE%E9%87%8D%E5%A4%8D%E9%A1%B9/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![flying](https://upload-images.jianshu.io/upload_images/3478485-3028f91254eb81be.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+<blockquote>
+<p>折腾过后，剩下的只有笔记。我们需要找到相同的东西，来获得共性，才能得以下一步的发展。</p>
+</blockquote>
+<span id="more"></span>
+<p>在处理转录组数据的时候，对于生信的小白，也不经常敲代码，很多时候还是利用一些比较熟悉的工具省事。当然，我的内心是无比希望能够使用编程来解决这些问题，可是很无奈。<br />
+今天，我在处理转录组数据，我希望从好几万个基因中找到我感兴趣的那些基因，我想搜索一下转录组中的数据并拿到他。<br />
+我用的方法是通过vlookup函数来进行查找，公式就是：VLOOKUP(B1,A:A,1,0)。这个公式的意思是，你想找到在B列中与A列中相同的值，并且可以在另外一行显示B列中相同值得为之。</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-75012f75ac9aa958.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="可以看到，在C列中，我们找到了重复值，且跟B列中的位置对应。" /></p>
+<blockquote>
+<p>参考资料：<a href="http://blog.51cto.com/xueli/920592">http://blog.51cto.com/xueli/920592</a></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>学习记录</category>
+      </categories>
+      <tags>
+        <tag>Excel</tag>
+        <tag>重复项</tag>
       </tags>
   </entry>
   <entry>
@@ -2687,6 +2624,69 @@ float——确定图片是否为浮动，而不是在一个固定的地方。</p
       </tags>
   </entry>
   <entry>
+    <title>CRISPR-Cas9系统简介</title>
+    <url>//2018/12/30/CRISPR-Cas9%E7%B3%BB%E7%BB%9F%E7%AE%80%E4%BB%8B/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-0bf1101b1c467285.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="图片来源：https://www.mygenefood.com/crispr-cas9-introduction-genome-editing/" /></p>
+<p>Clustered regularly interspaced short palindromic repeats（CRISPR）——规律成簇的间隔短回文重复和CRISPR-associated protein 9（Cas9），共同组成了一套系统，是细菌用来防御噬菌体DNA注入和质粒转移的天然防御系统。但现在被人类所重新利用，构建了很强的RNA引导的DNA靶向平台——主要用来基因组编辑、转录扰乱、表观遗传调控等。</p>
+<span id="more"></span>
+<h3 id="font-colorgreen细菌抵抗噬菌体入侵font"><a class="markdownIt-Anchor" href="#font-colorgreen细菌抵抗噬菌体入侵font"></a> <font color="green">细菌抵抗噬菌体入侵</font></h3>
+<p>图中是细菌天然免疫系统。我们可以看到，CRISPR locus是由几个原件构成。一开始是个反向转录的RNA，是特异的非编码RNA，可以和重复序列部分互补（trancrRNA，橙色矩形），后面是各种cas基因（箭头表示），接着是CRISPR排列（棕色的菱形是重复序列，彩色的是间隔）。而这些间隔序列是细菌从噬菌体DNA中获得的遗传原件：当噬菌体感染细菌，细菌激活相关的cas基因——Cas1，Cas2,和Csn2，将其中新的间隔序列整合到自身的CRISPR arry中。一旦获得以后，新的spacer就会出现在pre-crRNA中，此时tracrRNA与不同的SPACER互补，在RNaseIII的作用下，产生crRNA，进一步在其他未知的核酸酶的作用，剪切crRNA的5’端，使得引导序列长为20nt。如果噬菌体注入DNA，那么这个免疫系统将被激活，来干扰噬菌体DNA。<br />
+<img src="https://upload-images.jianshu.io/upload_images/3478485-4c5c2be28472800d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="防御过程" /></p>
+<h3 id="font-colorgreen剪切与修复font"><a class="markdownIt-Anchor" href="#font-colorgreen剪切与修复font"></a> <font color="green">剪切与修复</font></h3>
+<p>我们目前主要使用II型CRISPR系统，它和他的区别在于，只是需要一个DNA内切酶Cas9来对与sgRNA20个互补碱基的带有PAM结构的DNA进行剪切。剪切后是DNA产生平末端的DSB（双链断裂），然后在进行非同源的末端连接过程中，容易随机插入或者删除或者替换。或者进行高保真的同源定向修复，修复DNA。<br />
+<img src="https://upload-images.jianshu.io/upload_images/3478485-be11ad0e6a3c0c5e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Type II Cas9" /><br />
+<img src="https://upload-images.jianshu.io/upload_images/3478485-827d8dc582062b62.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Cas9剪切及突变产生" /></p>
+<h3 id="font-colorgreencas9蛋白构象重组font"><a class="markdownIt-Anchor" href="#font-colorgreencas9蛋白构象重组font"></a> <font color="green">Cas9蛋白构象重组</font></h3>
+<p>这里的例子是化脓链球菌的SpyCas9，是一个含有1368个氨基酸的多结构和多功能的DNA核酸内切酶。它的切割位点在PAM上游的第三个碱基，通过HNH（sgRAN互补的目标序列）和RuvC核酸酶结构域（非目标序列）。要识别特定序列并进行剪切，sgRNA与Cas9组合成一个复合体，其中sgRNAy与Cas9结合起着关键的作用，能够使得Cas9构象重构，变得具有活性。crRNA前20碱基使得Cas9具有靶序列特异性，tracrRNA来招募Cas9蛋白。在这个系统中，有一个所谓的种子序列，20碱基spacer的3’端10-12个核苷酸。<strong>在种子序列的错配以及本身同源性都会严重影响系统特异性和脱靶效率。</strong>*<br />
+<img src="https://upload-images.jianshu.io/upload_images/3478485-082186ee503a2b4a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="sgNRA" /></p>
+<h3 id="font-colorgreen目标dna搜索与识别font"><a class="markdownIt-Anchor" href="#font-colorgreen目标dna搜索与识别font"></a> <font color="green">目标DNA搜索与识别</font></h3>
+<p><strong>PAM序列非常的关键</strong>，能够起到识别自身和外来的序列。有实验表明，如果PAM进行但突变，那么就能够让噬菌体入侵宿主。在sgRNA互补之前，首先是寻找PAM序列，如果没有合适的PAM，那么通过蛋白三维结构的坍塌，会离开DNA，直到找到合适的PAM。一旦找到PAM，Cas9就使DNA局部解链，RNA进入，与DNA互补，形成RNA-DNA结构。<strong>sg种子区域序列与靶DNA的完美互补是很重要的。</strong></p>
+<h3 id="font-colorgreencrisprcas9介导的dna靶定于剪切模型font"><a class="markdownIt-Anchor" href="#font-colorgreencrisprcas9介导的dna靶定于剪切模型font"></a> <font color="green">CRISPR–Cas9介导的DNA靶定于剪切模型</font></h3>
+<p>首先，guide RNA的结合，使得Cas9从一个未激活的构象变成具有DNA识别能力的构象。RNA种子序列先形成A型构象，为了目标结合和链入侵，PAM识别位点预先形成用来PAM识别。然后，Cas9结合到PAM序列，使得酶能够去识别附近的潜在的DNA靶序列。一旦Cas9在PAM附近找到了潜在的靶序列，会开始解双螺旋并继续检查剩余的靶序列。磷酸锁环稳定解旋的目标DNA，且第一个碱基开始翻转向上，与guide RNA碱基配对。而Cas9继续与非靶链上的翻转碱基作用，促进双螺旋解开。接着，碱基配对伴随着Cas9构象改变，促进种子序列前面的guide RNA从限制中释放出来，也形成配对，这个过程促使Cas9构象持续变化，直到到达有活性的状态。最终，guide RNA与目标DNA完全互补使得HNH具有稳定的，具有活性的构象，来剪切目标链DNA。与此同时，引起更大的构象变化，使得非目标链DNA进入RuvC催化中心被剪切，这种转态下，Cas9中牢牢结合在靶点序列上，直到其他的细胞因子过来替代它。<br />
+<img src="https://upload-images.jianshu.io/upload_images/3478485-4db71b549d557ab4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="剪切示意图" /></p>
+<p>读了这篇review，进行一定程度的总结，有些地方还是有些不太清楚。</p>
+<blockquote>
+<p>Fuguo Jiang and Jennifer A. Doudna, CRISPR–Cas9 Structures and Mechanisms, Annual Review of Biophysics 2017 46:1, 505-529</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>学习记录</category>
+      </categories>
+      <tags>
+        <tag>Cas9</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>HTML5（4）——元素</title>
+    <url>//2018/10/02/HTML5%EF%BC%884%EF%BC%89%E2%80%94%E2%80%94%E5%85%83%E7%B4%A0/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![巨石阵，有朝一日能够去世界各地游玩](https://upload-images.jianshu.io/upload_images/3478485-d53a5e7f7a0f8675.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+<blockquote>
+<p>国庆第二天，毕业师姐过来那毕业证书，需要聚一波。今天继续学习HTML相关知识。上次学了最基本的知识，关于一些常见的HTML标签。今天是要讲HTML元素，标签包含的内容。</p>
+</blockquote>
+<span id="more"></span>
+<h2 id="font-colorgreen网页元素font"><a class="markdownIt-Anchor" href="#font-colorgreen网页元素font"></a> <font color="green">网页元素</font></h2>
+<p>HTML网页元素，通常是由起始标签和结束标签以及在两者之间插入的内容。<code>&lt;tagname&gt;内容&lt;/tagname&gt;</code><br />
+所有的网页元素，都是从开始标签到结束标签。<code>&lt;p&gt;my director&lt;/p&gt;</code><br />
+可以分为有内容和无内容。而空内容的元素是没有结束标签的，只有起始标签。如<code>&lt;br&gt;</code></p>
+<h2 id="font-colorgreen巢式网页元素font"><a class="markdownIt-Anchor" href="#font-colorgreen巢式网页元素font"></a> <font color="green">巢式网页元素</font></h2>
+<p>所谓巢式（nested），就是说可以在网页元素之中，插入其他的元素，元素嵌套元素。一个网页文件，必定是由巢式元素，下面的例子中，包含了4个网页元素。</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>My First Heading<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>My first paragraph.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h2 id="font-colorgreen空网页元素font"><a class="markdownIt-Anchor" href="#font-colorgreen空网页元素font"></a> <font color="green">空网页元素</font></h2>
+<p>没有内容的网页元素就是空元素，<code>&lt;br&gt;</code>定义的是换行符，没有结束元素。当然，HTML也是可以关闭空元素的，形式就是在开始标签后面加斜杠<code>&lt;br /&gt;</code>。当然，也可以不关闭，但是如果是严格的来说，关闭空元素是肯定没有问题的，而且如果想被XML解析器解析，那么就必须关上空元素。</p>
+<h2 id="font-colorgreen标签小写字母font"><a class="markdownIt-Anchor" href="#font-colorgreen标签小写字母font"></a> <font color="green">标签小写字母</font></h2>
+<p>HTML是字母识别的，大写小写字母是存在差别的，标签一定要使用小写字母来写。虽然HTML5中，没有要求小写字母标签，但是最好就是小写，跟严格的XHTML是必须要小写才能编译。</p>
+]]></content>
+      <categories>
+        <category>HTML5入门</category>
+      </categories>
+      <tags>
+        <tag>HTML5</tag>
+        <tag>元素</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Geneious如何使用本地blast</title>
     <url>//2022/08/05/Geneious%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8%E6%9C%AC%E5%9C%B0blast/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -2885,12 +2885,12 @@ motif文件实际上是一个矩阵，标识了每个位点碱基出现的概率
 <img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-08-23-cyUNPk.png" alt="2022-08-23-cyUNPk" /></li>
 </ol>
 <h1 id="font-colorgreen分析过程font"><a class="markdownIt-Anchor" href="#font-colorgreen分析过程font"></a> <font color=green>分析过程</font></h1>
-<h3 id="打开-meme-suite"><a class="markdownIt-Anchor" href="#打开-meme-suite"></a> 打开 <a href="https://meme-suite.org/meme/index.html">MEME Suite</a></h3>
-<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-08-23-YlYkPg.png" alt="2022-08-23-YlYkPg" /></p>
-<h3 id="进入-fimo"><a class="markdownIt-Anchor" href="#进入-fimo"></a> 进入 <a href="https://meme-suite.org/meme/tools/fimo">FIMO</a></h3>
-<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-08-23-dbymCZ.png" alt="2022-08-23-dbymCZ" /></p>
-<h3 id="上传准备的文件"><a class="markdownIt-Anchor" href="#上传准备的文件"></a> 上传准备的文件</h3>
-<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-08-23-VchNH6.png" alt="2022-08-23-VchNH6" /></p>
+<p>打开 <a href="https://meme-suite.org/meme/index.html">MEME Suite</a><br />
+<img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-08-23-YlYkPg.png" alt="2022-08-23-YlYkPg" /></p>
+<p>进入 <a href="https://meme-suite.org/meme/tools/fimo">FIMO</a><br />
+<img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-08-23-dbymCZ.png" alt="2022-08-23-dbymCZ" /></p>
+<p>上传准备的文件<br />
+<img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-08-23-VchNH6.png" alt="2022-08-23-VchNH6" /></p>
 <h1 id="font-colorgreen搜索结果font"><a class="markdownIt-Anchor" href="#font-colorgreen搜索结果font"></a> <font color=green>搜索结果</font></h1>
 <p>这一步很多时候没有那么快出结果，经常需要等待一会儿，无需着急哈！几个结果的连接，可以直接看HTML的结果！<br />
 <img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-08-23-2zk0GD.png" alt="2022-08-23-2zk0GD" /></p>
