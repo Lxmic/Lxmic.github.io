@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.0.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"othlis.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"gitalk","storage":true,"lazyload":false,"nav":{"disqus":{"text":"Load Disqus","order":-1},"gitalk":{"order":-2}},"activeClass":"gitalk"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="如何利用已报道的motif，来寻找目的基因启动子转录因子结合位点？            最近在寻找目的基因启动子上可能的结合位点，用于下一步EMSA或者酵母单杂交实验验证。下面就我自己用的方法来一一说明！">
+<meta property="og:type" content="article">
+<meta property="og:title" content="根据已知motif找启动子序列结合位点">
+<meta property="og:url" content="https://othlis.com/2022/08/23/%E5%90%AF%E5%8A%A8%E5%AD%90motif%E9%89%B4%E5%AE%9A/index.html">
+<meta property="og:site_name" content="Lxmic Blog">
+<meta property="og:description" content="如何利用已报道的motif，来寻找目的基因启动子转录因子结合位点？            最近在寻找目的基因启动子上可能的结合位点，用于下一步EMSA或者酵母单杂交实验验证。下面就我自己用的方法来一一说明！">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-08-23-mqYzdC.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-08-23-aEPB9Y.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-08-23-JNUrQG.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-08-23-cyUNPk.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-08-23-YlYkPg.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-08-23-dbymCZ.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-08-23-VchNH6.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-08-23-2zk0GD.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-08-23-quttOl.png">
+<meta property="article:published_time" content="2022-08-23T02:17:35.000Z">
+<meta property="article:modified_time" content="2022-08-23T04:52:25.019Z">
+<meta property="article:author" content="Jin JF">
+<meta property="article:tag" content="结合位点">
+<meta property="article:tag" content="motif">
+<meta property="article:tag" content="启动子">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-08-23-mqYzdC.png">
+
+<link rel="canonical" href="https://othlis.com/2022/08/23/%E5%90%AF%E5%8A%A8%E5%AD%90motif%E9%89%B4%E5%AE%9A/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>根据已知motif找启动子序列结合位点 | Lxmic Blog</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Lxmic Blog</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">Everything from life</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://othlis.com/2022/08/23/%E5%90%AF%E5%8A%A8%E5%AD%90motif%E9%89%B4%E5%AE%9A/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/250.jpg">
+      <meta itemprop="name" content="Jin JF">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Lxmic Blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          根据已知motif找启动子序列结合位点
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2022-08-23 10:17:35 / 修改时间：12:52:25" itemprop="dateCreated datePublished" datetime="2022-08-23T10:17:35+08:00">2022-08-23</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%A7%91%E7%A0%94%E4%B9%8B%E8%B7%AF/" itemprop="url" rel="index"><span itemprop="name">科研之路</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span><br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>803</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <meta name="referrer" content="no-referrer" />
+<div class="note primary">
+            <p>如何利用已报道的motif，来寻找目的基因启动子转录因子结合位点？</p>
+          </div>
+<p>最近在寻找目的基因启动子上可能的结合位点，用于下一步EMSA或者酵母单杂交实验验证。下面就我自己用的方法来一一说明！</p>
+<span id="more"></span>
+<h1 id="font-colorgreen数据来源font"><a class="markdownIt-Anchor" href="#font-colorgreen数据来源font"></a> <font color=green>数据来源</font></h1>
+<p>根据2021年发表在《Molecular plant》上的文章“A Transcription Factor STOP1-Centered Pathway Coordinates Ammonium and Phosphate Acquisition in Arabidopsis”中提到的AtSTOP1（AT1G34370）和CIPK23（AT1G30270）直接的调控关系，我们来重新复现CIPK23结合位点寻找的过程。<br />
+<img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-08-23-mqYzdC.png" alt="2022-08-23-mqYzdC" /></p>
+<h1 id="font-colorgreen文件准备font"><a class="markdownIt-Anchor" href="#font-colorgreen文件准备font"></a> <font color=green>文件准备</font></h1>
+<ol>
+<li>STOP1 binding motif 文件：<a target="_blank" rel="noopener" href="http://neomorph.salk.edu/dap_web/pages/browse_table_aj.php">DAP-seq: Motifs, peaks and genome browsers for individual TFs</a>。<br />
+<img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-08-23-aEPB9Y.png" alt="2022-08-23-aEPB9Y" /><br />
+motif文件实际上是一个矩阵，标识了每个位点碱基出现的概率，我们需要拿到这个原始文件去搜索。下图就是motif文件的数据结果：<br />
+<img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-08-23-JNUrQG.png" alt="2022-08-23-JNUrQG" /></li>
+<li>CIPK23启动子序列：<a target="_blank" rel="noopener" href="https://seqviewer.arabidopsis.org/servlets/sv?action=nucleft&amp;pid=0&amp;option=0&amp;option2=0&amp;on=0">ATG上游2 kb左右的启动子序列</a>。需要整理成fasta格式，方便后续分析。<br />
+<img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-08-23-cyUNPk.png" alt="2022-08-23-cyUNPk" /></li>
+</ol>
+<h1 id="font-colorgreen分析过程font"><a class="markdownIt-Anchor" href="#font-colorgreen分析过程font"></a> <font color=green>分析过程</font></h1>
+<h3 id="1-打开meme-suite"><a class="markdownIt-Anchor" href="#1-打开meme-suite"></a> 1. 打开<a target="_blank" rel="noopener" href="https://meme-suite.org/meme/index.html">MEME Suite</a></h3>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-08-23-YlYkPg.png" alt="2022-08-23-YlYkPg" /></p>
+<h3 id="2-进入fimo"><a class="markdownIt-Anchor" href="#2-进入fimo"></a> 2. 进入<a target="_blank" rel="noopener" href="https://meme-suite.org/meme/tools/fimo">FIMO</a></h3>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-08-23-dbymCZ.png" alt="2022-08-23-dbymCZ" /></p>
+<h3 id="3-上传准备的文件"><a class="markdownIt-Anchor" href="#3-上传准备的文件"></a> 3. 上传准备的文件</h3>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-08-23-VchNH6.png" alt="2022-08-23-VchNH6" /></p>
+<h1 id="font-colorgreen搜索结果font"><a class="markdownIt-Anchor" href="#font-colorgreen搜索结果font"></a> <font color=green>搜索结果</font></h1>
+<p>这一步很多时候没有那么快出结果，经常需要等待一会儿，无需着急哈！几个结果的连接，可以直接看HTML的结果！<br />
+<img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-08-23-2zk0GD.png" alt="2022-08-23-2zk0GD" /></p>
+<p>比较发现，匹配到的序列就是文章中的motif序列。<br />
+<img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-08-23-quttOl.png" alt="2022-08-23-quttOl" /></p>
+<h1 id="font-colorgreen参考文献font"><a class="markdownIt-Anchor" href="#font-colorgreen参考文献font"></a> <font color=green>参考文献</font></h1>
+<ol>
+<li>Tian WH, Ye JY, Cui MQ, Chang JB, Liu Y, Li GX, Wu YR, Xu JM, Harberd NP, Mao CZ, et al. (2021). A transcription factor STOP1-centered pathway coordinates ammonium and phosphate acquisition in Arabidopsis. Molecular Plant 14: 1554–1568.</li>
+</ol>
+
+    </div>
+
+    
+    
+    
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>Jin JF
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://othlis.com/2022/08/23/%E5%90%AF%E5%8A%A8%E5%AD%90motif%E9%89%B4%E5%AE%9A/" title="根据已知motif找启动子序列结合位点">https://othlis.com/2022/08/23/启动子motif鉴定/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/BY-NC-SA%204.0/4.0/zh-CN" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA 4.0</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E7%BB%93%E5%90%88%E4%BD%8D%E7%82%B9/" rel="tag"><i class="fa fa-tag"></i> 结合位点</a>
+              <a href="/tags/motif/" rel="tag"><i class="fa fa-tag"></i> motif</a>
+              <a href="/tags/%E5%90%AF%E5%8A%A8%E5%AD%90/" rel="tag"><i class="fa fa-tag"></i> 启动子</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2022/08/21/Mac%E9%94%AE%E7%9B%98%E8%BE%93%E5%85%A5%E7%AC%A6%E5%8F%B7%E5%90%88%E9%9B%86/" rel="prev" title="Mac键盘输入符号合集">
+      <i class="fa fa-chevron-left"></i> Mac键盘输入符号合集
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    <div class="comments" id="gitalk-container"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#font-colorgreen%E6%95%B0%E6%8D%AE%E6%9D%A5%E6%BA%90font"><span class="nav-number">1.</span> <span class="nav-text"> 数据来源</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#font-colorgreen%E6%96%87%E4%BB%B6%E5%87%86%E5%A4%87font"><span class="nav-number">2.</span> <span class="nav-text"> 文件准备</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#font-colorgreen%E5%88%86%E6%9E%90%E8%BF%87%E7%A8%8Bfont"><span class="nav-number">3.</span> <span class="nav-text"> 分析过程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E6%89%93%E5%BC%80meme-suite"><span class="nav-number">3.0.1.</span> <span class="nav-text"> 1. 打开MEME Suite</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E8%BF%9B%E5%85%A5fimo"><span class="nav-number">3.0.2.</span> <span class="nav-text"> 2. 进入FIMO</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-%E4%B8%8A%E4%BC%A0%E5%87%86%E5%A4%87%E7%9A%84%E6%96%87%E4%BB%B6"><span class="nav-number">3.0.3.</span> <span class="nav-text"> 3. 上传准备的文件</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#font-colorgreen%E6%90%9C%E7%B4%A2%E7%BB%93%E6%9E%9Cfont"><span class="nav-number">4.</span> <span class="nav-text"> 搜索结果</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#font-colorgreen%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AEfont"><span class="nav-number">5.</span> <span class="nav-text"> 参考文献</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Jin JF"
+      src="/images/250.jpg">
+  <p class="site-author-name" itemprop="name">Jin JF</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">65</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">12</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">73</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/lxmic" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;lxmic" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:jin19920326@gmail.com" title="E-Mail → mailto:jin19920326@gmail.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://twitter.com/slum0326" title="Twitter → https:&#x2F;&#x2F;twitter.com&#x2F;slum0326" rel="noopener" target="_blank"><i class="fa fa-fw fa-twitter"></i>Twitter</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.youtube.com/channel/UC_hwJX-MEj3hSvixXUP1TSg" title="YouTube → https:&#x2F;&#x2F;www.youtube.com&#x2F;channel&#x2F;UC_hwJX-MEj3hSvixXUP1TSg" rel="noopener" target="_blank"><i class="fa fa-fw fa-youtube"></i>YouTube</a>
+      </span>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Jin JF</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+      <span class="post-meta-item-text">站点总字数：</span>
+    <span title="站点总字数">89k</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+      <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
+    <span title="站点阅读时长">2:42</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
+  </div>
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+
+<script>
+NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js', () => {
+    var gitalk = new Gitalk({
+      clientID    : '6d6c01bc950195ccacf0',
+      clientSecret: '805790d2550d8c14018d4dc8be4273a95f72e4b5',
+      repo        : 'blog_comment',
+      owner       : 'lxmic',
+      admin       : ['lxmic'],
+      id          : '52acfe1a03d202eda2ad7b09f0fcb205',
+        language: 'zh-CN',
+      distractionFreeMode: true
+    });
+    gitalk.render('gitalk-container');
+  }, window.Gitalk);
+});
+</script>
+
+</body>
+</html>
