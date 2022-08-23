@@ -29,15 +29,14 @@ motif文件实际上是一个矩阵，标识了每个位点碱基出现的概率
 ![2022-08-23-cyUNPk](https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-08-23-cyUNPk.png)
 
 # <font color=green>分析过程</font>
-### 打开 [MEME Suite](https://meme-suite.org/meme/index.html)
+打开 [MEME Suite](https://meme-suite.org/meme/index.html)
 ![2022-08-23-YlYkPg](https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-08-23-YlYkPg.png)
 
-### 进入 [FIMO](https://meme-suite.org/meme/tools/fimo)
+进入 [FIMO](https://meme-suite.org/meme/tools/fimo)
 ![2022-08-23-dbymCZ](https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-08-23-dbymCZ.png)
 
-### 上传准备的文件
+上传准备的文件
 ![2022-08-23-VchNH6](https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-08-23-VchNH6.png)
-
 
 # <font color=green>搜索结果</font>
 这一步很多时候没有那么快出结果，经常需要等待一会儿，无需着急哈！几个结果的连接，可以直接看HTML的结果！
