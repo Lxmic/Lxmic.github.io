@@ -29,10 +29,10 @@ motif文件实际上是一个矩阵，标识了每个位点碱基出现的概率
 ![2022-08-23-cyUNPk](https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-08-23-cyUNPk.png)
 
 # <font color=green>分析过程</font>
-### 1. 打开[MEME Suite](https://meme-suite.org/meme/index.html)
+### 1. 打开 [MEME Suite](https://meme-suite.org/meme/index.html)
 ![2022-08-23-YlYkPg](https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-08-23-YlYkPg.png)
 
-### 2. 进入[FIMO](https://meme-suite.org/meme/tools/fimo)
+### 2. 进入 [FIMO](https://meme-suite.org/meme/tools/fimo)
 ![2022-08-23-dbymCZ](https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-08-23-dbymCZ.png)
 
 ### 3. 上传准备的文件
