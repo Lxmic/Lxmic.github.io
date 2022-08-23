@@ -808,6 +808,43 @@ natbib就是管理文献的包。<br />
       </tags>
   </entry>
   <entry>
+    <title>LaTeX插入表格</title>
+    <url>//2018/09/15/LaTeX%E6%8F%92%E5%85%A5%E8%A1%A8%E6%A0%BC/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![惬意的周末，我也想拥有](https://upload-images.jianshu.io/upload_images/3478485-300eb5efdef1a5fe.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+<blockquote>
+<p>周末了，下个礼拜终于要开学了，好像又要开始摆出努力的样子。一切都是在循环往复，还是希望进步，能够学习一些从没有接触过的实物和技术。</p>
+</blockquote>
+<p>LaTeX是极其专业的排版软件，我也想试试，我就来用它排版我的论文，这样走一遍之后，我想应该基本入门了。在插入表格的时候，遇到了一些问题，特异记录下来。</p>
+<span id="more"></span>
+<h3 id="1-如何插入庞大的表格"><a class="markdownIt-Anchor" href="#1-如何插入庞大的表格"></a> 1. 如何插入庞大的表格</h3>
+<p>我们都知道，LaTeX可以一行一行的插入表格，但是在我们遇到比较庞大的表格时，我们该怎么办，有一个办法就是利用<a href="http://www.tablesgenerator.com/latex_tables">在线工具</a>进行转换成LaTeX格式的表格，而不需要花大量的时间一行一行输入。<br />
+只要你输入你的表格，然后点generate，生成相应的表格，让后你只需要输入到你的编辑器中，进行编译就可以。<br />
+<img src="https://upload-images.jianshu.io/upload_images/3478485-b7d8758edc879c5b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="复制表格" /></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-eb16ad35b99dd364.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="表格复制" /></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-552021decf1e4701.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="复制表格的内容到编译文本" /></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-e3adcd1c31950f73.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="可以看到编译后会有一定的溢出" /></p>
+<h3 id="2-解决表格溢出的问题"><a class="markdownIt-Anchor" href="#2-解决表格溢出的问题"></a> 2. 解决表格溢出的问题</h3>
+<p>可以缩小字体，也可以修改行之间的距离，也可以缩小整个表格。可以看到，原因在于表头的字体太长了，因此需要使其分行显示，这样一来就可以了。分行你可以定义表格的宽度，使其自动分行或者也可以使用<code>makecell</code>包来进行强制分行。</p>
+<h5 id="21-首先我们看看定义表格单列宽度"><a class="markdownIt-Anchor" href="#21-首先我们看看定义表格单列宽度"></a> 2.1 首先我们看看定义表格单列宽度：</h5>
+<p>在下面的代码中，<br />
+<code>\begin&#123;tabular&#125;&#123;p&#123;2cm&#125;p&#123;3cm&#125;p&#123;2.5cm&#125;p&#123;2.5cm&#125;p&#123;2.5cm&#125;p&#123;2.5cm&#125;&#125;</code>，这句是真正起到调节作用的。<code>p&#123;2cm&#125;</code>就是代表第一列的宽度，后面依次是后面的宽度，然后会自动进行换行显示。但是有一个问题就是，发现自动换行以后，字母之间的距离变得很大，不像是只有一个空格的样子。</p>
+<figure class="highlight livescript"><table><tr><td class="code"><pre><span class="line"><span class="string">\begin&#123;table&#125;[]</span></span><br><span class="line">	<span class="string">\caption&#123;basic</span> structure&#125;</span><br><span class="line">	<span class="string">\vspace&#123;20pt&#125;</span></span><br><span class="line">	<span class="string">\centering</span></span><br><span class="line">	<span class="string">\begin&#123;tabular&#125;&#123;p&#123;2cm&#125;p&#123;3cm&#125;p&#123;2.5cm&#125;p&#123;2.5cm&#125;p&#123;2.5cm&#125;p&#123;2.5cm&#125;&#125;</span></span><br><span class="line">		<span class="string">\hline</span></span><br><span class="line">		Gene name &amp; Gene accession No. &amp; CDS length (bp) &amp; Protein size (aa) &amp; Protein MW (kDa) <span class="string">\\</span></span><br><span class="line">		<span class="string">\hline</span></span><br><span class="line">		<span class="number">001</span>  &amp; <span class="number">01g</span>009860.<span class="number">2</span>   &amp; <span class="number">819</span>             &amp; <span class="number">272</span>               &amp; <span class="number">31.34</span>            <span class="string">\\</span></span><br><span class="line">		<span class="number">002</span>  &amp; <span class="number">01g</span>021730.<span class="number">2</span>   &amp; <span class="number">798</span>             &amp; <span class="number">265</span>               &amp; <span class="number">30.37</span>            <span class="string">\\</span></span><br><span class="line">		<span class="number">003</span>  &amp; <span class="number">01g</span>094490.<span class="number">2</span>   &amp; <span class="number">630</span>             &amp; <span class="number">209</span>               &amp; <span class="number">24.58</span>            <span class="string">\\</span></span><br><span class="line">		<span class="number">004</span>  &amp; <span class="number">01g</span>102740.<span class="number">2</span>   &amp; <span class="number">1242</span>            &amp; <span class="number">413</span>               &amp; <span class="number">46.94</span>            <span class="string">\\</span></span><br><span class="line">		<span class="number">005</span>  &amp; <span class="number">01g</span>104900.<span class="number">2</span>   &amp; <span class="number">597</span>             &amp; <span class="number">198</span>               &amp; <span class="number">22.85</span>            <span class="string">\\</span></span><br><span class="line">		<span class="number">006</span>  &amp; <span class="number">02g</span>036430.<span class="number">1</span>   &amp; <span class="number">1698</span>            &amp; <span class="number">565</span>               &amp; <span class="number">64.88</span>            <span class="string">\\</span></span><br><span class="line">		<span class="number">007</span>  &amp; <span class="number">02g</span>061780.<span class="number">2</span>   &amp; <span class="number">735</span>             &amp; <span class="number">244</span>               &amp; <span class="number">28.23</span>            <span class="string">\\</span></span><br><span class="line">		<span class="number">008</span>  &amp; <span class="number">02g</span>061870.<span class="number">1</span>   &amp; <span class="number">660</span>             &amp; <span class="number">219</span>               &amp; <span class="number">25.21</span>            <span class="string">\\</span></span><br><span class="line">		<span class="number">009</span>  &amp; <span class="number">02g</span>061900.<span class="number">1</span>   &amp; <span class="number">915</span>             &amp; <span class="number">304</span>               &amp; <span class="number">34.61</span>            <span class="string">\\</span></span><br><span class="line">		<span class="number">010</span>  &amp; <span class="number">02g</span>061910.<span class="number">1</span>   &amp; <span class="number">795</span>             &amp; <span class="number">264</span>               &amp; <span class="number">29.92</span> <span class="string">\\</span>    </span><br><span class="line">		<span class="string">\hline</span>       </span><br><span class="line">	<span class="string">\end&#123;tabular&#125;</span></span><br><span class="line">	<span class="string">\label&#123;bs2&#125;</span></span><br><span class="line"><span class="string">\end&#123;table&#125;</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-087fc0b5b2bb79c4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="没有溢出" /></p>
+<h5 id="22-通过makecell宏包来实现换行"><a class="markdownIt-Anchor" href="#22-通过makecell宏包来实现换行"></a> 2.2 通过<code>makecell</code>宏包来实现换行</h5>
+<p><code>makecell</code>中有一个专门的用来处理表头的命令<code>thead[可以选对齐方式]&#123;列名称&#125;</code>。比如文中所示，<code>thead[l]&#123;Gene\\name&#125;</code>就是将gene和name换行显示，l表示左对齐。可以发现，这种方法没有出现字间距变大的情况，比第一种要好。</p>
+<figure class="highlight taggerscript"><table><tr><td class="code"><pre><span class="line"><span class="symbol">\b</span>egin&#123;table&#125;[]</span><br><span class="line">    <span class="symbol">\c</span>aption&#123;basic structure&#125;</span><br><span class="line">    <span class="symbol">\v</span>space&#123;20pt&#125;</span><br><span class="line">	<span class="symbol">\c</span>entering</span><br><span class="line">	<span class="symbol">\b</span>egin&#123;tabular&#125;&#123;lllll&#125;</span><br><span class="line">		<span class="symbol">\h</span>line</span><br><span class="line">		<span class="symbol">\t</span>head[l]&#123;Gene<span class="symbol">\\</span>name&#125; &amp; <span class="symbol">\t</span>head[l]&#123;Gene accession<span class="symbol">\\</span>No. &#125;&amp; <span class="symbol">\t</span>head[l]&#123;CDS length<span class="symbol">\\</span>(bp)&#125; &amp; <span class="symbol">\t</span>head[l]&#123;Protein size<span class="symbol">\\</span>(aa)&#125; &amp; <span class="symbol">\t</span>head[l]&#123;Protein MW<span class="symbol">\\</span>(kDa)&#125; <span class="symbol">\\</span></span><br><span class="line">		<span class="symbol">\h</span>line</span><br><span class="line">		001  &amp; 01g009860.2   &amp; 819             &amp; 272               &amp; 31.34            <span class="symbol">\\</span></span><br><span class="line">		002  &amp; 01g021730.2   &amp; 798             &amp; 265               &amp; 30.37            <span class="symbol">\\</span></span><br><span class="line">		003  &amp; 01g094490.2   &amp; 630             &amp; 209               &amp; 24.58            <span class="symbol">\\</span></span><br><span class="line">		004  &amp; 01g102740.2   &amp; 1242            &amp; 413               &amp; 46.94            <span class="symbol">\\</span></span><br><span class="line">		005  &amp; 01g104900.2   &amp; 597             &amp; 198               &amp; 22.85            <span class="symbol">\\</span></span><br><span class="line">		006  &amp; 02g036430.1   &amp; 1698            &amp; 565               &amp; 64.88            <span class="symbol">\\</span></span><br><span class="line">		007  &amp; 02g061780.2   &amp; 735             &amp; 244               &amp; 28.23            <span class="symbol">\\</span></span><br><span class="line">		008  &amp; 02g061870.1   &amp; 660             &amp; 219               &amp; 25.21            <span class="symbol">\\</span></span><br><span class="line">		009  &amp; 02g061900.1   &amp; 915             &amp; 304               &amp; 34.61            <span class="symbol">\\</span></span><br><span class="line">		010  &amp; 02g061910.1   &amp; 795             &amp; 264               &amp; 29.92 <span class="symbol">\\</span>    </span><br><span class="line">		<span class="symbol">\h</span>line       </span><br><span class="line">	<span class="symbol">\e</span>nd&#123;tabular&#125;</span><br><span class="line">	<span class="symbol">\l</span>abel&#123;bs&#125;</span><br><span class="line"><span class="symbol">\e</span>nd&#123;table&#125;</span><br></pre></td></tr></table></figure>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-dd6fe8edb6086b60.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="编译后的效果" /></p>
+]]></content>
+      <categories>
+        <category>LaTeX入门</category>
+      </categories>
+      <tags>
+        <tag>LaTeX</tag>
+        <tag>表格</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>LaTeX基本语法</title>
     <url>//2018/09/14/LaTeX%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</url>
     <content><![CDATA[<p>开始进入今天的主题，通过一篇博文来学习一些LaTeX的语法，这才是实践，能够很好的加深自己的记忆。</p>
@@ -871,43 +908,6 @@ float——确定图片是否为浮动，而不是在一个固定的地方。</p
       <tags>
         <tag>LaTeX</tag>
         <tag>编码语法</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>LaTeX插入表格</title>
-    <url>//2018/09/15/LaTeX%E6%8F%92%E5%85%A5%E8%A1%A8%E6%A0%BC/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![惬意的周末，我也想拥有](https://upload-images.jianshu.io/upload_images/3478485-300eb5efdef1a5fe.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-<blockquote>
-<p>周末了，下个礼拜终于要开学了，好像又要开始摆出努力的样子。一切都是在循环往复，还是希望进步，能够学习一些从没有接触过的实物和技术。</p>
-</blockquote>
-<p>LaTeX是极其专业的排版软件，我也想试试，我就来用它排版我的论文，这样走一遍之后，我想应该基本入门了。在插入表格的时候，遇到了一些问题，特异记录下来。</p>
-<span id="more"></span>
-<h3 id="1-如何插入庞大的表格"><a class="markdownIt-Anchor" href="#1-如何插入庞大的表格"></a> 1. 如何插入庞大的表格</h3>
-<p>我们都知道，LaTeX可以一行一行的插入表格，但是在我们遇到比较庞大的表格时，我们该怎么办，有一个办法就是利用<a href="http://www.tablesgenerator.com/latex_tables">在线工具</a>进行转换成LaTeX格式的表格，而不需要花大量的时间一行一行输入。<br />
-只要你输入你的表格，然后点generate，生成相应的表格，让后你只需要输入到你的编辑器中，进行编译就可以。<br />
-<img src="https://upload-images.jianshu.io/upload_images/3478485-b7d8758edc879c5b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="复制表格" /></p>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-eb16ad35b99dd364.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="表格复制" /></p>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-552021decf1e4701.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="复制表格的内容到编译文本" /></p>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-e3adcd1c31950f73.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="可以看到编译后会有一定的溢出" /></p>
-<h3 id="2-解决表格溢出的问题"><a class="markdownIt-Anchor" href="#2-解决表格溢出的问题"></a> 2. 解决表格溢出的问题</h3>
-<p>可以缩小字体，也可以修改行之间的距离，也可以缩小整个表格。可以看到，原因在于表头的字体太长了，因此需要使其分行显示，这样一来就可以了。分行你可以定义表格的宽度，使其自动分行或者也可以使用<code>makecell</code>包来进行强制分行。</p>
-<h5 id="21-首先我们看看定义表格单列宽度"><a class="markdownIt-Anchor" href="#21-首先我们看看定义表格单列宽度"></a> 2.1 首先我们看看定义表格单列宽度：</h5>
-<p>在下面的代码中，<br />
-<code>\begin&#123;tabular&#125;&#123;p&#123;2cm&#125;p&#123;3cm&#125;p&#123;2.5cm&#125;p&#123;2.5cm&#125;p&#123;2.5cm&#125;p&#123;2.5cm&#125;&#125;</code>，这句是真正起到调节作用的。<code>p&#123;2cm&#125;</code>就是代表第一列的宽度，后面依次是后面的宽度，然后会自动进行换行显示。但是有一个问题就是，发现自动换行以后，字母之间的距离变得很大，不像是只有一个空格的样子。</p>
-<figure class="highlight livescript"><table><tr><td class="code"><pre><span class="line"><span class="string">\begin&#123;table&#125;[]</span></span><br><span class="line">	<span class="string">\caption&#123;basic</span> structure&#125;</span><br><span class="line">	<span class="string">\vspace&#123;20pt&#125;</span></span><br><span class="line">	<span class="string">\centering</span></span><br><span class="line">	<span class="string">\begin&#123;tabular&#125;&#123;p&#123;2cm&#125;p&#123;3cm&#125;p&#123;2.5cm&#125;p&#123;2.5cm&#125;p&#123;2.5cm&#125;p&#123;2.5cm&#125;&#125;</span></span><br><span class="line">		<span class="string">\hline</span></span><br><span class="line">		Gene name &amp; Gene accession No. &amp; CDS length (bp) &amp; Protein size (aa) &amp; Protein MW (kDa) <span class="string">\\</span></span><br><span class="line">		<span class="string">\hline</span></span><br><span class="line">		<span class="number">001</span>  &amp; <span class="number">01g</span>009860.<span class="number">2</span>   &amp; <span class="number">819</span>             &amp; <span class="number">272</span>               &amp; <span class="number">31.34</span>            <span class="string">\\</span></span><br><span class="line">		<span class="number">002</span>  &amp; <span class="number">01g</span>021730.<span class="number">2</span>   &amp; <span class="number">798</span>             &amp; <span class="number">265</span>               &amp; <span class="number">30.37</span>            <span class="string">\\</span></span><br><span class="line">		<span class="number">003</span>  &amp; <span class="number">01g</span>094490.<span class="number">2</span>   &amp; <span class="number">630</span>             &amp; <span class="number">209</span>               &amp; <span class="number">24.58</span>            <span class="string">\\</span></span><br><span class="line">		<span class="number">004</span>  &amp; <span class="number">01g</span>102740.<span class="number">2</span>   &amp; <span class="number">1242</span>            &amp; <span class="number">413</span>               &amp; <span class="number">46.94</span>            <span class="string">\\</span></span><br><span class="line">		<span class="number">005</span>  &amp; <span class="number">01g</span>104900.<span class="number">2</span>   &amp; <span class="number">597</span>             &amp; <span class="number">198</span>               &amp; <span class="number">22.85</span>            <span class="string">\\</span></span><br><span class="line">		<span class="number">006</span>  &amp; <span class="number">02g</span>036430.<span class="number">1</span>   &amp; <span class="number">1698</span>            &amp; <span class="number">565</span>               &amp; <span class="number">64.88</span>            <span class="string">\\</span></span><br><span class="line">		<span class="number">007</span>  &amp; <span class="number">02g</span>061780.<span class="number">2</span>   &amp; <span class="number">735</span>             &amp; <span class="number">244</span>               &amp; <span class="number">28.23</span>            <span class="string">\\</span></span><br><span class="line">		<span class="number">008</span>  &amp; <span class="number">02g</span>061870.<span class="number">1</span>   &amp; <span class="number">660</span>             &amp; <span class="number">219</span>               &amp; <span class="number">25.21</span>            <span class="string">\\</span></span><br><span class="line">		<span class="number">009</span>  &amp; <span class="number">02g</span>061900.<span class="number">1</span>   &amp; <span class="number">915</span>             &amp; <span class="number">304</span>               &amp; <span class="number">34.61</span>            <span class="string">\\</span></span><br><span class="line">		<span class="number">010</span>  &amp; <span class="number">02g</span>061910.<span class="number">1</span>   &amp; <span class="number">795</span>             &amp; <span class="number">264</span>               &amp; <span class="number">29.92</span> <span class="string">\\</span>    </span><br><span class="line">		<span class="string">\hline</span>       </span><br><span class="line">	<span class="string">\end&#123;tabular&#125;</span></span><br><span class="line">	<span class="string">\label&#123;bs2&#125;</span></span><br><span class="line"><span class="string">\end&#123;table&#125;</span></span><br></pre></td></tr></table></figure>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-087fc0b5b2bb79c4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="没有溢出" /></p>
-<h5 id="22-通过makecell宏包来实现换行"><a class="markdownIt-Anchor" href="#22-通过makecell宏包来实现换行"></a> 2.2 通过<code>makecell</code>宏包来实现换行</h5>
-<p><code>makecell</code>中有一个专门的用来处理表头的命令<code>thead[可以选对齐方式]&#123;列名称&#125;</code>。比如文中所示，<code>thead[l]&#123;Gene\\name&#125;</code>就是将gene和name换行显示，l表示左对齐。可以发现，这种方法没有出现字间距变大的情况，比第一种要好。</p>
-<figure class="highlight taggerscript"><table><tr><td class="code"><pre><span class="line"><span class="symbol">\b</span>egin&#123;table&#125;[]</span><br><span class="line">    <span class="symbol">\c</span>aption&#123;basic structure&#125;</span><br><span class="line">    <span class="symbol">\v</span>space&#123;20pt&#125;</span><br><span class="line">	<span class="symbol">\c</span>entering</span><br><span class="line">	<span class="symbol">\b</span>egin&#123;tabular&#125;&#123;lllll&#125;</span><br><span class="line">		<span class="symbol">\h</span>line</span><br><span class="line">		<span class="symbol">\t</span>head[l]&#123;Gene<span class="symbol">\\</span>name&#125; &amp; <span class="symbol">\t</span>head[l]&#123;Gene accession<span class="symbol">\\</span>No. &#125;&amp; <span class="symbol">\t</span>head[l]&#123;CDS length<span class="symbol">\\</span>(bp)&#125; &amp; <span class="symbol">\t</span>head[l]&#123;Protein size<span class="symbol">\\</span>(aa)&#125; &amp; <span class="symbol">\t</span>head[l]&#123;Protein MW<span class="symbol">\\</span>(kDa)&#125; <span class="symbol">\\</span></span><br><span class="line">		<span class="symbol">\h</span>line</span><br><span class="line">		001  &amp; 01g009860.2   &amp; 819             &amp; 272               &amp; 31.34            <span class="symbol">\\</span></span><br><span class="line">		002  &amp; 01g021730.2   &amp; 798             &amp; 265               &amp; 30.37            <span class="symbol">\\</span></span><br><span class="line">		003  &amp; 01g094490.2   &amp; 630             &amp; 209               &amp; 24.58            <span class="symbol">\\</span></span><br><span class="line">		004  &amp; 01g102740.2   &amp; 1242            &amp; 413               &amp; 46.94            <span class="symbol">\\</span></span><br><span class="line">		005  &amp; 01g104900.2   &amp; 597             &amp; 198               &amp; 22.85            <span class="symbol">\\</span></span><br><span class="line">		006  &amp; 02g036430.1   &amp; 1698            &amp; 565               &amp; 64.88            <span class="symbol">\\</span></span><br><span class="line">		007  &amp; 02g061780.2   &amp; 735             &amp; 244               &amp; 28.23            <span class="symbol">\\</span></span><br><span class="line">		008  &amp; 02g061870.1   &amp; 660             &amp; 219               &amp; 25.21            <span class="symbol">\\</span></span><br><span class="line">		009  &amp; 02g061900.1   &amp; 915             &amp; 304               &amp; 34.61            <span class="symbol">\\</span></span><br><span class="line">		010  &amp; 02g061910.1   &amp; 795             &amp; 264               &amp; 29.92 <span class="symbol">\\</span>    </span><br><span class="line">		<span class="symbol">\h</span>line       </span><br><span class="line">	<span class="symbol">\e</span>nd&#123;tabular&#125;</span><br><span class="line">	<span class="symbol">\l</span>abel&#123;bs&#125;</span><br><span class="line"><span class="symbol">\e</span>nd&#123;table&#125;</span><br></pre></td></tr></table></figure>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-dd6fe8edb6086b60.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="编译后的效果" /></p>
-]]></content>
-      <categories>
-        <category>LaTeX入门</category>
-      </categories>
-      <tags>
-        <tag>LaTeX</tag>
-        <tag>表格</tag>
       </tags>
   </entry>
   <entry>
@@ -2109,6 +2109,30 @@ float——确定图片是否为浮动，而不是在一个固定的地方。</p
       </tags>
   </entry>
   <entry>
+    <title>算法与数据结构（2）：算法复杂度</title>
+    <url>//2018/09/05/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%EF%BC%882%EF%BC%89%EF%BC%9A%E7%AE%97%E6%B3%95%E5%A4%8D%E6%9D%82%E5%BA%A6/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![复杂](https://upload-images.jianshu.io/upload_images/3478485-2198e399288f19f7.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+<p>9月5日，星期三，公元2018年。</p>
+<blockquote>
+<p>简书作者<a href="https://www.jianshu.com/u/44339a8a9afa">程序员联盟</a>：目前正在更新这个系列的教程，我是学习记录者，并非原创，此后<strong>算法与数据结构</strong>系列都是记录笔记，不再进一步说明。</p>
+</blockquote>
+<span id="more"></span>
+<p>这片是关于引出算法复杂度，用了小鸭子的故事。</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-f667aaa8497301ce.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="小鸭子" /></p>
+<center>小鸭子</center>
+故事是这样的：
+<p>有个农夫，每年带着小鸭子们去旅行，目的是为了让小鸭子们都得到放松清净的机会。旅行就是将他们放到池塘里，而且每个池塘要保证一样多的鸭子，才能够同样的清净，不会有不公平的情况出现。因此，农夫采取的方法是：将小鸭子一只一只的带到池塘边，让他们自己选择要去的池塘，最后在池塘和卡车之见跑了NxN个来回。而第二年，农夫发现不太好，于是就重新换了方法，依次带出N只鸭子，将其放在一个池塘，如此下去，直到每个池塘也是同样多的鸭子，这样只需要N个来回。这样一算，发现第二种方法能够更节省时间更轻松，而且还达到了同样的效果，新的方法胜利。</p>
+<p>农夫的放鸭子的方法，就可以看成一种算法，用来对放置鸭子进行了精确的描述。很显然第二种算法更好，时间节省，力气节省，还能达到同样的结果。在计算机术语中，人们用复杂度（complexity）这个词来量化算法的性能。</p>
+]]></content>
+      <categories>
+        <category>算法与数据结构</category>
+      </categories>
+      <tags>
+        <tag>复杂度</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>算法与数据结构（1）：概念理解</title>
     <url>//2018/09/03/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%EF%BC%881%EF%BC%89%EF%BC%9A%E6%A6%82%E5%BF%B5%E7%90%86%E8%A7%A3/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -2137,30 +2161,6 @@ float——确定图片是否为浮动，而不是在一个固定的地方。</p
       <tags>
         <tag>算法</tag>
         <tag>编程</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>算法与数据结构（2）：算法复杂度</title>
-    <url>//2018/09/05/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%EF%BC%882%EF%BC%89%EF%BC%9A%E7%AE%97%E6%B3%95%E5%A4%8D%E6%9D%82%E5%BA%A6/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![复杂](https://upload-images.jianshu.io/upload_images/3478485-2198e399288f19f7.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-<p>9月5日，星期三，公元2018年。</p>
-<blockquote>
-<p>简书作者<a href="https://www.jianshu.com/u/44339a8a9afa">程序员联盟</a>：目前正在更新这个系列的教程，我是学习记录者，并非原创，此后<strong>算法与数据结构</strong>系列都是记录笔记，不再进一步说明。</p>
-</blockquote>
-<span id="more"></span>
-<p>这片是关于引出算法复杂度，用了小鸭子的故事。</p>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-f667aaa8497301ce.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="小鸭子" /></p>
-<center>小鸭子</center>
-故事是这样的：
-<p>有个农夫，每年带着小鸭子们去旅行，目的是为了让小鸭子们都得到放松清净的机会。旅行就是将他们放到池塘里，而且每个池塘要保证一样多的鸭子，才能够同样的清净，不会有不公平的情况出现。因此，农夫采取的方法是：将小鸭子一只一只的带到池塘边，让他们自己选择要去的池塘，最后在池塘和卡车之见跑了NxN个来回。而第二年，农夫发现不太好，于是就重新换了方法，依次带出N只鸭子，将其放在一个池塘，如此下去，直到每个池塘也是同样多的鸭子，这样只需要N个来回。这样一算，发现第二种方法能够更节省时间更轻松，而且还达到了同样的效果，新的方法胜利。</p>
-<p>农夫的放鸭子的方法，就可以看成一种算法，用来对放置鸭子进行了精确的描述。很显然第二种算法更好，时间节省，力气节省，还能达到同样的结果。在计算机术语中，人们用复杂度（complexity）这个词来量化算法的性能。</p>
-]]></content>
-      <categories>
-        <category>算法与数据结构</category>
-      </categories>
-      <tags>
-        <tag>复杂度</tag>
       </tags>
   </entry>
   <entry>
@@ -2848,22 +2848,6 @@ KOH adjust the pH to 7.2</p>
       </tags>
   </entry>
   <entry>
-    <title>Medicinal Natural Products</title>
-    <url>//2022/08/18/Medicinal-Natural-Products/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-08-18-muWlWw.jpg" alt="2022-08-18-muWlWw" /></p>
-<span id="more"></span>
-]]></content>
-      <categories>
-        <category>Books</category>
-      </categories>
-      <tags>
-        <tag>Metabolism</tag>
-        <tag>Chemistry</tag>
-        <tag>Biosynthesis</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>根据已知motif找启动子序列结合位点</title>
     <url>//2022/08/23/%E5%90%AF%E5%8A%A8%E5%AD%90motif%E9%89%B4%E5%AE%9A/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -2908,6 +2892,53 @@ motif文件实际上是一个矩阵，标识了每个位点碱基出现的概率
         <tag>结合位点</tag>
         <tag>motif</tag>
         <tag>启动子</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Medicinal Natural Products</title>
+    <url>//2022/08/18/Medicinal-Natural-Products/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-08-18-muWlWw.jpg" alt="2022-08-18-muWlWw" /></p>
+<span id="more"></span>
+]]></content>
+      <categories>
+        <category>Books</category>
+      </categories>
+      <tags>
+        <tag>Metabolism</tag>
+        <tag>Chemistry</tag>
+        <tag>Biosynthesis</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>番茄萜类物质提取方法</title>
+    <url>//2022/08/20/%E7%95%AA%E8%8C%84%E8%90%9C%E7%B1%BB%E7%89%A9%E8%B4%A8%E6%8F%90%E5%8F%96%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+<div class="note primary">
+            <p>番茄叶片萜类提取方法 ！</p>
+          </div>
+<span id="more"></span>
+<h1 id="font-color-greenstep1font"><a class="markdownIt-Anchor" href="#font-color-greenstep1font"></a> <font color= green>Step1</font></h1>
+<p>Add 750 µl tert-butyl methyl ether (MTBE) with 10 ng/µl tetradecane internal standard to each Aglient sample vial by using glass pipette.</p>
+<div class="note info">
+            <p>1 ml extraction solution = 1 ml MTBE contained 1.3 µl tetradecane</p>
+          </div>
+<ul>
+<li>MTBE and tetradecane structure</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-08-20-9Hsmzz.png" alt="2022-08-20-9Hsmzz" /></p>
+<h1 id="font-colorgreenstep2font"><a class="markdownIt-Anchor" href="#font-colorgreenstep2font"></a> <font color=green>Step2</font></h1>
+<p>Cut a leaflet and immerse it in extraction solution, then gently rocked for 1 min. After that, the extract was transferred to a new sample tube for GCMS analysis.</p>
+<blockquote>
+<p>Schilmiller A, Shi F, Kim J, Charbonneau AL, Holmes D, Daniel Jones A, and Last RL. (2010). Mass spectrometry screening reveals widespread diversity in trichome specialized metabolites of tomato chromosomal substitution lines: Solanum trichome chemistry. The Plant Journal 62: 391–403.</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>科研之路</category>
+      </categories>
+      <tags>
+        <tag>Protocols</tag>
+        <tag>Terpenoid</tag>
       </tags>
   </entry>
   <entry>
@@ -2962,37 +2993,6 @@ motif文件实际上是一个矩阵，标识了每个位点碱基出现的概率
       <tags>
         <tag>Protocols</tag>
         <tag>tomato</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>番茄萜类物质提取方法</title>
-    <url>//2022/08/20/%E7%95%AA%E8%8C%84%E8%90%9C%E7%B1%BB%E7%89%A9%E8%B4%A8%E6%8F%90%E5%8F%96%E6%96%B9%E6%B3%95/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-<div class="note primary">
-            <p>番茄叶片萜类提取方法 ！</p>
-          </div>
-<span id="more"></span>
-<h1 id="font-color-greenstep1font"><a class="markdownIt-Anchor" href="#font-color-greenstep1font"></a> <font color= green>Step1</font></h1>
-<p>Add 750 µl tert-butyl methyl ether (MTBE) with 10 ng/µl tetradecane internal standard to each Aglient sample vial by using glass pipette.</p>
-<div class="note info">
-            <p>1 ml extraction solution = 1 ml MTBE contained 1.3 µl tetradecane</p>
-          </div>
-<ul>
-<li>MTBE and tetradecane structure</li>
-</ul>
-<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-08-20-9Hsmzz.png" alt="2022-08-20-9Hsmzz" /></p>
-<h1 id="font-colorgreenstep2font"><a class="markdownIt-Anchor" href="#font-colorgreenstep2font"></a> <font color=green>Step2</font></h1>
-<p>Cut a leaflet and immerse it in extraction solution, then gently rocked for 1 min. After that, the extract was transferred to a new sample tube for GCMS analysis.</p>
-<blockquote>
-<p>Schilmiller A, Shi F, Kim J, Charbonneau AL, Holmes D, Daniel Jones A, and Last RL. (2010). Mass spectrometry screening reveals widespread diversity in trichome specialized metabolites of tomato chromosomal substitution lines: Solanum trichome chemistry. The Plant Journal 62: 391–403.</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>科研之路</category>
-      </categories>
-      <tags>
-        <tag>Protocols</tag>
-        <tag>Terpenoid</tag>
       </tags>
   </entry>
 </search>
