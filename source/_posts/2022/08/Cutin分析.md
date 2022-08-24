@@ -80,4 +80,5 @@ password: 920326
 ## <font color=seagreen>参考内容</font>
 1. Baales J, Zeisler-Diehl VV, and Schreiber L. (2021). Analysis of Extracellular Cell Wall Lipids: Wax, Cutin, and Suberin in Leaves, Roots, Fruits, and Seeds. In Plant Lipids, D. Bartels and P. Dörmann, eds, Methods in Molecular Biology. (Springer US: New York, NY), pp. 275–293.
 2. Ichihara K and Fukubayashi Y. (2010). Preparation of fatty acid methyl esters for gas-liquid chromatography. Journal of Lipid Research 51: 635–640.
-3. [收藏！一文读懂代谢组学检测衍生化的重要性~ \- 知乎](https://zhuanlan.zhihu.com/p/351609640)
+3. 袁宏宇, 王欣泽, 沈剑, 迟莉娜, 字建婷, and 王荣会. (2020). 固相萃取—微波衍生化—GC-MS法同时测定水中6种雌激素物质. 化工环保 40: 218–224.
+4. [收藏！一文读懂代谢组学检测衍生化的重要性~ \- 知乎](https://zhuanlan.zhihu.com/p/351609640)
