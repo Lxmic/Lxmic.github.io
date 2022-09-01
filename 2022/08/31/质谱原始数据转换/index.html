@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.0.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"othlis.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"gitalk","storage":true,"lazyload":false,"nav":{"disqus":{"text":"Load Disqus","order":-1},"gitalk":{"order":-2}},"activeClass":"gitalk"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="一直以来，很多学术软件对Mac来说很不友好。msconvert就是其中一个学术相关专业软件，用来转化各个质谱平台产生的数据，比如Agilent和赛默飞平台。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Convert MS format on MacOS by using msconvert">
+<meta property="og:url" content="https://othlis.com/2022/08/31/%E8%B4%A8%E8%B0%B1%E5%8E%9F%E5%A7%8B%E6%95%B0%E6%8D%AE%E8%BD%AC%E6%8D%A2/index.html">
+<meta property="og:site_name" content="Lxmic Blog">
+<meta property="og:description" content="一直以来，很多学术软件对Mac来说很不友好。msconvert就是其中一个学术相关专业软件，用来转化各个质谱平台产生的数据，比如Agilent和赛默飞平台。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-01-2AOevi.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-01-pjKrk8.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-01-Pp5hPm.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-01-NhowSq.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-01-lzPFow.png">
+<meta property="article:published_time" content="2022-08-31T15:31:54.000Z">
+<meta property="article:modified_time" content="2022-09-01T17:54:29.267Z">
+<meta property="article:author" content="Jin JF">
+<meta property="article:tag" content="GC&#x2F;MS">
+<meta property="article:tag" content="Tips">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-01-2AOevi.png">
+
+<link rel="canonical" href="https://othlis.com/2022/08/31/%E8%B4%A8%E8%B0%B1%E5%8E%9F%E5%A7%8B%E6%95%B0%E6%8D%AE%E8%BD%AC%E6%8D%A2/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>Convert MS format on MacOS by using msconvert | Lxmic Blog</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Lxmic Blog</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">Everything from life</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://othlis.com/2022/08/31/%E8%B4%A8%E8%B0%B1%E5%8E%9F%E5%A7%8B%E6%95%B0%E6%8D%AE%E8%BD%AC%E6%8D%A2/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/250.jpg">
+      <meta itemprop="name" content="Jin JF">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Lxmic Blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Convert MS format on MacOS by using msconvert
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2022-08-31 23:31:54" itemprop="dateCreated datePublished" datetime="2022-08-31T23:31:54+08:00">2022-08-31</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2022-09-02 01:54:29" itemprop="dateModified" datetime="2022-09-02T01:54:29+08:00">2022-09-02</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%A7%91%E7%A0%94%E4%B9%8B%E8%B7%AF/" itemprop="url" rel="index"><span itemprop="name">科研之路</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span><br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>3.3k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>6 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <meta name="referrer" content="no-referrer" />
+<div class="note primary">
+            <p>一直以来，很多学术软件对Mac来说很不友好。msconvert就是其中一个学术相关专业软件，用来转化各个质谱平台产生的数据，比如Agilent和赛默飞平台。</p>
+          </div>
+<span id="more"></span>
+<h1 id="font-colorseagreenmsconvertfont"><a class="markdownIt-Anchor" href="#font-colorseagreenmsconvertfont"></a> <font color=seagreen>msconvert</font></h1>
+<p><a target="_blank" rel="noopener" href="https://proteowizard.sourceforge.io/tools/msconvert.html">msconvert</a>是一个命令行工具。在windows系统中，已经开发出了交互界面的软件， 对用户来说容易上手；在MacOS和Linux中，它依旧是个命令行工具，用户不友好，用起来比较麻烦。</p>
+<p>Windows用户可以下载打包好的软件，<a target="_blank" rel="noopener" href="https://proteowizard.sourceforge.io/download.html">官方网址：https://proteowizard.sourceforge.io/download.html</a>。在网站下载页面可以下载不同版本的，64位或32位，其中32位的可以支持msconvert支持的所有平台厂商格式，而64位不支持T2D格式。此外，还有MacOS和Linux用户的版本，但是据反馈用起来还是略显麻烦。</p>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-01-2AOevi.png" alt="2022-09-01-2AOevi" /></p>
+<h1 id="font-colorseagreensupported-vendor-formatfont"><a class="markdownIt-Anchor" href="#font-colorseagreensupported-vendor-formatfont"></a> <font color=seagreen>Supported vendor format</font></h1>
+<p>据msconvert网站介绍，目前支持7大主流的厂商平台质谱数据格式，下图可以看到各厂商的数据格式。<br />
+<img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-01-pjKrk8.png" alt="2022-09-01-pjKrk8" /></p>
+<p>目前，我们实验室主要是Agilent平台的数据格式<code>.d</code>，这个格式与其他格式相比，会更麻烦点，因为它是个文件夹，可以继续点击进入看到包含的文件，会给批量转换带来一定的不便。</p>
+<p>所幸的是，有大牛借助docker，将msconvert打包成一个镜像文件，方便在各平台使用，尤其是帮助Mac和Linux用户。镜像名字<a target="_blank" rel="noopener" href="https://hub.docker.com/r/proteowizard/pwiz-skyline-i-agree-to-the-vendor-licenses">proteowizard/pwiz-skyline-i-agree-to-the-vendor-licenses</a>。对于Mac用户的我来说，正合我意，接下来一步步仔细讲解改镜像的用法！</p>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-01-Pp5hPm.png" alt="2022-09-01-Pp5hPm" /></p>
+<h1 id="font-colorseagreen如何使用dockerfont"><a class="markdownIt-Anchor" href="#font-colorseagreen如何使用dockerfont"></a> <font color=seagreen>如何使用Docker</font></h1>
+<p>首先，我们需要从<a target="_blank" rel="noopener" href="https://hub.docker.com/">docker官网</a>下载docker客户端。安装之后，运行docker。Docker你可以注册一个账号，如果需要自己打包docker镜像和分发。</p>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-01-NhowSq.png" alt="2022-09-01-NhowSq" /></p>
+<p>然后，在命令行输入一下命令，下载<code>chambm/pwiz-skyline-i-agree-to-the-vendor-licenses</code>镜像。这个文件比较大，大概在5.7G，有点心痛自己的250 G的Mac存储空间。</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker pull chambm/pwiz-skyline-<span class="selector-tag">i</span>-agree-<span class="selector-tag">to</span>-the-vendor-licenses</span><br></pre></td></tr></table></figure>
+<h1 id="font-colorseagreen如何使用docker-imagefont"><a class="markdownIt-Anchor" href="#font-colorseagreen如何使用docker-imagefont"></a> <font color=seagreen>如何使用docker image</font></h1>
+<p>我们可以在image页面<a target="_blank" rel="noopener" href="https://hub.docker.com/r/chambm/pwiz-skyline-i-agree-to-the-vendor-licenses">chambm/pwiz-skyline-i-agree-to-the-vendor-licenses - Docker Image | Docker Hub</a>，看到这个image支持转换的格式种类，多达10种，基本上能够满足需要，而我目前只需要用到Agilent。</p>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-01-lzPFow.png" alt="2022-09-01-lzPFow" /></p>
+<p>msconvert转化格式命令行：</p>
+<figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run -it --rm -e WINEDEBUG=-all -v <span class="regexp">/your/</span>data:<span class="regexp">/data chambm/</span>pwiz-skyline-i-agree-to-the-vendor-licenses wine msconvert <span class="regexp">/data/</span><span class="keyword">file</span>.raw</span><br></pre></td></tr></table></figure>
+<p>如果不理解参数，可以用help选项来查看帮助文档,命令如下：</p>
+<figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker <span class="built_in">run</span> -<span class="keyword">it</span> <span class="comment">--rm chambm/pwiz-skyline-i-agree-to-the-vendor-licenses wine msconvert --help</span></span><br></pre></td></tr></table></figure>
+<p>运行结果，image部分参数解释。</p>
+<figure class="highlight fortran"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">Options:</span><br><span class="line">  -f [ --filelist ] arg              : specify text <span class="keyword">file</span> containing filenames</span><br><span class="line">  -o [ --outdir ] arg (=.)           : set output directory (<span class="string">&#x27;-&#x27;</span> for stdout)</span><br><span class="line">                                     [.]</span><br><span class="line">  -c [ --config ] arg                : configuration <span class="keyword">file</span> (optionName=<span class="keyword">value</span>)</span><br><span class="line">  --outfile arg                      : Override the <span class="keyword">name</span> of output <span class="keyword">file</span>.</span><br><span class="line">  -e [ --ext ] arg                   : set extension for output files</span><br><span class="line">                                     [mzML|mzXML|mgf|txt|mz5]</span><br><span class="line">  --mzML                             : <span class="built_in">write</span> mzML <span class="keyword">format</span> [<span class="keyword">default</span>]</span><br><span class="line">  --mzXML                            : <span class="built_in">write</span> mzXML <span class="keyword">format</span></span><br><span class="line">  --mz5                              : <span class="built_in">write</span> mz5 <span class="keyword">format</span></span><br><span class="line">  --mgf                              : <span class="built_in">write</span> Mascot <span class="keyword">generic</span> <span class="keyword">format</span></span><br><span class="line">  --text                             : <span class="built_in">write</span> ProteoWizard internal text <span class="keyword">format</span></span><br><span class="line">  --ms1                              : <span class="built_in">write</span> MS1 <span class="keyword">format</span></span><br><span class="line">  --cms1                             : <span class="built_in">write</span> CMS1 <span class="keyword">format</span></span><br><span class="line">  --ms2                              : <span class="built_in">write</span> MS2 <span class="keyword">format</span></span><br><span class="line">  --cms2                             : <span class="built_in">write</span> CMS2 <span class="keyword">format</span></span><br></pre></td></tr></table></figure>
+<h1 id="font-colorseagreenagilentd转换举例font"><a class="markdownIt-Anchor" href="#font-colorseagreenagilentd转换举例font"></a> <font color=seagreen>Agilent<code>.d</code>转换举例</font></h1>
+<p>安捷伦数据麻烦的点在于，它是一个文件夹，你很够打开，发现里面有很多文件，这给我们批量转换带来了难度。搜索资料后，发现已经有博主已经提到了这个问题。博客地址：<a target="_blank" rel="noopener" href="https://yufree.cn/en/2019/10/15/use-msconvert-in-linux-or-mac/">Use msconvert in Linux or Mac - Miao Yu | 于淼</a>。我基本上在他的基础上进行略微的改动，并更详细的说明各参数的意思，方便大家操作。<font color=red>看着简单一行代码，在过程中着实出现了很多问题，费老大劲儿才顺利运行</font>。</p>
+<p>写一个shell脚本，for循环用于批量读取MS数据，并进行转换。具体过程如下：</p>
+<figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"># 选择一个目录，然后新建一个文档</span><br><span class="line"><span class="keyword">cd</span></span><br><span class="line">touch dockermsconvert.<span class="keyword">sh</span></span><br><span class="line"># 赋予<span class="number">755</span>权限，使其可以执行。需要一点linux基础，才能理解</span><br><span class="line">sudo chmod <span class="number">755</span> dockermsconvert.<span class="keyword">sh</span></span><br><span class="line"># 打开并编辑文档，输入以下文件内容，保存后是一个<span class="keyword">shell</span>脚本，可在linux终端运行。“#!/bin/zsh”是<span class="keyword">shell</span>脚本的格式。</span><br><span class="line">#!/bin/zsh </span><br><span class="line"><span class="keyword">for</span> <span class="keyword">f</span> in $(basename /yourdatapath/*.*)</span><br><span class="line"><span class="keyword">do</span></span><br><span class="line">  docker run -it --rm -<span class="keyword">e</span> WINEDEBUG=-<span class="keyword">all</span> -v /yourdatapath:/data  chambm/pwiz-skyline-i-agree-<span class="keyword">to</span>-the-vendor-licenses wine msconvert $<span class="keyword">f</span></span><br><span class="line">done</span><br><span class="line"></span><br><span class="line"># 打开.zshrc或者.bashrc，设置环境变量，使其能够全局运行</span><br><span class="line"><span class="keyword">vim</span> .zshrc</span><br><span class="line"><span class="keyword">source</span> .zshrc</span><br><span class="line"># 运行<span class="keyword">shell</span>脚本</span><br><span class="line"><span class="keyword">sh</span> dockermsconvert.<span class="keyword">sh</span></span><br></pre></td></tr></table></figure>
+<p><font color=purple>dockermsconvert.sh</font>具体内容解释：<br />
+<code>#!/bin/zsh</code>: shell语言的默认格式。<br />
+<code>for f in $(basename /yourdatapath/*.*)</code>：利用for循环，来逐一读取你的文件夹下面的<code>xxx-1.d</code>文件，赋值给f。<code>*.*</code>匹配你所有的文件夹下面的数据名称。<br />
+<code>do……done</code>: 执行docker命令行。<br />
+<code>docker run -it --rm -e WINEDEBUG=-all</code>：这部分是docker命令部分参数。<code>-it</code>：用来生成容器的选项；<code>--rm</code>：在运行结束后，清除容器；<code>-e</code>:设置环境变量；<code>WINEDEBUG=-all</code>：避免出现表示运行过程信息及警告信息。<br />
+<code>-v /yourdatapath:/data chambm/pwiz-skyline-i-agree-to-the-vendor-licenses wine msconvert $f</code>：这部分是image的参数。<code>-v</code>：出现image运行过程的信息；<code>/yourdatapath:/data</code>：冒号前面部分是你数据所在文件夹的绝对路径，冒号后面的就是pwiz映射的文件夹，相当于映射到你当前的文件夹；<code>wine msconvert</code>：相当于运行msconvert；<code>$f</code>：指for循环中f，代表文件名，需要转换格式的文件。</p>
+<p>至此，你已经成功在Mac或者Linux上完成了rawdata格式的转换，可进行下一步的分析。</p>
+<h1 id="font-colorseagreen参考内容font"><a class="markdownIt-Anchor" href="#font-colorseagreen参考内容font"></a> <font color=seagreen>参考内容</font></h1>
+<ol>
+<li><a target="_blank" rel="noopener" href="https://jiajially.gitbooks.io/dockerguide/content/chapter_fastlearn/docker_run/index.html">Docker run 参数详解 | Docker-guide</a></li>
+<li><a target="_blank" rel="noopener" href="https://yufree.cn/en/2019/10/15/use-msconvert-in-linux-or-mac/">Use msconvert in Linux or Mac - Miao Yu | 于淼</a></li>
+<li><a target="_blank" rel="noopener" href="https://hub.docker.com/r/chambm/pwiz-skyline-i-agree-to-the-vendor-licenses">chambm/pwiz-skyline-i-agree-to-the-vendor-licenses - Docker Image | Docker Hub</a></li>
+</ol>
+
+    </div>
+
+    
+    
+    
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>Jin JF
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://othlis.com/2022/08/31/%E8%B4%A8%E8%B0%B1%E5%8E%9F%E5%A7%8B%E6%95%B0%E6%8D%AE%E8%BD%AC%E6%8D%A2/" title="Convert MS format on MacOS by using msconvert">https://othlis.com/2022/08/31/质谱原始数据转换/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/BY-NC-SA%204.0/4.0/zh-CN" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA 4.0</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/GC-MS/" rel="tag"><i class="fa fa-tag"></i> GC/MS</a>
+              <a href="/tags/Tips/" rel="tag"><i class="fa fa-tag"></i> Tips</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2022/08/26/PlantPAN3%E9%A2%84%E6%B5%8B%E5%90%AF%E5%8A%A8%E5%AD%90motif/" rel="prev" title="PlantPAN3预测启动子motif">
+      <i class="fa fa-chevron-left"></i> PlantPAN3预测启动子motif
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    <div class="comments" id="gitalk-container"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#font-colorseagreenmsconvertfont"><span class="nav-number">1.</span> <span class="nav-text"> msconvert</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#font-colorseagreensupported-vendor-formatfont"><span class="nav-number">2.</span> <span class="nav-text"> Supported vendor format</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#font-colorseagreen%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8dockerfont"><span class="nav-number">3.</span> <span class="nav-text"> 如何使用Docker</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#font-colorseagreen%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8docker-imagefont"><span class="nav-number">4.</span> <span class="nav-text"> 如何使用docker image</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#font-colorseagreenagilentd%E8%BD%AC%E6%8D%A2%E4%B8%BE%E4%BE%8Bfont"><span class="nav-number">5.</span> <span class="nav-text"> Agilent.d转换举例</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#font-colorseagreen%E5%8F%82%E8%80%83%E5%86%85%E5%AE%B9font"><span class="nav-number">6.</span> <span class="nav-text"> 参考内容</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Jin JF"
+      src="/images/250.jpg">
+  <p class="site-author-name" itemprop="name">Jin JF</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">70</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">12</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">79</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/lxmic" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;lxmic" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:jin19920326@gmail.com" title="E-Mail → mailto:jin19920326@gmail.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://twitter.com/slum0326" title="Twitter → https:&#x2F;&#x2F;twitter.com&#x2F;slum0326" rel="noopener" target="_blank"><i class="fa fa-fw fa-twitter"></i>Twitter</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.youtube.com/channel/UC_hwJX-MEj3hSvixXUP1TSg" title="YouTube → https:&#x2F;&#x2F;www.youtube.com&#x2F;channel&#x2F;UC_hwJX-MEj3hSvixXUP1TSg" rel="noopener" target="_blank"><i class="fa fa-fw fa-youtube"></i>YouTube</a>
+      </span>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Jin JF</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+      <span class="post-meta-item-text">站点总字数：</span>
+    <span title="站点总字数">97k</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+      <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
+    <span title="站点阅读时长">2:57</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
+  </div>
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+
+<script>
+NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js', () => {
+    var gitalk = new Gitalk({
+      clientID    : '6d6c01bc950195ccacf0',
+      clientSecret: '805790d2550d8c14018d4dc8be4273a95f72e4b5',
+      repo        : 'blog_comment',
+      owner       : 'lxmic',
+      admin       : ['lxmic'],
+      id          : '559dd56fafda13350feca4c7cc79f072',
+        language: 'zh-CN',
+      distractionFreeMode: true
+    });
+    gitalk.render('gitalk-container');
+  }, window.Gitalk);
+});
+</script>
+
+</body>
+</html>
