@@ -74,9 +74,12 @@ categories: 科研之路
 
 6. Oven temperature: initial 50°C hold for 2 min, 25°C/min up to 200°C hold for 1 min, 10°C/min up to 320°C hold for 8 min.
 7. 根据已经报道的分子碎裂模式（m/z），鉴定是物质种类。
+
 ![2022-08-24-f5c94p](https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-08-24-f5c94p.png)
 
+
 ## <font color=seagreen>参考内容</font>
+
 1. Baales J, Zeisler-Diehl VV, and Schreiber L. (2021). Analysis of Extracellular Cell Wall Lipids: Wax, Cutin, and Suberin in Leaves, Roots, Fruits, and Seeds. In Plant Lipids, D. Bartels and P. Dörmann, eds, Methods in Molecular Biology. (Springer US: New York, NY), pp. 275–293.
 2. Ichihara K and Fukubayashi Y. (2010). Preparation of fatty acid methyl esters for gas-liquid chromatography. Journal of Lipid Research 51: 635–640.
 3. 袁宏宇, 王欣泽, 沈剑, 迟莉娜, 字建婷, and 王荣会. (2020). 固相萃取—微波衍生化—GC-MS法同时测定水中6种雌激素物质. 化工环保 40: 218–224.
