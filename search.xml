@@ -2140,30 +2140,6 @@ float——确定图片是否为浮动，而不是在一个固定的地方。</p
       </tags>
   </entry>
   <entry>
-    <title>算法与数据结构（2）：算法复杂度</title>
-    <url>//2018/09/05/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%EF%BC%882%EF%BC%89%EF%BC%9A%E7%AE%97%E6%B3%95%E5%A4%8D%E6%9D%82%E5%BA%A6/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![复杂](https://upload-images.jianshu.io/upload_images/3478485-2198e399288f19f7.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-<p>9月5日，星期三，公元2018年。</p>
-<blockquote>
-<p>简书作者<a href="https://www.jianshu.com/u/44339a8a9afa">程序员联盟</a>：目前正在更新这个系列的教程，我是学习记录者，并非原创，此后<strong>算法与数据结构</strong>系列都是记录笔记，不再进一步说明。</p>
-</blockquote>
-<span id="more"></span>
-<p>这片是关于引出算法复杂度，用了小鸭子的故事。</p>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-f667aaa8497301ce.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="小鸭子" /></p>
-<center>小鸭子</center>
-故事是这样的：
-<p>有个农夫，每年带着小鸭子们去旅行，目的是为了让小鸭子们都得到放松清净的机会。旅行就是将他们放到池塘里，而且每个池塘要保证一样多的鸭子，才能够同样的清净，不会有不公平的情况出现。因此，农夫采取的方法是：将小鸭子一只一只的带到池塘边，让他们自己选择要去的池塘，最后在池塘和卡车之见跑了NxN个来回。而第二年，农夫发现不太好，于是就重新换了方法，依次带出N只鸭子，将其放在一个池塘，如此下去，直到每个池塘也是同样多的鸭子，这样只需要N个来回。这样一算，发现第二种方法能够更节省时间更轻松，而且还达到了同样的效果，新的方法胜利。</p>
-<p>农夫的放鸭子的方法，就可以看成一种算法，用来对放置鸭子进行了精确的描述。很显然第二种算法更好，时间节省，力气节省，还能达到同样的结果。在计算机术语中，人们用复杂度（complexity）这个词来量化算法的性能。</p>
-]]></content>
-      <categories>
-        <category>算法与数据结构</category>
-      </categories>
-      <tags>
-        <tag>复杂度</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>算法与数据结构（3）：算法复杂度说明（上）</title>
     <url>//2018/10/10/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%EF%BC%883%EF%BC%89%EF%BC%9A%E7%AE%97%E6%B3%95%E5%A4%8D%E6%9D%82%E5%BA%A6%E8%AF%B4%E6%98%8E%EF%BC%88%E4%B8%8A%EF%BC%89/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -2236,6 +2212,30 @@ float——确定图片是否为浮动，而不是在一个固定的地方。</p
       <tags>
         <tag>中南美洲</tag>
         <tag>毕淑敏</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>算法与数据结构（2）：算法复杂度</title>
+    <url>//2018/09/05/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%EF%BC%882%EF%BC%89%EF%BC%9A%E7%AE%97%E6%B3%95%E5%A4%8D%E6%9D%82%E5%BA%A6/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![复杂](https://upload-images.jianshu.io/upload_images/3478485-2198e399288f19f7.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+<p>9月5日，星期三，公元2018年。</p>
+<blockquote>
+<p>简书作者<a href="https://www.jianshu.com/u/44339a8a9afa">程序员联盟</a>：目前正在更新这个系列的教程，我是学习记录者，并非原创，此后<strong>算法与数据结构</strong>系列都是记录笔记，不再进一步说明。</p>
+</blockquote>
+<span id="more"></span>
+<p>这片是关于引出算法复杂度，用了小鸭子的故事。</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-f667aaa8497301ce.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="小鸭子" /></p>
+<center>小鸭子</center>
+故事是这样的：
+<p>有个农夫，每年带着小鸭子们去旅行，目的是为了让小鸭子们都得到放松清净的机会。旅行就是将他们放到池塘里，而且每个池塘要保证一样多的鸭子，才能够同样的清净，不会有不公平的情况出现。因此，农夫采取的方法是：将小鸭子一只一只的带到池塘边，让他们自己选择要去的池塘，最后在池塘和卡车之见跑了NxN个来回。而第二年，农夫发现不太好，于是就重新换了方法，依次带出N只鸭子，将其放在一个池塘，如此下去，直到每个池塘也是同样多的鸭子，这样只需要N个来回。这样一算，发现第二种方法能够更节省时间更轻松，而且还达到了同样的效果，新的方法胜利。</p>
+<p>农夫的放鸭子的方法，就可以看成一种算法，用来对放置鸭子进行了精确的描述。很显然第二种算法更好，时间节省，力气节省，还能达到同样的结果。在计算机术语中，人们用复杂度（complexity）这个词来量化算法的性能。</p>
+]]></content>
+      <categories>
+        <category>算法与数据结构</category>
+      </categories>
+      <tags>
+        <tag>复杂度</tag>
       </tags>
   </entry>
   <entry>
@@ -2687,7 +2687,7 @@ float——确定图片是否为浮动，而不是在一个固定的地方。</p
       </tags>
   </entry>
   <entry>
-    <title>AAE体外酶活测定</title>
+    <title>LACS体外酶活测定</title>
     <url>//2022/08/25/AAE%E4%BD%93%E5%A4%96%E9%85%B6%E6%B4%BB%E6%B5%8B%E5%AE%9A/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
 <div class="note primary">
@@ -2707,27 +2707,245 @@ float——确定图片是否为浮动，而不是在一个固定的地方。</p
 <li>扩增目的基因的全长，并克隆至pET28b载体中，然后转化至表达宿主菌株BL21 Rosetta。</li>
 <li>用0.05 mM IPTG（isopropyl <em>β</em>-D-1-thiogalactopyranoside）诱导OD<sub>600</sub>=0.3-0.6的菌株。16°C，120 rpm过夜培养16 h。</li>
 <li>收集及破碎菌株，用Ni-NTA beads进行纯化，若浓度不够，还需进行浓缩。</li>
+<li></li>
 </ol>
+<h1 id="font-colorseagreenreagents-preparefont"><a class="markdownIt-Anchor" href="#font-colorseagreenreagents-preparefont"></a> <font color=seagreen>Reagents prepare</font></h1>
+<p>在正式开始实验前，需要准备好所需的试剂，方便实验进行。主要为预混液premix以及各底物母液配置。</p>
+<h3 id="预混溶液的母液配置"><a class="markdownIt-Anchor" href="#预混溶液的母液配置"></a> 预混溶液的母液配置</h3>
+<p>其中MgCl<sub>2</sub>和KCl可以称量配制500 ml所需的质量，即分别为2.033*5=<font color=royalblue>10.165</font> g和0.3728*10=<font color=royalblue>3.728</font> g。然后，将其加入至500 ml Tris-HCl溶液中，配制成含1 M Tris-HCl（pH7.5）、100 mM MgCl<sub>2</sub>和100 mM KCl的母液。这三者最终工作液浓度均是稀释10倍，且不会反应。</p>
+<table>
+<thead>
+<tr>
+<th>Stock  solution</th>
+<th>Volume，V*MW*mol = mass（g）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1 M Tris-HCl (pH7.5) MW: 121.1</td>
+<td>500 mL, 0.5*157.64*1=78.82</td>
+</tr>
+<tr>
+<td>200 mM dithiothreitol MW: 154.3</td>
+<td>5 mL, 0.2*154.3*0.005=0.1543</td>
+</tr>
+<tr>
+<td>250 mM ATP MW: 551.4</td>
+<td>4.0 ml,  0.25*0.004*551.4=0.5514</td>
+</tr>
+<tr>
+<td>100 mM <font color=orange>MgCl<sub>2</sub></font> MW: 203.3</td>
+<td>100 mL, 0.1*0.1*203.3=2.033</td>
+</tr>
+<tr>
+<td>100 mM <font color=orange>KCl</font> MW: 74.55</td>
+<td>50 mL , 0.1*0.05*74.55=0.3728</td>
+</tr>
+<tr>
+<td>50 mM CoA MW: 767.5</td>
+<td>0.4 mL, 0.0004*0.05*767.5=0.0154</td>
+</tr>
+<tr>
+<td>50 mM NADH MW: 741.6</td>
+<td>1 mL, 0.05*0.001*741.6=0.0371</td>
+</tr>
+<tr>
+<td>100 mM phosphoenolpyruvate salt MW: 267.22</td>
+<td>2.5 mL, 0.1*0.0025*206.13=0.0515</td>
+</tr>
+</tbody>
+</table>
+<h3 id="底物母液配置"><a class="markdownIt-Anchor" href="#底物母液配置"></a> 底物母液配置</h3>
+<p>脂肪酸根据碳链长度分为短链脂肪酸（<strong>SCFA</strong>：小于6个C，挥发性脂肪酸）、中链脂肪酸（<strong>MCFA</strong>：6-12个C，主要是辛酸<font color=purple>C8</font>和癸酸<font color=purple>C10</font>）和长链脂肪酸（<strong>LCFA</strong>：大于12个C）。一般C原子小于10的低级脂肪酸易溶于水，随着C原子继续增加，溶解度减小，溶或者不溶于水，但溶于有机溶剂。除特殊说明，可以使用<strong>5% Triton X-100</strong>来配制5 mM的C<sub>10</sub>以上的脂肪酸底物。</p>
+<table>
+<thead>
+<tr>
+<th>Substrates</th>
+<th>MW，mol，Volume</th>
+<th>mol*V*MW=mass （g）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sodium acetate</td>
+<td>C2:0 MW: 82.03 50 mM 10 mL</td>
+<td>0.05*0.01*82.03=0.041</td>
+</tr>
+<tr>
+<td>Sodium butyrate</td>
+<td>C4:0 MW: 110.09 5 mM 10 mL</td>
+<td>0.005*0.01*110.09=0.0055</td>
+</tr>
+<tr>
+<td>Sodium hexanoate</td>
+<td>C6:0 MW: 138.14 5mM 10mL</td>
+<td>0.005*0.01*138.14=0.0069</td>
+</tr>
+<tr>
+<td>Sodium octanoate</td>
+<td>C8:0 MW:166.19. 5mM 10mL</td>
+<td>0.005*0.01*166.19=0.0083</td>
+</tr>
+<tr>
+<td>Sodium decanoate</td>
+<td>C10:0 MW:194.25. 5mM 10mL</td>
+<td>0.005*0.01*194.25=0.0097</td>
+</tr>
+<tr>
+<td>Sodium dodecanoate 月桂酸钠</td>
+<td>C12:0 MW:222.30. 5mM 10mL</td>
+<td>0.005*0.01*222.30=0.0111</td>
+</tr>
+<tr>
+<td>Sodium myristate  肉豆蔻酸钠</td>
+<td>C14:0 MW:250.35. 5mM 10mL</td>
+<td>0.005*0.01*250.35=0.0125</td>
+</tr>
+<tr>
+<td>Sodium palmitate  棕榈酸钠</td>
+<td>C16:0 MW:278.41. 5mM 10mL</td>
+<td>0.005*0.01*278.41=0.0139</td>
+</tr>
+<tr>
+<td>Sodium stearate  硬脂酸钠</td>
+<td>C18:0 MW:306.46. 5mM 10mL</td>
+<td>0.005*0.01*306.46=0.0153</td>
+</tr>
+<tr>
+<td>Sodium linoleate 亚油酸钠</td>
+<td>C18:2 MW:302.4. 5mM 10mL</td>
+<td>0.005*0.01*302.4=0.0151 in 10% TritonX-100</td>
+</tr>
+<tr>
+<td>12-oxo-phytodienoic acid  （C<sub>18</sub>H<sub>28</sub>O<sub>3</sub>）</td>
+<td>OPDA MW: 292.4 (1ug/uL in 100% ethonl)</td>
+<td>Take 50uL to dry down and resuspend  in 100uL 10% TritonX-100 will give the concentration of 1709.9uM, 1.71mM.</td>
+</tr>
+<tr>
+<td>Dinor-12-oxophytodienoic Acid  (C<sub>16</sub>H<sub>24</sub>O<sub>3</sub>)</td>
+<td>OPDA-2 MW:264.4</td>
+<td></td>
+</tr>
+<tr>
+<td>Tridecanoic  acid</td>
+<td>C13:0</td>
+<td></td>
+</tr>
+<tr>
+<td>Undecanoic  acid</td>
+<td>C11:0</td>
+<td></td>
+</tr>
+<tr>
+<td>11- Methyldodecanoic acid (11- methyllauric acid)</td>
+<td>CAS:5681-98-1</td>
+<td></td>
+</tr>
+</tbody>
+</table>
 <h1 id="font-colorseagreenenzyme-activity-assayfont"><a class="markdownIt-Anchor" href="#font-colorseagreenenzyme-activity-assayfont"></a> <font color=seagreen>Enzyme activity assay</font></h1>
 <ol>
 <li>5% Triton X-100（v/v）配制5 mM的脂肪酸底物。</li>
-<li>准备酶活分析的预混溶液，均分为95 µl至每个96孔UV板。
-<ul>
-<li>0.1 M Tris-HCl (pH 7.5)</li>
-<li>2 mM dithiothreitol</li>
-<li>5 mM ATP</li>
-<li>10 mM MgCl<sub>2</sub></li>
-<li>0.5 mM CoA</li>
-<li>0.8 mM NADH</li>
-<li>250 µM fatty acid substrate</li>
-<li>1 mM phosphoenolpyruvate</li>
-<li>20 units myokinase</li>
-<li>10 units pyruvate kinase</li>
-<li>10 units lactate dehydrogenase</li>
-</ul>
-</li>
+<li>准备酶活分析的预混溶液，均分为95 µl至每个96孔UV板。</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Stock  solution</th>
+<th>Working concentration</th>
+<th>Volume in 10 ml</th>
+<th>Volume in 7 ml</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1M Tris-HCl(pH7.5) MW:121.1</td>
+<td>0.1M Tris-HCl(pH7.5) MW:121.1</td>
+<td>1 mL</td>
+<td>0.7 mL</td>
+</tr>
+<tr>
+<td>200 mM dithiothreitol MW:154.3</td>
+<td>2 mM dithiothreitol MW:154.3</td>
+<td>100 uL</td>
+<td>70 uL</td>
+</tr>
+<tr>
+<td>250 mM ATP MW: 551.4</td>
+<td>5 mM ATP 551.4</td>
+<td>200 uL</td>
+<td>140 uL</td>
+</tr>
+<tr>
+<td>100 mM MgCl2 (included in Tris)</td>
+<td>10 mM MgCl2</td>
+<td>0 mL</td>
+<td></td>
+</tr>
+<tr>
+<td>100 mM KCl (included  in Tris)</td>
+<td>10 mM KCl</td>
+<td>0 mL</td>
+<td></td>
+</tr>
+<tr>
+<td>50 mM CoA 767.5</td>
+<td>0.5mM CoA 767.5</td>
+<td>100uL</td>
+<td>70 uL</td>
+</tr>
+<tr>
+<td>50 mM NADH 741.6</td>
+<td>0.25 mM NADH 741.6/ 1mM</td>
+<td>50 uL/200 uL</td>
+<td>35 uL/140 uL</td>
+</tr>
+<tr>
+<td>100 mM phosphoenolpyruvate salt MW: 267.22</td>
+<td>1 mM phosphoenolpyruvate salt MW: 267.22</td>
+<td>100 uL</td>
+<td>70 uL</td>
+</tr>
+<tr>
+<td>Myokinase M3003 Sigma (2268.11  unit/mg, 3 mg/mL)</td>
+<td>20 units myokinase</td>
+<td>40 uL</td>
+<td>28 uL</td>
+</tr>
+<tr>
+<td>Pyruvate kinase 10128155001 Roche (200 units/mg at RT, 10  mg/mL)</td>
+<td>10 units pyruvate  kinase</td>
+<td>50 uL</td>
+<td>35 uL</td>
+</tr>
+<tr>
+<td>Lactate dehydrogenase 10127230001 Roche (550 units/mg  at RT, 5  mg/mL)</td>
+<td>10 units lactate dehydrogenase</td>
+<td>40 uL</td>
+<td>28 uL</td>
+</tr>
+<tr>
+<td>5 mM fatty acyl substrate</td>
+<td>250 uM fatty acyl substrate</td>
+<td>5 uL in 100 uL reaction for 1/10 D</td>
+<td>2 uL in 100 uL for 1/50 dilution</td>
+</tr>
+<tr>
+<td>H2O</td>
+<td></td>
+<td>8.3 mL</td>
+<td>5.75 mL</td>
+</tr>
+</tbody>
+</table>
+<ol start="3">
 <li>加入5 µl（1-2 µg）纯化的目的蛋白，开始反应。</li>
 <li>在酶标仪中，设置30°C的温度,OD<sub>340nm</sub>处读数40 min，每隔5 min读取一次。</li>
+</ol>
+<h1 id="font-colorseagreenreferencefont"><a class="markdownIt-Anchor" href="#font-colorseagreenreferencefont"></a> <font color=seagreen>Reference</font></h1>
+<ol>
+<li>Patel SS and Walt DR. (1987). Substrate specificity of acetyl coenzyme A synthetase. Journal of Biological Chemistry 262: 7132–7134.</li>
+<li>Fan PX, Wang PP, Lou YR, Leong BJ, Moore BM, Schenck CA, Combs R, Cao PF, Brandizzi F, Shiu SH, and Last RL. (2020). Evolution of a plant gene cluster in Solanaceae and emergence of metabolic diversity. eLife 9: e56717.</li>
 </ol>
 ]]></content>
       <categories>
@@ -2736,6 +2954,7 @@ float——确定图片是否为浮动，而不是在一个固定的地方。</p
       <tags>
         <tag>Protocols</tag>
         <tag>AAE</tag>
+        <tag>LACS</tag>
       </tags>
   </entry>
   <entry>
@@ -2998,22 +3217,6 @@ KOH adjust the pH to 7.2</p>
       </tags>
   </entry>
   <entry>
-    <title>Medicinal Natural Products</title>
-    <url>//2022/08/18/Medicinal-Natural-Products/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-08-18-muWlWw.jpg" alt="2022-08-18-muWlWw" /></p>
-<span id="more"></span>
-]]></content>
-      <categories>
-        <category>Books</category>
-      </categories>
-      <tags>
-        <tag>Metabolism</tag>
-        <tag>Chemistry</tag>
-        <tag>Biosynthesis</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>PlantPAN3预测启动子motif</title>
     <url>//2022/08/26/PlantPAN3%E9%A2%84%E6%B5%8B%E5%90%AF%E5%8A%A8%E5%AD%90motif/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -3054,6 +3257,22 @@ KOH adjust the pH to 7.2</p>
       <tags>
         <tag>tools</tag>
         <tag>motif</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Medicinal Natural Products</title>
+    <url>//2022/08/18/Medicinal-Natural-Products/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-08-18-muWlWw.jpg" alt="2022-08-18-muWlWw" /></p>
+<span id="more"></span>
+]]></content>
+      <categories>
+        <category>Books</category>
+      </categories>
+      <tags>
+        <tag>Metabolism</tag>
+        <tag>Chemistry</tag>
+        <tag>Biosynthesis</tag>
       </tags>
   </entry>
   <entry>
