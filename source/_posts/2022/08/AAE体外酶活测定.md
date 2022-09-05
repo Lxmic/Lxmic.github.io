@@ -31,9 +31,10 @@ LACS反应过程：
 1. 扩增目的基因的全长，并克隆至pET28b载体中，然后转化至表达宿主菌株BL21 Rosetta。
 2. 用0.05 mM IPTG（isopropyl *β*-D-1-thiogalactopyranoside）诱导OD~600~=0.3-0.6的菌株。16°C，120 rpm过夜培养16 h。
 3. 收集及破碎菌株，用Ni-NTA beads进行纯化，若浓度不够，还需进行浓缩。
-4. 
+
 # <font color=seagreen>Reagents prepare</font>
 在正式开始实验前，需要准备好所需的试剂，方便实验进行。主要为预混液premix以及各底物母液配置。
+
 ### 预混溶液的母液配置
 其中MgCl~2~和KCl可以称量配制500 ml所需的质量，即分别为2.033\*5=<font color=royalblue>10.165</font> g和0.3728\*10=<font color=royalblue>3.728</font> g。然后，将其加入至500 ml Tris-HCl溶液中，配制成含1 M Tris-HCl（pH7.5）、100 mM MgCl~2~和100 mM KCl的母液。这三者最终工作液浓度均是稀释10倍，且不会反应。
 
@@ -47,6 +48,7 @@ LACS反应过程：
 | 50 mM CoA MW: 767.5                        | 0.4 mL, 0.0004\*0.05\*767.5=0.0154 |
 | 50 mM NADH MW: 741.6                       | 1 mL, 0.05\*0.001\*741.6=0.0371    |
 | 100 mM phosphoenolpyruvate salt MW: 267.22 | 2.5 mL, 0.1\*0.0025\*206.13=0.0515 |
+
 
 ### 底物母液配置
 脂肪酸根据碳链长度分为短链脂肪酸（**SCFA**：小于6个C，挥发性脂肪酸）、中链脂肪酸（**MCFA**：6-12个C，主要是辛酸<font color=purple>C8</font>和癸酸<font color=purple>C10</font>）和长链脂肪酸（**LCFA**：大于12个C）。一般C原子小于10的低级脂肪酸易溶于水，随着C原子继续增加，溶解度减小，溶或者不溶于水，但溶于有机溶剂。除特殊说明，可以使用**5% Triton X-100**来配制5 mM的C~10~以上的脂肪酸底物。
@@ -90,6 +92,7 @@ LACS反应过程：
 
 3. 加入5 µl（1-2 µg）纯化的目的蛋白，开始反应。
 4. 在酶标仪中，设置30°C的温度,OD~340nm~处读数40 min，每隔5 min读取一次。
+
 
 # <font color=seagreen>Reference</font>
 1. Patel SS and Walt DR. (1987). Substrate specificity of acetyl coenzyme A synthetase. Journal of Biological Chemistry 262: 7132–7134.
