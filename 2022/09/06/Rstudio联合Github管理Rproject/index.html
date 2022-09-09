@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.0.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"othlis.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"gitalk","storage":true,"lazyload":false,"nav":{"disqus":{"text":"Load Disqus","order":-1},"gitalk":{"order":-2}},"activeClass":"gitalk"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="R语言代码以及输出结果自我接触R语言以来，从未真正有条理管理过，导致代码东一个西一个，非常杂乱。最近，通过学习R project以及Github，来尝试着管理自己的项目或者说是课题内容。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Rstudio联合Github管理Rproject">
+<meta property="og:url" content="https://othlis.com/2022/09/06/Rstudio%E8%81%94%E5%90%88Github%E7%AE%A1%E7%90%86Rproject/index.html">
+<meta property="og:site_name" content="Lxmic Blog">
+<meta property="og:description" content="R语言代码以及输出结果自我接触R语言以来，从未真正有条理管理过，导致代码东一个西一个，非常杂乱。最近，通过学习R project以及Github，来尝试着管理自己的项目或者说是课题内容。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-07-iNFqyT.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-07-8nhdGP.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-07-KfkCXq.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-07-FR2mzz.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-07-YHNt67.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-07-kUw7qT.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-07-4Ejyxs.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-07-PpfPEG.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-07-WEOkjc.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-07-pjmmDm.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-07-ajfSoL.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-07-pRWza0.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-07-j5Fh4K.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-07-NX3WQH.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-07-Ty1uLV.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-07-pv12cH.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-07-sjexX6.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-07-GYteah.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-07-fPgmAj.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-07-xGJOUA.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-08-w6PGgJ.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-08-XluK0e.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-08-BuFaJq.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-08-RSQyfD.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-08-IPq6j3.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-08-oy5mnR.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-08-49yok2.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-08-UdObc8.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-08-RpGtSO.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-08-5ytlsV.png">
+<meta property="article:published_time" content="2022-09-06T12:49:58.000Z">
+<meta property="article:modified_time" content="2022-09-09T02:17:52.210Z">
+<meta property="article:author" content="Jin JF">
+<meta property="article:tag" content="R">
+<meta property="article:tag" content="Github">
+<meta property="article:tag" content="Rstudio">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-07-iNFqyT.png">
+
+<link rel="canonical" href="https://othlis.com/2022/09/06/Rstudio%E8%81%94%E5%90%88Github%E7%AE%A1%E7%90%86Rproject/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>Rstudio联合Github管理Rproject | Lxmic Blog</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Lxmic Blog</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">Everything from life</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://othlis.com/2022/09/06/Rstudio%E8%81%94%E5%90%88Github%E7%AE%A1%E7%90%86Rproject/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/250.jpg">
+      <meta itemprop="name" content="Jin JF">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Lxmic Blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Rstudio联合Github管理Rproject
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2022-09-06 20:49:58" itemprop="dateCreated datePublished" datetime="2022-09-06T20:49:58+08:00">2022-09-06</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2022-09-09 10:17:52" itemprop="dateModified" datetime="2022-09-09T10:17:52+08:00">2022-09-09</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%A7%91%E7%A0%94%E4%B9%8B%E8%B7%AF/" itemprop="url" rel="index"><span itemprop="name">科研之路</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span><br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>4.3k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>8 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <meta name="referrer" content="no-referrer" />
+<div class="note primary">
+            <p>R语言代码以及输出结果自我接触R语言以来，从未真正有条理管理过，导致代码东一个西一个，非常杂乱。最近，通过学习R project以及Github，来尝试着管理自己的项目或者说是课题内容。</p>
+          </div>
+<span id="more"></span>
+<h1 id="font-colorseagreen1-rstudio创建rproject项目font"><a class="markdownIt-Anchor" href="#font-colorseagreen1-rstudio创建rproject项目font"></a> <font color=seagreen>1. Rstudio创建Rproject项目</font></h1>
+<p>前提条件：1. 安装R；2. 下载Rstudio; 3. 注册Github账号。以上条件比较容易实现，本文不作详细讲述。</p>
+<h2 id="font-colorseagreen11-在github中创建项目仓库与rproj建立联系font"><a class="markdownIt-Anchor" href="#font-colorseagreen11-在github中创建项目仓库与rproj建立联系font"></a> <font color=seagreen>1.1 在Github中创建项目仓库，与Rproj建立联系</font></h2>
+<ul>
+<li>打开Github上自己的仓库，点击“New”，开始创建新的项目仓库。</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-07-iNFqyT.png" alt="2022-09-07-iNFqyT" /></p>
+<ul>
+<li>填写repo.名字，添加README，选择license，最后点击create repo.</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-07-8nhdGP.png" alt="2022-09-07-8nhdGP" /></p>
+<h2 id="font-colorseagreen12-利用rstudio创建本地rprojectfont"><a class="markdownIt-Anchor" href="#font-colorseagreen12-利用rstudio创建本地rprojectfont"></a> <font color=seagreen>1.2 利用Rstudio创建本地Rproject</font></h2>
+<ul>
+<li>点击右上角的new project，或者左上角的蓝色立方体R。</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-07-KfkCXq.png" alt="2022-09-07-KfkCXq" /></p>
+<ul>
+<li>弹出对话框，共3种Project可以选择，点击第三种“version control”。</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-07-FR2mzz.png" alt="2022-09-07-FR2mzz" /></p>
+<ul>
+<li>点击Git，从Github克隆项目到本地。</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-07-YHNt67.png" alt="2022-09-07-YHNt67" /></p>
+<ul>
+<li>输入自己Github上仓库地址以及仓库repo.名称，以及选择Rproject本地保存的位置。</li>
+</ul>
+<p>![image-20220907153459094](/Users/lxmic/Library/Application Support/typora-user-images/image-20220907153459094.png)</p>
+<ul>
+<li>点击创建项目后，几秒后创建并打开JA_RProject，看到右下角的项目文件夹中有几个文件，其中三个是从Github上clone来的，项目文件是创建的。此外，还有2个文件夹是隐藏的，无法看到<code>.Rproj.user</code>	和<code>.git</code>。</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-07-kUw7qT.png" alt="2022-09-07-kUw7qT" /></p>
+<h1 id="font-colorseagreen2-创建必要文件夹以区分项目内容font"><a class="markdownIt-Anchor" href="#font-colorseagreen2-创建必要文件夹以区分项目内容font"></a> <font color=seagreen>2. 创建必要文件夹以区分项目内容</font></h1>
+<h2 id="font-colorseagreen21-在本地project项目文件夹下创建项目分析所需要的文件下以便管理项目内容-font"><a class="markdownIt-Anchor" href="#font-colorseagreen21-在本地project项目文件夹下创建项目分析所需要的文件下以便管理项目内容-font"></a> <font color=seagreen>2.1 在本地Project项目文件夹下，创建项目分析所需要的文件下，以便管理项目内容。</font></h2>
+<p>例如创建code、data、manuscript、data_analysis和summary等文件夹，可以根据需要进行创建，符合自己的习惯即可。</p>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-07-4Ejyxs.png" alt="2022-09-07-4Ejyxs" /></p>
+<h2 id="font-colorseagreen22-编辑gitignore文件font"><a class="markdownIt-Anchor" href="#font-colorseagreen22-编辑gitignore文件font"></a> <font color=seagreen>2.2 编辑.gitignore文件</font></h2>
+<p>Rstudio中点击打开<code>.gitignore</code>文件，里面已经有一些文件与文件夹。这个文件的作用是避免文件被上传至Github，<strong>防止数据泄漏</strong>。根据自己保密数据所在的文件夹，记得提前将其写入这个文件中，防止出现意外情况。可以说，在你文章发表之前，所有的数据文件夹都是应该保密的，都写入这个文件中。</p>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-07-PpfPEG.png" alt="2022-09-07-PpfPEG" /></p>
+<h2 id="font-colorseagreen23-首次上传项目至githubfont"><a class="markdownIt-Anchor" href="#font-colorseagreen23-首次上传项目至githubfont"></a> <font color=seagreen>2.3 首次上传项目至Github</font></h2>
+<p>创建文件夹以及编辑文件后，在Rstudio的终端可以看到有黄色的X，代表你编辑过了还没有提交修改的内容。先提交，然后在进行上传。输入以下3条Git命令，将修改的内容上传。</p>
+<p>如果不懂Git基本知识，可以参考<a target="_blank" rel="noopener" href="https://www.liaoxuefeng.com/wiki/896043488029600/896202815778784">廖雪峰写的Git教程</a>，内容不多，比较精简，看一遍能了解个大概。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 将你修改过的所有文件添加到本地仓库</span></span><br><span class="line">git add .</span><br><span class="line"><span class="comment"># 将刚才添加的内容，提交到仓库</span></span><br><span class="line">git commit -m</span><br><span class="line"><span class="comment"># 将本地仓库master推送到远程仓库，也就是同步至Github网站</span></span><br><span class="line">git push origin main</span><br></pre></td></tr></table></figure>
+<p>提交过程中可能会出现以下的报错，**我选择了左上角Git，然后点击push，**过了一会儿成功了。具体这个报错是因为master，可以将master改为main。参考内容：<a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/60660765/error-failed-to-push-some-refs-to-https-github-com">git - error: failed to push some refs to 'https://github.com/ - Stack Overflow</a></p>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-07-WEOkjc.png" alt="2022-09-07-WEOkjc" /></p>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-07-pjmmDm.png" alt="2022-09-07-pjmmDm" /></p>
+<p>提交完成后，可以刷新Github网页，可以看到我们创建的Rproj。</p>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-07-ajfSoL.png" alt="2022-09-07-ajfSoL" /></p>
+<h1 id="font-colorseagreen3-distill创建网站font"><a class="markdownIt-Anchor" href="#font-colorseagreen3-distill创建网站font"></a> <font color=seagreen>3. distill创建网站</font></h1>
+<p>关于Distill的相关学习文档，可以参考以下网站：</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://rstudio4edu.github.io/rstudio4edu-book/make-distill.html">Make a Distill site | rstudio4edu</a></li>
+<li><a target="_blank" rel="noopener" href="https://distill.netlify.app/">R Markdown Format for Scientific and Technical Writing • distill</a></li>
+<li><a target="_blank" rel="noopener" href="https://rstudio.github.io/distill/">Distill for R Markdown</a></li>
+</ul>
+<h2 id="font-colorseagreen31-安装distll-for-markdownfont"><a class="markdownIt-Anchor" href="#font-colorseagreen31-安装distll-for-markdownfont"></a> <font color=seagreen>3.1 安装distll for markdown</font></h2>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">remotes::install_github(<span class="string">&quot;rstudio/distill&quot;</span>)</span><br></pre></td></tr></table></figure>
+<h2 id="font-colorseagreen32-创建网站地址font"><a class="markdownIt-Anchor" href="#font-colorseagreen32-创建网站地址font"></a> <font color=seagreen>3.2 创建网站地址</font></h2>
+<p>distill创建网站的语法很简单，其中<code>website_files</code>是放网站相关文件的目录，不要直接将其放置到项目目录下。gh_pages是将网站通过GitHub page发布。</p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">distill::create_website(dir = <span class="string">&quot;website_files/&quot;</span>, gh_pages = <span class="literal">TRUE</span>)</span><br></pre></td></tr></table></figure>
+<ul>
+<li>运行后，以一个对话的方式开始建站。先输入网站标题，然后开始安装建站。</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-07-pRWza0.png" alt="2022-09-07-pRWza0" /></p>
+<ul>
+<li>建站结束后，会创建<strong>website_files</strong>文件夹，并且打开<strong>index.Rmd</strong>文件。</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-07-j5Fh4K.png" alt="2022-09-07-j5Fh4K" /></p>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-07-NX3WQH.png" alt="2022-09-07-NX3WQH" /></p>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-07-Ty1uLV.png" alt="2022-09-07-Ty1uLV" /></p>
+<h2 id="font-colorseagreen33-编译网站font"><a class="markdownIt-Anchor" href="#font-colorseagreen33-编译网站font"></a> <font color=seagreen>3.3 编译网站</font></h2>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rmarkdown::render_site(input = <span class="string">&quot;website_files/&quot;</span>)</span><br></pre></td></tr></table></figure>
+<h2 id="font-colorseagreen34-将docs文件夹复制到项目文件夹下font"><a class="markdownIt-Anchor" href="#font-colorseagreen34-将docs文件夹复制到项目文件夹下font"></a> <font color=seagreen>3.4 将docs文件夹复制到项目文件夹下</font></h2>
+<p>可以直接将docs复制到JA_Rproject, 或者使用下面的代码进行第一次拷贝。如果是已经复制过，需要进行覆盖，则加入<code>overwrite = TRUE</code>参数，进行复制。</p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">file.copy(from = <span class="string">&quot;website_files/docs/&quot;</span>,to = <span class="string">&quot;.&quot;</span>,recursive = <span class="literal">TRUE</span>)</span><br></pre></td></tr></table></figure>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-07-pv12cH.png" alt="2022-09-07-pv12cH" /></p>
+<h2 id="font-colorseagreen35-发布website至github-pagesfont"><a class="markdownIt-Anchor" href="#font-colorseagreen35-发布website至github-pagesfont"></a> <font color=seagreen>3.5 发布website至Github pages</font></h2>
+<ul>
+<li>提交建站过程中产生的文件至远程库</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git add .</span><br><span class="line">git commit -m <span class="string">&quot;create website&quot;</span></span><br><span class="line">git push origin main</span><br></pre></td></tr></table></figure>
+<ul>
+<li>设置website</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-07-sjexX6.png" alt="2022-09-07-sjexX6" /></p>
+<ul>
+<li>设置Github Pages，main brach and /docs文件夹，然后点击save。等待一段时间可以看到站点地址，<a target="_blank" rel="noopener" href="http://xn--githubothlis-yf5so7ap02djkk3jbii81ix61av7bj23dfk2hqwvb.com">我的地址因为将github绑定了域名othlis.com</a>，所以地址为：<a href="http://othlis.com/JA_Rproject/">http://othlis.com/JA_Rproject/</a>.</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-07-GYteah.png" alt="2022-09-07-GYteah" /></p>
+<ul>
+<li>打开网站，可以看到已经开始运行，网址已经公开，谁都可以看到。现在github已经可以免费开通private库，但是一旦私有化，你的Github pages就无法正常访问，无法看到。除非你花钱开通Pro版本，那是另外一回事儿。</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-07-fPgmAj.png" alt="2022-09-07-fPgmAj" /></p>
+<h1 id="font-colorseagreen4-美化设计websitefont"><a class="markdownIt-Anchor" href="#font-colorseagreen4-美化设计websitefont"></a> <font color=seagreen>4. 美化设计website</font></h1>
+<h2 id="font-colorseagreen41-website_files介绍font"><a class="markdownIt-Anchor" href="#font-colorseagreen41-website_files介绍font"></a> <font color=seagreen>4.1 website_files介绍</font></h2>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-07-xGJOUA.png" alt="2022-09-07-xGJOUA" /></p>
+<ul>
+<li><code>Index.Rmd</code>: 这个文件是我们网站的主页，这个文件必须被命名为<code>index.Rmd</code>。并且需要包含yaml开头<code>title:</code>、<code>description:</code>和<code>site:distill::distill_website</code>.</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-08-w6PGgJ.png" alt="2022-09-08-w6PGgJ" /></p>
+<ul>
+<li><code>about.Rmd</code>: 这个是附加页面，可以改成任何名字。至少包括有一个titile，其他的description 和 site内容可以不写。</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-08-XluK0e.png" alt="2022-09-08-XluK0e" /></p>
+<ul>
+<li><code>_site.yml</code>: 这不是一个转成页面的文件，但确实是页面设置所必须的文件。通常可以用来修饰设置我们页面的外观和布局。</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-08-BuFaJq.png" alt="2022-09-08-BuFaJq" /></p>
+<h2 id="font-colorseagreen42-修改页面布局font"><a class="markdownIt-Anchor" href="#font-colorseagreen42-修改页面布局font"></a> <font color=seagreen>4.2 修改页面布局</font></h2>
+<p>打开<code>_site.yml</code>，按如下格式修改。icon是小图标，后面的参数就是图标名字。有专门项目给这些图标命名，然后可以直接使用在网页中显示。<a target="_blank" rel="noopener" href="https://gist.github.com/mohamdio/982653e3a8ae35f892f13c5ef0ef9b58">List of all free Font Awesome icons class names v5.0.1 (github.com)</a>里面有非常多的icon，包括我们用到的github和twitter。</p>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-08-RSQyfD.png" alt="2022-09-08-RSQyfD" /></p>
+<h2 id="font-colorseagreen43-创建新的文章并将其加入到网站font"><a class="markdownIt-Anchor" href="#font-colorseagreen43-创建新的文章并将其加入到网站font"></a> <font color=seagreen>4.3 创建新的文章并将其加入到网站</font></h2>
+<h3 id="font-colorseagreen431-创建新的r-markdown文件放在website_files文件夹下font"><a class="markdownIt-Anchor" href="#font-colorseagreen431-创建新的r-markdown文件放在website_files文件夹下font"></a> <font color=seagreen>4.3.1 创建新的R markdown文件，放在website_files文件夹下</font></h3>
+<ul>
+<li>点击右上角的+号，点击R Markdown。</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-08-IPq6j3.png" alt="2022-09-08-IPq6j3" /></p>
+<ul>
+<li>从跳出来的窗口中选择from template。</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-08-oy5mnR.png" alt="2022-09-08-oy5mnR" /></p>
+<ul>
+<li>新创建的Rmarkdown文件的格式内容，进行相应的修改。包括标题，表述，作者，机构等。</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-08-49yok2.png" alt="2022-09-08-49yok2" /></p>
+<ul>
+<li>编辑好文字后，保存至website_files中，进行重新编译。</li>
+</ul>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rmarkdown::render_site(input = <span class="string">&quot;website_files/&quot;</span>)</span><br></pre></td></tr></table></figure>
+<ul>
+<li>编译完成后，会出现网页文件Figure1.html。</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-08-UdObc8.png" alt="2022-09-08-UdObc8" /></p>
+<ul>
+<li>将docs文件夹拷贝至项目文件夹下，这个时候要加上<code>overwrite = TRUE</code></li>
+</ul>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">file.copy(from = <span class="string">&quot;website_files/docs/&quot;</span>, to = <span class="string">&quot;.&quot;</span>, recursive = <span class="literal">TRUE</span>, overwrite = <span class="literal">TRUE</span>)</span><br></pre></td></tr></table></figure>
+<ul>
+<li>一般生成新的文档，你需要在_site_yml文件中进行相应文档的添加，然后在重新编译。<code>href</code>的名字务必和你编译好的文档文件名保持一致，否则会找不到网页，出现404。</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-08-RpGtSO.png" alt="2022-09-08-RpGtSO" /></p>
+<h2 id="font-colorseagreen432-将本地项目库推送到远程库font"><a class="markdownIt-Anchor" href="#font-colorseagreen432-将本地项目库推送到远程库font"></a> <font color=seagreen>4.3.2 将本地项目库推送到远程库</font></h2>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git add .</span><br><span class="line">git commit -m <span class="string">&quot;new article&quot;</span></span><br><span class="line">git push origin main</span><br></pre></td></tr></table></figure>
+<p>打开完整链接后，就可以看到新的文章。</p>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-08-5ytlsV.png" alt="2022-09-08-5ytlsV" /></p>
+<h1 id="font-colorseagreen5-本文说明font"><a class="markdownIt-Anchor" href="#font-colorseagreen5-本文说明font"></a> <font color=seagreen>5. 本文说明</font></h1>
+<p>这篇博客主要是自己用来记录学习过程，是跟着斯坦福大学Xiaotao Shen<a target="_blank" rel="noopener" href="https://www.shenxt.info/post/2021-5-12-rstudio-project/">使用Rstudio进行project管理 | Xiaotao Shen (shenxt.info)</a>的博客来一步步练习操作，让我学到了很多，非常感谢！学习他人的经验，来提升自己，让我受益匪浅。很好的学习了R语言的项目管理方案，帮助我后续工作更好的开展。Xiaotao在博客的最后，阐述了自己管理Project模式，我们一起学习一下，然后再根据自己的需求进行改动。</p>
+<h2 id="font-colorseagreen51-文件结构font"><a class="markdownIt-Anchor" href="#font-colorseagreen51-文件结构font"></a> <font color=seagreen>5.1 文件结构</font></h2>
+<ul>
+<li><code>data</code>：此文件夹用来存放原始数据，在文章发表之前，始终在自己电脑上，不上传至github。</li>
+<li><code>data_analysis</code>: 存放分析结果，分析过程产生的数据。同样始终在本地。</li>
+<li><code>code</code>: 存放分析的代码，脚本，可以选择公开。</li>
+<li><code>summary</code>: 存放总结性的内容，比如PPT，word等你自己梳理总结过的内容，同样本地保存不公开。</li>
+<li><code>manuscript</code>: 存放文章的图片figures，不公开。</li>
+<li><code>docs</code>: Project是关于网站介绍，可以公开。</li>
+</ul>
+<p>基本上可以发现，就是要保护好自己的数据，在文章公开发表前，始终保证数据在本地，不上传（科研人员基本上都应该做到的一点）。</p>
+<h2 id="font-colorseagreen52-数据分析及可重复性font"><a class="markdownIt-Anchor" href="#font-colorseagreen52-数据分析及可重复性font"></a> <font color=seagreen>5.2 数据分析及可重复性</font></h2>
+<p>这一点的重要性不言而喻，无论是干实验还是湿实验，可重复性对科研来说至关重要，要非常的重视。</p>
+<h3 id="font-colorseagreen数据分析几点原则font"><a class="markdownIt-Anchor" href="#font-colorseagreen数据分析几点原则font"></a> <font color=seagreen>数据分析几点原则</font></h3>
+<ul>
+<li>以R project为中心，组织数据和代码，集中管理。</li>
+</ul>
+<p>文章一旦公开发表，就可以公开github项目库，<strong>数据和代码</strong>可方便他人查阅以及重复代码。同样也有利于帮助他人进行学习。</p>
+<ul>
+<li>在代码内部，使用相对路径。</li>
+</ul>
+<p>相对路径便于他人进行代码的快速操作。每个人的绝对路径肯定是不同的，非常不方便，要重复数据还必须对代码进行修改。</p>
+<ul>
+<li>代码命名</li>
+</ul>
+<p>对每一步代码要进行注明，注释清楚。方便他人与自己。</p>
+<h1 id="font-colorseagreen参考内容font"><a class="markdownIt-Anchor" href="#font-colorseagreen参考内容font"></a> <font color=seagreen>参考内容</font></h1>
+<ol>
+<li><a target="_blank" rel="noopener" href="https://www.shenxt.info/post/2021-5-12-rstudio-project/">使用Rstudio进行project管理 | Xiaotao Shen (shenxt.info)</a></li>
+<li><a target="_blank" rel="noopener" href="https://distill.netlify.app/">R Markdown Format for Scientific and Technical Writing • distill</a></li>
+<li><a target="_blank" rel="noopener" href="https://rstudio4edu.github.io/rstudio4edu-book/make-distill.html">Chapter 21 Make a Distill site | rstudio4edu</a></li>
+</ol>
+
+    </div>
+
+    
+    
+    
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>Jin JF
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://othlis.com/2022/09/06/Rstudio%E8%81%94%E5%90%88Github%E7%AE%A1%E7%90%86Rproject/" title="Rstudio联合Github管理Rproject">https://othlis.com/2022/09/06/Rstudio联合Github管理Rproject/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/BY-NC-SA%204.0/4.0/zh-CN" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA 4.0</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/R/" rel="tag"><i class="fa fa-tag"></i> R</a>
+              <a href="/tags/Github/" rel="tag"><i class="fa fa-tag"></i> Github</a>
+              <a href="/tags/Rstudio/" rel="tag"><i class="fa fa-tag"></i> Rstudio</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2022/08/31/%E8%B4%A8%E8%B0%B1%E5%8E%9F%E5%A7%8B%E6%95%B0%E6%8D%AE%E8%BD%AC%E6%8D%A2/" rel="prev" title="Convert MS format on MacOS by using msconvert">
+      <i class="fa fa-chevron-left"></i> Convert MS format on MacOS by using msconvert
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    <div class="comments" id="gitalk-container"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#font-colorseagreen1-rstudio%E5%88%9B%E5%BB%BArproject%E9%A1%B9%E7%9B%AEfont"><span class="nav-number">1.</span> <span class="nav-text"> 1. Rstudio创建Rproject项目</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#font-colorseagreen11-%E5%9C%A8github%E4%B8%AD%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE%E4%BB%93%E5%BA%93%E4%B8%8Erproj%E5%BB%BA%E7%AB%8B%E8%81%94%E7%B3%BBfont"><span class="nav-number">1.1.</span> <span class="nav-text"> 1.1 在Github中创建项目仓库，与Rproj建立联系</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#font-colorseagreen12-%E5%88%A9%E7%94%A8rstudio%E5%88%9B%E5%BB%BA%E6%9C%AC%E5%9C%B0rprojectfont"><span class="nav-number">1.2.</span> <span class="nav-text"> 1.2 利用Rstudio创建本地Rproject</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#font-colorseagreen2-%E5%88%9B%E5%BB%BA%E5%BF%85%E8%A6%81%E6%96%87%E4%BB%B6%E5%A4%B9%E4%BB%A5%E5%8C%BA%E5%88%86%E9%A1%B9%E7%9B%AE%E5%86%85%E5%AE%B9font"><span class="nav-number">2.</span> <span class="nav-text"> 2. 创建必要文件夹以区分项目内容</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#font-colorseagreen21-%E5%9C%A8%E6%9C%AC%E5%9C%B0project%E9%A1%B9%E7%9B%AE%E6%96%87%E4%BB%B6%E5%A4%B9%E4%B8%8B%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE%E5%88%86%E6%9E%90%E6%89%80%E9%9C%80%E8%A6%81%E7%9A%84%E6%96%87%E4%BB%B6%E4%B8%8B%E4%BB%A5%E4%BE%BF%E7%AE%A1%E7%90%86%E9%A1%B9%E7%9B%AE%E5%86%85%E5%AE%B9-font"><span class="nav-number">2.1.</span> <span class="nav-text"> 2.1 在本地Project项目文件夹下，创建项目分析所需要的文件下，以便管理项目内容。</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#font-colorseagreen22-%E7%BC%96%E8%BE%91gitignore%E6%96%87%E4%BB%B6font"><span class="nav-number">2.2.</span> <span class="nav-text"> 2.2 编辑.gitignore文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#font-colorseagreen23-%E9%A6%96%E6%AC%A1%E4%B8%8A%E4%BC%A0%E9%A1%B9%E7%9B%AE%E8%87%B3githubfont"><span class="nav-number">2.3.</span> <span class="nav-text"> 2.3 首次上传项目至Github</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#font-colorseagreen3-distill%E5%88%9B%E5%BB%BA%E7%BD%91%E7%AB%99font"><span class="nav-number">3.</span> <span class="nav-text"> 3. distill创建网站</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#font-colorseagreen31-%E5%AE%89%E8%A3%85distll-for-markdownfont"><span class="nav-number">3.1.</span> <span class="nav-text"> 3.1 安装distll for markdown</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#font-colorseagreen32-%E5%88%9B%E5%BB%BA%E7%BD%91%E7%AB%99%E5%9C%B0%E5%9D%80font"><span class="nav-number">3.2.</span> <span class="nav-text"> 3.2 创建网站地址</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#font-colorseagreen33-%E7%BC%96%E8%AF%91%E7%BD%91%E7%AB%99font"><span class="nav-number">3.3.</span> <span class="nav-text"> 3.3 编译网站</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#font-colorseagreen34-%E5%B0%86docs%E6%96%87%E4%BB%B6%E5%A4%B9%E5%A4%8D%E5%88%B6%E5%88%B0%E9%A1%B9%E7%9B%AE%E6%96%87%E4%BB%B6%E5%A4%B9%E4%B8%8Bfont"><span class="nav-number">3.4.</span> <span class="nav-text"> 3.4 将docs文件夹复制到项目文件夹下</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#font-colorseagreen35-%E5%8F%91%E5%B8%83website%E8%87%B3github-pagesfont"><span class="nav-number">3.5.</span> <span class="nav-text"> 3.5 发布website至Github pages</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#font-colorseagreen4-%E7%BE%8E%E5%8C%96%E8%AE%BE%E8%AE%A1websitefont"><span class="nav-number">4.</span> <span class="nav-text"> 4. 美化设计website</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#font-colorseagreen41-website_files%E4%BB%8B%E7%BB%8Dfont"><span class="nav-number">4.1.</span> <span class="nav-text"> 4.1 website_files介绍</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#font-colorseagreen42-%E4%BF%AE%E6%94%B9%E9%A1%B5%E9%9D%A2%E5%B8%83%E5%B1%80font"><span class="nav-number">4.2.</span> <span class="nav-text"> 4.2 修改页面布局</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#font-colorseagreen43-%E5%88%9B%E5%BB%BA%E6%96%B0%E7%9A%84%E6%96%87%E7%AB%A0%E5%B9%B6%E5%B0%86%E5%85%B6%E5%8A%A0%E5%85%A5%E5%88%B0%E7%BD%91%E7%AB%99font"><span class="nav-number">4.3.</span> <span class="nav-text"> 4.3 创建新的文章并将其加入到网站</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#font-colorseagreen431-%E5%88%9B%E5%BB%BA%E6%96%B0%E7%9A%84r-markdown%E6%96%87%E4%BB%B6%E6%94%BE%E5%9C%A8website_files%E6%96%87%E4%BB%B6%E5%A4%B9%E4%B8%8Bfont"><span class="nav-number">4.3.1.</span> <span class="nav-text"> 4.3.1 创建新的R markdown文件，放在website_files文件夹下</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#font-colorseagreen432-%E5%B0%86%E6%9C%AC%E5%9C%B0%E9%A1%B9%E7%9B%AE%E5%BA%93%E6%8E%A8%E9%80%81%E5%88%B0%E8%BF%9C%E7%A8%8B%E5%BA%93font"><span class="nav-number">4.4.</span> <span class="nav-text"> 4.3.2 将本地项目库推送到远程库</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#font-colorseagreen5-%E6%9C%AC%E6%96%87%E8%AF%B4%E6%98%8Efont"><span class="nav-number">5.</span> <span class="nav-text"> 5. 本文说明</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#font-colorseagreen51-%E6%96%87%E4%BB%B6%E7%BB%93%E6%9E%84font"><span class="nav-number">5.1.</span> <span class="nav-text"> 5.1 文件结构</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#font-colorseagreen52-%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E5%8F%8A%E5%8F%AF%E9%87%8D%E5%A4%8D%E6%80%A7font"><span class="nav-number">5.2.</span> <span class="nav-text"> 5.2 数据分析及可重复性</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#font-colorseagreen%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E5%87%A0%E7%82%B9%E5%8E%9F%E5%88%99font"><span class="nav-number">5.2.1.</span> <span class="nav-text"> 数据分析几点原则</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#font-colorseagreen%E5%8F%82%E8%80%83%E5%86%85%E5%AE%B9font"><span class="nav-number">6.</span> <span class="nav-text"> 参考内容</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Jin JF"
+      src="/images/250.jpg">
+  <p class="site-author-name" itemprop="name">Jin JF</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">71</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">12</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">82</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/lxmic" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;lxmic" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:jin19920326@gmail.com" title="E-Mail → mailto:jin19920326@gmail.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://twitter.com/slum0326" title="Twitter → https:&#x2F;&#x2F;twitter.com&#x2F;slum0326" rel="noopener" target="_blank"><i class="fa fa-fw fa-twitter"></i>Twitter</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.youtube.com/channel/UC_hwJX-MEj3hSvixXUP1TSg" title="YouTube → https:&#x2F;&#x2F;www.youtube.com&#x2F;channel&#x2F;UC_hwJX-MEj3hSvixXUP1TSg" rel="noopener" target="_blank"><i class="fa fa-fw fa-youtube"></i>YouTube</a>
+      </span>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Jin JF</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+      <span class="post-meta-item-text">站点总字数：</span>
+    <span title="站点总字数">104k</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+      <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
+    <span title="站点阅读时长">3:10</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
+  </div>
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+
+<script>
+NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js', () => {
+    var gitalk = new Gitalk({
+      clientID    : '6d6c01bc950195ccacf0',
+      clientSecret: '805790d2550d8c14018d4dc8be4273a95f72e4b5',
+      repo        : 'blog_comment',
+      owner       : 'lxmic',
+      admin       : ['lxmic'],
+      id          : '0c263620e206f3677542e218ddd63077',
+        language: 'zh-CN',
+      distractionFreeMode: true
+    });
+    gitalk.render('gitalk-container');
+  }, window.Gitalk);
+});
+</script>
+
+</body>
+</html>

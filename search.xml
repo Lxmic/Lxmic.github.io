@@ -271,6 +271,28 @@
       </tags>
   </entry>
   <entry>
+    <title>HTML5（11）——注释</title>
+    <url>//2018/10/10/HTML5%EF%BC%8811%EF%BC%89%E2%80%94%E2%80%94%E6%B3%A8%E9%87%8A/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![早上好，各位](https://upload-images.jianshu.io/upload_images/3478485-7b72bb3628e0f32c.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+> 早上起来已经快6点，我是被蚊子叮醒的，实在是没法睡觉了。果然昨天幻想的咖啡没有实现。
+> 昨天晚上我们学习了HTML的引用，今天学习注释。
+<span id="more"></span>
+<h2 id="font-colorgreen注释标签font"><a class="markdownIt-Anchor" href="#font-colorgreen注释标签font"></a> <font color="green">注释标签</font></h2>
+<p>在HTML源文件中，你可以添加语句的注释，注释是用来对语言的解释说明，使得别人能够更好地理解你的HTML内容。你可以看到下面的例子，其中在opening 标签中是由&quot;!&quot;起始的，在HTML中，注释是不显示的，只是起到解释源代码的作用。</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- This is a comment --&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>This is a paragraph.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- Remember to add more information here --&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-1e24ecc778955ce4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="不显示注释内容" /></p>
+<p>今天的内容比较简单，就是一个知识点，就是给HTML源代码添加注释，方便别人的阅读和你自己的阅读。任何一门语言，你在写源代码的时候，最要添加比较详细的注释内容，这样可以减少很多后期的麻烦。</p>
+]]></content>
+      <categories>
+        <category>HTML5入门</category>
+      </categories>
+      <tags>
+        <tag>HTML5</tag>
+        <tag>注释</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>HTML5（12）——颜色</title>
     <url>//2018/10/13/HTML5%EF%BC%8812%EF%BC%89%E2%80%94%E2%80%94%E9%A2%9C%E8%89%B2/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -317,28 +339,6 @@
       <tags>
         <tag>HTML5</tag>
         <tag>颜色</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>HTML5（11）——注释</title>
-    <url>//2018/10/10/HTML5%EF%BC%8811%EF%BC%89%E2%80%94%E2%80%94%E6%B3%A8%E9%87%8A/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![早上好，各位](https://upload-images.jianshu.io/upload_images/3478485-7b72bb3628e0f32c.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-> 早上起来已经快6点，我是被蚊子叮醒的，实在是没法睡觉了。果然昨天幻想的咖啡没有实现。
-> 昨天晚上我们学习了HTML的引用，今天学习注释。
-<span id="more"></span>
-<h2 id="font-colorgreen注释标签font"><a class="markdownIt-Anchor" href="#font-colorgreen注释标签font"></a> <font color="green">注释标签</font></h2>
-<p>在HTML源文件中，你可以添加语句的注释，注释是用来对语言的解释说明，使得别人能够更好地理解你的HTML内容。你可以看到下面的例子，其中在opening 标签中是由&quot;!&quot;起始的，在HTML中，注释是不显示的，只是起到解释源代码的作用。</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- This is a comment --&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>This is a paragraph.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- Remember to add more information here --&gt;</span></span><br></pre></td></tr></table></figure>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-1e24ecc778955ce4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="不显示注释内容" /></p>
-<p>今天的内容比较简单，就是一个知识点，就是给HTML源代码添加注释，方便别人的阅读和你自己的阅读。任何一门语言，你在写源代码的时候，最要添加比较详细的注释内容，这样可以减少很多后期的麻烦。</p>
-]]></content>
-      <categories>
-        <category>HTML5入门</category>
-      </categories>
-      <tags>
-        <tag>HTML5</tag>
-        <tag>注释</tag>
       </tags>
   </entry>
   <entry>
@@ -1912,6 +1912,26 @@ float——确定图片是否为浮动，而不是在一个固定的地方。</p
       </tags>
   </entry>
   <entry>
+    <title>狼伴归途</title>
+    <url>//2018/09/13/%E7%8B%BC%E4%BC%B4%E5%BD%92%E9%80%94/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![狼伴归途](https://upload-images.jianshu.io/upload_images/3478485-71c67307e95546df.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+9月9日，星期六，公元2018年
+<span id="more"></span>
+<p>狼伴归途，最精彩的就是宏大的史前场景再现，让人看了非常的享受，被其所征服。故事的情节还是比较的简单，年轻的孩子在失去父母呵护之后，通过自己的和狼的努力，经历千辛万苦最后回到了父母的怀抱。狼和孩子一起，最终平安到家，并为部落带来了狼这种动物，我想之后就是被驯化成狗。<br />
+觉得还是可以去看一下，电影场景很唯美。</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-1847b7b43f7ef666.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="wolf2.jpg" /></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-7acc324003fe7eeb.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="wolf3.jpg" /></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3478485-05dda12e9ab338f8.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="wolf4.jpg" /></p>
+]]></content>
+      <categories>
+        <category>影评领域</category>
+      </categories>
+      <tags>
+        <tag>电影</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>疫情记</title>
     <url>//2020/04/12/%E7%96%AB%E6%83%85%E8%AE%B0/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -1942,26 +1962,6 @@ float——确定图片是否为浮动，而不是在一个固定的地方。</p
       </tags>
   </entry>
   <entry>
-    <title>狼伴归途</title>
-    <url>//2018/09/13/%E7%8B%BC%E4%BC%B4%E5%BD%92%E9%80%94/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![狼伴归途](https://upload-images.jianshu.io/upload_images/3478485-71c67307e95546df.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-9月9日，星期六，公元2018年
-<span id="more"></span>
-<p>狼伴归途，最精彩的就是宏大的史前场景再现，让人看了非常的享受，被其所征服。故事的情节还是比较的简单，年轻的孩子在失去父母呵护之后，通过自己的和狼的努力，经历千辛万苦最后回到了父母的怀抱。狼和孩子一起，最终平安到家，并为部落带来了狼这种动物，我想之后就是被驯化成狗。<br />
-觉得还是可以去看一下，电影场景很唯美。</p>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-1847b7b43f7ef666.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="wolf2.jpg" /></p>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-7acc324003fe7eeb.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="wolf3.jpg" /></p>
-<p><img src="https://upload-images.jianshu.io/upload_images/3478485-05dda12e9ab338f8.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="wolf4.jpg" /></p>
-]]></content>
-      <categories>
-        <category>影评领域</category>
-      </categories>
-      <tags>
-        <tag>电影</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>碟中谍6: 全面瓦解</title>
     <url>//2018/09/01/%E7%A2%9F%E4%B8%AD%E8%B0%8D6-%E5%85%A8%E9%9D%A2%E7%93%A6%E8%A7%A3/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -1978,32 +1978,6 @@ float——确定图片是否为浮动，而不是在一个固定的地方。</p
       </categories>
       <tags>
         <tag>电影</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>离家回归</title>
-    <url>//2018/08/23/%E7%A6%BB%E5%AE%B6%E5%9B%9E%E5%BD%92/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-![railway，图片来自于pexels网站](https://upload-images.jianshu.io/upload_images/3478485-7fdc279179af9b76.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-<span id="more"></span>
-<blockquote>
-<p><strong>离开，亦是回归。</strong></p>
-</blockquote>
-<p>8月22日，星期三，公元2018年。<br />
-在12306官网上，已订购了今天下午的车票。像往日一样，心中突然生出无尽的焦虑，极其不安定。离开家（现在我将它定义为：父母开的只为你一人服务的旅馆），意味着回归，回到每天充满焦虑的生活。2015年毕业之后，似乎再也没有安稳的日子，总要去面对去担当，去谋划。我不知道自己时候是否已然锻炼成一名合格的人生蓝图设计师，我设计的很抽象，就来我自己也看不出，领悟不出其中的意义。<br />
-时间是下午3点，高铁站的KFC，看着价格，心里突然犹豫不定。买，觉得太贵；不买，半途饿惨。已经体验过无数次半途饿个半死，似乎没有得到教训，不清楚人生的错一犯再犯，从不反思，是从什么时候开始。买了一个汉堡和一对鸡翅，离开车20分钟，吃得很快，味道很咸，没有想象中的美味。<br />
-动车缓缓的驶入，又缓缓的驶出站台。我也跟它很像，从来都是在家这个站台驶入驶出，不是我的终点站，而我又找不到我的终点站，一直在人生这条轨道上永远跑着。路过太多，错过太多；遇到太多，又错过太多。拿出佛洛姆的《爱的艺术》，再一次开启。我发誓，我已经看过很多遍，请不要怀疑我。但是很遗憾，每次看过都会忘得七七八八，而再次开启，又觉得能够记起一切。</p>
-<blockquote>
-<p><strong>爱，是一门艺术。要求我们必须努力发展自己的全部人格，从而来达到创造倾向性。</strong></p>
-</blockquote>
-<p>这句话中的关键词：<strong>全部人格和创造倾向性</strong>，我至今还是没有办法理解。半个小时，一眨眼就过去，留在了轨道上。广播已经开始响起；“前方到站，杭州站，请旅客整理好自己的行李，准备下车”。我只需将书塞入包中，起身就可以离开，丝毫没有留恋。<br />
-几年里的终点到了，几年后是否改变，我没法笃定地给出答案，未来可以见分晓。</p>
-]]></content>
-      <categories>
-        <category>随记</category>
-      </categories>
-      <tags>
-        <tag>家</tag>
       </tags>
   </entry>
   <entry>
@@ -2048,6 +2022,32 @@ float——确定图片是否为浮动，而不是在一个固定的地方。</p
       </categories>
       <tags>
         <tag>科普</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>离家回归</title>
+    <url>//2018/08/23/%E7%A6%BB%E5%AE%B6%E5%9B%9E%E5%BD%92/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+![railway，图片来自于pexels网站](https://upload-images.jianshu.io/upload_images/3478485-7fdc279179af9b76.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+<span id="more"></span>
+<blockquote>
+<p><strong>离开，亦是回归。</strong></p>
+</blockquote>
+<p>8月22日，星期三，公元2018年。<br />
+在12306官网上，已订购了今天下午的车票。像往日一样，心中突然生出无尽的焦虑，极其不安定。离开家（现在我将它定义为：父母开的只为你一人服务的旅馆），意味着回归，回到每天充满焦虑的生活。2015年毕业之后，似乎再也没有安稳的日子，总要去面对去担当，去谋划。我不知道自己时候是否已然锻炼成一名合格的人生蓝图设计师，我设计的很抽象，就来我自己也看不出，领悟不出其中的意义。<br />
+时间是下午3点，高铁站的KFC，看着价格，心里突然犹豫不定。买，觉得太贵；不买，半途饿惨。已经体验过无数次半途饿个半死，似乎没有得到教训，不清楚人生的错一犯再犯，从不反思，是从什么时候开始。买了一个汉堡和一对鸡翅，离开车20分钟，吃得很快，味道很咸，没有想象中的美味。<br />
+动车缓缓的驶入，又缓缓的驶出站台。我也跟它很像，从来都是在家这个站台驶入驶出，不是我的终点站，而我又找不到我的终点站，一直在人生这条轨道上永远跑着。路过太多，错过太多；遇到太多，又错过太多。拿出佛洛姆的《爱的艺术》，再一次开启。我发誓，我已经看过很多遍，请不要怀疑我。但是很遗憾，每次看过都会忘得七七八八，而再次开启，又觉得能够记起一切。</p>
+<blockquote>
+<p><strong>爱，是一门艺术。要求我们必须努力发展自己的全部人格，从而来达到创造倾向性。</strong></p>
+</blockquote>
+<p>这句话中的关键词：<strong>全部人格和创造倾向性</strong>，我至今还是没有办法理解。半个小时，一眨眼就过去，留在了轨道上。广播已经开始响起；“前方到站，杭州站，请旅客整理好自己的行李，准备下车”。我只需将书塞入包中，起身就可以离开，丝毫没有留恋。<br />
+几年里的终点到了，几年后是否改变，我没法笃定地给出答案，未来可以见分晓。</p>
+]]></content>
+      <categories>
+        <category>随记</category>
+      </categories>
+      <tags>
+        <tag>家</tag>
       </tags>
   </entry>
   <entry>
@@ -2766,7 +2766,7 @@ float——确定图片是否为浮动，而不是在一个固定的地方。</p
 </thead>
 <tbody>
 <tr>
-<td>Sodium acetate</td>
+<td>Sodium acetate                                    µ$$</td>
 <td>C2:0 MW: 82.03 50 mM 10 mL</td>
 <td>0.05*0.01*82.03=0.041</td>
 </tr>
@@ -3486,6 +3486,202 @@ motif文件实际上是一个矩阵，标识了每个位点碱基出现的概率
       <tags>
         <tag>GC/MS</tag>
         <tag>Tips</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Rstudio联合Github管理Rproject</title>
+    <url>//2022/09/06/Rstudio%E8%81%94%E5%90%88Github%E7%AE%A1%E7%90%86Rproject/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+<div class="note primary">
+            <p>R语言代码以及输出结果自我接触R语言以来，从未真正有条理管理过，导致代码东一个西一个，非常杂乱。最近，通过学习R project以及Github，来尝试着管理自己的项目或者说是课题内容。</p>
+          </div>
+<span id="more"></span>
+<h1 id="font-colorseagreen1-rstudio创建rproject项目font"><a class="markdownIt-Anchor" href="#font-colorseagreen1-rstudio创建rproject项目font"></a> <font color=seagreen>1. Rstudio创建Rproject项目</font></h1>
+<p>前提条件：1. 安装R；2. 下载Rstudio; 3. 注册Github账号。以上条件比较容易实现，本文不作详细讲述。</p>
+<h2 id="font-colorseagreen11-在github中创建项目仓库与rproj建立联系font"><a class="markdownIt-Anchor" href="#font-colorseagreen11-在github中创建项目仓库与rproj建立联系font"></a> <font color=seagreen>1.1 在Github中创建项目仓库，与Rproj建立联系</font></h2>
+<ul>
+<li>打开Github上自己的仓库，点击“New”，开始创建新的项目仓库。</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-07-iNFqyT.png" alt="2022-09-07-iNFqyT" /></p>
+<ul>
+<li>填写repo.名字，添加README，选择license，最后点击create repo.</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-07-8nhdGP.png" alt="2022-09-07-8nhdGP" /></p>
+<h2 id="font-colorseagreen12-利用rstudio创建本地rprojectfont"><a class="markdownIt-Anchor" href="#font-colorseagreen12-利用rstudio创建本地rprojectfont"></a> <font color=seagreen>1.2 利用Rstudio创建本地Rproject</font></h2>
+<ul>
+<li>点击右上角的new project，或者左上角的蓝色立方体R。</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-07-KfkCXq.png" alt="2022-09-07-KfkCXq" /></p>
+<ul>
+<li>弹出对话框，共3种Project可以选择，点击第三种“version control”。</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-07-FR2mzz.png" alt="2022-09-07-FR2mzz" /></p>
+<ul>
+<li>点击Git，从Github克隆项目到本地。</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-07-YHNt67.png" alt="2022-09-07-YHNt67" /></p>
+<ul>
+<li>输入自己Github上仓库地址以及仓库repo.名称，以及选择Rproject本地保存的位置。</li>
+</ul>
+<p>![image-20220907153459094](/Users/lxmic/Library/Application Support/typora-user-images/image-20220907153459094.png)</p>
+<ul>
+<li>点击创建项目后，几秒后创建并打开JA_RProject，看到右下角的项目文件夹中有几个文件，其中三个是从Github上clone来的，项目文件是创建的。此外，还有2个文件夹是隐藏的，无法看到<code>.Rproj.user</code>	和<code>.git</code>。</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-07-kUw7qT.png" alt="2022-09-07-kUw7qT" /></p>
+<h1 id="font-colorseagreen2-创建必要文件夹以区分项目内容font"><a class="markdownIt-Anchor" href="#font-colorseagreen2-创建必要文件夹以区分项目内容font"></a> <font color=seagreen>2. 创建必要文件夹以区分项目内容</font></h1>
+<h2 id="font-colorseagreen21-在本地project项目文件夹下创建项目分析所需要的文件下以便管理项目内容-font"><a class="markdownIt-Anchor" href="#font-colorseagreen21-在本地project项目文件夹下创建项目分析所需要的文件下以便管理项目内容-font"></a> <font color=seagreen>2.1 在本地Project项目文件夹下，创建项目分析所需要的文件下，以便管理项目内容。</font></h2>
+<p>例如创建code、data、manuscript、data_analysis和summary等文件夹，可以根据需要进行创建，符合自己的习惯即可。</p>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-07-4Ejyxs.png" alt="2022-09-07-4Ejyxs" /></p>
+<h2 id="font-colorseagreen22-编辑gitignore文件font"><a class="markdownIt-Anchor" href="#font-colorseagreen22-编辑gitignore文件font"></a> <font color=seagreen>2.2 编辑.gitignore文件</font></h2>
+<p>Rstudio中点击打开<code>.gitignore</code>文件，里面已经有一些文件与文件夹。这个文件的作用是避免文件被上传至Github，<strong>防止数据泄漏</strong>。根据自己保密数据所在的文件夹，记得提前将其写入这个文件中，防止出现意外情况。可以说，在你文章发表之前，所有的数据文件夹都是应该保密的，都写入这个文件中。</p>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-07-PpfPEG.png" alt="2022-09-07-PpfPEG" /></p>
+<h2 id="font-colorseagreen23-首次上传项目至githubfont"><a class="markdownIt-Anchor" href="#font-colorseagreen23-首次上传项目至githubfont"></a> <font color=seagreen>2.3 首次上传项目至Github</font></h2>
+<p>创建文件夹以及编辑文件后，在Rstudio的终端可以看到有黄色的X，代表你编辑过了还没有提交修改的内容。先提交，然后在进行上传。输入以下3条Git命令，将修改的内容上传。</p>
+<p>如果不懂Git基本知识，可以参考<a href="https://www.liaoxuefeng.com/wiki/896043488029600/896202815778784">廖雪峰写的Git教程</a>，内容不多，比较精简，看一遍能了解个大概。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 将你修改过的所有文件添加到本地仓库</span></span><br><span class="line">git add .</span><br><span class="line"><span class="comment"># 将刚才添加的内容，提交到仓库</span></span><br><span class="line">git commit -m</span><br><span class="line"><span class="comment"># 将本地仓库master推送到远程仓库，也就是同步至Github网站</span></span><br><span class="line">git push origin main</span><br></pre></td></tr></table></figure>
+<p>提交过程中可能会出现以下的报错，**我选择了左上角Git，然后点击push，**过了一会儿成功了。具体这个报错是因为master，可以将master改为main。参考内容：<a href="https://stackoverflow.com/questions/60660765/error-failed-to-push-some-refs-to-https-github-com">git - error: failed to push some refs to 'https://github.com/ - Stack Overflow</a></p>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-07-WEOkjc.png" alt="2022-09-07-WEOkjc" /></p>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-07-pjmmDm.png" alt="2022-09-07-pjmmDm" /></p>
+<p>提交完成后，可以刷新Github网页，可以看到我们创建的Rproj。</p>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-07-ajfSoL.png" alt="2022-09-07-ajfSoL" /></p>
+<h1 id="font-colorseagreen3-distill创建网站font"><a class="markdownIt-Anchor" href="#font-colorseagreen3-distill创建网站font"></a> <font color=seagreen>3. distill创建网站</font></h1>
+<p>关于Distill的相关学习文档，可以参考以下网站：</p>
+<ul>
+<li><a href="https://rstudio4edu.github.io/rstudio4edu-book/make-distill.html">Make a Distill site | rstudio4edu</a></li>
+<li><a href="https://distill.netlify.app/">R Markdown Format for Scientific and Technical Writing • distill</a></li>
+<li><a href="https://rstudio.github.io/distill/">Distill for R Markdown</a></li>
+</ul>
+<h2 id="font-colorseagreen31-安装distll-for-markdownfont"><a class="markdownIt-Anchor" href="#font-colorseagreen31-安装distll-for-markdownfont"></a> <font color=seagreen>3.1 安装distll for markdown</font></h2>
+<figure class="highlight r"><table><tr><td class="code"><pre><span class="line">remotes::install_github(<span class="string">&quot;rstudio/distill&quot;</span>)</span><br></pre></td></tr></table></figure>
+<h2 id="font-colorseagreen32-创建网站地址font"><a class="markdownIt-Anchor" href="#font-colorseagreen32-创建网站地址font"></a> <font color=seagreen>3.2 创建网站地址</font></h2>
+<p>distill创建网站的语法很简单，其中<code>website_files</code>是放网站相关文件的目录，不要直接将其放置到项目目录下。gh_pages是将网站通过GitHub page发布。</p>
+<figure class="highlight r"><table><tr><td class="code"><pre><span class="line">distill::create_website(dir = <span class="string">&quot;website_files/&quot;</span>, gh_pages = <span class="literal">TRUE</span>)</span><br></pre></td></tr></table></figure>
+<ul>
+<li>运行后，以一个对话的方式开始建站。先输入网站标题，然后开始安装建站。</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-07-pRWza0.png" alt="2022-09-07-pRWza0" /></p>
+<ul>
+<li>建站结束后，会创建<strong>website_files</strong>文件夹，并且打开<strong>index.Rmd</strong>文件。</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-07-j5Fh4K.png" alt="2022-09-07-j5Fh4K" /></p>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-07-NX3WQH.png" alt="2022-09-07-NX3WQH" /></p>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-07-Ty1uLV.png" alt="2022-09-07-Ty1uLV" /></p>
+<h2 id="font-colorseagreen33-编译网站font"><a class="markdownIt-Anchor" href="#font-colorseagreen33-编译网站font"></a> <font color=seagreen>3.3 编译网站</font></h2>
+<figure class="highlight r"><table><tr><td class="code"><pre><span class="line">rmarkdown::render_site(input = <span class="string">&quot;website_files/&quot;</span>)</span><br></pre></td></tr></table></figure>
+<h2 id="font-colorseagreen34-将docs文件夹复制到项目文件夹下font"><a class="markdownIt-Anchor" href="#font-colorseagreen34-将docs文件夹复制到项目文件夹下font"></a> <font color=seagreen>3.4 将docs文件夹复制到项目文件夹下</font></h2>
+<p>可以直接将docs复制到JA_Rproject, 或者使用下面的代码进行第一次拷贝。如果是已经复制过，需要进行覆盖，则加入<code>overwrite = TRUE</code>参数，进行复制。</p>
+<figure class="highlight r"><table><tr><td class="code"><pre><span class="line">file.copy(from = <span class="string">&quot;website_files/docs/&quot;</span>,to = <span class="string">&quot;.&quot;</span>,recursive = <span class="literal">TRUE</span>)</span><br></pre></td></tr></table></figure>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-07-pv12cH.png" alt="2022-09-07-pv12cH" /></p>
+<h2 id="font-colorseagreen35-发布website至github-pagesfont"><a class="markdownIt-Anchor" href="#font-colorseagreen35-发布website至github-pagesfont"></a> <font color=seagreen>3.5 发布website至Github pages</font></h2>
+<ul>
+<li>提交建站过程中产生的文件至远程库</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git add .</span><br><span class="line">git commit -m <span class="string">&quot;create website&quot;</span></span><br><span class="line">git push origin main</span><br></pre></td></tr></table></figure>
+<ul>
+<li>设置website</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-07-sjexX6.png" alt="2022-09-07-sjexX6" /></p>
+<ul>
+<li>设置Github Pages，main brach and /docs文件夹，然后点击save。等待一段时间可以看到站点地址，<a href="http://xn--githubothlis-yf5so7ap02djkk3jbii81ix61av7bj23dfk2hqwvb.com">我的地址因为将github绑定了域名othlis.com</a>，所以地址为：<a href="http://othlis.com/JA_Rproject/">http://othlis.com/JA_Rproject/</a>.</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-07-GYteah.png" alt="2022-09-07-GYteah" /></p>
+<ul>
+<li>打开网站，可以看到已经开始运行，网址已经公开，谁都可以看到。现在github已经可以免费开通private库，但是一旦私有化，你的Github pages就无法正常访问，无法看到。除非你花钱开通Pro版本，那是另外一回事儿。</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-07-fPgmAj.png" alt="2022-09-07-fPgmAj" /></p>
+<h1 id="font-colorseagreen4-美化设计websitefont"><a class="markdownIt-Anchor" href="#font-colorseagreen4-美化设计websitefont"></a> <font color=seagreen>4. 美化设计website</font></h1>
+<h2 id="font-colorseagreen41-website_files介绍font"><a class="markdownIt-Anchor" href="#font-colorseagreen41-website_files介绍font"></a> <font color=seagreen>4.1 website_files介绍</font></h2>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-07-xGJOUA.png" alt="2022-09-07-xGJOUA" /></p>
+<ul>
+<li><code>Index.Rmd</code>: 这个文件是我们网站的主页，这个文件必须被命名为<code>index.Rmd</code>。并且需要包含yaml开头<code>title:</code>、<code>description:</code>和<code>site:distill::distill_website</code>.</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-08-w6PGgJ.png" alt="2022-09-08-w6PGgJ" /></p>
+<ul>
+<li><code>about.Rmd</code>: 这个是附加页面，可以改成任何名字。至少包括有一个titile，其他的description 和 site内容可以不写。</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-08-XluK0e.png" alt="2022-09-08-XluK0e" /></p>
+<ul>
+<li><code>_site.yml</code>: 这不是一个转成页面的文件，但确实是页面设置所必须的文件。通常可以用来修饰设置我们页面的外观和布局。</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-08-BuFaJq.png" alt="2022-09-08-BuFaJq" /></p>
+<h2 id="font-colorseagreen42-修改页面布局font"><a class="markdownIt-Anchor" href="#font-colorseagreen42-修改页面布局font"></a> <font color=seagreen>4.2 修改页面布局</font></h2>
+<p>打开<code>_site.yml</code>，按如下格式修改。icon是小图标，后面的参数就是图标名字。有专门项目给这些图标命名，然后可以直接使用在网页中显示。<a href="https://gist.github.com/mohamdio/982653e3a8ae35f892f13c5ef0ef9b58">List of all free Font Awesome icons class names v5.0.1 (github.com)</a>里面有非常多的icon，包括我们用到的github和twitter。</p>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-08-RSQyfD.png" alt="2022-09-08-RSQyfD" /></p>
+<h2 id="font-colorseagreen43-创建新的文章并将其加入到网站font"><a class="markdownIt-Anchor" href="#font-colorseagreen43-创建新的文章并将其加入到网站font"></a> <font color=seagreen>4.3 创建新的文章并将其加入到网站</font></h2>
+<h3 id="font-colorseagreen431-创建新的r-markdown文件放在website_files文件夹下font"><a class="markdownIt-Anchor" href="#font-colorseagreen431-创建新的r-markdown文件放在website_files文件夹下font"></a> <font color=seagreen>4.3.1 创建新的R markdown文件，放在website_files文件夹下</font></h3>
+<ul>
+<li>点击右上角的+号，点击R Markdown。</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-08-IPq6j3.png" alt="2022-09-08-IPq6j3" /></p>
+<ul>
+<li>从跳出来的窗口中选择from template。</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-08-oy5mnR.png" alt="2022-09-08-oy5mnR" /></p>
+<ul>
+<li>新创建的Rmarkdown文件的格式内容，进行相应的修改。包括标题，表述，作者，机构等。</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-08-49yok2.png" alt="2022-09-08-49yok2" /></p>
+<ul>
+<li>编辑好文字后，保存至website_files中，进行重新编译。</li>
+</ul>
+<figure class="highlight r"><table><tr><td class="code"><pre><span class="line">rmarkdown::render_site(input = <span class="string">&quot;website_files/&quot;</span>)</span><br></pre></td></tr></table></figure>
+<ul>
+<li>编译完成后，会出现网页文件Figure1.html。</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-08-UdObc8.png" alt="2022-09-08-UdObc8" /></p>
+<ul>
+<li>将docs文件夹拷贝至项目文件夹下，这个时候要加上<code>overwrite = TRUE</code></li>
+</ul>
+<figure class="highlight r"><table><tr><td class="code"><pre><span class="line">file.copy(from = <span class="string">&quot;website_files/docs/&quot;</span>, to = <span class="string">&quot;.&quot;</span>, recursive = <span class="literal">TRUE</span>, overwrite = <span class="literal">TRUE</span>)</span><br></pre></td></tr></table></figure>
+<ul>
+<li>一般生成新的文档，你需要在_site_yml文件中进行相应文档的添加，然后在重新编译。<code>href</code>的名字务必和你编译好的文档文件名保持一致，否则会找不到网页，出现404。</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-08-RpGtSO.png" alt="2022-09-08-RpGtSO" /></p>
+<h2 id="font-colorseagreen432-将本地项目库推送到远程库font"><a class="markdownIt-Anchor" href="#font-colorseagreen432-将本地项目库推送到远程库font"></a> <font color=seagreen>4.3.2 将本地项目库推送到远程库</font></h2>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git add .</span><br><span class="line">git commit -m <span class="string">&quot;new article&quot;</span></span><br><span class="line">git push origin main</span><br></pre></td></tr></table></figure>
+<p>打开完整链接后，就可以看到新的文章。</p>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-08-5ytlsV.png" alt="2022-09-08-5ytlsV" /></p>
+<h1 id="font-colorseagreen5-本文说明font"><a class="markdownIt-Anchor" href="#font-colorseagreen5-本文说明font"></a> <font color=seagreen>5. 本文说明</font></h1>
+<p>这篇博客主要是自己用来记录学习过程，是跟着斯坦福大学Xiaotao Shen<a href="https://www.shenxt.info/post/2021-5-12-rstudio-project/">使用Rstudio进行project管理 | Xiaotao Shen (shenxt.info)</a>的博客来一步步练习操作，让我学到了很多，非常感谢！学习他人的经验，来提升自己，让我受益匪浅。很好的学习了R语言的项目管理方案，帮助我后续工作更好的开展。Xiaotao在博客的最后，阐述了自己管理Project模式，我们一起学习一下，然后再根据自己的需求进行改动。</p>
+<h2 id="font-colorseagreen51-文件结构font"><a class="markdownIt-Anchor" href="#font-colorseagreen51-文件结构font"></a> <font color=seagreen>5.1 文件结构</font></h2>
+<ul>
+<li><code>data</code>：此文件夹用来存放原始数据，在文章发表之前，始终在自己电脑上，不上传至github。</li>
+<li><code>data_analysis</code>: 存放分析结果，分析过程产生的数据。同样始终在本地。</li>
+<li><code>code</code>: 存放分析的代码，脚本，可以选择公开。</li>
+<li><code>summary</code>: 存放总结性的内容，比如PPT，word等你自己梳理总结过的内容，同样本地保存不公开。</li>
+<li><code>manuscript</code>: 存放文章的图片figures，不公开。</li>
+<li><code>docs</code>: Project是关于网站介绍，可以公开。</li>
+</ul>
+<p>基本上可以发现，就是要保护好自己的数据，在文章公开发表前，始终保证数据在本地，不上传（科研人员基本上都应该做到的一点）。</p>
+<h2 id="font-colorseagreen52-数据分析及可重复性font"><a class="markdownIt-Anchor" href="#font-colorseagreen52-数据分析及可重复性font"></a> <font color=seagreen>5.2 数据分析及可重复性</font></h2>
+<p>这一点的重要性不言而喻，无论是干实验还是湿实验，可重复性对科研来说至关重要，要非常的重视。</p>
+<h3 id="font-colorseagreen数据分析几点原则font"><a class="markdownIt-Anchor" href="#font-colorseagreen数据分析几点原则font"></a> <font color=seagreen>数据分析几点原则</font></h3>
+<ul>
+<li>以R project为中心，组织数据和代码，集中管理。</li>
+</ul>
+<p>文章一旦公开发表，就可以公开github项目库，<strong>数据和代码</strong>可方便他人查阅以及重复代码。同样也有利于帮助他人进行学习。</p>
+<ul>
+<li>在代码内部，使用相对路径。</li>
+</ul>
+<p>相对路径便于他人进行代码的快速操作。每个人的绝对路径肯定是不同的，非常不方便，要重复数据还必须对代码进行修改。</p>
+<ul>
+<li>代码命名</li>
+</ul>
+<p>对每一步代码要进行注明，注释清楚。方便他人与自己。</p>
+<h1 id="font-colorseagreen参考内容font"><a class="markdownIt-Anchor" href="#font-colorseagreen参考内容font"></a> <font color=seagreen>参考内容</font></h1>
+<ol>
+<li><a href="https://www.shenxt.info/post/2021-5-12-rstudio-project/">使用Rstudio进行project管理 | Xiaotao Shen (shenxt.info)</a></li>
+<li><a href="https://distill.netlify.app/">R Markdown Format for Scientific and Technical Writing • distill</a></li>
+<li><a href="https://rstudio4edu.github.io/rstudio4edu-book/make-distill.html">Chapter 21 Make a Distill site | rstudio4edu</a></li>
+</ol>
+]]></content>
+      <categories>
+        <category>科研之路</category>
+      </categories>
+      <tags>
+        <tag>R</tag>
+        <tag>Github</tag>
+        <tag>Rstudio</tag>
       </tags>
   </entry>
 </search>
