@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.0.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"othlis.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"gitalk","storage":true,"lazyload":false,"nav":{"disqus":{"text":"Load Disqus","order":-1},"gitalk":{"order":-2}},"activeClass":"gitalk"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="酵母单杂交主要用于筛选上游转录因子，找到可能直接结合至靶基因启动子的转录因子（Transcription factor, TF）。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="酵母单杂交筛库">
+<meta property="og:url" content="https://othlis.com/2022/09/17/%E9%85%B5%E6%AF%8D%E5%8D%95%E6%9D%82%E4%BA%A4%E7%AD%9B%E5%BA%93/index.html">
+<meta property="og:site_name" content="Lxmic Blog">
+<meta property="og:description" content="酵母单杂交主要用于筛选上游转录因子，找到可能直接结合至靶基因启动子的转录因子（Transcription factor, TF）。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-18-JxSjsw.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-23-cGBKHM.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-23-zJOwq3.png">
+<meta property="article:published_time" content="2022-09-17T08:23:40.000Z">
+<meta property="article:modified_time" content="2022-10-30T14:33:18.196Z">
+<meta property="article:author" content="Jin JF">
+<meta property="article:tag" content="Protocols">
+<meta property="article:tag" content="Y1H">
+<meta property="article:tag" content="PostDoc.">
+<meta property="article:tag" content="Experiments">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-18-JxSjsw.jpg">
+
+<link rel="canonical" href="https://othlis.com/2022/09/17/%E9%85%B5%E6%AF%8D%E5%8D%95%E6%9D%82%E4%BA%A4%E7%AD%9B%E5%BA%93/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>酵母单杂交筛库 | Lxmic Blog</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Lxmic Blog</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">Everything from life</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://othlis.com/2022/09/17/%E9%85%B5%E6%AF%8D%E5%8D%95%E6%9D%82%E4%BA%A4%E7%AD%9B%E5%BA%93/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/250.jpg">
+      <meta itemprop="name" content="Jin JF">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Lxmic Blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          酵母单杂交筛库
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2022-09-17 16:23:40" itemprop="dateCreated datePublished" datetime="2022-09-17T16:23:40+08:00">2022-09-17</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2022-10-30 22:33:18" itemprop="dateModified" datetime="2022-10-30T22:33:18+08:00">2022-10-30</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%A7%91%E7%A0%94%E4%B9%8B%E8%B7%AF/" itemprop="url" rel="index"><span itemprop="name">科研之路</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span><br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>2.5k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>4 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <meta name="referrer" content="no-referrer" />
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-18-JxSjsw.jpg" alt="酵母单杂技原理 from takara" /></p>
+<div class="note primary">
+            <p>酵母单杂交主要用于筛选上游转录因子，找到可能直接结合至靶基因启动子的转录因子（Transcription factor, TF）。</p>
+          </div>
+<span id="more"></span>
+<h1 id="自激活验证"><a class="markdownIt-Anchor" href="#自激活验证"></a> 自激活验证</h1>
+<h2 id="将启动子进行分段"><a class="markdownIt-Anchor" href="#将启动子进行分段"></a> 将启动子进行分段</h2>
+<p>选择上游1 kb序列，扩增后构建至pAbAi载体</p>
+<h3 id="酵母转化"><a class="markdownIt-Anchor" href="#酵母转化"></a> 酵母转化</h3>
+<ol>
+<li>测序正确后的载体，使用BstBI（NEB）或 Bsp119I （Thermo）限制性内切酶线性化pAbAi载体。</li>
+</ol>
+<div class="note warning">
+            <p>BstBI（NEB）的最适合温度为65°C；而Bsp119I（Thermo）的最适温度为37°C</p>
+          </div>
+<ol start="2">
+<li>
+<p>纯化回收后进行Y1HGold酵母转化，根据takara提供的酵母转化说明书按步骤进行。<a target="_blank" rel="noopener" href="https://www.takarabio.com/documents/User%20Manual/PT1172/PT1172-1.pdf">Yeastmaker™ Yeast Transformation System 2 User Manual</a>。</p>
+</li>
+<li>
+<p>将酵母放至30°C恒温培养箱培养3天左右，待单克隆长至1-3 mm。</p>
+</li>
+<li>
+<p>挑取单克隆，用liquid SD/-Ura media在30°C恒温摇床进行培养，至OD<sub>600</sub>=1.0。</p>
+</li>
+<li>
+<p>稀释酵母菌液，点10 µl的菌液至SD/-Ura with various conc. of AbA，培养2-3天。<br />
+<img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-23-cGBKHM.png" alt="诱饵自激活验证示意图" /></p>
+</li>
+<li>
+<p>选择酵母基本不生长时的AbA浓度，作为后续酵母库筛选时的抗生素AbA浓度。当然也可适当的比这个最适合浓度大一点，降低假阳性的机率。<strong>下图中，AbA浓度可以选择150-200 ng/ml</strong>。</p>
+</li>
+</ol>
+<p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-09-23-zJOwq3.png" alt="pAbAi自激活筛选结果" /></p>
+<h1 id="筛选准备"><a class="markdownIt-Anchor" href="#筛选准备"></a> 筛选准备</h1>
+<h2 id="50个sd-leuaba板准备"><a class="markdownIt-Anchor" href="#50个sd-leuaba板准备"></a> 50个SD/-Leu/AbA板准备</h2>
+<p><strong>1 L</strong> SD/-Leu solid media with 150 ng/ml AbA</p>
+<ul>
+<li>minimal SD base with Agar——<strong>46.7 g</strong></li>
+<li>-Leu DO Supplement——<strong>0.69 g</strong></li>
+<li>1 L H<sub>2</sub>O</li>
+<li>Autoclave——<strong>121 °C，15 min</strong></li>
+<li>冷却至60°C左右，加入<strong>300 µl</strong>的stock AbA（<strong>500 µg/ml</strong>）</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Final Concentration</th>
+<th>Volume of 500 µg/ml AbA Stock Solution/50 ml media</th>
+<th>Volume of 500 µg/ml AbA Stock Solution/100 ml media</th>
+<th>Volume of 500 µg/ml AbA Stock Solution/1 L media</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>100 ng/ml</td>
+<td>10 µl</td>
+<td>20 µl</td>
+<td>200 µl</td>
+</tr>
+<tr>
+<td>150 ng/ml</td>
+<td>15 µl</td>
+<td>30 µl</td>
+<td>300 µl</td>
+</tr>
+<tr>
+<td>300 ng/ml</td>
+<td>30 µl</td>
+<td>60 µl</td>
+<td>600 µl</td>
+</tr>
+<tr>
+<td>500 ng/ml</td>
+<td>50 µl</td>
+<td>100 µl</td>
+<td>1 ml</td>
+</tr>
+<tr>
+<td>800 ng/ml</td>
+<td>80 µl</td>
+<td>160 µl</td>
+<td>1.6 ml</td>
+</tr>
+</tbody>
+</table>
+<h1 id="筛库过程"><a class="markdownIt-Anchor" href="#筛库过程"></a> 筛库过程</h1>
+<h2 id="酵母感受态制备"><a class="markdownIt-Anchor" href="#酵母感受态制备"></a> 酵母感受态制备</h2>
+<div class="note primary">
+            <p>10 ml 1.1xTE/LiAc solution: 7.8 ml H<sub>2</sub>O + 1.1 ml 10 x TE Buffer + 1.1 ml 1 M LiAc</p>
+          </div>
+<ol>
+<li>
+<p>Day 1：将Y1HGold (F123-Abi)酵母菌种在平板上划线，30°C 培养箱倒置培养 3 天左右，至克隆大小 为 2 - 3 mm。</p>
+</li>
+<li>
+<p>Day 4（AM 9:00）：挑取直径 2 - 3 mm 的单克隆于 3 ml YPDA 培养液中，在 30°C 摇床 250 rpm 振荡培养 8 h。</p>
+</li>
+<li>
+<p>Day 4（PM 7:00）：吸取 2 - 5 μl 至 50 ml YPDA 中（250 ml 三角瓶），在 30°C 摇床 230 - 250 rpm 振荡培养 16 - 20</p>
+<p>h，至 OD 600 = 0.15-0.3。</p>
+</li>
+<li>
+<p>Day 5 （PM 3:00）：OD600 = 0.23（此次），室温700 g离心5 min，收集菌体。</p>
+</li>
+<li>
+<p>Day 5 （PM 4:00）：倒去上清并用 100 ml YPDA 重悬酵母；在 30°C 摇床 230 - 250 rpm 振荡培养 3 - 5 h。</p>
+</li>
+<li>
+<p>Day 5（PM 8:00）：OD600 = 0.43左右。</p>
+</li>
+<li>
+<p>Day 5 ：100 ml酵母溶液倒入两个50 ml离心管，室温进行700 g，离心5min，倒上清并用30 ml无菌水进行重悬；同时提前将60 µl Carrier DNA进行两次98°C，5 min的变性，冷却备用。</p>
+</li>
+<li>
+<p>Day 5：室温700 g离心5 min，弃上清并用1.5 ml 1.1 x TE/LiAc重悬酵母。</p>
+</li>
+<li>
+<p>Day 5：13000 rpm离心15 s，收集酵母，弃上清，各自加入300 µl 1.1xTE/LiAc重悬。</p>
+</li>
+<li>
+<p>Day 5：将两管感受态混合为600 µl，加入15 ml无菌的离心管中，放置冰上待转化。</p>
+</li>
+</ol>
+<h2 id="酵母转化-2"><a class="markdownIt-Anchor" href="#酵母转化-2"></a> 酵母转化</h2>
+<div class="note primary">
+            <p>10 ml 1xPEG/LiAc solution: 8 ml 50% PEG 3350 + 1 ml 10 x TE Buffer + 1 ml 1 M LiAc</p>
+          </div>
+<ol>
+<li>提前开30°C和42°C的水浴锅。</li>
+<li>加入10 µg酵母文库质粒（根据文库质粒的浓度来计算体积）和 变性后的Carrier DNA，轻轻混匀。</li>
+<li>加入2.5 ml 1xPEG/LiAc，混匀。</li>
+<li>30°C水浴45 min，每15 min摇匀一次。</li>
+<li>加入160 µl DMSO，轻轻混匀。</li>
+<li>42°C水浴热激20 min，每10 min上下颠倒混匀。</li>
+<li>700 g离心5 min （此次换成了高速离心15 s，可能导致效率降低），弃上清。</li>
+<li>加入3 ml YPD Plus培养基，30°C振荡培养90 min。</li>
+<li>700 g离心5 min，收集菌体。</li>
+<li>加入6 ml左右0.9% NaCl悬浮菌体或者直接用无菌水重悬（此次用无菌水）。取100 µl 稀释10倍和100倍的菌液，涂布至<strong>SD/-Leu</strong>板上，用于计算转化效率：</li>
+</ol>
+<p>![image-20221003144901289](/Users/lxmic/Library/Application Support/typora-user-images/image-20221003144901289.png)</p>
+<ol start="11">
+<li>其余菌液涂布于SD/-/Leu/AbA培养基上，100-150 µl左右/块，大约50块平板；在30°C恒温培养箱培养3-5天，单克隆长至1-2 mm，完成初次筛选。</li>
+<li>为了降低假阳性，适当提高SD/-Leu/AbA抗性板的AbA浓度，进行二次筛选。</li>
+<li>将所有的单克隆挑菌（同时要标注单克隆的数字编号，1，2，3），如此可以方便后续进行一一对应。YPDA扩增培养后，点10 µl至提高浓度后的平板上，进行培养。</li>
+<li>挑取生长较大的阳性克隆进行 PCR 鉴定，扩增产物通过琼脂糖凝胶电泳检测。</li>
+<li>通过测序，确定筛到的上游调控因子的序列和基因ID，进行详细记录。包括序列的长度、序列位于整个基因CDS的位置和基因ID。</li>
+<li>如果检测到了转录因子，取10µl菌液点至SD/-URA板上（<strong>记得提前转化pGADT7空载的对照菌株</strong>）同时保存部分菌液。此外在原始的培养基平板上进行标注筛选到的转录因子的单克隆编号，方便后续使用。</li>
+</ol>
+
+    </div>
+
+    
+    
+    
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>Jin JF
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://othlis.com/2022/09/17/%E9%85%B5%E6%AF%8D%E5%8D%95%E6%9D%82%E4%BA%A4%E7%AD%9B%E5%BA%93/" title="酵母单杂交筛库">https://othlis.com/2022/09/17/酵母单杂交筛库/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/BY-NC-SA%204.0/4.0/zh-CN" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA 4.0</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/Protocols/" rel="tag"><i class="fa fa-tag"></i> Protocols</a>
+              <a href="/tags/Y1H/" rel="tag"><i class="fa fa-tag"></i> Y1H</a>
+              <a href="/tags/PostDoc/" rel="tag"><i class="fa fa-tag"></i> PostDoc.</a>
+              <a href="/tags/Experiments/" rel="tag"><i class="fa fa-tag"></i> Experiments</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2022/09/12/R%E8%AF%AD%E8%A8%80tips/" rel="prev" title="R语言tips">
+      <i class="fa fa-chevron-left"></i> R语言tips
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2022/10/02/%E6%A4%8D%E7%89%A9%E6%AC%A1%E7%94%9F%E4%BB%A3%E8%B0%A2/" rel="next" title="植物次生代谢">
+      植物次生代谢 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    <div class="comments" id="gitalk-container"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%87%AA%E6%BF%80%E6%B4%BB%E9%AA%8C%E8%AF%81"><span class="nav-number">1.</span> <span class="nav-text"> 自激活验证</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%B0%86%E5%90%AF%E5%8A%A8%E5%AD%90%E8%BF%9B%E8%A1%8C%E5%88%86%E6%AE%B5"><span class="nav-number">1.1.</span> <span class="nav-text"> 将启动子进行分段</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%85%B5%E6%AF%8D%E8%BD%AC%E5%8C%96"><span class="nav-number">1.1.1.</span> <span class="nav-text"> 酵母转化</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AD%9B%E9%80%89%E5%87%86%E5%A4%87"><span class="nav-number">2.</span> <span class="nav-text"> 筛选准备</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#50%E4%B8%AAsd-leuaba%E6%9D%BF%E5%87%86%E5%A4%87"><span class="nav-number">2.1.</span> <span class="nav-text"> 50个SD&#x2F;-Leu&#x2F;AbA板准备</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AD%9B%E5%BA%93%E8%BF%87%E7%A8%8B"><span class="nav-number">3.</span> <span class="nav-text"> 筛库过程</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%85%B5%E6%AF%8D%E6%84%9F%E5%8F%97%E6%80%81%E5%88%B6%E5%A4%87"><span class="nav-number">3.1.</span> <span class="nav-text"> 酵母感受态制备</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%85%B5%E6%AF%8D%E8%BD%AC%E5%8C%96-2"><span class="nav-number">3.2.</span> <span class="nav-text"> 酵母转化</span></a></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Jin JF"
+      src="/images/250.jpg">
+  <p class="site-author-name" itemprop="name">Jin JF</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">75</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">13</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">89</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/lxmic" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;lxmic" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:jin19920326@gmail.com" title="E-Mail → mailto:jin19920326@gmail.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://twitter.com/slum0326" title="Twitter → https:&#x2F;&#x2F;twitter.com&#x2F;slum0326" rel="noopener" target="_blank"><i class="fa fa-fw fa-twitter"></i>Twitter</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.youtube.com/channel/UC_hwJX-MEj3hSvixXUP1TSg" title="YouTube → https:&#x2F;&#x2F;www.youtube.com&#x2F;channel&#x2F;UC_hwJX-MEj3hSvixXUP1TSg" rel="noopener" target="_blank"><i class="fa fa-fw fa-youtube"></i>YouTube</a>
+      </span>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Jin JF</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+      <span class="post-meta-item-text">站点总字数：</span>
+    <span title="站点总字数">109k</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+      <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
+    <span title="站点阅读时长">3:17</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
+  </div>
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+
+<script>
+NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js', () => {
+    var gitalk = new Gitalk({
+      clientID    : '6d6c01bc950195ccacf0',
+      clientSecret: '805790d2550d8c14018d4dc8be4273a95f72e4b5',
+      repo        : 'blog_comment',
+      owner       : 'lxmic',
+      admin       : ['lxmic'],
+      id          : 'ed9f04d9026fee5e9d608f67c1b714c7',
+        language: 'zh-CN',
+      distractionFreeMode: true
+    });
+    gitalk.render('gitalk-container');
+  }, window.Gitalk);
+});
+</script>
+
+</body>
+</html>
