@@ -3505,10 +3505,10 @@ motif文件实际上是一个矩阵，标识了每个位点碱基出现的概率
     <url>//2022/12/06/Harvest-of-glandular-trichomes/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
 <span id="more"></span>
-<h1 id="modified-from-schilmiller"><a class="markdownIt-Anchor" href="#modified-from-schilmiller"></a> Modified from Schilmiller</h1>
+<h1 id="font-colorgreenmodified-from-schilmillerfont"><a class="markdownIt-Anchor" href="#font-colorgreenmodified-from-schilmillerfont"></a> <font color=green>Modified from Schilmiller</font></h1>
 <p><strong>Schilmiller AL, Miner DP, Larson M, McDowell E, Gang DR, Wilkerson C, and Last RL.</strong> (2010). Studies of a Biochemical Factory: Tomato Trichome Deep Expressed Sequence Tag Sequencing and Proteomics. <strong>Plant Physiology</strong> <strong>153</strong>: 1212–1223.</p>
 <p><strong>Gang DR, Wang J, Dudareva N, Nam KH, Simon JE, Lewinsohn E, and Pichersky E.</strong> (2001). An Investigation of the Storage and Biosynthesis of Phenylpropenes in Sweet Basil. <strong>Plant Physiology</strong> <strong>125</strong>: 539–555.</p>
-<h1 id="procedure"><a class="markdownIt-Anchor" href="#procedure"></a> Procedure</h1>
+<h1 id="font-colorgreenprocedurefont"><a class="markdownIt-Anchor" href="#font-colorgreenprocedurefont"></a> <font color=green>Procedure</font></h1>
 <ol>
 <li>Apices with a size of 1–2 cm from 2 to 4 months old plants were collected into a 250 ml glass bottle containing cold isolation buffer <strong>(200 mM sorbitol, 50 mM TrisHCl, 20 mM sucrose, 10 mM KCl, 5 mM MgCl2,5mM succinic acid, 1 mM EGTA and 0.5 mM K2HPO4)</strong> and 15 g of 0.75–1 mm <strong>glass beads</strong>.</li>
 <li>Type VI glands were isolated by shaking the bottle by hand for 2 min.</li>
@@ -3516,7 +3516,7 @@ motif文件实际上是一个矩阵，标识了每个位点碱基出现的概率
 <li>Finally the heads of the type VI trichomes were collected onto a 25 μm mesh steal sieve washed with the isolation buffer and concentrated by a short centrifugation.</li>
 </ol>
 <p><img src="https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-12-06-Z2JVFY.png" alt="2022-12-06-Trichome VI from (Schilmiller et al., 2010)" /></p>
-<h1 id="reference"><a class="markdownIt-Anchor" href="#reference"></a> Reference</h1>
+<p>#<font color=green>Reference</font></p>
 <p><strong>Schilmiller AL, Miner DP, Larson M, McDowell E, Gang DR, Wilkerson C, and Last RL.</strong> (2010). Studies of a Biochemical Factory: Tomato Trichome Deep Expressed Sequence Tag Sequencing and Proteomics. <strong>Plant Physiology</strong> <strong>153</strong>: 1212–1223.</p>
 <p><strong>Gang DR, Wang J, Dudareva N, Nam KH, Simon JE, Lewinsohn E, and Pichersky E.</strong> (2001). An Investigation of the Storage and Biosynthesis of Phenylpropenes in Sweet Basil. <strong>Plant Physiology</strong> <strong>125</strong>: 539–555.</p>
 <p><strong>Bergau N, Bennewitz S, Syrowatka F, Hause G, and Tissier A.</strong> (2015). The development of type VI glandular trichomes in the cultivated tomato Solanum lycopersicum and a related wild species S. habrochaites. <strong>BMC Plant Biology</strong> <strong>15</strong>: 289.</p>
