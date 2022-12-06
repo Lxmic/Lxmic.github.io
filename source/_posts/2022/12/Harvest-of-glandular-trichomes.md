@@ -15,13 +15,13 @@ categories: 科研之路
 
 <!--more-->
 
-# Modified from Schilmiller
+# <font color=green>Modified from Schilmiller</font>
 
 **Schilmiller AL, Miner DP, Larson M, McDowell E, Gang DR, Wilkerson C, and Last RL.** (2010). Studies of a Biochemical Factory: Tomato Trichome Deep Expressed Sequence Tag Sequencing and Proteomics. **Plant Physiology** **153**: 1212–1223.
 
 **Gang DR, Wang J, Dudareva N, Nam KH, Simon JE, Lewinsohn E, and Pichersky E.** (2001). An Investigation of the Storage and Biosynthesis of Phenylpropenes in Sweet Basil. **Plant Physiology** **125**: 539–555.
 
-# Procedure
+# <font color=green>Procedure</font>
 
 1. Apices with a size of 1–2 cm from 2 to 4 months old plants were collected into a 250 ml glass bottle containing cold isolation buffer **(200 mM sorbitol, 50 mM TrisHCl, 20 mM sucrose, 10 mM KCl, 5 mM MgCl2,5mM succinic acid, 1 mM EGTA and 0.5 mM K2HPO4)** and 15 g of 0.75–1 mm **glass beads**.
 2. Type VI glands were isolated by shaking the bottle by hand for 2 min.
@@ -30,7 +30,7 @@ categories: 科研之路
 
 ![2022-12-06-Trichome VI from **(Schilmiller et al., 2010)**](https://raw.githubusercontent.com/Lxmic/Picture-bed/master/uPic/2022-12-06-Z2JVFY.png)
 
-# Reference
+#<font color=green>Reference</font>
 
 **Schilmiller AL, Miner DP, Larson M, McDowell E, Gang DR, Wilkerson C, and Last RL.** (2010). Studies of a Biochemical Factory: Tomato Trichome Deep Expressed Sequence Tag Sequencing and Proteomics. **Plant Physiology** **153**: 1212–1223.
 
